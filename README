@@ -1,0 +1,27 @@
+hi hello chamak challo :P
+
+Install "latest" version of django in your system.
+
+For Checking whether django that you have installed is working, execute the following commands in terminal:
+
+>>python				"type python in the terminal."
+
+>>>from django import get_version 	"execute this command in the python shell. "
+
+if you don't get an error then you can proceed to the next command, else hard luck... :(
+	
+>>>get_version()     			"execute this command in the python shell after executing the above command."
+
+this should give you the version of django installed in your system.
+
+test execute this command
+>> django-admin.py     			"this should show you a list of commands."
+
+if you get an error saying command not found, make sure the path to django-admin.py is in your path variable and django-admin.py is executable.
+
+to test the project move to the directory "Ecodena" and then execute the following command
+
+>>python manage.py runserver
+
+
+"Happy Coding"
