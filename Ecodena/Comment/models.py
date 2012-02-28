@@ -1,6 +1,7 @@
 from django.db import models
 from Ecodena.User import User
 from Ecodena.Question import Question
+import datetime
 
 # Create your models here.
 
@@ -12,3 +13,17 @@ class Comment(models.Model)
 	reportingUserID = = models.ForeignKey(User, verbose_name="User ID of the user who reported this comment")
 	questionID = models.ForeignKey(Question, verbose_name="Question ID", null=False)
 	timeStamp = models.DateTimeField("Time of Posting", null=False)
+
+
+	#def getCommentText()
+	#def setCommentText(comment)
+	#def getTimeStamp()
+	#def setTimeStamp(Timestamp)
+	#def isReported()
+	#def report(status)
+	#def getUserID()
+	#def setUserID(uID)
+	#def getReportingUserID()
+	#def setReportingUserID(ruID)
+	#def getQuestionID()
+	#def setQuestionID(qID)
