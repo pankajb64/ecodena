@@ -2,20 +2,20 @@ from django.db import models
 
 # Create your models here.
 
-class Compiler()
+class Compiler():
 	
 	Language = ""
 	CompilerVersion = ""
 	question = None
 	attempt = None
 	
-	#def getLanguage()
-	#def setLanguage(text)
-	#def getCompilerVersion()
-	#def setCompilerVersion(text)
-	#def getQuestion()
-	#def setQuestion(question)
-	#def getAttempt()
-	#def setAttempt(attempt)
-	#def compile()
-	#def generateErrorReport()
+	#def getLanguage(self)
+	#def setLanguage(self, text)
+	#def getCompilerVersion(self)
+	#def setCompilerVersion(self,text)
+	#def getQuestion(self)
+	#def setQuestion(self, question)
+	#def getAttempt(self, )
+	#def setAttempt(self, attempt)
+	#def compile(self)
+	#def generateErrorReport(self)
