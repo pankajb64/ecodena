@@ -91,7 +91,7 @@ class Attempt(models.Model):
 
 	def getErrorReportID(self):
 		return self.__errorReportID
-	def setErrorReport(self,reportID):
+	def setErrorReportID(self,reportID):
 		self.__errorReportID = reportID
 	errorReportID = property(getErrorReportID,setErrorReportID)
 

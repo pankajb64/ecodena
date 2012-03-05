@@ -41,14 +41,14 @@ class Question(models.Model):
 		return self.__commentList
 	def addComments(self,comment):
 		commentList.append(comment)	
-	def setCommentList(self,commentList[]):
+	def setCommentList(self,commentList):
 		self.__commentList = commentList
 	commentList = property(getComments,setCommentList)
 	
 
 	def getTestCasesList(self):
 		return self.__testCasesList
-	def setTestCasesList(self,testCasesList[]):
+	def setTestCasesList(self,testCasesList):
 		self.__testCasesList = testCasesList
 	def removeTestCase(self,caseID):
 		del self.__testCasesList[caseID]

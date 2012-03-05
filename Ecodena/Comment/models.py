@@ -60,5 +60,5 @@ class Comment(models.Model):
 		return self.__questionID
 	def setQuestionID(self, qID):
 		self.__questionID = qID
-	questionID = property(getQuestionId, setQuestionID)
+	questionID = property(getQuestionID, setQuestionID)
 

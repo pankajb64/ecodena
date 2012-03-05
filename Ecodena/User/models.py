@@ -24,7 +24,7 @@ class User(models.Model):
 
 	def getNumberOfAttempts(self):
 		return self.__numberOfAttempts
-	def setNumberOfAttempts(numberofAttempts)
+	def setNumberOfAttempts(numberofAttempts):
 		self.__numberOfAttempts = numberofAttempts
 	numberOfAttempts = property(getNumberOfAttempts,setNumberOfAttempts)
 	
@@ -66,9 +66,9 @@ class Admin(User):
 class Programmer(User):
 	level = models.CharField("Level of User", max_length=20, null=False)
 
-	def getLevel()
+	def getLevel():
 		return self.__level
-	def setLevel(level)
+	def setLevel(level):
 		self.__level = level
 	level = property(getLevel,setLevel)
 
