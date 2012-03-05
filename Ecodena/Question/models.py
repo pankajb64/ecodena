@@ -17,6 +17,7 @@ class Type(models.Model):
 class Question(models.Model):
 	questionID = models.AutoField(primary_key=True)
 	questionText = models.TextField("Problem Statement", null=False)
+	questionTitle = models.CharField("Problem Title", max_length = 50, null = False) 
 	level = models.ForeignKey(Level, verbose_name="Question Level", null=False)
 	type = models.ForeignKey(Type, verbose_name="Type of Question", null=False)
 	timeLimit = models.FloatField("Time Limit for Question",null=False)
@@ -37,6 +38,11 @@ class Question(models.Model):
 	questionText = property(getQuestionText,setQuestionText) 
 	
 
+	def getQuestionTitle(self):
+		return self.__questionTitle
+	def setQuestionTitle(self,title):
+		self.__questionTitle = title
+	questionTitle = property(getQuestionTitle, setQuestionTitle)
 	def getComments(self):
 		return self.__commentList
 	def addComments(self,comment):
