@@ -15,15 +15,50 @@ class Comment(models.Model):
 	timeStamp = models.DateTimeField("Time of Posting", null=False)
 
 
-	#def getCommentText(self)
-	#def setCommentText(self, comment)
-	#def getTimeStamp(self)
-	#def setTimeStamp(self, Timestamp)
-	#def isReported(self)
-	#def report(self, status)
-	#def getUserID(self)
-	#def setUserID(self, uID)
-	#def getReportingUserID(self)
-	#def setReportingUserID(self, ruID)
-	#def getQuestionID(self)
-	#def setQuestionID(self, qID)
+	def getCommentText(self):
+		return self.__commentText
+	def setCommentText(self, comment):
+		self.__commentText = comment
+	commentText = property(getCommentText, setCommentText)
+
+	
+	
+	def getTimeStamp(self):
+		return self.__timeStamp
+	def setTimeStamp(self, Timestamp):
+		self.__timeStamp = Timeastamp
+	timeStamp = property(getTimeStamp, setTimeStamp)
+
+	
+
+	def isReported(self):
+		return isReported
+
+		
+	def report(self, status):
+		self.__isReported = status
+	
+	
+
+	def getUserID(self):
+		return self.__UserID 
+	def setUserID(self, uID):
+		self.__UserID = uID
+	UserID = property(getUserID, setUserID)	
+	
+
+	def getReportingUserID(self):
+		return self.__reportingUserID
+	def setReportingUserID(self, ruID):
+		self.__reportingUserID = ruID	
+	
+	reportingUserID = property(getReportingUserID, setReportingUserID)
+
+	
+	
+	def getQuestionID(self):
+		return self.__questionID
+	def setQuestionID(self, qID):
+		self.__questionID = qID
+	questionID = property(getQuestionId, setQuestionID)
+
