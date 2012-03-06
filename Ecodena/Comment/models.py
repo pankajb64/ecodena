@@ -6,13 +6,13 @@ import datetime
 # Create your models here.
 
 class Comment(models.Model):
-	commentID = models.AutoField(primary_key=True)
-	commentText = models.TextField("The Body of the Comment", null=False)
-	isReported = models.BooleanField("Is the comment Reported ?", default=False)
-	userID = models.ForeignKey(User, verbose_name="User ID", null=False, related_name='+')
-	reportingUserID =  models.ForeignKey(User, verbose_name="User ID of the user who reported this comment", related_name='+')
-	questionID = models.ForeignKey(Question, verbose_name="Question ID", null=False)
-	timeStamp = models.DateTimeField("Time of Posting", null=False)
+	commentID_f = models.AutoField(primary_key=True)
+	commentText_f = models.TextField("The Body of the Comment", null=False)
+	isReported_f = models.BooleanField("Is the comment Reported ?", default=False)
+	userID_f = models.ForeignKey(User, verbose_name="User ID", null=False, related_name='+')
+	reportingUserID_f =  models.ForeignKey(User, verbose_name="User ID of the user who reported this comment", related_name='+')
+	questionID_f = models.ForeignKey(Question, verbose_name="Question ID", null=False)
+	timeStamp_f = models.DateTimeField("Time of Posting", null=False)
 
 
 	def getCommentText(self):

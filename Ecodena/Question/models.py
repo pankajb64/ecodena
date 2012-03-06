@@ -5,24 +5,24 @@ from django.db import models
 
 
 class Level(models.Model):
-	levelID = models.AutoField(primary_key=True)
-	levelName = models.CharField("Level Name", max_length = 20 , null = False)
+	levelID_f = models.AutoField(primary_key=True)
+	levelName_F = models.CharField("Level Name", max_length = 20 , null = False)
 	
 
 class Type(models.Model):
-	typeID = models.AutoField(primary_key=True)
-	typeName = models.CharField("Type Name" , max_length = 30 , null = False)
+	typeID_f = models.AutoField(primary_key=True)
+	typeName_f = models.CharField("Type Name" , max_length = 30 , null = False)
 
 
 class Question(models.Model):
-	questionID = models.AutoField(primary_key=True)
-	questionText = models.TextField("Problem Statement", null=False)
-	questionTitle = models.CharField("Problem Title", max_length = 50, null = False) 
-	level = models.ForeignKey(Level, verbose_name="Question Level", null=False)
-	type = models.ForeignKey(Type, verbose_name="Type of Question", null=False)
-	timeLimit = models.FloatField("Time Limit for Question",null=False)
-	commentList = []
-	testCasesList = []
+	questionID_f = models.AutoField(primary_key=True)
+	questionText_f = models.TextField("Problem Statement", null=False)
+	questionTitle_f = models.CharField("Problem Title", max_length = 50, null = False) 
+	level_f = models.ForeignKey(Level, verbose_name="Question Level", null=False)
+	type_f = models.ForeignKey(Type, verbose_name="Type of Question", null=False)
+	timeLimit_f = models.FloatField("Time Limit for Question",null=False)
+	commentList_f = []
+	testCasesList_f = []
 	
 	def getQuestionID(self):
 		return self.__questionID
@@ -43,6 +43,7 @@ class Question(models.Model):
 	def setQuestionTitle(self,title):
 		self.__questionTitle = title
 	questionTitle = property(getQuestionTitle, setQuestionTitle)
+	
 	def getComments(self):
 		return self.__commentList
 	def addComments(self,comment):
@@ -65,12 +66,12 @@ class BattleQuestion:
 	pass
 
 class TestCase(models.Model):
-	caseID = models.AutoField(primary_key=True)
-	questionID = models.ForeignKey(Question , verbose_name="Question ID", null=False)
+	caseID_f = models.AutoField(primary_key=True)
+	questionID_f = models.ForeignKey(Question , verbose_name="Question ID", null=False)
 	CASE_TYPE = ((0, 'Low'), (1, 'Medium'), (2, 'High'))
-	caseType = models.SmallIntegerField(choices=CASE_TYPE, verbose_name="Type of Case")
-	input = models.TextField("Input")	
-	output = models.TextField("Output")
+	caseType_f = models.SmallIntegerField(choices=CASE_TYPE, verbose_name="Type of Case")
+	input_f = models.TextField("Input")	
+	output_f = models.TextField("Output")
 	
 
 	def getTestID(self):

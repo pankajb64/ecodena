@@ -7,13 +7,13 @@ from Ecodena.Question.models import TestCase
 
 
 class ErrorReport(models.Model):
-	errorReportID = models.AutoField(primary_key=True)
-	timeRequirement = models.FloatField("Time Required for compiling")
-	memory = models.FloatField("Memory Requirement")
+	errorReportID_f = models.AutoField(primary_key=True)
+	timeRequirement_f = models.FloatField("Time Required for compiling")
+	memory_f = models.FloatField("Memory Requirement")
 	ERROR_TYPE = ((0,'Correct Answer'),(1,'Compilation Error'),(2,'Run Time Error'),(3,'Time limit Exceeded'),(4,'Memory Limit Exceeded'),(5,'Wrong Answer'))
-	errorType = models.SmallIntegerField(choices=ERROR_TYPE,verbose_name="Types of Errors") 
-	errorMessage = models.TextField("Error Message generated")
-	testCaseLevel = models.SmallIntegerField(choices=TestCase.CASE_TYPE, verbose_name="Test Case Level")
+	errorType_f = models.SmallIntegerField(choices=ERROR_TYPE,verbose_name="Types of Errors") 
+	errorMessage_f = models.TextField("Error Message generated")
+	testCaseLevel_f = models.SmallIntegerField(choices=TestCase.CASE_TYPE, verbose_name="Test Case Level")
 
 
 	def getTimeRequirement(self):
@@ -52,13 +52,13 @@ class ErrorReport(models.Model):
 
 
 class Attempt(models.Model):
-	attemptID = models.AutoField(primary_key=True)
-	questionID = models.ForeignKey(Question, verbose_name="Question ID", null=False)
-	userID = models.ForeignKey(User, verbose_name="User ID", null=False)
-	solution = models.TextField("Solution uploaded by the User", null=False)
-	errorReportID = models.ForeignKey(ErrorReport,verbose_name="Error Report for the Solution", null=False)
-	status = models.BooleanField("Status of attempt - true = right, false = wrong")
-	timeOfSubmission = models.DateTimeField("Time of Submission", null=False)
+	attemptID_f = models.AutoField(primary_key=True)
+	questionID_f = models.ForeignKey(Question, verbose_name="Question ID", null=False)
+	userID_f = models.ForeignKey(User, verbose_name="User ID", null=False)
+	solution_f = models.TextField("Solution uploaded by the User", null=False)
+	errorReportID_f = models.ForeignKey(ErrorReport,verbose_name="Error Report for the Solution", null=False)
+	status_f = models.BooleanField("Status of attempt - true = right, false = wrong")
+	timeOfSubmission_f = models.DateTimeField("Time of Submission", null=False)
 
 
 	def getAttemptID(self):

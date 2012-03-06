@@ -3,13 +3,13 @@ from django.db import models
 # Create your models here.
 
 class User(models.Model):
-	userID = models.AutoField(primary_key=True)
-	userName = models.CharField("User name", max_length=30, null=False)
-	password = models.CharField("Password", max_length=12, null=False)
-	isProgrammer = models.BooleanField("Is a Programmer", default=True)
-	isAdmin = models.BooleanField("Is Administrator", default=False)
-	userEmail = models.EmailField("Email ID of User", max_length=75)
-	numberOfAttempts = models.IntegerField("Number of Attempts")
+	userID_f = models.AutoField(primary_key=True)
+	userName_f = models.CharField("User name", max_length=30, null=False)
+	password_f = models.CharField("Password", max_length=12, null=False)
+	isProgrammer_f = models.BooleanField("Is a Programmer", default=True)
+	isAdmin_f = models.BooleanField("Is Administrator", default=False)
+	userEmail_f = models.EmailField("Email ID of User", max_length=75)
+	numberOfAttempts_f = models.IntegerField("Number of Attempts")
 
 
 	def getUserID(self):
@@ -18,8 +18,8 @@ class User(models.Model):
 
 
 	def getEmailID(self):
-		return self.__userEmailID
-	userEmailID = property(getEmailID)
+		return self.__userEmail
+	userEmail = property(getEmailID)
 	
 
 	def getNumberOfAttempts(self):
@@ -38,7 +38,7 @@ class User(models.Model):
 		q.setText(query)
 		Timestamp = datetime.datetime.now()
 		query.setQueryTime(Timestamp)
-		q	
+		q	#database work
 
 	def viewProfile(self):
 		x = User()
@@ -53,6 +53,7 @@ class User(models.Model):
 		isProgrammer = user.isProgrammer
 		userEmailID = user.userEmailID
 		numberOfAttempts = user.numberOfAttempts
+		#database work
 
 class Admin(User):
 	pass
@@ -64,7 +65,7 @@ class Admin(User):
 	#def addProblem(self, problem)
 
 class Programmer(User):
-	level = models.CharField("Level of User", max_length=20, null=False)
+	level_f = models.CharField("Level of User", max_length=20, null=False)
 
 	def getLevel():
 		return self.__level
