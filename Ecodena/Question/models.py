@@ -14,7 +14,7 @@ class Type(models.Model):
 	typeName_f = models.CharField("Type Name" , max_length = 30 , null = False)
 
 
-class Question(models.Model):
+class Question(models.Model, object):
 	questionID_f = models.AutoField(primary_key=True)
 	questionText_f = models.TextField("Problem Statement", null=False)
 	questionTitle_f = models.CharField("Problem Title", max_length = 50, null = False) 
@@ -65,7 +65,7 @@ class Question(models.Model):
 class BattleQuestion:
 	pass
 
-class TestCase(models.Model):
+class TestCase(models.Model, object):
 	caseID_f = models.AutoField(primary_key=True)
 	questionID_f = models.ForeignKey(Question , verbose_name="Question ID", null=False)
 	CASE_TYPE = ((0, 'Low'), (1, 'Medium'), (2, 'High'))

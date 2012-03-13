@@ -4,14 +4,14 @@ import datetime
 
 # Create your models here.
 
-class Query(models.Model):
+class Query(models.Model, object):
 	queryID_f = models.AutoField(primary_key=True)
 	queryText_f = models.TextField("The Text explaining the Query", null=False)
 	solution_f = models.TextField("The Solution of the Query")
 	userID_f = models.ForeignKey(User, verbose_name="User ID of user posting the query", null=False, related_name='+')
 	adminID_f = models.ForeignKey(User, verbose_name="User ID of admin resolving the query", related_name='+')
 	queryTime_f = models.DateTimeField("Time of posting Query", null=False)
-	replyTime_f = models.DateTimeField("Time of resolving Query", null=False)
+	replyTime_f = models.DateTimeField("Time of resolving Query", )
 
 
 	def getQueryText(self):

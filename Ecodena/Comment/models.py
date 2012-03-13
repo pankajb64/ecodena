@@ -5,7 +5,7 @@ import datetime
 
 # Create your models here.
 
-class Comment(models.Model):
+class Comment(models.Model, object):
 	commentID_f = models.AutoField(primary_key=True)
 	commentText_f = models.TextField("The Body of the Comment", null=False)
 	isReported_f = models.BooleanField("Is the comment Reported ?", default=False)
@@ -44,7 +44,7 @@ class Comment(models.Model):
 		return self.__UserID 
 	def setUserID(self, uID):
 		self.__UserID = uID
-	UserID = property(getUserID, setUserID)	
+	userID = property(getUserID, setUserID)	
 	
 
 	def getReportingUserID(self):

@@ -6,7 +6,7 @@ from Ecodena.Question.models import TestCase
 # Create your models here.
 
 
-class ErrorReport(models.Model):
+class ErrorReport(models.Model, object):
 	errorReportID_f = models.AutoField(primary_key=True)
 	timeRequirement_f = models.FloatField("Time Required for compiling")
 	memory_f = models.FloatField("Memory Requirement")
@@ -51,7 +51,7 @@ class ErrorReport(models.Model):
 	testCaseLevel = property(getTestCaseLevel,setTestCaseLevel)
 
 
-class Attempt(models.Model):
+class Attempt(models.Model, object):
 	attemptID_f = models.AutoField(primary_key=True)
 	questionID_f = models.ForeignKey(Question, verbose_name="Question ID", null=False)
 	userID_f = models.ForeignKey(User, verbose_name="User ID", null=False)
