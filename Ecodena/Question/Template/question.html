@@ -1,26 +1,16 @@
-<h1>
-{{question.questionTitle_f}}
-</h1>
-<p>
-{{question.questionText_f}}
-</p>
-<p>
-{{question.timeLimt_f}}
-</p>
+<h1> Title: {{question.questionTitle}} </h1>
+<p> {{question.questionText}} </p>
+<p> Time Limit: {{question.timeLimit}} </p>
 
 <hr/>
 
 <div>
-{% for comment in question.commentList_f  
-%}
-<p>
-<b>
-{{comment.userID_f}} 
-</b>
-{{comment.timeStamp_f}}
-<br/>
-{{comment.commentText_f}}
-</p>
+Comments <hr/>
+{% for comment in question.commentList  %}
+	<p> <b> {{comment.userID_f}}  	</b> {{comment.timeStamp_f}} 	<br/>
+		{{comment.commentText_f}}
+	</p>
+{% endfor %}
 </div>
 
 

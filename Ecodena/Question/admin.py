@@ -15,5 +15,6 @@ class QuestionAdmin(admin.ModelAdmin):
 	inlines1 = [TypeInline]
 	inlines2 = [LevelInline]
 
-admin.site.register(Question,QuestionAdmin)
-
+admin.site.register(Question)
+admin.site.register(Type)
+admin.site.register(Level)

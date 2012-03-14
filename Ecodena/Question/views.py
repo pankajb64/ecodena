@@ -6,9 +6,13 @@ from django.shortcuts import render_to_response
 def test(request):
 	return HttpResponse("<h1>It works!</h1>")
 
-#def listQuestions():
+def listQuestions(request):
+	questions = Question.objects.all()
+	return render_to_response('questions.html',{'questions':questions})
 
-def viewQuestion(request, questionID):
-	question = Question.objects.filter(questionID_f = questionID)
+def viewQuestionByID(request, questionID):
+	question = Question.objects.filter(questionID_f = questionID)[0]
 	question.commentList_f = list(Comment.objects.filter(questionID_f = questionID))
 	return render_to_response('question.html',{'question' : question})
+#	return HttpResponse("%s" %questions)
+
