@@ -14,19 +14,18 @@ class User(models.Model, object):
 
 
 	def getUserID(self):
-		return self.__getUserID 
+		return self.getUserID_f 
 	userID = property(getUserID)	
 
-
 	def getEmailID(self):
-		return self.__userEmail
+		return self.userEmail_f
 	userEmail = property(getEmailID)
 	
 
 	def getNumberOfAttempts(self):
-		return self.__numberOfAttempts
+		return self.numberOfAttempts_f
 	def setNumberOfAttempts(numberofAttempts):
-		self.__numberOfAttempts = numberofAttempts
+		self.numberOfAttempts_f = numberofAttempts
 	numberOfAttempts = property(getNumberOfAttempts,setNumberOfAttempts)
 	
 	# input - a comment object that already has comment text and question ID values set
@@ -88,9 +87,9 @@ class Programmer(User):
 	level_f = models.CharField("Level of User", max_length=20, null=False)
 
 	def getLevel():
-		return self.__level
+		return self.level_f
 	def setLevel(level):
-		self.__level = level
+		self.level_f = level
 	level = property(getLevel,setLevel)
 
 class Profile (models.model, object):

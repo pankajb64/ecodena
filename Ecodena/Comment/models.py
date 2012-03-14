@@ -16,17 +16,17 @@ class Comment(models.Model, object):
 
 
 	def getCommentText(self):
-		return self.__commentText
+		return self.commentText_f
 	def setCommentText(self, comment):
-		self.__commentText = comment
+		self.commentText_f = comment
 	commentText = property(getCommentText, setCommentText)
 
 	
 	
 	def getTimeStamp(self):
-		return self.__timeStamp
+		return self.timeStamp_f
 	def setTimeStamp(self, Timestamp):
-		self.__timeStamp = Timeastamp
+		self.timeStamp_f = Timeastamp
 	timeStamp = property(getTimeStamp, setTimeStamp)
 
 	
@@ -36,29 +36,29 @@ class Comment(models.Model, object):
 
 		
 	def report(self, status):
-		self.__isReported = status
+		self.isReported_f = status
 	
 	
 
 	def getUserID(self):
-		return self.__UserID 
+		return self.UserID_f 
 	def setUserID(self, uID):
-		self.__UserID = uID
+		self.UserID_f = uID
 	userID = property(getUserID, setUserID)	
 	
 
 	def getReportingUserID(self):
-		return self.__reportingUserID
+		return self.reportingUserID_f
 	def setReportingUserID(self, ruID):
-		self.__reportingUserID = ruID	
+		self.reportingUserID_f = ruID	
 	
 	reportingUserID = property(getReportingUserID, setReportingUserID)
 
 	
 	
 	def getQuestionID(self):
-		return self.__questionID
+		return self.questionID_f
 	def setQuestionID(self, qID):
-		self.__questionID = qID
+		self.questionID_f = qID
 	questionID = property(getQuestionID, setQuestionID)
 

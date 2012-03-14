@@ -25,40 +25,40 @@ class Question(models.Model, object):
 	testCasesList_f = []
 	
 	def getQuestionID(self):
-		return self.__questionID
+		return self.questionID_f
 	def setQuestionID(self,qID):
-		self.__questionID=qID
+		self.questionID_f=qID
 	questionID = property(getQuestionID,setQuestionID)
 	
 
 	def getQuestionText(self):
-		return self.__questionText
+		return self.questionText_f
 	def setQuestionText(self,qtext):
-		self.__questionText = qtext
+		self.questionText_f = qtext
 	questionText = property(getQuestionText,setQuestionText) 
 	
 
 	def getQuestionTitle(self):
-		return self.__questionTitle
+		return self.questionTitle_f
 	def setQuestionTitle(self,title):
-		self.__questionTitle = title
+		self.questionTitle_f = title
 	questionTitle = property(getQuestionTitle, setQuestionTitle)
 	
 	def getComments(self):
-		return self.__commentList
+		return self.commentList_f
 	def addComments(self,comment):
 		commentList.append(comment)	
 	def setCommentList(self,commentList):
-		self.__commentList = commentList
+		self.commentList_f = commentList
 	commentList = property(getComments,setCommentList)
 	
 
 	def getTestCasesList(self):
-		return self.__testCasesList
+		return self.testCasesList_f
 	def setTestCasesList(self,testCasesList):
-		self.__testCasesList = testCasesList
+		self.testCasesList_f = testCasesList
 	def removeTestCase(self,caseID):
-		del self.__testCasesList[caseID]
+		del self.testCasesList_f[caseID]
 	testCasesList = property(getTestCasesList,setTestCasesList)
 
 
@@ -75,27 +75,27 @@ class TestCase(models.Model, object):
 	
 
 	def getTestID(self):
-		return self.__caseID
+		return self.caseID_f
 	def setTestID(self,tID):
-		self.__caseID = tID 
+		self.caseID_f = tID 
 	caseID = property(getTestID,setTestID)
 
 
 	def getCaseType(self):
-		return self.__caseType
+		return self.caseType_f
 	def setCaseType(self,ctype):
-		self.__caseType = ctype
+		self.caseType_f = ctype
 	caseType = property(getCaseType,setCaseType)	
 	
 
 	def getOutput(self):
-		return self.__output
+		return self.output_f
 	def setOutput(self,text):
-		self.__output = text
+		self.output_f = text
 	output = property(getOutput,setOutput)
 	
 	def getQuestion(self):
-		return self.__questionID
+		return self.questionID_f
 	def setQuestion(self,qID):
-		self.__questionID = qID
+		self.questionID_f = qID
 	questionID = property(getQuestion,setQuestion)

@@ -15,53 +15,53 @@ class Query(models.Model, object):
 
 
 	def getQueryText(self):
-		return self.__queryText
+		return self.queryText_f
 	def setQueryText(self, text):
-		self.__queryText = text
+		self.queryText_f = text
 	queryText = property(getQueryText, setQueryText)
 
 	
 	def getQueryID(self):
-		return self.__queryID
+		return self.queryID_f
 	def setQueryID(self, qID):
-		self.__queryID = qID
+		self.queryID_f = qID
 	queryID = property(getQueryID, setQueryID)
 
 
 	def getSolution(self):
-		return self.__solution
+		return self.solution_f
 	def setSolution(self, code):
-		self.__solution = code
+		self.solution_f = code
 	solution = property(getSolution, setSolution)
 
 
 	def getQueryTime(self):
-		return self.__queryTime
+		return self.queryTime_f
 	def setQueryTime(self, Timestamp):
 		Timestamp = datetime.datetime.now()
-		self.__queryTime = Timestamp
+		self.queryTime_f = Timestamp
 	queryTime = property(getQueryTime, setQueryTime)
 
 
 	def getReplyTime(self):
-		return self.__replyTime
+		return self.replyTime_f
 	def setReplyTime(self, Timestamp):
 		Timestamp = datetime.datetime.now()
-		self.__replyTime = Timestamp
+		self.replyTime_f = Timestamp
 	replyTime = property(getReplyTime, setReplyTime)
 	
 
 	def getUserID(self):
-		return self.__userID
+		return self.userID_f
 	def setUserID(self, uID):
-		self.__userID = uID
+		self.userID_f = uID
 	userID = property(getUserID, setUserID)
 
 
 	def getAdminID(self):
-		return self.__adminID
+		return self.adminID_f
 	def setAdminID(self, aID):
-		self.__adminID = aID
+		self.adminID_f = aID
 	adminID = property(getAdminID, setAdminID)
 
 

@@ -17,37 +17,37 @@ class ErrorReport(models.Model, object):
 
 
 	def getTimeRequirement(self):
-		return self.__timeRequirement
+		return self.timeRequirement_f
 	def setTimeRequirement(self,time):
-		self.__timeRequirement = time
+		self.timeRequirement_f = time
 	timeRequirement = property(getTimeRequirement,setTimeRequirement)
 	
 
 	def getMemory(self):
-		return self.__memory
+		return self.memory_f
 	def setMemory(self,memory):
-		self.__memory = memory
+		self.memory_f = memory
 	memory = property(getMemory,setMemory)
 
 
 	def getErrorType(self):
-		return self.__errorType
+		return self.errorType_f
 	def setErrorType(self,type):
-		self.__errorType = type
+		self.errorType_f = type
 	errorType = property(getErrorType,setErrorType)
 
 
 	def getErrorMessage(self):
-		return self.__errorMessage
+		return self.errorMessage_f
 	def setErrorMessage(self,message):
-		self.__errorMessage = message
+		self.errorMessage_f = message
 	errorMessage = property(getErrorMessage,setErrorMessage)
 
 
 	def getTestCaseLevel (self):
-		return self.__testCaseLevel
+		return self.testCaseLevel_f
 	def setTestCaseLevel (self,level):
-		self.__testCaseLevel = level
+		self.testCaseLevel_f = level
 	testCaseLevel = property(getTestCaseLevel,setTestCaseLevel)
 
 
@@ -62,36 +62,36 @@ class Attempt(models.Model, object):
 
 
 	def getAttemptID(self):
-		return self.__attemptID
+		return self.attemptID_f
 	def setAttemptID(self,aID):
-		self.__attemptID = aID
+		self.attemptID_f = aID
 	attemptID = property(getAttemptID,setAttemptID)
 
 	
 	def isCorrect(self):
-		return self.__status	
+		return self.status_f	
 	def setStatus(self,status):
-		self.__status = status
+		self.status_f = status
 	status = property(setStatus) 
 		
 	
 	def getTimeOfSubmission(self):
-		return self.__timeOfSubmission
+		return self.timeOfSubmission_f
 	def setTimeOfSubmission(self,time):
-		self.__timeOfSubmission = time
+		self.timeOfSubmission_f = time
 	timeOfSubmission = property(getTimeOfSubmission,setTimeOfSubmission)
 	
 	
 	def getUserID(self):
-		return self.__userID
+		return self.userID_f
 	def setUserID(self,uID):
-		self.__userID = uID
+		self.userID_f = uID
 	userID = property(getUserID,setUserID)
 
 
 	def getErrorReportID(self):
-		return self.__errorReportID
+		return self.errorReportID_f
 	def setErrorReportID(self,reportID):
-		self.__errorReportID = reportID
+		self.errorReportID_f = reportID
 	errorReportID = property(getErrorReportID,setErrorReportID)
 
