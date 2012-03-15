@@ -15,6 +15,9 @@ class Language(models.Model, object):
 
 	languageName = property(getLanguageName, setLanguageName)
 
+
+		
+
 class CompilerVersion(models.Model, object):
 	versionID_f = models.AutoField(primary_key=True)
 	versionName_f = models.CharField("Version Name (Code or Number)", max_length=40, null=False)
@@ -36,6 +39,9 @@ class CompilerVersion(models.Model, object):
 
 	language = property(getLanguage, setLanguage)
 	
+	def languageName(self):
+		return self.language_f.languageName
+
 class Compiler():
 	
 	language = ""
