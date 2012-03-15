@@ -75,5 +75,18 @@ class Compiler():
 		self._attempt = attempt
 	attempt = property(getAttempt,setAttempt)
 		
-	#def compile(self)
-	#def generateErrorReport(self)
+	def compile(self):
+		pass
+
+	def generateErrorReport(self):
+		pass
+
+class CCompiler111(Compiler):
+
+	def compile(self):
+		pass
+
+class JavaCompiler111(Compiler):
+	def compile(self):
+		pass
+
