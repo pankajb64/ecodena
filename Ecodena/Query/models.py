@@ -1,17 +1,17 @@
 from django.db import models
-from Ecodena.User.models import User
+#from Ecodena.User.models import User
 import datetime
-
+from django.contrib.auth.models import User
 # Create your models here.
 
 class Query(models.Model, object):
 	queryID_f = models.AutoField(primary_key=True)
 	queryText_f = models.TextField("The Text explaining the Query", null=False)
-	solution_f = models.TextField("The Solution of the Query")
+	solution_f = models.TextField("The Solution of the Query", blank=True)
 	userID_f = models.ForeignKey(User, verbose_name="User ID of user posting the query", null=False, related_name='+')
-	adminID_f = models.ForeignKey(User, verbose_name="User ID of admin resolving the query", related_name='+')
+	adminID_f = models.ForeignKey(User, verbose_name="User ID of admin resolving the query", related_name='+', blank=True, null=True)
 	queryTime_f = models.DateTimeField("Time of posting Query", null=False)
-	replyTime_f = models.DateTimeField("Time of resolving Query", )
+	replyTime_f = models.DateTimeField("Time of resolving Query", blank=True, null=True)
 
 
 	def getQueryText(self):
@@ -40,7 +40,10 @@ class Query(models.Model, object):
 	def setQueryTime(self, Timestamp):
 		Timestamp = datetime.datetime.now()
 		self.queryTime_f = Timestamp
+		
+
 	queryTime = property(getQueryTime, setQueryTime)
+
 
 
 	def getReplyTime(self):
@@ -65,3 +68,10 @@ class Query(models.Model, object):
 	adminID = property(getAdminID, setAdminID)
 
 
+	class Meta:
+		verbose_name = 'query'
+		verbose_name_plural = 'queries'
+
+	def __unicode__(self):
+		return `self.userID` + ' ' + `self.queryID` + ' ' + self.queryText
+		

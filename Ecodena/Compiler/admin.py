@@ -6,7 +6,7 @@ class LanguageAdmin(admin.ModelAdmin):
 
 
 class CompilerVersionAdmin(admin.ModelAdmin):
-	raw_id_fields = ['language_f']
+	#raw_id_fields = ['language_f']
 	list_display = ( 'versionName_f', 'languageName')
 
 admin.site.register(Language, LanguageAdmin)

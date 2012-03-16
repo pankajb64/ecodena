@@ -1,4 +1,7 @@
 from Comment.models import Comment
 from django.contrib import admin
 
-admin.site.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+	list_display = ('commentID_f', 'commentText', 'userID', 'isReported_f', 'reportingUserID', 'questionID', 'timeStamp' )
+	
+admin.site.register(Comment, CommentAdmin)

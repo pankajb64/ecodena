@@ -14,7 +14,9 @@ class LevelInline(admin.StackedInline):
 class QuestionAdmin(admin.ModelAdmin):
 	inlines1 = [TypeInline]
 	inlines2 = [LevelInline]
+	list_display = ('questionID_f', 'questionTitle', 'level_f',  'type_f', 'timeLimit_f')
 
-admin.site.register(Question)
+
+admin.site.register(Question, QuestionAdmin)
 admin.site.register(Type)
 admin.site.register(Level)

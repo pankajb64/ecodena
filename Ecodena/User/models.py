@@ -1,8 +1,9 @@
 from django.db import models
 from datetime import datetime
+from django.contrib.auth.models import User
 
 # Create your models here.
-
+'''
 class User(models.Model, object):
 	userID_f = models.AutoField(primary_key=True)
 	userName_f = models.CharField("User name", max_length=30, null=False)
@@ -50,9 +51,9 @@ class User(models.Model, object):
 		profile.userID_f = self.userID
 		profile.save()
 
+'''
 
-
-class Admin(User):
+class Admin(User, object):
 	pass
 	def resolveQuery(self, queryID, solution):
 		query = Query.objects.filter(queryID_f=queryID)
@@ -60,7 +61,7 @@ class Admin(User):
 		query.adminID = self.userID
 		query.replyTime = datetime.now()
 		query.save()
-
+'''
 	def deleteComment(self, commentID):
 		comment = Comment.objects.filter(commentID_f=commentID)
 		comment.delete()
@@ -81,9 +82,9 @@ class Admin(User):
 	# input - a filled question object
 	def addQuestion(self, question):
 		question.save()
-		
+	'''	
 
-class Programmer(User):
+class Programmer(User, object):
 	level_f = models.CharField("Level of User", max_length=20, null=False)
 
 	def getLevel():
@@ -92,12 +93,15 @@ class Programmer(User):
 		self.level_f = level
 	level = property(getLevel,setLevel)
 
+
 class Profile (models.Model, object):
 	profileID_f = models.AutoField(primary_key=True)
-	name_f = models.CharField("User Display Name", max_length=40)
+	#name_f = models.CharField("User Display Name", max_length=40)
 	dob_f = models.DateField("User Birth Date")
 	address_f = models.TextField("User Address")
 	GENDER_TYPE = ( (0, 'Male'), (1, 'Female'))
 	gender_f = models.SmallIntegerField(choices=GENDER_TYPE, verbose_name="Gender")
-	userID_f = models.ForeignKey(User, verbose_name="User ID of user whose profile is this", null=False)
-	
+	userID_f = models.ForeignKey(User, verbose_name="User ID of user whose profile is this", null=False, unique=True)
+	isProgrammer_f = models.BooleanField("Is a Programmer", default=True)
+	isAdmin_f = models.BooleanField("Is Administrator", default=False)
+	numberOfAttempts_f = models.IntegerField("Number of Attempts")	

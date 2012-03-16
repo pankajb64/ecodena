@@ -5,7 +5,7 @@ from django.db import models
 class Language(models.Model, object):
 
 	languageID_f = models.AutoField(primary_key=True)
-	languageName_f = models.CharField("Language Name", max_length=40, null=False)
+	languageName_f = models.CharField("Language Name", max_length=40, null=False, unique=True)
 
 	def getLanguageName(self):
 		return self.languageName_f
@@ -14,6 +14,13 @@ class Language(models.Model, object):
 		self.languageName_f = languageName
 
 	languageName = property(getLanguageName, setLanguageName)
+
+	class Meta:
+		verbose_name = 'language'
+		verbose_name_plural = 'languages'
+
+	def __unicode__(self):
+		return self.languageName
 
 
 		
@@ -41,6 +48,14 @@ class CompilerVersion(models.Model, object):
 	
 	def languageName(self):
 		return self.language_f.languageName
+
+	class Meta:
+		verbose_name = 'compiler version'
+		verbose_name_plural = 'compiler versions'
+
+	def __unicode__(self):
+		return self.versionName + ' ' + `self.language_f`
+		
 
 class Compiler():
 	

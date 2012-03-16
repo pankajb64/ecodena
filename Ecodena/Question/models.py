@@ -6,12 +6,27 @@ from django.db import models
 
 class Level(models.Model):
 	levelID_f = models.AutoField(primary_key=True)
-	levelName_F = models.CharField("Level Name", max_length = 20 , null = False)
+	levelName_F = models.CharField("Level Name", max_length = 20 , null = False, unique=True)
+
+	class Meta:
+		verbose_name = 'level'
+		verbose_name_plural = 'levels'
+
+	def __unicode__(self):
+		return self.levelName_F
+	
 	
 
 class Type(models.Model):
 	typeID_f = models.AutoField(primary_key=True)
 	typeName_f = models.CharField("Type Name" , max_length = 30 , null = False)
+
+	class Meta:
+		verbose_name = 'type'
+		verbose_name_plural = 'types'
+
+	def __unicode__(self):
+		return self.typeName_f
 
 
 class Question(models.Model, object):
@@ -61,6 +76,13 @@ class Question(models.Model, object):
 		del self.testCasesList_f[caseID]
 	testCasesList = property(getTestCasesList,setTestCasesList)
 
+	class Meta:
+		verbose_name = 'question'
+		verbose_name_plural = 'questions'
+
+	def __unicode__(self):
+		return self.questionTitle
+
 
 class BattleQuestion:
 	pass
@@ -99,3 +121,11 @@ class TestCase(models.Model, object):
 	def setQuestion(self,qID):
 		self.questionID_f = qID
 	questionID = property(getQuestion,setQuestion)
+
+	class Meta:
+		verbose_name = 'test case'
+		verbose_name_plural = 'test cases'
+
+	def __unicode__(self):
+		return `self.caseID` + ' ' + `self.questionID` + ' ' + self.caseType
+		
