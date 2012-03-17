@@ -104,4 +104,6 @@ class Profile (models.Model, object):
 	userID_f = models.ForeignKey(User, verbose_name="User ID of user whose profile is this", null=False, unique=True)
 	isProgrammer_f = models.BooleanField("Is a Programmer", default=True)
 	isAdmin_f = models.BooleanField("Is Administrator", default=False)
-	numberOfAttempts_f = models.IntegerField("Number of Attempts")	
+	numberOfAttempts_f = models.IntegerField("Number of Attempts")
+	
+		

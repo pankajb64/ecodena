@@ -5,4 +5,8 @@ from django.contrib import admin
 
 #admin.site.register(User)
 admin.site.register(Programmer)
-admin.site.register(Profile)
+
+class ProfileAdmin(admin.ModelAdmin):
+	list_display = ('profileID_f', 'dob_f', 'address_f', 'gender_f', 'userID_f', 'isProgrammer_f', 'isAdmin_f', 'numberOfAttempts_f')
+	
+admin.site.register(Profile, ProfileAdmin)
