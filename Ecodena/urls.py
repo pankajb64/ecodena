@@ -18,7 +18,7 @@ urlpatterns = patterns('',
 	#url(r'^test/$', 'Ecodena.Question.views.test'),
 
 	url(r'^questions/$', 'Ecodena.Question.views.listQuestions'),
-	#url(r'^postQuery/(?P<userID>.+)$', 'Ecodena.Query.views.postQuery'),
+	url(r'^postQuery/(?P<userID>.+)$', 'Ecodena.Query.views.postQuery'),
 	url(r'^questions/(?P<questionID>[0-9]+)/$', 'Ecodena.Question.views.viewQuestionByID'),
 	url(r'^submitSolution$', 'Ecodena.Attempt.views.submitSolution'),
 	#url(r'^profile/',Ecodena.User.views.viewProfile),

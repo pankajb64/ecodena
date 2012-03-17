@@ -1,0 +1,10 @@
+{% if form %}
+<form action="" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type = "submit" value ="submit"/>
+</form>
+{% endif %}
+
+{% if queryID %}
+<h1> Thanks you noob, keep this ID {{queryID}} for reference</h1>
+{% endif %}
