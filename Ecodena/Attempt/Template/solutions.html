@@ -1,0 +1,11 @@
+<h1>List of Solutions</h1>
+
+<div>
+	<ul>
+		{%for solution in solutions%}
+		<li>
+			<a href ="{{solution.attemptID_f}}">{{solution.attemptID_f}}</a>
+		</li>	
+		{% endfor %}
+	</ul>
+</div>		

@@ -108,7 +108,8 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 	'Main/Template',
 	'Question/Template',
-	'Query/Template'
+	'Query/Template',
+	'Attempt/Template
 )
 
 INSTALLED_APPS = (

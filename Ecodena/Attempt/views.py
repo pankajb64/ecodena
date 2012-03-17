@@ -2,25 +2,27 @@
 
 from django.http import HttpResponse
 from Attempt.models import Attempt
-from django.contrib.auth.models import User
+from User.models import User
 from Compiler.models import Language
 from Compiler.models import CompilerVersion
-from django import forms
+from django import newforms as forms
 from django.shortcuts import render_to_response
 from datetime import datetime
 
-class SolutionForm(forms.ModelForm):
-	text = forms.Charfield(widget=forms.TextArea)
+class SolutionForm(forms.Form):
+	text = forms.TextField()
+	version = forms.ChoiceField()
 		
 def listSolutions(request,userID):
 	solutions = list(Attempt.objects.filter(userID_f=userID ))
 	return render_to_response('solutions.html',{'solutions':solutions})
+
 def viewSolution(request,userID,solutionID):
 	s = Attempt.objects.filter(attemptID_f=solutionID )
 	solution = s.filter(userID_f=userID)
 	return render_to_response('solution.html',{'solution':solution})
 
-def submitSoution(request):
+def submitSolution(request):
 	version = Compiler.objects.all()
 	dt =datetime.now()
 	if request.method =="POST":
@@ -39,6 +41,11 @@ def submitSoution(request):
 	return render_to_response('submitsolution.html',{'form':f,'version':version})
 	
 def compileSolution(version,solution,question):
-	return None
+	compiler_ver_lang = version.versionName + ' ' + version.language.languageName
+	if compiler_ver_lang in compilers:
+		compiler = compilers[compiler_ver_lang]
+		errorReportID = compiler()
+	else print"Compiler not available"
+	
 	
 	

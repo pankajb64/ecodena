@@ -66,7 +66,7 @@ class Attempt(models.Model, object):
 	errorReportID_f = models.ForeignKey(ErrorReport,verbose_name="Error Report for the Solution", null=True)
 	status_f = models.BooleanField("Status of attempt - true = right, false = wrong", blank=True, default=False)
 	timeOfSubmission_f = models.DateTimeField("Time of Submission", null=False)
-
+	
 
 	def getAttemptID(self):
 		return self.attemptID_f
@@ -102,6 +102,13 @@ class Attempt(models.Model, object):
 		self.errorReportID_f = reportID
 	errorReportID = property(getErrorReportID,setErrorReportID)
 
+	def getSolution(self):
+		return self.solution_f
+	def setSolution(self,attemptID):
+		self.attemptID_f = attemptID
+		
+	solutionText = property(getSolution,setSolution)		
+	
 	class Meta:
 		verbose_name = 'attempt'
 		verbose_name_plural = 'attempts'
