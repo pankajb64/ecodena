@@ -107,7 +107,8 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 	'Main/Template',
-	'Question/Template'
+	'Question/Template',
+	'Query/Template'
 )
 
 INSTALLED_APPS = (

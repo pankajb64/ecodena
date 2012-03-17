@@ -2,15 +2,15 @@
 
 from django.http import HttpResponse
 from Attempt.models import Attempt
-from User.models import User
+from django.contrib.auth.models import User
 from Compiler.models import Language
 from Compiler.models import CompilerVersion
-from django import newforms as forms
+from django import forms
 from django.shortcuts import render_to_response
 from datetime import datetime
 
-class SolutionForm(forms.Form):
-	text = forms.TextField()
+class SolutionForm(forms.ModelForm):
+	text = forms.Charfield(widget=forms.TextArea)
 		
 def listSolutions(request,userID):
 	solutions = list(Attempt.objects.filter(userID_f=userID ))
@@ -38,7 +38,7 @@ def submitSoution(request):
 	
 	return render_to_response('submitsolution.html',{'form':f,'version':version})
 	
-def compileSolution(version,solution,question)
-	pass
+def compileSolution(version,solution,question):
+	return None
 	
 	

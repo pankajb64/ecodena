@@ -1,13 +1,15 @@
 # Create your views here.
 from datetime import datetime
 from django.http import HttpResponse
-from Query.models import Query
-from User.models import User
-from django import newforms as forms
-from django.shortcuts import render_to _response
+from models import Query
+from django.contrib.auth.models import User
+from django import forms
+from django.shortcuts import render_to_response
 
 class QueryForm(forms.Form):
-	text = forms.Textfield()
+	text = forms.Charfield(widget=forms.Textarea)
+	#class Meta:
+	#	model = Query
 
 def postQuery(request,userID):
 	f=QueryForm
