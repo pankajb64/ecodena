@@ -1,3 +1,15 @@
+<h1>solution</h1>
+{% if s  %}
+<h1> {{s}}</h1>
+{% endif %}
 
+{% if solution  %}
+<h1>{{ solution }}</h1>
+{% endif %}
+{% if solution.attemptID %}
+
+<h1>OF</h1>
 <p>{{solution.attemptID}}</p>
-<p>{{solution.solutionText}}</p>
+
+{% endif %}
+<p>{{solution.solution}}</p>
