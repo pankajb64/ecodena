@@ -26,7 +26,7 @@ class Comment(models.Model, object):
 	def getTimeStamp(self):
 		return self.timeStamp_f
 	def setTimeStamp(self, Timestamp):
-		self.timeStamp_f = Timeastamp
+		self.timeStamp_f = Timestamp
 	timeStamp = property(getTimeStamp, setTimeStamp)
 
 	
