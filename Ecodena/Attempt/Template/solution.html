@@ -1,15 +1,33 @@
-<h1>solution</h1>
-{% if s  %}
-<h1> {{s}}</h1>
+
+{% if solution %}
+
+<p>Attempt ID - {{solution.attemptID}}</p>
+
+<p>Question - {{solution.questionID}} | Level - {{solution.questionID.level_f }}  | Type - {{solution.questionID.type_f }}</p>
+
+<p>Your Solution - {{solution.solutionText}}</p>
+
+<p> Status - {{solution.status }}</p>
+
+<p> Submitted at - {{solution.timeOfSubmission }}</p>
+
+<hr />
+
+
+{% if not solution.status %}
+
+<h4> Error Report </h4>
+
+<p> Time Required -  {{solution.errorReportID.timeRequirement }} s</p>
+
+<p> Memory Required -  {{solution.errorReportID.memory}} M</p>
+
+<p> Error Type - {{solution.errorReportID.errorType }}</p>
+
+<p> Error Message - {{solution.errorReportID.errorMessage }}</p>
+
+<p> Test Case Level on which error occured - {{solution.errorReportID.testCaseLevel }}</p>
+
 {% endif %}
 
-{% if solution  %}
-<h1>{{ solution }}</h1>
 {% endif %}
-{% if solution.attemptID %}
-
-<h1>OF</h1>
-<p>{{solution.attemptID}}</p>
-
-{% endif %}
-<p>{{solution.solution}}</p>

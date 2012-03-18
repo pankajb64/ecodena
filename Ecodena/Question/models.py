@@ -6,14 +6,22 @@ from django.db import models
 
 class Level(models.Model):
 	levelID_f = models.AutoField(primary_key=True)
-	levelName_F = models.CharField("Level Name", max_length = 20 , null = False, unique=True)
+	levelName_f = models.CharField("Level Name", max_length = 20 , null = False, unique=True)
 
+	def getLevelName(self):
+		return self.levelName_f
+	
+	def setLevelName(self, lname):
+		self.levelName_f =lname
+	
+	levelName = property(getLevelName, setLevelName)		
+	
 	class Meta:
 		verbose_name = 'level'
 		verbose_name_plural = 'levels'
 
 	def __unicode__(self):
-		return self.levelName_F
+		return self.levelName
 	
 	
 
@@ -91,7 +99,7 @@ class TestCase(models.Model, object):
 	caseID_f = models.AutoField(primary_key=True)
 	questionID_f = models.ForeignKey(Question , verbose_name="Question ID", null=False)
 	CASE_TYPE = ((0, 'Low'), (1, 'Medium'), (2, 'High'))
-	caseType_f = models.SmallIntegerField(choices=CASE_TYPE, verbose_name="Type of Case")
+	caseType_f = models.CharField(max_length=40, choices=CASE_TYPE, verbose_name="Type of Case")
 	input_f = models.TextField("Input")	
 	output_f = models.TextField("Output")
 	

@@ -12,23 +12,28 @@ class QueryForm(forms.Form):
 	#class Meta:
 	#	model = Query
 
-def postQuery(request,userID):
-	f=QueryForm
-	dc = { 'form' :f} 
-	context = RequestContext(request, dc)
-	Timestamp=datetime.now()
-	if request.method == 'POST':
-		f=QueryForm(request.POST)
-		if not f.is_valid():
-			return render_to_response('postquery.html',context)
-		else:
-			q=Query()
-			q.queryText=f['text'].data
-			q.userID=User.objects.filter(username=userID)[0]
-			q.queryTime=Timestamp
-			q.save()
-			qID=q.queryID
-			dc = {'queryID' :qID}
-			context = RequestContext(request,dc)
-			return render_to_response('postquery.html',context)
-	return render_to_response('postquery.html',context)
+def postQuery(request):
+	if request.user.is_authenticated():
+		
+		f=QueryForm
+		dc = { 'form' :f} 
+		context = RequestContext(request, dc)
+		Timestamp=datetime.now()
+		if request.method == 'POST':
+			f=QueryForm(request.POST)
+			if not f.is_valid():
+				return render_to_response('postquery.html',context)
+			else:
+				q=Query()
+				q.queryText=f['text'].data
+				q.userID=User.objects.filter(username=userID)[0]
+				q.queryTime=Timestamp
+				q.save()
+				qID=q.queryID
+				dc = {'queryID' :qID}
+				context = RequestContext(request,dc)
+				return render_to_response('postquery.html',context)
+		return render_to_response('postquery.html',context)
+
+	else:
+		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)

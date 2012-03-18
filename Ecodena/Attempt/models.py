@@ -11,9 +11,9 @@ class ErrorReport(models.Model, object):
 	timeRequirement_f = models.FloatField("Time Required for compiling")
 	memory_f = models.FloatField("Memory Requirement")
 	ERROR_TYPE = ((0,'Correct Answer'),(1,'Compilation Error'),(2,'Run Time Error'),(3,'Time limit Exceeded'),(4,'Memory Limit Exceeded'),(5,'Wrong Answer'))
-	errorType_f = models.SmallIntegerField(choices=ERROR_TYPE,verbose_name="Types of Errors") 
+	errorType_f = models.CharField( max_length = 40, choices=ERROR_TYPE,verbose_name="Types of Errors") 
 	errorMessage_f = models.TextField("Error Message generated")
-	testCaseLevel_f = models.SmallIntegerField(choices=TestCase.CASE_TYPE, verbose_name="Test Case Level where error occured (Select High if solution is correct)")
+	testCaseLevel_f = models.CharField(max_length=40, choices=TestCase.CASE_TYPE, verbose_name="Test Case Level where error occured (Select High if solution is correct)")
 
 
 	def getTimeRequirement(self):
@@ -104,11 +104,18 @@ class Attempt(models.Model, object):
 
 	def getSolution(self):
 		return self.solution_f
-	def setSolution(self,attemptID):
-		self.attemptID_f = attemptID
+	def setSolution(self,sol):
+		self.solution_f = sol
 		
 	solutionText = property(getSolution,setSolution)		
-	
+
+	def getQuestionID(self):
+		return self.questionID_f
+	def setQuestionID(self,qID):
+		self.questionID_f = qID
+		
+	questionID = property(getQuestionID,setQuestionID)		
+		
 	class Meta:
 		verbose_name = 'attempt'
 		verbose_name_plural = 'attempts'

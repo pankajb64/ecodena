@@ -18,38 +18,50 @@ class SolutionForm(forms.Form):
 	text = forms.CharField(widget=forms.Textarea)
 	version = forms.ChoiceField()
 		
-def listSolutions(request,userID):
-	solutions = Attempt.objects.filter(userID_f=User.objects.filter(username=userID)[0])
-	return render_to_response('solutions.html',{'solutions':solutions})
+def listSolutions(request):
+	if request.user.is_authenticated():
+		solutions = Attempt.objects.filter(userID_f=request.user)
+		return render_to_response('solutions.html',{'solutions':solutions})
+	else:
+		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
 
-def viewSolution(request,userID,solutionID):
-	s = Attempt.objects.filter(attemptID_f=solutionID)
-	solution = s.filter(userID_f=User.objects.filter(username=userID)[0])[0]
-	return render_to_response('solution.html',{'solution':solution, 's':s})
-
+def viewSolution(request,solutionID):
+	if request.user.is_authenticated():
+		s = Attempt.objects.filter(attemptID_f=solutionID)
+		solution = s.filter(userID_f=request.user)
+		if not solution:
+			return render_to_response('solution.html',{'solution':solution})
+		else :
+			return render_to_response('solution.html',)
+	else:
+		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
+		
 @csrf_protect
 def submitSolution(request):
-	version = CompilerVersion.objects.all()
-	dt =datetime.now()
-	f=SolutionForm()
-	dc = { 'form' :f, 'version' :version}
-	context = RequestContext(request, dc)
-	if request.method =="POST":
-		f=SolutionForm(request.POST)
-		if not f.is_valid():
+	if request.user.is_authenticated():
+		version = CompilerVersion.objects.all()
+		dt =datetime.now()
+		f=SolutionForm()
+		dc = { 'form' :f, 'version' :version}
+		context = RequestContext(request, dc)
+		if request.method =="POST":
+			f=SolutionForm(request.POST)
+			if not f.is_valid():
+				
+				return render_to_response('submitsolution.html', context)
+			else:
+				attempt = Attempt()
+				errorReportID=compileSolution()
+				dc = { 'errorReportID':errorReportID,'version':version,'dt':dt}
+				context = RequestContext(request, dc)
+				return render_to_response('submitsolution.html', context) 
 			
-			return render_to_response('submitsolution.html', context)
-		else:
-			attempt = Attempt()
-			errorReportID=compileSolution()
-			dc = { 'errorReportID':errorReportID,'version':version,'dt':dt}
-			context = RequestContext(request, dc)
-			return render_to_response('submitsolution.html', context) 
+			#language = Language.objects.all()
+			
+		return render_to_response('submitsolution.html',context)
+	else:
+		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
 		
-		#language = Language.objects.all()
-		
-	return render_to_response('submitsolution.html',context)
-	
 def compileSolution(version,solution,question):
 	compiler_ver_lang = version.versionName + ' ' + version.language.languageName
 	if compiler_ver_lang in compilers:
