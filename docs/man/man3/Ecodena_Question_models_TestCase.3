@@ -1,0 +1,182 @@
+.TH "Ecodena::Question::models::TestCase" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ecodena::Question::models::TestCase \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMeta\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBgetTestID\fP"
+.br
+.ti -1c
+.RI "def \fBsetTestID\fP"
+.br
+.ti -1c
+.RI "def \fBgetCaseType\fP"
+.br
+.ti -1c
+.RI "def \fBsetCaseType\fP"
+.br
+.ti -1c
+.RI "def \fBgetOutput\fP"
+.br
+.ti -1c
+.RI "def \fBsetOutput\fP"
+.br
+.ti -1c
+.RI "def \fBgetQuestion\fP"
+.br
+.ti -1c
+.RI "def \fBsetQuestion\fP"
+.br
+.ti -1c
+.RI "def \fB__unicode__\fP"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBcaseID_f\fP"
+.br
+.ti -1c
+.RI "\fBcaseType_f\fP"
+.br
+.ti -1c
+.RI "\fBoutput_f\fP"
+.br
+.ti -1c
+.RI "\fBquestionID_f\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBcaseID_f\fP = models.AutoField(primary_key=True)"
+.br
+.ti -1c
+.RI "tuple \fBquestionID_f\fP = models.ForeignKey(\fBQuestion\fP , verbose_name='Question ID', null=False)"
+.br
+.ti -1c
+.RI "tuple \fBCASE_TYPE\fP = ((0, 'Low'), (1, 'Medium'), (2, 'High'))"
+.br
+.ti -1c
+.RI "tuple \fBcaseType_f\fP = models.CharField(max_length=40, choices=\fBCASE_TYPE\fP, verbose_name='Type of Case')"
+.br
+.ti -1c
+.RI "tuple \fBinput_f\fP = models.TextField('Input')"
+.br
+.ti -1c
+.RI "tuple \fBoutput_f\fP = models.TextField('Output')"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBcaseID\fP = property(getTestID,setTestID)"
+.br
+.ti -1c
+.RI "\fBcaseType\fP = property(getCaseType,setCaseType)"
+.br
+.ti -1c
+.RI "\fBoutput\fP = property(getOutput,setOutput)"
+.br
+.ti -1c
+.RI "\fBquestionID\fP = property(getQuestion,setQuestion)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 98 of file models.py.
+.SH "Member Function Documentation"
+.PP 
+.SS "def Ecodena.Question.models.TestCase.__unicode__ (self)"
+.PP
+Definition at line 137 of file models.py.
+.SS "def Ecodena.Question.models.TestCase.getCaseType (self)"
+.PP
+Definition at line 114 of file models.py.
+.SS "def Ecodena.Question.models.TestCase.getOutput (self)"
+.PP
+Definition at line 121 of file models.py.
+.SS "def Ecodena.Question.models.TestCase.getQuestion (self)"
+.PP
+Definition at line 127 of file models.py.
+.SS "def Ecodena.Question.models.TestCase.getTestID (self)"
+.PP
+Definition at line 107 of file models.py.
+.SS "def Ecodena.Question.models.TestCase.setCaseType (self, ctype)"
+.PP
+Definition at line 116 of file models.py.
+.SS "def Ecodena.Question.models.TestCase.setOutput (self, text)"
+.PP
+Definition at line 123 of file models.py.
+.SS "def Ecodena.Question.models.TestCase.setQuestion (self, qID)"
+.PP
+Definition at line 129 of file models.py.
+.SS "def Ecodena.Question.models.TestCase.setTestID (self, tID)"
+.PP
+Definition at line 109 of file models.py.
+.SH "Member Data Documentation"
+.PP 
+.SS "tuple \fBEcodena.Question.models.TestCase.CASE_TYPE\fP = ((0, 'Low'), (1, 'Medium'), (2, 'High'))\fC [static]\fP"
+.PP
+Definition at line 101 of file models.py.
+.SS "tuple \fBEcodena.Question.models.TestCase.caseID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
+.PP
+Definition at line 99 of file models.py.
+.SS "\fBEcodena.Question.models.TestCase.caseID_f\fP"
+.PP
+Definition at line 109 of file models.py.
+.SS "tuple \fBEcodena.Question.models.TestCase.caseType_f\fP = models.CharField(max_length=40, choices=\fBCASE_TYPE\fP, verbose_name='Type of Case')\fC [static]\fP"
+.PP
+Definition at line 102 of file models.py.
+.SS "\fBEcodena.Question.models.TestCase.caseType_f\fP"
+.PP
+Definition at line 116 of file models.py.
+.SS "tuple \fBEcodena.Question.models.TestCase.input_f\fP = models.TextField('Input')\fC [static]\fP"
+.PP
+Definition at line 103 of file models.py.
+.SS "tuple \fBEcodena.Question.models.TestCase.output_f\fP = models.TextField('Output')\fC [static]\fP"
+.PP
+Definition at line 104 of file models.py.
+.SS "\fBEcodena.Question.models.TestCase.output_f\fP"
+.PP
+Definition at line 123 of file models.py.
+.SS "tuple \fBEcodena.Question.models.TestCase.questionID_f\fP = models.ForeignKey(\fBQuestion\fP , verbose_name='Question ID', null=False)\fC [static]\fP"
+.PP
+Definition at line 100 of file models.py.
+.SS "\fBEcodena.Question.models.TestCase.questionID_f\fP"
+.PP
+Definition at line 129 of file models.py.
+.SH "Property Documentation"
+.PP 
+.SS "Ecodena.Question.models.TestCase.caseID = property(getTestID,setTestID)\fC [static]\fP"
+.PP
+Definition at line 111 of file models.py.
+.SS "Ecodena.Question.models.TestCase.caseType = property(getCaseType,setCaseType)\fC [static]\fP"
+.PP
+Definition at line 118 of file models.py.
+.SS "Ecodena.Question.models.TestCase.output = property(getOutput,setOutput)\fC [static]\fP"
+.PP
+Definition at line 125 of file models.py.
+.SS "Ecodena.Question.models.TestCase.questionID = property(getQuestion,setQuestion)\fC [static]\fP"
+.PP
+Definition at line 131 of file models.py.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Ecodena from the source code.

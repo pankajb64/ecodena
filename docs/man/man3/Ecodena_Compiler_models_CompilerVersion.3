@@ -1,0 +1,122 @@
+.TH "Ecodena::Compiler::models::CompilerVersion" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ecodena::Compiler::models::CompilerVersion \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMeta\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBgetVersionName\fP"
+.br
+.ti -1c
+.RI "def \fBsetVersionName\fP"
+.br
+.ti -1c
+.RI "def \fBgetLanguage\fP"
+.br
+.ti -1c
+.RI "def \fBsetLanguage\fP"
+.br
+.ti -1c
+.RI "def \fBlanguageName\fP"
+.br
+.ti -1c
+.RI "def \fB__unicode__\fP"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBversionName_f\fP"
+.br
+.ti -1c
+.RI "\fBlanguage_f\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBversionID_f\fP = models.AutoField(primary_key=True)"
+.br
+.ti -1c
+.RI "tuple \fBversionName_f\fP = models.CharField('Version Name (Code or Number)', max_length=40, null=False)"
+.br
+.ti -1c
+.RI "tuple \fBlanguage_f\fP = models.ForeignKey(\fBLanguage\fP, verbose_name='Language of Compilation', null=False)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBversionName\fP = property(getVersionName, setVersionName)"
+.br
+.ti -1c
+.RI "\fBlanguage\fP = property(getLanguage, setLanguage)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 28 of file models.py.
+.SH "Member Function Documentation"
+.PP 
+.SS "def Ecodena.Compiler.models.CompilerVersion.__unicode__ (self)"
+.PP
+Definition at line 56 of file models.py.
+.SS "def Ecodena.Compiler.models.CompilerVersion.getLanguage (self)"
+.PP
+Definition at line 41 of file models.py.
+.SS "def Ecodena.Compiler.models.CompilerVersion.getVersionName (self)"
+.PP
+Definition at line 33 of file models.py.
+.SS "def Ecodena.Compiler.models.CompilerVersion.languageName (self)"
+.PP
+Definition at line 49 of file models.py.
+.SS "def Ecodena.Compiler.models.CompilerVersion.setLanguage (self, language)"
+.PP
+Definition at line 44 of file models.py.
+.SS "def Ecodena.Compiler.models.CompilerVersion.setVersionName (self, versionName)"
+.PP
+Definition at line 36 of file models.py.
+.SH "Member Data Documentation"
+.PP 
+.SS "tuple \fBEcodena.Compiler.models.CompilerVersion.language_f\fP = models.ForeignKey(\fBLanguage\fP, verbose_name='Language of Compilation', null=False)\fC [static]\fP"
+.PP
+Definition at line 31 of file models.py.
+.SS "\fBEcodena.Compiler.models.CompilerVersion.language_f\fP"
+.PP
+Definition at line 44 of file models.py.
+.SS "tuple \fBEcodena.Compiler.models.CompilerVersion.versionID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
+.PP
+Definition at line 29 of file models.py.
+.SS "\fBEcodena.Compiler.models.CompilerVersion.versionName_f\fP"
+.PP
+Definition at line 36 of file models.py.
+.SS "tuple \fBEcodena.Compiler.models.CompilerVersion.versionName_f\fP = models.CharField('Version Name (Code or Number)', max_length=40, null=False)\fC [static]\fP"
+.PP
+Definition at line 30 of file models.py.
+.SH "Property Documentation"
+.PP 
+.SS "Ecodena.Compiler.models.CompilerVersion.language = property(getLanguage, setLanguage)\fC [static]\fP"
+.PP
+Definition at line 47 of file models.py.
+.SS "Ecodena.Compiler.models.CompilerVersion.versionName = property(getVersionName, setVersionName)\fC [static]\fP"
+.PP
+Definition at line 39 of file models.py.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Ecodena from the source code.

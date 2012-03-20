@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dd/dee/class_ecodena_1_1_query_1_1views_1_1_query_form" kind="class" prot="public">
+    <compoundname>Ecodena::Query::views::QueryForm</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="dd/dee/class_ecodena_1_1_query_1_1views_1_1_query_form_1a2c0801fd8cba4ce11004ea7c14823bfa" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.Query.views.QueryForm.text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <initializer>forms.CharField(widget=forms.Textarea)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/views.py" line="11" bodyfile="/home/panx/ecodena/src/Ecodena/Query/views.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Query/views.py" line="11" bodyfile="/home/panx/ecodena/src/Ecodena/Query/views.py" bodystart="10" bodyend="15"/>
+    <listofallmembers>
+      <member refid="dd/dee/class_ecodena_1_1_query_1_1views_1_1_query_form_1a2c0801fd8cba4ce11004ea7c14823bfa" prot="public" virt="non-virtual"><scope>Ecodena::Query::views::QueryForm</scope><name>text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,505 @@
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt}{
+\section{Ecodena.Attempt.models.Attempt Class Reference}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt}\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_1_1_meta}{Meta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a09621434733185bbfaad03baeb542e8c}{getAttemptID}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ae37cf365bc17bd05860bffedfc6e8024}{setAttemptID}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a2288edd3e2db6b9f0eba1f13724ab2cb}{isCorrect}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a0216fa674160d728cbecad4cc61460bd}{setStatus}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a9ec58d1721623601cbbb0317cc2e5bd7}{getTimeOfSubmission}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_acb5e68040b88170abadacbe5c5a07700}{setTimeOfSubmission}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a3c152422e0560c116aed26f6f8054e94}{getUserID}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a9094fdb34b59ebee5a1196401654a82c}{setUserID}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a3b4fec981da7e11a993d9f7ad6731a97}{getErrorReportID}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a337d130f509d1f0d192446320cd26e0a}{setErrorReportID}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a0012bb51837a6fa0ba28391043815435}{getSolution}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a6fe57d3945acf48901ba712d4709d452}{setSolution}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a10be25c031836b71f3caa472b15926db}{getQuestionID}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a98aea32dc0b17c09080c9ce3055ae2ef}{setQuestionID}
+\item 
+def \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a1465d1b46a90132d359af87dde819e95}{\_\-\_\-unicode\_\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a5868c5092dc59689fe48af770ea41bc5}{attemptID\_\-f}
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_aa0e8d9e10aa7d394777a8dcc138b67bf}{status\_\-f}
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a4cf15d230e30719df408282601d157fa}{timeOfSubmission\_\-f}
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ad138a4fd5a48644d71382b83a9ba4a04}{userID\_\-f}
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ac1e3f9e2d93bbdd1d339f9331a560926}{errorReportID\_\-f}
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a8cadfc3c3993ddedf4f8a49e67b71e19}{solution\_\-f}
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a52c7956666bd826ed90d2db15d6f876b}{questionID\_\-f}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ac5cbf660353ba1658687b993929d0cbd}{attemptID\_\-f} = models.AutoField(primary\_\-key=True)
+\item 
+tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_acbd8a4ec39ee2520f9540c23bf78982b}{questionID\_\-f} = models.ForeignKey(\hyperlink{class_ecodena_1_1_question_1_1models_1_1_question}{Question}, verbose\_\-name=\char`\"{}Question\char`\"{}, null=False)
+\item 
+tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ac1f50e1b0c5ccfc3e16fff6b5069c01e}{userID\_\-f} = models.ForeignKey(User, verbose\_\-name=\char`\"{}User ID\char`\"{}, null=False)
+\item 
+tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a1b63280fe142dfde79c43df974cf42dd}{solution\_\-f} = models.TextField(\char`\"{}Solution uploaded by the User\char`\"{}, null=False)
+\item 
+tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ae2cd37972f3706554532bf2e958c5b7d}{errorReportID\_\-f} = models.ForeignKey(\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_error_report}{ErrorReport},verbose\_\-name=\char`\"{}Error Report for the Solution\char`\"{}, null=True)
+\item 
+tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a59ab4c46b6d8e82311f400a9f86398f3}{status\_\-f} = models.BooleanField(\char`\"{}Status of attempt -\/ true = right, false = wrong\char`\"{}, blank=True, default=False)
+\item 
+tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ae384b3bf053f841002aa0232bccfafaa}{timeOfSubmission\_\-f} = models.DateTimeField(\char`\"{}Time of Submission\char`\"{}, null=False)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a69f17e74058d4360d4ca443bd5c27cbc}{attemptID} = property(getAttemptID,setAttemptID)
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a1110fd10d7a9e73bae4c5f4208f24d9b}{status} = property(isCorrect, setStatus)
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a7ca881b180c5ce4d8e3169d0836422b7}{timeOfSubmission} = property(getTimeOfSubmission,setTimeOfSubmission)
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a30b68dbbff514c8422ba89a5e65e0e7d}{userID} = property(getUserID,setUserID)
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a76b4e1e2270faa387469f0a6b5bd47ec}{errorReportID} = property(getErrorReportID,setErrorReportID)
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a0ef6767e7f18226ecd46be45e35f357b}{solutionText} = property(getSolution,setSolution)
+\item 
+\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_attempt_af6d21b0d06e1565c641f9526ab4891d4}{questionID} = property(getQuestionID,setQuestionID)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 61 of file models.py.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a1465d1b46a90132d359af87dde819e95}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!\_\-\_\-unicode\_\-\_\-@{\_\-\_\-unicode\_\-\_\-}}
+\index{\_\-\_\-unicode\_\-\_\-@{\_\-\_\-unicode\_\-\_\-}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{\_\-\_\-unicode\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.\_\-\_\-unicode\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a1465d1b46a90132d359af87dde819e95}
+
+
+Definition at line 123 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a09621434733185bbfaad03baeb542e8c}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!getAttemptID@{getAttemptID}}
+\index{getAttemptID@{getAttemptID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{getAttemptID}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.getAttemptID (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a09621434733185bbfaad03baeb542e8c}
+
+
+Definition at line 71 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a3b4fec981da7e11a993d9f7ad6731a97}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!getErrorReportID@{getErrorReportID}}
+\index{getErrorReportID@{getErrorReportID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{getErrorReportID}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.getErrorReportID (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a3b4fec981da7e11a993d9f7ad6731a97}
+
+
+Definition at line 99 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a10be25c031836b71f3caa472b15926db}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!getQuestionID@{getQuestionID}}
+\index{getQuestionID@{getQuestionID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{getQuestionID}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.getQuestionID (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a10be25c031836b71f3caa472b15926db}
+
+
+Definition at line 112 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a0012bb51837a6fa0ba28391043815435}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!getSolution@{getSolution}}
+\index{getSolution@{getSolution}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{getSolution}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.getSolution (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a0012bb51837a6fa0ba28391043815435}
+
+
+Definition at line 105 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a9ec58d1721623601cbbb0317cc2e5bd7}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!getTimeOfSubmission@{getTimeOfSubmission}}
+\index{getTimeOfSubmission@{getTimeOfSubmission}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{getTimeOfSubmission}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.getTimeOfSubmission (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a9ec58d1721623601cbbb0317cc2e5bd7}
+
+
+Definition at line 85 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a3c152422e0560c116aed26f6f8054e94}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!getUserID@{getUserID}}
+\index{getUserID@{getUserID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{getUserID}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.getUserID (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a3c152422e0560c116aed26f6f8054e94}
+
+
+Definition at line 92 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a2288edd3e2db6b9f0eba1f13724ab2cb}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!isCorrect@{isCorrect}}
+\index{isCorrect@{isCorrect}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{isCorrect}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.isCorrect (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a2288edd3e2db6b9f0eba1f13724ab2cb}
+
+
+Definition at line 78 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ae37cf365bc17bd05860bffedfc6e8024}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!setAttemptID@{setAttemptID}}
+\index{setAttemptID@{setAttemptID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{setAttemptID}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.setAttemptID (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{aID}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_ae37cf365bc17bd05860bffedfc6e8024}
+
+
+Definition at line 73 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a337d130f509d1f0d192446320cd26e0a}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!setErrorReportID@{setErrorReportID}}
+\index{setErrorReportID@{setErrorReportID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{setErrorReportID}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.setErrorReportID (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{reportID}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a337d130f509d1f0d192446320cd26e0a}
+
+
+Definition at line 101 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a98aea32dc0b17c09080c9ce3055ae2ef}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!setQuestionID@{setQuestionID}}
+\index{setQuestionID@{setQuestionID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{setQuestionID}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.setQuestionID (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{qID}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a98aea32dc0b17c09080c9ce3055ae2ef}
+
+
+Definition at line 114 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a6fe57d3945acf48901ba712d4709d452}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!setSolution@{setSolution}}
+\index{setSolution@{setSolution}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{setSolution}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.setSolution (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{sol}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a6fe57d3945acf48901ba712d4709d452}
+
+
+Definition at line 107 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a0216fa674160d728cbecad4cc61460bd}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{setStatus}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.setStatus (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{status}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a0216fa674160d728cbecad4cc61460bd}
+
+
+Definition at line 80 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_acb5e68040b88170abadacbe5c5a07700}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!setTimeOfSubmission@{setTimeOfSubmission}}
+\index{setTimeOfSubmission@{setTimeOfSubmission}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{setTimeOfSubmission}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.setTimeOfSubmission (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{time}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_acb5e68040b88170abadacbe5c5a07700}
+
+
+Definition at line 87 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a9094fdb34b59ebee5a1196401654a82c}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!setUserID@{setUserID}}
+\index{setUserID@{setUserID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{setUserID}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.models.Attempt.setUserID (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{uID}
+\end{DoxyParamCaption}
+)}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a9094fdb34b59ebee5a1196401654a82c}
+
+
+Definition at line 94 of file models.py.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ac5cbf660353ba1658687b993929d0cbd}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!attemptID\_\-f@{attemptID\_\-f}}
+\index{attemptID\_\-f@{attemptID\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{attemptID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Attempt.models.Attempt.attemptID\_\-f} = models.AutoField(primary\_\-key=True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_ac5cbf660353ba1658687b993929d0cbd}
+
+
+Definition at line 62 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a5868c5092dc59689fe48af770ea41bc5}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!attemptID\_\-f@{attemptID\_\-f}}
+\index{attemptID\_\-f@{attemptID\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{attemptID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Attempt.models.Attempt.attemptID\_\-f}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a5868c5092dc59689fe48af770ea41bc5}
+
+
+Definition at line 73 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ae2cd37972f3706554532bf2e958c5b7d}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!errorReportID\_\-f@{errorReportID\_\-f}}
+\index{errorReportID\_\-f@{errorReportID\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{errorReportID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Attempt.models.Attempt.errorReportID\_\-f} = models.ForeignKey({\bf ErrorReport},verbose\_\-name=\char`\"{}Error Report for the Solution\char`\"{}, null=True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_ae2cd37972f3706554532bf2e958c5b7d}
+
+
+Definition at line 66 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ac1e3f9e2d93bbdd1d339f9331a560926}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!errorReportID\_\-f@{errorReportID\_\-f}}
+\index{errorReportID\_\-f@{errorReportID\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{errorReportID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Attempt.models.Attempt.errorReportID\_\-f}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_ac1e3f9e2d93bbdd1d339f9331a560926}
+
+
+Definition at line 101 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_acbd8a4ec39ee2520f9540c23bf78982b}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!questionID\_\-f@{questionID\_\-f}}
+\index{questionID\_\-f@{questionID\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{questionID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Attempt.models.Attempt.questionID\_\-f} = models.ForeignKey({\bf Question}, verbose\_\-name=\char`\"{}Question\char`\"{}, null=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_acbd8a4ec39ee2520f9540c23bf78982b}
+
+
+Definition at line 63 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a52c7956666bd826ed90d2db15d6f876b}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!questionID\_\-f@{questionID\_\-f}}
+\index{questionID\_\-f@{questionID\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{questionID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Attempt.models.Attempt.questionID\_\-f}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a52c7956666bd826ed90d2db15d6f876b}
+
+
+Definition at line 114 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a1b63280fe142dfde79c43df974cf42dd}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!solution\_\-f@{solution\_\-f}}
+\index{solution\_\-f@{solution\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{solution\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Attempt.models.Attempt.solution\_\-f} = models.TextField(\char`\"{}Solution uploaded by the User\char`\"{}, null=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a1b63280fe142dfde79c43df974cf42dd}
+
+
+Definition at line 65 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a8cadfc3c3993ddedf4f8a49e67b71e19}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!solution\_\-f@{solution\_\-f}}
+\index{solution\_\-f@{solution\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{solution\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Attempt.models.Attempt.solution\_\-f}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a8cadfc3c3993ddedf4f8a49e67b71e19}
+
+
+Definition at line 107 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_aa0e8d9e10aa7d394777a8dcc138b67bf}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!status\_\-f@{status\_\-f}}
+\index{status\_\-f@{status\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{status\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Attempt.models.Attempt.status\_\-f}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_aa0e8d9e10aa7d394777a8dcc138b67bf}
+
+
+Definition at line 80 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a59ab4c46b6d8e82311f400a9f86398f3}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!status\_\-f@{status\_\-f}}
+\index{status\_\-f@{status\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{status\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Attempt.models.Attempt.status\_\-f} = models.BooleanField(\char`\"{}Status of attempt -\/ true = right, false = wrong\char`\"{}, blank=True, default=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a59ab4c46b6d8e82311f400a9f86398f3}
+
+
+Definition at line 67 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ae384b3bf053f841002aa0232bccfafaa}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!timeOfSubmission\_\-f@{timeOfSubmission\_\-f}}
+\index{timeOfSubmission\_\-f@{timeOfSubmission\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{timeOfSubmission\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Attempt.models.Attempt.timeOfSubmission\_\-f} = models.DateTimeField(\char`\"{}Time of Submission\char`\"{}, null=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_ae384b3bf053f841002aa0232bccfafaa}
+
+
+Definition at line 68 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a4cf15d230e30719df408282601d157fa}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!timeOfSubmission\_\-f@{timeOfSubmission\_\-f}}
+\index{timeOfSubmission\_\-f@{timeOfSubmission\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{timeOfSubmission\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Attempt.models.Attempt.timeOfSubmission\_\-f}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a4cf15d230e30719df408282601d157fa}
+
+
+Definition at line 87 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ad138a4fd5a48644d71382b83a9ba4a04}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!userID\_\-f@{userID\_\-f}}
+\index{userID\_\-f@{userID\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{userID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Attempt.models.Attempt.userID\_\-f}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_ad138a4fd5a48644d71382b83a9ba4a04}
+
+
+Definition at line 94 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_ac1f50e1b0c5ccfc3e16fff6b5069c01e}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!userID\_\-f@{userID\_\-f}}
+\index{userID\_\-f@{userID\_\-f}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{userID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Attempt.models.Attempt.userID\_\-f} = models.ForeignKey(User, verbose\_\-name=\char`\"{}User ID\char`\"{}, null=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_ac1f50e1b0c5ccfc3e16fff6b5069c01e}
+
+
+Definition at line 64 of file models.py.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a69f17e74058d4360d4ca443bd5c27cbc}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!attemptID@{attemptID}}
+\index{attemptID@{attemptID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{attemptID}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Attempt.models.Attempt.attemptID = property(getAttemptID,setAttemptID)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a69f17e74058d4360d4ca443bd5c27cbc}
+
+
+Definition at line 75 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a76b4e1e2270faa387469f0a6b5bd47ec}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!errorReportID@{errorReportID}}
+\index{errorReportID@{errorReportID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{errorReportID}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Attempt.models.Attempt.errorReportID = property(getErrorReportID,setErrorReportID)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a76b4e1e2270faa387469f0a6b5bd47ec}
+
+
+Definition at line 103 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_af6d21b0d06e1565c641f9526ab4891d4}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!questionID@{questionID}}
+\index{questionID@{questionID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{questionID}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Attempt.models.Attempt.questionID = property(getQuestionID,setQuestionID)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_af6d21b0d06e1565c641f9526ab4891d4}
+
+
+Definition at line 117 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a0ef6767e7f18226ecd46be45e35f357b}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!solutionText@{solutionText}}
+\index{solutionText@{solutionText}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{solutionText}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Attempt.models.Attempt.solutionText = property(getSolution,setSolution)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a0ef6767e7f18226ecd46be45e35f357b}
+
+
+Definition at line 110 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a1110fd10d7a9e73bae4c5f4208f24d9b}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!status@{status}}
+\index{status@{status}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{status}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Attempt.models.Attempt.status = property(isCorrect, setStatus)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a1110fd10d7a9e73bae4c5f4208f24d9b}
+
+
+Definition at line 82 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a7ca881b180c5ce4d8e3169d0836422b7}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!timeOfSubmission@{timeOfSubmission}}
+\index{timeOfSubmission@{timeOfSubmission}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{timeOfSubmission}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Attempt.models.Attempt.timeOfSubmission = property(getTimeOfSubmission,setTimeOfSubmission)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a7ca881b180c5ce4d8e3169d0836422b7}
+
+
+Definition at line 89 of file models.py.
+
+\hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_attempt_a30b68dbbff514c8422ba89a5e65e0e7d}{
+\index{Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}!userID@{userID}}
+\index{userID@{userID}!Ecodena::Attempt::models::Attempt@{Ecodena::Attempt::models::Attempt}}
+\subsubsection[{userID}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Attempt.models.Attempt.userID = property(getUserID,setUserID)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_a30b68dbbff514c8422ba89a5e65e0e7d}
+
+
+Definition at line 96 of file models.py.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/panx/ecodena/src/Ecodena/Attempt/\hyperlink{_attempt_2models_8py}{models.py}\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dd/d70/namespace_ecodena_1_1_attempt_1_1admin" kind="namespace">
+    <compoundname>Ecodena::Attempt::admin</compoundname>
+    <innerclass refid="da/d7b/class_ecodena_1_1_attempt_1_1admin_1_1_attempt_admin" prot="public">Ecodena::Attempt::admin::AttemptAdmin</innerclass>
+    <innerclass refid="d6/dbe/class_ecodena_1_1_attempt_1_1admin_1_1_error_report_admin" prot="public">Ecodena::Attempt::admin::ErrorReportAdmin</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Attempt/admin.py" line="1"/>
+  </compounddef>
+</doxygen>

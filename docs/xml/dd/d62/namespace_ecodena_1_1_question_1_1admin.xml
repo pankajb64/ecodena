@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dd/d62/namespace_ecodena_1_1_question_1_1admin" kind="namespace">
+    <compoundname>Ecodena::Question::admin</compoundname>
+    <innerclass refid="d3/d63/class_ecodena_1_1_question_1_1admin_1_1_type_inline" prot="public">Ecodena::Question::admin::TypeInline</innerclass>
+    <innerclass refid="d9/d52/class_ecodena_1_1_question_1_1admin_1_1_level_inline" prot="public">Ecodena::Question::admin::LevelInline</innerclass>
+    <innerclass refid="de/dbf/class_ecodena_1_1_question_1_1admin_1_1_question_admin" prot="public">Ecodena::Question::admin::QuestionAdmin</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Question/admin.py" line="1"/>
+  </compounddef>
+</doxygen>

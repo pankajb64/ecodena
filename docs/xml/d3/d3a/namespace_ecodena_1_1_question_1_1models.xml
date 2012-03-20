@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d3/d3a/namespace_ecodena_1_1_question_1_1models" kind="namespace">
+    <compoundname>Ecodena::Question::models</compoundname>
+    <innerclass refid="da/d99/class_ecodena_1_1_question_1_1models_1_1_level" prot="public">Ecodena::Question::models::Level</innerclass>
+    <innerclass refid="d4/d6c/class_ecodena_1_1_question_1_1models_1_1_type" prot="public">Ecodena::Question::models::Type</innerclass>
+    <innerclass refid="d1/d67/class_ecodena_1_1_question_1_1models_1_1_question" prot="public">Ecodena::Question::models::Question</innerclass>
+    <innerclass refid="d8/d19/class_ecodena_1_1_question_1_1models_1_1_battle_question" prot="public">Ecodena::Question::models::BattleQuestion</innerclass>
+    <innerclass refid="d4/d96/class_ecodena_1_1_question_1_1models_1_1_test_case" prot="public">Ecodena::Question::models::TestCase</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_35f7ccc82384357e4ec44312d56be209" kind="dir">
+    <compoundname>/home/panx/ecodena/src/Ecodena/</compoundname>
+    <innerdir refid="dir_ba92d13c31fabacfe88f6892b3b15a7c">/home/panx/ecodena/src/Ecodena/Attempt/</innerdir>
+    <innerdir refid="dir_6b58f1c50a3675fff42ad2c8dd247006">/home/panx/ecodena/src/Ecodena/Comment/</innerdir>
+    <innerdir refid="dir_33c9735f8cb55947a73943a394478033">/home/panx/ecodena/src/Ecodena/Compiler/</innerdir>
+    <innerdir refid="dir_9d870f05215bbe24133c9f2cf4869049">/home/panx/ecodena/src/Ecodena/Main/</innerdir>
+    <innerdir refid="dir_5b0185a9e6ce469f6e23365159ff2bd3">/home/panx/ecodena/src/Ecodena/Query/</innerdir>
+    <innerdir refid="dir_a585385b661e5e61fcc768741148edf7">/home/panx/ecodena/src/Ecodena/Question/</innerdir>
+    <innerdir refid="dir_81302d4ec88b5dbbf464d86682b4b669">/home/panx/ecodena/src/Ecodena/User/</innerdir>
+    <innerfile refid="d3/d9a/____init_____8py">__init__.py</innerfile>
+    <innerfile refid="d8/d54/manage_8py">manage.py</innerfile>
+    <innerfile refid="d0/def/settings_8py">settings.py</innerfile>
+    <innerfile refid="d1/d9e/urls_8py">urls.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/"/>
+  </compounddef>
+</doxygen>

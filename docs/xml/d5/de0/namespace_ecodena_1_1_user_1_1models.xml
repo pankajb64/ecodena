@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d5/de0/namespace_ecodena_1_1_user_1_1models" kind="namespace">
+    <compoundname>Ecodena::User::models</compoundname>
+    <innerclass refid="da/d3e/class_ecodena_1_1_user_1_1models_1_1_admin" prot="public">Ecodena::User::models::Admin</innerclass>
+    <innerclass refid="d2/d55/class_ecodena_1_1_user_1_1models_1_1_programmer" prot="public">Ecodena::User::models::Programmer</innerclass>
+    <innerclass refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile" prot="public">Ecodena::User::models::Profile</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="1"/>
+  </compounddef>
+</doxygen>

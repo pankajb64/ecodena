@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d6/d95/namespace_ecodena_1_1_question_1_1views" kind="namespace">
+    <compoundname>Ecodena::Question::views</compoundname>
+    <innerclass refid="d1/dd1/class_ecodena_1_1_question_1_1views_1_1_comment_form" prot="public">Ecodena::Question::views::CommentForm</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d6/d95/namespace_ecodena_1_1_question_1_1views_1a7a4f23d428839e1fae059d146fbe3673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Question.views.test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Question/views.py" line="14" bodyfile="/home/panx/ecodena/src/Ecodena/Question/views.py" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d95/namespace_ecodena_1_1_question_1_1views_1a962dcb94f82ca7ea9922ab42a136d11e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Question.views.listQuestions</definition>
+        <argsstring></argsstring>
+        <name>listQuestions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Question/views.py" line="18" bodyfile="/home/panx/ecodena/src/Ecodena/Question/views.py" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d95/namespace_ecodena_1_1_question_1_1views_1ad422132da431d3d9d298858e38ff0d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Question.views.viewQuestionByID</definition>
+        <argsstring></argsstring>
+        <name>viewQuestionByID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Question/views.py" line="22" bodyfile="/home/panx/ecodena/src/Ecodena/Question/views.py" bodystart="22" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Question/views.py" line="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d7/ded/class_ecodena_1_1_query_1_1tests_1_1_simple_test" kind="class" prot="public">
+    <compoundname>Ecodena::Query::tests::SimpleTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/ded/class_ecodena_1_1_query_1_1tests_1_1_simple_test_1ac71b2c2f6ac179ddd43194ad1dbbff2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.tests.SimpleTest.test_basic_addition</definition>
+        <argsstring></argsstring>
+        <name>test_basic_addition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>
+Tests that 1 + 1 always equals 2.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/tests.py" line="12" bodyfile="/home/panx/ecodena/src/Ecodena/Query/tests.py" bodystart="12" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="95">
+        <label>TestCase</label>
+      </node>
+      <node id="94">
+        <label>Ecodena.Query.tests.SimpleTest</label>
+        <link refid="d7/ded/class_ecodena_1_1_query_1_1tests_1_1_simple_test"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="97">
+        <label>TestCase</label>
+      </node>
+      <node id="96">
+        <label>Ecodena.Query.tests.SimpleTest</label>
+        <link refid="d7/ded/class_ecodena_1_1_query_1_1tests_1_1_simple_test"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/panx/ecodena/src/Ecodena/Query/tests.py" line="12" bodyfile="/home/panx/ecodena/src/Ecodena/Query/tests.py" bodystart="11" bodyend="18"/>
+    <listofallmembers>
+      <member refid="d7/ded/class_ecodena_1_1_query_1_1tests_1_1_simple_test_1ac71b2c2f6ac179ddd43194ad1dbbff2e" prot="public" virt="non-virtual"><scope>Ecodena::Query::tests::SimpleTest</scope><name>test_basic_addition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

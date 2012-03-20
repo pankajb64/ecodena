@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dd/dc4/class_ecodena_1_1_question_1_1models_1_1_level_1_1_meta" kind="class" prot="public">
+    <compoundname>Ecodena::Question::models::Level::Meta</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="dd/dc4/class_ecodena_1_1_question_1_1models_1_1_level_1_1_meta_1a1fd3ff0fe1df95529bf7c74fe72fea51" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Ecodena.Question.models.Level.Meta.verbose_name</definition>
+        <argsstring></argsstring>
+        <name>verbose_name</name>
+        <initializer>&apos;level&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="20" bodyfile="/home/panx/ecodena/src/Ecodena/Question/models.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dc4/class_ecodena_1_1_question_1_1models_1_1_level_1_1_meta_1a0bcd87e70ea14c111af94c17deb2257e" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Ecodena.Question.models.Level.Meta.verbose_name_plural</definition>
+        <argsstring></argsstring>
+        <name>verbose_name_plural</name>
+        <initializer>&apos;levels&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="21" bodyfile="/home/panx/ecodena/src/Ecodena/Question/models.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="20" bodyfile="/home/panx/ecodena/src/Ecodena/Question/models.py" bodystart="19" bodyend="22"/>
+    <listofallmembers>
+      <member refid="dd/dc4/class_ecodena_1_1_question_1_1models_1_1_level_1_1_meta_1a1fd3ff0fe1df95529bf7c74fe72fea51" prot="public" virt="non-virtual"><scope>Ecodena::Question::models::Level::Meta</scope><name>verbose_name</name></member>
+      <member refid="dd/dc4/class_ecodena_1_1_question_1_1models_1_1_level_1_1_meta_1a0bcd87e70ea14c111af94c17deb2257e" prot="public" virt="non-virtual"><scope>Ecodena::Question::models::Level::Meta</scope><name>verbose_name_plural</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

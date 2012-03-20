@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="de/da8/namespace_ecodena_1_1_query_1_1views" kind="namespace">
+    <compoundname>Ecodena::Query::views</compoundname>
+    <innerclass refid="dd/dee/class_ecodena_1_1_query_1_1views_1_1_query_form" prot="public">Ecodena::Query::views::QueryForm</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="de/da8/namespace_ecodena_1_1_query_1_1views_1a694a1ef99cb6f634b1f8df56848589cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.views.postQuery</definition>
+        <argsstring></argsstring>
+        <name>postQuery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/views.py" line="15" bodyfile="/home/panx/ecodena/src/Ecodena/Query/views.py" bodystart="15" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Query/views.py" line="1"/>
+  </compounddef>
+</doxygen>

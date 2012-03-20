@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta" kind="class" prot="public">
+    <compoundname>Ecodena::Query::models::Query::Meta</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta_1aa23af14d7fe26b0599114e73201de85c" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Ecodena.Query.models.Query.Meta.verbose_name</definition>
+        <argsstring></argsstring>
+        <name>verbose_name</name>
+        <initializer>&apos;query&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="72" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta_1ac57db1e879cded42a3f4d35c04c56be8" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Ecodena.Query.models.Query.Meta.verbose_name_plural</definition>
+        <argsstring></argsstring>
+        <name>verbose_name_plural</name>
+        <initializer>&apos;queries&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="73" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="72" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="71" bodyend="74"/>
+    <listofallmembers>
+      <member refid="d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta_1aa23af14d7fe26b0599114e73201de85c" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query::Meta</scope><name>verbose_name</name></member>
+      <member refid="d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta_1ac57db1e879cded42a3f4d35c04c56be8" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query::Meta</scope><name>verbose_name_plural</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="df/de6/_compiler_2admin_8py" kind="file">
+    <compoundname>admin.py</compoundname>
+    <innerclass refid="d3/de1/class_ecodena_1_1_compiler_1_1admin_1_1_language_admin" prot="public">Ecodena::Compiler::admin::LanguageAdmin</innerclass>
+    <innerclass refid="dc/dbe/class_ecodena_1_1_compiler_1_1admin_1_1_compiler_version_admin" prot="public">Ecodena::Compiler::admin::CompilerVersionAdmin</innerclass>
+    <innernamespace refid="d8/deb/namespace_ecodena_1_1_compiler_1_1admin">Ecodena::Compiler::admin</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="d8/deb/namespace_ecodena_1_1_compiler_1_1admin" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>Compiler.models<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Language,<sp/>CompilerVersion</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>django.contrib<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>admin</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d3/de1/class_ecodena_1_1_compiler_1_1admin_1_1_language_admin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/de1/class_ecodena_1_1_compiler_1_1admin_1_1_language_admin" kindref="compound">LanguageAdmin</ref>(admin.ModelAdmin):</highlight></codeline>
+<codeline lineno="5" refid="d3/de1/class_ecodena_1_1_compiler_1_1admin_1_1_language_admin_1a2275c63ac91ec5b4544fc265ae6fa65f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list_display<sp/><sp/><sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;languageName_f&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="dc/dbe/class_ecodena_1_1_compiler_1_1admin_1_1_compiler_version_admin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/dbe/class_ecodena_1_1_compiler_1_1admin_1_1_compiler_version_admin" kindref="compound">CompilerVersionAdmin</ref>(admin.ModelAdmin):</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#raw_id_fields<sp/>=<sp/>[&apos;language_f&apos;]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="dc/dbe/class_ecodena_1_1_compiler_1_1admin_1_1_compiler_version_admin_1ac42037866619b1da3ca31bfb4bf78536" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list_display<sp/>=<sp/>(<sp/></highlight><highlight class="stringliteral">&apos;versionName_f&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;languageName&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">admin.site.register(Language,<sp/>LanguageAdmin)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">admin.site.register(CompilerVersion,<sp/>CompilerVersionAdmin)</highlight></codeline>
+    </programlisting>
+    <location file="/home/panx/ecodena/src/Ecodena/Compiler/admin.py"/>
+  </compounddef>
+</doxygen>

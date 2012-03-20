@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="da/d3e/class_ecodena_1_1_user_1_1models_1_1_admin" kind="class" prot="public">
+    <compoundname>Ecodena::User::models::Admin</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">User</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d3e/class_ecodena_1_1_user_1_1models_1_1_admin_1a293f0c21259be254894ed7c9201bf9d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.User.models.Admin.resolveQuery</definition>
+        <argsstring></argsstring>
+        <name>resolveQuery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="58" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="58" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>Ecodena.User.models.Admin</label>
+        <link refid="da/d3e/class_ecodena_1_1_user_1_1models_1_1_admin"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>User</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Ecodena.User.models.Admin</label>
+        <link refid="da/d3e/class_ecodena_1_1_user_1_1models_1_1_admin"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>User</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="57" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="56" bodyend="87"/>
+    <listofallmembers>
+      <member refid="da/d3e/class_ecodena_1_1_user_1_1models_1_1_admin_1a293f0c21259be254894ed7c9201bf9d1" prot="public" virt="non-virtual"><scope>Ecodena::User::models::Admin</scope><name>resolveQuery</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,121 @@
+\hypertarget{class_ecodena_1_1_user_1_1models_1_1_profile}{
+\section{Ecodena.User.models.Profile Class Reference}
+\label{d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile}\index{Ecodena::User::models::Profile@{Ecodena::User::models::Profile}}
+}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{class_ecodena_1_1_user_1_1models_1_1_profile_ae4b22732124303ac690d9d6347f8888b}{profileID\_\-f} = models.AutoField(primary\_\-key=True)
+\item 
+tuple \hyperlink{class_ecodena_1_1_user_1_1models_1_1_profile_aa21eaecc5ddfe2d63af834e8872bbae5}{dob\_\-f} = models.DateField(\char`\"{}User Birth Date\char`\"{})
+\item 
+tuple \hyperlink{class_ecodena_1_1_user_1_1models_1_1_profile_ad435c6b65d26e301bf02a029a83b6a5a}{address\_\-f} = models.TextField(\char`\"{}User Address\char`\"{})
+\item 
+tuple \hyperlink{class_ecodena_1_1_user_1_1models_1_1_profile_ab5f64a30a5708c602dd1eef94ccd811d}{GENDER\_\-TYPE} = ( (0, 'Male'), (1, 'Female'))
+\item 
+tuple \hyperlink{class_ecodena_1_1_user_1_1models_1_1_profile_ab5e59193a1b014e2f6ce017850bbc429}{gender\_\-f} = models.SmallIntegerField(choices=\hyperlink{class_ecodena_1_1_user_1_1models_1_1_profile_ab5f64a30a5708c602dd1eef94ccd811d}{GENDER\_\-TYPE}, verbose\_\-name=\char`\"{}Gender\char`\"{})
+\item 
+tuple \hyperlink{class_ecodena_1_1_user_1_1models_1_1_profile_a2459a7c3980469d894a491c4aa5e72e1}{userID\_\-f} = models.ForeignKey(User, verbose\_\-name=\char`\"{}User ID of user whose profile is this\char`\"{}, null=False, unique=True)
+\item 
+tuple \hyperlink{class_ecodena_1_1_user_1_1models_1_1_profile_ab696510431c027177451da1e4a6bdc0b}{isProgrammer\_\-f} = models.BooleanField(\char`\"{}Is a \hyperlink{class_ecodena_1_1_user_1_1models_1_1_programmer}{Programmer}\char`\"{}, default=True)
+\item 
+tuple \hyperlink{class_ecodena_1_1_user_1_1models_1_1_profile_ada687883f8de1aa44a0feee2448b61b8}{isAdmin\_\-f} = models.BooleanField(\char`\"{}Is Administrator\char`\"{}, default=False)
+\item 
+tuple \hyperlink{class_ecodena_1_1_user_1_1models_1_1_profile_a7cfe404d70a33ce89be1a5d51c9cafba}{numberOfAttempts\_\-f} = models.IntegerField(\char`\"{}Number of Attempts\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 97 of file models.py.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_ecodena_1_1_user_1_1models_1_1_profile_ad435c6b65d26e301bf02a029a83b6a5a}{
+\index{Ecodena::User::models::Profile@{Ecodena::User::models::Profile}!address\_\-f@{address\_\-f}}
+\index{address\_\-f@{address\_\-f}!Ecodena::User::models::Profile@{Ecodena::User::models::Profile}}
+\subsubsection[{address\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.User.models.Profile.address\_\-f} = models.TextField(\char`\"{}User Address\char`\"{})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_ad435c6b65d26e301bf02a029a83b6a5a}
+
+
+Definition at line 101 of file models.py.
+
+\hypertarget{class_ecodena_1_1_user_1_1models_1_1_profile_aa21eaecc5ddfe2d63af834e8872bbae5}{
+\index{Ecodena::User::models::Profile@{Ecodena::User::models::Profile}!dob\_\-f@{dob\_\-f}}
+\index{dob\_\-f@{dob\_\-f}!Ecodena::User::models::Profile@{Ecodena::User::models::Profile}}
+\subsubsection[{dob\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.User.models.Profile.dob\_\-f} = models.DateField(\char`\"{}User Birth Date\char`\"{})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_aa21eaecc5ddfe2d63af834e8872bbae5}
+
+
+Definition at line 100 of file models.py.
+
+\hypertarget{class_ecodena_1_1_user_1_1models_1_1_profile_ab5e59193a1b014e2f6ce017850bbc429}{
+\index{Ecodena::User::models::Profile@{Ecodena::User::models::Profile}!gender\_\-f@{gender\_\-f}}
+\index{gender\_\-f@{gender\_\-f}!Ecodena::User::models::Profile@{Ecodena::User::models::Profile}}
+\subsubsection[{gender\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.User.models.Profile.gender\_\-f} = models.SmallIntegerField(choices={\bf GENDER\_\-TYPE}, verbose\_\-name=\char`\"{}Gender\char`\"{})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_ab5e59193a1b014e2f6ce017850bbc429}
+
+
+Definition at line 103 of file models.py.
+
+\hypertarget{class_ecodena_1_1_user_1_1models_1_1_profile_ab5f64a30a5708c602dd1eef94ccd811d}{
+\index{Ecodena::User::models::Profile@{Ecodena::User::models::Profile}!GENDER\_\-TYPE@{GENDER\_\-TYPE}}
+\index{GENDER\_\-TYPE@{GENDER\_\-TYPE}!Ecodena::User::models::Profile@{Ecodena::User::models::Profile}}
+\subsubsection[{GENDER\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.User.models.Profile.GENDER\_\-TYPE} = ( (0, 'Male'), (1, 'Female'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_ab5f64a30a5708c602dd1eef94ccd811d}
+
+
+Definition at line 102 of file models.py.
+
+\hypertarget{class_ecodena_1_1_user_1_1models_1_1_profile_ada687883f8de1aa44a0feee2448b61b8}{
+\index{Ecodena::User::models::Profile@{Ecodena::User::models::Profile}!isAdmin\_\-f@{isAdmin\_\-f}}
+\index{isAdmin\_\-f@{isAdmin\_\-f}!Ecodena::User::models::Profile@{Ecodena::User::models::Profile}}
+\subsubsection[{isAdmin\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.User.models.Profile.isAdmin\_\-f} = models.BooleanField(\char`\"{}Is Administrator\char`\"{}, default=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_ada687883f8de1aa44a0feee2448b61b8}
+
+
+Definition at line 106 of file models.py.
+
+\hypertarget{class_ecodena_1_1_user_1_1models_1_1_profile_ab696510431c027177451da1e4a6bdc0b}{
+\index{Ecodena::User::models::Profile@{Ecodena::User::models::Profile}!isProgrammer\_\-f@{isProgrammer\_\-f}}
+\index{isProgrammer\_\-f@{isProgrammer\_\-f}!Ecodena::User::models::Profile@{Ecodena::User::models::Profile}}
+\subsubsection[{isProgrammer\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.User.models.Profile.isProgrammer\_\-f} = models.BooleanField(\char`\"{}Is a {\bf Programmer}\char`\"{}, default=True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_ab696510431c027177451da1e4a6bdc0b}
+
+
+Definition at line 105 of file models.py.
+
+\hypertarget{class_ecodena_1_1_user_1_1models_1_1_profile_a7cfe404d70a33ce89be1a5d51c9cafba}{
+\index{Ecodena::User::models::Profile@{Ecodena::User::models::Profile}!numberOfAttempts\_\-f@{numberOfAttempts\_\-f}}
+\index{numberOfAttempts\_\-f@{numberOfAttempts\_\-f}!Ecodena::User::models::Profile@{Ecodena::User::models::Profile}}
+\subsubsection[{numberOfAttempts\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.User.models.Profile.numberOfAttempts\_\-f} = models.IntegerField(\char`\"{}Number of Attempts\char`\"{})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_a7cfe404d70a33ce89be1a5d51c9cafba}
+
+
+Definition at line 107 of file models.py.
+
+\hypertarget{class_ecodena_1_1_user_1_1models_1_1_profile_ae4b22732124303ac690d9d6347f8888b}{
+\index{Ecodena::User::models::Profile@{Ecodena::User::models::Profile}!profileID\_\-f@{profileID\_\-f}}
+\index{profileID\_\-f@{profileID\_\-f}!Ecodena::User::models::Profile@{Ecodena::User::models::Profile}}
+\subsubsection[{profileID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.User.models.Profile.profileID\_\-f} = models.AutoField(primary\_\-key=True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_ae4b22732124303ac690d9d6347f8888b}
+
+
+Definition at line 98 of file models.py.
+
+\hypertarget{class_ecodena_1_1_user_1_1models_1_1_profile_a2459a7c3980469d894a491c4aa5e72e1}{
+\index{Ecodena::User::models::Profile@{Ecodena::User::models::Profile}!userID\_\-f@{userID\_\-f}}
+\index{userID\_\-f@{userID\_\-f}!Ecodena::User::models::Profile@{Ecodena::User::models::Profile}}
+\subsubsection[{userID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.User.models.Profile.userID\_\-f} = models.ForeignKey(User, verbose\_\-name=\char`\"{}User ID of user whose profile is this\char`\"{}, null=False, unique=True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_a2459a7c3980469d894a491c4aa5e72e1}
+
+
+Definition at line 104 of file models.py.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/panx/ecodena/src/Ecodena/User/\hyperlink{_user_2models_8py}{models.py}\end{DoxyCompactItemize}

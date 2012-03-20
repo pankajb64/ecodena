@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d2/d9e/class_ecodena_1_1_attempt_1_1models_1_1_error_report_1_1_meta" kind="class" prot="public">
+    <compoundname>Ecodena::Attempt::models::ErrorReport::Meta</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d2/d9e/class_ecodena_1_1_attempt_1_1models_1_1_error_report_1_1_meta_1abb1839b5a65fea4d0a4eaf2449533fd3" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Ecodena.Attempt.models.ErrorReport.Meta.verbose_name</definition>
+        <argsstring></argsstring>
+        <name>verbose_name</name>
+        <initializer>&apos;error report&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="54" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d9e/class_ecodena_1_1_attempt_1_1models_1_1_error_report_1_1_meta_1af5a03ae3d989401f2207e282fe47c680" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Ecodena.Attempt.models.ErrorReport.Meta.verbose_name_plural</definition>
+        <argsstring></argsstring>
+        <name>verbose_name_plural</name>
+        <initializer>&apos;error reports&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="55" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="54" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="53" bodyend="56"/>
+    <listofallmembers>
+      <member refid="d2/d9e/class_ecodena_1_1_attempt_1_1models_1_1_error_report_1_1_meta_1abb1839b5a65fea4d0a4eaf2449533fd3" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::ErrorReport::Meta</scope><name>verbose_name</name></member>
+      <member refid="d2/d9e/class_ecodena_1_1_attempt_1_1models_1_1_error_report_1_1_meta_1af5a03ae3d989401f2207e282fe47c680" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::ErrorReport::Meta</scope><name>verbose_name_plural</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

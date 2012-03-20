@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d3/de1/class_ecodena_1_1_compiler_1_1admin_1_1_language_admin" kind="class" prot="public">
+    <compoundname>Ecodena::Compiler::admin::LanguageAdmin</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d3/de1/class_ecodena_1_1_compiler_1_1admin_1_1_language_admin_1a2275c63ac91ec5b4544fc265ae6fa65f" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list Ecodena.Compiler.admin.LanguageAdmin.list_display</definition>
+        <argsstring></argsstring>
+        <name>list_display</name>
+        <initializer>[&apos;languageName_f&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Compiler/admin.py" line="5" bodyfile="/home/panx/ecodena/src/Ecodena/Compiler/admin.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Compiler/admin.py" line="5" bodyfile="/home/panx/ecodena/src/Ecodena/Compiler/admin.py" bodystart="4" bodyend="8"/>
+    <listofallmembers>
+      <member refid="d3/de1/class_ecodena_1_1_compiler_1_1admin_1_1_language_admin_1a2275c63ac91ec5b4544fc265ae6fa65f" prot="public" virt="non-virtual"><scope>Ecodena::Compiler::admin::LanguageAdmin</scope><name>list_display</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

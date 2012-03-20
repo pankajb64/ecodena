@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d1/d9f/namespace_ecodena_1_1_compiler_1_1views" kind="namespace">
+    <compoundname>Ecodena::Compiler::views</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d1/d9f/namespace_ecodena_1_1_compiler_1_1views_1a1735a689aaa564e4ce373a143dd90b04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Compiler.views.CCompile110</definition>
+        <argsstring></argsstring>
+        <name>CCompile110</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Compiler/views.py" line="3" bodyfile="/home/panx/ecodena/src/Ecodena/Compiler/views.py" bodystart="3" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d9f/namespace_ecodena_1_1_compiler_1_1views_1ae30d507a6c361ffbef275989f4b14805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Compiler.views.JavaCompile110</definition>
+        <argsstring></argsstring>
+        <name>JavaCompile110</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Compiler/views.py" line="14" bodyfile="/home/panx/ecodena/src/Ecodena/Compiler/views.py" bodystart="14" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Compiler/views.py" line="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dc/d4e/class_ecodena_1_1_comment_1_1admin_1_1_comment_admin" kind="class" prot="public">
+    <compoundname>Ecodena::Comment::admin::CommentAdmin</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="dc/d4e/class_ecodena_1_1_comment_1_1admin_1_1_comment_admin_1affbe60dd670cc7ce903bdee9857e4e8b" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.Comment.admin.CommentAdmin.list_display</definition>
+        <argsstring></argsstring>
+        <name>list_display</name>
+        <initializer>(&apos;commentID_f&apos;, &apos;commentText&apos;, &apos;userID&apos;, &apos;isReported_f&apos;, &apos;reportingUserID&apos;, &apos;questionID&apos;, &apos;timeStamp&apos; )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Comment/admin.py" line="5" bodyfile="/home/panx/ecodena/src/Ecodena/Comment/admin.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Comment/admin.py" line="5" bodyfile="/home/panx/ecodena/src/Ecodena/Comment/admin.py" bodystart="4" bodyend="9"/>
+    <listofallmembers>
+      <member refid="dc/d4e/class_ecodena_1_1_comment_1_1admin_1_1_comment_admin_1affbe60dd670cc7ce903bdee9857e4e8b" prot="public" virt="non-virtual"><scope>Ecodena::Comment::admin::CommentAdmin</scope><name>list_display</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

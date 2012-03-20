@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="df/df5/_user_2views_8py" kind="file">
+    <compoundname>views.py</compoundname>
+    <innernamespace refid="d7/d84/namespace_ecodena_1_1_user_1_1views">Ecodena::User::views</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="d7/d84/namespace_ecodena_1_1_user_1_1views" refkind="compound"><highlight class="comment">#<sp/>Create<sp/>your<sp/>views<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>django.http<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>HttpResponse</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#def<sp/>viewProfile()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#def<sp/>viewsProfileByID(request,profileID)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#def<sp/>editProfile()</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/panx/ecodena/src/Ecodena/User/views.py"/>
+  </compounddef>
+</doxygen>

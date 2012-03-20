@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d0/de6/namespace_ecodena_1_1_main_1_1views" kind="namespace">
+    <compoundname>Ecodena::Main::views</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d0/de6/namespace_ecodena_1_1_main_1_1views_1a590ceb99abb2bacda0248fa456092a58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Main.views.home</definition>
+        <argsstring></argsstring>
+        <name>home</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Main/views.py" line="4" bodyfile="/home/panx/ecodena/src/Ecodena/Main/views.py" bodystart="4" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Main/views.py" line="1"/>
+  </compounddef>
+</doxygen>

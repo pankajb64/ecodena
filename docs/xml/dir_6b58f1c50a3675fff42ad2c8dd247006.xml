@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_6b58f1c50a3675fff42ad2c8dd247006" kind="dir">
+    <compoundname>/home/panx/ecodena/src/Ecodena/Comment/</compoundname>
+    <innerfile refid="df/d2a/_comment_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="d1/da1/_comment_2admin_8py">admin.py</innerfile>
+    <innerfile refid="d1/dae/_comment_2models_8py">models.py</innerfile>
+    <innerfile refid="d2/dbc/_comment_2tests_8py">tests.py</innerfile>
+    <innerfile refid="d4/dbc/_comment_2views_8py">views.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Comment/"/>
+  </compounddef>
+</doxygen>

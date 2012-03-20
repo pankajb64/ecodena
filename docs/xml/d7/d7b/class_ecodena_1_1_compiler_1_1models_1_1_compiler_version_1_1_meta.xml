@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d7/d7b/class_ecodena_1_1_compiler_1_1models_1_1_compiler_version_1_1_meta" kind="class" prot="public">
+    <compoundname>Ecodena::Compiler::models::CompilerVersion::Meta</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d7/d7b/class_ecodena_1_1_compiler_1_1models_1_1_compiler_version_1_1_meta_1a3fec409e9d01fdd101a80a10c48aced4" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Ecodena.Compiler.models.CompilerVersion.Meta.verbose_name</definition>
+        <argsstring></argsstring>
+        <name>verbose_name</name>
+        <initializer>&apos;compiler version&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Compiler/models.py" line="53" bodyfile="/home/panx/ecodena/src/Ecodena/Compiler/models.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d7b/class_ecodena_1_1_compiler_1_1models_1_1_compiler_version_1_1_meta_1a41dfc813d5bc5fcfbfaf58b6aee9624a" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Ecodena.Compiler.models.CompilerVersion.Meta.verbose_name_plural</definition>
+        <argsstring></argsstring>
+        <name>verbose_name_plural</name>
+        <initializer>&apos;compiler versions&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Compiler/models.py" line="54" bodyfile="/home/panx/ecodena/src/Ecodena/Compiler/models.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Compiler/models.py" line="53" bodyfile="/home/panx/ecodena/src/Ecodena/Compiler/models.py" bodystart="52" bodyend="55"/>
+    <listofallmembers>
+      <member refid="d7/d7b/class_ecodena_1_1_compiler_1_1models_1_1_compiler_version_1_1_meta_1a3fec409e9d01fdd101a80a10c48aced4" prot="public" virt="non-virtual"><scope>Ecodena::Compiler::models::CompilerVersion::Meta</scope><name>verbose_name</name></member>
+      <member refid="d7/d7b/class_ecodena_1_1_compiler_1_1models_1_1_compiler_version_1_1_meta_1a41dfc813d5bc5fcfbfaf58b6aee9624a" prot="public" virt="non-virtual"><scope>Ecodena::Compiler::models::CompilerVersion::Meta</scope><name>verbose_name_plural</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

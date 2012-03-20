@@ -1,0 +1,236 @@
+.TH "Ecodena::Comment::models::Comment" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ecodena::Comment::models::Comment \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMeta\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBgetCommentText\fP"
+.br
+.ti -1c
+.RI "def \fBsetCommentText\fP"
+.br
+.ti -1c
+.RI "def \fBgetTimeStamp\fP"
+.br
+.ti -1c
+.RI "def \fBsetTimeStamp\fP"
+.br
+.ti -1c
+.RI "def \fBisReported\fP"
+.br
+.ti -1c
+.RI "def \fBreport\fP"
+.br
+.ti -1c
+.RI "def \fBgetUserID\fP"
+.br
+.ti -1c
+.RI "def \fBsetUserID\fP"
+.br
+.ti -1c
+.RI "def \fBgetReportingUserID\fP"
+.br
+.ti -1c
+.RI "def \fBsetReportingUserID\fP"
+.br
+.ti -1c
+.RI "def \fBgetQuestionID\fP"
+.br
+.ti -1c
+.RI "def \fBsetQuestionID\fP"
+.br
+.ti -1c
+.RI "def \fB__unicode__\fP"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBcommentText_f\fP"
+.br
+.ti -1c
+.RI "\fBtimeStamp_f\fP"
+.br
+.ti -1c
+.RI "\fBisReported_f\fP"
+.br
+.ti -1c
+.RI "\fBuserID_f\fP"
+.br
+.ti -1c
+.RI "\fBreportingUserID_f\fP"
+.br
+.ti -1c
+.RI "\fBquestionID_f\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBcommentID_f\fP = models.AutoField(primary_key=True)"
+.br
+.ti -1c
+.RI "tuple \fBcommentText_f\fP = models.TextField('The Body of the \fBComment\fP', null=False)"
+.br
+.ti -1c
+.RI "tuple \fBisReported_f\fP = models.BooleanField('Is the comment Reported ?', default=False)"
+.br
+.ti -1c
+.RI "tuple \fBuserID_f\fP = models.ForeignKey(User, verbose_name='User ID', null=False, related_name='+' )"
+.br
+.ti -1c
+.RI "tuple \fBreportingUserID_f\fP = models.ForeignKey(User, verbose_name='User who reported this comment', blank=True, null=True)"
+.br
+.ti -1c
+.RI "tuple \fBquestionID_f\fP = models.ForeignKey(\fBQuestion\fP, verbose_name='Question ID', null=False)"
+.br
+.ti -1c
+.RI "tuple \fBtimeStamp_f\fP = models.DateTimeField('Time of Posting', null=False)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBcommentText\fP = property(getCommentText, setCommentText)"
+.br
+.ti -1c
+.RI "\fBtimeStamp\fP = property(getTimeStamp, setTimeStamp)"
+.br
+.ti -1c
+.RI "\fBisReported\fP = property(isReported, report)"
+.br
+.ti -1c
+.RI "\fBuserID\fP = property(getUserID, setUserID)"
+.br
+.ti -1c
+.RI "\fBreportingUserID\fP = property(getReportingUserID, setReportingUserID)"
+.br
+.ti -1c
+.RI "\fBquestionID\fP = property(getQuestionID, setQuestionID)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 8 of file models.py.
+.SH "Member Function Documentation"
+.PP 
+.SS "def Ecodena.Comment.models.Comment.__unicode__ (self)"
+.PP
+Definition at line 69 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.getCommentText (self)"
+.PP
+Definition at line 18 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.getQuestionID (self)"
+.PP
+Definition at line 59 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.getReportingUserID (self)"
+.PP
+Definition at line 50 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.getTimeStamp (self)"
+.PP
+Definition at line 26 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.getUserID (self)"
+.PP
+Definition at line 43 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.isReported (self)"
+.PP
+Definition at line 34 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.report (self, status)"
+.PP
+Definition at line 38 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.setCommentText (self, comment)"
+.PP
+Definition at line 20 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.setQuestionID (self, qID)"
+.PP
+Definition at line 61 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.setReportingUserID (self, ruID)"
+.PP
+Definition at line 52 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.setTimeStamp (self, Timestamp)"
+.PP
+Definition at line 28 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.setUserID (self, uID)"
+.PP
+Definition at line 45 of file models.py.
+.SH "Member Data Documentation"
+.PP 
+.SS "tuple \fBEcodena.Comment.models.Comment.commentID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
+.PP
+Definition at line 9 of file models.py.
+.SS "tuple \fBEcodena.Comment.models.Comment.commentText_f\fP = models.TextField('The Body of the \fBComment\fP', null=False)\fC [static]\fP"
+.PP
+Definition at line 10 of file models.py.
+.SS "\fBEcodena.Comment.models.Comment.commentText_f\fP"
+.PP
+Definition at line 20 of file models.py.
+.SS "\fBEcodena.Comment.models.Comment.isReported_f\fP"
+.PP
+Definition at line 38 of file models.py.
+.SS "tuple \fBEcodena.Comment.models.Comment.isReported_f\fP = models.BooleanField('Is the comment Reported ?', default=False)\fC [static]\fP"
+.PP
+Definition at line 11 of file models.py.
+.SS "\fBEcodena.Comment.models.Comment.questionID_f\fP"
+.PP
+Definition at line 61 of file models.py.
+.SS "tuple \fBEcodena.Comment.models.Comment.questionID_f\fP = models.ForeignKey(\fBQuestion\fP, verbose_name='Question ID', null=False)\fC [static]\fP"
+.PP
+Definition at line 14 of file models.py.
+.SS "\fBEcodena.Comment.models.Comment.reportingUserID_f\fP"
+.PP
+Definition at line 52 of file models.py.
+.SS "tuple \fBEcodena.Comment.models.Comment.reportingUserID_f\fP = models.ForeignKey(User, verbose_name='User who reported this comment', blank=True, null=True)\fC [static]\fP"
+.PP
+Definition at line 13 of file models.py.
+.SS "tuple \fBEcodena.Comment.models.Comment.timeStamp_f\fP = models.DateTimeField('Time of Posting', null=False)\fC [static]\fP"
+.PP
+Definition at line 15 of file models.py.
+.SS "\fBEcodena.Comment.models.Comment.timeStamp_f\fP"
+.PP
+Definition at line 28 of file models.py.
+.SS "tuple \fBEcodena.Comment.models.Comment.userID_f\fP = models.ForeignKey(User, verbose_name='User ID', null=False, related_name='+' )\fC [static]\fP"
+.PP
+Definition at line 12 of file models.py.
+.SS "\fBEcodena.Comment.models.Comment.userID_f\fP"
+.PP
+Definition at line 45 of file models.py.
+.SH "Property Documentation"
+.PP 
+.SS "Ecodena.Comment.models.Comment.commentText = property(getCommentText, setCommentText)\fC [static]\fP"
+.PP
+Definition at line 22 of file models.py.
+.SS "Ecodena.Comment.models.Comment.isReported = property(isReported, report)\fC [static]\fP"
+.PP
+Definition at line 41 of file models.py.
+.SS "Ecodena.Comment.models.Comment.questionID = property(getQuestionID, setQuestionID)\fC [static]\fP"
+.PP
+Definition at line 63 of file models.py.
+.SS "Ecodena.Comment.models.Comment.reportingUserID = property(getReportingUserID, setReportingUserID)\fC [static]\fP"
+.PP
+Definition at line 55 of file models.py.
+.SS "Ecodena.Comment.models.Comment.timeStamp = property(getTimeStamp, setTimeStamp)\fC [static]\fP"
+.PP
+Definition at line 30 of file models.py.
+.SS "Ecodena.Comment.models.Comment.userID = property(getUserID, setUserID)\fC [static]\fP"
+.PP
+Definition at line 47 of file models.py.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Ecodena from the source code.

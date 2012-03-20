@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d9/d0e/dictionary_8py" kind="file">
+    <compoundname>dictionary.py</compoundname>
+    <innernamespace refid="d4/d2e/namespace_ecodena_1_1_compiler_1_1dictionary">Ecodena::Compiler::dictionary</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="d4/d2e/namespace_ecodena_1_1_compiler_1_1dictionary_1af63ec36157fc96237bdb5926dda5a77f" refkind="member"><highlight class="normal">compilers<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="stringliteral">&apos;C<sp/>1.1.1&apos;</highlight><highlight class="normal">:<sp/>Compiler.views.CCompile111,</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="stringliteral">&apos;Java<sp/>1.1.1&apos;</highlight><highlight class="normal">:Compiler.views.JavaCompile111,</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/panx/ecodena/src/Ecodena/Compiler/dictionary.py"/>
+  </compounddef>
+</doxygen>

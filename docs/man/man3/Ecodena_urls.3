@@ -1,0 +1,49 @@
+.TH "Ecodena.urls" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ecodena.urls \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBurlpatterns\fP"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "tuple \fBEcodena::urls.urlpatterns\fP"\fBInitial value:\fP
+.PP
+.nf
+1 patterns('',
+2 # Examples:
+3         url(r'^$', 'Ecodena.Main.views.home', name='home'),
+4         # url(r'^Ecodena/', include('Ecodena.foo.urls')),
+5 
+6         # Uncomment the admin/doc line below to enable admin documentation:
+7         url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+8 
+9         # Uncomment the next line to enable the admin:
+10         url(r'^admin/', include(admin.site.urls)),
+11 
+12         #url(r'^test/$', 'Ecodena.Question.views.test'),
+13 
+14         url(r'^questions/$', 'Ecodena.Question.views.listQuestions'),
+15         url(r'^postQuery/$', 'Ecodena.Query.views.postQuery'),
+16         url(r'^questions/(?P<questionID>[0-9]+)/$', 'Ecodena.Question.views.viewQuestionByID'),
+17         url(r'^submitSolution$', 'Ecodena.Attempt.views.submitSolution'),
+18         #url(r'^profile/',Ecodena.User.views.viewProfile),
+19         #url(r'^profile/?P<profileID>[0-9]+$',Ecodena.User.views.viewProfileByID),
+20         #url(r'^profile/edit/',Ecodena.User.views.editProfile),
+21         url(r'^solutions/$','Ecodena.Attempt.views.listSolutions'),
+22         url(r'^solutions/(?P<solutionID>[0-9]+)$','Ecodena.Attempt.views.viewSolution')
+23         )
+.fi
+.PP
+Definition at line 7 of file urls.py.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Ecodena from the source code.

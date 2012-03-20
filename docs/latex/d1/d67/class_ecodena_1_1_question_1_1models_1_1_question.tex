@@ -1,0 +1,442 @@
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question}{
+\section{Ecodena.Question.models.Question Class Reference}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question}\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_1_1_meta}{Meta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_adc92e0f2f7ec665f56753d41b89a7d94}{getQuestionID}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_ad22fc6d68a461c6ef58fb1b51ab66b71}{setQuestionID}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_ab2c1e4c10f5c18173a07bad1ca640af4}{getQuestionText}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a53b5f7e6e0bc51fac1994acab5c77712}{setQuestionText}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_af3fde7d84e02153cd692d75c076db926}{getQuestionTitle}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a0a97a9adf718cbc7899766d6afe37001}{setQuestionTitle}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a031f45ef6b6ce7c6bdeb7831de19a9cb}{getComments}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a420320045300430abd31d5382599324b}{addComments}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a25ad9636f3d99e1f19444084e0768e19}{setCommentList}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a1bba84d55138e08d45c3900a866f49d0}{getTestCasesList}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a5a19171b06607c37340c2140d2b84a7c}{setTestCasesList}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a9c861fe9113bfca420e24443662084b8}{removeTestCase}
+\item 
+def \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_ab1fd04fd6c3efa197a0cb0f3d1913c37}{\_\-\_\-unicode\_\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a82d6ae1631802a2652e2c5ddb91a4ea7}{questionID\_\-f}
+\item 
+\hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_afbbad3df2af71e795a4397ae19f1433d}{questionText\_\-f}
+\item 
+\hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_acece4b7c3af5411b6521468bfd308a38}{questionTitle\_\-f}
+\item 
+\hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a4bd58a5bfd741f2442344987976725b2}{commentList\_\-f}
+\item 
+\hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_af2ca53119fdb8e495aa8d427287dcdb2}{testCasesList\_\-f}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a7bf8bc3dae949f1011c2e26226309898}{questionID\_\-f} = models.AutoField(primary\_\-key=True)
+\item 
+tuple \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a68dff1fccf327def311e574aef8c7385}{questionText\_\-f} = models.TextField(\char`\"{}Problem Statement\char`\"{}, null=False)
+\item 
+tuple \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a512bdc07c3ee6ad6f64bf06810cdbd77}{questionTitle\_\-f} = models.CharField(\char`\"{}Problem Title\char`\"{}, max\_\-length = 50, null = False)
+\item 
+tuple \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a6dfb4e057e2757e3ea7387fa9aa6b741}{level\_\-f} = models.ForeignKey(\hyperlink{class_ecodena_1_1_question_1_1models_1_1_level}{Level}, verbose\_\-name=\char`\"{}Question \hyperlink{class_ecodena_1_1_question_1_1models_1_1_level}{Level}\char`\"{}, null=False)
+\item 
+tuple \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_ae09f8ef0052f7c65df2383940124d5ce}{type\_\-f} = models.ForeignKey(\hyperlink{class_ecodena_1_1_question_1_1models_1_1_type}{Type}, verbose\_\-name=\char`\"{}Type of \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question}{Question}\char`\"{}, null=False)
+\item 
+tuple \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a4143fa9996843ba6c2febcab8e8ceae8}{timeLimit\_\-f} = models.FloatField(\char`\"{}Time Limit for \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question}{Question}\char`\"{},null=False)
+\item 
+list \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_ae202257a6a3b5630cd345936d8e258c3}{commentList\_\-f} = \mbox{[}$\,$\mbox{]}
+\item 
+list \hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_aab630f0c2e6a45bd234c67481afc1448}{testCasesList\_\-f} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a24c1bdd9f3464af160aa43c9c224f19a}{questionID} = property(getQuestionID,setQuestionID)
+\item 
+\hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a631229209b3603bc293f5c6b751781cc}{questionText} = property(getQuestionText,setQuestionText)
+\item 
+\hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_aa28e2b08e1d5c9a31737359492c2e1b1}{questionTitle} = property(getQuestionTitle, setQuestionTitle)
+\item 
+\hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_a932bd57bcdb185606aa6889ae0880a57}{commentList} = property(getComments,setCommentList)
+\item 
+\hyperlink{class_ecodena_1_1_question_1_1models_1_1_question_aac636325b58fc117b2c89f6ece79f431}{testCasesList} = property(getTestCasesList,setTestCasesList)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 40 of file models.py.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_ab1fd04fd6c3efa197a0cb0f3d1913c37}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!\_\-\_\-unicode\_\-\_\-@{\_\-\_\-unicode\_\-\_\-}}
+\index{\_\-\_\-unicode\_\-\_\-@{\_\-\_\-unicode\_\-\_\-}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{\_\-\_\-unicode\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.\_\-\_\-unicode\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_ab1fd04fd6c3efa197a0cb0f3d1913c37}
+
+
+Definition at line 91 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a420320045300430abd31d5382599324b}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!addComments@{addComments}}
+\index{addComments@{addComments}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{addComments}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.addComments (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{comment}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a420320045300430abd31d5382599324b}
+
+
+Definition at line 72 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a031f45ef6b6ce7c6bdeb7831de19a9cb}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!getComments@{getComments}}
+\index{getComments@{getComments}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{getComments}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.getComments (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a031f45ef6b6ce7c6bdeb7831de19a9cb}
+
+
+Definition at line 70 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_adc92e0f2f7ec665f56753d41b89a7d94}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!getQuestionID@{getQuestionID}}
+\index{getQuestionID@{getQuestionID}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{getQuestionID}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.getQuestionID (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_adc92e0f2f7ec665f56753d41b89a7d94}
+
+
+Definition at line 50 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_ab2c1e4c10f5c18173a07bad1ca640af4}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!getQuestionText@{getQuestionText}}
+\index{getQuestionText@{getQuestionText}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{getQuestionText}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.getQuestionText (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_ab2c1e4c10f5c18173a07bad1ca640af4}
+
+
+Definition at line 57 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_af3fde7d84e02153cd692d75c076db926}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!getQuestionTitle@{getQuestionTitle}}
+\index{getQuestionTitle@{getQuestionTitle}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{getQuestionTitle}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.getQuestionTitle (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_af3fde7d84e02153cd692d75c076db926}
+
+
+Definition at line 64 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a1bba84d55138e08d45c3900a866f49d0}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!getTestCasesList@{getTestCasesList}}
+\index{getTestCasesList@{getTestCasesList}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{getTestCasesList}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.getTestCasesList (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a1bba84d55138e08d45c3900a866f49d0}
+
+
+Definition at line 79 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a9c861fe9113bfca420e24443662084b8}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!removeTestCase@{removeTestCase}}
+\index{removeTestCase@{removeTestCase}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{removeTestCase}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.removeTestCase (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{caseID}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a9c861fe9113bfca420e24443662084b8}
+
+
+Definition at line 83 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a25ad9636f3d99e1f19444084e0768e19}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!setCommentList@{setCommentList}}
+\index{setCommentList@{setCommentList}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{setCommentList}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.setCommentList (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{commentList}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a25ad9636f3d99e1f19444084e0768e19}
+
+
+Definition at line 74 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_ad22fc6d68a461c6ef58fb1b51ab66b71}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!setQuestionID@{setQuestionID}}
+\index{setQuestionID@{setQuestionID}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{setQuestionID}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.setQuestionID (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{qID}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_ad22fc6d68a461c6ef58fb1b51ab66b71}
+
+
+Definition at line 52 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a53b5f7e6e0bc51fac1994acab5c77712}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!setQuestionText@{setQuestionText}}
+\index{setQuestionText@{setQuestionText}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{setQuestionText}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.setQuestionText (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{qtext}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a53b5f7e6e0bc51fac1994acab5c77712}
+
+
+Definition at line 59 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a0a97a9adf718cbc7899766d6afe37001}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!setQuestionTitle@{setQuestionTitle}}
+\index{setQuestionTitle@{setQuestionTitle}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{setQuestionTitle}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.setQuestionTitle (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{title}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a0a97a9adf718cbc7899766d6afe37001}
+
+
+Definition at line 66 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a5a19171b06607c37340c2140d2b84a7c}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!setTestCasesList@{setTestCasesList}}
+\index{setTestCasesList@{setTestCasesList}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{setTestCasesList}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Question.models.Question.setTestCasesList (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{testCasesList}
+\end{DoxyParamCaption}
+)}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a5a19171b06607c37340c2140d2b84a7c}
+
+
+Definition at line 81 of file models.py.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_ae202257a6a3b5630cd345936d8e258c3}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!commentList\_\-f@{commentList\_\-f}}
+\index{commentList\_\-f@{commentList\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{commentList\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}list {\bf Ecodena.Question.models.Question.commentList\_\-f} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_ae202257a6a3b5630cd345936d8e258c3}
+
+
+Definition at line 47 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a4bd58a5bfd741f2442344987976725b2}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!commentList\_\-f@{commentList\_\-f}}
+\index{commentList\_\-f@{commentList\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{commentList\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Question.models.Question.commentList\_\-f}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a4bd58a5bfd741f2442344987976725b2}
+
+
+Definition at line 74 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a6dfb4e057e2757e3ea7387fa9aa6b741}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!level\_\-f@{level\_\-f}}
+\index{level\_\-f@{level\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{level\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Question.models.Question.level\_\-f} = models.ForeignKey({\bf Level}, verbose\_\-name=\char`\"{}Question {\bf Level}\char`\"{}, null=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a6dfb4e057e2757e3ea7387fa9aa6b741}
+
+
+Definition at line 44 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a7bf8bc3dae949f1011c2e26226309898}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!questionID\_\-f@{questionID\_\-f}}
+\index{questionID\_\-f@{questionID\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{questionID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Question.models.Question.questionID\_\-f} = models.AutoField(primary\_\-key=True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a7bf8bc3dae949f1011c2e26226309898}
+
+
+Definition at line 41 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a82d6ae1631802a2652e2c5ddb91a4ea7}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!questionID\_\-f@{questionID\_\-f}}
+\index{questionID\_\-f@{questionID\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{questionID\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Question.models.Question.questionID\_\-f}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a82d6ae1631802a2652e2c5ddb91a4ea7}
+
+
+Definition at line 52 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a68dff1fccf327def311e574aef8c7385}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!questionText\_\-f@{questionText\_\-f}}
+\index{questionText\_\-f@{questionText\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{questionText\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Question.models.Question.questionText\_\-f} = models.TextField(\char`\"{}Problem Statement\char`\"{}, null=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a68dff1fccf327def311e574aef8c7385}
+
+
+Definition at line 42 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_afbbad3df2af71e795a4397ae19f1433d}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!questionText\_\-f@{questionText\_\-f}}
+\index{questionText\_\-f@{questionText\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{questionText\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Question.models.Question.questionText\_\-f}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_afbbad3df2af71e795a4397ae19f1433d}
+
+
+Definition at line 59 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_acece4b7c3af5411b6521468bfd308a38}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!questionTitle\_\-f@{questionTitle\_\-f}}
+\index{questionTitle\_\-f@{questionTitle\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{questionTitle\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Question.models.Question.questionTitle\_\-f}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_acece4b7c3af5411b6521468bfd308a38}
+
+
+Definition at line 66 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a512bdc07c3ee6ad6f64bf06810cdbd77}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!questionTitle\_\-f@{questionTitle\_\-f}}
+\index{questionTitle\_\-f@{questionTitle\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{questionTitle\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Question.models.Question.questionTitle\_\-f} = models.CharField(\char`\"{}Problem Title\char`\"{}, max\_\-length = 50, null = False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a512bdc07c3ee6ad6f64bf06810cdbd77}
+
+
+Definition at line 43 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_aab630f0c2e6a45bd234c67481afc1448}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!testCasesList\_\-f@{testCasesList\_\-f}}
+\index{testCasesList\_\-f@{testCasesList\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{testCasesList\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}list {\bf Ecodena.Question.models.Question.testCasesList\_\-f} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_aab630f0c2e6a45bd234c67481afc1448}
+
+
+Definition at line 48 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_af2ca53119fdb8e495aa8d427287dcdb2}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!testCasesList\_\-f@{testCasesList\_\-f}}
+\index{testCasesList\_\-f@{testCasesList\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{testCasesList\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ecodena.Question.models.Question.testCasesList\_\-f}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_af2ca53119fdb8e495aa8d427287dcdb2}
+
+
+Definition at line 81 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a4143fa9996843ba6c2febcab8e8ceae8}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!timeLimit\_\-f@{timeLimit\_\-f}}
+\index{timeLimit\_\-f@{timeLimit\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{timeLimit\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Question.models.Question.timeLimit\_\-f} = models.FloatField(\char`\"{}Time Limit for {\bf Question}\char`\"{},null=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a4143fa9996843ba6c2febcab8e8ceae8}
+
+
+Definition at line 46 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_ae09f8ef0052f7c65df2383940124d5ce}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!type\_\-f@{type\_\-f}}
+\index{type\_\-f@{type\_\-f}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{type\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Question.models.Question.type\_\-f} = models.ForeignKey({\bf Type}, verbose\_\-name=\char`\"{}Type of {\bf Question}\char`\"{}, null=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_ae09f8ef0052f7c65df2383940124d5ce}
+
+
+Definition at line 45 of file models.py.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a932bd57bcdb185606aa6889ae0880a57}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!commentList@{commentList}}
+\index{commentList@{commentList}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{commentList}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Question.models.Question.commentList = property(getComments,setCommentList)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a932bd57bcdb185606aa6889ae0880a57}
+
+
+Definition at line 76 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a24c1bdd9f3464af160aa43c9c224f19a}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!questionID@{questionID}}
+\index{questionID@{questionID}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{questionID}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Question.models.Question.questionID = property(getQuestionID,setQuestionID)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a24c1bdd9f3464af160aa43c9c224f19a}
+
+
+Definition at line 54 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_a631229209b3603bc293f5c6b751781cc}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!questionText@{questionText}}
+\index{questionText@{questionText}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{questionText}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Question.models.Question.questionText = property(getQuestionText,setQuestionText)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_a631229209b3603bc293f5c6b751781cc}
+
+
+Definition at line 61 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_aa28e2b08e1d5c9a31737359492c2e1b1}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!questionTitle@{questionTitle}}
+\index{questionTitle@{questionTitle}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{questionTitle}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Question.models.Question.questionTitle = property(getQuestionTitle, setQuestionTitle)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_aa28e2b08e1d5c9a31737359492c2e1b1}
+
+
+Definition at line 68 of file models.py.
+
+\hypertarget{class_ecodena_1_1_question_1_1models_1_1_question_aac636325b58fc117b2c89f6ece79f431}{
+\index{Ecodena::Question::models::Question@{Ecodena::Question::models::Question}!testCasesList@{testCasesList}}
+\index{testCasesList@{testCasesList}!Ecodena::Question::models::Question@{Ecodena::Question::models::Question}}
+\subsubsection[{testCasesList}]{\setlength{\rightskip}{0pt plus 5cm}Ecodena.Question.models.Question.testCasesList = property(getTestCasesList,setTestCasesList)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{d1/d67/class_ecodena_1_1_question_1_1models_1_1_question_aac636325b58fc117b2c89f6ece79f431}
+
+
+Definition at line 85 of file models.py.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/panx/ecodena/src/Ecodena/Question/\hyperlink{_question_2models_8py}{models.py}\end{DoxyCompactItemize}

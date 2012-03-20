@@ -1,0 +1,86 @@
+.TH "Ecodena::Question::models::Level" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ecodena::Question::models::Level \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMeta\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBgetLevelName\fP"
+.br
+.ti -1c
+.RI "def \fBsetLevelName\fP"
+.br
+.ti -1c
+.RI "def \fB__unicode__\fP"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBlevelName_f\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBlevelID_f\fP = models.AutoField(primary_key=True)"
+.br
+.ti -1c
+.RI "tuple \fBlevelName_f\fP = models.CharField('Level Name', max_length = 20 , null = False, unique=True)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBlevelName\fP = property(getLevelName, setLevelName)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 7 of file models.py.
+.SH "Member Function Documentation"
+.PP 
+.SS "def Ecodena.Question.models.Level.__unicode__ (self)"
+.PP
+Definition at line 23 of file models.py.
+.SS "def Ecodena.Question.models.Level.getLevelName (self)"
+.PP
+Definition at line 11 of file models.py.
+.SS "def Ecodena.Question.models.Level.setLevelName (self, lname)"
+.PP
+Definition at line 14 of file models.py.
+.SH "Member Data Documentation"
+.PP 
+.SS "tuple \fBEcodena.Question.models.Level.levelID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
+.PP
+Definition at line 8 of file models.py.
+.SS "\fBEcodena.Question.models.Level.levelName_f\fP"
+.PP
+Definition at line 14 of file models.py.
+.SS "tuple \fBEcodena.Question.models.Level.levelName_f\fP = models.CharField('Level Name', max_length = 20 , null = False, unique=True)\fC [static]\fP"
+.PP
+Definition at line 9 of file models.py.
+.SH "Property Documentation"
+.PP 
+.SS "Ecodena.Question.models.Level.levelName = property(getLevelName, setLevelName)\fC [static]\fP"
+.PP
+Definition at line 17 of file models.py.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Ecodena from the source code.

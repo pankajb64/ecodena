@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="df/d90/namespace_ecodena_1_1urls" kind="namespace">
+    <compoundname>Ecodena::urls</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="df/d90/namespace_ecodena_1_1urls_1a44a410947e8a3d3fbbb451c003ca6c98" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena::urls.urlpatterns</definition>
+        <argsstring></argsstring>
+        <name>urlpatterns</name>
+        <initializer>patterns(&apos;&apos;,
+# Examples:
+	url(r&apos;^$&apos;, &apos;Ecodena.Main.views.home&apos;, name=&apos;home&apos;),
+	# url(r&apos;^Ecodena/&apos;, include(&apos;Ecodena.foo.urls&apos;)),
+
+	# Uncomment the admin/doc line below to enable admin documentation:
+	url(r&apos;^admin/doc/&apos;, include(&apos;django.contrib.admindocs.urls&apos;)),
+
+	# Uncomment the next line to enable the admin:
+	url(r&apos;^admin/&apos;, include(admin.site.urls)),
+
+	#url(r&apos;^test/$&apos;, &apos;Ecodena.Question.views.test&apos;),
+
+	url(r&apos;^questions/$&apos;, &apos;Ecodena.Question.views.listQuestions&apos;),
+	url(r&apos;^postQuery/$&apos;, &apos;Ecodena.Query.views.postQuery&apos;),
+	url(r&apos;^questions/(?P&lt;questionID&gt;[0-9]+)/$&apos;, &apos;Ecodena.Question.views.viewQuestionByID&apos;),
+	url(r&apos;^submitSolution$&apos;, &apos;Ecodena.Attempt.views.submitSolution&apos;),
+	#url(r&apos;^profile/&apos;,Ecodena.User.views.viewProfile),
+	#url(r&apos;^profile/?P&lt;profileID&gt;[0-9]+$&apos;,Ecodena.User.views.viewProfileByID),
+	#url(r&apos;^profile/edit/&apos;,Ecodena.User.views.editProfile),
+	url(r&apos;^solutions/$&apos;,&apos;Ecodena.Attempt.views.listSolutions&apos;),
+	url(r&apos;^solutions/(?P&lt;solutionID&gt;[0-9]+)$&apos;,&apos;Ecodena.Attempt.views.viewSolution&apos;)
+	)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/urls.py" line="7" bodyfile="/home/panx/ecodena/src/Ecodena/urls.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/urls.py" line="1"/>
+  </compounddef>
+</doxygen>

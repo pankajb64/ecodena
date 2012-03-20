@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query" kind="class" prot="public">
+    <compoundname>Ecodena::Query::models::Query</compoundname>
+    <innerclass refid="d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta" prot="public">Ecodena::Query::models::Query::Meta</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ae1ec984785258399cd3757f0c001c449" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.Query.models.Query.queryID_f</definition>
+        <argsstring></argsstring>
+        <name>queryID_f</name>
+        <initializer>models.AutoField(primary_key=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="8" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a82f008f189f9a40b1bc97147e81ce7ed" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.Query.models.Query.queryText_f</definition>
+        <argsstring></argsstring>
+        <name>queryText_f</name>
+        <initializer>models.TextField(&quot;The Text explaining the <ref refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query" kindref="compound">Query</ref>&quot;, null=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="9" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1aa5784dfc285de57ac58e20358ec86136" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.Query.models.Query.solution_f</definition>
+        <argsstring></argsstring>
+        <name>solution_f</name>
+        <initializer>models.TextField(&quot;The Solution of the <ref refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query" kindref="compound">Query</ref>&quot;, blank=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="10" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1af6d91b41546f1d338987e4072357700c" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.Query.models.Query.userID_f</definition>
+        <argsstring></argsstring>
+        <name>userID_f</name>
+        <initializer>models.ForeignKey(User, verbose_name=&quot;User ID of user posting the query&quot;, null=False, related_name=&apos;+&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="11" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ae756b917504c1bbc04ff9998fe2b6961" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.Query.models.Query.adminID_f</definition>
+        <argsstring></argsstring>
+        <name>adminID_f</name>
+        <initializer>models.ForeignKey(User, verbose_name=&quot;User ID of admin resolving the query&quot;, related_name=&apos;+&apos;, blank=True, null=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="12" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a69b4646a1bbc4d7dc831028df2f80bae" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.Query.models.Query.queryTime_f</definition>
+        <argsstring></argsstring>
+        <name>queryTime_f</name>
+        <initializer>models.DateTimeField(&quot;Time of posting <ref refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query" kindref="compound">Query</ref>&quot;, null=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="13" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a45776c99ebfd110c2d178c1223ddb886" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.Query.models.Query.replyTime_f</definition>
+        <argsstring></argsstring>
+        <name>replyTime_f</name>
+        <initializer>models.DateTimeField(&quot;Time of resolving <ref refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query" kindref="compound">Query</ref>&quot;, blank=True, null=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="14" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a8c5d0779f4cfbe980fae5278a9837d69" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.queryText</definition>
+        <argsstring></argsstring>
+        <name>queryText</name>
+        <initializer>property(getQueryText, setQueryText)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="21" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a44a48f0e111c10ab2206c5dc44ca89af" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.queryID</definition>
+        <argsstring></argsstring>
+        <name>queryID</name>
+        <initializer>property(getQueryID, setQueryID)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="28" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a44c24c91765bafb665f0a4ff25819694" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.solution</definition>
+        <argsstring></argsstring>
+        <name>solution</name>
+        <initializer>property(getSolution, setSolution)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="35" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a922030477827a717dbe6277292084874" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.queryTime</definition>
+        <argsstring></argsstring>
+        <name>queryTime</name>
+        <initializer>property(getQueryTime, setQueryTime)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="45" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a120b8bc5cef02ce8727153a0126cec3c" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.replyTime</definition>
+        <argsstring></argsstring>
+        <name>replyTime</name>
+        <initializer>property(getReplyTime, setReplyTime)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="54" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a7b6043377cba81b1cd1f29dbba5a0a66" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.userID</definition>
+        <argsstring></argsstring>
+        <name>userID</name>
+        <initializer>property(getUserID, setUserID)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="61" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a7397d58744f73dd037d7928ca7bb5593" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.adminID</definition>
+        <argsstring></argsstring>
+        <name>adminID</name>
+        <initializer>property(getAdminID, setAdminID)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="68" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a9a5adf01c1dd10f1693e296f6b5d5266" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.queryText_f</definition>
+        <argsstring></argsstring>
+        <name>queryText_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="19" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1aa0e07b4ca74e1e70f8687c8210fcda9b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.queryID_f</definition>
+        <argsstring></argsstring>
+        <name>queryID_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="26" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a7d3a9e3880479a39865780b2c1180709" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.solution_f</definition>
+        <argsstring></argsstring>
+        <name>solution_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="33" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1af6bf78442af5d30068c5ae9b7f0c48f2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.queryTime_f</definition>
+        <argsstring></argsstring>
+        <name>queryTime_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="40" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a00674f59fb454935d65e31924d8a9df2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.replyTime_f</definition>
+        <argsstring></argsstring>
+        <name>replyTime_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="51" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a7aca73a76e3660ca990174870404f804" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.userID_f</definition>
+        <argsstring></argsstring>
+        <name>userID_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="59" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a7899294640e6d869a1e4f2658666ada0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Ecodena.Query.models.Query.adminID_f</definition>
+        <argsstring></argsstring>
+        <name>adminID_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="66" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a3ea151fb41b6c457465a4fbe884ae7e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.getQueryText</definition>
+        <argsstring></argsstring>
+        <name>getQueryText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="17" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="17" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a5359734b6cac07a8a46d24602dfe5e35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.setQueryText</definition>
+        <argsstring></argsstring>
+        <name>setQueryText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="19" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="19" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1abd4bfc62d23248a041fcb6b3c7f75439" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.getQueryID</definition>
+        <argsstring></argsstring>
+        <name>getQueryID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="24" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a2eb52127081b0bc7183182778fd99e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.setQueryID</definition>
+        <argsstring></argsstring>
+        <name>setQueryID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="26" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="26" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a8d45bd120271b82843dd9834f9947d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.getSolution</definition>
+        <argsstring></argsstring>
+        <name>getSolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="31" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="31" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ab4ac84680ce274a2ebd359d4c0e1bd10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.setSolution</definition>
+        <argsstring></argsstring>
+        <name>setSolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="33" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="33" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a9c3a67997f0f679e2aa4dde01f91d17a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.getQueryTime</definition>
+        <argsstring></argsstring>
+        <name>getQueryTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="38" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="38" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a4844f6c54805063e7678b5fcdc688b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.setQueryTime</definition>
+        <argsstring></argsstring>
+        <name>setQueryTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="40" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a10dc5edc11802e3e5d3506d167a5e9e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.getReplyTime</definition>
+        <argsstring></argsstring>
+        <name>getReplyTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="49" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="49" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a4265351e14d05a90076ed142452a2c6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.setReplyTime</definition>
+        <argsstring></argsstring>
+        <name>setReplyTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="51" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1accb9bbbe890bcf2dd2552cec33e33064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.getUserID</definition>
+        <argsstring></argsstring>
+        <name>getUserID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="57" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="57" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ab560248a8b88b6367dd1ac6bd00275b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.setUserID</definition>
+        <argsstring></argsstring>
+        <name>setUserID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="59" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="59" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a3b6de065ac8d60ab2ab2efa41a5d2389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.getAdminID</definition>
+        <argsstring></argsstring>
+        <name>getAdminID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="64" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="64" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ae1fecfbe595ee512254f3978fc4ebc2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.setAdminID</definition>
+        <argsstring></argsstring>
+        <name>setAdminID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="66" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="66" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ab9812fdc816aca8289f0481802342efd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Query.models.Query.__unicode__</definition>
+        <argsstring></argsstring>
+        <name>__unicode__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="75" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="75" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="8" bodyfile="/home/panx/ecodena/src/Ecodena/Query/models.py" bodystart="7" bodyend="79"/>
+    <listofallmembers>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ab9812fdc816aca8289f0481802342efd" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>__unicode__</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a7397d58744f73dd037d7928ca7bb5593" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>adminID</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ae756b917504c1bbc04ff9998fe2b6961" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>adminID_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a7899294640e6d869a1e4f2658666ada0" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>adminID_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a3b6de065ac8d60ab2ab2efa41a5d2389" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>getAdminID</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1abd4bfc62d23248a041fcb6b3c7f75439" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>getQueryID</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a3ea151fb41b6c457465a4fbe884ae7e1" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>getQueryText</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a9c3a67997f0f679e2aa4dde01f91d17a" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>getQueryTime</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a10dc5edc11802e3e5d3506d167a5e9e2" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>getReplyTime</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a8d45bd120271b82843dd9834f9947d81" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>getSolution</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1accb9bbbe890bcf2dd2552cec33e33064" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>getUserID</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a44a48f0e111c10ab2206c5dc44ca89af" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>queryID</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ae1ec984785258399cd3757f0c001c449" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>queryID_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1aa0e07b4ca74e1e70f8687c8210fcda9b" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>queryID_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a8c5d0779f4cfbe980fae5278a9837d69" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>queryText</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a82f008f189f9a40b1bc97147e81ce7ed" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>queryText_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a9a5adf01c1dd10f1693e296f6b5d5266" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>queryText_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a922030477827a717dbe6277292084874" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>queryTime</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a69b4646a1bbc4d7dc831028df2f80bae" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>queryTime_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1af6bf78442af5d30068c5ae9b7f0c48f2" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>queryTime_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a120b8bc5cef02ce8727153a0126cec3c" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>replyTime</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a45776c99ebfd110c2d178c1223ddb886" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>replyTime_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a00674f59fb454935d65e31924d8a9df2" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>replyTime_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ae1fecfbe595ee512254f3978fc4ebc2f" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>setAdminID</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a2eb52127081b0bc7183182778fd99e84" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>setQueryID</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a5359734b6cac07a8a46d24602dfe5e35" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>setQueryText</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a4844f6c54805063e7678b5fcdc688b87" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>setQueryTime</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a4265351e14d05a90076ed142452a2c6d" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>setReplyTime</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ab4ac84680ce274a2ebd359d4c0e1bd10" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>setSolution</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1ab560248a8b88b6367dd1ac6bd00275b1" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>setUserID</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a44c24c91765bafb665f0a4ff25819694" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>solution</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1aa5784dfc285de57ac58e20358ec86136" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>solution_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a7d3a9e3880479a39865780b2c1180709" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>solution_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a7b6043377cba81b1cd1f29dbba5a0a66" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>userID</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1af6d91b41546f1d338987e4072357700c" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>userID_f</name></member>
+      <member refid="de/d81/class_ecodena_1_1_query_1_1models_1_1_query_1a7aca73a76e3660ca990174870404f804" prot="public" virt="non-virtual"><scope>Ecodena::Query::models::Query</scope><name>userID_f</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

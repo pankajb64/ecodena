@@ -1,0 +1,212 @@
+.TH "Ecodena::Attempt::models::ErrorReport" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ecodena::Attempt::models::ErrorReport \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMeta\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBgetTimeRequirement\fP"
+.br
+.ti -1c
+.RI "def \fBsetTimeRequirement\fP"
+.br
+.ti -1c
+.RI "def \fBgetMemory\fP"
+.br
+.ti -1c
+.RI "def \fBsetMemory\fP"
+.br
+.ti -1c
+.RI "def \fBgetErrorType\fP"
+.br
+.ti -1c
+.RI "def \fBsetErrorType\fP"
+.br
+.ti -1c
+.RI "def \fBgetErrorMessage\fP"
+.br
+.ti -1c
+.RI "def \fBsetErrorMessage\fP"
+.br
+.ti -1c
+.RI "def \fBgetTestCaseLevel\fP"
+.br
+.ti -1c
+.RI "def \fBsetTestCaseLevel\fP"
+.br
+.ti -1c
+.RI "def \fB__unicode__\fP"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBtimeRequirement_f\fP"
+.br
+.ti -1c
+.RI "\fBmemory_f\fP"
+.br
+.ti -1c
+.RI "\fBerrorType_f\fP"
+.br
+.ti -1c
+.RI "\fBerrorMessage_f\fP"
+.br
+.ti -1c
+.RI "\fBtestCaseLevel_f\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBerrorReportID_f\fP = models.AutoField(primary_key=True)"
+.br
+.ti -1c
+.RI "tuple \fBtimeRequirement_f\fP = models.FloatField('Time Required for compiling')"
+.br
+.ti -1c
+.RI "tuple \fBmemory_f\fP = models.FloatField('Memory Requirement')"
+.br
+.ti -1c
+.RI "tuple \fBERROR_TYPE\fP = ((0,'Correct Answer'),(1,'Compilation Error'),(2,'Run Time Error'),(3,'Time limit Exceeded'),(4,'Memory Limit Exceeded'),(5,'Wrong Answer'))"
+.br
+.ti -1c
+.RI "tuple \fBerrorType_f\fP = models.CharField( max_length = 40, choices=\fBERROR_TYPE\fP,verbose_name='Types of Errors')"
+.br
+.ti -1c
+.RI "tuple \fBerrorMessage_f\fP = models.TextField('Error Message generated')"
+.br
+.ti -1c
+.RI "tuple \fBtestCaseLevel_f\fP = models.CharField(max_length=40, choices=TestCase.CASE_TYPE, verbose_name='Test Case Level where error occured (Select High if solution is correct)')"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBtimeRequirement\fP = property(getTimeRequirement,setTimeRequirement)"
+.br
+.ti -1c
+.RI "\fBmemory\fP = property(getMemory,setMemory)"
+.br
+.ti -1c
+.RI "\fBerrorType\fP = property(getErrorType,setErrorType)"
+.br
+.ti -1c
+.RI "\fBerrorMessage\fP = property(getErrorMessage,setErrorMessage)"
+.br
+.ti -1c
+.RI "\fBtestCaseLevel\fP = property(getTestCaseLevel,setTestCaseLevel)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 9 of file models.py.
+.SH "Member Function Documentation"
+.PP 
+.SS "def Ecodena.Attempt.models.ErrorReport.__unicode__ (self)"
+.PP
+Definition at line 57 of file models.py.
+.SS "def Ecodena.Attempt.models.ErrorReport.getErrorMessage (self)"
+.PP
+Definition at line 40 of file models.py.
+.SS "def Ecodena.Attempt.models.ErrorReport.getErrorType (self)"
+.PP
+Definition at line 33 of file models.py.
+.SS "def Ecodena.Attempt.models.ErrorReport.getMemory (self)"
+.PP
+Definition at line 26 of file models.py.
+.SS "def Ecodena.Attempt.models.ErrorReport.getTestCaseLevel (self)"
+.PP
+Definition at line 47 of file models.py.
+.SS "def Ecodena.Attempt.models.ErrorReport.getTimeRequirement (self)"
+.PP
+Definition at line 19 of file models.py.
+.SS "def Ecodena.Attempt.models.ErrorReport.setErrorMessage (self, message)"
+.PP
+Definition at line 42 of file models.py.
+.SS "def Ecodena.Attempt.models.ErrorReport.setErrorType (self, type)"
+.PP
+Definition at line 35 of file models.py.
+.SS "def Ecodena.Attempt.models.ErrorReport.setMemory (self, memory)"
+.PP
+Definition at line 28 of file models.py.
+.SS "def Ecodena.Attempt.models.ErrorReport.setTestCaseLevel (self, level)"
+.PP
+Definition at line 49 of file models.py.
+.SS "def Ecodena.Attempt.models.ErrorReport.setTimeRequirement (self, time)"
+.PP
+Definition at line 21 of file models.py.
+.SH "Member Data Documentation"
+.PP 
+.SS "tuple \fBEcodena.Attempt.models.ErrorReport.ERROR_TYPE\fP = ((0,'Correct Answer'),(1,'Compilation Error'),(2,'Run Time Error'),(3,'Time limit Exceeded'),(4,'Memory Limit Exceeded'),(5,'Wrong Answer'))\fC [static]\fP"
+.PP
+Definition at line 13 of file models.py.
+.SS "\fBEcodena.Attempt.models.ErrorReport.errorMessage_f\fP"
+.PP
+Definition at line 42 of file models.py.
+.SS "tuple \fBEcodena.Attempt.models.ErrorReport.errorMessage_f\fP = models.TextField('Error Message generated')\fC [static]\fP"
+.PP
+Definition at line 15 of file models.py.
+.SS "tuple \fBEcodena.Attempt.models.ErrorReport.errorReportID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
+.PP
+Definition at line 10 of file models.py.
+.SS "\fBEcodena.Attempt.models.ErrorReport.errorType_f\fP"
+.PP
+Definition at line 35 of file models.py.
+.SS "tuple \fBEcodena.Attempt.models.ErrorReport.errorType_f\fP = models.CharField( max_length = 40, choices=\fBERROR_TYPE\fP,verbose_name='Types of Errors')\fC [static]\fP"
+.PP
+Definition at line 14 of file models.py.
+.SS "\fBEcodena.Attempt.models.ErrorReport.memory_f\fP"
+.PP
+Definition at line 28 of file models.py.
+.SS "tuple \fBEcodena.Attempt.models.ErrorReport.memory_f\fP = models.FloatField('Memory Requirement')\fC [static]\fP"
+.PP
+Definition at line 12 of file models.py.
+.SS "\fBEcodena.Attempt.models.ErrorReport.testCaseLevel_f\fP"
+.PP
+Definition at line 49 of file models.py.
+.SS "tuple \fBEcodena.Attempt.models.ErrorReport.testCaseLevel_f\fP = models.CharField(max_length=40, choices=TestCase.CASE_TYPE, verbose_name='Test Case Level where error occured (Select High if solution is correct)')\fC [static]\fP"
+.PP
+Definition at line 16 of file models.py.
+.SS "\fBEcodena.Attempt.models.ErrorReport.timeRequirement_f\fP"
+.PP
+Definition at line 21 of file models.py.
+.SS "tuple \fBEcodena.Attempt.models.ErrorReport.timeRequirement_f\fP = models.FloatField('Time Required for compiling')\fC [static]\fP"
+.PP
+Definition at line 11 of file models.py.
+.SH "Property Documentation"
+.PP 
+.SS "Ecodena.Attempt.models.ErrorReport.errorMessage = property(getErrorMessage,setErrorMessage)\fC [static]\fP"
+.PP
+Definition at line 44 of file models.py.
+.SS "Ecodena.Attempt.models.ErrorReport.errorType = property(getErrorType,setErrorType)\fC [static]\fP"
+.PP
+Definition at line 37 of file models.py.
+.SS "Ecodena.Attempt.models.ErrorReport.memory = property(getMemory,setMemory)\fC [static]\fP"
+.PP
+Definition at line 30 of file models.py.
+.SS "Ecodena.Attempt.models.ErrorReport.testCaseLevel = property(getTestCaseLevel,setTestCaseLevel)\fC [static]\fP"
+.PP
+Definition at line 51 of file models.py.
+.SS "Ecodena.Attempt.models.ErrorReport.timeRequirement = property(getTimeRequirement,setTimeRequirement)\fC [static]\fP"
+.PP
+Definition at line 23 of file models.py.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Ecodena from the source code.

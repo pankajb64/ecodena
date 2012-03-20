@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d4/d8b/class_ecodena_1_1_comment_1_1tests_1_1_simple_test" kind="class" prot="public">
+    <compoundname>Ecodena::Comment::tests::SimpleTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d8b/class_ecodena_1_1_comment_1_1tests_1_1_simple_test_1ad9617b0fddbd93a35387498ae397c2b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Comment.tests.SimpleTest.test_basic_addition</definition>
+        <argsstring></argsstring>
+        <name>test_basic_addition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>
+Tests that 1 + 1 always equals 2.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Comment/tests.py" line="12" bodyfile="/home/panx/ecodena/src/Ecodena/Comment/tests.py" bodystart="12" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="82">
+        <label>Ecodena.Comment.tests.SimpleTest</label>
+        <link refid="d4/d8b/class_ecodena_1_1_comment_1_1tests_1_1_simple_test"/>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="84">
+        <label>Ecodena.Comment.tests.SimpleTest</label>
+        <link refid="d4/d8b/class_ecodena_1_1_comment_1_1tests_1_1_simple_test"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/panx/ecodena/src/Ecodena/Comment/tests.py" line="12" bodyfile="/home/panx/ecodena/src/Ecodena/Comment/tests.py" bodystart="11" bodyend="18"/>
+    <listofallmembers>
+      <member refid="d4/d8b/class_ecodena_1_1_comment_1_1tests_1_1_simple_test_1ad9617b0fddbd93a35387498ae397c2b1" prot="public" virt="non-virtual"><scope>Ecodena::Comment::tests::SimpleTest</scope><name>test_basic_addition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

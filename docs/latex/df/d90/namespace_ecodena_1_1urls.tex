@@ -1,0 +1,50 @@
+\hypertarget{namespace_ecodena_1_1urls}{
+\section{Package Ecodena.urls}
+\label{df/d90/namespace_ecodena_1_1urls}\index{Ecodena.urls@{Ecodena.urls}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespace_ecodena_1_1urls_a44a410947e8a3d3fbbb451c003ca6c98}{urlpatterns}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespace_ecodena_1_1urls_a44a410947e8a3d3fbbb451c003ca6c98}{
+\index{Ecodena::urls@{Ecodena::urls}!urlpatterns@{urlpatterns}}
+\index{urlpatterns@{urlpatterns}!Ecodena::urls@{Ecodena::urls}}
+\subsubsection[{urlpatterns}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena::urls.urlpatterns}}}
+\label{df/d90/namespace_ecodena_1_1urls_a44a410947e8a3d3fbbb451c003ca6c98}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+1 patterns('',
+2 # Examples:
+3         url(r'^$', 'Ecodena.Main.views.home', name='home'),
+4         # url(r'^Ecodena/', include('Ecodena.foo.urls')),
+5 
+6         # Uncomment the admin/doc line below to enable admin documentation:
+7         url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+8 
+9         # Uncomment the next line to enable the admin:
+10         url(r'^admin/', include(admin.site.urls)),
+11 
+12         #url(r'^test/$', 'Ecodena.Question.views.test'),
+13 
+14         url(r'^questions/$', 'Ecodena.Question.views.listQuestions'),
+15         url(r'^postQuery/$', 'Ecodena.Query.views.postQuery'),
+16         url(r'^questions/(?P<questionID>[0-9]+)/$', 'Ecodena.Question.views.viewQ
+      uestionByID'),
+17         url(r'^submitSolution$', 'Ecodena.Attempt.views.submitSolution'),
+18         #url(r'^profile/',Ecodena.User.views.viewProfile),
+19         #url(r'^profile/?P<profileID>[0-9]+$',Ecodena.User.views.viewProfileByID)
+      ,
+20         #url(r'^profile/edit/',Ecodena.User.views.editProfile),
+21         url(r'^solutions/$','Ecodena.Attempt.views.listSolutions'),
+22         url(r'^solutions/(?P<solutionID>[0-9]+)$','Ecodena.Attempt.views.viewSolu
+      tion')
+23         )
+\end{DoxyCode}
+
+
+Definition at line 7 of file urls.py.
+

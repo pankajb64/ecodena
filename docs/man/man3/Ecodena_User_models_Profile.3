@@ -1,0 +1,75 @@
+.TH "Ecodena::User::models::Profile" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ecodena::User::models::Profile \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBprofileID_f\fP = models.AutoField(primary_key=True)"
+.br
+.ti -1c
+.RI "tuple \fBdob_f\fP = models.DateField('User Birth Date')"
+.br
+.ti -1c
+.RI "tuple \fBaddress_f\fP = models.TextField('User Address')"
+.br
+.ti -1c
+.RI "tuple \fBGENDER_TYPE\fP = ( (0, 'Male'), (1, 'Female'))"
+.br
+.ti -1c
+.RI "tuple \fBgender_f\fP = models.SmallIntegerField(choices=\fBGENDER_TYPE\fP, verbose_name='Gender')"
+.br
+.ti -1c
+.RI "tuple \fBuserID_f\fP = models.ForeignKey(User, verbose_name='User ID of user whose profile is this', null=False, unique=True)"
+.br
+.ti -1c
+.RI "tuple \fBisProgrammer_f\fP = models.BooleanField('Is a \fBProgrammer\fP', default=True)"
+.br
+.ti -1c
+.RI "tuple \fBisAdmin_f\fP = models.BooleanField('Is Administrator', default=False)"
+.br
+.ti -1c
+.RI "tuple \fBnumberOfAttempts_f\fP = models.IntegerField('Number of Attempts')"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 97 of file models.py.
+.SH "Member Data Documentation"
+.PP 
+.SS "tuple \fBEcodena.User.models.Profile.address_f\fP = models.TextField('User Address')\fC [static]\fP"
+.PP
+Definition at line 101 of file models.py.
+.SS "tuple \fBEcodena.User.models.Profile.dob_f\fP = models.DateField('User Birth Date')\fC [static]\fP"
+.PP
+Definition at line 100 of file models.py.
+.SS "tuple \fBEcodena.User.models.Profile.gender_f\fP = models.SmallIntegerField(choices=\fBGENDER_TYPE\fP, verbose_name='Gender')\fC [static]\fP"
+.PP
+Definition at line 103 of file models.py.
+.SS "tuple \fBEcodena.User.models.Profile.GENDER_TYPE\fP = ( (0, 'Male'), (1, 'Female'))\fC [static]\fP"
+.PP
+Definition at line 102 of file models.py.
+.SS "tuple \fBEcodena.User.models.Profile.isAdmin_f\fP = models.BooleanField('Is Administrator', default=False)\fC [static]\fP"
+.PP
+Definition at line 106 of file models.py.
+.SS "tuple \fBEcodena.User.models.Profile.isProgrammer_f\fP = models.BooleanField('Is a \fBProgrammer\fP', default=True)\fC [static]\fP"
+.PP
+Definition at line 105 of file models.py.
+.SS "tuple \fBEcodena.User.models.Profile.numberOfAttempts_f\fP = models.IntegerField('Number of Attempts')\fC [static]\fP"
+.PP
+Definition at line 107 of file models.py.
+.SS "tuple \fBEcodena.User.models.Profile.profileID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
+.PP
+Definition at line 98 of file models.py.
+.SS "tuple \fBEcodena.User.models.Profile.userID_f\fP = models.ForeignKey(User, verbose_name='User ID of user whose profile is this', null=False, unique=True)\fC [static]\fP"
+.PP
+Definition at line 104 of file models.py.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Ecodena from the source code.

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d1/d9e/urls_8py" kind="file">
+    <compoundname>urls.py</compoundname>
+    <innernamespace refid="df/d90/namespace_ecodena_1_1urls">Ecodena::urls</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="df/d90/namespace_ecodena_1_1urls" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>django.conf.urls.defaults<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>patterns,<sp/>include,<sp/>url</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Uncomment<sp/>the<sp/>next<sp/>two<sp/>lines<sp/>to<sp/>enable<sp/>the<sp/>admin:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>django.contrib<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>admin</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">admin.autodiscover()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="df/d90/namespace_ecodena_1_1urls_1a44a410947e8a3d3fbbb451c003ca6c98" refkind="member"><highlight class="normal">urlpatterns<sp/>=<sp/>patterns(</highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Examples:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^$&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Ecodena.Main.views.home&apos;</highlight><highlight class="normal">,<sp/>name=</highlight><highlight class="stringliteral">&apos;home&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>url(r&apos;^Ecodena/&apos;,<sp/>include(&apos;Ecodena.foo.urls&apos;)),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Uncomment<sp/>the<sp/>admin/doc<sp/>line<sp/>below<sp/>to<sp/>enable<sp/>admin<sp/>documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^admin/doc/&apos;</highlight><highlight class="normal">,<sp/>include(</highlight><highlight class="stringliteral">&apos;django.contrib.admindocs.urls&apos;</highlight><highlight class="normal">)),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Uncomment<sp/>the<sp/>next<sp/>line<sp/>to<sp/>enable<sp/>the<sp/>admin:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^admin/&apos;</highlight><highlight class="normal">,<sp/>include(admin.site.urls)),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#url(r&apos;^test/$&apos;,<sp/>&apos;Ecodena.Question.views.test&apos;),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^questions/$&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Ecodena.Question.views.listQuestions&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^postQuery/$&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Ecodena.Query.views.postQuery&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^questions/(?P&lt;questionID&gt;[0-9]+)/$&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Ecodena.Question.views.viewQuestionByID&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^submitSolution$&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Ecodena.Attempt.views.submitSolution&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#url(r&apos;^profile/&apos;,Ecodena.User.views.viewProfile),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#url(r&apos;^profile/?P&lt;profileID&gt;[0-9]+$&apos;,Ecodena.User.views.viewProfileByID),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#url(r&apos;^profile/edit/&apos;,Ecodena.User.views.editProfile),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^solutions/$&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;Ecodena.Attempt.views.listSolutions&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^solutions/(?P&lt;solutionID&gt;[0-9]+)$&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;Ecodena.Attempt.views.viewSolution&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+    </programlisting>
+    <location file="/home/panx/ecodena/src/Ecodena/urls.py"/>
+  </compounddef>
+</doxygen>

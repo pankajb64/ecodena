@@ -1,0 +1,86 @@
+.TH "Ecodena::Compiler::models::Language" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ecodena::Compiler::models::Language \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMeta\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBgetLanguageName\fP"
+.br
+.ti -1c
+.RI "def \fBsetLanguageName\fP"
+.br
+.ti -1c
+.RI "def \fB__unicode__\fP"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBlanguageName_f\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBlanguageID_f\fP = models.AutoField(primary_key=True)"
+.br
+.ti -1c
+.RI "tuple \fBlanguageName_f\fP = models.CharField('Language Name', max_length=40, null=False, unique=True)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBlanguageName\fP = property(getLanguageName, setLanguageName)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 5 of file models.py.
+.SH "Member Function Documentation"
+.PP 
+.SS "def Ecodena.Compiler.models.Language.__unicode__ (self)"
+.PP
+Definition at line 22 of file models.py.
+.SS "def Ecodena.Compiler.models.Language.getLanguageName (self)"
+.PP
+Definition at line 10 of file models.py.
+.SS "def Ecodena.Compiler.models.Language.setLanguageName (self, languageName)"
+.PP
+Definition at line 13 of file models.py.
+.SH "Member Data Documentation"
+.PP 
+.SS "tuple \fBEcodena.Compiler.models.Language.languageID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
+.PP
+Definition at line 7 of file models.py.
+.SS "\fBEcodena.Compiler.models.Language.languageName_f\fP"
+.PP
+Definition at line 13 of file models.py.
+.SS "tuple \fBEcodena.Compiler.models.Language.languageName_f\fP = models.CharField('Language Name', max_length=40, null=False, unique=True)\fC [static]\fP"
+.PP
+Definition at line 8 of file models.py.
+.SH "Property Documentation"
+.PP 
+.SS "Ecodena.Compiler.models.Language.languageName = property(getLanguageName, setLanguageName)\fC [static]\fP"
+.PP
+Definition at line 16 of file models.py.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Ecodena from the source code.

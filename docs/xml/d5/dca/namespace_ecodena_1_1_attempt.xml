@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d5/dca/namespace_ecodena_1_1_attempt" kind="namespace">
+    <compoundname>Ecodena::Attempt</compoundname>
+    <innernamespace refid="dd/d70/namespace_ecodena_1_1_attempt_1_1admin">Ecodena::Attempt::admin</innernamespace>
+    <innernamespace refid="d1/dca/namespace_ecodena_1_1_attempt_1_1models">Ecodena::Attempt::models</innernamespace>
+    <innernamespace refid="d1/d39/namespace_ecodena_1_1_attempt_1_1tests">Ecodena::Attempt::tests</innernamespace>
+    <innernamespace refid="d7/d76/namespace_ecodena_1_1_attempt_1_1views">Ecodena::Attempt::views</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Attempt/__init__.py" line="1"/>
+  </compounddef>
+</doxygen>

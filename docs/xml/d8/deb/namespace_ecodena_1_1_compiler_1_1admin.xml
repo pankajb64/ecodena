@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d8/deb/namespace_ecodena_1_1_compiler_1_1admin" kind="namespace">
+    <compoundname>Ecodena::Compiler::admin</compoundname>
+    <innerclass refid="d3/de1/class_ecodena_1_1_compiler_1_1admin_1_1_language_admin" prot="public">Ecodena::Compiler::admin::LanguageAdmin</innerclass>
+    <innerclass refid="dc/dbe/class_ecodena_1_1_compiler_1_1admin_1_1_compiler_version_admin" prot="public">Ecodena::Compiler::admin::CompilerVersionAdmin</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Compiler/admin.py" line="1"/>
+  </compounddef>
+</doxygen>

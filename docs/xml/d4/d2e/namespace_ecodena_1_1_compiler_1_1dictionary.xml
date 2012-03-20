@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d4/d2e/namespace_ecodena_1_1_compiler_1_1dictionary" kind="namespace">
+    <compoundname>Ecodena::Compiler::dictionary</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d4/d2e/namespace_ecodena_1_1_compiler_1_1dictionary_1af63ec36157fc96237bdb5926dda5a77f" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Ecodena::Compiler::dictionary.compilers</definition>
+        <argsstring></argsstring>
+        <name>compilers</name>
+        <initializer>{
+
+&apos;C 1.1.1&apos;: Compiler.views.CCompile111,
+&apos;Java 1.1.1&apos;:Compiler.views.JavaCompile111,
+
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Compiler/dictionary.py" line="1" bodyfile="/home/panx/ecodena/src/Ecodena/Compiler/dictionary.py" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Compiler/dictionary.py" line="1"/>
+  </compounddef>
+</doxygen>

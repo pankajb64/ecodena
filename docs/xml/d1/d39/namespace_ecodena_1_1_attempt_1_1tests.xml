@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="d1/d39/namespace_ecodena_1_1_attempt_1_1tests" kind="namespace">
+    <compoundname>Ecodena::Attempt::tests</compoundname>
+    <innerclass refid="db/dc6/class_ecodena_1_1_attempt_1_1tests_1_1_simple_test" prot="public">Ecodena::Attempt::tests::SimpleTest</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>
+This file demonstrates writing tests using the unittest module. These will pass
+when you run &quot;manage.py test&quot;.
+
+Replace this with more appropriate tests for your application.
+</verbatim> </para>    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Attempt/tests.py" line="1"/>
+  </compounddef>
+</doxygen>
