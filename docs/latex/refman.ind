@@ -1,0 +1,1083 @@
+\begin{theindex}
+
+  \item {/home/panx/ecodena/src/Ecodena/Attempt/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py}, 
+		\hyperpage{87}
+  \item {/home/panx/ecodena/src/Ecodena/Attempt/admin.py}, 
+		\hyperpage{88}
+  \item {/home/panx/ecodena/src/Ecodena/Attempt/models.py}, 
+		\hyperpage{90}
+  \item {/home/panx/ecodena/src/Ecodena/Attempt/tests.py}, 
+		\hyperpage{92}
+  \item {/home/panx/ecodena/src/Ecodena/Attempt/views.py}, 
+		\hyperpage{94}
+  \item {/home/panx/ecodena/src/Ecodena/Comment/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py}, 
+		\hyperpage{87}
+  \item {/home/panx/ecodena/src/Ecodena/Comment/admin.py}, 
+		\hyperpage{89}
+  \item {/home/panx/ecodena/src/Ecodena/Comment/models.py}, 
+		\hyperpage{90}
+  \item {/home/panx/ecodena/src/Ecodena/Comment/tests.py}, 
+		\hyperpage{93}
+  \item {/home/panx/ecodena/src/Ecodena/Comment/views.py}, 
+		\hyperpage{95}
+  \item {/home/panx/ecodena/src/Ecodena/Compiler/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py}, 
+		\hyperpage{87}
+  \item {/home/panx/ecodena/src/Ecodena/Compiler/admin.py}, 
+		\hyperpage{89}
+  \item {/home/panx/ecodena/src/Ecodena/Compiler/dictionary.py}, 
+		\hyperpage{96}
+  \item {/home/panx/ecodena/src/Ecodena/Compiler/models.py}, 
+		\hyperpage{91}
+  \item {/home/panx/ecodena/src/Ecodena/Compiler/tests.py}, 
+		\hyperpage{93}
+  \item {/home/panx/ecodena/src/Ecodena/Compiler/views.py}, 
+		\hyperpage{95}
+  \item {/home/panx/ecodena/src/Ecodena/Main/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py}, 
+		\hyperpage{88}
+  \item {/home/panx/ecodena/src/Ecodena/Main/models.py}, \hyperpage{91}
+  \item {/home/panx/ecodena/src/Ecodena/Main/tests.py}, \hyperpage{93}
+  \item {/home/panx/ecodena/src/Ecodena/Main/views.py}, \hyperpage{95}
+  \item {/home/panx/ecodena/src/Ecodena/Query/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py}, 
+		\hyperpage{88}
+  \item {/home/panx/ecodena/src/Ecodena/Query/admin.py}, \hyperpage{89}
+  \item {/home/panx/ecodena/src/Ecodena/Query/models.py}, 
+		\hyperpage{91}
+  \item {/home/panx/ecodena/src/Ecodena/Query/tests.py}, \hyperpage{93}
+  \item {/home/panx/ecodena/src/Ecodena/Query/views.py}, \hyperpage{95}
+  \item {/home/panx/ecodena/src/Ecodena/Question/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py}, 
+		\hyperpage{88}
+  \item {/home/panx/ecodena/src/Ecodena/Question/admin.py}, 
+		\hyperpage{89}
+  \item {/home/panx/ecodena/src/Ecodena/Question/models.py}, 
+		\hyperpage{92}
+  \item {/home/panx/ecodena/src/Ecodena/Question/tests.py}, 
+		\hyperpage{94}
+  \item {/home/panx/ecodena/src/Ecodena/Question/views.py}, 
+		\hyperpage{96}
+  \item {/home/panx/ecodena/src/Ecodena/User/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py}, 
+		\hyperpage{88}
+  \item {/home/panx/ecodena/src/Ecodena/User/admin.py}, \hyperpage{90}
+  \item {/home/panx/ecodena/src/Ecodena/User/models.py}, \hyperpage{92}
+  \item {/home/panx/ecodena/src/Ecodena/User/tests.py}, \hyperpage{94}
+  \item {/home/panx/ecodena/src/Ecodena/User/views.py}, \hyperpage{96}
+  \item {/home/panx/ecodena/src/Ecodena/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py}, 
+		\hyperpage{87}
+  \item {/home/panx/ecodena/src/Ecodena/manage.py}, \hyperpage{97}
+  \item {/home/panx/ecodena/src/Ecodena/settings.py}, \hyperpage{97}
+  \item {/home/panx/ecodena/src/Ecodena/urls.py}, \hyperpage{97}
+  \item {\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{27}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{45}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{34}
+    \subitem {Ecodena::Compiler::models::CompilerVersion}, 
+		\hyperpage{42}
+    \subitem {Ecodena::Compiler::models::Language}, \hyperpage{51}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{66}
+    \subitem {Ecodena::Question::models::Level}, \hyperpage{53}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{72}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{82}
+    \subitem {Ecodena::Question::models::Type}, \hyperpage{85}
+
+  \indexspace
+
+  \item {addComments}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{72}
+  \item {address\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::User::models::Profile}, \hyperpage{61}
+  \item {ADMIN\_\discretionary {-}{}{}MEDIA\_\discretionary {-}{}{}PREFIX}
+    \subitem {Ecodena::settings}, \hyperpage{18}
+  \item {adminID}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{69}
+  \item {adminID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{67}
+  \item {ADMINS}
+    \subitem {Ecodena::settings}, \hyperpage{18}
+  \item {attempt}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{40}
+  \item {attemptID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{30}
+  \item {attemptID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{28}
+  \item {AUTH\_\discretionary {-}{}{}PROFILE\_\discretionary {-}{}{}MODULE}
+    \subitem {Ecodena::settings}, \hyperpage{18}
+
+  \indexspace
+
+  \item {CASE\_\discretionary {-}{}{}TYPE}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{83}
+  \item {caseID}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{84}
+  \item {caseID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{83}
+  \item {caseType}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{84}
+  \item {caseType\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{83}
+  \item {CCompile110}
+    \subitem {Ecodena::Compiler::views}, \hyperpage{13}
+  \item {commentID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{35}
+  \item {commentList}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{75}
+  \item {commentList\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{73}
+  \item {commentText}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{36}
+  \item {commentText\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{35}
+  \item {compile}
+    \subitem {Ecodena::Compiler::models::CCompiler111}, \hyperpage{32}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{39}
+    \subitem {Ecodena::Compiler::models::JavaCompiler111}, 
+		\hyperpage{49}
+  \item {compilers}
+    \subitem {Ecodena::Compiler::dictionary}, \hyperpage{12}
+  \item {CompilerVersion}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{41}
+  \item {compilerVersion}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{40}
+  \item {compileSolution}
+    \subitem {Ecodena::Attempt::views}, \hyperpage{10}
+
+  \indexspace
+
+  \item {DATABASES}
+    \subitem {Ecodena::settings}, \hyperpage{18}
+  \item {DEBUG}
+    \subitem {Ecodena::settings}, \hyperpage{19}
+  \item {dob\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::User::models::Profile}, \hyperpage{61}
+
+  \indexspace
+
+  \item {Ecodena}, \hyperpage{9}
+  \item {Ecodena.Attempt}, \hyperpage{9}
+  \item {Ecodena.Attempt.admin}, \hyperpage{9}
+  \item {Ecodena.Attempt.models}, \hyperpage{10}
+  \item {Ecodena.Attempt.tests}, \hyperpage{10}
+  \item {Ecodena.Attempt.views}, \hyperpage{10}
+  \item {Ecodena.Comment}, \hyperpage{11}
+  \item {Ecodena.Comment.admin}, \hyperpage{11}
+  \item {Ecodena.Comment.models}, \hyperpage{11}
+  \item {Ecodena.Comment.tests}, \hyperpage{11}
+  \item {Ecodena.Comment.views}, \hyperpage{12}
+  \item {Ecodena.Compiler}, \hyperpage{12}
+  \item {Ecodena.Compiler.admin}, \hyperpage{12}
+  \item {Ecodena.Compiler.dictionary}, \hyperpage{12}
+  \item {Ecodena.Compiler.models}, \hyperpage{13}
+  \item {Ecodena.Compiler.tests}, \hyperpage{13}
+  \item {Ecodena.Compiler.views}, \hyperpage{13}
+  \item {Ecodena.Main}, \hyperpage{14}
+  \item {Ecodena.Main.models}, \hyperpage{14}
+  \item {Ecodena.Main.tests}, \hyperpage{14}
+  \item {Ecodena.Main.views}, \hyperpage{14}
+  \item {Ecodena.manage}, \hyperpage{14}
+  \item {Ecodena.Query}, \hyperpage{14}
+  \item {Ecodena.Query.admin}, \hyperpage{15}
+  \item {Ecodena.Query.models}, \hyperpage{15}
+  \item {Ecodena.Query.tests}, \hyperpage{15}
+  \item {Ecodena.Query.views}, \hyperpage{15}
+  \item {Ecodena.Question}, \hyperpage{16}
+  \item {Ecodena.Question.admin}, \hyperpage{16}
+  \item {Ecodena.Question.models}, \hyperpage{16}
+  \item {Ecodena.Question.tests}, \hyperpage{16}
+  \item {Ecodena.Question.views}, \hyperpage{17}
+  \item {Ecodena.settings}, \hyperpage{17}
+  \item {Ecodena.urls}, \hyperpage{22}
+  \item {Ecodena.User}, \hyperpage{23}
+  \item {Ecodena.User.admin}, \hyperpage{23}
+  \item {Ecodena.User.models}, \hyperpage{24}
+  \item {Ecodena.User.tests}, \hyperpage{24}
+  \item {Ecodena.User.views}, \hyperpage{24}
+  \item {Ecodena::Attempt::admin::AttemptAdmin}, \hyperpage{31}
+    \subitem {list\_\discretionary {-}{}{}display}, \hyperpage{31}
+  \item {Ecodena::Attempt::admin::ErrorReportAdmin}, \hyperpage{48}
+    \subitem {list\_\discretionary {-}{}{}display}, \hyperpage{49}
+  \item {Ecodena::Attempt::models::Attempt}, \hyperpage{25}
+    \subitem {\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{27}
+    \subitem {attemptID}, \hyperpage{30}
+    \subitem {attemptID\_\discretionary {-}{}{}f}, \hyperpage{28}
+    \subitem {errorReportID}, \hyperpage{30}
+    \subitem {errorReportID\_\discretionary {-}{}{}f}, 
+		\hyperpage{28, 29}
+    \subitem {getAttemptID}, \hyperpage{27}
+    \subitem {getErrorReportID}, \hyperpage{27}
+    \subitem {getQuestionID}, \hyperpage{27}
+    \subitem {getSolution}, \hyperpage{27}
+    \subitem {getTimeOfSubmission}, \hyperpage{27}
+    \subitem {getUserID}, \hyperpage{27}
+    \subitem {isCorrect}, \hyperpage{27}
+    \subitem {questionID}, \hyperpage{30}
+    \subitem {questionID\_\discretionary {-}{}{}f}, \hyperpage{29}
+    \subitem {setAttemptID}, \hyperpage{28}
+    \subitem {setErrorReportID}, \hyperpage{28}
+    \subitem {setQuestionID}, \hyperpage{28}
+    \subitem {setSolution}, \hyperpage{28}
+    \subitem {setStatus}, \hyperpage{28}
+    \subitem {setTimeOfSubmission}, \hyperpage{28}
+    \subitem {setUserID}, \hyperpage{28}
+    \subitem {solution\_\discretionary {-}{}{}f}, \hyperpage{29}
+    \subitem {solutionText}, \hyperpage{30}
+    \subitem {status}, \hyperpage{30}
+    \subitem {status\_\discretionary {-}{}{}f}, \hyperpage{29}
+    \subitem {timeOfSubmission}, \hyperpage{30}
+    \subitem {timeOfSubmission\_\discretionary {-}{}{}f}, 
+		\hyperpage{29}
+    \subitem {userID}, \hyperpage{30}
+    \subitem {userID\_\discretionary {-}{}{}f}, \hyperpage{30}
+  \item {Ecodena::Attempt::models::Attempt::Meta}, \hyperpage{59}
+    \subitem {verbose\_\discretionary {-}{}{}name}, \hyperpage{60}
+    \subitem {verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}, 
+		\hyperpage{60}
+  \item {Ecodena::Attempt::models::ErrorReport}, \hyperpage{44}
+    \subitem {\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{45}
+    \subitem {ERROR\_\discretionary {-}{}{}TYPE}, \hyperpage{46}
+    \subitem {errorMessage}, \hyperpage{48}
+    \subitem {errorMessage\_\discretionary {-}{}{}f}, 
+		\hyperpage{46, 47}
+    \subitem {errorReportID\_\discretionary {-}{}{}f}, \hyperpage{47}
+    \subitem {errorType}, \hyperpage{48}
+    \subitem {errorType\_\discretionary {-}{}{}f}, \hyperpage{47}
+    \subitem {getErrorMessage}, \hyperpage{45}
+    \subitem {getErrorType}, \hyperpage{45}
+    \subitem {getMemory}, \hyperpage{46}
+    \subitem {getTestCaseLevel}, \hyperpage{46}
+    \subitem {getTimeRequirement}, \hyperpage{46}
+    \subitem {memory}, \hyperpage{48}
+    \subitem {memory\_\discretionary {-}{}{}f}, \hyperpage{47}
+    \subitem {setErrorMessage}, \hyperpage{46}
+    \subitem {setErrorType}, \hyperpage{46}
+    \subitem {setMemory}, \hyperpage{46}
+    \subitem {setTestCaseLevel}, \hyperpage{46}
+    \subitem {setTimeRequirement}, \hyperpage{46}
+    \subitem {testCaseLevel}, \hyperpage{48}
+    \subitem {testCaseLevel\_\discretionary {-}{}{}f}, \hyperpage{47}
+    \subitem {timeRequirement}, \hyperpage{48}
+    \subitem {timeRequirement\_\discretionary {-}{}{}f}, 
+		\hyperpage{47, 48}
+  \item {Ecodena::Attempt::models::ErrorReport::Meta}, \hyperpage{57}
+    \subitem {verbose\_\discretionary {-}{}{}name}, \hyperpage{58}
+    \subitem {verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}, 
+		\hyperpage{58}
+  \item {Ecodena::Attempt::tests::SimpleTest}, \hyperpage{79}
+    \subitem {test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}, 
+		\hyperpage{80}
+  \item {Ecodena::Attempt::views}
+    \subitem {compileSolution}, \hyperpage{10}
+    \subitem {listSolutions}, \hyperpage{10}
+    \subitem {submitSolution}, \hyperpage{11}
+    \subitem {viewSolution}, \hyperpage{11}
+  \item {Ecodena::Attempt::views::SolutionForm}, \hyperpage{80}
+    \subitem {text}, \hyperpage{80}
+    \subitem {version}, \hyperpage{80}
+  \item {Ecodena::Comment::admin::CommentAdmin}, \hyperpage{37}
+    \subitem {list\_\discretionary {-}{}{}display}, \hyperpage{37}
+  \item {Ecodena::Comment::models::Comment}, \hyperpage{32}
+    \subitem {\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{34}
+    \subitem {commentID\_\discretionary {-}{}{}f}, \hyperpage{35}
+    \subitem {commentText}, \hyperpage{36}
+    \subitem {commentText\_\discretionary {-}{}{}f}, \hyperpage{35}
+    \subitem {getCommentText}, \hyperpage{34}
+    \subitem {getQuestionID}, \hyperpage{34}
+    \subitem {getReportingUserID}, \hyperpage{34}
+    \subitem {getTimeStamp}, \hyperpage{34}
+    \subitem {getUserID}, \hyperpage{34}
+    \subitem {isReported}, \hyperpage{34}, \hyperpage{36}
+    \subitem {isReported\_\discretionary {-}{}{}f}, \hyperpage{35}
+    \subitem {questionID}, \hyperpage{37}
+    \subitem {questionID\_\discretionary {-}{}{}f}, \hyperpage{35}
+    \subitem {report}, \hyperpage{34}
+    \subitem {reportingUserID}, \hyperpage{37}
+    \subitem {reportingUserID\_\discretionary {-}{}{}f}, \hyperpage{36}
+    \subitem {setCommentText}, \hyperpage{34}
+    \subitem {setQuestionID}, \hyperpage{34}
+    \subitem {setReportingUserID}, \hyperpage{34}
+    \subitem {setTimeStamp}, \hyperpage{35}
+    \subitem {setUserID}, \hyperpage{35}
+    \subitem {timeStamp}, \hyperpage{37}
+    \subitem {timeStamp\_\discretionary {-}{}{}f}, \hyperpage{36}
+    \subitem {userID}, \hyperpage{37}
+    \subitem {userID\_\discretionary {-}{}{}f}, \hyperpage{36}
+  \item {Ecodena::Comment::models::Comment::Meta}, \hyperpage{59}
+    \subitem {verbose\_\discretionary {-}{}{}name}, \hyperpage{59}
+    \subitem {verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}, 
+		\hyperpage{59}
+  \item {Ecodena::Comment::tests::SimpleTest}, \hyperpage{76}
+    \subitem {test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}, 
+		\hyperpage{76}
+  \item {Ecodena::Compiler::admin::CompilerVersionAdmin}, 
+		\hyperpage{44}
+    \subitem {list\_\discretionary {-}{}{}display}, \hyperpage{44}
+  \item {Ecodena::Compiler::admin::LanguageAdmin}, \hyperpage{52}
+    \subitem {list\_\discretionary {-}{}{}display}, \hyperpage{52}
+  \item {Ecodena::Compiler::dictionary}
+    \subitem {compilers}, \hyperpage{12}
+  \item {Ecodena::Compiler::models::CCompiler111}, \hyperpage{32}
+    \subitem {compile}, \hyperpage{32}
+  \item {Ecodena::Compiler::models::Compiler}, \hyperpage{38}
+    \subitem {attempt}, \hyperpage{40}
+    \subitem {compile}, \hyperpage{39}
+    \subitem {CompilerVersion}, \hyperpage{41}
+    \subitem {compilerVersion}, \hyperpage{40}
+    \subitem {errorReport}, \hyperpage{40}
+    \subitem {generateErrorReport}, \hyperpage{39}
+    \subitem {getAttempt}, \hyperpage{39}
+    \subitem {getCompilerVersion}, \hyperpage{39}
+    \subitem {getLanguage}, \hyperpage{40}
+    \subitem {getQuestion}, \hyperpage{40}
+    \subitem {language}, \hyperpage{40, 41}
+    \subitem {question}, \hyperpage{41}
+    \subitem {setAttempt}, \hyperpage{40}
+    \subitem {setCompilerVersion}, \hyperpage{40}
+    \subitem {setLanguage}, \hyperpage{40}
+    \subitem {setQuestion}, \hyperpage{40}
+  \item {Ecodena::Compiler::models::CompilerVersion}, \hyperpage{41}
+    \subitem {\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{42}
+    \subitem {getLanguage}, \hyperpage{42}
+    \subitem {getVersionName}, \hyperpage{42}
+    \subitem {language}, \hyperpage{43}
+    \subitem {language\_\discretionary {-}{}{}f}, \hyperpage{43}
+    \subitem {languageName}, \hyperpage{42}
+    \subitem {setLanguage}, \hyperpage{42}
+    \subitem {setVersionName}, \hyperpage{42}
+    \subitem {versionID\_\discretionary {-}{}{}f}, \hyperpage{43}
+    \subitem {versionName}, \hyperpage{43}
+    \subitem {versionName\_\discretionary {-}{}{}f}, \hyperpage{43}
+  \item {Ecodena::Compiler::models::CompilerVersion::Meta}, 
+		\hyperpage{56}
+    \subitem {verbose\_\discretionary {-}{}{}name}, \hyperpage{56}
+    \subitem {verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}, 
+		\hyperpage{57}
+  \item {Ecodena::Compiler::models::JavaCompiler111}, \hyperpage{49}
+    \subitem {compile}, \hyperpage{49}
+  \item {Ecodena::Compiler::models::Language}, \hyperpage{50}
+    \subitem {\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{51}
+    \subitem {getLanguageName}, \hyperpage{51}
+    \subitem {languageID\_\discretionary {-}{}{}f}, \hyperpage{51}
+    \subitem {languageName}, \hyperpage{51}
+    \subitem {languageName\_\discretionary {-}{}{}f}, \hyperpage{51}
+    \subitem {setLanguageName}, \hyperpage{51}
+  \item {Ecodena::Compiler::models::Language::Meta}, \hyperpage{56}
+    \subitem {verbose\_\discretionary {-}{}{}name}, \hyperpage{56}
+    \subitem {verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}, 
+		\hyperpage{56}
+  \item {Ecodena::Compiler::tests::SimpleTest}, \hyperpage{77}
+    \subitem {test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}, 
+		\hyperpage{77}
+  \item {Ecodena::Compiler::views}
+    \subitem {CCompile110}, \hyperpage{13}
+    \subitem {JavaCompile110}, \hyperpage{13}
+  \item {Ecodena::Main::tests::SimpleTest}, \hyperpage{77}
+    \subitem {test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}, 
+		\hyperpage{77}
+  \item {Ecodena::Main::views}
+    \subitem {home}, \hyperpage{14}
+  \item {Ecodena::Query::admin::QueryAdmin}, \hyperpage{70}
+    \subitem {list\_\discretionary {-}{}{}display}, \hyperpage{70}
+  \item {Ecodena::Query::models::Query}, \hyperpage{64}
+    \subitem {\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{66}
+    \subitem {adminID}, \hyperpage{69}
+    \subitem {adminID\_\discretionary {-}{}{}f}, \hyperpage{67}
+    \subitem {getAdminID}, \hyperpage{66}
+    \subitem {getQueryID}, \hyperpage{66}
+    \subitem {getQueryText}, \hyperpage{66}
+    \subitem {getQueryTime}, \hyperpage{66}
+    \subitem {getReplyTime}, \hyperpage{66}
+    \subitem {getSolution}, \hyperpage{66}
+    \subitem {getUserID}, \hyperpage{66}
+    \subitem {queryID}, \hyperpage{69}
+    \subitem {queryID\_\discretionary {-}{}{}f}, \hyperpage{67}
+    \subitem {queryText}, \hyperpage{69}
+    \subitem {queryText\_\discretionary {-}{}{}f}, \hyperpage{67, 68}
+    \subitem {queryTime}, \hyperpage{69}
+    \subitem {queryTime\_\discretionary {-}{}{}f}, \hyperpage{68}
+    \subitem {replyTime}, \hyperpage{69}
+    \subitem {replyTime\_\discretionary {-}{}{}f}, \hyperpage{68}
+    \subitem {setAdminID}, \hyperpage{66}
+    \subitem {setQueryID}, \hyperpage{66}
+    \subitem {setQueryText}, \hyperpage{66}
+    \subitem {setQueryTime}, \hyperpage{67}
+    \subitem {setReplyTime}, \hyperpage{67}
+    \subitem {setSolution}, \hyperpage{67}
+    \subitem {setUserID}, \hyperpage{67}
+    \subitem {solution}, \hyperpage{69}
+    \subitem {solution\_\discretionary {-}{}{}f}, \hyperpage{68}
+    \subitem {userID}, \hyperpage{69}
+    \subitem {userID\_\discretionary {-}{}{}f}, \hyperpage{68}
+  \item {Ecodena::Query::models::Query::Meta}, \hyperpage{60}
+    \subitem {verbose\_\discretionary {-}{}{}name}, \hyperpage{60}
+    \subitem {verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}, 
+		\hyperpage{60}
+  \item {Ecodena::Query::tests::SimpleTest}, \hyperpage{78}
+    \subitem {test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}, 
+		\hyperpage{78}
+  \item {Ecodena::Query::views}
+    \subitem {postQuery}, \hyperpage{16}
+  \item {Ecodena::Query::views::QueryForm}, \hyperpage{70}
+    \subitem {text}, \hyperpage{70}
+  \item {Ecodena::Question::admin::LevelInline}, \hyperpage{54}
+    \subitem {extra}, \hyperpage{54}
+    \subitem {model}, \hyperpage{54}
+  \item {Ecodena::Question::admin::QuestionAdmin}, \hyperpage{75}
+    \subitem {inlines1}, \hyperpage{76}
+    \subitem {inlines2}, \hyperpage{76}
+    \subitem {list\_\discretionary {-}{}{}display}, \hyperpage{76}
+  \item {Ecodena::Question::admin::TypeInline}, \hyperpage{85}
+    \subitem {model}, \hyperpage{86}
+  \item {Ecodena::Question::models::BattleQuestion}, \hyperpage{31}
+  \item {Ecodena::Question::models::Level}, \hyperpage{52}
+    \subitem {\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{53}
+    \subitem {getLevelName}, \hyperpage{53}
+    \subitem {levelID\_\discretionary {-}{}{}f}, \hyperpage{53}
+    \subitem {levelName}, \hyperpage{53}
+    \subitem {levelName\_\discretionary {-}{}{}f}, \hyperpage{53}
+    \subitem {setLevelName}, \hyperpage{53}
+  \item {Ecodena::Question::models::Level::Meta}, \hyperpage{55}
+    \subitem {verbose\_\discretionary {-}{}{}name}, \hyperpage{55}
+    \subitem {verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}, 
+		\hyperpage{55}
+  \item {Ecodena::Question::models::Question}, \hyperpage{71}
+    \subitem {\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{72}
+    \subitem {addComments}, \hyperpage{72}
+    \subitem {commentList}, \hyperpage{75}
+    \subitem {commentList\_\discretionary {-}{}{}f}, \hyperpage{73}
+    \subitem {getComments}, \hyperpage{72}
+    \subitem {getQuestionID}, \hyperpage{72}
+    \subitem {getQuestionText}, \hyperpage{72}
+    \subitem {getQuestionTitle}, \hyperpage{72}
+    \subitem {getTestCasesList}, \hyperpage{72}
+    \subitem {level\_\discretionary {-}{}{}f}, \hyperpage{73}
+    \subitem {questionID}, \hyperpage{75}
+    \subitem {questionID\_\discretionary {-}{}{}f}, \hyperpage{73}
+    \subitem {questionText}, \hyperpage{75}
+    \subitem {questionText\_\discretionary {-}{}{}f}, \hyperpage{74}
+    \subitem {questionTitle}, \hyperpage{75}
+    \subitem {questionTitle\_\discretionary {-}{}{}f}, \hyperpage{74}
+    \subitem {removeTestCase}, \hyperpage{72}
+    \subitem {setCommentList}, \hyperpage{73}
+    \subitem {setQuestionID}, \hyperpage{73}
+    \subitem {setQuestionText}, \hyperpage{73}
+    \subitem {setQuestionTitle}, \hyperpage{73}
+    \subitem {setTestCasesList}, \hyperpage{73}
+    \subitem {testCasesList}, \hyperpage{75}
+    \subitem {testCasesList\_\discretionary {-}{}{}f}, \hyperpage{74}
+    \subitem {timeLimit\_\discretionary {-}{}{}f}, \hyperpage{74}
+    \subitem {type\_\discretionary {-}{}{}f}, \hyperpage{74}
+  \item {Ecodena::Question::models::Question::Meta}, \hyperpage{57}
+    \subitem {verbose\_\discretionary {-}{}{}name}, \hyperpage{57}
+    \subitem {verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}, 
+		\hyperpage{57}
+  \item {Ecodena::Question::models::TestCase}, \hyperpage{81}
+    \subitem {\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{82}
+    \subitem {CASE\_\discretionary {-}{}{}TYPE}, \hyperpage{83}
+    \subitem {caseID}, \hyperpage{84}
+    \subitem {caseID\_\discretionary {-}{}{}f}, \hyperpage{83}
+    \subitem {caseType}, \hyperpage{84}
+    \subitem {caseType\_\discretionary {-}{}{}f}, \hyperpage{83}
+    \subitem {getCaseType}, \hyperpage{82}
+    \subitem {getOutput}, \hyperpage{82}
+    \subitem {getQuestion}, \hyperpage{82}
+    \subitem {getTestID}, \hyperpage{82}
+    \subitem {input\_\discretionary {-}{}{}f}, \hyperpage{83}
+    \subitem {output}, \hyperpage{84}
+    \subitem {output\_\discretionary {-}{}{}f}, \hyperpage{83}
+    \subitem {questionID}, \hyperpage{84}
+    \subitem {questionID\_\discretionary {-}{}{}f}, \hyperpage{83, 84}
+    \subitem {setCaseType}, \hyperpage{82}
+    \subitem {setOutput}, \hyperpage{82}
+    \subitem {setQuestion}, \hyperpage{82}
+    \subitem {setTestID}, \hyperpage{82}
+  \item {Ecodena::Question::models::TestCase::Meta}, \hyperpage{58}
+    \subitem {verbose\_\discretionary {-}{}{}name}, \hyperpage{58}
+    \subitem {verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}, 
+		\hyperpage{58}
+  \item {Ecodena::Question::models::Type}, \hyperpage{84}
+    \subitem {\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{85}
+    \subitem {typeID\_\discretionary {-}{}{}f}, \hyperpage{85}
+    \subitem {typeName\_\discretionary {-}{}{}f}, \hyperpage{85}
+  \item {Ecodena::Question::models::Type::Meta}, \hyperpage{54}
+    \subitem {verbose\_\discretionary {-}{}{}name}, \hyperpage{55}
+    \subitem {verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}, 
+		\hyperpage{55}
+  \item {Ecodena::Question::tests::SimpleTest}, \hyperpage{78}
+    \subitem {test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}, 
+		\hyperpage{79}
+  \item {Ecodena::Question::views}
+    \subitem {listQuestions}, \hyperpage{17}
+    \subitem {test}, \hyperpage{17}
+    \subitem {viewQuestionByID}, \hyperpage{17}
+  \item {Ecodena::Question::views::CommentForm}, \hyperpage{38}
+    \subitem {text}, \hyperpage{38}
+  \item {Ecodena::settings}
+    \subitem {ADMIN\_\discretionary {-}{}{}MEDIA\_\discretionary {-}{}{}PREFIX}, 
+		\hyperpage{18}
+    \subitem {ADMINS}, \hyperpage{18}
+    \subitem {AUTH\_\discretionary {-}{}{}PROFILE\_\discretionary {-}{}{}MODULE}, 
+		\hyperpage{18}
+    \subitem {DATABASES}, \hyperpage{18}
+    \subitem {DEBUG}, \hyperpage{19}
+    \subitem {INSTALLED\_\discretionary {-}{}{}APPS}, \hyperpage{19}
+    \subitem {LANGUAGE\_\discretionary {-}{}{}CODE}, \hyperpage{19}
+    \subitem {LOGGING}, \hyperpage{19}
+    \subitem {MANAGERS}, \hyperpage{20}
+    \subitem {MEDIA\_\discretionary {-}{}{}ROOT}, \hyperpage{20}
+    \subitem {MEDIA\_\discretionary {-}{}{}URL}, \hyperpage{20}
+    \subitem {MIDDLEWARE\_\discretionary {-}{}{}CLASSES}, 
+		\hyperpage{20}
+    \subitem {ROOT\_\discretionary {-}{}{}URLCONF}, \hyperpage{20}
+    \subitem {SECRET\_\discretionary {-}{}{}KEY}, \hyperpage{20}
+    \subitem {SITE\_\discretionary {-}{}{}ID}, \hyperpage{21}
+    \subitem {STATIC\_\discretionary {-}{}{}ROOT}, \hyperpage{21}
+    \subitem {STATIC\_\discretionary {-}{}{}URL}, \hyperpage{21}
+    \subitem {STATICFILES\_\discretionary {-}{}{}DIRS}, \hyperpage{21}
+    \subitem {STATICFILES\_\discretionary {-}{}{}FINDERS}, 
+		\hyperpage{21}
+    \subitem {TEMPLATE\_\discretionary {-}{}{}DEBUG}, \hyperpage{21}
+    \subitem {TEMPLATE\_\discretionary {-}{}{}DIRS}, \hyperpage{21}
+    \subitem {TEMPLATE\_\discretionary {-}{}{}LOADERS}, \hyperpage{22}
+    \subitem {TIME\_\discretionary {-}{}{}ZONE}, \hyperpage{22}
+    \subitem {USE\_\discretionary {-}{}{}I18N}, \hyperpage{22}
+    \subitem {USE\_\discretionary {-}{}{}L10N}, \hyperpage{22}
+  \item {Ecodena::urls}
+    \subitem {urlpatterns}, \hyperpage{23}
+  \item {Ecodena::User::admin::ProfileAdmin}, \hyperpage{62}
+    \subitem {list\_\discretionary {-}{}{}display}, \hyperpage{63}
+  \item {Ecodena::User::models::Admin}, \hyperpage{25}
+    \subitem {resolveQuery}, \hyperpage{25}
+  \item {Ecodena::User::models::Profile}, \hyperpage{61}
+    \subitem {address\_\discretionary {-}{}{}f}, \hyperpage{61}
+    \subitem {dob\_\discretionary {-}{}{}f}, \hyperpage{61}
+    \subitem {gender\_\discretionary {-}{}{}f}, \hyperpage{61}
+    \subitem {GENDER\_\discretionary {-}{}{}TYPE}, \hyperpage{61}
+    \subitem {isAdmin\_\discretionary {-}{}{}f}, \hyperpage{61}
+    \subitem {isProgrammer\_\discretionary {-}{}{}f}, \hyperpage{62}
+    \subitem {numberOfAttempts\_\discretionary {-}{}{}f}, 
+		\hyperpage{62}
+    \subitem {profileID\_\discretionary {-}{}{}f}, \hyperpage{62}
+    \subitem {userID\_\discretionary {-}{}{}f}, \hyperpage{62}
+  \item {Ecodena::User::models::Programmer}, \hyperpage{63}
+    \subitem {getLevel}, \hyperpage{63}
+    \subitem {level}, \hyperpage{64}
+    \subitem {level\_\discretionary {-}{}{}f}, \hyperpage{64}
+    \subitem {setLevel}, \hyperpage{63}
+  \item {Ecodena::User::tests::SimpleTest}, \hyperpage{79}
+    \subitem {test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}, 
+		\hyperpage{79}
+  \item {ERROR\_\discretionary {-}{}{}TYPE}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{46}
+  \item {errorMessage}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{48}
+  \item {errorMessage\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, 
+		\hyperpage{46, 47}
+  \item {errorReport}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{40}
+  \item {errorReportID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{30}
+  \item {errorReportID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{28, 29}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{47}
+  \item {errorType}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{48}
+  \item {errorType\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{47}
+  \item {extra}
+    \subitem {Ecodena::Question::admin::LevelInline}, \hyperpage{54}
+
+  \indexspace
+
+  \item {gender\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::User::models::Profile}, \hyperpage{61}
+  \item {GENDER\_\discretionary {-}{}{}TYPE}
+    \subitem {Ecodena::User::models::Profile}, \hyperpage{61}
+  \item {generateErrorReport}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{39}
+  \item {getAdminID}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{66}
+  \item {getAttempt}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{39}
+  \item {getAttemptID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{27}
+  \item {getCaseType}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{82}
+  \item {getComments}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{72}
+  \item {getCommentText}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{34}
+  \item {getCompilerVersion}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{39}
+  \item {getErrorMessage}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{45}
+  \item {getErrorReportID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{27}
+  \item {getErrorType}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{45}
+  \item {getLanguage}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{40}
+    \subitem {Ecodena::Compiler::models::CompilerVersion}, 
+		\hyperpage{42}
+  \item {getLanguageName}
+    \subitem {Ecodena::Compiler::models::Language}, \hyperpage{51}
+  \item {getLevel}
+    \subitem {Ecodena::User::models::Programmer}, \hyperpage{63}
+  \item {getLevelName}
+    \subitem {Ecodena::Question::models::Level}, \hyperpage{53}
+  \item {getMemory}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{46}
+  \item {getOutput}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{82}
+  \item {getQueryID}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{66}
+  \item {getQueryText}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{66}
+  \item {getQueryTime}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{66}
+  \item {getQuestion}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{40}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{82}
+  \item {getQuestionID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{27}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{34}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{72}
+  \item {getQuestionText}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{72}
+  \item {getQuestionTitle}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{72}
+  \item {getReplyTime}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{66}
+  \item {getReportingUserID}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{34}
+  \item {getSolution}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{27}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{66}
+  \item {getTestCaseLevel}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{46}
+  \item {getTestCasesList}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{72}
+  \item {getTestID}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{82}
+  \item {getTimeOfSubmission}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{27}
+  \item {getTimeRequirement}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{46}
+  \item {getTimeStamp}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{34}
+  \item {getUserID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{27}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{34}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{66}
+  \item {getVersionName}
+    \subitem {Ecodena::Compiler::models::CompilerVersion}, 
+		\hyperpage{42}
+
+  \indexspace
+
+  \item {home}
+    \subitem {Ecodena::Main::views}, \hyperpage{14}
+
+  \indexspace
+
+  \item {inlines1}
+    \subitem {Ecodena::Question::admin::QuestionAdmin}, \hyperpage{76}
+  \item {inlines2}
+    \subitem {Ecodena::Question::admin::QuestionAdmin}, \hyperpage{76}
+  \item {input\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{83}
+  \item {INSTALLED\_\discretionary {-}{}{}APPS}
+    \subitem {Ecodena::settings}, \hyperpage{19}
+  \item {isAdmin\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::User::models::Profile}, \hyperpage{61}
+  \item {isCorrect}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{27}
+  \item {isProgrammer\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::User::models::Profile}, \hyperpage{62}
+  \item {isReported}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{34}, 
+		\hyperpage{36}
+  \item {isReported\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{35}
+
+  \indexspace
+
+  \item {JavaCompile110}
+    \subitem {Ecodena::Compiler::views}, \hyperpage{13}
+
+  \indexspace
+
+  \item {language}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{40, 41}
+    \subitem {Ecodena::Compiler::models::CompilerVersion}, 
+		\hyperpage{43}
+  \item {LANGUAGE\_\discretionary {-}{}{}CODE}
+    \subitem {Ecodena::settings}, \hyperpage{19}
+  \item {language\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Compiler::models::CompilerVersion}, 
+		\hyperpage{43}
+  \item {languageID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Compiler::models::Language}, \hyperpage{51}
+  \item {languageName}
+    \subitem {Ecodena::Compiler::models::CompilerVersion}, 
+		\hyperpage{42}
+    \subitem {Ecodena::Compiler::models::Language}, \hyperpage{51}
+  \item {languageName\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Compiler::models::Language}, \hyperpage{51}
+  \item {level}
+    \subitem {Ecodena::User::models::Programmer}, \hyperpage{64}
+  \item {level\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{73}
+    \subitem {Ecodena::User::models::Programmer}, \hyperpage{64}
+  \item {levelID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::Level}, \hyperpage{53}
+  \item {levelName}
+    \subitem {Ecodena::Question::models::Level}, \hyperpage{53}
+  \item {levelName\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::Level}, \hyperpage{53}
+  \item {list\_\discretionary {-}{}{}display}
+    \subitem {Ecodena::Attempt::admin::AttemptAdmin}, \hyperpage{31}
+    \subitem {Ecodena::Attempt::admin::ErrorReportAdmin}, 
+		\hyperpage{49}
+    \subitem {Ecodena::Comment::admin::CommentAdmin}, \hyperpage{37}
+    \subitem {Ecodena::Compiler::admin::CompilerVersionAdmin}, 
+		\hyperpage{44}
+    \subitem {Ecodena::Compiler::admin::LanguageAdmin}, \hyperpage{52}
+    \subitem {Ecodena::Query::admin::QueryAdmin}, \hyperpage{70}
+    \subitem {Ecodena::Question::admin::QuestionAdmin}, \hyperpage{76}
+    \subitem {Ecodena::User::admin::ProfileAdmin}, \hyperpage{63}
+  \item {listQuestions}
+    \subitem {Ecodena::Question::views}, \hyperpage{17}
+  \item {listSolutions}
+    \subitem {Ecodena::Attempt::views}, \hyperpage{10}
+  \item {LOGGING}
+    \subitem {Ecodena::settings}, \hyperpage{19}
+
+  \indexspace
+
+  \item {MANAGERS}
+    \subitem {Ecodena::settings}, \hyperpage{20}
+  \item {MEDIA\_\discretionary {-}{}{}ROOT}
+    \subitem {Ecodena::settings}, \hyperpage{20}
+  \item {MEDIA\_\discretionary {-}{}{}URL}
+    \subitem {Ecodena::settings}, \hyperpage{20}
+  \item {memory}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{48}
+  \item {memory\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{47}
+  \item {MIDDLEWARE\_\discretionary {-}{}{}CLASSES}
+    \subitem {Ecodena::settings}, \hyperpage{20}
+  \item {model}
+    \subitem {Ecodena::Question::admin::LevelInline}, \hyperpage{54}
+    \subitem {Ecodena::Question::admin::TypeInline}, \hyperpage{86}
+
+  \indexspace
+
+  \item {numberOfAttempts\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::User::models::Profile}, \hyperpage{62}
+
+  \indexspace
+
+  \item {output}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{84}
+  \item {output\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{83}
+
+  \indexspace
+
+  \item {postQuery}
+    \subitem {Ecodena::Query::views}, \hyperpage{16}
+  \item {profileID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::User::models::Profile}, \hyperpage{62}
+
+  \indexspace
+
+  \item {queryID}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{69}
+  \item {queryID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{67}
+  \item {queryText}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{69}
+  \item {queryText\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{67, 68}
+  \item {queryTime}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{69}
+  \item {queryTime\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{68}
+  \item {question}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{41}
+  \item {questionID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{30}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{37}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{75}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{84}
+  \item {questionID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{29}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{35}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{73}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{83, 84}
+  \item {questionText}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{75}
+  \item {questionText\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{74}
+  \item {questionTitle}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{75}
+  \item {questionTitle\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{74}
+
+  \indexspace
+
+  \item {removeTestCase}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{72}
+  \item {replyTime}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{69}
+  \item {replyTime\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{68}
+  \item {report}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{34}
+  \item {reportingUserID}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{37}
+  \item {reportingUserID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{36}
+  \item {resolveQuery}
+    \subitem {Ecodena::User::models::Admin}, \hyperpage{25}
+  \item {ROOT\_\discretionary {-}{}{}URLCONF}
+    \subitem {Ecodena::settings}, \hyperpage{20}
+
+  \indexspace
+
+  \item {SECRET\_\discretionary {-}{}{}KEY}
+    \subitem {Ecodena::settings}, \hyperpage{20}
+  \item {setAdminID}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{66}
+  \item {setAttempt}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{40}
+  \item {setAttemptID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{28}
+  \item {setCaseType}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{82}
+  \item {setCommentList}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{73}
+  \item {setCommentText}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{34}
+  \item {setCompilerVersion}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{40}
+  \item {setErrorMessage}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{46}
+  \item {setErrorReportID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{28}
+  \item {setErrorType}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{46}
+  \item {setLanguage}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{40}
+    \subitem {Ecodena::Compiler::models::CompilerVersion}, 
+		\hyperpage{42}
+  \item {setLanguageName}
+    \subitem {Ecodena::Compiler::models::Language}, \hyperpage{51}
+  \item {setLevel}
+    \subitem {Ecodena::User::models::Programmer}, \hyperpage{63}
+  \item {setLevelName}
+    \subitem {Ecodena::Question::models::Level}, \hyperpage{53}
+  \item {setMemory}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{46}
+  \item {setOutput}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{82}
+  \item {setQueryID}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{66}
+  \item {setQueryText}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{66}
+  \item {setQueryTime}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{67}
+  \item {setQuestion}
+    \subitem {Ecodena::Compiler::models::Compiler}, \hyperpage{40}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{82}
+  \item {setQuestionID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{28}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{34}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{73}
+  \item {setQuestionText}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{73}
+  \item {setQuestionTitle}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{73}
+  \item {setReplyTime}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{67}
+  \item {setReportingUserID}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{34}
+  \item {setSolution}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{28}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{67}
+  \item {setStatus}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{28}
+  \item {setTestCaseLevel}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{46}
+  \item {setTestCasesList}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{73}
+  \item {setTestID}
+    \subitem {Ecodena::Question::models::TestCase}, \hyperpage{82}
+  \item {setTimeOfSubmission}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{28}
+  \item {setTimeRequirement}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{46}
+  \item {setTimeStamp}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{35}
+  \item {setUserID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{28}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{35}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{67}
+  \item {setVersionName}
+    \subitem {Ecodena::Compiler::models::CompilerVersion}, 
+		\hyperpage{42}
+  \item {SITE\_\discretionary {-}{}{}ID}
+    \subitem {Ecodena::settings}, \hyperpage{21}
+  \item {solution}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{69}
+  \item {solution\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{29}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{68}
+  \item {solutionText}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{30}
+  \item {STATIC\_\discretionary {-}{}{}ROOT}
+    \subitem {Ecodena::settings}, \hyperpage{21}
+  \item {STATIC\_\discretionary {-}{}{}URL}
+    \subitem {Ecodena::settings}, \hyperpage{21}
+  \item {STATICFILES\_\discretionary {-}{}{}DIRS}
+    \subitem {Ecodena::settings}, \hyperpage{21}
+  \item {STATICFILES\_\discretionary {-}{}{}FINDERS}
+    \subitem {Ecodena::settings}, \hyperpage{21}
+  \item {status}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{30}
+  \item {status\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{29}
+  \item {submitSolution}
+    \subitem {Ecodena::Attempt::views}, \hyperpage{11}
+
+  \indexspace
+
+  \item {TEMPLATE\_\discretionary {-}{}{}DEBUG}
+    \subitem {Ecodena::settings}, \hyperpage{21}
+  \item {TEMPLATE\_\discretionary {-}{}{}DIRS}
+    \subitem {Ecodena::settings}, \hyperpage{21}
+  \item {TEMPLATE\_\discretionary {-}{}{}LOADERS}
+    \subitem {Ecodena::settings}, \hyperpage{22}
+  \item {test}
+    \subitem {Ecodena::Question::views}, \hyperpage{17}
+  \item {test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}
+    \subitem {Ecodena::Attempt::tests::SimpleTest}, \hyperpage{80}
+    \subitem {Ecodena::Comment::tests::SimpleTest}, \hyperpage{76}
+    \subitem {Ecodena::Compiler::tests::SimpleTest}, \hyperpage{77}
+    \subitem {Ecodena::Main::tests::SimpleTest}, \hyperpage{77}
+    \subitem {Ecodena::Query::tests::SimpleTest}, \hyperpage{78}
+    \subitem {Ecodena::Question::tests::SimpleTest}, \hyperpage{79}
+    \subitem {Ecodena::User::tests::SimpleTest}, \hyperpage{79}
+  \item {testCaseLevel}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{48}
+  \item {testCaseLevel\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{47}
+  \item {testCasesList}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{75}
+  \item {testCasesList\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{74}
+  \item {text}
+    \subitem {Ecodena::Attempt::views::SolutionForm}, \hyperpage{80}
+    \subitem {Ecodena::Query::views::QueryForm}, \hyperpage{70}
+    \subitem {Ecodena::Question::views::CommentForm}, \hyperpage{38}
+  \item {TIME\_\discretionary {-}{}{}ZONE}
+    \subitem {Ecodena::settings}, \hyperpage{22}
+  \item {timeLimit\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{74}
+  \item {timeOfSubmission}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{30}
+  \item {timeOfSubmission\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{29}
+  \item {timeRequirement}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, \hyperpage{48}
+  \item {timeRequirement\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::ErrorReport}, 
+		\hyperpage{47, 48}
+  \item {timeStamp}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{37}
+  \item {timeStamp\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{36}
+  \item {type\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::Question}, \hyperpage{74}
+  \item {typeID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::Type}, \hyperpage{85}
+  \item {typeName\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Question::models::Type}, \hyperpage{85}
+
+  \indexspace
+
+  \item {urlpatterns}
+    \subitem {Ecodena::urls}, \hyperpage{23}
+  \item {USE\_\discretionary {-}{}{}I18N}
+    \subitem {Ecodena::settings}, \hyperpage{22}
+  \item {USE\_\discretionary {-}{}{}L10N}
+    \subitem {Ecodena::settings}, \hyperpage{22}
+  \item {userID}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{30}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{37}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{69}
+  \item {userID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Attempt::models::Attempt}, \hyperpage{30}
+    \subitem {Ecodena::Comment::models::Comment}, \hyperpage{36}
+    \subitem {Ecodena::Query::models::Query}, \hyperpage{68}
+    \subitem {Ecodena::User::models::Profile}, \hyperpage{62}
+
+  \indexspace
+
+  \item {verbose\_\discretionary {-}{}{}name}
+    \subitem {Ecodena::Attempt::models::Attempt::Meta}, \hyperpage{60}
+    \subitem {Ecodena::Attempt::models::ErrorReport::Meta}, 
+		\hyperpage{58}
+    \subitem {Ecodena::Comment::models::Comment::Meta}, \hyperpage{59}
+    \subitem {Ecodena::Compiler::models::CompilerVersion::Meta}, 
+		\hyperpage{56}
+    \subitem {Ecodena::Compiler::models::Language::Meta}, 
+		\hyperpage{56}
+    \subitem {Ecodena::Query::models::Query::Meta}, \hyperpage{60}
+    \subitem {Ecodena::Question::models::Level::Meta}, \hyperpage{55}
+    \subitem {Ecodena::Question::models::Question::Meta}, 
+		\hyperpage{57}
+    \subitem {Ecodena::Question::models::TestCase::Meta}, 
+		\hyperpage{58}
+    \subitem {Ecodena::Question::models::Type::Meta}, \hyperpage{55}
+  \item {verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}
+    \subitem {Ecodena::Attempt::models::Attempt::Meta}, \hyperpage{60}
+    \subitem {Ecodena::Attempt::models::ErrorReport::Meta}, 
+		\hyperpage{58}
+    \subitem {Ecodena::Comment::models::Comment::Meta}, \hyperpage{59}
+    \subitem {Ecodena::Compiler::models::CompilerVersion::Meta}, 
+		\hyperpage{57}
+    \subitem {Ecodena::Compiler::models::Language::Meta}, 
+		\hyperpage{56}
+    \subitem {Ecodena::Query::models::Query::Meta}, \hyperpage{60}
+    \subitem {Ecodena::Question::models::Level::Meta}, \hyperpage{55}
+    \subitem {Ecodena::Question::models::Question::Meta}, 
+		\hyperpage{57}
+    \subitem {Ecodena::Question::models::TestCase::Meta}, 
+		\hyperpage{58}
+    \subitem {Ecodena::Question::models::Type::Meta}, \hyperpage{55}
+  \item {version}
+    \subitem {Ecodena::Attempt::views::SolutionForm}, \hyperpage{80}
+  \item {versionID\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Compiler::models::CompilerVersion}, 
+		\hyperpage{43}
+  \item {versionName}
+    \subitem {Ecodena::Compiler::models::CompilerVersion}, 
+		\hyperpage{43}
+  \item {versionName\_\discretionary {-}{}{}f}
+    \subitem {Ecodena::Compiler::models::CompilerVersion}, 
+		\hyperpage{43}
+  \item {viewQuestionByID}
+    \subitem {Ecodena::Question::views}, \hyperpage{17}
+  \item {viewSolution}
+    \subitem {Ecodena::Attempt::views}, \hyperpage{11}
+
+\end{theindex}
