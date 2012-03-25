@@ -1,3 +1,4 @@
+'''Its a models.py of post Query, i.e. it creates a basic model for the post Query.'''
 from django.db import models
 #from Ecodena.User.models import User
 import datetime
@@ -5,6 +6,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Query(models.Model, object):
+	'''Here Query is subclass of models.Model and Creates an entity named Query.'''
 	queryID_f = models.AutoField(primary_key=True)
 	queryText_f = models.TextField("The Text explaining the Query", null=False)
 	solution_f = models.TextField("The Solution of the Query", blank=True)

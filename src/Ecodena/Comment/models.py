@@ -1,3 +1,4 @@
+'''Its a models.py of Comment app, i.e. it will create a basic model for Comment app.'''
 from django.db import models
 #from Ecodena.User.models import User
 from Ecodena.Question.models import Question
@@ -6,6 +7,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Comment(models.Model, object):
+	'''Here Comment is subclass of models.Model and Creates an entity named Comment.'''
 	commentID_f = models.AutoField(primary_key=True)
 	commentText_f = models.TextField("The Body of the Comment", null=False)
 	isReported_f = models.BooleanField("Is the comment Reported ?", default=False)
@@ -32,10 +34,14 @@ class Comment(models.Model, object):
 	
 
 	def isReported(self):
+		'''If user is abused from any other user's comment then that user can report abuse that comment. 
+			And if the function will return comment is reported thanthat means someone has reported it.'''
 		return isReported
 
 		
 	def report(self, status):
+		'''If user is abused from any other user's comment then that user can report abuse that comment.
+			So the user will set this status i.e comment isreported now.'''
 		self.isReported_f = status
 	
 	isReported = property(isReported, report)
