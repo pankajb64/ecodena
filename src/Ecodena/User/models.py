@@ -106,4 +106,39 @@ class Profile (models.Model, object):
 	isAdmin_f = models.BooleanField("Is Administrator", default=False)
 	numberOfAttempts_f = models.IntegerField("Number of Attempts")
 	
+	def getDOB():
+		return self.dob_f
+	def setDOB(date):
+		self.dob_f = date
 		
+	dob = property(getDOB,setDOB)
+		
+	def getAddress():
+		return address_f
+	def setAddress(address):
+		self.address_f = address
+		
+	address = property(getAddress,setAddress)
+	
+	def getGender():
+		return gender_f
+	def setGender():
+		self.gender_f = gender
+		
+	gender = property(getGender, setGender)
+
+	def getUserID():
+		return userID
+		
+	def isProgrammer():
+		return self.isProgrammer_f
+		
+	def isAdmin():
+		return self.isAdmin_f
+		
+	def getNumberOfAttempts(self):
+		return self.numberOfAttempts_f
+	def setNumberOfAttempts(self,attempt):
+		self.numberOfAttempts_f = attempt
+		
+	numberOfAttempts = property(getNumberOfAttempts,setNumberOfAttempts)

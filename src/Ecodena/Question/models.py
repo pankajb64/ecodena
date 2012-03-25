@@ -1,3 +1,4 @@
+#This file creates the models of Question
 from django.db import models
 
 # Create your models here.
@@ -5,6 +6,8 @@ from django.db import models
 
 
 class Level(models.Model):
+	'''Creates the entity Level which is a subclass of models.Model class
+	'''
 	levelID_f = models.AutoField(primary_key=True)
 	levelName_f = models.CharField("Level Name", max_length = 20 , null = False, unique=True)
 
@@ -26,6 +29,7 @@ class Level(models.Model):
 	
 
 class Type(models.Model):
+	'''Creates the entity Type which is a subclass of models.Model class'''
 	typeID_f = models.AutoField(primary_key=True)
 	typeName_f = models.CharField("Type Name" , max_length = 30 , null = False)
 
@@ -38,6 +42,8 @@ class Type(models.Model):
 
 
 class Question(models.Model, object):
+	'''Creates the entity question 
+	which is a subclass of models.Model'''
 	questionID_f = models.AutoField(primary_key=True)
 	questionText_f = models.TextField("Problem Statement", null=False)
 	questionTitle_f = models.CharField("Problem Title", max_length = 50, null = False) 
@@ -70,6 +76,7 @@ class Question(models.Model, object):
 	def getComments(self):
 		return self.commentList_f
 	def addComments(self,comment):
+		#add comments to the end of comment list
 		commentList.append(comment)	
 	def setCommentList(self,commentList):
 		self.commentList_f = commentList
@@ -81,6 +88,7 @@ class Question(models.Model, object):
 	def setTestCasesList(self,testCasesList):
 		self.testCasesList_f = testCasesList
 	def removeTestCase(self,caseID):
+		#deletes the Test Case
 		del self.testCasesList_f[caseID]
 	testCasesList = property(getTestCasesList,setTestCasesList)
 
@@ -96,6 +104,7 @@ class BattleQuestion:
 	pass
 
 class TestCase(models.Model, object):
+	'''Creates the entity TestCase which is a subclass of models.Model'''
 	caseID_f = models.AutoField(primary_key=True)
 	questionID_f = models.ForeignKey(Question , verbose_name="Question ID", null=False)
 	CASE_TYPE = ((0, 'Low'), (1, 'Medium'), (2, 'High'))

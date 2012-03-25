@@ -1,3 +1,7 @@
+'''This file creates the model Attempt'''
+
+import Compiler
+from Ecodena.Compiler.models import CompilerVersion
 from django.db import models
 from Ecodena.Question.models import Question
 #from Ecodena.User.models import User
@@ -7,10 +11,11 @@ from django.contrib.auth.models import User
 
 
 class ErrorReport(models.Model, object):
+	'''Creates an ErrorReport Entity which is a subclass of models.Model class'''
 	errorReportID_f = models.AutoField(primary_key=True)
 	timeRequirement_f = models.FloatField("Time Required for compiling")
 	memory_f = models.FloatField("Memory Requirement")
-	ERROR_TYPE = ((0,'Correct Answer'),(1,'Compilation Error'),(2,'Run Time Error'),(3,'Time limit Exceeded'),(4,'Memory Limit Exceeded'),(5,'Wrong Answer'))
+	ERROR_TYPE = ((0,'Correct Answer'),(1,'Compilation Error'),(2,'Run Time Error'),(3,'Time limit Exceeded'),(4,'Memory Limit Exceeded'),(5,'Wrong Answer'),(6,'Pending'))
 	errorType_f = models.CharField( max_length = 40, choices=ERROR_TYPE,verbose_name="Types of Errors") 
 	errorMessage_f = models.TextField("Error Message generated")
 	testCaseLevel_f = models.CharField(max_length=40, choices=TestCase.CASE_TYPE, verbose_name="Test Case Level where error occured (Select High if solution is correct)")
@@ -59,6 +64,7 @@ class ErrorReport(models.Model, object):
 		
 
 class Attempt(models.Model, object):
+	'''Creates an Attempt Entity which is a subclass of models.Model class'''
 	attemptID_f = models.AutoField(primary_key=True)
 	questionID_f = models.ForeignKey(Question, verbose_name="Question", null=False)
 	userID_f = models.ForeignKey(User, verbose_name="User ID", null=False)
@@ -66,7 +72,7 @@ class Attempt(models.Model, object):
 	errorReportID_f = models.ForeignKey(ErrorReport,verbose_name="Error Report for the Solution", null=True)
 	status_f = models.BooleanField("Status of attempt - true = right, false = wrong", blank=True, default=False)
 	timeOfSubmission_f = models.DateTimeField("Time of Submission", null=False)
-	
+	compilerVersion_f = models.ForeignKey(CompilerVersion, verbose_name = "Compiler version of the Attempt",null=False)
 
 	def getAttemptID(self):
 		return self.attemptID_f
@@ -76,6 +82,7 @@ class Attempt(models.Model, object):
 
 	
 	def isCorrect(self):
+		'''Checks the status and returns its value'''
 		return self.status_f	
 	def setStatus(self,status):
 		self.status_f = status
@@ -115,7 +122,14 @@ class Attempt(models.Model, object):
 		self.questionID_f = qID
 		
 	questionID = property(getQuestionID,setQuestionID)		
-		
+	
+	def getCompilerVersionOfAttempt(self):
+		return self.compilerVersion_f
+	def setCompilerVersionOfAttempt(self,compilerVersion):
+			self.compilerVersion_f = compilerVersion
+			
+	compilerVersion = property(getCompilerVersionOfAttempt,setCompilerVersionOfAttempt)
+	
 	class Meta:
 		verbose_name = 'attempt'
 		verbose_name_plural = 'attempts'
