@@ -69,9 +69,9 @@
         <initializer>{
     &apos;default&apos;: {
         &apos;ENGINE&apos;: &apos;django.db.backends.postgresql_psycopg2&apos;, # Add &apos;postgresql_psycopg2&apos;, &apos;postgresql&apos;, &apos;mysql&apos;, &apos;sqlite3&apos; or &apos;oracle&apos;.
-        &apos;NAME&apos;: &apos;200901032&apos;,                      # Or path to database file if using sqlite3.
-        &apos;USER&apos;: &apos;200901032&apos;,                      # Not used with sqlite3.
-        &apos;PASSWORD&apos;: &apos;9328200656&apos;,                  # Not used with sqlite3.
+        &apos;NAME&apos;: &apos;200901047&apos;,                      # Or path to database file if using sqlite3.
+        &apos;USER&apos;: &apos;200901047&apos;,                      # Not used with sqlite3.
+        &apos;PASSWORD&apos;: &apos;admin&apos;,                  # Not used with sqlite3.
         &apos;HOST&apos;: &apos;10.100.71.21&apos;,                      # Set to empty string for localhost. Not used with sqlite3.
         &apos;PORT&apos;: &apos;5432&apos;,                      # Set to empty string for default. Not used with sqlite3.
     }

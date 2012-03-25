@@ -11,589 +11,628 @@
 \contentsline {section}{\numberline {5.2}Package Ecodena.Attempt}{9}{section.5.2}
 \contentsline {section}{\numberline {5.3}Package Ecodena.Attempt.admin}{9}{section.5.3}
 \contentsline {section}{\numberline {5.4}Package Ecodena.Attempt.models}{10}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{10}{subsection.5.4.1}
 \contentsline {section}{\numberline {5.5}Package Ecodena.Attempt.tests}{10}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Detailed Description}{10}{subsection.5.5.1}
 \contentsline {section}{\numberline {5.6}Package Ecodena.Attempt.views}{10}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Function Documentation}{10}{subsection.5.6.1}
-\contentsline {subsubsection}{\numberline {5.6.1.1}compileSolution}{10}{subsubsection.5.6.1.1}
+\contentsline {subsection}{\numberline {5.6.1}Function Documentation}{11}{subsection.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.1.1}compileSolution}{11}{subsubsection.5.6.1.1}
 \contentsline {subsubsection}{\numberline {5.6.1.2}listSolutions}{11}{subsubsection.5.6.1.2}
 \contentsline {subsubsection}{\numberline {5.6.1.3}submitSolution}{11}{subsubsection.5.6.1.3}
 \contentsline {subsubsection}{\numberline {5.6.1.4}viewSolution}{11}{subsubsection.5.6.1.4}
 \contentsline {section}{\numberline {5.7}Package Ecodena.Comment}{11}{section.5.7}
 \contentsline {section}{\numberline {5.8}Package Ecodena.Comment.admin}{11}{section.5.8}
-\contentsline {section}{\numberline {5.9}Package Ecodena.Comment.models}{11}{section.5.9}
-\contentsline {section}{\numberline {5.10}Package Ecodena.Comment.tests}{11}{section.5.10}
+\contentsline {section}{\numberline {5.9}Package Ecodena.Comment.models}{12}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{12}{subsection.5.9.1}
+\contentsline {section}{\numberline {5.10}Package Ecodena.Comment.tests}{12}{section.5.10}
 \contentsline {subsection}{\numberline {5.10.1}Detailed Description}{12}{subsection.5.10.1}
 \contentsline {section}{\numberline {5.11}Package Ecodena.Comment.views}{12}{section.5.11}
 \contentsline {section}{\numberline {5.12}Package Ecodena.Compiler}{12}{section.5.12}
 \contentsline {section}{\numberline {5.13}Package Ecodena.Compiler.admin}{12}{section.5.13}
-\contentsline {section}{\numberline {5.14}Package Ecodena.Compiler.dictionary}{12}{section.5.14}
-\contentsline {subsection}{\numberline {5.14.1}Variable Documentation}{12}{subsection.5.14.1}
-\contentsline {subsubsection}{\numberline {5.14.1.1}compilers}{12}{subsubsection.5.14.1.1}
+\contentsline {section}{\numberline {5.14}Package Ecodena.Compiler.dictionary}{13}{section.5.14}
+\contentsline {subsection}{\numberline {5.14.1}Variable Documentation}{13}{subsection.5.14.1}
+\contentsline {subsubsection}{\numberline {5.14.1.1}compilers}{13}{subsubsection.5.14.1.1}
 \contentsline {section}{\numberline {5.15}Package Ecodena.Compiler.models}{13}{section.5.15}
 \contentsline {section}{\numberline {5.16}Package Ecodena.Compiler.tests}{13}{section.5.16}
 \contentsline {subsection}{\numberline {5.16.1}Detailed Description}{13}{subsection.5.16.1}
-\contentsline {section}{\numberline {5.17}Package Ecodena.Compiler.views}{13}{section.5.17}
-\contentsline {subsection}{\numberline {5.17.1}Function Documentation}{13}{subsection.5.17.1}
-\contentsline {subsubsection}{\numberline {5.17.1.1}CCompile110}{13}{subsubsection.5.17.1.1}
-\contentsline {subsubsection}{\numberline {5.17.1.2}JavaCompile110}{13}{subsubsection.5.17.1.2}
+\contentsline {section}{\numberline {5.17}Package Ecodena.Compiler.views}{14}{section.5.17}
+\contentsline {subsection}{\numberline {5.17.1}Function Documentation}{14}{subsection.5.17.1}
+\contentsline {subsubsection}{\numberline {5.17.1.1}CCompile110}{14}{subsubsection.5.17.1.1}
+\contentsline {subsubsection}{\numberline {5.17.1.2}JavaCompile110}{14}{subsubsection.5.17.1.2}
 \contentsline {section}{\numberline {5.18}Package Ecodena.Main}{14}{section.5.18}
 \contentsline {section}{\numberline {5.19}Package Ecodena.Main.models}{14}{section.5.19}
 \contentsline {section}{\numberline {5.20}Package Ecodena.Main.tests}{14}{section.5.20}
 \contentsline {subsection}{\numberline {5.20.1}Detailed Description}{14}{subsection.5.20.1}
-\contentsline {section}{\numberline {5.21}Package Ecodena.Main.views}{14}{section.5.21}
-\contentsline {subsection}{\numberline {5.21.1}Function Documentation}{14}{subsection.5.21.1}
-\contentsline {subsubsection}{\numberline {5.21.1.1}home}{14}{subsubsection.5.21.1.1}
-\contentsline {section}{\numberline {5.22}Package Ecodena.manage}{14}{section.5.22}
-\contentsline {section}{\numberline {5.23}Package Ecodena.Query}{14}{section.5.23}
+\contentsline {section}{\numberline {5.21}Package Ecodena.Main.views}{15}{section.5.21}
+\contentsline {subsection}{\numberline {5.21.1}Function Documentation}{15}{subsection.5.21.1}
+\contentsline {subsubsection}{\numberline {5.21.1.1}home}{15}{subsubsection.5.21.1.1}
+\contentsline {section}{\numberline {5.22}Package Ecodena.manage}{15}{section.5.22}
+\contentsline {section}{\numberline {5.23}Package Ecodena.Query}{15}{section.5.23}
 \contentsline {section}{\numberline {5.24}Package Ecodena.Query.admin}{15}{section.5.24}
 \contentsline {section}{\numberline {5.25}Package Ecodena.Query.models}{15}{section.5.25}
-\contentsline {section}{\numberline {5.26}Package Ecodena.Query.tests}{15}{section.5.26}
-\contentsline {subsection}{\numberline {5.26.1}Detailed Description}{15}{subsection.5.26.1}
-\contentsline {section}{\numberline {5.27}Package Ecodena.Query.views}{15}{section.5.27}
-\contentsline {subsection}{\numberline {5.27.1}Function Documentation}{16}{subsection.5.27.1}
-\contentsline {subsubsection}{\numberline {5.27.1.1}postQuery}{16}{subsubsection.5.27.1.1}
+\contentsline {subsection}{\numberline {5.25.1}Detailed Description}{15}{subsection.5.25.1}
+\contentsline {section}{\numberline {5.26}Package Ecodena.Query.tests}{16}{section.5.26}
+\contentsline {subsection}{\numberline {5.26.1}Detailed Description}{16}{subsection.5.26.1}
+\contentsline {section}{\numberline {5.27}Package Ecodena.Query.views}{16}{section.5.27}
+\contentsline {subsection}{\numberline {5.27.1}Detailed Description}{16}{subsection.5.27.1}
+\contentsline {subsection}{\numberline {5.27.2}Function Documentation}{16}{subsection.5.27.2}
+\contentsline {subsubsection}{\numberline {5.27.2.1}postQuery}{16}{subsubsection.5.27.2.1}
 \contentsline {section}{\numberline {5.28}Package Ecodena.Question}{16}{section.5.28}
-\contentsline {section}{\numberline {5.29}Package Ecodena.Question.admin}{16}{section.5.29}
-\contentsline {section}{\numberline {5.30}Package Ecodena.Question.models}{16}{section.5.30}
-\contentsline {section}{\numberline {5.31}Package Ecodena.Question.tests}{16}{section.5.31}
+\contentsline {section}{\numberline {5.29}Package Ecodena.Question.admin}{17}{section.5.29}
+\contentsline {section}{\numberline {5.30}Package Ecodena.Question.models}{17}{section.5.30}
+\contentsline {section}{\numberline {5.31}Package Ecodena.Question.tests}{17}{section.5.31}
 \contentsline {subsection}{\numberline {5.31.1}Detailed Description}{17}{subsection.5.31.1}
 \contentsline {section}{\numberline {5.32}Package Ecodena.Question.views}{17}{section.5.32}
-\contentsline {subsection}{\numberline {5.32.1}Function Documentation}{17}{subsection.5.32.1}
-\contentsline {subsubsection}{\numberline {5.32.1.1}listQuestions}{17}{subsubsection.5.32.1.1}
-\contentsline {subsubsection}{\numberline {5.32.1.2}test}{17}{subsubsection.5.32.1.2}
-\contentsline {subsubsection}{\numberline {5.32.1.3}viewQuestionByID}{17}{subsubsection.5.32.1.3}
-\contentsline {section}{\numberline {5.33}Package Ecodena.settings}{17}{section.5.33}
-\contentsline {subsection}{\numberline {5.33.1}Variable Documentation}{18}{subsection.5.33.1}
-\contentsline {subsubsection}{\numberline {5.33.1.1}ADMIN\_\discretionary {-}{}{}MEDIA\_\discretionary {-}{}{}PREFIX}{18}{subsubsection.5.33.1.1}
-\contentsline {subsubsection}{\numberline {5.33.1.2}ADMINS}{18}{subsubsection.5.33.1.2}
-\contentsline {subsubsection}{\numberline {5.33.1.3}AUTH\_\discretionary {-}{}{}PROFILE\_\discretionary {-}{}{}MODULE}{18}{subsubsection.5.33.1.3}
-\contentsline {subsubsection}{\numberline {5.33.1.4}DATABASES}{18}{subsubsection.5.33.1.4}
-\contentsline {subsubsection}{\numberline {5.33.1.5}DEBUG}{19}{subsubsection.5.33.1.5}
-\contentsline {subsubsection}{\numberline {5.33.1.6}INSTALLED\_\discretionary {-}{}{}APPS}{19}{subsubsection.5.33.1.6}
-\contentsline {subsubsection}{\numberline {5.33.1.7}LANGUAGE\_\discretionary {-}{}{}CODE}{19}{subsubsection.5.33.1.7}
-\contentsline {subsubsection}{\numberline {5.33.1.8}LOGGING}{19}{subsubsection.5.33.1.8}
-\contentsline {subsubsection}{\numberline {5.33.1.9}MANAGERS}{20}{subsubsection.5.33.1.9}
-\contentsline {subsubsection}{\numberline {5.33.1.10}MEDIA\_\discretionary {-}{}{}ROOT}{20}{subsubsection.5.33.1.10}
-\contentsline {subsubsection}{\numberline {5.33.1.11}MEDIA\_\discretionary {-}{}{}URL}{20}{subsubsection.5.33.1.11}
-\contentsline {subsubsection}{\numberline {5.33.1.12}MIDDLEWARE\_\discretionary {-}{}{}CLASSES}{20}{subsubsection.5.33.1.12}
-\contentsline {subsubsection}{\numberline {5.33.1.13}ROOT\_\discretionary {-}{}{}URLCONF}{20}{subsubsection.5.33.1.13}
+\contentsline {subsection}{\numberline {5.32.1}Function Documentation}{18}{subsection.5.32.1}
+\contentsline {subsubsection}{\numberline {5.32.1.1}listQuestions}{18}{subsubsection.5.32.1.1}
+\contentsline {subsubsection}{\numberline {5.32.1.2}test}{18}{subsubsection.5.32.1.2}
+\contentsline {subsubsection}{\numberline {5.32.1.3}viewQuestionByID}{18}{subsubsection.5.32.1.3}
+\contentsline {section}{\numberline {5.33}Package Ecodena.settings}{18}{section.5.33}
+\contentsline {subsection}{\numberline {5.33.1}Variable Documentation}{19}{subsection.5.33.1}
+\contentsline {subsubsection}{\numberline {5.33.1.1}ADMIN\_\discretionary {-}{}{}MEDIA\_\discretionary {-}{}{}PREFIX}{19}{subsubsection.5.33.1.1}
+\contentsline {subsubsection}{\numberline {5.33.1.2}ADMINS}{19}{subsubsection.5.33.1.2}
+\contentsline {subsubsection}{\numberline {5.33.1.3}AUTH\_\discretionary {-}{}{}PROFILE\_\discretionary {-}{}{}MODULE}{19}{subsubsection.5.33.1.3}
+\contentsline {subsubsection}{\numberline {5.33.1.4}DATABASES}{19}{subsubsection.5.33.1.4}
+\contentsline {subsubsection}{\numberline {5.33.1.5}DEBUG}{20}{subsubsection.5.33.1.5}
+\contentsline {subsubsection}{\numberline {5.33.1.6}INSTALLED\_\discretionary {-}{}{}APPS}{20}{subsubsection.5.33.1.6}
+\contentsline {subsubsection}{\numberline {5.33.1.7}LANGUAGE\_\discretionary {-}{}{}CODE}{20}{subsubsection.5.33.1.7}
+\contentsline {subsubsection}{\numberline {5.33.1.8}LOGGING}{20}{subsubsection.5.33.1.8}
+\contentsline {subsubsection}{\numberline {5.33.1.9}MANAGERS}{21}{subsubsection.5.33.1.9}
+\contentsline {subsubsection}{\numberline {5.33.1.10}MEDIA\_\discretionary {-}{}{}ROOT}{21}{subsubsection.5.33.1.10}
+\contentsline {subsubsection}{\numberline {5.33.1.11}MEDIA\_\discretionary {-}{}{}URL}{21}{subsubsection.5.33.1.11}
+\contentsline {subsubsection}{\numberline {5.33.1.12}MIDDLEWARE\_\discretionary {-}{}{}CLASSES}{21}{subsubsection.5.33.1.12}
+\contentsline {subsubsection}{\numberline {5.33.1.13}ROOT\_\discretionary {-}{}{}URLCONF}{21}{subsubsection.5.33.1.13}
 \contentsline {subsubsection}{\numberline {5.33.1.14}SECRET\_\discretionary {-}{}{}KEY}{21}{subsubsection.5.33.1.14}
-\contentsline {subsubsection}{\numberline {5.33.1.15}SITE\_\discretionary {-}{}{}ID}{21}{subsubsection.5.33.1.15}
-\contentsline {subsubsection}{\numberline {5.33.1.16}STATIC\_\discretionary {-}{}{}ROOT}{21}{subsubsection.5.33.1.16}
-\contentsline {subsubsection}{\numberline {5.33.1.17}STATIC\_\discretionary {-}{}{}URL}{21}{subsubsection.5.33.1.17}
-\contentsline {subsubsection}{\numberline {5.33.1.18}STATICFILES\_\discretionary {-}{}{}DIRS}{21}{subsubsection.5.33.1.18}
-\contentsline {subsubsection}{\numberline {5.33.1.19}STATICFILES\_\discretionary {-}{}{}FINDERS}{21}{subsubsection.5.33.1.19}
-\contentsline {subsubsection}{\numberline {5.33.1.20}TEMPLATE\_\discretionary {-}{}{}DEBUG}{21}{subsubsection.5.33.1.20}
+\contentsline {subsubsection}{\numberline {5.33.1.15}SITE\_\discretionary {-}{}{}ID}{22}{subsubsection.5.33.1.15}
+\contentsline {subsubsection}{\numberline {5.33.1.16}STATIC\_\discretionary {-}{}{}ROOT}{22}{subsubsection.5.33.1.16}
+\contentsline {subsubsection}{\numberline {5.33.1.17}STATIC\_\discretionary {-}{}{}URL}{22}{subsubsection.5.33.1.17}
+\contentsline {subsubsection}{\numberline {5.33.1.18}STATICFILES\_\discretionary {-}{}{}DIRS}{22}{subsubsection.5.33.1.18}
+\contentsline {subsubsection}{\numberline {5.33.1.19}STATICFILES\_\discretionary {-}{}{}FINDERS}{22}{subsubsection.5.33.1.19}
+\contentsline {subsubsection}{\numberline {5.33.1.20}TEMPLATE\_\discretionary {-}{}{}DEBUG}{22}{subsubsection.5.33.1.20}
 \contentsline {subsubsection}{\numberline {5.33.1.21}TEMPLATE\_\discretionary {-}{}{}DIRS}{22}{subsubsection.5.33.1.21}
-\contentsline {subsubsection}{\numberline {5.33.1.22}TEMPLATE\_\discretionary {-}{}{}LOADERS}{22}{subsubsection.5.33.1.22}
-\contentsline {subsubsection}{\numberline {5.33.1.23}TIME\_\discretionary {-}{}{}ZONE}{22}{subsubsection.5.33.1.23}
-\contentsline {subsubsection}{\numberline {5.33.1.24}USE\_\discretionary {-}{}{}I18N}{22}{subsubsection.5.33.1.24}
-\contentsline {subsubsection}{\numberline {5.33.1.25}USE\_\discretionary {-}{}{}L10N}{22}{subsubsection.5.33.1.25}
-\contentsline {section}{\numberline {5.34}Package Ecodena.urls}{22}{section.5.34}
+\contentsline {subsubsection}{\numberline {5.33.1.22}TEMPLATE\_\discretionary {-}{}{}LOADERS}{23}{subsubsection.5.33.1.22}
+\contentsline {subsubsection}{\numberline {5.33.1.23}TIME\_\discretionary {-}{}{}ZONE}{23}{subsubsection.5.33.1.23}
+\contentsline {subsubsection}{\numberline {5.33.1.24}USE\_\discretionary {-}{}{}I18N}{23}{subsubsection.5.33.1.24}
+\contentsline {subsubsection}{\numberline {5.33.1.25}USE\_\discretionary {-}{}{}L10N}{23}{subsubsection.5.33.1.25}
+\contentsline {section}{\numberline {5.34}Package Ecodena.urls}{23}{section.5.34}
 \contentsline {subsection}{\numberline {5.34.1}Variable Documentation}{23}{subsection.5.34.1}
 \contentsline {subsubsection}{\numberline {5.34.1.1}urlpatterns}{23}{subsubsection.5.34.1.1}
-\contentsline {section}{\numberline {5.35}Package Ecodena.User}{23}{section.5.35}
-\contentsline {section}{\numberline {5.36}Package Ecodena.User.admin}{23}{section.5.36}
+\contentsline {section}{\numberline {5.35}Package Ecodena.User}{24}{section.5.35}
+\contentsline {section}{\numberline {5.36}Package Ecodena.User.admin}{24}{section.5.36}
 \contentsline {section}{\numberline {5.37}Package Ecodena.User.models}{24}{section.5.37}
-\contentsline {section}{\numberline {5.38}Package Ecodena.User.tests}{24}{section.5.38}
-\contentsline {subsection}{\numberline {5.38.1}Detailed Description}{24}{subsection.5.38.1}
-\contentsline {section}{\numberline {5.39}Package Ecodena.User.views}{24}{section.5.39}
-\contentsline {chapter}{\numberline {6}Class Documentation}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}Ecodena.User.models.Admin Class Reference}{25}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{25}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Member Function Documentation}{25}{subsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.2.1}resolveQuery}{25}{subsubsection.6.1.2.1}
-\contentsline {section}{\numberline {6.2}Ecodena.Attempt.models.Attempt Class Reference}{25}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{27}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Member Function Documentation}{27}{subsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{27}{subsubsection.6.2.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2.2}getAttemptID}{27}{subsubsection.6.2.2.2}
-\contentsline {subsubsection}{\numberline {6.2.2.3}getErrorReportID}{27}{subsubsection.6.2.2.3}
-\contentsline {subsubsection}{\numberline {6.2.2.4}getQuestionID}{27}{subsubsection.6.2.2.4}
-\contentsline {subsubsection}{\numberline {6.2.2.5}getSolution}{27}{subsubsection.6.2.2.5}
-\contentsline {subsubsection}{\numberline {6.2.2.6}getTimeOfSubmission}{27}{subsubsection.6.2.2.6}
-\contentsline {subsubsection}{\numberline {6.2.2.7}getUserID}{27}{subsubsection.6.2.2.7}
-\contentsline {subsubsection}{\numberline {6.2.2.8}isCorrect}{28}{subsubsection.6.2.2.8}
-\contentsline {subsubsection}{\numberline {6.2.2.9}setAttemptID}{28}{subsubsection.6.2.2.9}
-\contentsline {subsubsection}{\numberline {6.2.2.10}setErrorReportID}{28}{subsubsection.6.2.2.10}
-\contentsline {subsubsection}{\numberline {6.2.2.11}setQuestionID}{28}{subsubsection.6.2.2.11}
-\contentsline {subsubsection}{\numberline {6.2.2.12}setSolution}{28}{subsubsection.6.2.2.12}
-\contentsline {subsubsection}{\numberline {6.2.2.13}setStatus}{28}{subsubsection.6.2.2.13}
-\contentsline {subsubsection}{\numberline {6.2.2.14}setTimeOfSubmission}{28}{subsubsection.6.2.2.14}
-\contentsline {subsubsection}{\numberline {6.2.2.15}setUserID}{28}{subsubsection.6.2.2.15}
-\contentsline {subsection}{\numberline {6.2.3}Member Data Documentation}{28}{subsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.3.1}attemptID\_\discretionary {-}{}{}f}{28}{subsubsection.6.2.3.1}
-\contentsline {subsubsection}{\numberline {6.2.3.2}attemptID\_\discretionary {-}{}{}f}{28}{subsubsection.6.2.3.2}
-\contentsline {subsubsection}{\numberline {6.2.3.3}errorReportID\_\discretionary {-}{}{}f}{29}{subsubsection.6.2.3.3}
-\contentsline {subsubsection}{\numberline {6.2.3.4}errorReportID\_\discretionary {-}{}{}f}{29}{subsubsection.6.2.3.4}
-\contentsline {subsubsection}{\numberline {6.2.3.5}questionID\_\discretionary {-}{}{}f}{29}{subsubsection.6.2.3.5}
-\contentsline {subsubsection}{\numberline {6.2.3.6}questionID\_\discretionary {-}{}{}f}{29}{subsubsection.6.2.3.6}
-\contentsline {subsubsection}{\numberline {6.2.3.7}solution\_\discretionary {-}{}{}f}{29}{subsubsection.6.2.3.7}
-\contentsline {subsubsection}{\numberline {6.2.3.8}solution\_\discretionary {-}{}{}f}{29}{subsubsection.6.2.3.8}
-\contentsline {subsubsection}{\numberline {6.2.3.9}status\_\discretionary {-}{}{}f}{29}{subsubsection.6.2.3.9}
-\contentsline {subsubsection}{\numberline {6.2.3.10}status\_\discretionary {-}{}{}f}{29}{subsubsection.6.2.3.10}
-\contentsline {subsubsection}{\numberline {6.2.3.11}timeOfSubmission\_\discretionary {-}{}{}f}{29}{subsubsection.6.2.3.11}
-\contentsline {subsubsection}{\numberline {6.2.3.12}timeOfSubmission\_\discretionary {-}{}{}f}{30}{subsubsection.6.2.3.12}
-\contentsline {subsubsection}{\numberline {6.2.3.13}userID\_\discretionary {-}{}{}f}{30}{subsubsection.6.2.3.13}
-\contentsline {subsubsection}{\numberline {6.2.3.14}userID\_\discretionary {-}{}{}f}{30}{subsubsection.6.2.3.14}
-\contentsline {subsection}{\numberline {6.2.4}Property Documentation}{30}{subsection.6.2.4}
-\contentsline {subsubsection}{\numberline {6.2.4.1}attemptID}{30}{subsubsection.6.2.4.1}
-\contentsline {subsubsection}{\numberline {6.2.4.2}errorReportID}{30}{subsubsection.6.2.4.2}
-\contentsline {subsubsection}{\numberline {6.2.4.3}questionID}{30}{subsubsection.6.2.4.3}
-\contentsline {subsubsection}{\numberline {6.2.4.4}solutionText}{30}{subsubsection.6.2.4.4}
-\contentsline {subsubsection}{\numberline {6.2.4.5}status}{30}{subsubsection.6.2.4.5}
-\contentsline {subsubsection}{\numberline {6.2.4.6}timeOfSubmission}{30}{subsubsection.6.2.4.6}
-\contentsline {subsubsection}{\numberline {6.2.4.7}userID}{31}{subsubsection.6.2.4.7}
-\contentsline {section}{\numberline {6.3}Ecodena.Attempt.admin.AttemptAdmin Class Reference}{31}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{31}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Member Data Documentation}{31}{subsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.2.1}list\_\discretionary {-}{}{}display}{31}{subsubsection.6.3.2.1}
-\contentsline {section}{\numberline {6.4}Ecodena.Question.models.BattleQuestion Class Reference}{31}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{31}{subsection.6.4.1}
-\contentsline {section}{\numberline {6.5}Ecodena.Compiler.models.CCompiler111 Class Reference}{32}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{32}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Member Function Documentation}{32}{subsection.6.5.2}
-\contentsline {subsubsection}{\numberline {6.5.2.1}compile}{32}{subsubsection.6.5.2.1}
-\contentsline {section}{\numberline {6.6}Ecodena.Comment.models.Comment Class Reference}{32}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{33}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Member Function Documentation}{34}{subsection.6.6.2}
-\contentsline {subsubsection}{\numberline {6.6.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{34}{subsubsection.6.6.2.1}
-\contentsline {subsubsection}{\numberline {6.6.2.2}getCommentText}{34}{subsubsection.6.6.2.2}
-\contentsline {subsubsection}{\numberline {6.6.2.3}getQuestionID}{34}{subsubsection.6.6.2.3}
-\contentsline {subsubsection}{\numberline {6.6.2.4}getReportingUserID}{34}{subsubsection.6.6.2.4}
-\contentsline {subsubsection}{\numberline {6.6.2.5}getTimeStamp}{34}{subsubsection.6.6.2.5}
-\contentsline {subsubsection}{\numberline {6.6.2.6}getUserID}{34}{subsubsection.6.6.2.6}
-\contentsline {subsubsection}{\numberline {6.6.2.7}isReported}{34}{subsubsection.6.6.2.7}
-\contentsline {subsubsection}{\numberline {6.6.2.8}report}{34}{subsubsection.6.6.2.8}
-\contentsline {subsubsection}{\numberline {6.6.2.9}setCommentText}{34}{subsubsection.6.6.2.9}
-\contentsline {subsubsection}{\numberline {6.6.2.10}setQuestionID}{34}{subsubsection.6.6.2.10}
-\contentsline {subsubsection}{\numberline {6.6.2.11}setReportingUserID}{35}{subsubsection.6.6.2.11}
-\contentsline {subsubsection}{\numberline {6.6.2.12}setTimeStamp}{35}{subsubsection.6.6.2.12}
-\contentsline {subsubsection}{\numberline {6.6.2.13}setUserID}{35}{subsubsection.6.6.2.13}
-\contentsline {subsection}{\numberline {6.6.3}Member Data Documentation}{35}{subsection.6.6.3}
-\contentsline {subsubsection}{\numberline {6.6.3.1}commentID\_\discretionary {-}{}{}f}{35}{subsubsection.6.6.3.1}
-\contentsline {subsubsection}{\numberline {6.6.3.2}commentText\_\discretionary {-}{}{}f}{35}{subsubsection.6.6.3.2}
-\contentsline {subsubsection}{\numberline {6.6.3.3}commentText\_\discretionary {-}{}{}f}{35}{subsubsection.6.6.3.3}
-\contentsline {subsubsection}{\numberline {6.6.3.4}isReported\_\discretionary {-}{}{}f}{35}{subsubsection.6.6.3.4}
-\contentsline {subsubsection}{\numberline {6.6.3.5}isReported\_\discretionary {-}{}{}f}{35}{subsubsection.6.6.3.5}
-\contentsline {subsubsection}{\numberline {6.6.3.6}questionID\_\discretionary {-}{}{}f}{35}{subsubsection.6.6.3.6}
-\contentsline {subsubsection}{\numberline {6.6.3.7}questionID\_\discretionary {-}{}{}f}{36}{subsubsection.6.6.3.7}
-\contentsline {subsubsection}{\numberline {6.6.3.8}reportingUserID\_\discretionary {-}{}{}f}{36}{subsubsection.6.6.3.8}
-\contentsline {subsubsection}{\numberline {6.6.3.9}reportingUserID\_\discretionary {-}{}{}f}{36}{subsubsection.6.6.3.9}
-\contentsline {subsubsection}{\numberline {6.6.3.10}timeStamp\_\discretionary {-}{}{}f}{36}{subsubsection.6.6.3.10}
-\contentsline {subsubsection}{\numberline {6.6.3.11}timeStamp\_\discretionary {-}{}{}f}{36}{subsubsection.6.6.3.11}
-\contentsline {subsubsection}{\numberline {6.6.3.12}userID\_\discretionary {-}{}{}f}{36}{subsubsection.6.6.3.12}
-\contentsline {subsubsection}{\numberline {6.6.3.13}userID\_\discretionary {-}{}{}f}{36}{subsubsection.6.6.3.13}
-\contentsline {subsection}{\numberline {6.6.4}Property Documentation}{36}{subsection.6.6.4}
-\contentsline {subsubsection}{\numberline {6.6.4.1}commentText}{36}{subsubsection.6.6.4.1}
-\contentsline {subsubsection}{\numberline {6.6.4.2}isReported}{37}{subsubsection.6.6.4.2}
-\contentsline {subsubsection}{\numberline {6.6.4.3}questionID}{37}{subsubsection.6.6.4.3}
-\contentsline {subsubsection}{\numberline {6.6.4.4}reportingUserID}{37}{subsubsection.6.6.4.4}
-\contentsline {subsubsection}{\numberline {6.6.4.5}timeStamp}{37}{subsubsection.6.6.4.5}
-\contentsline {subsubsection}{\numberline {6.6.4.6}userID}{37}{subsubsection.6.6.4.6}
-\contentsline {section}{\numberline {6.7}Ecodena.Comment.admin.CommentAdmin Class Reference}{37}{section.6.7}
-\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{37}{subsection.6.7.1}
-\contentsline {subsection}{\numberline {6.7.2}Member Data Documentation}{37}{subsection.6.7.2}
-\contentsline {subsubsection}{\numberline {6.7.2.1}list\_\discretionary {-}{}{}display}{38}{subsubsection.6.7.2.1}
-\contentsline {section}{\numberline {6.8}Ecodena.Question.views.CommentForm Class Reference}{38}{section.6.8}
-\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{38}{subsection.6.8.1}
-\contentsline {subsection}{\numberline {6.8.2}Member Data Documentation}{38}{subsection.6.8.2}
-\contentsline {subsubsection}{\numberline {6.8.2.1}text}{38}{subsubsection.6.8.2.1}
-\contentsline {section}{\numberline {6.9}Ecodena.Compiler.models.Compiler Class Reference}{38}{section.6.9}
-\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{39}{subsection.6.9.1}
-\contentsline {subsection}{\numberline {6.9.2}Member Function Documentation}{39}{subsection.6.9.2}
-\contentsline {subsubsection}{\numberline {6.9.2.1}compile}{39}{subsubsection.6.9.2.1}
-\contentsline {subsubsection}{\numberline {6.9.2.2}generateErrorReport}{39}{subsubsection.6.9.2.2}
-\contentsline {subsubsection}{\numberline {6.9.2.3}getAttempt}{39}{subsubsection.6.9.2.3}
-\contentsline {subsubsection}{\numberline {6.9.2.4}getCompilerVersion}{40}{subsubsection.6.9.2.4}
-\contentsline {subsubsection}{\numberline {6.9.2.5}getLanguage}{40}{subsubsection.6.9.2.5}
-\contentsline {subsubsection}{\numberline {6.9.2.6}getQuestion}{40}{subsubsection.6.9.2.6}
-\contentsline {subsubsection}{\numberline {6.9.2.7}setAttempt}{40}{subsubsection.6.9.2.7}
-\contentsline {subsubsection}{\numberline {6.9.2.8}setCompilerVersion}{40}{subsubsection.6.9.2.8}
-\contentsline {subsubsection}{\numberline {6.9.2.9}setLanguage}{40}{subsubsection.6.9.2.9}
-\contentsline {subsubsection}{\numberline {6.9.2.10}setQuestion}{40}{subsubsection.6.9.2.10}
-\contentsline {subsection}{\numberline {6.9.3}Member Data Documentation}{40}{subsection.6.9.3}
-\contentsline {subsubsection}{\numberline {6.9.3.1}attempt}{40}{subsubsection.6.9.3.1}
-\contentsline {subsubsection}{\numberline {6.9.3.2}compilerVersion}{40}{subsubsection.6.9.3.2}
-\contentsline {subsubsection}{\numberline {6.9.3.3}errorReport}{40}{subsubsection.6.9.3.3}
-\contentsline {subsubsection}{\numberline {6.9.3.4}language}{41}{subsubsection.6.9.3.4}
-\contentsline {subsubsection}{\numberline {6.9.3.5}question}{41}{subsubsection.6.9.3.5}
-\contentsline {subsection}{\numberline {6.9.4}Property Documentation}{41}{subsection.6.9.4}
-\contentsline {subsubsection}{\numberline {6.9.4.1}CompilerVersion}{41}{subsubsection.6.9.4.1}
-\contentsline {subsubsection}{\numberline {6.9.4.2}language}{41}{subsubsection.6.9.4.2}
-\contentsline {section}{\numberline {6.10}Ecodena.Compiler.models.CompilerVersion Class Reference}{41}{section.6.10}
-\contentsline {subsection}{\numberline {6.10.1}Detailed Description}{42}{subsection.6.10.1}
-\contentsline {subsection}{\numberline {6.10.2}Member Function Documentation}{42}{subsection.6.10.2}
-\contentsline {subsubsection}{\numberline {6.10.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{42}{subsubsection.6.10.2.1}
-\contentsline {subsubsection}{\numberline {6.10.2.2}getLanguage}{42}{subsubsection.6.10.2.2}
-\contentsline {subsubsection}{\numberline {6.10.2.3}getVersionName}{42}{subsubsection.6.10.2.3}
-\contentsline {subsubsection}{\numberline {6.10.2.4}languageName}{42}{subsubsection.6.10.2.4}
-\contentsline {subsubsection}{\numberline {6.10.2.5}setLanguage}{42}{subsubsection.6.10.2.5}
-\contentsline {subsubsection}{\numberline {6.10.2.6}setVersionName}{42}{subsubsection.6.10.2.6}
-\contentsline {subsection}{\numberline {6.10.3}Member Data Documentation}{43}{subsection.6.10.3}
-\contentsline {subsubsection}{\numberline {6.10.3.1}language\_\discretionary {-}{}{}f}{43}{subsubsection.6.10.3.1}
-\contentsline {subsubsection}{\numberline {6.10.3.2}language\_\discretionary {-}{}{}f}{43}{subsubsection.6.10.3.2}
-\contentsline {subsubsection}{\numberline {6.10.3.3}versionID\_\discretionary {-}{}{}f}{43}{subsubsection.6.10.3.3}
-\contentsline {subsubsection}{\numberline {6.10.3.4}versionName\_\discretionary {-}{}{}f}{43}{subsubsection.6.10.3.4}
-\contentsline {subsubsection}{\numberline {6.10.3.5}versionName\_\discretionary {-}{}{}f}{43}{subsubsection.6.10.3.5}
-\contentsline {subsection}{\numberline {6.10.4}Property Documentation}{43}{subsection.6.10.4}
-\contentsline {subsubsection}{\numberline {6.10.4.1}language}{43}{subsubsection.6.10.4.1}
-\contentsline {subsubsection}{\numberline {6.10.4.2}versionName}{43}{subsubsection.6.10.4.2}
-\contentsline {section}{\numberline {6.11}Ecodena.Compiler.admin.CompilerVersionAdmin Class Reference}{44}{section.6.11}
-\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{44}{subsection.6.11.1}
-\contentsline {subsection}{\numberline {6.11.2}Member Data Documentation}{44}{subsection.6.11.2}
-\contentsline {subsubsection}{\numberline {6.11.2.1}list\_\discretionary {-}{}{}display}{44}{subsubsection.6.11.2.1}
-\contentsline {section}{\numberline {6.12}Ecodena.Attempt.models.ErrorReport Class Reference}{44}{section.6.12}
-\contentsline {subsection}{\numberline {6.12.1}Detailed Description}{45}{subsection.6.12.1}
-\contentsline {subsection}{\numberline {6.12.2}Member Function Documentation}{45}{subsection.6.12.2}
-\contentsline {subsubsection}{\numberline {6.12.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{45}{subsubsection.6.12.2.1}
-\contentsline {subsubsection}{\numberline {6.12.2.2}getErrorMessage}{45}{subsubsection.6.12.2.2}
-\contentsline {subsubsection}{\numberline {6.12.2.3}getErrorType}{46}{subsubsection.6.12.2.3}
-\contentsline {subsubsection}{\numberline {6.12.2.4}getMemory}{46}{subsubsection.6.12.2.4}
-\contentsline {subsubsection}{\numberline {6.12.2.5}getTestCaseLevel}{46}{subsubsection.6.12.2.5}
-\contentsline {subsubsection}{\numberline {6.12.2.6}getTimeRequirement}{46}{subsubsection.6.12.2.6}
-\contentsline {subsubsection}{\numberline {6.12.2.7}setErrorMessage}{46}{subsubsection.6.12.2.7}
-\contentsline {subsubsection}{\numberline {6.12.2.8}setErrorType}{46}{subsubsection.6.12.2.8}
-\contentsline {subsubsection}{\numberline {6.12.2.9}setMemory}{46}{subsubsection.6.12.2.9}
-\contentsline {subsubsection}{\numberline {6.12.2.10}setTestCaseLevel}{46}{subsubsection.6.12.2.10}
-\contentsline {subsubsection}{\numberline {6.12.2.11}setTimeRequirement}{46}{subsubsection.6.12.2.11}
-\contentsline {subsection}{\numberline {6.12.3}Member Data Documentation}{46}{subsection.6.12.3}
-\contentsline {subsubsection}{\numberline {6.12.3.1}ERROR\_\discretionary {-}{}{}TYPE}{46}{subsubsection.6.12.3.1}
-\contentsline {subsubsection}{\numberline {6.12.3.2}errorMessage\_\discretionary {-}{}{}f}{47}{subsubsection.6.12.3.2}
-\contentsline {subsubsection}{\numberline {6.12.3.3}errorMessage\_\discretionary {-}{}{}f}{47}{subsubsection.6.12.3.3}
-\contentsline {subsubsection}{\numberline {6.12.3.4}errorReportID\_\discretionary {-}{}{}f}{47}{subsubsection.6.12.3.4}
-\contentsline {subsubsection}{\numberline {6.12.3.5}errorType\_\discretionary {-}{}{}f}{47}{subsubsection.6.12.3.5}
-\contentsline {subsubsection}{\numberline {6.12.3.6}errorType\_\discretionary {-}{}{}f}{47}{subsubsection.6.12.3.6}
-\contentsline {subsubsection}{\numberline {6.12.3.7}memory\_\discretionary {-}{}{}f}{47}{subsubsection.6.12.3.7}
-\contentsline {subsubsection}{\numberline {6.12.3.8}memory\_\discretionary {-}{}{}f}{47}{subsubsection.6.12.3.8}
-\contentsline {subsubsection}{\numberline {6.12.3.9}testCaseLevel\_\discretionary {-}{}{}f}{47}{subsubsection.6.12.3.9}
-\contentsline {subsubsection}{\numberline {6.12.3.10}testCaseLevel\_\discretionary {-}{}{}f}{47}{subsubsection.6.12.3.10}
-\contentsline {subsubsection}{\numberline {6.12.3.11}timeRequirement\_\discretionary {-}{}{}f}{48}{subsubsection.6.12.3.11}
-\contentsline {subsubsection}{\numberline {6.12.3.12}timeRequirement\_\discretionary {-}{}{}f}{48}{subsubsection.6.12.3.12}
-\contentsline {subsection}{\numberline {6.12.4}Property Documentation}{48}{subsection.6.12.4}
-\contentsline {subsubsection}{\numberline {6.12.4.1}errorMessage}{48}{subsubsection.6.12.4.1}
-\contentsline {subsubsection}{\numberline {6.12.4.2}errorType}{48}{subsubsection.6.12.4.2}
-\contentsline {subsubsection}{\numberline {6.12.4.3}memory}{48}{subsubsection.6.12.4.3}
-\contentsline {subsubsection}{\numberline {6.12.4.4}testCaseLevel}{48}{subsubsection.6.12.4.4}
-\contentsline {subsubsection}{\numberline {6.12.4.5}timeRequirement}{48}{subsubsection.6.12.4.5}
-\contentsline {section}{\numberline {6.13}Ecodena.Attempt.admin.ErrorReportAdmin Class Reference}{48}{section.6.13}
-\contentsline {subsection}{\numberline {6.13.1}Detailed Description}{49}{subsection.6.13.1}
-\contentsline {subsection}{\numberline {6.13.2}Member Data Documentation}{49}{subsection.6.13.2}
-\contentsline {subsubsection}{\numberline {6.13.2.1}list\_\discretionary {-}{}{}display}{49}{subsubsection.6.13.2.1}
-\contentsline {section}{\numberline {6.14}Ecodena.Compiler.models.JavaCompiler111 Class Reference}{49}{section.6.14}
-\contentsline {subsection}{\numberline {6.14.1}Detailed Description}{49}{subsection.6.14.1}
-\contentsline {subsection}{\numberline {6.14.2}Member Function Documentation}{49}{subsection.6.14.2}
-\contentsline {subsubsection}{\numberline {6.14.2.1}compile}{50}{subsubsection.6.14.2.1}
-\contentsline {section}{\numberline {6.15}Ecodena.Compiler.models.Language Class Reference}{50}{section.6.15}
-\contentsline {subsection}{\numberline {6.15.1}Detailed Description}{50}{subsection.6.15.1}
-\contentsline {subsection}{\numberline {6.15.2}Member Function Documentation}{51}{subsection.6.15.2}
-\contentsline {subsubsection}{\numberline {6.15.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{51}{subsubsection.6.15.2.1}
-\contentsline {subsubsection}{\numberline {6.15.2.2}getLanguageName}{51}{subsubsection.6.15.2.2}
-\contentsline {subsubsection}{\numberline {6.15.2.3}setLanguageName}{51}{subsubsection.6.15.2.3}
-\contentsline {subsection}{\numberline {6.15.3}Member Data Documentation}{51}{subsection.6.15.3}
-\contentsline {subsubsection}{\numberline {6.15.3.1}languageID\_\discretionary {-}{}{}f}{51}{subsubsection.6.15.3.1}
-\contentsline {subsubsection}{\numberline {6.15.3.2}languageName\_\discretionary {-}{}{}f}{51}{subsubsection.6.15.3.2}
-\contentsline {subsubsection}{\numberline {6.15.3.3}languageName\_\discretionary {-}{}{}f}{51}{subsubsection.6.15.3.3}
-\contentsline {subsection}{\numberline {6.15.4}Property Documentation}{51}{subsection.6.15.4}
-\contentsline {subsubsection}{\numberline {6.15.4.1}languageName}{51}{subsubsection.6.15.4.1}
-\contentsline {section}{\numberline {6.16}Ecodena.Compiler.admin.LanguageAdmin Class Reference}{52}{section.6.16}
-\contentsline {subsection}{\numberline {6.16.1}Detailed Description}{52}{subsection.6.16.1}
-\contentsline {subsection}{\numberline {6.16.2}Member Data Documentation}{52}{subsection.6.16.2}
-\contentsline {subsubsection}{\numberline {6.16.2.1}list\_\discretionary {-}{}{}display}{52}{subsubsection.6.16.2.1}
-\contentsline {section}{\numberline {6.17}Ecodena.Question.models.Level Class Reference}{52}{section.6.17}
-\contentsline {subsection}{\numberline {6.17.1}Detailed Description}{53}{subsection.6.17.1}
-\contentsline {subsection}{\numberline {6.17.2}Member Function Documentation}{53}{subsection.6.17.2}
-\contentsline {subsubsection}{\numberline {6.17.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{53}{subsubsection.6.17.2.1}
-\contentsline {subsubsection}{\numberline {6.17.2.2}getLevelName}{53}{subsubsection.6.17.2.2}
-\contentsline {subsubsection}{\numberline {6.17.2.3}setLevelName}{53}{subsubsection.6.17.2.3}
-\contentsline {subsection}{\numberline {6.17.3}Member Data Documentation}{53}{subsection.6.17.3}
-\contentsline {subsubsection}{\numberline {6.17.3.1}levelID\_\discretionary {-}{}{}f}{53}{subsubsection.6.17.3.1}
-\contentsline {subsubsection}{\numberline {6.17.3.2}levelName\_\discretionary {-}{}{}f}{53}{subsubsection.6.17.3.2}
-\contentsline {subsubsection}{\numberline {6.17.3.3}levelName\_\discretionary {-}{}{}f}{53}{subsubsection.6.17.3.3}
-\contentsline {subsection}{\numberline {6.17.4}Property Documentation}{53}{subsection.6.17.4}
-\contentsline {subsubsection}{\numberline {6.17.4.1}levelName}{54}{subsubsection.6.17.4.1}
-\contentsline {section}{\numberline {6.18}Ecodena.Question.admin.LevelInline Class Reference}{54}{section.6.18}
-\contentsline {subsection}{\numberline {6.18.1}Detailed Description}{54}{subsection.6.18.1}
-\contentsline {subsection}{\numberline {6.18.2}Member Data Documentation}{54}{subsection.6.18.2}
-\contentsline {subsubsection}{\numberline {6.18.2.1}extra}{54}{subsubsection.6.18.2.1}
-\contentsline {subsubsection}{\numberline {6.18.2.2}model}{54}{subsubsection.6.18.2.2}
-\contentsline {section}{\numberline {6.19}Ecodena.Question.models.Type.Meta Class Reference}{54}{section.6.19}
-\contentsline {subsection}{\numberline {6.19.1}Detailed Description}{54}{subsection.6.19.1}
-\contentsline {subsection}{\numberline {6.19.2}Member Data Documentation}{55}{subsection.6.19.2}
-\contentsline {subsubsection}{\numberline {6.19.2.1}verbose\_\discretionary {-}{}{}name}{55}{subsubsection.6.19.2.1}
-\contentsline {subsubsection}{\numberline {6.19.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{55}{subsubsection.6.19.2.2}
-\contentsline {section}{\numberline {6.20}Ecodena.Question.models.Level.Meta Class Reference}{55}{section.6.20}
-\contentsline {subsection}{\numberline {6.20.1}Detailed Description}{55}{subsection.6.20.1}
-\contentsline {subsection}{\numberline {6.20.2}Member Data Documentation}{55}{subsection.6.20.2}
-\contentsline {subsubsection}{\numberline {6.20.2.1}verbose\_\discretionary {-}{}{}name}{55}{subsubsection.6.20.2.1}
-\contentsline {subsubsection}{\numberline {6.20.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{55}{subsubsection.6.20.2.2}
-\contentsline {section}{\numberline {6.21}Ecodena.Compiler.models.Language.Meta Class Reference}{56}{section.6.21}
-\contentsline {subsection}{\numberline {6.21.1}Detailed Description}{56}{subsection.6.21.1}
-\contentsline {subsection}{\numberline {6.21.2}Member Data Documentation}{56}{subsection.6.21.2}
-\contentsline {subsubsection}{\numberline {6.21.2.1}verbose\_\discretionary {-}{}{}name}{56}{subsubsection.6.21.2.1}
-\contentsline {subsubsection}{\numberline {6.21.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{56}{subsubsection.6.21.2.2}
-\contentsline {section}{\numberline {6.22}Ecodena.Compiler.models.CompilerVersion.Meta Class Reference}{56}{section.6.22}
-\contentsline {subsection}{\numberline {6.22.1}Detailed Description}{56}{subsection.6.22.1}
-\contentsline {subsection}{\numberline {6.22.2}Member Data Documentation}{56}{subsection.6.22.2}
-\contentsline {subsubsection}{\numberline {6.22.2.1}verbose\_\discretionary {-}{}{}name}{57}{subsubsection.6.22.2.1}
-\contentsline {subsubsection}{\numberline {6.22.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{57}{subsubsection.6.22.2.2}
-\contentsline {section}{\numberline {6.23}Ecodena.Question.models.Question.Meta Class Reference}{57}{section.6.23}
-\contentsline {subsection}{\numberline {6.23.1}Detailed Description}{57}{subsection.6.23.1}
-\contentsline {subsection}{\numberline {6.23.2}Member Data Documentation}{57}{subsection.6.23.2}
-\contentsline {subsubsection}{\numberline {6.23.2.1}verbose\_\discretionary {-}{}{}name}{57}{subsubsection.6.23.2.1}
-\contentsline {subsubsection}{\numberline {6.23.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{57}{subsubsection.6.23.2.2}
-\contentsline {section}{\numberline {6.24}Ecodena.Attempt.models.ErrorReport.Meta Class Reference}{57}{section.6.24}
-\contentsline {subsection}{\numberline {6.24.1}Detailed Description}{58}{subsection.6.24.1}
-\contentsline {subsection}{\numberline {6.24.2}Member Data Documentation}{58}{subsection.6.24.2}
-\contentsline {subsubsection}{\numberline {6.24.2.1}verbose\_\discretionary {-}{}{}name}{58}{subsubsection.6.24.2.1}
-\contentsline {subsubsection}{\numberline {6.24.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{58}{subsubsection.6.24.2.2}
-\contentsline {section}{\numberline {6.25}Ecodena.Question.models.TestCase.Meta Class Reference}{58}{section.6.25}
-\contentsline {subsection}{\numberline {6.25.1}Detailed Description}{58}{subsection.6.25.1}
-\contentsline {subsection}{\numberline {6.25.2}Member Data Documentation}{58}{subsection.6.25.2}
-\contentsline {subsubsection}{\numberline {6.25.2.1}verbose\_\discretionary {-}{}{}name}{58}{subsubsection.6.25.2.1}
-\contentsline {subsubsection}{\numberline {6.25.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{59}{subsubsection.6.25.2.2}
-\contentsline {section}{\numberline {6.26}Ecodena.Comment.models.Comment.Meta Class Reference}{59}{section.6.26}
-\contentsline {subsection}{\numberline {6.26.1}Detailed Description}{59}{subsection.6.26.1}
-\contentsline {subsection}{\numberline {6.26.2}Member Data Documentation}{59}{subsection.6.26.2}
-\contentsline {subsubsection}{\numberline {6.26.2.1}verbose\_\discretionary {-}{}{}name}{59}{subsubsection.6.26.2.1}
-\contentsline {subsubsection}{\numberline {6.26.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{59}{subsubsection.6.26.2.2}
-\contentsline {section}{\numberline {6.27}Ecodena.Attempt.models.Attempt.Meta Class Reference}{59}{section.6.27}
-\contentsline {subsection}{\numberline {6.27.1}Detailed Description}{60}{subsection.6.27.1}
-\contentsline {subsection}{\numberline {6.27.2}Member Data Documentation}{60}{subsection.6.27.2}
-\contentsline {subsubsection}{\numberline {6.27.2.1}verbose\_\discretionary {-}{}{}name}{60}{subsubsection.6.27.2.1}
-\contentsline {subsubsection}{\numberline {6.27.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{60}{subsubsection.6.27.2.2}
-\contentsline {section}{\numberline {6.28}Ecodena.Query.models.Query.Meta Class Reference}{60}{section.6.28}
-\contentsline {subsection}{\numberline {6.28.1}Detailed Description}{60}{subsection.6.28.1}
-\contentsline {subsection}{\numberline {6.28.2}Member Data Documentation}{60}{subsection.6.28.2}
-\contentsline {subsubsection}{\numberline {6.28.2.1}verbose\_\discretionary {-}{}{}name}{60}{subsubsection.6.28.2.1}
-\contentsline {subsubsection}{\numberline {6.28.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{60}{subsubsection.6.28.2.2}
-\contentsline {section}{\numberline {6.29}Ecodena.User.models.Profile Class Reference}{61}{section.6.29}
-\contentsline {subsection}{\numberline {6.29.1}Detailed Description}{61}{subsection.6.29.1}
-\contentsline {subsection}{\numberline {6.29.2}Member Data Documentation}{61}{subsection.6.29.2}
-\contentsline {subsubsection}{\numberline {6.29.2.1}address\_\discretionary {-}{}{}f}{61}{subsubsection.6.29.2.1}
-\contentsline {subsubsection}{\numberline {6.29.2.2}dob\_\discretionary {-}{}{}f}{61}{subsubsection.6.29.2.2}
-\contentsline {subsubsection}{\numberline {6.29.2.3}gender\_\discretionary {-}{}{}f}{61}{subsubsection.6.29.2.3}
-\contentsline {subsubsection}{\numberline {6.29.2.4}GENDER\_\discretionary {-}{}{}TYPE}{61}{subsubsection.6.29.2.4}
-\contentsline {subsubsection}{\numberline {6.29.2.5}isAdmin\_\discretionary {-}{}{}f}{62}{subsubsection.6.29.2.5}
-\contentsline {subsubsection}{\numberline {6.29.2.6}isProgrammer\_\discretionary {-}{}{}f}{62}{subsubsection.6.29.2.6}
-\contentsline {subsubsection}{\numberline {6.29.2.7}numberOfAttempts\_\discretionary {-}{}{}f}{62}{subsubsection.6.29.2.7}
-\contentsline {subsubsection}{\numberline {6.29.2.8}profileID\_\discretionary {-}{}{}f}{62}{subsubsection.6.29.2.8}
-\contentsline {subsubsection}{\numberline {6.29.2.9}userID\_\discretionary {-}{}{}f}{62}{subsubsection.6.29.2.9}
-\contentsline {section}{\numberline {6.30}Ecodena.User.admin.ProfileAdmin Class Reference}{62}{section.6.30}
-\contentsline {subsection}{\numberline {6.30.1}Detailed Description}{62}{subsection.6.30.1}
-\contentsline {subsection}{\numberline {6.30.2}Member Data Documentation}{63}{subsection.6.30.2}
-\contentsline {subsubsection}{\numberline {6.30.2.1}list\_\discretionary {-}{}{}display}{63}{subsubsection.6.30.2.1}
-\contentsline {section}{\numberline {6.31}Ecodena.User.models.Programmer Class Reference}{63}{section.6.31}
-\contentsline {subsection}{\numberline {6.31.1}Detailed Description}{63}{subsection.6.31.1}
-\contentsline {subsection}{\numberline {6.31.2}Member Function Documentation}{63}{subsection.6.31.2}
-\contentsline {subsubsection}{\numberline {6.31.2.1}getLevel}{63}{subsubsection.6.31.2.1}
-\contentsline {subsubsection}{\numberline {6.31.2.2}setLevel}{64}{subsubsection.6.31.2.2}
-\contentsline {subsection}{\numberline {6.31.3}Member Data Documentation}{64}{subsection.6.31.3}
-\contentsline {subsubsection}{\numberline {6.31.3.1}level\_\discretionary {-}{}{}f}{64}{subsubsection.6.31.3.1}
-\contentsline {subsubsection}{\numberline {6.31.3.2}level\_\discretionary {-}{}{}f}{64}{subsubsection.6.31.3.2}
-\contentsline {subsection}{\numberline {6.31.4}Property Documentation}{64}{subsection.6.31.4}
-\contentsline {subsubsection}{\numberline {6.31.4.1}level}{64}{subsubsection.6.31.4.1}
-\contentsline {section}{\numberline {6.32}Ecodena.Query.models.Query Class Reference}{64}{section.6.32}
-\contentsline {subsection}{\numberline {6.32.1}Detailed Description}{65}{subsection.6.32.1}
-\contentsline {subsection}{\numberline {6.32.2}Member Function Documentation}{66}{subsection.6.32.2}
-\contentsline {subsubsection}{\numberline {6.32.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{66}{subsubsection.6.32.2.1}
-\contentsline {subsubsection}{\numberline {6.32.2.2}getAdminID}{66}{subsubsection.6.32.2.2}
-\contentsline {subsubsection}{\numberline {6.32.2.3}getQueryID}{66}{subsubsection.6.32.2.3}
-\contentsline {subsubsection}{\numberline {6.32.2.4}getQueryText}{66}{subsubsection.6.32.2.4}
-\contentsline {subsubsection}{\numberline {6.32.2.5}getQueryTime}{66}{subsubsection.6.32.2.5}
-\contentsline {subsubsection}{\numberline {6.32.2.6}getReplyTime}{66}{subsubsection.6.32.2.6}
-\contentsline {subsubsection}{\numberline {6.32.2.7}getSolution}{66}{subsubsection.6.32.2.7}
-\contentsline {subsubsection}{\numberline {6.32.2.8}getUserID}{66}{subsubsection.6.32.2.8}
-\contentsline {subsubsection}{\numberline {6.32.2.9}setAdminID}{66}{subsubsection.6.32.2.9}
-\contentsline {subsubsection}{\numberline {6.32.2.10}setQueryID}{66}{subsubsection.6.32.2.10}
-\contentsline {subsubsection}{\numberline {6.32.2.11}setQueryText}{67}{subsubsection.6.32.2.11}
-\contentsline {subsubsection}{\numberline {6.32.2.12}setQueryTime}{67}{subsubsection.6.32.2.12}
-\contentsline {subsubsection}{\numberline {6.32.2.13}setReplyTime}{67}{subsubsection.6.32.2.13}
-\contentsline {subsubsection}{\numberline {6.32.2.14}setSolution}{67}{subsubsection.6.32.2.14}
-\contentsline {subsubsection}{\numberline {6.32.2.15}setUserID}{67}{subsubsection.6.32.2.15}
-\contentsline {subsection}{\numberline {6.32.3}Member Data Documentation}{67}{subsection.6.32.3}
-\contentsline {subsubsection}{\numberline {6.32.3.1}adminID\_\discretionary {-}{}{}f}{67}{subsubsection.6.32.3.1}
-\contentsline {subsubsection}{\numberline {6.32.3.2}adminID\_\discretionary {-}{}{}f}{67}{subsubsection.6.32.3.2}
-\contentsline {subsubsection}{\numberline {6.32.3.3}queryID\_\discretionary {-}{}{}f}{67}{subsubsection.6.32.3.3}
-\contentsline {subsubsection}{\numberline {6.32.3.4}queryID\_\discretionary {-}{}{}f}{67}{subsubsection.6.32.3.4}
-\contentsline {subsubsection}{\numberline {6.32.3.5}queryText\_\discretionary {-}{}{}f}{68}{subsubsection.6.32.3.5}
-\contentsline {subsubsection}{\numberline {6.32.3.6}queryText\_\discretionary {-}{}{}f}{68}{subsubsection.6.32.3.6}
-\contentsline {subsubsection}{\numberline {6.32.3.7}queryTime\_\discretionary {-}{}{}f}{68}{subsubsection.6.32.3.7}
-\contentsline {subsubsection}{\numberline {6.32.3.8}queryTime\_\discretionary {-}{}{}f}{68}{subsubsection.6.32.3.8}
-\contentsline {subsubsection}{\numberline {6.32.3.9}replyTime\_\discretionary {-}{}{}f}{68}{subsubsection.6.32.3.9}
-\contentsline {subsubsection}{\numberline {6.32.3.10}replyTime\_\discretionary {-}{}{}f}{68}{subsubsection.6.32.3.10}
-\contentsline {subsubsection}{\numberline {6.32.3.11}solution\_\discretionary {-}{}{}f}{68}{subsubsection.6.32.3.11}
-\contentsline {subsubsection}{\numberline {6.32.3.12}solution\_\discretionary {-}{}{}f}{68}{subsubsection.6.32.3.12}
-\contentsline {subsubsection}{\numberline {6.32.3.13}userID\_\discretionary {-}{}{}f}{68}{subsubsection.6.32.3.13}
-\contentsline {subsubsection}{\numberline {6.32.3.14}userID\_\discretionary {-}{}{}f}{69}{subsubsection.6.32.3.14}
-\contentsline {subsection}{\numberline {6.32.4}Property Documentation}{69}{subsection.6.32.4}
-\contentsline {subsubsection}{\numberline {6.32.4.1}adminID}{69}{subsubsection.6.32.4.1}
-\contentsline {subsubsection}{\numberline {6.32.4.2}queryID}{69}{subsubsection.6.32.4.2}
-\contentsline {subsubsection}{\numberline {6.32.4.3}queryText}{69}{subsubsection.6.32.4.3}
-\contentsline {subsubsection}{\numberline {6.32.4.4}queryTime}{69}{subsubsection.6.32.4.4}
-\contentsline {subsubsection}{\numberline {6.32.4.5}replyTime}{69}{subsubsection.6.32.4.5}
-\contentsline {subsubsection}{\numberline {6.32.4.6}solution}{69}{subsubsection.6.32.4.6}
-\contentsline {subsubsection}{\numberline {6.32.4.7}userID}{69}{subsubsection.6.32.4.7}
-\contentsline {section}{\numberline {6.33}Ecodena.Query.admin.QueryAdmin Class Reference}{70}{section.6.33}
-\contentsline {subsection}{\numberline {6.33.1}Detailed Description}{70}{subsection.6.33.1}
-\contentsline {subsection}{\numberline {6.33.2}Member Data Documentation}{70}{subsection.6.33.2}
-\contentsline {subsubsection}{\numberline {6.33.2.1}list\_\discretionary {-}{}{}display}{70}{subsubsection.6.33.2.1}
-\contentsline {section}{\numberline {6.34}Ecodena.Query.views.QueryForm Class Reference}{70}{section.6.34}
-\contentsline {subsection}{\numberline {6.34.1}Detailed Description}{70}{subsection.6.34.1}
-\contentsline {subsection}{\numberline {6.34.2}Member Data Documentation}{70}{subsection.6.34.2}
-\contentsline {subsubsection}{\numberline {6.34.2.1}text}{70}{subsubsection.6.34.2.1}
-\contentsline {section}{\numberline {6.35}Ecodena.Question.models.Question Class Reference}{71}{section.6.35}
-\contentsline {subsection}{\numberline {6.35.1}Detailed Description}{72}{subsection.6.35.1}
-\contentsline {subsection}{\numberline {6.35.2}Member Function Documentation}{72}{subsection.6.35.2}
-\contentsline {subsubsection}{\numberline {6.35.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{72}{subsubsection.6.35.2.1}
-\contentsline {subsubsection}{\numberline {6.35.2.2}addComments}{72}{subsubsection.6.35.2.2}
-\contentsline {subsubsection}{\numberline {6.35.2.3}getComments}{72}{subsubsection.6.35.2.3}
-\contentsline {subsubsection}{\numberline {6.35.2.4}getQuestionID}{72}{subsubsection.6.35.2.4}
-\contentsline {subsubsection}{\numberline {6.35.2.5}getQuestionText}{72}{subsubsection.6.35.2.5}
-\contentsline {subsubsection}{\numberline {6.35.2.6}getQuestionTitle}{72}{subsubsection.6.35.2.6}
-\contentsline {subsubsection}{\numberline {6.35.2.7}getTestCasesList}{72}{subsubsection.6.35.2.7}
-\contentsline {subsubsection}{\numberline {6.35.2.8}removeTestCase}{73}{subsubsection.6.35.2.8}
-\contentsline {subsubsection}{\numberline {6.35.2.9}setCommentList}{73}{subsubsection.6.35.2.9}
-\contentsline {subsubsection}{\numberline {6.35.2.10}setQuestionID}{73}{subsubsection.6.35.2.10}
-\contentsline {subsubsection}{\numberline {6.35.2.11}setQuestionText}{73}{subsubsection.6.35.2.11}
-\contentsline {subsubsection}{\numberline {6.35.2.12}setQuestionTitle}{73}{subsubsection.6.35.2.12}
-\contentsline {subsubsection}{\numberline {6.35.2.13}setTestCasesList}{73}{subsubsection.6.35.2.13}
-\contentsline {subsection}{\numberline {6.35.3}Member Data Documentation}{73}{subsection.6.35.3}
-\contentsline {subsubsection}{\numberline {6.35.3.1}commentList\_\discretionary {-}{}{}f}{73}{subsubsection.6.35.3.1}
-\contentsline {subsubsection}{\numberline {6.35.3.2}commentList\_\discretionary {-}{}{}f}{73}{subsubsection.6.35.3.2}
-\contentsline {subsubsection}{\numberline {6.35.3.3}level\_\discretionary {-}{}{}f}{73}{subsubsection.6.35.3.3}
-\contentsline {subsubsection}{\numberline {6.35.3.4}questionID\_\discretionary {-}{}{}f}{73}{subsubsection.6.35.3.4}
-\contentsline {subsubsection}{\numberline {6.35.3.5}questionID\_\discretionary {-}{}{}f}{74}{subsubsection.6.35.3.5}
-\contentsline {subsubsection}{\numberline {6.35.3.6}questionText\_\discretionary {-}{}{}f}{74}{subsubsection.6.35.3.6}
-\contentsline {subsubsection}{\numberline {6.35.3.7}questionText\_\discretionary {-}{}{}f}{74}{subsubsection.6.35.3.7}
-\contentsline {subsubsection}{\numberline {6.35.3.8}questionTitle\_\discretionary {-}{}{}f}{74}{subsubsection.6.35.3.8}
-\contentsline {subsubsection}{\numberline {6.35.3.9}questionTitle\_\discretionary {-}{}{}f}{74}{subsubsection.6.35.3.9}
-\contentsline {subsubsection}{\numberline {6.35.3.10}testCasesList\_\discretionary {-}{}{}f}{74}{subsubsection.6.35.3.10}
-\contentsline {subsubsection}{\numberline {6.35.3.11}testCasesList\_\discretionary {-}{}{}f}{74}{subsubsection.6.35.3.11}
-\contentsline {subsubsection}{\numberline {6.35.3.12}timeLimit\_\discretionary {-}{}{}f}{74}{subsubsection.6.35.3.12}
-\contentsline {subsubsection}{\numberline {6.35.3.13}type\_\discretionary {-}{}{}f}{74}{subsubsection.6.35.3.13}
-\contentsline {subsection}{\numberline {6.35.4}Property Documentation}{75}{subsection.6.35.4}
-\contentsline {subsubsection}{\numberline {6.35.4.1}commentList}{75}{subsubsection.6.35.4.1}
-\contentsline {subsubsection}{\numberline {6.35.4.2}questionID}{75}{subsubsection.6.35.4.2}
-\contentsline {subsubsection}{\numberline {6.35.4.3}questionText}{75}{subsubsection.6.35.4.3}
-\contentsline {subsubsection}{\numberline {6.35.4.4}questionTitle}{75}{subsubsection.6.35.4.4}
-\contentsline {subsubsection}{\numberline {6.35.4.5}testCasesList}{75}{subsubsection.6.35.4.5}
-\contentsline {section}{\numberline {6.36}Ecodena.Question.admin.QuestionAdmin Class Reference}{75}{section.6.36}
-\contentsline {subsection}{\numberline {6.36.1}Detailed Description}{75}{subsection.6.36.1}
-\contentsline {subsection}{\numberline {6.36.2}Member Data Documentation}{76}{subsection.6.36.2}
-\contentsline {subsubsection}{\numberline {6.36.2.1}inlines1}{76}{subsubsection.6.36.2.1}
-\contentsline {subsubsection}{\numberline {6.36.2.2}inlines2}{76}{subsubsection.6.36.2.2}
-\contentsline {subsubsection}{\numberline {6.36.2.3}list\_\discretionary {-}{}{}display}{76}{subsubsection.6.36.2.3}
-\contentsline {section}{\numberline {6.37}Ecodena.Comment.tests.SimpleTest Class Reference}{76}{section.6.37}
-\contentsline {subsection}{\numberline {6.37.1}Detailed Description}{76}{subsection.6.37.1}
-\contentsline {subsection}{\numberline {6.37.2}Member Function Documentation}{76}{subsection.6.37.2}
-\contentsline {subsubsection}{\numberline {6.37.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{76}{subsubsection.6.37.2.1}
-\contentsline {section}{\numberline {6.38}Ecodena.Main.tests.SimpleTest Class Reference}{77}{section.6.38}
-\contentsline {subsection}{\numberline {6.38.1}Detailed Description}{77}{subsection.6.38.1}
-\contentsline {subsection}{\numberline {6.38.2}Member Function Documentation}{77}{subsection.6.38.2}
-\contentsline {subsubsection}{\numberline {6.38.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{77}{subsubsection.6.38.2.1}
-\contentsline {section}{\numberline {6.39}Ecodena.Compiler.tests.SimpleTest Class Reference}{77}{section.6.39}
-\contentsline {subsection}{\numberline {6.39.1}Detailed Description}{77}{subsection.6.39.1}
-\contentsline {subsection}{\numberline {6.39.2}Member Function Documentation}{77}{subsection.6.39.2}
-\contentsline {subsubsection}{\numberline {6.39.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{77}{subsubsection.6.39.2.1}
-\contentsline {section}{\numberline {6.40}Ecodena.Query.tests.SimpleTest Class Reference}{78}{section.6.40}
-\contentsline {subsection}{\numberline {6.40.1}Detailed Description}{78}{subsection.6.40.1}
-\contentsline {subsection}{\numberline {6.40.2}Member Function Documentation}{78}{subsection.6.40.2}
-\contentsline {subsubsection}{\numberline {6.40.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{78}{subsubsection.6.40.2.1}
-\contentsline {section}{\numberline {6.41}Ecodena.Question.tests.SimpleTest Class Reference}{78}{section.6.41}
-\contentsline {subsection}{\numberline {6.41.1}Detailed Description}{78}{subsection.6.41.1}
-\contentsline {subsection}{\numberline {6.41.2}Member Function Documentation}{79}{subsection.6.41.2}
-\contentsline {subsubsection}{\numberline {6.41.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{79}{subsubsection.6.41.2.1}
-\contentsline {section}{\numberline {6.42}Ecodena.User.tests.SimpleTest Class Reference}{79}{section.6.42}
-\contentsline {subsection}{\numberline {6.42.1}Detailed Description}{79}{subsection.6.42.1}
-\contentsline {subsection}{\numberline {6.42.2}Member Function Documentation}{79}{subsection.6.42.2}
-\contentsline {subsubsection}{\numberline {6.42.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{79}{subsubsection.6.42.2.1}
-\contentsline {section}{\numberline {6.43}Ecodena.Attempt.tests.SimpleTest Class Reference}{79}{section.6.43}
-\contentsline {subsection}{\numberline {6.43.1}Detailed Description}{80}{subsection.6.43.1}
-\contentsline {subsection}{\numberline {6.43.2}Member Function Documentation}{80}{subsection.6.43.2}
-\contentsline {subsubsection}{\numberline {6.43.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{80}{subsubsection.6.43.2.1}
-\contentsline {section}{\numberline {6.44}Ecodena.Attempt.views.SolutionForm Class Reference}{80}{section.6.44}
-\contentsline {subsection}{\numberline {6.44.1}Detailed Description}{80}{subsection.6.44.1}
-\contentsline {subsection}{\numberline {6.44.2}Member Data Documentation}{80}{subsection.6.44.2}
-\contentsline {subsubsection}{\numberline {6.44.2.1}text}{80}{subsubsection.6.44.2.1}
-\contentsline {subsubsection}{\numberline {6.44.2.2}version}{80}{subsubsection.6.44.2.2}
-\contentsline {section}{\numberline {6.45}Ecodena.Question.models.TestCase Class Reference}{81}{section.6.45}
-\contentsline {subsection}{\numberline {6.45.1}Detailed Description}{82}{subsection.6.45.1}
-\contentsline {subsection}{\numberline {6.45.2}Member Function Documentation}{82}{subsection.6.45.2}
-\contentsline {subsubsection}{\numberline {6.45.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{82}{subsubsection.6.45.2.1}
-\contentsline {subsubsection}{\numberline {6.45.2.2}getCaseType}{82}{subsubsection.6.45.2.2}
-\contentsline {subsubsection}{\numberline {6.45.2.3}getOutput}{82}{subsubsection.6.45.2.3}
-\contentsline {subsubsection}{\numberline {6.45.2.4}getQuestion}{82}{subsubsection.6.45.2.4}
-\contentsline {subsubsection}{\numberline {6.45.2.5}getTestID}{82}{subsubsection.6.45.2.5}
-\contentsline {subsubsection}{\numberline {6.45.2.6}setCaseType}{82}{subsubsection.6.45.2.6}
-\contentsline {subsubsection}{\numberline {6.45.2.7}setOutput}{82}{subsubsection.6.45.2.7}
-\contentsline {subsubsection}{\numberline {6.45.2.8}setQuestion}{82}{subsubsection.6.45.2.8}
-\contentsline {subsubsection}{\numberline {6.45.2.9}setTestID}{82}{subsubsection.6.45.2.9}
-\contentsline {subsection}{\numberline {6.45.3}Member Data Documentation}{83}{subsection.6.45.3}
-\contentsline {subsubsection}{\numberline {6.45.3.1}CASE\_\discretionary {-}{}{}TYPE}{83}{subsubsection.6.45.3.1}
-\contentsline {subsubsection}{\numberline {6.45.3.2}caseID\_\discretionary {-}{}{}f}{83}{subsubsection.6.45.3.2}
-\contentsline {subsubsection}{\numberline {6.45.3.3}caseID\_\discretionary {-}{}{}f}{83}{subsubsection.6.45.3.3}
-\contentsline {subsubsection}{\numberline {6.45.3.4}caseType\_\discretionary {-}{}{}f}{83}{subsubsection.6.45.3.4}
-\contentsline {subsubsection}{\numberline {6.45.3.5}caseType\_\discretionary {-}{}{}f}{83}{subsubsection.6.45.3.5}
-\contentsline {subsubsection}{\numberline {6.45.3.6}input\_\discretionary {-}{}{}f}{83}{subsubsection.6.45.3.6}
-\contentsline {subsubsection}{\numberline {6.45.3.7}output\_\discretionary {-}{}{}f}{83}{subsubsection.6.45.3.7}
-\contentsline {subsubsection}{\numberline {6.45.3.8}output\_\discretionary {-}{}{}f}{83}{subsubsection.6.45.3.8}
-\contentsline {subsubsection}{\numberline {6.45.3.9}questionID\_\discretionary {-}{}{}f}{84}{subsubsection.6.45.3.9}
-\contentsline {subsubsection}{\numberline {6.45.3.10}questionID\_\discretionary {-}{}{}f}{84}{subsubsection.6.45.3.10}
-\contentsline {subsection}{\numberline {6.45.4}Property Documentation}{84}{subsection.6.45.4}
-\contentsline {subsubsection}{\numberline {6.45.4.1}caseID}{84}{subsubsection.6.45.4.1}
-\contentsline {subsubsection}{\numberline {6.45.4.2}caseType}{84}{subsubsection.6.45.4.2}
-\contentsline {subsubsection}{\numberline {6.45.4.3}output}{84}{subsubsection.6.45.4.3}
-\contentsline {subsubsection}{\numberline {6.45.4.4}questionID}{84}{subsubsection.6.45.4.4}
-\contentsline {section}{\numberline {6.46}Ecodena.Question.models.Type Class Reference}{84}{section.6.46}
-\contentsline {subsection}{\numberline {6.46.1}Detailed Description}{85}{subsection.6.46.1}
-\contentsline {subsection}{\numberline {6.46.2}Member Function Documentation}{85}{subsection.6.46.2}
-\contentsline {subsubsection}{\numberline {6.46.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{85}{subsubsection.6.46.2.1}
-\contentsline {subsection}{\numberline {6.46.3}Member Data Documentation}{85}{subsection.6.46.3}
-\contentsline {subsubsection}{\numberline {6.46.3.1}typeID\_\discretionary {-}{}{}f}{85}{subsubsection.6.46.3.1}
-\contentsline {subsubsection}{\numberline {6.46.3.2}typeName\_\discretionary {-}{}{}f}{85}{subsubsection.6.46.3.2}
-\contentsline {section}{\numberline {6.47}Ecodena.Question.admin.TypeInline Class Reference}{85}{section.6.47}
-\contentsline {subsection}{\numberline {6.47.1}Detailed Description}{86}{subsection.6.47.1}
-\contentsline {subsection}{\numberline {6.47.2}Member Data Documentation}{86}{subsection.6.47.2}
-\contentsline {subsubsection}{\numberline {6.47.2.1}model}{86}{subsubsection.6.47.2.1}
-\contentsline {chapter}{\numberline {7}File Documentation}{87}{chapter.7}
-\contentsline {section}{\numberline {7.1}/home/panx/ecodena/src/Ecodena/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{87}{section.7.1}
-\contentsline {section}{\numberline {7.2}/home/panx/ecodena/src/Ecodena/Attempt/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{87}{section.7.2}
-\contentsline {section}{\numberline {7.3}/home/panx/ecodena/src/Ecodena/Comment/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{87}{section.7.3}
-\contentsline {section}{\numberline {7.4}/home/panx/ecodena/src/Ecodena/Compiler/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{87}{section.7.4}
-\contentsline {section}{\numberline {7.5}/home/panx/ecodena/src/Ecodena/Main/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{88}{section.7.5}
-\contentsline {section}{\numberline {7.6}/home/panx/ecodena/src/Ecodena/Query/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{88}{section.7.6}
-\contentsline {section}{\numberline {7.7}/home/panx/ecodena/src/Ecodena/Question/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{88}{section.7.7}
-\contentsline {section}{\numberline {7.8}/home/panx/ecodena/src/Ecodena/User/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{88}{section.7.8}
-\contentsline {section}{\numberline {7.9}/home/panx/ecodena/src/Ecodena/Attempt/admin.py File Reference}{88}{section.7.9}
-\contentsline {section}{\numberline {7.10}/home/panx/ecodena/src/Ecodena/Comment/admin.py File Reference}{89}{section.7.10}
-\contentsline {section}{\numberline {7.11}/home/panx/ecodena/src/Ecodena/Compiler/admin.py File Reference}{89}{section.7.11}
-\contentsline {section}{\numberline {7.12}/home/panx/ecodena/src/Ecodena/Query/admin.py File Reference}{89}{section.7.12}
-\contentsline {section}{\numberline {7.13}/home/panx/ecodena/src/Ecodena/Question/admin.py File Reference}{89}{section.7.13}
-\contentsline {section}{\numberline {7.14}/home/panx/ecodena/src/Ecodena/User/admin.py File Reference}{90}{section.7.14}
-\contentsline {section}{\numberline {7.15}/home/panx/ecodena/src/Ecodena/Attempt/models.py File Reference}{90}{section.7.15}
-\contentsline {section}{\numberline {7.16}/home/panx/ecodena/src/Ecodena/Comment/models.py File Reference}{90}{section.7.16}
-\contentsline {section}{\numberline {7.17}/home/panx/ecodena/src/Ecodena/Compiler/models.py File Reference}{91}{section.7.17}
-\contentsline {section}{\numberline {7.18}/home/panx/ecodena/src/Ecodena/Main/models.py File Reference}{91}{section.7.18}
-\contentsline {section}{\numberline {7.19}/home/panx/ecodena/src/Ecodena/Query/models.py File Reference}{91}{section.7.19}
-\contentsline {section}{\numberline {7.20}/home/panx/ecodena/src/Ecodena/Question/models.py File Reference}{92}{section.7.20}
-\contentsline {section}{\numberline {7.21}/home/panx/ecodena/src/Ecodena/User/models.py File Reference}{92}{section.7.21}
-\contentsline {section}{\numberline {7.22}/home/panx/ecodena/src/Ecodena/Attempt/tests.py File Reference}{92}{section.7.22}
-\contentsline {section}{\numberline {7.23}/home/panx/ecodena/src/Ecodena/Comment/tests.py File Reference}{93}{section.7.23}
-\contentsline {section}{\numberline {7.24}/home/panx/ecodena/src/Ecodena/Compiler/tests.py File Reference}{93}{section.7.24}
-\contentsline {section}{\numberline {7.25}/home/panx/ecodena/src/Ecodena/Main/tests.py File Reference}{93}{section.7.25}
-\contentsline {section}{\numberline {7.26}/home/panx/ecodena/src/Ecodena/Query/tests.py File Reference}{93}{section.7.26}
-\contentsline {section}{\numberline {7.27}/home/panx/ecodena/src/Ecodena/Question/tests.py File Reference}{94}{section.7.27}
-\contentsline {section}{\numberline {7.28}/home/panx/ecodena/src/Ecodena/User/tests.py File Reference}{94}{section.7.28}
-\contentsline {section}{\numberline {7.29}/home/panx/ecodena/src/Ecodena/Attempt/views.py File Reference}{94}{section.7.29}
-\contentsline {section}{\numberline {7.30}/home/panx/ecodena/src/Ecodena/Comment/views.py File Reference}{95}{section.7.30}
-\contentsline {section}{\numberline {7.31}/home/panx/ecodena/src/Ecodena/Compiler/views.py File Reference}{95}{section.7.31}
-\contentsline {section}{\numberline {7.32}/home/panx/ecodena/src/Ecodena/Main/views.py File Reference}{95}{section.7.32}
-\contentsline {section}{\numberline {7.33}/home/panx/ecodena/src/Ecodena/Query/views.py File Reference}{95}{section.7.33}
-\contentsline {section}{\numberline {7.34}/home/panx/ecodena/src/Ecodena/Question/views.py File Reference}{96}{section.7.34}
-\contentsline {section}{\numberline {7.35}/home/panx/ecodena/src/Ecodena/User/views.py File Reference}{96}{section.7.35}
-\contentsline {section}{\numberline {7.36}/home/panx/ecodena/src/Ecodena/Compiler/dictionary.py File Reference}{96}{section.7.36}
-\contentsline {section}{\numberline {7.37}/home/panx/ecodena/src/Ecodena/manage.py File Reference}{97}{section.7.37}
-\contentsline {section}{\numberline {7.38}/home/panx/ecodena/src/Ecodena/settings.py File Reference}{97}{section.7.38}
-\contentsline {section}{\numberline {7.39}/home/panx/ecodena/src/Ecodena/urls.py File Reference}{97}{section.7.39}
+\contentsline {subsection}{\numberline {5.37.1}Detailed Description}{25}{subsection.5.37.1}
+\contentsline {section}{\numberline {5.38}Package Ecodena.User.tests}{25}{section.5.38}
+\contentsline {subsection}{\numberline {5.38.1}Detailed Description}{25}{subsection.5.38.1}
+\contentsline {section}{\numberline {5.39}Package Ecodena.User.views}{25}{section.5.39}
+\contentsline {subsection}{\numberline {5.39.1}Function Documentation}{25}{subsection.5.39.1}
+\contentsline {subsubsection}{\numberline {5.39.1.1}editProfile}{25}{subsubsection.5.39.1.1}
+\contentsline {subsubsection}{\numberline {5.39.1.2}viewProfile}{25}{subsubsection.5.39.1.2}
+\contentsline {chapter}{\numberline {6}Class Documentation}{27}{chapter.6}
+\contentsline {section}{\numberline {6.1}Ecodena.Attempt.models.Attempt Class Reference}{27}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{28}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Member Function Documentation}{28}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{28}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}getAttemptID}{29}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.3}getCompilerVersionOfAttempt}{29}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}getErrorReportID}{29}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.5}getQuestionID}{29}{subsubsection.6.1.2.5}
+\contentsline {subsubsection}{\numberline {6.1.2.6}getSolution}{29}{subsubsection.6.1.2.6}
+\contentsline {subsubsection}{\numberline {6.1.2.7}getTimeOfSubmission}{29}{subsubsection.6.1.2.7}
+\contentsline {subsubsection}{\numberline {6.1.2.8}getUserID}{29}{subsubsection.6.1.2.8}
+\contentsline {subsubsection}{\numberline {6.1.2.9}isCorrect}{29}{subsubsection.6.1.2.9}
+\contentsline {subsubsection}{\numberline {6.1.2.10}setAttemptID}{29}{subsubsection.6.1.2.10}
+\contentsline {subsubsection}{\numberline {6.1.2.11}setCompilerVersionOfAttempt}{29}{subsubsection.6.1.2.11}
+\contentsline {subsubsection}{\numberline {6.1.2.12}setErrorReportID}{30}{subsubsection.6.1.2.12}
+\contentsline {subsubsection}{\numberline {6.1.2.13}setQuestionID}{30}{subsubsection.6.1.2.13}
+\contentsline {subsubsection}{\numberline {6.1.2.14}setSolution}{30}{subsubsection.6.1.2.14}
+\contentsline {subsubsection}{\numberline {6.1.2.15}setStatus}{30}{subsubsection.6.1.2.15}
+\contentsline {subsubsection}{\numberline {6.1.2.16}setTimeOfSubmission}{30}{subsubsection.6.1.2.16}
+\contentsline {subsubsection}{\numberline {6.1.2.17}setUserID}{30}{subsubsection.6.1.2.17}
+\contentsline {subsection}{\numberline {6.1.3}Member Data Documentation}{30}{subsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.3.1}attemptID\_\discretionary {-}{}{}f}{30}{subsubsection.6.1.3.1}
+\contentsline {subsubsection}{\numberline {6.1.3.2}attemptID\_\discretionary {-}{}{}f}{30}{subsubsection.6.1.3.2}
+\contentsline {subsubsection}{\numberline {6.1.3.3}compilerVersion\_\discretionary {-}{}{}f}{30}{subsubsection.6.1.3.3}
+\contentsline {subsubsection}{\numberline {6.1.3.4}compilerVersion\_\discretionary {-}{}{}f}{31}{subsubsection.6.1.3.4}
+\contentsline {subsubsection}{\numberline {6.1.3.5}errorReportID\_\discretionary {-}{}{}f}{31}{subsubsection.6.1.3.5}
+\contentsline {subsubsection}{\numberline {6.1.3.6}errorReportID\_\discretionary {-}{}{}f}{31}{subsubsection.6.1.3.6}
+\contentsline {subsubsection}{\numberline {6.1.3.7}questionID\_\discretionary {-}{}{}f}{31}{subsubsection.6.1.3.7}
+\contentsline {subsubsection}{\numberline {6.1.3.8}questionID\_\discretionary {-}{}{}f}{31}{subsubsection.6.1.3.8}
+\contentsline {subsubsection}{\numberline {6.1.3.9}solution\_\discretionary {-}{}{}f}{31}{subsubsection.6.1.3.9}
+\contentsline {subsubsection}{\numberline {6.1.3.10}solution\_\discretionary {-}{}{}f}{31}{subsubsection.6.1.3.10}
+\contentsline {subsubsection}{\numberline {6.1.3.11}status\_\discretionary {-}{}{}f}{31}{subsubsection.6.1.3.11}
+\contentsline {subsubsection}{\numberline {6.1.3.12}status\_\discretionary {-}{}{}f}{31}{subsubsection.6.1.3.12}
+\contentsline {subsubsection}{\numberline {6.1.3.13}timeOfSubmission\_\discretionary {-}{}{}f}{32}{subsubsection.6.1.3.13}
+\contentsline {subsubsection}{\numberline {6.1.3.14}timeOfSubmission\_\discretionary {-}{}{}f}{32}{subsubsection.6.1.3.14}
+\contentsline {subsubsection}{\numberline {6.1.3.15}userID\_\discretionary {-}{}{}f}{32}{subsubsection.6.1.3.15}
+\contentsline {subsubsection}{\numberline {6.1.3.16}userID\_\discretionary {-}{}{}f}{32}{subsubsection.6.1.3.16}
+\contentsline {subsection}{\numberline {6.1.4}Property Documentation}{32}{subsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.4.1}attemptID}{32}{subsubsection.6.1.4.1}
+\contentsline {subsubsection}{\numberline {6.1.4.2}compilerVersion}{32}{subsubsection.6.1.4.2}
+\contentsline {subsubsection}{\numberline {6.1.4.3}errorReportID}{32}{subsubsection.6.1.4.3}
+\contentsline {subsubsection}{\numberline {6.1.4.4}questionID}{32}{subsubsection.6.1.4.4}
+\contentsline {subsubsection}{\numberline {6.1.4.5}solutionText}{33}{subsubsection.6.1.4.5}
+\contentsline {subsubsection}{\numberline {6.1.4.6}status}{33}{subsubsection.6.1.4.6}
+\contentsline {subsubsection}{\numberline {6.1.4.7}timeOfSubmission}{33}{subsubsection.6.1.4.7}
+\contentsline {subsubsection}{\numberline {6.1.4.8}userID}{33}{subsubsection.6.1.4.8}
+\contentsline {section}{\numberline {6.2}Ecodena.Attempt.admin.AttemptAdmin Class Reference}{33}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{33}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Member Data Documentation}{33}{subsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.2.1}list\_\discretionary {-}{}{}display}{33}{subsubsection.6.2.2.1}
+\contentsline {section}{\numberline {6.3}Ecodena.Question.models.BattleQuestion Class Reference}{34}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{34}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Ecodena.Compiler.models.CCompiler111 Class Reference}{34}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{34}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Member Function Documentation}{34}{subsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.2.1}compile}{34}{subsubsection.6.4.2.1}
+\contentsline {section}{\numberline {6.5}Ecodena.Comment.models.Comment Class Reference}{34}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{36}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Member Function Documentation}{36}{subsection.6.5.2}
+\contentsline {subsubsection}{\numberline {6.5.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{36}{subsubsection.6.5.2.1}
+\contentsline {subsubsection}{\numberline {6.5.2.2}getCommentText}{36}{subsubsection.6.5.2.2}
+\contentsline {subsubsection}{\numberline {6.5.2.3}getQuestionID}{36}{subsubsection.6.5.2.3}
+\contentsline {subsubsection}{\numberline {6.5.2.4}getReportingUserID}{36}{subsubsection.6.5.2.4}
+\contentsline {subsubsection}{\numberline {6.5.2.5}getTimeStamp}{36}{subsubsection.6.5.2.5}
+\contentsline {subsubsection}{\numberline {6.5.2.6}getUserID}{36}{subsubsection.6.5.2.6}
+\contentsline {subsubsection}{\numberline {6.5.2.7}isReported}{37}{subsubsection.6.5.2.7}
+\contentsline {subsubsection}{\numberline {6.5.2.8}report}{37}{subsubsection.6.5.2.8}
+\contentsline {subsubsection}{\numberline {6.5.2.9}setCommentText}{37}{subsubsection.6.5.2.9}
+\contentsline {subsubsection}{\numberline {6.5.2.10}setQuestionID}{37}{subsubsection.6.5.2.10}
+\contentsline {subsubsection}{\numberline {6.5.2.11}setReportingUserID}{37}{subsubsection.6.5.2.11}
+\contentsline {subsubsection}{\numberline {6.5.2.12}setTimeStamp}{37}{subsubsection.6.5.2.12}
+\contentsline {subsubsection}{\numberline {6.5.2.13}setUserID}{37}{subsubsection.6.5.2.13}
+\contentsline {subsection}{\numberline {6.5.3}Member Data Documentation}{37}{subsection.6.5.3}
+\contentsline {subsubsection}{\numberline {6.5.3.1}commentID\_\discretionary {-}{}{}f}{37}{subsubsection.6.5.3.1}
+\contentsline {subsubsection}{\numberline {6.5.3.2}commentText\_\discretionary {-}{}{}f}{38}{subsubsection.6.5.3.2}
+\contentsline {subsubsection}{\numberline {6.5.3.3}commentText\_\discretionary {-}{}{}f}{38}{subsubsection.6.5.3.3}
+\contentsline {subsubsection}{\numberline {6.5.3.4}isReported\_\discretionary {-}{}{}f}{38}{subsubsection.6.5.3.4}
+\contentsline {subsubsection}{\numberline {6.5.3.5}isReported\_\discretionary {-}{}{}f}{38}{subsubsection.6.5.3.5}
+\contentsline {subsubsection}{\numberline {6.5.3.6}questionID\_\discretionary {-}{}{}f}{38}{subsubsection.6.5.3.6}
+\contentsline {subsubsection}{\numberline {6.5.3.7}questionID\_\discretionary {-}{}{}f}{38}{subsubsection.6.5.3.7}
+\contentsline {subsubsection}{\numberline {6.5.3.8}reportingUserID\_\discretionary {-}{}{}f}{38}{subsubsection.6.5.3.8}
+\contentsline {subsubsection}{\numberline {6.5.3.9}reportingUserID\_\discretionary {-}{}{}f}{38}{subsubsection.6.5.3.9}
+\contentsline {subsubsection}{\numberline {6.5.3.10}timeStamp\_\discretionary {-}{}{}f}{38}{subsubsection.6.5.3.10}
+\contentsline {subsubsection}{\numberline {6.5.3.11}timeStamp\_\discretionary {-}{}{}f}{39}{subsubsection.6.5.3.11}
+\contentsline {subsubsection}{\numberline {6.5.3.12}userID\_\discretionary {-}{}{}f}{39}{subsubsection.6.5.3.12}
+\contentsline {subsubsection}{\numberline {6.5.3.13}userID\_\discretionary {-}{}{}f}{39}{subsubsection.6.5.3.13}
+\contentsline {subsection}{\numberline {6.5.4}Property Documentation}{39}{subsection.6.5.4}
+\contentsline {subsubsection}{\numberline {6.5.4.1}commentText}{39}{subsubsection.6.5.4.1}
+\contentsline {subsubsection}{\numberline {6.5.4.2}isReported}{39}{subsubsection.6.5.4.2}
+\contentsline {subsubsection}{\numberline {6.5.4.3}questionID}{39}{subsubsection.6.5.4.3}
+\contentsline {subsubsection}{\numberline {6.5.4.4}reportingUserID}{39}{subsubsection.6.5.4.4}
+\contentsline {subsubsection}{\numberline {6.5.4.5}timeStamp}{39}{subsubsection.6.5.4.5}
+\contentsline {subsubsection}{\numberline {6.5.4.6}userID}{40}{subsubsection.6.5.4.6}
+\contentsline {section}{\numberline {6.6}Ecodena.Comment.admin.CommentAdmin Class Reference}{40}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{40}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Member Data Documentation}{40}{subsection.6.6.2}
+\contentsline {subsubsection}{\numberline {6.6.2.1}list\_\discretionary {-}{}{}display}{40}{subsubsection.6.6.2.1}
+\contentsline {section}{\numberline {6.7}Ecodena.Question.views.CommentForm Class Reference}{40}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{40}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Member Data Documentation}{41}{subsection.6.7.2}
+\contentsline {subsubsection}{\numberline {6.7.2.1}text}{41}{subsubsection.6.7.2.1}
+\contentsline {section}{\numberline {6.8}Ecodena.Compiler.models.Compiler Class Reference}{41}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{42}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}Member Function Documentation}{42}{subsection.6.8.2}
+\contentsline {subsubsection}{\numberline {6.8.2.1}compile}{42}{subsubsection.6.8.2.1}
+\contentsline {subsubsection}{\numberline {6.8.2.2}generateErrorReport}{42}{subsubsection.6.8.2.2}
+\contentsline {subsubsection}{\numberline {6.8.2.3}getAttempt}{42}{subsubsection.6.8.2.3}
+\contentsline {subsubsection}{\numberline {6.8.2.4}getCompilerVersion}{42}{subsubsection.6.8.2.4}
+\contentsline {subsubsection}{\numberline {6.8.2.5}getLanguage}{42}{subsubsection.6.8.2.5}
+\contentsline {subsubsection}{\numberline {6.8.2.6}getQuestion}{42}{subsubsection.6.8.2.6}
+\contentsline {subsubsection}{\numberline {6.8.2.7}setAttempt}{42}{subsubsection.6.8.2.7}
+\contentsline {subsubsection}{\numberline {6.8.2.8}setCompilerVersion}{43}{subsubsection.6.8.2.8}
+\contentsline {subsubsection}{\numberline {6.8.2.9}setLanguage}{43}{subsubsection.6.8.2.9}
+\contentsline {subsubsection}{\numberline {6.8.2.10}setQuestion}{43}{subsubsection.6.8.2.10}
+\contentsline {subsection}{\numberline {6.8.3}Member Data Documentation}{43}{subsection.6.8.3}
+\contentsline {subsubsection}{\numberline {6.8.3.1}attempt}{43}{subsubsection.6.8.3.1}
+\contentsline {subsubsection}{\numberline {6.8.3.2}compilerVersion}{43}{subsubsection.6.8.3.2}
+\contentsline {subsubsection}{\numberline {6.8.3.3}errorReport}{43}{subsubsection.6.8.3.3}
+\contentsline {subsubsection}{\numberline {6.8.3.4}language}{43}{subsubsection.6.8.3.4}
+\contentsline {subsubsection}{\numberline {6.8.3.5}question}{43}{subsubsection.6.8.3.5}
+\contentsline {subsection}{\numberline {6.8.4}Property Documentation}{43}{subsection.6.8.4}
+\contentsline {subsubsection}{\numberline {6.8.4.1}CompilerVersion}{43}{subsubsection.6.8.4.1}
+\contentsline {subsubsection}{\numberline {6.8.4.2}language}{44}{subsubsection.6.8.4.2}
+\contentsline {section}{\numberline {6.9}Ecodena.Compiler.models.CompilerVersion Class Reference}{44}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{45}{subsection.6.9.1}
+\contentsline {subsection}{\numberline {6.9.2}Member Function Documentation}{45}{subsection.6.9.2}
+\contentsline {subsubsection}{\numberline {6.9.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{45}{subsubsection.6.9.2.1}
+\contentsline {subsubsection}{\numberline {6.9.2.2}getLanguage}{45}{subsubsection.6.9.2.2}
+\contentsline {subsubsection}{\numberline {6.9.2.3}getVersionName}{45}{subsubsection.6.9.2.3}
+\contentsline {subsubsection}{\numberline {6.9.2.4}languageName}{45}{subsubsection.6.9.2.4}
+\contentsline {subsubsection}{\numberline {6.9.2.5}setLanguage}{45}{subsubsection.6.9.2.5}
+\contentsline {subsubsection}{\numberline {6.9.2.6}setVersionName}{45}{subsubsection.6.9.2.6}
+\contentsline {subsection}{\numberline {6.9.3}Member Data Documentation}{45}{subsection.6.9.3}
+\contentsline {subsubsection}{\numberline {6.9.3.1}language\_\discretionary {-}{}{}f}{45}{subsubsection.6.9.3.1}
+\contentsline {subsubsection}{\numberline {6.9.3.2}language\_\discretionary {-}{}{}f}{45}{subsubsection.6.9.3.2}
+\contentsline {subsubsection}{\numberline {6.9.3.3}versionID\_\discretionary {-}{}{}f}{46}{subsubsection.6.9.3.3}
+\contentsline {subsubsection}{\numberline {6.9.3.4}versionName\_\discretionary {-}{}{}f}{46}{subsubsection.6.9.3.4}
+\contentsline {subsubsection}{\numberline {6.9.3.5}versionName\_\discretionary {-}{}{}f}{46}{subsubsection.6.9.3.5}
+\contentsline {subsection}{\numberline {6.9.4}Property Documentation}{46}{subsection.6.9.4}
+\contentsline {subsubsection}{\numberline {6.9.4.1}language}{46}{subsubsection.6.9.4.1}
+\contentsline {subsubsection}{\numberline {6.9.4.2}versionName}{46}{subsubsection.6.9.4.2}
+\contentsline {section}{\numberline {6.10}Ecodena.Compiler.admin.CompilerVersionAdmin Class Reference}{46}{section.6.10}
+\contentsline {subsection}{\numberline {6.10.1}Detailed Description}{46}{subsection.6.10.1}
+\contentsline {subsection}{\numberline {6.10.2}Member Data Documentation}{47}{subsection.6.10.2}
+\contentsline {subsubsection}{\numberline {6.10.2.1}list\_\discretionary {-}{}{}display}{47}{subsubsection.6.10.2.1}
+\contentsline {section}{\numberline {6.11}Ecodena.Attempt.models.ErrorReport Class Reference}{47}{section.6.11}
+\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{48}{subsection.6.11.1}
+\contentsline {subsection}{\numberline {6.11.2}Member Function Documentation}{48}{subsection.6.11.2}
+\contentsline {subsubsection}{\numberline {6.11.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{48}{subsubsection.6.11.2.1}
+\contentsline {subsubsection}{\numberline {6.11.2.2}getErrorMessage}{48}{subsubsection.6.11.2.2}
+\contentsline {subsubsection}{\numberline {6.11.2.3}getErrorType}{48}{subsubsection.6.11.2.3}
+\contentsline {subsubsection}{\numberline {6.11.2.4}getMemory}{48}{subsubsection.6.11.2.4}
+\contentsline {subsubsection}{\numberline {6.11.2.5}getTestCaseLevel}{48}{subsubsection.6.11.2.5}
+\contentsline {subsubsection}{\numberline {6.11.2.6}getTimeRequirement}{49}{subsubsection.6.11.2.6}
+\contentsline {subsubsection}{\numberline {6.11.2.7}setErrorMessage}{49}{subsubsection.6.11.2.7}
+\contentsline {subsubsection}{\numberline {6.11.2.8}setErrorType}{49}{subsubsection.6.11.2.8}
+\contentsline {subsubsection}{\numberline {6.11.2.9}setMemory}{49}{subsubsection.6.11.2.9}
+\contentsline {subsubsection}{\numberline {6.11.2.10}setTestCaseLevel}{49}{subsubsection.6.11.2.10}
+\contentsline {subsubsection}{\numberline {6.11.2.11}setTimeRequirement}{49}{subsubsection.6.11.2.11}
+\contentsline {subsection}{\numberline {6.11.3}Member Data Documentation}{49}{subsection.6.11.3}
+\contentsline {subsubsection}{\numberline {6.11.3.1}ERROR\_\discretionary {-}{}{}TYPE}{49}{subsubsection.6.11.3.1}
+\contentsline {subsubsection}{\numberline {6.11.3.2}errorMessage\_\discretionary {-}{}{}f}{49}{subsubsection.6.11.3.2}
+\contentsline {subsubsection}{\numberline {6.11.3.3}errorMessage\_\discretionary {-}{}{}f}{49}{subsubsection.6.11.3.3}
+\contentsline {subsubsection}{\numberline {6.11.3.4}errorReportID\_\discretionary {-}{}{}f}{50}{subsubsection.6.11.3.4}
+\contentsline {subsubsection}{\numberline {6.11.3.5}errorType\_\discretionary {-}{}{}f}{50}{subsubsection.6.11.3.5}
+\contentsline {subsubsection}{\numberline {6.11.3.6}errorType\_\discretionary {-}{}{}f}{50}{subsubsection.6.11.3.6}
+\contentsline {subsubsection}{\numberline {6.11.3.7}memory\_\discretionary {-}{}{}f}{50}{subsubsection.6.11.3.7}
+\contentsline {subsubsection}{\numberline {6.11.3.8}memory\_\discretionary {-}{}{}f}{50}{subsubsection.6.11.3.8}
+\contentsline {subsubsection}{\numberline {6.11.3.9}testCaseLevel\_\discretionary {-}{}{}f}{50}{subsubsection.6.11.3.9}
+\contentsline {subsubsection}{\numberline {6.11.3.10}testCaseLevel\_\discretionary {-}{}{}f}{50}{subsubsection.6.11.3.10}
+\contentsline {subsubsection}{\numberline {6.11.3.11}timeRequirement\_\discretionary {-}{}{}f}{50}{subsubsection.6.11.3.11}
+\contentsline {subsubsection}{\numberline {6.11.3.12}timeRequirement\_\discretionary {-}{}{}f}{50}{subsubsection.6.11.3.12}
+\contentsline {subsection}{\numberline {6.11.4}Property Documentation}{51}{subsection.6.11.4}
+\contentsline {subsubsection}{\numberline {6.11.4.1}errorMessage}{51}{subsubsection.6.11.4.1}
+\contentsline {subsubsection}{\numberline {6.11.4.2}errorType}{51}{subsubsection.6.11.4.2}
+\contentsline {subsubsection}{\numberline {6.11.4.3}memory}{51}{subsubsection.6.11.4.3}
+\contentsline {subsubsection}{\numberline {6.11.4.4}testCaseLevel}{51}{subsubsection.6.11.4.4}
+\contentsline {subsubsection}{\numberline {6.11.4.5}timeRequirement}{51}{subsubsection.6.11.4.5}
+\contentsline {section}{\numberline {6.12}Ecodena.Attempt.admin.ErrorReportAdmin Class Reference}{51}{section.6.12}
+\contentsline {subsection}{\numberline {6.12.1}Detailed Description}{51}{subsection.6.12.1}
+\contentsline {subsection}{\numberline {6.12.2}Member Data Documentation}{52}{subsection.6.12.2}
+\contentsline {subsubsection}{\numberline {6.12.2.1}list\_\discretionary {-}{}{}display}{52}{subsubsection.6.12.2.1}
+\contentsline {section}{\numberline {6.13}Ecodena.Compiler.models.JavaCompiler111 Class Reference}{52}{section.6.13}
+\contentsline {subsection}{\numberline {6.13.1}Detailed Description}{52}{subsection.6.13.1}
+\contentsline {subsection}{\numberline {6.13.2}Member Function Documentation}{52}{subsection.6.13.2}
+\contentsline {subsubsection}{\numberline {6.13.2.1}compile}{52}{subsubsection.6.13.2.1}
+\contentsline {section}{\numberline {6.14}Ecodena.Compiler.models.Language Class Reference}{52}{section.6.14}
+\contentsline {subsection}{\numberline {6.14.1}Detailed Description}{53}{subsection.6.14.1}
+\contentsline {subsection}{\numberline {6.14.2}Member Function Documentation}{53}{subsection.6.14.2}
+\contentsline {subsubsection}{\numberline {6.14.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{53}{subsubsection.6.14.2.1}
+\contentsline {subsubsection}{\numberline {6.14.2.2}getLanguageName}{53}{subsubsection.6.14.2.2}
+\contentsline {subsubsection}{\numberline {6.14.2.3}setLanguageName}{53}{subsubsection.6.14.2.3}
+\contentsline {subsection}{\numberline {6.14.3}Member Data Documentation}{54}{subsection.6.14.3}
+\contentsline {subsubsection}{\numberline {6.14.3.1}languageID\_\discretionary {-}{}{}f}{54}{subsubsection.6.14.3.1}
+\contentsline {subsubsection}{\numberline {6.14.3.2}languageName\_\discretionary {-}{}{}f}{54}{subsubsection.6.14.3.2}
+\contentsline {subsubsection}{\numberline {6.14.3.3}languageName\_\discretionary {-}{}{}f}{54}{subsubsection.6.14.3.3}
+\contentsline {subsection}{\numberline {6.14.4}Property Documentation}{54}{subsection.6.14.4}
+\contentsline {subsubsection}{\numberline {6.14.4.1}languageName}{54}{subsubsection.6.14.4.1}
+\contentsline {section}{\numberline {6.15}Ecodena.Compiler.admin.LanguageAdmin Class Reference}{54}{section.6.15}
+\contentsline {subsection}{\numberline {6.15.1}Detailed Description}{54}{subsection.6.15.1}
+\contentsline {subsection}{\numberline {6.15.2}Member Data Documentation}{54}{subsection.6.15.2}
+\contentsline {subsubsection}{\numberline {6.15.2.1}list\_\discretionary {-}{}{}display}{54}{subsubsection.6.15.2.1}
+\contentsline {section}{\numberline {6.16}Ecodena.Question.models.Level Class Reference}{55}{section.6.16}
+\contentsline {subsection}{\numberline {6.16.1}Detailed Description}{55}{subsection.6.16.1}
+\contentsline {subsection}{\numberline {6.16.2}Member Function Documentation}{55}{subsection.6.16.2}
+\contentsline {subsubsection}{\numberline {6.16.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{55}{subsubsection.6.16.2.1}
+\contentsline {subsubsection}{\numberline {6.16.2.2}getLevelName}{56}{subsubsection.6.16.2.2}
+\contentsline {subsubsection}{\numberline {6.16.2.3}setLevelName}{56}{subsubsection.6.16.2.3}
+\contentsline {subsection}{\numberline {6.16.3}Member Data Documentation}{56}{subsection.6.16.3}
+\contentsline {subsubsection}{\numberline {6.16.3.1}levelID\_\discretionary {-}{}{}f}{56}{subsubsection.6.16.3.1}
+\contentsline {subsubsection}{\numberline {6.16.3.2}levelName\_\discretionary {-}{}{}f}{56}{subsubsection.6.16.3.2}
+\contentsline {subsubsection}{\numberline {6.16.3.3}levelName\_\discretionary {-}{}{}f}{56}{subsubsection.6.16.3.3}
+\contentsline {subsection}{\numberline {6.16.4}Property Documentation}{56}{subsection.6.16.4}
+\contentsline {subsubsection}{\numberline {6.16.4.1}levelName}{56}{subsubsection.6.16.4.1}
+\contentsline {section}{\numberline {6.17}Ecodena.Question.admin.LevelInline Class Reference}{56}{section.6.17}
+\contentsline {subsection}{\numberline {6.17.1}Detailed Description}{57}{subsection.6.17.1}
+\contentsline {subsection}{\numberline {6.17.2}Member Data Documentation}{57}{subsection.6.17.2}
+\contentsline {subsubsection}{\numberline {6.17.2.1}extra}{57}{subsubsection.6.17.2.1}
+\contentsline {subsubsection}{\numberline {6.17.2.2}model}{57}{subsubsection.6.17.2.2}
+\contentsline {section}{\numberline {6.18}Ecodena.Question.models.Level.Meta Class Reference}{57}{section.6.18}
+\contentsline {subsection}{\numberline {6.18.1}Detailed Description}{57}{subsection.6.18.1}
+\contentsline {subsection}{\numberline {6.18.2}Member Data Documentation}{57}{subsection.6.18.2}
+\contentsline {subsubsection}{\numberline {6.18.2.1}verbose\_\discretionary {-}{}{}name}{57}{subsubsection.6.18.2.1}
+\contentsline {subsubsection}{\numberline {6.18.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{57}{subsubsection.6.18.2.2}
+\contentsline {section}{\numberline {6.19}Ecodena.Compiler.models.Language.Meta Class Reference}{58}{section.6.19}
+\contentsline {subsection}{\numberline {6.19.1}Detailed Description}{58}{subsection.6.19.1}
+\contentsline {subsection}{\numberline {6.19.2}Member Data Documentation}{58}{subsection.6.19.2}
+\contentsline {subsubsection}{\numberline {6.19.2.1}verbose\_\discretionary {-}{}{}name}{58}{subsubsection.6.19.2.1}
+\contentsline {subsubsection}{\numberline {6.19.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{58}{subsubsection.6.19.2.2}
+\contentsline {section}{\numberline {6.20}Ecodena.Question.models.Type.Meta Class Reference}{58}{section.6.20}
+\contentsline {subsection}{\numberline {6.20.1}Detailed Description}{58}{subsection.6.20.1}
+\contentsline {subsection}{\numberline {6.20.2}Member Data Documentation}{58}{subsection.6.20.2}
+\contentsline {subsubsection}{\numberline {6.20.2.1}verbose\_\discretionary {-}{}{}name}{58}{subsubsection.6.20.2.1}
+\contentsline {subsubsection}{\numberline {6.20.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{59}{subsubsection.6.20.2.2}
+\contentsline {section}{\numberline {6.21}Ecodena.Compiler.models.CompilerVersion.Meta Class Reference}{59}{section.6.21}
+\contentsline {subsection}{\numberline {6.21.1}Detailed Description}{59}{subsection.6.21.1}
+\contentsline {subsection}{\numberline {6.21.2}Member Data Documentation}{59}{subsection.6.21.2}
+\contentsline {subsubsection}{\numberline {6.21.2.1}verbose\_\discretionary {-}{}{}name}{59}{subsubsection.6.21.2.1}
+\contentsline {subsubsection}{\numberline {6.21.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{59}{subsubsection.6.21.2.2}
+\contentsline {section}{\numberline {6.22}Ecodena.Question.models.Question.Meta Class Reference}{59}{section.6.22}
+\contentsline {subsection}{\numberline {6.22.1}Detailed Description}{60}{subsection.6.22.1}
+\contentsline {subsection}{\numberline {6.22.2}Member Data Documentation}{60}{subsection.6.22.2}
+\contentsline {subsubsection}{\numberline {6.22.2.1}verbose\_\discretionary {-}{}{}name}{60}{subsubsection.6.22.2.1}
+\contentsline {subsubsection}{\numberline {6.22.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{60}{subsubsection.6.22.2.2}
+\contentsline {section}{\numberline {6.23}Ecodena.Attempt.models.ErrorReport.Meta Class Reference}{60}{section.6.23}
+\contentsline {subsection}{\numberline {6.23.1}Detailed Description}{60}{subsection.6.23.1}
+\contentsline {subsection}{\numberline {6.23.2}Member Data Documentation}{60}{subsection.6.23.2}
+\contentsline {subsubsection}{\numberline {6.23.2.1}verbose\_\discretionary {-}{}{}name}{60}{subsubsection.6.23.2.1}
+\contentsline {subsubsection}{\numberline {6.23.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{60}{subsubsection.6.23.2.2}
+\contentsline {section}{\numberline {6.24}Ecodena.Question.models.TestCase.Meta Class Reference}{61}{section.6.24}
+\contentsline {subsection}{\numberline {6.24.1}Detailed Description}{61}{subsection.6.24.1}
+\contentsline {subsection}{\numberline {6.24.2}Member Data Documentation}{61}{subsection.6.24.2}
+\contentsline {subsubsection}{\numberline {6.24.2.1}verbose\_\discretionary {-}{}{}name}{61}{subsubsection.6.24.2.1}
+\contentsline {subsubsection}{\numberline {6.24.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{61}{subsubsection.6.24.2.2}
+\contentsline {section}{\numberline {6.25}Ecodena.Comment.models.Comment.Meta Class Reference}{61}{section.6.25}
+\contentsline {subsection}{\numberline {6.25.1}Detailed Description}{61}{subsection.6.25.1}
+\contentsline {subsection}{\numberline {6.25.2}Member Data Documentation}{62}{subsection.6.25.2}
+\contentsline {subsubsection}{\numberline {6.25.2.1}verbose\_\discretionary {-}{}{}name}{62}{subsubsection.6.25.2.1}
+\contentsline {subsubsection}{\numberline {6.25.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{62}{subsubsection.6.25.2.2}
+\contentsline {section}{\numberline {6.26}Ecodena.Attempt.models.Attempt.Meta Class Reference}{62}{section.6.26}
+\contentsline {subsection}{\numberline {6.26.1}Detailed Description}{62}{subsection.6.26.1}
+\contentsline {subsection}{\numberline {6.26.2}Member Data Documentation}{62}{subsection.6.26.2}
+\contentsline {subsubsection}{\numberline {6.26.2.1}verbose\_\discretionary {-}{}{}name}{62}{subsubsection.6.26.2.1}
+\contentsline {subsubsection}{\numberline {6.26.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{62}{subsubsection.6.26.2.2}
+\contentsline {section}{\numberline {6.27}Ecodena.Query.models.Query.Meta Class Reference}{63}{section.6.27}
+\contentsline {subsection}{\numberline {6.27.1}Detailed Description}{63}{subsection.6.27.1}
+\contentsline {subsection}{\numberline {6.27.2}Member Data Documentation}{63}{subsection.6.27.2}
+\contentsline {subsubsection}{\numberline {6.27.2.1}verbose\_\discretionary {-}{}{}name}{63}{subsubsection.6.27.2.1}
+\contentsline {subsubsection}{\numberline {6.27.2.2}verbose\_\discretionary {-}{}{}name\_\discretionary {-}{}{}plural}{63}{subsubsection.6.27.2.2}
+\contentsline {section}{\numberline {6.28}Ecodena.User.models.Profile Class Reference}{63}{section.6.28}
+\contentsline {subsection}{\numberline {6.28.1}Detailed Description}{64}{subsection.6.28.1}
+\contentsline {subsection}{\numberline {6.28.2}Member Function Documentation}{64}{subsection.6.28.2}
+\contentsline {subsubsection}{\numberline {6.28.2.1}getAddress}{64}{subsubsection.6.28.2.1}
+\contentsline {subsubsection}{\numberline {6.28.2.2}getDOB}{64}{subsubsection.6.28.2.2}
+\contentsline {subsubsection}{\numberline {6.28.2.3}getGender}{65}{subsubsection.6.28.2.3}
+\contentsline {subsubsection}{\numberline {6.28.2.4}getNumberOfAttempts}{65}{subsubsection.6.28.2.4}
+\contentsline {subsubsection}{\numberline {6.28.2.5}getUserID}{65}{subsubsection.6.28.2.5}
+\contentsline {subsubsection}{\numberline {6.28.2.6}isAdmin}{65}{subsubsection.6.28.2.6}
+\contentsline {subsubsection}{\numberline {6.28.2.7}isProgrammer}{65}{subsubsection.6.28.2.7}
+\contentsline {subsubsection}{\numberline {6.28.2.8}setAddress}{65}{subsubsection.6.28.2.8}
+\contentsline {subsubsection}{\numberline {6.28.2.9}setDOB}{65}{subsubsection.6.28.2.9}
+\contentsline {subsubsection}{\numberline {6.28.2.10}setGender}{65}{subsubsection.6.28.2.10}
+\contentsline {subsubsection}{\numberline {6.28.2.11}setNumberOfAttempts}{65}{subsubsection.6.28.2.11}
+\contentsline {subsection}{\numberline {6.28.3}Member Data Documentation}{65}{subsection.6.28.3}
+\contentsline {subsubsection}{\numberline {6.28.3.1}address\_\discretionary {-}{}{}f}{65}{subsubsection.6.28.3.1}
+\contentsline {subsubsection}{\numberline {6.28.3.2}address\_\discretionary {-}{}{}f}{66}{subsubsection.6.28.3.2}
+\contentsline {subsubsection}{\numberline {6.28.3.3}dob\_\discretionary {-}{}{}f}{66}{subsubsection.6.28.3.3}
+\contentsline {subsubsection}{\numberline {6.28.3.4}dob\_\discretionary {-}{}{}f}{66}{subsubsection.6.28.3.4}
+\contentsline {subsubsection}{\numberline {6.28.3.5}gender\_\discretionary {-}{}{}f}{66}{subsubsection.6.28.3.5}
+\contentsline {subsubsection}{\numberline {6.28.3.6}gender\_\discretionary {-}{}{}f}{66}{subsubsection.6.28.3.6}
+\contentsline {subsubsection}{\numberline {6.28.3.7}GENDER\_\discretionary {-}{}{}TYPE}{66}{subsubsection.6.28.3.7}
+\contentsline {subsubsection}{\numberline {6.28.3.8}isAdmin\_\discretionary {-}{}{}f}{66}{subsubsection.6.28.3.8}
+\contentsline {subsubsection}{\numberline {6.28.3.9}isProgrammer\_\discretionary {-}{}{}f}{66}{subsubsection.6.28.3.9}
+\contentsline {subsubsection}{\numberline {6.28.3.10}numberOfAttempts\_\discretionary {-}{}{}f}{66}{subsubsection.6.28.3.10}
+\contentsline {subsubsection}{\numberline {6.28.3.11}numberOfAttempts\_\discretionary {-}{}{}f}{67}{subsubsection.6.28.3.11}
+\contentsline {subsubsection}{\numberline {6.28.3.12}profileID\_\discretionary {-}{}{}f}{67}{subsubsection.6.28.3.12}
+\contentsline {subsubsection}{\numberline {6.28.3.13}userID\_\discretionary {-}{}{}f}{67}{subsubsection.6.28.3.13}
+\contentsline {subsection}{\numberline {6.28.4}Property Documentation}{67}{subsection.6.28.4}
+\contentsline {subsubsection}{\numberline {6.28.4.1}address}{67}{subsubsection.6.28.4.1}
+\contentsline {subsubsection}{\numberline {6.28.4.2}dob}{67}{subsubsection.6.28.4.2}
+\contentsline {subsubsection}{\numberline {6.28.4.3}gender}{67}{subsubsection.6.28.4.3}
+\contentsline {subsubsection}{\numberline {6.28.4.4}numberOfAttempts}{67}{subsubsection.6.28.4.4}
+\contentsline {section}{\numberline {6.29}Ecodena.User.admin.ProfileAdmin Class Reference}{67}{section.6.29}
+\contentsline {subsection}{\numberline {6.29.1}Detailed Description}{68}{subsection.6.29.1}
+\contentsline {subsection}{\numberline {6.29.2}Member Data Documentation}{68}{subsection.6.29.2}
+\contentsline {subsubsection}{\numberline {6.29.2.1}list\_\discretionary {-}{}{}display}{68}{subsubsection.6.29.2.1}
+\contentsline {section}{\numberline {6.30}Ecodena.User.views.ProfileForm Class Reference}{68}{section.6.30}
+\contentsline {subsection}{\numberline {6.30.1}Detailed Description}{68}{subsection.6.30.1}
+\contentsline {subsection}{\numberline {6.30.2}Member Data Documentation}{68}{subsection.6.30.2}
+\contentsline {subsubsection}{\numberline {6.30.2.1}address}{68}{subsubsection.6.30.2.1}
+\contentsline {subsubsection}{\numberline {6.30.2.2}dob}{69}{subsubsection.6.30.2.2}
+\contentsline {subsubsection}{\numberline {6.30.2.3}email}{69}{subsubsection.6.30.2.3}
+\contentsline {subsubsection}{\numberline {6.30.2.4}gender}{69}{subsubsection.6.30.2.4}
+\contentsline {subsubsection}{\numberline {6.30.2.5}GENDER\_\discretionary {-}{}{}CHOICES}{69}{subsubsection.6.30.2.5}
+\contentsline {subsubsection}{\numberline {6.30.2.6}username}{69}{subsubsection.6.30.2.6}
+\contentsline {section}{\numberline {6.31}Ecodena.User.models.Programmer Class Reference}{69}{section.6.31}
+\contentsline {subsection}{\numberline {6.31.1}Detailed Description}{70}{subsection.6.31.1}
+\contentsline {subsection}{\numberline {6.31.2}Member Function Documentation}{70}{subsection.6.31.2}
+\contentsline {subsubsection}{\numberline {6.31.2.1}getLevel}{70}{subsubsection.6.31.2.1}
+\contentsline {subsubsection}{\numberline {6.31.2.2}setLevel}{70}{subsubsection.6.31.2.2}
+\contentsline {subsection}{\numberline {6.31.3}Member Data Documentation}{70}{subsection.6.31.3}
+\contentsline {subsubsection}{\numberline {6.31.3.1}level\_\discretionary {-}{}{}f}{70}{subsubsection.6.31.3.1}
+\contentsline {subsubsection}{\numberline {6.31.3.2}level\_\discretionary {-}{}{}f}{70}{subsubsection.6.31.3.2}
+\contentsline {subsection}{\numberline {6.31.4}Property Documentation}{71}{subsection.6.31.4}
+\contentsline {subsubsection}{\numberline {6.31.4.1}level}{71}{subsubsection.6.31.4.1}
+\contentsline {section}{\numberline {6.32}Ecodena.Query.models.Query Class Reference}{71}{section.6.32}
+\contentsline {subsection}{\numberline {6.32.1}Detailed Description}{72}{subsection.6.32.1}
+\contentsline {subsection}{\numberline {6.32.2}Member Function Documentation}{72}{subsection.6.32.2}
+\contentsline {subsubsection}{\numberline {6.32.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{72}{subsubsection.6.32.2.1}
+\contentsline {subsubsection}{\numberline {6.32.2.2}getAdminID}{72}{subsubsection.6.32.2.2}
+\contentsline {subsubsection}{\numberline {6.32.2.3}getQueryID}{72}{subsubsection.6.32.2.3}
+\contentsline {subsubsection}{\numberline {6.32.2.4}getQueryText}{73}{subsubsection.6.32.2.4}
+\contentsline {subsubsection}{\numberline {6.32.2.5}getQueryTime}{73}{subsubsection.6.32.2.5}
+\contentsline {subsubsection}{\numberline {6.32.2.6}getReplyTime}{73}{subsubsection.6.32.2.6}
+\contentsline {subsubsection}{\numberline {6.32.2.7}getSolution}{73}{subsubsection.6.32.2.7}
+\contentsline {subsubsection}{\numberline {6.32.2.8}getUserID}{73}{subsubsection.6.32.2.8}
+\contentsline {subsubsection}{\numberline {6.32.2.9}setAdminID}{73}{subsubsection.6.32.2.9}
+\contentsline {subsubsection}{\numberline {6.32.2.10}setQueryID}{73}{subsubsection.6.32.2.10}
+\contentsline {subsubsection}{\numberline {6.32.2.11}setQueryText}{73}{subsubsection.6.32.2.11}
+\contentsline {subsubsection}{\numberline {6.32.2.12}setQueryTime}{73}{subsubsection.6.32.2.12}
+\contentsline {subsubsection}{\numberline {6.32.2.13}setReplyTime}{73}{subsubsection.6.32.2.13}
+\contentsline {subsubsection}{\numberline {6.32.2.14}setSolution}{74}{subsubsection.6.32.2.14}
+\contentsline {subsubsection}{\numberline {6.32.2.15}setUserID}{74}{subsubsection.6.32.2.15}
+\contentsline {subsection}{\numberline {6.32.3}Member Data Documentation}{74}{subsection.6.32.3}
+\contentsline {subsubsection}{\numberline {6.32.3.1}adminID\_\discretionary {-}{}{}f}{74}{subsubsection.6.32.3.1}
+\contentsline {subsubsection}{\numberline {6.32.3.2}adminID\_\discretionary {-}{}{}f}{74}{subsubsection.6.32.3.2}
+\contentsline {subsubsection}{\numberline {6.32.3.3}queryID\_\discretionary {-}{}{}f}{74}{subsubsection.6.32.3.3}
+\contentsline {subsubsection}{\numberline {6.32.3.4}queryID\_\discretionary {-}{}{}f}{74}{subsubsection.6.32.3.4}
+\contentsline {subsubsection}{\numberline {6.32.3.5}queryText\_\discretionary {-}{}{}f}{74}{subsubsection.6.32.3.5}
+\contentsline {subsubsection}{\numberline {6.32.3.6}queryText\_\discretionary {-}{}{}f}{74}{subsubsection.6.32.3.6}
+\contentsline {subsubsection}{\numberline {6.32.3.7}queryTime\_\discretionary {-}{}{}f}{74}{subsubsection.6.32.3.7}
+\contentsline {subsubsection}{\numberline {6.32.3.8}queryTime\_\discretionary {-}{}{}f}{75}{subsubsection.6.32.3.8}
+\contentsline {subsubsection}{\numberline {6.32.3.9}replyTime\_\discretionary {-}{}{}f}{75}{subsubsection.6.32.3.9}
+\contentsline {subsubsection}{\numberline {6.32.3.10}replyTime\_\discretionary {-}{}{}f}{75}{subsubsection.6.32.3.10}
+\contentsline {subsubsection}{\numberline {6.32.3.11}solution\_\discretionary {-}{}{}f}{75}{subsubsection.6.32.3.11}
+\contentsline {subsubsection}{\numberline {6.32.3.12}solution\_\discretionary {-}{}{}f}{75}{subsubsection.6.32.3.12}
+\contentsline {subsubsection}{\numberline {6.32.3.13}userID\_\discretionary {-}{}{}f}{75}{subsubsection.6.32.3.13}
+\contentsline {subsubsection}{\numberline {6.32.3.14}userID\_\discretionary {-}{}{}f}{75}{subsubsection.6.32.3.14}
+\contentsline {subsection}{\numberline {6.32.4}Property Documentation}{75}{subsection.6.32.4}
+\contentsline {subsubsection}{\numberline {6.32.4.1}adminID}{75}{subsubsection.6.32.4.1}
+\contentsline {subsubsection}{\numberline {6.32.4.2}queryID}{76}{subsubsection.6.32.4.2}
+\contentsline {subsubsection}{\numberline {6.32.4.3}queryText}{76}{subsubsection.6.32.4.3}
+\contentsline {subsubsection}{\numberline {6.32.4.4}queryTime}{76}{subsubsection.6.32.4.4}
+\contentsline {subsubsection}{\numberline {6.32.4.5}replyTime}{76}{subsubsection.6.32.4.5}
+\contentsline {subsubsection}{\numberline {6.32.4.6}solution}{76}{subsubsection.6.32.4.6}
+\contentsline {subsubsection}{\numberline {6.32.4.7}userID}{76}{subsubsection.6.32.4.7}
+\contentsline {section}{\numberline {6.33}Ecodena.Query.admin.QueryAdmin Class Reference}{76}{section.6.33}
+\contentsline {subsection}{\numberline {6.33.1}Detailed Description}{76}{subsection.6.33.1}
+\contentsline {subsection}{\numberline {6.33.2}Member Data Documentation}{77}{subsection.6.33.2}
+\contentsline {subsubsection}{\numberline {6.33.2.1}list\_\discretionary {-}{}{}display}{77}{subsubsection.6.33.2.1}
+\contentsline {section}{\numberline {6.34}Ecodena.Query.views.QueryForm Class Reference}{77}{section.6.34}
+\contentsline {subsection}{\numberline {6.34.1}Detailed Description}{77}{subsection.6.34.1}
+\contentsline {subsection}{\numberline {6.34.2}Member Data Documentation}{77}{subsection.6.34.2}
+\contentsline {subsubsection}{\numberline {6.34.2.1}text}{77}{subsubsection.6.34.2.1}
+\contentsline {section}{\numberline {6.35}Ecodena.Question.models.Question Class Reference}{77}{section.6.35}
+\contentsline {subsection}{\numberline {6.35.1}Detailed Description}{78}{subsection.6.35.1}
+\contentsline {subsection}{\numberline {6.35.2}Member Function Documentation}{79}{subsection.6.35.2}
+\contentsline {subsubsection}{\numberline {6.35.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{79}{subsubsection.6.35.2.1}
+\contentsline {subsubsection}{\numberline {6.35.2.2}addComments}{79}{subsubsection.6.35.2.2}
+\contentsline {subsubsection}{\numberline {6.35.2.3}getComments}{79}{subsubsection.6.35.2.3}
+\contentsline {subsubsection}{\numberline {6.35.2.4}getQuestionID}{79}{subsubsection.6.35.2.4}
+\contentsline {subsubsection}{\numberline {6.35.2.5}getQuestionText}{79}{subsubsection.6.35.2.5}
+\contentsline {subsubsection}{\numberline {6.35.2.6}getQuestionTitle}{79}{subsubsection.6.35.2.6}
+\contentsline {subsubsection}{\numberline {6.35.2.7}getTestCasesList}{79}{subsubsection.6.35.2.7}
+\contentsline {subsubsection}{\numberline {6.35.2.8}removeTestCase}{79}{subsubsection.6.35.2.8}
+\contentsline {subsubsection}{\numberline {6.35.2.9}setCommentList}{79}{subsubsection.6.35.2.9}
+\contentsline {subsubsection}{\numberline {6.35.2.10}setQuestionID}{79}{subsubsection.6.35.2.10}
+\contentsline {subsubsection}{\numberline {6.35.2.11}setQuestionText}{80}{subsubsection.6.35.2.11}
+\contentsline {subsubsection}{\numberline {6.35.2.12}setQuestionTitle}{80}{subsubsection.6.35.2.12}
+\contentsline {subsubsection}{\numberline {6.35.2.13}setTestCasesList}{80}{subsubsection.6.35.2.13}
+\contentsline {subsection}{\numberline {6.35.3}Member Data Documentation}{80}{subsection.6.35.3}
+\contentsline {subsubsection}{\numberline {6.35.3.1}commentList\_\discretionary {-}{}{}f}{80}{subsubsection.6.35.3.1}
+\contentsline {subsubsection}{\numberline {6.35.3.2}commentList\_\discretionary {-}{}{}f}{80}{subsubsection.6.35.3.2}
+\contentsline {subsubsection}{\numberline {6.35.3.3}level\_\discretionary {-}{}{}f}{80}{subsubsection.6.35.3.3}
+\contentsline {subsubsection}{\numberline {6.35.3.4}questionID\_\discretionary {-}{}{}f}{80}{subsubsection.6.35.3.4}
+\contentsline {subsubsection}{\numberline {6.35.3.5}questionID\_\discretionary {-}{}{}f}{80}{subsubsection.6.35.3.5}
+\contentsline {subsubsection}{\numberline {6.35.3.6}questionText\_\discretionary {-}{}{}f}{80}{subsubsection.6.35.3.6}
+\contentsline {subsubsection}{\numberline {6.35.3.7}questionText\_\discretionary {-}{}{}f}{81}{subsubsection.6.35.3.7}
+\contentsline {subsubsection}{\numberline {6.35.3.8}questionTitle\_\discretionary {-}{}{}f}{81}{subsubsection.6.35.3.8}
+\contentsline {subsubsection}{\numberline {6.35.3.9}questionTitle\_\discretionary {-}{}{}f}{81}{subsubsection.6.35.3.9}
+\contentsline {subsubsection}{\numberline {6.35.3.10}testCasesList\_\discretionary {-}{}{}f}{81}{subsubsection.6.35.3.10}
+\contentsline {subsubsection}{\numberline {6.35.3.11}testCasesList\_\discretionary {-}{}{}f}{81}{subsubsection.6.35.3.11}
+\contentsline {subsubsection}{\numberline {6.35.3.12}timeLimit\_\discretionary {-}{}{}f}{81}{subsubsection.6.35.3.12}
+\contentsline {subsubsection}{\numberline {6.35.3.13}type\_\discretionary {-}{}{}f}{81}{subsubsection.6.35.3.13}
+\contentsline {subsection}{\numberline {6.35.4}Property Documentation}{81}{subsection.6.35.4}
+\contentsline {subsubsection}{\numberline {6.35.4.1}commentList}{81}{subsubsection.6.35.4.1}
+\contentsline {subsubsection}{\numberline {6.35.4.2}questionID}{81}{subsubsection.6.35.4.2}
+\contentsline {subsubsection}{\numberline {6.35.4.3}questionText}{82}{subsubsection.6.35.4.3}
+\contentsline {subsubsection}{\numberline {6.35.4.4}questionTitle}{82}{subsubsection.6.35.4.4}
+\contentsline {subsubsection}{\numberline {6.35.4.5}testCasesList}{82}{subsubsection.6.35.4.5}
+\contentsline {section}{\numberline {6.36}Ecodena.Question.admin.QuestionAdmin Class Reference}{82}{section.6.36}
+\contentsline {subsection}{\numberline {6.36.1}Detailed Description}{82}{subsection.6.36.1}
+\contentsline {subsection}{\numberline {6.36.2}Member Data Documentation}{82}{subsection.6.36.2}
+\contentsline {subsubsection}{\numberline {6.36.2.1}inlines1}{82}{subsubsection.6.36.2.1}
+\contentsline {subsubsection}{\numberline {6.36.2.2}inlines2}{82}{subsubsection.6.36.2.2}
+\contentsline {subsubsection}{\numberline {6.36.2.3}list\_\discretionary {-}{}{}display}{83}{subsubsection.6.36.2.3}
+\contentsline {section}{\numberline {6.37}Ecodena.Query.tests.SimpleTest Class Reference}{83}{section.6.37}
+\contentsline {subsection}{\numberline {6.37.1}Detailed Description}{83}{subsection.6.37.1}
+\contentsline {subsection}{\numberline {6.37.2}Member Function Documentation}{83}{subsection.6.37.2}
+\contentsline {subsubsection}{\numberline {6.37.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{83}{subsubsection.6.37.2.1}
+\contentsline {section}{\numberline {6.38}Ecodena.Compiler.tests.SimpleTest Class Reference}{83}{section.6.38}
+\contentsline {subsection}{\numberline {6.38.1}Detailed Description}{83}{subsection.6.38.1}
+\contentsline {subsection}{\numberline {6.38.2}Member Function Documentation}{84}{subsection.6.38.2}
+\contentsline {subsubsection}{\numberline {6.38.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{84}{subsubsection.6.38.2.1}
+\contentsline {section}{\numberline {6.39}Ecodena.Main.tests.SimpleTest Class Reference}{84}{section.6.39}
+\contentsline {subsection}{\numberline {6.39.1}Detailed Description}{84}{subsection.6.39.1}
+\contentsline {subsection}{\numberline {6.39.2}Member Function Documentation}{84}{subsection.6.39.2}
+\contentsline {subsubsection}{\numberline {6.39.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{84}{subsubsection.6.39.2.1}
+\contentsline {section}{\numberline {6.40}Ecodena.Question.tests.SimpleTest Class Reference}{84}{section.6.40}
+\contentsline {subsection}{\numberline {6.40.1}Detailed Description}{85}{subsection.6.40.1}
+\contentsline {subsection}{\numberline {6.40.2}Member Function Documentation}{85}{subsection.6.40.2}
+\contentsline {subsubsection}{\numberline {6.40.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{85}{subsubsection.6.40.2.1}
+\contentsline {section}{\numberline {6.41}Ecodena.Comment.tests.SimpleTest Class Reference}{85}{section.6.41}
+\contentsline {subsection}{\numberline {6.41.1}Detailed Description}{85}{subsection.6.41.1}
+\contentsline {subsection}{\numberline {6.41.2}Member Function Documentation}{85}{subsection.6.41.2}
+\contentsline {subsubsection}{\numberline {6.41.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{85}{subsubsection.6.41.2.1}
+\contentsline {section}{\numberline {6.42}Ecodena.Attempt.tests.SimpleTest Class Reference}{85}{section.6.42}
+\contentsline {subsection}{\numberline {6.42.1}Detailed Description}{86}{subsection.6.42.1}
+\contentsline {subsection}{\numberline {6.42.2}Member Function Documentation}{86}{subsection.6.42.2}
+\contentsline {subsubsection}{\numberline {6.42.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{86}{subsubsection.6.42.2.1}
+\contentsline {section}{\numberline {6.43}Ecodena.User.tests.SimpleTest Class Reference}{86}{section.6.43}
+\contentsline {subsection}{\numberline {6.43.1}Detailed Description}{86}{subsection.6.43.1}
+\contentsline {subsection}{\numberline {6.43.2}Member Function Documentation}{86}{subsection.6.43.2}
+\contentsline {subsubsection}{\numberline {6.43.2.1}test\_\discretionary {-}{}{}basic\_\discretionary {-}{}{}addition}{86}{subsubsection.6.43.2.1}
+\contentsline {section}{\numberline {6.44}Ecodena.Attempt.views.SolutionForm Class Reference}{87}{section.6.44}
+\contentsline {subsection}{\numberline {6.44.1}Detailed Description}{87}{subsection.6.44.1}
+\contentsline {subsection}{\numberline {6.44.2}Member Data Documentation}{87}{subsection.6.44.2}
+\contentsline {subsubsection}{\numberline {6.44.2.1}text}{87}{subsubsection.6.44.2.1}
+\contentsline {subsubsection}{\numberline {6.44.2.2}version}{87}{subsubsection.6.44.2.2}
+\contentsline {section}{\numberline {6.45}Ecodena.Question.models.TestCase Class Reference}{87}{section.6.45}
+\contentsline {subsection}{\numberline {6.45.1}Detailed Description}{88}{subsection.6.45.1}
+\contentsline {subsection}{\numberline {6.45.2}Member Function Documentation}{88}{subsection.6.45.2}
+\contentsline {subsubsection}{\numberline {6.45.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{88}{subsubsection.6.45.2.1}
+\contentsline {subsubsection}{\numberline {6.45.2.2}getCaseType}{88}{subsubsection.6.45.2.2}
+\contentsline {subsubsection}{\numberline {6.45.2.3}getOutput}{89}{subsubsection.6.45.2.3}
+\contentsline {subsubsection}{\numberline {6.45.2.4}getQuestion}{89}{subsubsection.6.45.2.4}
+\contentsline {subsubsection}{\numberline {6.45.2.5}getTestID}{89}{subsubsection.6.45.2.5}
+\contentsline {subsubsection}{\numberline {6.45.2.6}setCaseType}{89}{subsubsection.6.45.2.6}
+\contentsline {subsubsection}{\numberline {6.45.2.7}setOutput}{89}{subsubsection.6.45.2.7}
+\contentsline {subsubsection}{\numberline {6.45.2.8}setQuestion}{89}{subsubsection.6.45.2.8}
+\contentsline {subsubsection}{\numberline {6.45.2.9}setTestID}{89}{subsubsection.6.45.2.9}
+\contentsline {subsection}{\numberline {6.45.3}Member Data Documentation}{89}{subsection.6.45.3}
+\contentsline {subsubsection}{\numberline {6.45.3.1}CASE\_\discretionary {-}{}{}TYPE}{89}{subsubsection.6.45.3.1}
+\contentsline {subsubsection}{\numberline {6.45.3.2}caseID\_\discretionary {-}{}{}f}{89}{subsubsection.6.45.3.2}
+\contentsline {subsubsection}{\numberline {6.45.3.3}caseID\_\discretionary {-}{}{}f}{89}{subsubsection.6.45.3.3}
+\contentsline {subsubsection}{\numberline {6.45.3.4}caseType\_\discretionary {-}{}{}f}{90}{subsubsection.6.45.3.4}
+\contentsline {subsubsection}{\numberline {6.45.3.5}caseType\_\discretionary {-}{}{}f}{90}{subsubsection.6.45.3.5}
+\contentsline {subsubsection}{\numberline {6.45.3.6}input\_\discretionary {-}{}{}f}{90}{subsubsection.6.45.3.6}
+\contentsline {subsubsection}{\numberline {6.45.3.7}output\_\discretionary {-}{}{}f}{90}{subsubsection.6.45.3.7}
+\contentsline {subsubsection}{\numberline {6.45.3.8}output\_\discretionary {-}{}{}f}{90}{subsubsection.6.45.3.8}
+\contentsline {subsubsection}{\numberline {6.45.3.9}questionID\_\discretionary {-}{}{}f}{90}{subsubsection.6.45.3.9}
+\contentsline {subsubsection}{\numberline {6.45.3.10}questionID\_\discretionary {-}{}{}f}{90}{subsubsection.6.45.3.10}
+\contentsline {subsection}{\numberline {6.45.4}Property Documentation}{90}{subsection.6.45.4}
+\contentsline {subsubsection}{\numberline {6.45.4.1}caseID}{90}{subsubsection.6.45.4.1}
+\contentsline {subsubsection}{\numberline {6.45.4.2}caseType}{91}{subsubsection.6.45.4.2}
+\contentsline {subsubsection}{\numberline {6.45.4.3}output}{91}{subsubsection.6.45.4.3}
+\contentsline {subsubsection}{\numberline {6.45.4.4}questionID}{91}{subsubsection.6.45.4.4}
+\contentsline {section}{\numberline {6.46}Ecodena.Question.models.Type Class Reference}{91}{section.6.46}
+\contentsline {subsection}{\numberline {6.46.1}Detailed Description}{91}{subsection.6.46.1}
+\contentsline {subsection}{\numberline {6.46.2}Member Function Documentation}{92}{subsection.6.46.2}
+\contentsline {subsubsection}{\numberline {6.46.2.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}unicode\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{92}{subsubsection.6.46.2.1}
+\contentsline {subsection}{\numberline {6.46.3}Member Data Documentation}{92}{subsection.6.46.3}
+\contentsline {subsubsection}{\numberline {6.46.3.1}typeID\_\discretionary {-}{}{}f}{92}{subsubsection.6.46.3.1}
+\contentsline {subsubsection}{\numberline {6.46.3.2}typeName\_\discretionary {-}{}{}f}{92}{subsubsection.6.46.3.2}
+\contentsline {section}{\numberline {6.47}Ecodena.Question.admin.TypeInline Class Reference}{92}{section.6.47}
+\contentsline {subsection}{\numberline {6.47.1}Detailed Description}{92}{subsection.6.47.1}
+\contentsline {subsection}{\numberline {6.47.2}Member Data Documentation}{92}{subsection.6.47.2}
+\contentsline {subsubsection}{\numberline {6.47.2.1}model}{92}{subsubsection.6.47.2.1}
+\contentsline {chapter}{\numberline {7}File Documentation}{93}{chapter.7}
+\contentsline {section}{\numberline {7.1}/home/panx/ecodena/src/Ecodena/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{93}{section.7.1}
+\contentsline {section}{\numberline {7.2}/home/panx/ecodena/src/Ecodena/Attempt/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{93}{section.7.2}
+\contentsline {section}{\numberline {7.3}/home/panx/ecodena/src/Ecodena/Comment/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{93}{section.7.3}
+\contentsline {section}{\numberline {7.4}/home/panx/ecodena/src/Ecodena/Compiler/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{93}{section.7.4}
+\contentsline {section}{\numberline {7.5}/home/panx/ecodena/src/Ecodena/Main/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{94}{section.7.5}
+\contentsline {section}{\numberline {7.6}/home/panx/ecodena/src/Ecodena/Query/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{94}{section.7.6}
+\contentsline {section}{\numberline {7.7}/home/panx/ecodena/src/Ecodena/Question/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{94}{section.7.7}
+\contentsline {section}{\numberline {7.8}/home/panx/ecodena/src/Ecodena/User/\_\discretionary {-}{}{}\_\discretionary {-}{}{}init\_\discretionary {-}{}{}\_\discretionary {-}{}{}.py File Reference}{94}{section.7.8}
+\contentsline {section}{\numberline {7.9}/home/panx/ecodena/src/Ecodena/Attempt/admin.py File Reference}{94}{section.7.9}
+\contentsline {section}{\numberline {7.10}/home/panx/ecodena/src/Ecodena/Comment/admin.py File Reference}{95}{section.7.10}
+\contentsline {section}{\numberline {7.11}/home/panx/ecodena/src/Ecodena/Compiler/admin.py File Reference}{95}{section.7.11}
+\contentsline {section}{\numberline {7.12}/home/panx/ecodena/src/Ecodena/Query/admin.py File Reference}{95}{section.7.12}
+\contentsline {section}{\numberline {7.13}/home/panx/ecodena/src/Ecodena/Question/admin.py File Reference}{95}{section.7.13}
+\contentsline {section}{\numberline {7.14}/home/panx/ecodena/src/Ecodena/User/admin.py File Reference}{96}{section.7.14}
+\contentsline {section}{\numberline {7.15}/home/panx/ecodena/src/Ecodena/Attempt/models.py File Reference}{96}{section.7.15}
+\contentsline {section}{\numberline {7.16}/home/panx/ecodena/src/Ecodena/Comment/models.py File Reference}{96}{section.7.16}
+\contentsline {section}{\numberline {7.17}/home/panx/ecodena/src/Ecodena/Compiler/models.py File Reference}{97}{section.7.17}
+\contentsline {section}{\numberline {7.18}/home/panx/ecodena/src/Ecodena/Main/models.py File Reference}{97}{section.7.18}
+\contentsline {section}{\numberline {7.19}/home/panx/ecodena/src/Ecodena/Query/models.py File Reference}{97}{section.7.19}
+\contentsline {section}{\numberline {7.20}/home/panx/ecodena/src/Ecodena/Question/models.py File Reference}{98}{section.7.20}
+\contentsline {section}{\numberline {7.21}/home/panx/ecodena/src/Ecodena/User/models.py File Reference}{98}{section.7.21}
+\contentsline {section}{\numberline {7.22}/home/panx/ecodena/src/Ecodena/Attempt/tests.py File Reference}{98}{section.7.22}
+\contentsline {section}{\numberline {7.23}/home/panx/ecodena/src/Ecodena/Comment/tests.py File Reference}{99}{section.7.23}
+\contentsline {section}{\numberline {7.24}/home/panx/ecodena/src/Ecodena/Compiler/tests.py File Reference}{99}{section.7.24}
+\contentsline {section}{\numberline {7.25}/home/panx/ecodena/src/Ecodena/Main/tests.py File Reference}{99}{section.7.25}
+\contentsline {section}{\numberline {7.26}/home/panx/ecodena/src/Ecodena/Query/tests.py File Reference}{99}{section.7.26}
+\contentsline {section}{\numberline {7.27}/home/panx/ecodena/src/Ecodena/Question/tests.py File Reference}{100}{section.7.27}
+\contentsline {section}{\numberline {7.28}/home/panx/ecodena/src/Ecodena/User/tests.py File Reference}{100}{section.7.28}
+\contentsline {section}{\numberline {7.29}/home/panx/ecodena/src/Ecodena/Attempt/views.py File Reference}{100}{section.7.29}
+\contentsline {section}{\numberline {7.30}/home/panx/ecodena/src/Ecodena/Comment/views.py File Reference}{101}{section.7.30}
+\contentsline {section}{\numberline {7.31}/home/panx/ecodena/src/Ecodena/Compiler/views.py File Reference}{101}{section.7.31}
+\contentsline {section}{\numberline {7.32}/home/panx/ecodena/src/Ecodena/Main/views.py File Reference}{101}{section.7.32}
+\contentsline {section}{\numberline {7.33}/home/panx/ecodena/src/Ecodena/Query/views.py File Reference}{101}{section.7.33}
+\contentsline {section}{\numberline {7.34}/home/panx/ecodena/src/Ecodena/Question/views.py File Reference}{102}{section.7.34}
+\contentsline {section}{\numberline {7.35}/home/panx/ecodena/src/Ecodena/User/views.py File Reference}{102}{section.7.35}
+\contentsline {section}{\numberline {7.36}/home/panx/ecodena/src/Ecodena/Compiler/dictionary.py File Reference}{103}{section.7.36}
+\contentsline {section}{\numberline {7.37}/home/panx/ecodena/src/Ecodena/manage.py File Reference}{103}{section.7.37}
+\contentsline {section}{\numberline {7.38}/home/panx/ecodena/src/Ecodena/settings.py File Reference}{103}{section.7.38}
+\contentsline {section}{\numberline {7.39}/home/panx/ecodena/src/Ecodena/urls.py File Reference}{104}{section.7.39}
