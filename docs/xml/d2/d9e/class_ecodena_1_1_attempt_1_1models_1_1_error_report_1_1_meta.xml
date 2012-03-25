@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="54" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="54" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="59" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d9e/class_ecodena_1_1_attempt_1_1models_1_1_error_report_1_1_meta_1af5a03ae3d989401f2207e282fe47c680" prot="public" static="yes" mutable="no">
         <type>string</type>
@@ -29,14 +29,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="55" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="55" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="60" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="60" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="54" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="53" bodyend="56"/>
+    <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="59" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="58" bodyend="61"/>
     <listofallmembers>
       <member refid="d2/d9e/class_ecodena_1_1_attempt_1_1models_1_1_error_report_1_1_meta_1abb1839b5a65fea4d0a4eaf2449533fd3" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::ErrorReport::Meta</scope><name>verbose_name</name></member>
       <member refid="d2/d9e/class_ecodena_1_1_attempt_1_1models_1_1_error_report_1_1_meta_1af5a03ae3d989401f2207e282fe47c680" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::ErrorReport::Meta</scope><name>verbose_name_plural</name></member>

@@ -25,7 +25,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../ecodena small1.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Ecodena&#160;<span id="projectnumber">1.0</span></div>
    <div id="projectbrief">The Online Judge System</div>
@@ -82,86 +81,112 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">/home/panx/ecodena/src/Ecodena/Attempt/views.py</div>  </div>
 </div>
 <div class="contents">
-<a href="../../d3/d5d/_attempt_2views_8py.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html">00001</a> <span class="comment"># Create your views here.</span>
+<a href="../../d3/d5d/_attempt_2views_8py.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html">00001</a> <span class="comment">#It controls the views of the Attempts</span>
 <a name="l00002"></a>00002 
 <a name="l00003"></a>00003 <span class="keyword">from</span> django.http <span class="keyword">import</span> HttpResponse
 <a name="l00004"></a>00004 <span class="keyword">from</span> Attempt.models <span class="keyword">import</span> Attempt
 <a name="l00005"></a>00005 <span class="comment">#from User.models import User</span>
 <a name="l00006"></a>00006 <span class="keyword">import</span> Compiler
-<a name="l00007"></a>00007 <span class="keyword">from</span> Compiler.models <span class="keyword">import</span> Language
-<a name="l00008"></a>00008 <span class="keyword">from</span> Compiler.models <span class="keyword">import</span> CompilerVersion
-<a name="l00009"></a>00009 <span class="keyword">from</span> django <span class="keyword">import</span> forms
-<a name="l00010"></a>00010 <span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render_to_response
-<a name="l00011"></a>00011 <span class="keyword">from</span> datetime <span class="keyword">import</span> datetime
-<a name="l00012"></a>00012 <span class="keyword">from</span> django.contrib.auth.models <span class="keyword">import</span> User
-<a name="l00013"></a>00013 <span class="keyword">from</span> django.core.context_processors <span class="keyword">import</span> csrf
-<a name="l00014"></a>00014 <span class="keyword">from</span> django.template <span class="keyword">import</span> RequestContext
-<a name="l00015"></a>00015 <span class="keyword">from</span> django.views.decorators.csrf <span class="keyword">import</span> csrf_protect
-<a name="l00016"></a>00016 
-<a name="l00017"></a><a class="code" href="../../df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form.html">00017</a> <span class="keyword">class </span><a class="code" href="../../df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form.html">SolutionForm</a>(forms.Form):
-<a name="l00018"></a><a class="code" href="../../df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form.html#a468dd4b8939f889b625d93015bbb2e4f">00018</a>         text = forms.CharField(widget=forms.Textarea)
-<a name="l00019"></a><a class="code" href="../../df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form.html#a77e5671273cfb3207fd55e2b3defd321">00019</a>         version = forms.ChoiceField()
-<a name="l00020"></a>00020                 
-<a name="l00021"></a><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#aefcfaf496faa0d0cabd21b6574a78ca2">00021</a> <span class="keyword">def </span><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#aefcfaf496faa0d0cabd21b6574a78ca2">listSolutions</a>(request):
-<a name="l00022"></a>00022         <span class="keywordflow">if</span> request.user.is_authenticated():
-<a name="l00023"></a>00023                 solutions = Attempt.objects.filter(userID_f=request.user)
-<a name="l00024"></a>00024                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;solutions.html&#39;</span>,{<span class="stringliteral">&#39;solutions&#39;</span>:solutions})
-<a name="l00025"></a>00025         <span class="keywordflow">else</span>:
-<a name="l00026"></a>00026                 <span class="keywordflow">return</span> HttpResponse(<span class="stringliteral">&quot;You need to log in first, only then can you access the url %s&quot;</span> %request.path)
-<a name="l00027"></a>00027 
-<a name="l00028"></a><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a5e3b3bf6c3df69f40299ec0669a7a978">00028</a> <span class="keyword">def </span><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a5e3b3bf6c3df69f40299ec0669a7a978">viewSolution</a>(request,solutionID):
-<a name="l00029"></a>00029         <span class="keywordflow">if</span> request.user.is_authenticated():
-<a name="l00030"></a>00030                 s = Attempt.objects.filter(attemptID_f=solutionID)
-<a name="l00031"></a>00031                 solution = s.filter(userID_f=request.user)
-<a name="l00032"></a>00032                 <span class="keywordflow">if</span> <span class="keywordflow">not</span> solution:
-<a name="l00033"></a>00033                         <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;solution.html&#39;</span>,{<span class="stringliteral">&#39;solution&#39;</span>:solution})
-<a name="l00034"></a>00034                 <span class="keywordflow">else</span> :
-<a name="l00035"></a>00035                         <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;solution.html&#39;</span>,)
-<a name="l00036"></a>00036         <span class="keywordflow">else</span>:
-<a name="l00037"></a>00037                 <span class="keywordflow">return</span> HttpResponse(<span class="stringliteral">&quot;You need to log in first, only then can you access the url %s&quot;</span> %request.path)
-<a name="l00038"></a>00038                 
-<a name="l00039"></a>00039 @csrf_protect
-<a name="l00040"></a><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a6b656f2fc0947e8cc7ea0d1c1d7564d6">00040</a> <span class="keyword">def </span><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a6b656f2fc0947e8cc7ea0d1c1d7564d6">submitSolution</a>(request):
-<a name="l00041"></a>00041         <span class="keywordflow">if</span> request.user.is_authenticated():
-<a name="l00042"></a>00042                 version = CompilerVersion.objects.all()
-<a name="l00043"></a>00043                 dt =datetime.now()
-<a name="l00044"></a>00044                 f=SolutionForm()
-<a name="l00045"></a>00045                 dc = { <span class="stringliteral">&#39;form&#39;</span> :f, <span class="stringliteral">&#39;version&#39;</span> :version}
-<a name="l00046"></a>00046                 context = RequestContext(request, dc)
-<a name="l00047"></a>00047                 <span class="keywordflow">if</span> request.method ==<span class="stringliteral">&quot;POST&quot;</span>:
-<a name="l00048"></a>00048                         f=SolutionForm(request.POST)
-<a name="l00049"></a>00049                         <span class="keywordflow">if</span> <span class="keywordflow">not</span> f.is_valid():
-<a name="l00050"></a>00050                                 
-<a name="l00051"></a>00051                                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;submitsolution.html&#39;</span>, context)
-<a name="l00052"></a>00052                         <span class="keywordflow">else</span>:
-<a name="l00053"></a>00053                                 attempt = Attempt()
-<a name="l00054"></a>00054                                 errorReportID=compileSolution()
-<a name="l00055"></a>00055                                 dc = { <span class="stringliteral">&#39;errorReportID&#39;</span>:errorReportID,<span class="stringliteral">&#39;version&#39;</span>:version,<span class="stringliteral">&#39;dt&#39;</span>:dt}
-<a name="l00056"></a>00056                                 context = RequestContext(request, dc)
-<a name="l00057"></a>00057                                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;submitsolution.html&#39;</span>, context) 
-<a name="l00058"></a>00058                         
-<a name="l00059"></a>00059                         <span class="comment">#language = Language.objects.all()</span>
-<a name="l00060"></a>00060                         
-<a name="l00061"></a>00061                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;submitsolution.html&#39;</span>,context)
-<a name="l00062"></a>00062         <span class="keywordflow">else</span>:
-<a name="l00063"></a>00063                 <span class="keywordflow">return</span> HttpResponse(<span class="stringliteral">&quot;You need to log in first, only then can you access the url %s&quot;</span> %request.path)
-<a name="l00064"></a>00064                 
-<a name="l00065"></a><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a142f44375d6c0e89c3f335344c602496">00065</a> <span class="keyword">def </span><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a142f44375d6c0e89c3f335344c602496">compileSolution</a>(version,solution,question):
-<a name="l00066"></a>00066         compiler_ver_lang = version.versionName + <span class="stringliteral">&#39; &#39;</span> + version.language.languageName
-<a name="l00067"></a>00067         <span class="keywordflow">if</span> compiler_ver_lang <span class="keywordflow">in</span> compilers:
-<a name="l00068"></a>00068                 compiler = compilers[compiler_ver_lang]
-<a name="l00069"></a>00069                 errorReportID = compiler()
-<a name="l00070"></a>00070         <span class="keywordflow">else</span>: 
-<a name="l00071"></a>00071                 <span class="keywordflow">print</span><span class="stringliteral">&quot;Compiler not available&quot;</span>
-<a name="l00072"></a>00072         
-<a name="l00073"></a>00073         
-<a name="l00074"></a>00074         
+<a name="l00007"></a>00007 <span class="keyword">from</span> Compiler.Dictionary <span class="keyword">import</span> dictionary
+<a name="l00008"></a>00008 <span class="keyword">from</span> Compiler.models <span class="keyword">import</span> Language
+<a name="l00009"></a>00009 <span class="keyword">from</span> Compiler.models <span class="keyword">import</span> CompilerVersion
+<a name="l00010"></a>00010 <span class="keyword">from</span> django <span class="keyword">import</span> forms
+<a name="l00011"></a>00011 <span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render_to_response
+<a name="l00012"></a>00012 <span class="keyword">from</span> datetime <span class="keyword">import</span> datetime
+<a name="l00013"></a>00013 <span class="keyword">from</span> django.contrib.auth.models <span class="keyword">import</span> User
+<a name="l00014"></a>00014 <span class="keyword">from</span> django.core.context_processors <span class="keyword">import</span> csrf
+<a name="l00015"></a>00015 <span class="keyword">from</span> django.template <span class="keyword">import</span> RequestContext
+<a name="l00016"></a>00016 <span class="keyword">from</span> django.views.decorators.csrf <span class="keyword">import</span> csrf_protect
+<a name="l00017"></a>00017 
+<a name="l00018"></a><a class="code" href="../../df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form.html">00018</a> <span class="keyword">class </span><a class="code" href="../../df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form.html">SolutionForm</a>(forms.Form):
+<a name="l00019"></a>00019         <span class="stringliteral">&#39;&#39;&#39;creates a form for pasting the solution of a question &#39;&#39;&#39;</span>
+<a name="l00020"></a><a class="code" href="../../df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form.html#a468dd4b8939f889b625d93015bbb2e4f">00020</a>         text = forms.CharField(widget=forms.Textarea)
+<a name="l00021"></a><a class="code" href="../../df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form.html#a77e5671273cfb3207fd55e2b3defd321">00021</a>         version = forms.ChoiceField()
+<a name="l00022"></a>00022                 
+<a name="l00023"></a><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#aefcfaf496faa0d0cabd21b6574a78ca2">00023</a> <span class="keyword">def </span><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#aefcfaf496faa0d0cabd21b6574a78ca2">listSolutions</a>(request):
+<a name="l00024"></a>00024         <span class="stringliteral">&#39;&#39;&#39;lists all the solutionIDs&#39; that a particular user has submitted</span>
+<a name="l00025"></a>00025 <span class="stringliteral">        parameter:request--&gt;All the details associated with URL </span>
+<a name="l00026"></a>00026 <span class="stringliteral">        returns the solutions.html page and the list of solution ids&#39;&#39;&#39;</span>
+<a name="l00027"></a>00027         <span class="keywordflow">if</span> request.user.is_authenticated():
+<a name="l00028"></a>00028                 solutions = Attempt.objects.filter(userID_f=request.user)
+<a name="l00029"></a>00029                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;solutions.html&#39;</span>,{<span class="stringliteral">&#39;solutions&#39;</span>:solutions})
+<a name="l00030"></a>00030         <span class="keywordflow">else</span>:
+<a name="l00031"></a>00031                 <span class="keywordflow">return</span> HttpResponse(<span class="stringliteral">&quot;You need to log in first, only then can you access the url %s&quot;</span> %request.path)
+<a name="l00032"></a>00032 
+<a name="l00033"></a><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a5e3b3bf6c3df69f40299ec0669a7a978">00033</a> <span class="keyword">def </span><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a5e3b3bf6c3df69f40299ec0669a7a978">viewSolution</a>(request,solutionID):11
+<a name="l00034"></a>00034         <span class="stringliteral">&#39;&#39;&#39;A soluiton whose Id is passed as the parameter is displayed with the AttemptID, question text, level, question type, solution provided by the user, status of the solution and the error report for the solution</span>
+<a name="l00035"></a>00035 <span class="stringliteral">        Parameter:request--&gt;All the information of the form is stored in request</span>
+<a name="l00036"></a>00036 <span class="stringliteral">        solutionID--&gt;the ID of attempt to be displayed</span>
+<a name="l00037"></a>00037 <span class="stringliteral">        If the user is not authenticated then this returns an Http Response stating that the user is not logged in</span>
+<a name="l00038"></a>00038 <span class="stringliteral">        If the user is authenticated and the form filled is valid then it returns the page with the solution and other details&#39;&#39;&#39;</span>
+<a name="l00039"></a>00039         <span class="keywordflow">if</span> request.user.is_authenticated():
+<a name="l00040"></a>00040                 s = Attempt.objects.filter(attemptID_f=solutionID)
+<a name="l00041"></a>00041                 solution = s.filter(userID_f=request.user)
+<a name="l00042"></a>00042                 <span class="keywordflow">if</span> <span class="keywordflow">not</span> solution:
+<a name="l00043"></a>00043                         <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;solution.html&#39;</span>,{<span class="stringliteral">&#39;solution&#39;</span>:solution})
+<a name="l00044"></a>00044                 <span class="keywordflow">else</span> :
+<a name="l00045"></a>00045                         <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;solution.html&#39;</span>,)
+<a name="l00046"></a>00046         <span class="keywordflow">else</span>:
+<a name="l00047"></a>00047                 <span class="keywordflow">return</span> HttpResponse(<span class="stringliteral">&quot;You need to log in first, only then can you access the url %s&quot;</span> %request.path)
+<a name="l00048"></a>00048                 
+<a name="l00049"></a>00049 @csrf_protect
+<a name="l00050"></a><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a6b656f2fc0947e8cc7ea0d1c1d7564d6">00050</a> <span class="keyword">def </span><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a6b656f2fc0947e8cc7ea0d1c1d7564d6">submitSolution</a>(request,questionID,userID):
+<a name="l00051"></a>00051         <span class="stringliteral">&#39;&#39;&#39;Uploading of the solution submitted by the user. The necessary details are added to the database and compiler function is called to generate the error report for the concerning Attempt</span>
+<a name="l00052"></a>00052 <span class="stringliteral">        Parameter:request--&gt;All the information associated with the url</span>
+<a name="l00053"></a>00053 <span class="stringliteral">        returns the submitsolution.html page making the necessary updation of the database.</span>
+<a name="l00054"></a>00054 <span class="stringliteral">        &#39;&#39;&#39;</span>
+<a name="l00055"></a>00055         <span class="keywordflow">if</span> request.user.is_authenticated():
+<a name="l00056"></a>00056                 version = CompilerVersion.objects.all()
+<a name="l00057"></a>00057                 dt =datetime.now()
+<a name="l00058"></a>00058                 f=SolutionForm()
+<a name="l00059"></a>00059                 dc = { <span class="stringliteral">&#39;form&#39;</span> :f, <span class="stringliteral">&#39;version&#39;</span> :version}
+<a name="l00060"></a>00060                 context = RequestContext(request, dc)
+<a name="l00061"></a>00061                 <span class="keywordflow">if</span> request.method ==<span class="stringliteral">&quot;POST&quot;</span>:
+<a name="l00062"></a>00062                         f=SolutionForm(request.POST)
+<a name="l00063"></a>00063                         <span class="keywordflow">if</span> <span class="keywordflow">not</span> f.is_valid():
+<a name="l00064"></a>00064                                 
+<a name="l00065"></a>00065                                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;submitsolution.html&#39;</span>, context)
+<a name="l00066"></a>00066                         <span class="keywordflow">else</span>:
+<a name="l00067"></a>00067                                 attempt = Attempt()
+<a name="l00068"></a>00068                                 <span class="comment">#errorReportID=compileSolution()</span>
+<a name="l00069"></a>00069                                 dc = { <span class="stringliteral">&#39;errorReportID&#39;</span>:errorReportID,<span class="stringliteral">&#39;version&#39;</span>:version,<span class="stringliteral">&#39;dt&#39;</span>:dt}
+<a name="l00070"></a>00070                                 context = RequestContext(request, dc)
+<a name="l00071"></a>00071                                 attempt.solutionText = f.text
+<a name="l00072"></a>00072                                 attempt.compilerVersion = f.version
+<a name="l00073"></a>00073                                 attempt.questionID = questionID
+<a name="l00074"></a>00074                                 attempt.userID = userID
+<a name="l00075"></a>00075                                 attempt.timeOfSubmission = datetime.datetime.now()
+<a name="l00076"></a>00076                                 attempt.ErrorReport = 6
+<a name="l00077"></a>00077                                 attempt.save()
+<a name="l00078"></a>00078                                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;submitsolution.html&#39;</span>, context) 
+<a name="l00079"></a>00079                         
+<a name="l00080"></a>00080                         <span class="comment">#language = Language.objects.all()</span>
+<a name="l00081"></a>00081                         
+<a name="l00082"></a>00082                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;submitsolution.html&#39;</span>,context)
+<a name="l00083"></a>00083         <span class="keywordflow">else</span>:
+<a name="l00084"></a>00084                 <span class="keywordflow">return</span> HttpResponse(<span class="stringliteral">&quot;You need to log in first, only then can you access the url %s&quot;</span> %request.path)
+<a name="l00085"></a>00085                 
+<a name="l00086"></a><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a142f44375d6c0e89c3f335344c602496">00086</a> <span class="keyword">def </span><a class="code" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html#a142f44375d6c0e89c3f335344c602496">compileSolution</a>(version,solution,question):
+<a name="l00087"></a>00087         <span class="stringliteral">&#39;&#39;&#39;compiles the solution by calling the appropriate compiler </span>
+<a name="l00088"></a>00088 <span class="stringliteral">        Parameter:version--&gt;contains the version of the compiler that the user has selected</span>
+<a name="l00089"></a>00089 <span class="stringliteral">        Parameter:soluiton--&gt;contains the solution object to be compiled</span>
+<a name="l00090"></a>00090 <span class="stringliteral">        Parameter:question--&gt;contains the question object so that the appropriate test cases can be fetched.</span>
+<a name="l00091"></a>00091 <span class="stringliteral">        returns nothing if the appropriate compiler is available else it gives an error saying compiler not available&#39;&#39;&#39;</span>
+<a name="l00092"></a>00092         compiler_ver_lang = version.versionName + <span class="stringliteral">&#39; &#39;</span> + version.language.languageName
+<a name="l00093"></a>00093         <span class="keywordflow">if</span> compiler_ver_lang <span class="keywordflow">in</span> compilers:
+<a name="l00094"></a>00094                 compiler = compilers[compiler_ver_lang]
+<a name="l00095"></a>00095                 errorReportID = compiler()
+<a name="l00096"></a>00096         <span class="keywordflow">else</span>: 
+<a name="l00097"></a>00097                 <span class="keywordflow">print</span><span class="stringliteral">&quot;Compiler not available&quot;</span>
+<a name="l00098"></a>00098         
+<a name="l00099"></a>00099         
+<a name="l00100"></a>00100         
 </pre></div></div>
 </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="../../d3/d5d/_attempt_2views_8py.html">views.py</a>      </li>
-      <li class="footer">Generated on Tue Mar 20 2012 05:32:41 for Ecodena by&#160;
+      <li class="footer">Generated on Sun Mar 25 2012 09:50:05 for Ecodena by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.4 </li>
     </ul>

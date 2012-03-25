@@ -12,16 +12,21 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><verbatim>Method will provide a form to user, method wil note down the time, date and userID of the user, 
+        before all this method will check wether the user is authenticated or not,
+        if authenticated the user will be able to post query 
+        and if not authenticated then a message will pop-up user has to login first. 
+        Parameter: request --&gt; All the information of the form is stored in request. 
+        Function will return a Post query html page.</verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Query/views.py" line="15" bodyfile="/home/panx/ecodena/src/Ecodena/Query/views.py" bodystart="15" bodyend="41"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/views.py" line="16" bodyfile="/home/panx/ecodena/src/Ecodena/Query/views.py" bodystart="16" bodyend="48"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para><verbatim>Its our Post Query app&apos;s views.py, i.e. how Post Query app will shown to user</verbatim> </para>    </detaileddescription>
     <location file="/home/panx/ecodena/src/Ecodena/Query/views.py" line="1"/>
   </compounddef>
 </doxygen>

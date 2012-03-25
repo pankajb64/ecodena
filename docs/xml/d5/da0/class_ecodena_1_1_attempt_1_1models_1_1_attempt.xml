@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="62" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="62" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="68" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1acbd8a4ec39ee2520f9540c23bf78982b" prot="public" static="yes" mutable="no">
         <type>tuple</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="63" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="63" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="69" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ac1f50e1b0c5ccfc3e16fff6b5069c01e" prot="public" static="yes" mutable="no">
         <type>tuple</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="64" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="64" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="70" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a1b63280fe142dfde79c43df974cf42dd" prot="public" static="yes" mutable="no">
         <type>tuple</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="65" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="65" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="71" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ae2cd37972f3706554532bf2e958c5b7d" prot="public" static="yes" mutable="no">
         <type>tuple</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="66" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="66" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="72" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a59ab4c46b6d8e82311f400a9f86398f3" prot="public" static="yes" mutable="no">
         <type>tuple</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="67" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="67" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="73" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ae384b3bf053f841002aa0232bccfafaa" prot="public" static="yes" mutable="no">
         <type>tuple</type>
@@ -100,7 +100,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="68" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="68" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="74" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a42ceae67abfdaa990cdd49c8acb16c1f" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.Attempt.models.Attempt.compilerVersion_f</definition>
+        <argsstring></argsstring>
+        <name>compilerVersion_f</name>
+        <initializer>models.ForeignKey(<ref refid="d0/d33/class_ecodena_1_1_compiler_1_1models_1_1_compiler_version" kindref="compound">CompilerVersion</ref>, verbose_name = &quot;Compiler version of the <ref refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt" kindref="compound">Attempt</ref>&quot;,null=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="75" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="75" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="property">
@@ -116,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="75" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="75" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="81" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a1110fd10d7a9e73bae4c5f4208f24d9b" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
         <type></type>
@@ -130,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="82" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="82" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="89" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a7ca881b180c5ce4d8e3169d0836422b7" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
         <type></type>
@@ -144,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="89" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="89" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="96" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="96" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a30b68dbbff514c8422ba89a5e65e0e7d" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
         <type></type>
@@ -158,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="96" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="96" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="103" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a76b4e1e2270faa387469f0a6b5bd47ec" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
         <type></type>
@@ -172,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="103" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="103" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="110" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a0ef6767e7f18226ecd46be45e35f357b" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
         <type></type>
@@ -186,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="110" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="110" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="117" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1af6d21b0d06e1565c641f9526ab4891d4" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
         <type></type>
@@ -200,7 +214,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="117" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="117" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="124" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a38af788c738d633909699708872e5e3d" prot="public" static="yes" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>Ecodena.Attempt.models.Attempt.compilerVersion</definition>
+        <argsstring></argsstring>
+        <name>compilerVersion</name>
+        <initializer>property(getCompilerVersionOfAttempt,setCompilerVersionOfAttempt)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="131" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="131" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -215,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="73" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="73" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="79" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1aa0e8d9e10aa7d394777a8dcc138b67bf" prot="public" static="no" mutable="no">
         <type></type>
@@ -228,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="80" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="80" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="87" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a4cf15d230e30719df408282601d157fa" prot="public" static="no" mutable="no">
         <type></type>
@@ -241,7 +269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="87" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="87" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="94" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ad138a4fd5a48644d71382b83a9ba4a04" prot="public" static="no" mutable="no">
         <type></type>
@@ -254,7 +282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="94" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="94" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="101" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="101" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ac1e3f9e2d93bbdd1d339f9331a560926" prot="public" static="no" mutable="no">
         <type></type>
@@ -267,7 +295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="101" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="101" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="108" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a8cadfc3c3993ddedf4f8a49e67b71e19" prot="public" static="no" mutable="no">
         <type></type>
@@ -280,7 +308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="107" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="107" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="114" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a52c7956666bd826ed90d2db15d6f876b" prot="public" static="no" mutable="no">
         <type></type>
@@ -293,7 +321,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="114" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="114" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="121" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a65d3f184f3aa9803c86a6c31f4a2a256" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Ecodena.Attempt.models.Attempt.compilerVersion_f</definition>
+        <argsstring></argsstring>
+        <name>compilerVersion_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="128" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="128" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -308,7 +349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="71" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="71" bodyend="72"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="77" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="77" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ae37cf365bc17bd05860bffedfc6e8024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -321,7 +362,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="73" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="73" bodyend="74"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="79" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="79" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a2288edd3e2db6b9f0eba1f13724ab2cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -331,10 +372,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><verbatim>Checks the status and returns its value</verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="78" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="78" bodyend="79"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="84" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="84" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a0216fa674160d728cbecad4cc61460bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -347,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="80" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="80" bodyend="81"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="87" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="87" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a9ec58d1721623601cbbb0317cc2e5bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -360,7 +401,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="85" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="85" bodyend="86"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="92" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="92" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1acb5e68040b88170abadacbe5c5a07700" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -373,7 +414,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="87" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="87" bodyend="88"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="94" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="94" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a3c152422e0560c116aed26f6f8054e94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -386,7 +427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="92" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="92" bodyend="93"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="99" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="99" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a9094fdb34b59ebee5a1196401654a82c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -399,7 +440,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="94" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="94" bodyend="95"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="101" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="101" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a3b4fec981da7e11a993d9f7ad6731a97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -412,7 +453,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="99" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="99" bodyend="100"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="106" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="106" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a337d130f509d1f0d192446320cd26e0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -425,7 +466,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="101" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="101" bodyend="102"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="108" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="108" bodyend="109"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a0012bb51837a6fa0ba28391043815435" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -438,7 +479,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="105" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="105" bodyend="106"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="112" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="112" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a6fe57d3945acf48901ba712d4709d452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -451,7 +492,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="107" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="107" bodyend="109"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="114" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="114" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a10be25c031836b71f3caa472b15926db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -464,7 +505,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="112" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="112" bodyend="113"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="119" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="119" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a98aea32dc0b17c09080c9ce3055ae2ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -477,7 +518,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="114" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="114" bodyend="116"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="121" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a0810b24b24c643902a28c764a9376082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Attempt.models.Attempt.getCompilerVersionOfAttempt</definition>
+        <argsstring></argsstring>
+        <name>getCompilerVersionOfAttempt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="126" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="126" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ad956d292a49b13e541b808e1309d4f22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Ecodena.Attempt.models.Attempt.setCompilerVersionOfAttempt</definition>
+        <argsstring></argsstring>
+        <name>setCompilerVersionOfAttempt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="128" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="128" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a1465d1b46a90132d359af87dde819e95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -490,23 +557,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="123" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="123" bodyend="125"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="137" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="137" bodyend="139"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-    </detaileddescription>
-    <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="62" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="61" bodyend="130"/>
+<para><verbatim>Creates an Attempt Entity which is a subclass of models.Model class</verbatim> </para>    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="67" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="66" bodyend="144"/>
     <listofallmembers>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a1465d1b46a90132d359af87dde819e95" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>__unicode__</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a69f17e74058d4360d4ca443bd5c27cbc" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>attemptID</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ac5cbf660353ba1658687b993929d0cbd" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>attemptID_f</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a5868c5092dc59689fe48af770ea41bc5" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>attemptID_f</name></member>
+      <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a38af788c738d633909699708872e5e3d" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>compilerVersion</name></member>
+      <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a42ceae67abfdaa990cdd49c8acb16c1f" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>compilerVersion_f</name></member>
+      <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a65d3f184f3aa9803c86a6c31f4a2a256" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>compilerVersion_f</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a76b4e1e2270faa387469f0a6b5bd47ec" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>errorReportID</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ae2cd37972f3706554532bf2e958c5b7d" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>errorReportID_f</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ac1e3f9e2d93bbdd1d339f9331a560926" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>errorReportID_f</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a09621434733185bbfaad03baeb542e8c" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>getAttemptID</name></member>
+      <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a0810b24b24c643902a28c764a9376082" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>getCompilerVersionOfAttempt</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a3b4fec981da7e11a993d9f7ad6731a97" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>getErrorReportID</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a10be25c031836b71f3caa472b15926db" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>getQuestionID</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a0012bb51837a6fa0ba28391043815435" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>getSolution</name></member>
@@ -517,6 +588,7 @@
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1acbd8a4ec39ee2520f9540c23bf78982b" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>questionID_f</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a52c7956666bd826ed90d2db15d6f876b" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>questionID_f</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ae37cf365bc17bd05860bffedfc6e8024" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>setAttemptID</name></member>
+      <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ad956d292a49b13e541b808e1309d4f22" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>setCompilerVersionOfAttempt</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a337d130f509d1f0d192446320cd26e0a" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>setErrorReportID</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a98aea32dc0b17c09080c9ce3055ae2ef" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>setQuestionID</name></member>
       <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a6fe57d3945acf48901ba712d4709d452" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt</scope><name>setSolution</name></member>

@@ -1,4 +1,4 @@
-.TH "Ecodena::User::models::Profile" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.TH "Ecodena::User::models::Profile" 3 "Sun Mar 25 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,6 +6,59 @@ Ecodena::User::models::Profile \-
 .SH SYNOPSIS
 .br
 .PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBgetDOB\fP"
+.br
+.ti -1c
+.RI "def \fBsetDOB\fP"
+.br
+.ti -1c
+.RI "def \fBgetAddress\fP"
+.br
+.ti -1c
+.RI "def \fBsetAddress\fP"
+.br
+.ti -1c
+.RI "def \fBgetGender\fP"
+.br
+.ti -1c
+.RI "def \fBsetGender\fP"
+.br
+.ti -1c
+.RI "def \fBgetUserID\fP"
+.br
+.ti -1c
+.RI "def \fBisProgrammer\fP"
+.br
+.ti -1c
+.RI "def \fBisAdmin\fP"
+.br
+.ti -1c
+.RI "def \fBgetNumberOfAttempts\fP"
+.br
+.ti -1c
+.RI "def \fBsetNumberOfAttempts\fP"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBdob_f\fP"
+.br
+.ti -1c
+.RI "\fBaddress_f\fP"
+.br
+.ti -1c
+.RI "\fBgender_f\fP"
+.br
+.ti -1c
+.RI "\fBnumberOfAttempts_f\fP"
+.br
+.in -1c
 .SS "Static Public Attributes"
 
 .in +1c
@@ -37,38 +90,122 @@ Ecodena::User::models::Profile \-
 .RI "tuple \fBnumberOfAttempts_f\fP = models.IntegerField('Number of Attempts')"
 .br
 .in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBdob\fP = property(getDOB,setDOB)"
+.br
+.ti -1c
+.RI "\fBaddress\fP = property(getAddress,setAddress)"
+.br
+.ti -1c
+.RI "\fBgender\fP = property(getGender, setGender)"
+.br
+.ti -1c
+.RI "\fBnumberOfAttempts\fP = property(getNumberOfAttempts,setNumberOfAttempts)"
+.br
+.in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 97 of file models.py.
+.PP
+.nf
+Here Profile is a subclass of models.Model and creates an entity named Profile.
+        Basically it represents the profiles of users and admins of ECODENA..fi
+.PP
+ 
+.PP
+Definition at line 129 of file models.py.
+.SH "Member Function Documentation"
+.PP 
+.SS "def Ecodena.User.models.Profile.getAddress ()"
+.PP
+Definition at line 150 of file models.py.
+.SS "def Ecodena.User.models.Profile.getDOB ()"
+.PP
+Definition at line 143 of file models.py.
+.SS "def Ecodena.User.models.Profile.getGender ()"
+.PP
+Definition at line 157 of file models.py.
+.SS "def Ecodena.User.models.Profile.getNumberOfAttempts (self)"
+.PP
+Definition at line 173 of file models.py.
+.SS "def Ecodena.User.models.Profile.getUserID ()"
+.PP
+Definition at line 164 of file models.py.
+.SS "def Ecodena.User.models.Profile.isAdmin ()"
+.PP
+Definition at line 170 of file models.py.
+.SS "def Ecodena.User.models.Profile.isProgrammer ()"
+.PP
+Definition at line 167 of file models.py.
+.SS "def Ecodena.User.models.Profile.setAddress (address)"
+.PP
+Definition at line 152 of file models.py.
+.SS "def Ecodena.User.models.Profile.setDOB (date)"
+.PP
+Definition at line 145 of file models.py.
+.SS "def Ecodena.User.models.Profile.setGender ()"
+.PP
+Definition at line 159 of file models.py.
+.SS "def Ecodena.User.models.Profile.setNumberOfAttempts (self, attempt)"
+.PP
+Definition at line 175 of file models.py.
 .SH "Member Data Documentation"
 .PP 
 .SS "tuple \fBEcodena.User.models.Profile.address_f\fP = models.TextField('User Address')\fC [static]\fP"
 .PP
-Definition at line 101 of file models.py.
+Definition at line 135 of file models.py.
+.SS "\fBEcodena.User.models.Profile.address_f\fP"
+.PP
+Definition at line 152 of file models.py.
+.SS "\fBEcodena.User.models.Profile.dob_f\fP"
+.PP
+Definition at line 145 of file models.py.
 .SS "tuple \fBEcodena.User.models.Profile.dob_f\fP = models.DateField('User Birth Date')\fC [static]\fP"
 .PP
-Definition at line 100 of file models.py.
+Definition at line 134 of file models.py.
 .SS "tuple \fBEcodena.User.models.Profile.gender_f\fP = models.SmallIntegerField(choices=\fBGENDER_TYPE\fP, verbose_name='Gender')\fC [static]\fP"
 .PP
-Definition at line 103 of file models.py.
+Definition at line 137 of file models.py.
+.SS "\fBEcodena.User.models.Profile.gender_f\fP"
+.PP
+Definition at line 159 of file models.py.
 .SS "tuple \fBEcodena.User.models.Profile.GENDER_TYPE\fP = ( (0, 'Male'), (1, 'Female'))\fC [static]\fP"
 .PP
-Definition at line 102 of file models.py.
+Definition at line 136 of file models.py.
 .SS "tuple \fBEcodena.User.models.Profile.isAdmin_f\fP = models.BooleanField('Is Administrator', default=False)\fC [static]\fP"
 .PP
-Definition at line 106 of file models.py.
+Definition at line 140 of file models.py.
 .SS "tuple \fBEcodena.User.models.Profile.isProgrammer_f\fP = models.BooleanField('Is a \fBProgrammer\fP', default=True)\fC [static]\fP"
 .PP
-Definition at line 105 of file models.py.
+Definition at line 139 of file models.py.
 .SS "tuple \fBEcodena.User.models.Profile.numberOfAttempts_f\fP = models.IntegerField('Number of Attempts')\fC [static]\fP"
 .PP
-Definition at line 107 of file models.py.
+Definition at line 141 of file models.py.
+.SS "\fBEcodena.User.models.Profile.numberOfAttempts_f\fP"
+.PP
+Definition at line 175 of file models.py.
 .SS "tuple \fBEcodena.User.models.Profile.profileID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
 .PP
-Definition at line 98 of file models.py.
+Definition at line 132 of file models.py.
 .SS "tuple \fBEcodena.User.models.Profile.userID_f\fP = models.ForeignKey(User, verbose_name='User ID of user whose profile is this', null=False, unique=True)\fC [static]\fP"
 .PP
-Definition at line 104 of file models.py.
+Definition at line 138 of file models.py.
+.SH "Property Documentation"
+.PP 
+.SS "Ecodena.User.models.Profile.address = property(getAddress,setAddress)\fC [static]\fP"
+.PP
+Definition at line 155 of file models.py.
+.SS "Ecodena.User.models.Profile.dob = property(getDOB,setDOB)\fC [static]\fP"
+.PP
+Definition at line 148 of file models.py.
+.SS "Ecodena.User.models.Profile.gender = property(getGender, setGender)\fC [static]\fP"
+.PP
+Definition at line 162 of file models.py.
+.SS "Ecodena.User.models.Profile.numberOfAttempts = property(getNumberOfAttempts,setNumberOfAttempts)\fC [static]\fP"
+.PP
+Definition at line 178 of file models.py.
 
 .SH "Author"
 .PP 

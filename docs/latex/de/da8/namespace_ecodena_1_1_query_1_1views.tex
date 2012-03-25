@@ -14,6 +14,10 @@ def \hyperlink{namespace_ecodena_1_1_query_1_1views_a694a1ef99cb6f634b1f8df56848
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+\begin{DoxyVerb}Its our Post Query app's views.py, i.e. how Post Query app will shown to user\end{DoxyVerb}
+ 
+
 \subsection{Function Documentation}
 \hypertarget{namespace_ecodena_1_1_query_1_1views_a694a1ef99cb6f634b1f8df56848589cd}{
 \index{Ecodena::Query::views@{Ecodena::Query::views}!postQuery@{postQuery}}
@@ -24,7 +28,13 @@ def \hyperlink{namespace_ecodena_1_1_query_1_1views_a694a1ef99cb6f634b1f8df56848
 \end{DoxyParamCaption}
 )}}
 \label{de/da8/namespace_ecodena_1_1_query_1_1views_a694a1ef99cb6f634b1f8df56848589cd}
+\begin{DoxyVerb}Method will provide a form to user, method wil note down the time, date and userID of the user, 
+        before all this method will check wether the user is authenticated or not,
+        if authenticated the user will be able to post query 
+        and if not authenticated then a message will pop-up user has to login first. 
+        Parameter: request --> All the information of the form is stored in request. 
+        Function will return a Post query html page.\end{DoxyVerb}
+ 
 
-
-Definition at line 15 of file views.py.
+Definition at line 16 of file views.py.
 

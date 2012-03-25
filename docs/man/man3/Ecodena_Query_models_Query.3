@@ -1,4 +1,4 @@
-.TH "Ecodena::Query::models::Query" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.TH "Ecodena::Query::models::Query" 3 "Sun Mar 25 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -139,121 +139,127 @@ Ecodena::Query::models::Query \-
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 7 of file models.py.
+.PP
+.nf
+Here Query is subclass of models.Model and Creates an entity named Query..fi
+.PP
+ 
+.PP
+Definition at line 8 of file models.py.
 .SH "Member Function Documentation"
 .PP 
 .SS "def Ecodena.Query.models.Query.__unicode__ (self)"
 .PP
-Definition at line 75 of file models.py.
+Definition at line 77 of file models.py.
 .SS "def Ecodena.Query.models.Query.getAdminID (self)"
 .PP
-Definition at line 64 of file models.py.
+Definition at line 66 of file models.py.
 .SS "def Ecodena.Query.models.Query.getQueryID (self)"
 .PP
-Definition at line 24 of file models.py.
+Definition at line 26 of file models.py.
 .SS "def Ecodena.Query.models.Query.getQueryText (self)"
 .PP
-Definition at line 17 of file models.py.
+Definition at line 19 of file models.py.
 .SS "def Ecodena.Query.models.Query.getQueryTime (self)"
 .PP
-Definition at line 38 of file models.py.
+Definition at line 40 of file models.py.
 .SS "def Ecodena.Query.models.Query.getReplyTime (self)"
 .PP
-Definition at line 49 of file models.py.
+Definition at line 51 of file models.py.
 .SS "def Ecodena.Query.models.Query.getSolution (self)"
 .PP
-Definition at line 31 of file models.py.
+Definition at line 33 of file models.py.
 .SS "def Ecodena.Query.models.Query.getUserID (self)"
 .PP
-Definition at line 57 of file models.py.
+Definition at line 59 of file models.py.
 .SS "def Ecodena.Query.models.Query.setAdminID (self, aID)"
 .PP
-Definition at line 66 of file models.py.
+Definition at line 68 of file models.py.
 .SS "def Ecodena.Query.models.Query.setQueryID (self, qID)"
 .PP
-Definition at line 26 of file models.py.
+Definition at line 28 of file models.py.
 .SS "def Ecodena.Query.models.Query.setQueryText (self, text)"
 .PP
-Definition at line 19 of file models.py.
+Definition at line 21 of file models.py.
 .SS "def Ecodena.Query.models.Query.setQueryTime (self, Timestamp)"
 .PP
-Definition at line 40 of file models.py.
+Definition at line 42 of file models.py.
 .SS "def Ecodena.Query.models.Query.setReplyTime (self, Timestamp)"
 .PP
-Definition at line 51 of file models.py.
+Definition at line 53 of file models.py.
 .SS "def Ecodena.Query.models.Query.setSolution (self, code)"
 .PP
-Definition at line 33 of file models.py.
+Definition at line 35 of file models.py.
 .SS "def Ecodena.Query.models.Query.setUserID (self, uID)"
 .PP
-Definition at line 59 of file models.py.
+Definition at line 61 of file models.py.
 .SH "Member Data Documentation"
 .PP 
 .SS "tuple \fBEcodena.Query.models.Query.adminID_f\fP = models.ForeignKey(User, verbose_name='User ID of admin resolving the query', related_name='+', blank=True, null=True)\fC [static]\fP"
 .PP
-Definition at line 12 of file models.py.
+Definition at line 14 of file models.py.
 .SS "\fBEcodena.Query.models.Query.adminID_f\fP"
 .PP
-Definition at line 66 of file models.py.
+Definition at line 68 of file models.py.
 .SS "tuple \fBEcodena.Query.models.Query.queryID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
 .PP
-Definition at line 8 of file models.py.
+Definition at line 10 of file models.py.
 .SS "\fBEcodena.Query.models.Query.queryID_f\fP"
 .PP
-Definition at line 26 of file models.py.
+Definition at line 28 of file models.py.
 .SS "\fBEcodena.Query.models.Query.queryText_f\fP"
 .PP
-Definition at line 19 of file models.py.
+Definition at line 21 of file models.py.
 .SS "tuple \fBEcodena.Query.models.Query.queryText_f\fP = models.TextField('The Text explaining the \fBQuery\fP', null=False)\fC [static]\fP"
 .PP
-Definition at line 9 of file models.py.
+Definition at line 11 of file models.py.
 .SS "\fBEcodena.Query.models.Query.queryTime_f\fP"
 .PP
-Definition at line 40 of file models.py.
+Definition at line 42 of file models.py.
 .SS "tuple \fBEcodena.Query.models.Query.queryTime_f\fP = models.DateTimeField('Time of posting \fBQuery\fP', null=False)\fC [static]\fP"
 .PP
-Definition at line 13 of file models.py.
+Definition at line 15 of file models.py.
 .SS "tuple \fBEcodena.Query.models.Query.replyTime_f\fP = models.DateTimeField('Time of resolving \fBQuery\fP', blank=True, null=True)\fC [static]\fP"
 .PP
-Definition at line 14 of file models.py.
+Definition at line 16 of file models.py.
 .SS "\fBEcodena.Query.models.Query.replyTime_f\fP"
 .PP
-Definition at line 51 of file models.py.
+Definition at line 53 of file models.py.
 .SS "\fBEcodena.Query.models.Query.solution_f\fP"
 .PP
-Definition at line 33 of file models.py.
+Definition at line 35 of file models.py.
 .SS "tuple \fBEcodena.Query.models.Query.solution_f\fP = models.TextField('The Solution of the \fBQuery\fP', blank=True)\fC [static]\fP"
 .PP
-Definition at line 10 of file models.py.
+Definition at line 12 of file models.py.
 .SS "tuple \fBEcodena.Query.models.Query.userID_f\fP = models.ForeignKey(User, verbose_name='User ID of user posting the query', null=False, related_name='+')\fC [static]\fP"
 .PP
-Definition at line 11 of file models.py.
+Definition at line 13 of file models.py.
 .SS "\fBEcodena.Query.models.Query.userID_f\fP"
 .PP
-Definition at line 59 of file models.py.
+Definition at line 61 of file models.py.
 .SH "Property Documentation"
 .PP 
 .SS "Ecodena.Query.models.Query.adminID = property(getAdminID, setAdminID)\fC [static]\fP"
 .PP
-Definition at line 68 of file models.py.
+Definition at line 70 of file models.py.
 .SS "Ecodena.Query.models.Query.queryID = property(getQueryID, setQueryID)\fC [static]\fP"
 .PP
-Definition at line 28 of file models.py.
+Definition at line 30 of file models.py.
 .SS "Ecodena.Query.models.Query.queryText = property(getQueryText, setQueryText)\fC [static]\fP"
 .PP
-Definition at line 21 of file models.py.
+Definition at line 23 of file models.py.
 .SS "Ecodena.Query.models.Query.queryTime = property(getQueryTime, setQueryTime)\fC [static]\fP"
 .PP
-Definition at line 45 of file models.py.
+Definition at line 47 of file models.py.
 .SS "Ecodena.Query.models.Query.replyTime = property(getReplyTime, setReplyTime)\fC [static]\fP"
 .PP
-Definition at line 54 of file models.py.
+Definition at line 56 of file models.py.
 .SS "Ecodena.Query.models.Query.solution = property(getSolution, setSolution)\fC [static]\fP"
 .PP
-Definition at line 35 of file models.py.
+Definition at line 37 of file models.py.
 .SS "Ecodena.Query.models.Query.userID = property(getUserID, setUserID)\fC [static]\fP"
 .PP
-Definition at line 61 of file models.py.
+Definition at line 63 of file models.py.
 
 .SH "Author"
 .PP 

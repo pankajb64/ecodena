@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="18" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="18" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="20" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form_1a77e5671273cfb3207fd55e2b3defd321" prot="public" static="yes" mutable="no">
         <type>tuple</type>
@@ -29,14 +29,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="19" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="19" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="21" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="21" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-    </detaileddescription>
-    <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="18" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="17" bodyend="21"/>
+<para><verbatim>creates a form for pasting the solution of a question </verbatim> </para>    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="19" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="18" bodyend="23"/>
     <listofallmembers>
       <member refid="df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form_1a468dd4b8939f889b625d93015bbb2e4f" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::views::SolutionForm</scope><name>text</name></member>
       <member refid="df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form_1a77e5671273cfb3207fd55e2b3defd321" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::views::SolutionForm</scope><name>version</name></member>

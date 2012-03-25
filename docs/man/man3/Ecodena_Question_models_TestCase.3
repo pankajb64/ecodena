@@ -1,4 +1,4 @@
-.TH "Ecodena::Question::models::TestCase" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.TH "Ecodena::Question::models::TestCase" 3 "Sun Mar 25 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -100,82 +100,88 @@ Ecodena::Question::models::TestCase \-
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 98 of file models.py.
+.PP
+.nf
+Creates the entity TestCase which is a subclass of models.Model.fi
+.PP
+ 
+.PP
+Definition at line 106 of file models.py.
 .SH "Member Function Documentation"
 .PP 
 .SS "def Ecodena.Question.models.TestCase.__unicode__ (self)"
 .PP
-Definition at line 137 of file models.py.
+Definition at line 146 of file models.py.
 .SS "def Ecodena.Question.models.TestCase.getCaseType (self)"
 .PP
-Definition at line 114 of file models.py.
+Definition at line 123 of file models.py.
 .SS "def Ecodena.Question.models.TestCase.getOutput (self)"
 .PP
-Definition at line 121 of file models.py.
+Definition at line 130 of file models.py.
 .SS "def Ecodena.Question.models.TestCase.getQuestion (self)"
 .PP
-Definition at line 127 of file models.py.
+Definition at line 136 of file models.py.
 .SS "def Ecodena.Question.models.TestCase.getTestID (self)"
 .PP
-Definition at line 107 of file models.py.
+Definition at line 116 of file models.py.
 .SS "def Ecodena.Question.models.TestCase.setCaseType (self, ctype)"
 .PP
-Definition at line 116 of file models.py.
+Definition at line 125 of file models.py.
 .SS "def Ecodena.Question.models.TestCase.setOutput (self, text)"
 .PP
-Definition at line 123 of file models.py.
+Definition at line 132 of file models.py.
 .SS "def Ecodena.Question.models.TestCase.setQuestion (self, qID)"
 .PP
-Definition at line 129 of file models.py.
+Definition at line 138 of file models.py.
 .SS "def Ecodena.Question.models.TestCase.setTestID (self, tID)"
 .PP
-Definition at line 109 of file models.py.
+Definition at line 118 of file models.py.
 .SH "Member Data Documentation"
 .PP 
 .SS "tuple \fBEcodena.Question.models.TestCase.CASE_TYPE\fP = ((0, 'Low'), (1, 'Medium'), (2, 'High'))\fC [static]\fP"
 .PP
-Definition at line 101 of file models.py.
+Definition at line 110 of file models.py.
 .SS "tuple \fBEcodena.Question.models.TestCase.caseID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
 .PP
-Definition at line 99 of file models.py.
+Definition at line 108 of file models.py.
 .SS "\fBEcodena.Question.models.TestCase.caseID_f\fP"
 .PP
-Definition at line 109 of file models.py.
+Definition at line 118 of file models.py.
 .SS "tuple \fBEcodena.Question.models.TestCase.caseType_f\fP = models.CharField(max_length=40, choices=\fBCASE_TYPE\fP, verbose_name='Type of Case')\fC [static]\fP"
 .PP
-Definition at line 102 of file models.py.
+Definition at line 111 of file models.py.
 .SS "\fBEcodena.Question.models.TestCase.caseType_f\fP"
 .PP
-Definition at line 116 of file models.py.
+Definition at line 125 of file models.py.
 .SS "tuple \fBEcodena.Question.models.TestCase.input_f\fP = models.TextField('Input')\fC [static]\fP"
 .PP
-Definition at line 103 of file models.py.
+Definition at line 112 of file models.py.
 .SS "tuple \fBEcodena.Question.models.TestCase.output_f\fP = models.TextField('Output')\fC [static]\fP"
 .PP
-Definition at line 104 of file models.py.
+Definition at line 113 of file models.py.
 .SS "\fBEcodena.Question.models.TestCase.output_f\fP"
 .PP
-Definition at line 123 of file models.py.
+Definition at line 132 of file models.py.
 .SS "tuple \fBEcodena.Question.models.TestCase.questionID_f\fP = models.ForeignKey(\fBQuestion\fP , verbose_name='Question ID', null=False)\fC [static]\fP"
 .PP
-Definition at line 100 of file models.py.
+Definition at line 109 of file models.py.
 .SS "\fBEcodena.Question.models.TestCase.questionID_f\fP"
 .PP
-Definition at line 129 of file models.py.
+Definition at line 138 of file models.py.
 .SH "Property Documentation"
 .PP 
 .SS "Ecodena.Question.models.TestCase.caseID = property(getTestID,setTestID)\fC [static]\fP"
 .PP
-Definition at line 111 of file models.py.
+Definition at line 120 of file models.py.
 .SS "Ecodena.Question.models.TestCase.caseType = property(getCaseType,setCaseType)\fC [static]\fP"
 .PP
-Definition at line 118 of file models.py.
+Definition at line 127 of file models.py.
 .SS "Ecodena.Question.models.TestCase.output = property(getOutput,setOutput)\fC [static]\fP"
 .PP
-Definition at line 125 of file models.py.
+Definition at line 134 of file models.py.
 .SS "Ecodena.Question.models.TestCase.questionID = property(getQuestion,setQuestion)\fC [static]\fP"
 .PP
-Definition at line 131 of file models.py.
+Definition at line 140 of file models.py.
 
 .SH "Author"
 .PP 

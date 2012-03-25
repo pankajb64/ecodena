@@ -1,4 +1,4 @@
-.TH "Ecodena.Attempt.views" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.TH "Ecodena.Attempt.views" 3 "Sun Mar 25 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -31,18 +31,39 @@ Ecodena.Attempt.views \-
 .in -1c
 .SH "Function Documentation"
 .PP 
-.SS "def Ecodena.Attempt.views.compileSolution (version, solution, question)"
+.SS "def Ecodena.Attempt.views.compileSolution (version, solution, question)".PP
+.nf
+compiles the solution by calling the appropriate compiler 
+Parameter:version-->contains the version of the compiler that the user has selected
+Parameter:soluiton-->contains the solution object to be compiled
+Parameter:question-->contains the question object so that the appropriate test cases can be fetched.
+returns nothing if the appropriate compiler is available else it gives an error saying compiler not available.fi
 .PP
-Definition at line 65 of file views.py.
-.SS "def Ecodena.Attempt.views.listSolutions (request)"
+ 
 .PP
-Definition at line 21 of file views.py.
-.SS "def Ecodena.Attempt.views.submitSolution (request)"
+Definition at line 86 of file views.py.
+.SS "def Ecodena.Attempt.views.listSolutions (request)".PP
+.nf
+lists all the solutionIDs' that a particular user has submitted
+parameter:request-->All the details associated with URL 
+returns the solutions.html page and the list of solution ids.fi
 .PP
-Definition at line 40 of file views.py.
+ 
+.PP
+Definition at line 23 of file views.py.
+.SS "def Ecodena.Attempt.views.submitSolution (request, questionID, userID)".PP
+.nf
+Uploading of the solution submitted by the user. The necessary details are added to the database and compiler function is called to generate the error report for the concerning Attempt
+Parameter:request-->All the information associated with the url
+returns the submitsolution.html page making the necessary updation of the database.
+.fi
+.PP
+ 
+.PP
+Definition at line 50 of file views.py.
 .SS "def Ecodena.Attempt.views.viewSolution (request, solutionID)"
 .PP
-Definition at line 28 of file views.py.
+Definition at line 33 of file views.py.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for Ecodena from the source code.

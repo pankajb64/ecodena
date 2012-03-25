@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.4">
-  <compound refid="da/d3e/class_ecodena_1_1_user_1_1models_1_1_admin" kind="class"><name>Ecodena::User::models::Admin</name>
-    <member refid="da/d3e/class_ecodena_1_1_user_1_1models_1_1_admin_1a293f0c21259be254894ed7c9201bf9d1" kind="function"><name>resolveQuery</name></member>
-  </compound>
   <compound refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt" kind="class"><name>Ecodena::Attempt::models::Attempt</name>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ac5cbf660353ba1658687b993929d0cbd" kind="variable"><name>attemptID_f</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1acbd8a4ec39ee2520f9540c23bf78982b" kind="variable"><name>questionID_f</name></member>
@@ -11,6 +8,7 @@
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ae2cd37972f3706554532bf2e958c5b7d" kind="variable"><name>errorReportID_f</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a59ab4c46b6d8e82311f400a9f86398f3" kind="variable"><name>status_f</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ae384b3bf053f841002aa0232bccfafaa" kind="variable"><name>timeOfSubmission_f</name></member>
+    <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a42ceae67abfdaa990cdd49c8acb16c1f" kind="variable"><name>compilerVersion_f</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a69f17e74058d4360d4ca443bd5c27cbc" kind="property"><name>attemptID</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a1110fd10d7a9e73bae4c5f4208f24d9b" kind="property"><name>status</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a7ca881b180c5ce4d8e3169d0836422b7" kind="property"><name>timeOfSubmission</name></member>
@@ -18,6 +16,7 @@
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a76b4e1e2270faa387469f0a6b5bd47ec" kind="property"><name>errorReportID</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a0ef6767e7f18226ecd46be45e35f357b" kind="property"><name>solutionText</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1af6d21b0d06e1565c641f9526ab4891d4" kind="property"><name>questionID</name></member>
+    <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a38af788c738d633909699708872e5e3d" kind="property"><name>compilerVersion</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a5868c5092dc59689fe48af770ea41bc5" kind="variable"><name>attemptID_f</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1aa0e8d9e10aa7d394777a8dcc138b67bf" kind="variable"><name>status_f</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a4cf15d230e30719df408282601d157fa" kind="variable"><name>timeOfSubmission_f</name></member>
@@ -25,6 +24,7 @@
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ac1e3f9e2d93bbdd1d339f9331a560926" kind="variable"><name>errorReportID_f</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a8cadfc3c3993ddedf4f8a49e67b71e19" kind="variable"><name>solution_f</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a52c7956666bd826ed90d2db15d6f876b" kind="variable"><name>questionID_f</name></member>
+    <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a65d3f184f3aa9803c86a6c31f4a2a256" kind="variable"><name>compilerVersion_f</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a09621434733185bbfaad03baeb542e8c" kind="function"><name>getAttemptID</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ae37cf365bc17bd05860bffedfc6e8024" kind="function"><name>setAttemptID</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a2288edd3e2db6b9f0eba1f13724ab2cb" kind="function"><name>isCorrect</name></member>
@@ -39,6 +39,8 @@
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a6fe57d3945acf48901ba712d4709d452" kind="function"><name>setSolution</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a10be25c031836b71f3caa472b15926db" kind="function"><name>getQuestionID</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a98aea32dc0b17c09080c9ce3055ae2ef" kind="function"><name>setQuestionID</name></member>
+    <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a0810b24b24c643902a28c764a9376082" kind="function"><name>getCompilerVersionOfAttempt</name></member>
+    <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1ad956d292a49b13e541b808e1309d4f22" kind="function"><name>setCompilerVersionOfAttempt</name></member>
     <member refid="d5/da0/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1a1465d1b46a90132d359af87dde819e95" kind="function"><name>__unicode__</name></member>
   </compound>
   <compound refid="da/d7b/class_ecodena_1_1_attempt_1_1admin_1_1_attempt_admin" kind="class"><name>Ecodena::Attempt::admin::AttemptAdmin</name>
@@ -191,10 +193,6 @@
     <member refid="d9/d52/class_ecodena_1_1_question_1_1admin_1_1_level_inline_1aeb7bcac143814e9a798564ec87de147d" kind="variable"><name>model</name></member>
     <member refid="d9/d52/class_ecodena_1_1_question_1_1admin_1_1_level_inline_1a66131b956e410b1976261ff35b1fc918" kind="variable"><name>extra</name></member>
   </compound>
-  <compound refid="db/d77/class_ecodena_1_1_question_1_1models_1_1_type_1_1_meta" kind="class"><name>Ecodena::Question::models::Type::Meta</name>
-    <member refid="db/d77/class_ecodena_1_1_question_1_1models_1_1_type_1_1_meta_1a136574e864dc7276d163542c9c36308c" kind="variable"><name>verbose_name</name></member>
-    <member refid="db/d77/class_ecodena_1_1_question_1_1models_1_1_type_1_1_meta_1ae1c74aca97a425904b8ee3026812fefe" kind="variable"><name>verbose_name_plural</name></member>
-  </compound>
   <compound refid="dd/dc4/class_ecodena_1_1_question_1_1models_1_1_level_1_1_meta" kind="class"><name>Ecodena::Question::models::Level::Meta</name>
     <member refid="dd/dc4/class_ecodena_1_1_question_1_1models_1_1_level_1_1_meta_1a1fd3ff0fe1df95529bf7c74fe72fea51" kind="variable"><name>verbose_name</name></member>
     <member refid="dd/dc4/class_ecodena_1_1_question_1_1models_1_1_level_1_1_meta_1a0bcd87e70ea14c111af94c17deb2257e" kind="variable"><name>verbose_name_plural</name></member>
@@ -202,6 +200,10 @@
   <compound refid="da/d0f/class_ecodena_1_1_compiler_1_1models_1_1_language_1_1_meta" kind="class"><name>Ecodena::Compiler::models::Language::Meta</name>
     <member refid="da/d0f/class_ecodena_1_1_compiler_1_1models_1_1_language_1_1_meta_1a322c0560e4ad8288d022ee46f4c8cea5" kind="variable"><name>verbose_name</name></member>
     <member refid="da/d0f/class_ecodena_1_1_compiler_1_1models_1_1_language_1_1_meta_1a73f1a2a1b08628a1086c57fb2a99ef25" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="db/d77/class_ecodena_1_1_question_1_1models_1_1_type_1_1_meta" kind="class"><name>Ecodena::Question::models::Type::Meta</name>
+    <member refid="db/d77/class_ecodena_1_1_question_1_1models_1_1_type_1_1_meta_1a136574e864dc7276d163542c9c36308c" kind="variable"><name>verbose_name</name></member>
+    <member refid="db/d77/class_ecodena_1_1_question_1_1models_1_1_type_1_1_meta_1ae1c74aca97a425904b8ee3026812fefe" kind="variable"><name>verbose_name_plural</name></member>
   </compound>
   <compound refid="d7/d7b/class_ecodena_1_1_compiler_1_1models_1_1_compiler_version_1_1_meta" kind="class"><name>Ecodena::Compiler::models::CompilerVersion::Meta</name>
     <member refid="d7/d7b/class_ecodena_1_1_compiler_1_1models_1_1_compiler_version_1_1_meta_1a3fec409e9d01fdd101a80a10c48aced4" kind="variable"><name>verbose_name</name></member>
@@ -241,9 +243,36 @@
     <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1ab696510431c027177451da1e4a6bdc0b" kind="variable"><name>isProgrammer_f</name></member>
     <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1ada687883f8de1aa44a0feee2448b61b8" kind="variable"><name>isAdmin_f</name></member>
     <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1a7cfe404d70a33ce89be1a5d51c9cafba" kind="variable"><name>numberOfAttempts_f</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1a3a0fa5d3a99befa925c288201084bcf8" kind="property"><name>dob</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1ab63e05e1f2e5890e91ee7843ce356b5f" kind="property"><name>address</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1a919cf572b6e01a3d3f007fa97fc2e2e2" kind="property"><name>gender</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1a75974e348d3ce063cae9aed156ea4ae5" kind="property"><name>numberOfAttempts</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1aa1c680ce4e197bcf65844505c0ab5784" kind="variable"><name>dob_f</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1a5229e8c6e894361d0390b975d4cbdee9" kind="variable"><name>address_f</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1ab7dfd7be58c62bacb3fdeef5fcf5477e" kind="variable"><name>gender_f</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1a325bcac723862d8a41a83b45b2de5afa" kind="variable"><name>numberOfAttempts_f</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1aa3fa8f1096c2e8021d3578cde996d0d3" kind="function"><name>getDOB</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1a1c2cd895532464835322c8817b84127b" kind="function"><name>setDOB</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1adaf43b36f5eb3994724afcf4f0747b5a" kind="function"><name>getAddress</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1a0b1ce69feddc9f286e7a5db8ec2d3c70" kind="function"><name>setAddress</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1ae3c89f787c9d05d936aa9f546f3000d8" kind="function"><name>getGender</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1ad672f792bcdbdea6cfeffc42d40c6a77" kind="function"><name>setGender</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1a65c1e9ebd3546e0bb3a5d9406b42c447" kind="function"><name>getUserID</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1aa39c57dab77961ae9824af3fc8826063" kind="function"><name>isProgrammer</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1a3891c38be9cd69cbeaf70ebbb6f64f06" kind="function"><name>isAdmin</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1ad1309d4e82559e7d169721375df7eb47" kind="function"><name>getNumberOfAttempts</name></member>
+    <member refid="d2/de8/class_ecodena_1_1_user_1_1models_1_1_profile_1aad5024beeaa9c50b58d9d00c64b0c776" kind="function"><name>setNumberOfAttempts</name></member>
   </compound>
   <compound refid="d6/d4f/class_ecodena_1_1_user_1_1admin_1_1_profile_admin" kind="class"><name>Ecodena::User::admin::ProfileAdmin</name>
     <member refid="d6/d4f/class_ecodena_1_1_user_1_1admin_1_1_profile_admin_1ae14c486a9ecf67619995a98610dfc1be" kind="variable"><name>list_display</name></member>
+  </compound>
+  <compound refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form" kind="class"><name>Ecodena::User::views::ProfileForm</name>
+    <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a73dce8ef060c7cea49bc252537828cc5" kind="variable"><name>username</name></member>
+    <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a697b83b7d7dc1b7899bc1d9ee1b9344d" kind="variable"><name>dob</name></member>
+    <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1ac93f85620334a0793d3d177ea5ac43dd" kind="variable"><name>GENDER_CHOICES</name></member>
+    <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a943ea113aeb5c4ce8109a079119bb84e" kind="variable"><name>gender</name></member>
+    <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1add6304c2997c575733a2e1a47113752c" kind="variable"><name>email</name></member>
+    <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a11096920cec16a7bcfcfd320b42a6c94" kind="variable"><name>address</name></member>
   </compound>
   <compound refid="d2/d55/class_ecodena_1_1_user_1_1models_1_1_programmer" kind="class"><name>Ecodena::User::models::Programmer</name>
     <member refid="d2/d55/class_ecodena_1_1_user_1_1models_1_1_programmer_1acac46c16e9e503624e807cefa8650a96" kind="variable"><name>level_f</name></member>
@@ -334,26 +363,26 @@
     <member refid="de/dbf/class_ecodena_1_1_question_1_1admin_1_1_question_admin_1af415e6770a6fddb17ccec6bbeb21c957" kind="variable"><name>inlines2</name></member>
     <member refid="de/dbf/class_ecodena_1_1_question_1_1admin_1_1_question_admin_1a2c455e376dbf6d80c30f869216829c02" kind="variable"><name>list_display</name></member>
   </compound>
-  <compound refid="d4/d8b/class_ecodena_1_1_comment_1_1tests_1_1_simple_test" kind="class"><name>Ecodena::Comment::tests::SimpleTest</name>
-    <member refid="d4/d8b/class_ecodena_1_1_comment_1_1tests_1_1_simple_test_1ad9617b0fddbd93a35387498ae397c2b1" kind="function"><name>test_basic_addition</name></member>
-  </compound>
-  <compound refid="d0/dfc/class_ecodena_1_1_main_1_1tests_1_1_simple_test" kind="class"><name>Ecodena::Main::tests::SimpleTest</name>
-    <member refid="d0/dfc/class_ecodena_1_1_main_1_1tests_1_1_simple_test_1aa154522d6e97e4a542ab7aae8c3c01e1" kind="function"><name>test_basic_addition</name></member>
+  <compound refid="d7/ded/class_ecodena_1_1_query_1_1tests_1_1_simple_test" kind="class"><name>Ecodena::Query::tests::SimpleTest</name>
+    <member refid="d7/ded/class_ecodena_1_1_query_1_1tests_1_1_simple_test_1ac71b2c2f6ac179ddd43194ad1dbbff2e" kind="function"><name>test_basic_addition</name></member>
   </compound>
   <compound refid="d5/d0e/class_ecodena_1_1_compiler_1_1tests_1_1_simple_test" kind="class"><name>Ecodena::Compiler::tests::SimpleTest</name>
     <member refid="d5/d0e/class_ecodena_1_1_compiler_1_1tests_1_1_simple_test_1af21eec92356114e16db2651d1b6ad0c5" kind="function"><name>test_basic_addition</name></member>
   </compound>
-  <compound refid="d7/ded/class_ecodena_1_1_query_1_1tests_1_1_simple_test" kind="class"><name>Ecodena::Query::tests::SimpleTest</name>
-    <member refid="d7/ded/class_ecodena_1_1_query_1_1tests_1_1_simple_test_1ac71b2c2f6ac179ddd43194ad1dbbff2e" kind="function"><name>test_basic_addition</name></member>
+  <compound refid="d0/dfc/class_ecodena_1_1_main_1_1tests_1_1_simple_test" kind="class"><name>Ecodena::Main::tests::SimpleTest</name>
+    <member refid="d0/dfc/class_ecodena_1_1_main_1_1tests_1_1_simple_test_1aa154522d6e97e4a542ab7aae8c3c01e1" kind="function"><name>test_basic_addition</name></member>
   </compound>
   <compound refid="d0/dac/class_ecodena_1_1_question_1_1tests_1_1_simple_test" kind="class"><name>Ecodena::Question::tests::SimpleTest</name>
     <member refid="d0/dac/class_ecodena_1_1_question_1_1tests_1_1_simple_test_1a300c4622435a7968ae329102d7ded0e9" kind="function"><name>test_basic_addition</name></member>
   </compound>
-  <compound refid="d9/d15/class_ecodena_1_1_user_1_1tests_1_1_simple_test" kind="class"><name>Ecodena::User::tests::SimpleTest</name>
-    <member refid="d9/d15/class_ecodena_1_1_user_1_1tests_1_1_simple_test_1a108e5cec9808dab141b2dfb799a363fa" kind="function"><name>test_basic_addition</name></member>
+  <compound refid="d4/d8b/class_ecodena_1_1_comment_1_1tests_1_1_simple_test" kind="class"><name>Ecodena::Comment::tests::SimpleTest</name>
+    <member refid="d4/d8b/class_ecodena_1_1_comment_1_1tests_1_1_simple_test_1ad9617b0fddbd93a35387498ae397c2b1" kind="function"><name>test_basic_addition</name></member>
   </compound>
   <compound refid="db/dc6/class_ecodena_1_1_attempt_1_1tests_1_1_simple_test" kind="class"><name>Ecodena::Attempt::tests::SimpleTest</name>
     <member refid="db/dc6/class_ecodena_1_1_attempt_1_1tests_1_1_simple_test_1abb990bd8a2d843f97b0d6bacd6708bbe" kind="function"><name>test_basic_addition</name></member>
+  </compound>
+  <compound refid="d9/d15/class_ecodena_1_1_user_1_1tests_1_1_simple_test" kind="class"><name>Ecodena::User::tests::SimpleTest</name>
+    <member refid="d9/d15/class_ecodena_1_1_user_1_1tests_1_1_simple_test_1a108e5cec9808dab141b2dfb799a363fa" kind="function"><name>test_basic_addition</name></member>
   </compound>
   <compound refid="df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form" kind="class"><name>Ecodena::Attempt::views::SolutionForm</name>
     <member refid="df/d81/class_ecodena_1_1_attempt_1_1views_1_1_solution_form_1a468dd4b8939f889b625d93015bbb2e4f" kind="variable"><name>text</name></member>
@@ -507,6 +536,8 @@
   <compound refid="d4/dcf/namespace_ecodena_1_1_user_1_1tests" kind="namespace"><name>Ecodena::User::tests</name>
   </compound>
   <compound refid="d7/d84/namespace_ecodena_1_1_user_1_1views" kind="namespace"><name>Ecodena::User::views</name>
+    <member refid="d7/d84/namespace_ecodena_1_1_user_1_1views_1a750d929e22a1d7016798d86de5c4ce1f" kind="function"><name>viewProfile</name></member>
+    <member refid="d7/d84/namespace_ecodena_1_1_user_1_1views_1ac8f90c18540bb8c112ee2ce7e1075bdf" kind="function"><name>editProfile</name></member>
   </compound>
   <compound refid="d3/d9a/____init_____8py" kind="file"><name>__init__.py</name>
   </compound>

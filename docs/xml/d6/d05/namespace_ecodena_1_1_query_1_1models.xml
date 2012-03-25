@@ -6,7 +6,7 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para><verbatim>Its a models.py of post Query, i.e. it creates a basic model for the post Query.</verbatim> </para>    </detaileddescription>
     <location file="/home/panx/ecodena/src/Ecodena/Query/models.py" line="1"/>
   </compounddef>
 </doxygen>

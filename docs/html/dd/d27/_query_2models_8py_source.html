@@ -25,7 +25,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../ecodena small1.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Ecodena&#160;<span id="projectnumber">1.0</span></div>
    <div id="projectbrief">The Online Judge System</div>
@@ -82,89 +81,91 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">/home/panx/ecodena/src/Ecodena/Query/models.py</div>  </div>
 </div>
 <div class="contents">
-<a href="../../dd/d27/_query_2models_8py.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a><a class="code" href="../../d6/d05/namespace_ecodena_1_1_query_1_1models.html">00001</a> <span class="keyword">from</span> django.db <span class="keyword">import</span> models
-<a name="l00002"></a>00002 <span class="comment">#from Ecodena.User.models import User</span>
-<a name="l00003"></a>00003 <span class="keyword">import</span> datetime
-<a name="l00004"></a>00004 <span class="keyword">from</span> django.contrib.auth.models <span class="keyword">import</span> User
-<a name="l00005"></a>00005 <span class="comment"># Create your models here.</span>
-<a name="l00006"></a>00006 
-<a name="l00007"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html">00007</a> <span class="keyword">class </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html">Query</a>(models.Model, object):
-<a name="l00008"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae1ec984785258399cd3757f0c001c449">00008</a>         queryID_f = models.AutoField(primary_key=<span class="keyword">True</span>)
-<a name="l00009"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a82f008f189f9a40b1bc97147e81ce7ed">00009</a>         queryText_f = models.TextField(<span class="stringliteral">&quot;The Text explaining the Query&quot;</span>, null=<span class="keyword">False</span>)
-<a name="l00010"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#aa5784dfc285de57ac58e20358ec86136">00010</a>         solution_f = models.TextField(<span class="stringliteral">&quot;The Solution of the Query&quot;</span>, blank=<span class="keyword">True</span>)
-<a name="l00011"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#af6d91b41546f1d338987e4072357700c">00011</a>         userID_f = models.ForeignKey(User, verbose_name=<span class="stringliteral">&quot;User ID of user posting the query&quot;</span>, null=<span class="keyword">False</span>, related_name=<span class="stringliteral">&#39;+&#39;</span>)
-<a name="l00012"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae756b917504c1bbc04ff9998fe2b6961">00012</a>         adminID_f = models.ForeignKey(User, verbose_name=<span class="stringliteral">&quot;User ID of admin resolving the query&quot;</span>, related_name=<span class="stringliteral">&#39;+&#39;</span>, blank=<span class="keyword">True</span>, null=<span class="keyword">True</span>)
-<a name="l00013"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a69b4646a1bbc4d7dc831028df2f80bae">00013</a>         queryTime_f = models.DateTimeField(<span class="stringliteral">&quot;Time of posting Query&quot;</span>, null=<span class="keyword">False</span>)
-<a name="l00014"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a45776c99ebfd110c2d178c1223ddb886">00014</a>         replyTime_f = models.DateTimeField(<span class="stringliteral">&quot;Time of resolving Query&quot;</span>, blank=<span class="keyword">True</span>, null=<span class="keyword">True</span>)
-<a name="l00015"></a>00015 
-<a name="l00016"></a>00016 
-<a name="l00017"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a3ea151fb41b6c457465a4fbe884ae7e1">00017</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a3ea151fb41b6c457465a4fbe884ae7e1">getQueryText</a>(self):
-<a name="l00018"></a>00018                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a82f008f189f9a40b1bc97147e81ce7ed">queryText_f</a>
-<a name="l00019"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a5359734b6cac07a8a46d24602dfe5e35">00019</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a5359734b6cac07a8a46d24602dfe5e35">setQueryText</a>(self, text):
-<a name="l00020"></a>00020                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a82f008f189f9a40b1bc97147e81ce7ed">queryText_f</a> = text
-<a name="l00021"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a8c5d0779f4cfbe980fae5278a9837d69">00021</a>         queryText = property(getQueryText, setQueryText)
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023         
-<a name="l00024"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#abd4bfc62d23248a041fcb6b3c7f75439">00024</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#abd4bfc62d23248a041fcb6b3c7f75439">getQueryID</a>(self):
-<a name="l00025"></a>00025                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae1ec984785258399cd3757f0c001c449">queryID_f</a>
-<a name="l00026"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a2eb52127081b0bc7183182778fd99e84">00026</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a2eb52127081b0bc7183182778fd99e84">setQueryID</a>(self, qID):
-<a name="l00027"></a>00027                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae1ec984785258399cd3757f0c001c449">queryID_f</a> = qID
-<a name="l00028"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a44a48f0e111c10ab2206c5dc44ca89af">00028</a>         queryID = property(getQueryID, setQueryID)
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030 
-<a name="l00031"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a8d45bd120271b82843dd9834f9947d81">00031</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a8d45bd120271b82843dd9834f9947d81">getSolution</a>(self):
-<a name="l00032"></a>00032                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#aa5784dfc285de57ac58e20358ec86136">solution_f</a>
-<a name="l00033"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a7d3a9e3880479a39865780b2c1180709">00033</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ab4ac84680ce274a2ebd359d4c0e1bd10">setSolution</a>(self, code):
-<a name="l00034"></a>00034                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#aa5784dfc285de57ac58e20358ec86136">solution_f</a> = code
-<a name="l00035"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a44c24c91765bafb665f0a4ff25819694">00035</a>         solution = property(getSolution, setSolution)
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 
-<a name="l00038"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a9c3a67997f0f679e2aa4dde01f91d17a">00038</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a9c3a67997f0f679e2aa4dde01f91d17a">getQueryTime</a>(self):
-<a name="l00039"></a>00039                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a69b4646a1bbc4d7dc831028df2f80bae">queryTime_f</a>
-<a name="l00040"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a4844f6c54805063e7678b5fcdc688b87">00040</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a4844f6c54805063e7678b5fcdc688b87">setQueryTime</a>(self, Timestamp):
-<a name="l00041"></a>00041                 Timestamp = datetime.datetime.now()
-<a name="l00042"></a>00042                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a69b4646a1bbc4d7dc831028df2f80bae">queryTime_f</a> = Timestamp
-<a name="l00043"></a>00043                 
-<a name="l00044"></a>00044 
-<a name="l00045"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a922030477827a717dbe6277292084874">00045</a>         queryTime = property(getQueryTime, setQueryTime)
+<a href="../../dd/d27/_query_2models_8py.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a><a class="code" href="../../d6/d05/namespace_ecodena_1_1_query_1_1models.html">00001</a> <span class="stringliteral">&#39;&#39;&#39;Its a models.py of post Query, i.e. it creates a basic model for the post Query.&#39;&#39;&#39;</span>
+<a name="l00002"></a>00002 <span class="keyword">from</span> django.db <span class="keyword">import</span> models
+<a name="l00003"></a>00003 <span class="comment">#from Ecodena.User.models import User</span>
+<a name="l00004"></a>00004 <span class="keyword">import</span> datetime
+<a name="l00005"></a>00005 <span class="keyword">from</span> django.contrib.auth.models <span class="keyword">import</span> User
+<a name="l00006"></a>00006 <span class="comment"># Create your models here.</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html">00008</a> <span class="keyword">class </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html">Query</a>(models.Model, object):
+<a name="l00009"></a>00009         <span class="stringliteral">&#39;&#39;&#39;Here Query is subclass of models.Model and Creates an entity named Query.&#39;&#39;&#39;</span>
+<a name="l00010"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae1ec984785258399cd3757f0c001c449">00010</a>         queryID_f = models.AutoField(primary_key=<span class="keyword">True</span>)
+<a name="l00011"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a82f008f189f9a40b1bc97147e81ce7ed">00011</a>         queryText_f = models.TextField(<span class="stringliteral">&quot;The Text explaining the Query&quot;</span>, null=<span class="keyword">False</span>)
+<a name="l00012"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#aa5784dfc285de57ac58e20358ec86136">00012</a>         solution_f = models.TextField(<span class="stringliteral">&quot;The Solution of the Query&quot;</span>, blank=<span class="keyword">True</span>)
+<a name="l00013"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#af6d91b41546f1d338987e4072357700c">00013</a>         userID_f = models.ForeignKey(User, verbose_name=<span class="stringliteral">&quot;User ID of user posting the query&quot;</span>, null=<span class="keyword">False</span>, related_name=<span class="stringliteral">&#39;+&#39;</span>)
+<a name="l00014"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae756b917504c1bbc04ff9998fe2b6961">00014</a>         adminID_f = models.ForeignKey(User, verbose_name=<span class="stringliteral">&quot;User ID of admin resolving the query&quot;</span>, related_name=<span class="stringliteral">&#39;+&#39;</span>, blank=<span class="keyword">True</span>, null=<span class="keyword">True</span>)
+<a name="l00015"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a69b4646a1bbc4d7dc831028df2f80bae">00015</a>         queryTime_f = models.DateTimeField(<span class="stringliteral">&quot;Time of posting Query&quot;</span>, null=<span class="keyword">False</span>)
+<a name="l00016"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a45776c99ebfd110c2d178c1223ddb886">00016</a>         replyTime_f = models.DateTimeField(<span class="stringliteral">&quot;Time of resolving Query&quot;</span>, blank=<span class="keyword">True</span>, null=<span class="keyword">True</span>)
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 
+<a name="l00019"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a3ea151fb41b6c457465a4fbe884ae7e1">00019</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a3ea151fb41b6c457465a4fbe884ae7e1">getQueryText</a>(self):
+<a name="l00020"></a>00020                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a82f008f189f9a40b1bc97147e81ce7ed">queryText_f</a>
+<a name="l00021"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a5359734b6cac07a8a46d24602dfe5e35">00021</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a5359734b6cac07a8a46d24602dfe5e35">setQueryText</a>(self, text):
+<a name="l00022"></a>00022                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a82f008f189f9a40b1bc97147e81ce7ed">queryText_f</a> = text
+<a name="l00023"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a8c5d0779f4cfbe980fae5278a9837d69">00023</a>         queryText = property(getQueryText, setQueryText)
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025         
+<a name="l00026"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#abd4bfc62d23248a041fcb6b3c7f75439">00026</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#abd4bfc62d23248a041fcb6b3c7f75439">getQueryID</a>(self):
+<a name="l00027"></a>00027                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae1ec984785258399cd3757f0c001c449">queryID_f</a>
+<a name="l00028"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a2eb52127081b0bc7183182778fd99e84">00028</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a2eb52127081b0bc7183182778fd99e84">setQueryID</a>(self, qID):
+<a name="l00029"></a>00029                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae1ec984785258399cd3757f0c001c449">queryID_f</a> = qID
+<a name="l00030"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a44a48f0e111c10ab2206c5dc44ca89af">00030</a>         queryID = property(getQueryID, setQueryID)
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 
+<a name="l00033"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a8d45bd120271b82843dd9834f9947d81">00033</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a8d45bd120271b82843dd9834f9947d81">getSolution</a>(self):
+<a name="l00034"></a>00034                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#aa5784dfc285de57ac58e20358ec86136">solution_f</a>
+<a name="l00035"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a7d3a9e3880479a39865780b2c1180709">00035</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ab4ac84680ce274a2ebd359d4c0e1bd10">setSolution</a>(self, code):
+<a name="l00036"></a>00036                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#aa5784dfc285de57ac58e20358ec86136">solution_f</a> = code
+<a name="l00037"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a44c24c91765bafb665f0a4ff25819694">00037</a>         solution = property(getSolution, setSolution)
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a9c3a67997f0f679e2aa4dde01f91d17a">00040</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a9c3a67997f0f679e2aa4dde01f91d17a">getQueryTime</a>(self):
+<a name="l00041"></a>00041                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a69b4646a1bbc4d7dc831028df2f80bae">queryTime_f</a>
+<a name="l00042"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a4844f6c54805063e7678b5fcdc688b87">00042</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a4844f6c54805063e7678b5fcdc688b87">setQueryTime</a>(self, Timestamp):
+<a name="l00043"></a>00043                 Timestamp = datetime.datetime.now()
+<a name="l00044"></a>00044                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a69b4646a1bbc4d7dc831028df2f80bae">queryTime_f</a> = Timestamp
+<a name="l00045"></a>00045                 
 <a name="l00046"></a>00046 
-<a name="l00047"></a>00047 
+<a name="l00047"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a922030477827a717dbe6277292084874">00047</a>         queryTime = property(getQueryTime, setQueryTime)
 <a name="l00048"></a>00048 
-<a name="l00049"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a10dc5edc11802e3e5d3506d167a5e9e2">00049</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a10dc5edc11802e3e5d3506d167a5e9e2">getReplyTime</a>(self):
-<a name="l00050"></a>00050                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a45776c99ebfd110c2d178c1223ddb886">replyTime_f</a>
-<a name="l00051"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a4265351e14d05a90076ed142452a2c6d">00051</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a4265351e14d05a90076ed142452a2c6d">setReplyTime</a>(self, Timestamp):
-<a name="l00052"></a>00052                 Timestamp = datetime.datetime.now()
-<a name="l00053"></a>00053                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a45776c99ebfd110c2d178c1223ddb886">replyTime_f</a> = Timestamp
-<a name="l00054"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a120b8bc5cef02ce8727153a0126cec3c">00054</a>         replyTime = property(getReplyTime, setReplyTime)
-<a name="l00055"></a>00055         
-<a name="l00056"></a>00056 
-<a name="l00057"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#accb9bbbe890bcf2dd2552cec33e33064">00057</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#accb9bbbe890bcf2dd2552cec33e33064">getUserID</a>(self):
-<a name="l00058"></a>00058                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#af6d91b41546f1d338987e4072357700c">userID_f</a>
-<a name="l00059"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a7aca73a76e3660ca990174870404f804">00059</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ab560248a8b88b6367dd1ac6bd00275b1">setUserID</a>(self, uID):
-<a name="l00060"></a>00060                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#af6d91b41546f1d338987e4072357700c">userID_f</a> = uID
-<a name="l00061"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a7b6043377cba81b1cd1f29dbba5a0a66">00061</a>         userID = property(getUserID, setUserID)
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 
-<a name="l00064"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a3b6de065ac8d60ab2ab2efa41a5d2389">00064</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a3b6de065ac8d60ab2ab2efa41a5d2389">getAdminID</a>(self):
-<a name="l00065"></a>00065                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae756b917504c1bbc04ff9998fe2b6961">adminID_f</a>
-<a name="l00066"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae1fecfbe595ee512254f3978fc4ebc2f">00066</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae1fecfbe595ee512254f3978fc4ebc2f">setAdminID</a>(self, aID):
-<a name="l00067"></a>00067                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae756b917504c1bbc04ff9998fe2b6961">adminID_f</a> = aID
-<a name="l00068"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a7397d58744f73dd037d7928ca7bb5593">00068</a>         adminID = property(getAdminID, setAdminID)
-<a name="l00069"></a>00069 
-<a name="l00070"></a>00070 
-<a name="l00071"></a><a class="code" href="../../d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta.html">00071</a>         <span class="keyword">class </span><a class="code" href="../../d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta.html">Meta</a>:
-<a name="l00072"></a><a class="code" href="../../d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta.html#aa23af14d7fe26b0599114e73201de85c">00072</a>                 verbose_name = <span class="stringliteral">&#39;query&#39;</span>
-<a name="l00073"></a><a class="code" href="../../d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta.html#ac57db1e879cded42a3f4d35c04c56be8">00073</a>                 verbose_name_plural = <span class="stringliteral">&#39;queries&#39;</span>
-<a name="l00074"></a>00074 
-<a name="l00075"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ab9812fdc816aca8289f0481802342efd">00075</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ab9812fdc816aca8289f0481802342efd">__unicode__</a>(self):
-<a name="l00076"></a>00076                 <span class="keywordflow">return</span> `self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a7b6043377cba81b1cd1f29dbba5a0a66">userID</a>` + <span class="stringliteral">&#39; &#39;</span> + `self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a44a48f0e111c10ab2206c5dc44ca89af">queryID</a>` + <span class="stringliteral">&#39; &#39;</span> + self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a8c5d0779f4cfbe980fae5278a9837d69">queryText</a>
-<a name="l00077"></a>00077                 
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 
+<a name="l00051"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a10dc5edc11802e3e5d3506d167a5e9e2">00051</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a10dc5edc11802e3e5d3506d167a5e9e2">getReplyTime</a>(self):
+<a name="l00052"></a>00052                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a45776c99ebfd110c2d178c1223ddb886">replyTime_f</a>
+<a name="l00053"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a4265351e14d05a90076ed142452a2c6d">00053</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a4265351e14d05a90076ed142452a2c6d">setReplyTime</a>(self, Timestamp):
+<a name="l00054"></a>00054                 Timestamp = datetime.datetime.now()
+<a name="l00055"></a>00055                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a45776c99ebfd110c2d178c1223ddb886">replyTime_f</a> = Timestamp
+<a name="l00056"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a120b8bc5cef02ce8727153a0126cec3c">00056</a>         replyTime = property(getReplyTime, setReplyTime)
+<a name="l00057"></a>00057         
+<a name="l00058"></a>00058 
+<a name="l00059"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#accb9bbbe890bcf2dd2552cec33e33064">00059</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#accb9bbbe890bcf2dd2552cec33e33064">getUserID</a>(self):
+<a name="l00060"></a>00060                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#af6d91b41546f1d338987e4072357700c">userID_f</a>
+<a name="l00061"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a7aca73a76e3660ca990174870404f804">00061</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ab560248a8b88b6367dd1ac6bd00275b1">setUserID</a>(self, uID):
+<a name="l00062"></a>00062                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#af6d91b41546f1d338987e4072357700c">userID_f</a> = uID
+<a name="l00063"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a7b6043377cba81b1cd1f29dbba5a0a66">00063</a>         userID = property(getUserID, setUserID)
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065 
+<a name="l00066"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a3b6de065ac8d60ab2ab2efa41a5d2389">00066</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a3b6de065ac8d60ab2ab2efa41a5d2389">getAdminID</a>(self):
+<a name="l00067"></a>00067                 <span class="keywordflow">return</span> self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae756b917504c1bbc04ff9998fe2b6961">adminID_f</a>
+<a name="l00068"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae1fecfbe595ee512254f3978fc4ebc2f">00068</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae1fecfbe595ee512254f3978fc4ebc2f">setAdminID</a>(self, aID):
+<a name="l00069"></a>00069                 self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ae756b917504c1bbc04ff9998fe2b6961">adminID_f</a> = aID
+<a name="l00070"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a7397d58744f73dd037d7928ca7bb5593">00070</a>         adminID = property(getAdminID, setAdminID)
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072 
+<a name="l00073"></a><a class="code" href="../../d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta.html">00073</a>         <span class="keyword">class </span><a class="code" href="../../d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta.html">Meta</a>:
+<a name="l00074"></a><a class="code" href="../../d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta.html#aa23af14d7fe26b0599114e73201de85c">00074</a>                 verbose_name = <span class="stringliteral">&#39;query&#39;</span>
+<a name="l00075"></a><a class="code" href="../../d2/d09/class_ecodena_1_1_query_1_1models_1_1_query_1_1_meta.html#ac57db1e879cded42a3f4d35c04c56be8">00075</a>                 verbose_name_plural = <span class="stringliteral">&#39;queries&#39;</span>
+<a name="l00076"></a>00076 
+<a name="l00077"></a><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ab9812fdc816aca8289f0481802342efd">00077</a>         <span class="keyword">def </span><a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#ab9812fdc816aca8289f0481802342efd">__unicode__</a>(self):
+<a name="l00078"></a>00078                 <span class="keywordflow">return</span> `self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a7b6043377cba81b1cd1f29dbba5a0a66">userID</a>` + <span class="stringliteral">&#39; &#39;</span> + `self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a44a48f0e111c10ab2206c5dc44ca89af">queryID</a>` + <span class="stringliteral">&#39; &#39;</span> + self.<a class="code" href="../../de/d81/class_ecodena_1_1_query_1_1models_1_1_query.html#a8c5d0779f4cfbe980fae5278a9837d69">queryText</a>
+<a name="l00079"></a>00079                 
 </pre></div></div>
 </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="../../dd/d27/_query_2models_8py.html">models.py</a>      </li>
-      <li class="footer">Generated on Tue Mar 20 2012 05:32:41 for Ecodena by&#160;
+      <li class="footer">Generated on Sun Mar 25 2012 09:50:05 for Ecodena by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.4 </li>
     </ul>

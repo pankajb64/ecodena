@@ -32,9 +32,14 @@ def \hyperlink{namespace_ecodena_1_1_attempt_1_1views_a142f44375d6c0e89c3f335344
 \end{DoxyParamCaption}
 )}}
 \label{d7/d76/namespace_ecodena_1_1_attempt_1_1views_a142f44375d6c0e89c3f335344c602496}
+\begin{DoxyVerb}compiles the solution by calling the appropriate compiler 
+Parameter:version-->contains the version of the compiler that the user has selected
+Parameter:soluiton-->contains the solution object to be compiled
+Parameter:question-->contains the question object so that the appropriate test cases can be fetched.
+returns nothing if the appropriate compiler is available else it gives an error saying compiler not available\end{DoxyVerb}
+ 
 
-
-Definition at line 65 of file views.py.
+Definition at line 86 of file views.py.
 
 \hypertarget{namespace_ecodena_1_1_attempt_1_1views_aefcfaf496faa0d0cabd21b6574a78ca2}{
 \index{Ecodena::Attempt::views@{Ecodena::Attempt::views}!listSolutions@{listSolutions}}
@@ -45,22 +50,31 @@ Definition at line 65 of file views.py.
 \end{DoxyParamCaption}
 )}}
 \label{d7/d76/namespace_ecodena_1_1_attempt_1_1views_aefcfaf496faa0d0cabd21b6574a78ca2}
+\begin{DoxyVerb}lists all the solutionIDs' that a particular user has submitted
+parameter:request-->All the details associated with URL 
+returns the solutions.html page and the list of solution ids\end{DoxyVerb}
+ 
 
-
-Definition at line 21 of file views.py.
+Definition at line 23 of file views.py.
 
 \hypertarget{namespace_ecodena_1_1_attempt_1_1views_a6b656f2fc0947e8cc7ea0d1c1d7564d6}{
 \index{Ecodena::Attempt::views@{Ecodena::Attempt::views}!submitSolution@{submitSolution}}
 \index{submitSolution@{submitSolution}!Ecodena::Attempt::views@{Ecodena::Attempt::views}}
 \subsubsection[{submitSolution}]{\setlength{\rightskip}{0pt plus 5cm}def Ecodena.Attempt.views.submitSolution (
 \begin{DoxyParamCaption}
-\item[{}]{request}
+\item[{}]{request, }
+\item[{}]{questionID, }
+\item[{}]{userID}
 \end{DoxyParamCaption}
 )}}
 \label{d7/d76/namespace_ecodena_1_1_attempt_1_1views_a6b656f2fc0947e8cc7ea0d1c1d7564d6}
+\begin{DoxyVerb}Uploading of the solution submitted by the user. The necessary details are added to the database and compiler function is called to generate the error report for the concerning Attempt
+Parameter:request-->All the information associated with the url
+returns the submitsolution.html page making the necessary updation of the database.
+\end{DoxyVerb}
+ 
 
-
-Definition at line 40 of file views.py.
+Definition at line 50 of file views.py.
 
 \hypertarget{namespace_ecodena_1_1_attempt_1_1views_a5e3b3bf6c3df69f40299ec0669a7a978}{
 \index{Ecodena::Attempt::views@{Ecodena::Attempt::views}!viewSolution@{viewSolution}}
@@ -74,5 +88,5 @@ Definition at line 40 of file views.py.
 \label{d7/d76/namespace_ecodena_1_1_attempt_1_1views_a5e3b3bf6c3df69f40299ec0669a7a978}
 
 
-Definition at line 28 of file views.py.
+Definition at line 33 of file views.py.
 

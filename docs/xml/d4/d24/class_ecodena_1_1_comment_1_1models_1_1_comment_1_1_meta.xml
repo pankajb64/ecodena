@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Comment/models.py" line="66" bodyfile="/home/panx/ecodena/src/Ecodena/Comment/models.py" bodystart="66" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Comment/models.py" line="72" bodyfile="/home/panx/ecodena/src/Ecodena/Comment/models.py" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d4/d24/class_ecodena_1_1_comment_1_1models_1_1_comment_1_1_meta_1ab47cb8c6b3591a60ce7470138312f77a" prot="public" static="yes" mutable="no">
         <type>string</type>
@@ -29,14 +29,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Comment/models.py" line="67" bodyfile="/home/panx/ecodena/src/Ecodena/Comment/models.py" bodystart="67" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Comment/models.py" line="73" bodyfile="/home/panx/ecodena/src/Ecodena/Comment/models.py" bodystart="73" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/panx/ecodena/src/Ecodena/Comment/models.py" line="66" bodyfile="/home/panx/ecodena/src/Ecodena/Comment/models.py" bodystart="65" bodyend="68"/>
+    <location file="/home/panx/ecodena/src/Ecodena/Comment/models.py" line="72" bodyfile="/home/panx/ecodena/src/Ecodena/Comment/models.py" bodystart="71" bodyend="74"/>
     <listofallmembers>
       <member refid="d4/d24/class_ecodena_1_1_comment_1_1models_1_1_comment_1_1_meta_1a20eda28cd22d10df2c33831253f926ee" prot="public" virt="non-virtual"><scope>Ecodena::Comment::models::Comment::Meta</scope><name>verbose_name</name></member>
       <member refid="d4/d24/class_ecodena_1_1_comment_1_1models_1_1_comment_1_1_meta_1ab47cb8c6b3591a60ce7470138312f77a" prot="public" virt="non-virtual"><scope>Ecodena::Comment::models::Comment::Meta</scope><name>verbose_name_plural</name></member>

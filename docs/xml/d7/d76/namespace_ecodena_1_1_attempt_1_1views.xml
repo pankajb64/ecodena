@@ -12,10 +12,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><verbatim>lists all the solutionIDs&apos; that a particular user has submitted
+parameter:request--&gt;All the details associated with URL 
+returns the solutions.html page and the list of solution ids</verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="21" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="21" bodyend="27"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="23" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="23" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="d7/d76/namespace_ecodena_1_1_attempt_1_1views_1a5e3b3bf6c3df69f40299ec0669a7a978" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -28,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="28" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="28" bodyend="39"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="33" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="33" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="d7/d76/namespace_ecodena_1_1_attempt_1_1views_1a6b656f2fc0947e8cc7ea0d1c1d7564d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -38,10 +40,13 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><verbatim>Uploading of the solution submitted by the user. The necessary details are added to the database and compiler function is called to generate the error report for the concerning Attempt
+Parameter:request--&gt;All the information associated with the url
+returns the submitsolution.html page making the necessary updation of the database.
+</verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="40" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="40" bodyend="64"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="50" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="50" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="d7/d76/namespace_ecodena_1_1_attempt_1_1views_1a142f44375d6c0e89c3f335344c602496" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -51,10 +56,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><verbatim>compiles the solution by calling the appropriate compiler 
+Parameter:version--&gt;contains the version of the compiler that the user has selected
+Parameter:soluiton--&gt;contains the solution object to be compiled
+Parameter:question--&gt;contains the question object so that the appropriate test cases can be fetched.
+returns nothing if the appropriate compiler is available else it gives an error saying compiler not available</verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="65" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="65" bodyend="76"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/views.py" line="86" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/views.py" bodystart="86" bodyend="102"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

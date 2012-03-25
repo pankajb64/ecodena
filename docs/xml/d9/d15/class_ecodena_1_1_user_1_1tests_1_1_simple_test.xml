@@ -25,17 +25,6 @@ Tests that 1 + 1 always equals 2.
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="102">
-        <label>Ecodena.User.tests.SimpleTest</label>
-        <link refid="d9/d15/class_ecodena_1_1_user_1_1tests_1_1_simple_test"/>
-        <childnode refid="103" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="103">
-        <label>TestCase</label>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="104">
         <label>Ecodena.User.tests.SimpleTest</label>
         <link refid="d9/d15/class_ecodena_1_1_user_1_1tests_1_1_simple_test"/>
@@ -43,6 +32,17 @@ Tests that 1 + 1 always equals 2.
         </childnode>
       </node>
       <node id="105">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="106">
+        <label>Ecodena.User.tests.SimpleTest</label>
+        <link refid="d9/d15/class_ecodena_1_1_user_1_1tests_1_1_simple_test"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="107">
         <label>TestCase</label>
       </node>
     </collaborationgraph>

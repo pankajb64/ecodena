@@ -25,7 +25,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../ecodena small1.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Ecodena&#160;<span id="projectnumber">1.0</span></div>
    <div id="projectbrief">The Online Judge System</div>
@@ -128,8 +127,12 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html#l00065">65</a> of file <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html">views.py</a>.</p>
+<div class="fragment"><pre class="fragment">compiles the solution by calling the appropriate compiler 
+Parameter:version--&gt;contains the version of the compiler that the user has selected
+Parameter:soluiton--&gt;contains the solution object to be compiled
+Parameter:question--&gt;contains the question object so that the appropriate test cases can be fetched.
+returns nothing if the appropriate compiler is available else it gives an error saying compiler not available</pre></div> 
+<p>Definition at line <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html#l00086">86</a> of file <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html">views.py</a>.</p>
 
 </div>
 </div>
@@ -147,8 +150,10 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html#l00021">21</a> of file <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html">views.py</a>.</p>
+<div class="fragment"><pre class="fragment">lists all the solutionIDs' that a particular user has submitted
+parameter:request--&gt;All the details associated with URL 
+returns the solutions.html page and the list of solution ids</pre></div> 
+<p>Definition at line <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html#l00023">23</a> of file <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html">views.py</a>.</p>
 
 </div>
 </div>
@@ -160,14 +165,33 @@ Functions</h2></td></tr>
           <td class="memname">def Ecodena.Attempt.views.submitSolution </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>request</em></td><td>)</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>questionID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>userID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html#l00040">40</a> of file <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html">views.py</a>.</p>
+<div class="fragment"><pre class="fragment">Uploading of the solution submitted by the user. The necessary details are added to the database and compiler function is called to generate the error report for the concerning Attempt
+Parameter:request--&gt;All the information associated with the url
+returns the submitsolution.html page making the necessary updation of the database.
+</pre></div> 
+<p>Definition at line <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html#l00050">50</a> of file <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html">views.py</a>.</p>
 
 </div>
 </div>
@@ -196,7 +220,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html#l00028">28</a> of file <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html">views.py</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html#l00033">33</a> of file <a class="el" href="../../d3/d5d/_attempt_2views_8py_source.html">views.py</a>.</p>
 
 </div>
 </div>
@@ -207,7 +231,7 @@ Functions</h2></td></tr>
       <li class="navelem"><a class="el" href="../../d8/d35/namespace_ecodena.html">Ecodena</a>      </li>
       <li class="navelem"><a class="el" href="../../d5/dca/namespace_ecodena_1_1_attempt.html">Attempt</a>      </li>
       <li class="navelem"><a class="el" href="../../d7/d76/namespace_ecodena_1_1_attempt_1_1views.html">views</a>      </li>
-      <li class="footer">Generated on Tue Mar 20 2012 05:32:41 for Ecodena by&#160;
+      <li class="footer">Generated on Sun Mar 25 2012 09:50:06 for Ecodena by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.4 </li>
     </ul>

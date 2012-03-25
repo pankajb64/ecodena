@@ -1,4 +1,4 @@
-.TH "Ecodena::Attempt::models::Attempt" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.TH "Ecodena::Attempt::models::Attempt" 3 "Sun Mar 25 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -59,6 +59,12 @@ Ecodena::Attempt::models::Attempt \-
 .RI "def \fBsetQuestionID\fP"
 .br
 .ti -1c
+.RI "def \fBgetCompilerVersionOfAttempt\fP"
+.br
+.ti -1c
+.RI "def \fBsetCompilerVersionOfAttempt\fP"
+.br
+.ti -1c
 .RI "def \fB__unicode__\fP"
 .br
 .in -1c
@@ -86,6 +92,9 @@ Ecodena::Attempt::models::Attempt \-
 .ti -1c
 .RI "\fBquestionID_f\fP"
 .br
+.ti -1c
+.RI "\fBcompilerVersion_f\fP"
+.br
 .in -1c
 .SS "Static Public Attributes"
 
@@ -110,6 +119,9 @@ Ecodena::Attempt::models::Attempt \-
 .br
 .ti -1c
 .RI "tuple \fBtimeOfSubmission_f\fP = models.DateTimeField('Time of Submission', null=False)"
+.br
+.ti -1c
+.RI "tuple \fBcompilerVersion_f\fP = models.ForeignKey(\fBCompilerVersion\fP, verbose_name = 'Compiler version of the \fBAttempt\fP',null=False)"
 .br
 .in -1c
 .SS "Properties"
@@ -136,124 +148,152 @@ Ecodena::Attempt::models::Attempt \-
 .ti -1c
 .RI "\fBquestionID\fP = property(getQuestionID,setQuestionID)"
 .br
+.ti -1c
+.RI "\fBcompilerVersion\fP = property(getCompilerVersionOfAttempt,setCompilerVersionOfAttempt)"
+.br
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 61 of file models.py.
+.PP
+.nf
+Creates an Attempt Entity which is a subclass of models.Model class.fi
+.PP
+ 
+.PP
+Definition at line 66 of file models.py.
 .SH "Member Function Documentation"
 .PP 
 .SS "def Ecodena.Attempt.models.Attempt.__unicode__ (self)"
 .PP
-Definition at line 123 of file models.py.
+Definition at line 137 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.getAttemptID (self)"
 .PP
-Definition at line 71 of file models.py.
+Definition at line 77 of file models.py.
+.SS "def Ecodena.Attempt.models.Attempt.getCompilerVersionOfAttempt (self)"
+.PP
+Definition at line 126 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.getErrorReportID (self)"
 .PP
-Definition at line 99 of file models.py.
+Definition at line 106 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.getQuestionID (self)"
 .PP
-Definition at line 112 of file models.py.
+Definition at line 119 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.getSolution (self)"
 .PP
-Definition at line 105 of file models.py.
+Definition at line 112 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.getTimeOfSubmission (self)"
 .PP
-Definition at line 85 of file models.py.
+Definition at line 92 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.getUserID (self)"
 .PP
-Definition at line 92 of file models.py.
-.SS "def Ecodena.Attempt.models.Attempt.isCorrect (self)"
+Definition at line 99 of file models.py.
+.SS "def Ecodena.Attempt.models.Attempt.isCorrect (self)".PP
+.nf
+Checks the status and returns its value.fi
 .PP
-Definition at line 78 of file models.py.
+ 
+.PP
+Definition at line 84 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.setAttemptID (self, aID)"
 .PP
-Definition at line 73 of file models.py.
+Definition at line 79 of file models.py.
+.SS "def Ecodena.Attempt.models.Attempt.setCompilerVersionOfAttempt (self, compilerVersion)"
+.PP
+Definition at line 128 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.setErrorReportID (self, reportID)"
 .PP
-Definition at line 101 of file models.py.
+Definition at line 108 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.setQuestionID (self, qID)"
 .PP
-Definition at line 114 of file models.py.
+Definition at line 121 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.setSolution (self, sol)"
 .PP
-Definition at line 107 of file models.py.
+Definition at line 114 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.setStatus (self, status)"
 .PP
-Definition at line 80 of file models.py.
+Definition at line 87 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.setTimeOfSubmission (self, time)"
 .PP
-Definition at line 87 of file models.py.
+Definition at line 94 of file models.py.
 .SS "def Ecodena.Attempt.models.Attempt.setUserID (self, uID)"
 .PP
-Definition at line 94 of file models.py.
+Definition at line 101 of file models.py.
 .SH "Member Data Documentation"
 .PP 
 .SS "tuple \fBEcodena.Attempt.models.Attempt.attemptID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
 .PP
-Definition at line 62 of file models.py.
+Definition at line 68 of file models.py.
 .SS "\fBEcodena.Attempt.models.Attempt.attemptID_f\fP"
 .PP
-Definition at line 73 of file models.py.
+Definition at line 79 of file models.py.
+.SS "tuple \fBEcodena.Attempt.models.Attempt.compilerVersion_f\fP = models.ForeignKey(\fBCompilerVersion\fP, verbose_name = 'Compiler version of the \fBAttempt\fP',null=False)\fC [static]\fP"
+.PP
+Definition at line 75 of file models.py.
+.SS "\fBEcodena.Attempt.models.Attempt.compilerVersion_f\fP"
+.PP
+Definition at line 128 of file models.py.
 .SS "tuple \fBEcodena.Attempt.models.Attempt.errorReportID_f\fP = models.ForeignKey(\fBErrorReport\fP,verbose_name='Error Report for the Solution', null=True)\fC [static]\fP"
 .PP
-Definition at line 66 of file models.py.
+Definition at line 72 of file models.py.
 .SS "\fBEcodena.Attempt.models.Attempt.errorReportID_f\fP"
 .PP
-Definition at line 101 of file models.py.
+Definition at line 108 of file models.py.
 .SS "tuple \fBEcodena.Attempt.models.Attempt.questionID_f\fP = models.ForeignKey(\fBQuestion\fP, verbose_name='Question', null=False)\fC [static]\fP"
 .PP
-Definition at line 63 of file models.py.
+Definition at line 69 of file models.py.
 .SS "\fBEcodena.Attempt.models.Attempt.questionID_f\fP"
 .PP
-Definition at line 114 of file models.py.
+Definition at line 121 of file models.py.
 .SS "tuple \fBEcodena.Attempt.models.Attempt.solution_f\fP = models.TextField('Solution uploaded by the User', null=False)\fC [static]\fP"
 .PP
-Definition at line 65 of file models.py.
+Definition at line 71 of file models.py.
 .SS "\fBEcodena.Attempt.models.Attempt.solution_f\fP"
 .PP
-Definition at line 107 of file models.py.
+Definition at line 114 of file models.py.
 .SS "\fBEcodena.Attempt.models.Attempt.status_f\fP"
 .PP
-Definition at line 80 of file models.py.
+Definition at line 87 of file models.py.
 .SS "tuple \fBEcodena.Attempt.models.Attempt.status_f\fP = models.BooleanField('Status of attempt - true = right, false = wrong', blank=True, default=False)\fC [static]\fP"
 .PP
-Definition at line 67 of file models.py.
+Definition at line 73 of file models.py.
 .SS "tuple \fBEcodena.Attempt.models.Attempt.timeOfSubmission_f\fP = models.DateTimeField('Time of Submission', null=False)\fC [static]\fP"
 .PP
-Definition at line 68 of file models.py.
+Definition at line 74 of file models.py.
 .SS "\fBEcodena.Attempt.models.Attempt.timeOfSubmission_f\fP"
-.PP
-Definition at line 87 of file models.py.
-.SS "\fBEcodena.Attempt.models.Attempt.userID_f\fP"
 .PP
 Definition at line 94 of file models.py.
 .SS "tuple \fBEcodena.Attempt.models.Attempt.userID_f\fP = models.ForeignKey(User, verbose_name='User ID', null=False)\fC [static]\fP"
 .PP
-Definition at line 64 of file models.py.
+Definition at line 70 of file models.py.
+.SS "\fBEcodena.Attempt.models.Attempt.userID_f\fP"
+.PP
+Definition at line 101 of file models.py.
 .SH "Property Documentation"
 .PP 
 .SS "Ecodena.Attempt.models.Attempt.attemptID = property(getAttemptID,setAttemptID)\fC [static]\fP"
 .PP
-Definition at line 75 of file models.py.
+Definition at line 81 of file models.py.
+.SS "Ecodena.Attempt.models.Attempt.compilerVersion = property(getCompilerVersionOfAttempt,setCompilerVersionOfAttempt)\fC [static]\fP"
+.PP
+Definition at line 131 of file models.py.
 .SS "Ecodena.Attempt.models.Attempt.errorReportID = property(getErrorReportID,setErrorReportID)\fC [static]\fP"
 .PP
-Definition at line 103 of file models.py.
+Definition at line 110 of file models.py.
 .SS "Ecodena.Attempt.models.Attempt.questionID = property(getQuestionID,setQuestionID)\fC [static]\fP"
 .PP
-Definition at line 117 of file models.py.
+Definition at line 124 of file models.py.
 .SS "Ecodena.Attempt.models.Attempt.solutionText = property(getSolution,setSolution)\fC [static]\fP"
 .PP
-Definition at line 110 of file models.py.
+Definition at line 117 of file models.py.
 .SS "Ecodena.Attempt.models.Attempt.status = property(isCorrect, setStatus)\fC [static]\fP"
 .PP
-Definition at line 82 of file models.py.
+Definition at line 89 of file models.py.
 .SS "Ecodena.Attempt.models.Attempt.timeOfSubmission = property(getTimeOfSubmission,setTimeOfSubmission)\fC [static]\fP"
 .PP
-Definition at line 89 of file models.py.
+Definition at line 96 of file models.py.
 .SS "Ecodena.Attempt.models.Attempt.userID = property(getUserID,setUserID)\fC [static]\fP"
 .PP
-Definition at line 96 of file models.py.
+Definition at line 103 of file models.py.
 
 .SH "Author"
 .PP 

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Question/views.py" line="14" bodyfile="/home/panx/ecodena/src/Ecodena/Question/views.py" bodystart="14" bodyend="17"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Question/views.py" line="15" bodyfile="/home/panx/ecodena/src/Ecodena/Question/views.py" bodystart="15" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="d6/d95/namespace_ecodena_1_1_question_1_1views_1a962dcb94f82ca7ea9922ab42a136d11e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -25,10 +25,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><verbatim>list all the questions with its title
+parameter:request--&gt;All the details associated with URL 
+returns the question.html webpage and the list of questions</verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Question/views.py" line="18" bodyfile="/home/panx/ecodena/src/Ecodena/Question/views.py" bodystart="18" bodyend="21"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Question/views.py" line="19" bodyfile="/home/panx/ecodena/src/Ecodena/Question/views.py" bodystart="19" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="d6/d95/namespace_ecodena_1_1_question_1_1views_1ad422132da431d3d9d298858e38ff0d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -38,10 +40,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><verbatim>A question whose Id is passed as the parameter is displayed with the question title, question text, comment list
+Parameter:request--&gt;All the information of the form is stored in request
+questionID--&gt;the ID of question to be displayed
+If the user is not authenticated then this returns an Http Response stating that the user is not logged in
+If the user is authenticated and the form filled is valid then it returns the page with the question and other details</verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Question/views.py" line="22" bodyfile="/home/panx/ecodena/src/Ecodena/Question/views.py" bodystart="22" bodyend="51"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Question/views.py" line="26" bodyfile="/home/panx/ecodena/src/Ecodena/Question/views.py" bodystart="26" bodyend="60"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

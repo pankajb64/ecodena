@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="88" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="88" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="120" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="120" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="property">
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="94" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="94" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="126" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="126" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="92" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="92" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="124" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="124" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="90" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="90" bodyend="91"/>
+        <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="122" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="122" bodyend="123"/>
       </memberdef>
       <memberdef kind="function" id="d2/d55/class_ecodena_1_1_user_1_1models_1_1_programmer_1a85cc0a80d320757784f98e793c97f07c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -75,14 +75,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="92" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="92" bodyend="93"/>
+        <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="124" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="124" bodyend="125"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para><verbatim>Here Programmer is a subclass of object and creates an entity named Programmer.
+        Basically it represents the users of ECODENA. They can submit their solutions of various problems.
+        parameters: User --&gt; its a class that helps a user to log-in to Ecodena.</verbatim> </para>    </detaileddescription>
     <inheritancegraph>
+      <node id="66">
+        <label>Ecodena.User.models.Programmer</label>
+        <link refid="d2/d55/class_ecodena_1_1_user_1_1models_1_1_programmer"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>User</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
       <node id="68">
         <label>Ecodena.User.models.Programmer</label>
         <link refid="d2/d55/class_ecodena_1_1_user_1_1models_1_1_programmer"/>
@@ -92,19 +105,8 @@
       <node id="69">
         <label>User</label>
       </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="70">
-        <label>Ecodena.User.models.Programmer</label>
-        <link refid="d2/d55/class_ecodena_1_1_user_1_1models_1_1_programmer"/>
-        <childnode refid="71" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="71">
-        <label>User</label>
-      </node>
     </collaborationgraph>
-    <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="88" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="87" bodyend="97"/>
+    <location file="/home/panx/ecodena/src/Ecodena/User/models.py" line="119" bodyfile="/home/panx/ecodena/src/Ecodena/User/models.py" bodystart="116" bodyend="129"/>
     <listofallmembers>
       <member refid="d2/d55/class_ecodena_1_1_user_1_1models_1_1_programmer_1a34466582e823b65ebf0256686e9295a5" prot="public" virt="non-virtual"><scope>Ecodena::User::models::Programmer</scope><name>getLevel</name></member>
       <member refid="d2/d55/class_ecodena_1_1_user_1_1models_1_1_programmer_1a80f2ba5c6d6e335e9f52a22624e933bf" prot="public" virt="non-virtual"><scope>Ecodena::User::models::Programmer</scope><name>level</name></member>

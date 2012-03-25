@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form" kind="class" prot="public">
+    <compoundname>Ecodena::User::views::ProfileForm</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a73dce8ef060c7cea49bc252537828cc5" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.User.views.ProfileForm.username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <initializer>forms.CharField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/User/views.py" line="13" bodyfile="/home/panx/ecodena/src/Ecodena/User/views.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a697b83b7d7dc1b7899bc1d9ee1b9344d" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.User.views.ProfileForm.dob</definition>
+        <argsstring></argsstring>
+        <name>dob</name>
+        <initializer>forms.DateField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/User/views.py" line="14" bodyfile="/home/panx/ecodena/src/Ecodena/User/views.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1ac93f85620334a0793d3d177ea5ac43dd" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.User.views.ProfileForm.GENDER_CHOICES</definition>
+        <argsstring></argsstring>
+        <name>GENDER_CHOICES</name>
+        <initializer>(
+    (&apos;M&apos;, &apos;Male&apos;),
+    (&apos;F&apos;, &apos;Female&apos;),
+	)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/User/views.py" line="15" bodyfile="/home/panx/ecodena/src/Ecodena/User/views.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a943ea113aeb5c4ce8109a079119bb84e" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.User.views.ProfileForm.gender</definition>
+        <argsstring></argsstring>
+        <name>gender</name>
+        <initializer>forms.ChoiceField(choices=<ref refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1ac93f85620334a0793d3d177ea5ac43dd" kindref="member">GENDER_CHOICES</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/User/views.py" line="19" bodyfile="/home/panx/ecodena/src/Ecodena/User/views.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1add6304c2997c575733a2e1a47113752c" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.User.views.ProfileForm.email</definition>
+        <argsstring></argsstring>
+        <name>email</name>
+        <initializer>forms.EmailField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/User/views.py" line="20" bodyfile="/home/panx/ecodena/src/Ecodena/User/views.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a11096920cec16a7bcfcfd320b42a6c94" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Ecodena.User.views.ProfileForm.address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <initializer>forms.CharField(widget=forms.Textarea)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/panx/ecodena/src/Ecodena/User/views.py" line="21" bodyfile="/home/panx/ecodena/src/Ecodena/User/views.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/User/views.py" line="13" bodyfile="/home/panx/ecodena/src/Ecodena/User/views.py" bodystart="12" bodyend="24"/>
+    <listofallmembers>
+      <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a11096920cec16a7bcfcfd320b42a6c94" prot="public" virt="non-virtual"><scope>Ecodena::User::views::ProfileForm</scope><name>address</name></member>
+      <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a697b83b7d7dc1b7899bc1d9ee1b9344d" prot="public" virt="non-virtual"><scope>Ecodena::User::views::ProfileForm</scope><name>dob</name></member>
+      <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1add6304c2997c575733a2e1a47113752c" prot="public" virt="non-virtual"><scope>Ecodena::User::views::ProfileForm</scope><name>email</name></member>
+      <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a943ea113aeb5c4ce8109a079119bb84e" prot="public" virt="non-virtual"><scope>Ecodena::User::views::ProfileForm</scope><name>gender</name></member>
+      <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1ac93f85620334a0793d3d177ea5ac43dd" prot="public" virt="non-virtual"><scope>Ecodena::User::views::ProfileForm</scope><name>GENDER_CHOICES</name></member>
+      <member refid="db/d79/class_ecodena_1_1_user_1_1views_1_1_profile_form_1a73dce8ef060c7cea49bc252537828cc5" prot="public" virt="non-virtual"><scope>Ecodena::User::views::ProfileForm</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

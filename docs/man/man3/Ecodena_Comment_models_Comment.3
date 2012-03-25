@@ -1,4 +1,4 @@
-.TH "Ecodena::Comment::models::Comment" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.TH "Ecodena::Comment::models::Comment" 3 "Sun Mar 25 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -127,109 +127,125 @@ Ecodena::Comment::models::Comment \-
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 8 of file models.py.
+.PP
+.nf
+Here Comment is subclass of models.Model and Creates an entity named Comment..fi
+.PP
+ 
+.PP
+Definition at line 9 of file models.py.
 .SH "Member Function Documentation"
 .PP 
 .SS "def Ecodena.Comment.models.Comment.__unicode__ (self)"
 .PP
-Definition at line 69 of file models.py.
+Definition at line 75 of file models.py.
 .SS "def Ecodena.Comment.models.Comment.getCommentText (self)"
 .PP
-Definition at line 18 of file models.py.
+Definition at line 20 of file models.py.
 .SS "def Ecodena.Comment.models.Comment.getQuestionID (self)"
 .PP
-Definition at line 59 of file models.py.
+Definition at line 65 of file models.py.
 .SS "def Ecodena.Comment.models.Comment.getReportingUserID (self)"
 .PP
-Definition at line 50 of file models.py.
+Definition at line 56 of file models.py.
 .SS "def Ecodena.Comment.models.Comment.getTimeStamp (self)"
 .PP
-Definition at line 26 of file models.py.
+Definition at line 28 of file models.py.
 .SS "def Ecodena.Comment.models.Comment.getUserID (self)"
 .PP
-Definition at line 43 of file models.py.
-.SS "def Ecodena.Comment.models.Comment.isReported (self)"
+Definition at line 49 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.isReported (self)".PP
+.nf
+If user is abused from any other user's comment then that user can report abuse that comment. 
+        And if the function will return comment is reported thanthat means someone has reported it..fi
 .PP
-Definition at line 34 of file models.py.
-.SS "def Ecodena.Comment.models.Comment.report (self, status)"
+ 
 .PP
-Definition at line 38 of file models.py.
+Definition at line 36 of file models.py.
+.SS "def Ecodena.Comment.models.Comment.report (self, status)".PP
+.nf
+If user is abused from any other user's comment then that user can report abuse that comment.
+        So the user will set this status i.e comment isreported now..fi
+.PP
+ 
+.PP
+Definition at line 42 of file models.py.
 .SS "def Ecodena.Comment.models.Comment.setCommentText (self, comment)"
 .PP
-Definition at line 20 of file models.py.
+Definition at line 22 of file models.py.
 .SS "def Ecodena.Comment.models.Comment.setQuestionID (self, qID)"
 .PP
-Definition at line 61 of file models.py.
+Definition at line 67 of file models.py.
 .SS "def Ecodena.Comment.models.Comment.setReportingUserID (self, ruID)"
 .PP
-Definition at line 52 of file models.py.
+Definition at line 58 of file models.py.
 .SS "def Ecodena.Comment.models.Comment.setTimeStamp (self, Timestamp)"
 .PP
-Definition at line 28 of file models.py.
+Definition at line 30 of file models.py.
 .SS "def Ecodena.Comment.models.Comment.setUserID (self, uID)"
 .PP
-Definition at line 45 of file models.py.
+Definition at line 51 of file models.py.
 .SH "Member Data Documentation"
 .PP 
 .SS "tuple \fBEcodena.Comment.models.Comment.commentID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
 .PP
-Definition at line 9 of file models.py.
+Definition at line 11 of file models.py.
 .SS "tuple \fBEcodena.Comment.models.Comment.commentText_f\fP = models.TextField('The Body of the \fBComment\fP', null=False)\fC [static]\fP"
 .PP
-Definition at line 10 of file models.py.
+Definition at line 12 of file models.py.
 .SS "\fBEcodena.Comment.models.Comment.commentText_f\fP"
 .PP
-Definition at line 20 of file models.py.
+Definition at line 22 of file models.py.
 .SS "\fBEcodena.Comment.models.Comment.isReported_f\fP"
 .PP
-Definition at line 38 of file models.py.
+Definition at line 43 of file models.py.
 .SS "tuple \fBEcodena.Comment.models.Comment.isReported_f\fP = models.BooleanField('Is the comment Reported ?', default=False)\fC [static]\fP"
 .PP
-Definition at line 11 of file models.py.
+Definition at line 13 of file models.py.
 .SS "\fBEcodena.Comment.models.Comment.questionID_f\fP"
 .PP
-Definition at line 61 of file models.py.
+Definition at line 67 of file models.py.
 .SS "tuple \fBEcodena.Comment.models.Comment.questionID_f\fP = models.ForeignKey(\fBQuestion\fP, verbose_name='Question ID', null=False)\fC [static]\fP"
 .PP
-Definition at line 14 of file models.py.
+Definition at line 16 of file models.py.
 .SS "\fBEcodena.Comment.models.Comment.reportingUserID_f\fP"
 .PP
-Definition at line 52 of file models.py.
+Definition at line 58 of file models.py.
 .SS "tuple \fBEcodena.Comment.models.Comment.reportingUserID_f\fP = models.ForeignKey(User, verbose_name='User who reported this comment', blank=True, null=True)\fC [static]\fP"
 .PP
-Definition at line 13 of file models.py.
+Definition at line 15 of file models.py.
 .SS "tuple \fBEcodena.Comment.models.Comment.timeStamp_f\fP = models.DateTimeField('Time of Posting', null=False)\fC [static]\fP"
 .PP
-Definition at line 15 of file models.py.
+Definition at line 17 of file models.py.
 .SS "\fBEcodena.Comment.models.Comment.timeStamp_f\fP"
 .PP
-Definition at line 28 of file models.py.
+Definition at line 30 of file models.py.
 .SS "tuple \fBEcodena.Comment.models.Comment.userID_f\fP = models.ForeignKey(User, verbose_name='User ID', null=False, related_name='+' )\fC [static]\fP"
 .PP
-Definition at line 12 of file models.py.
+Definition at line 14 of file models.py.
 .SS "\fBEcodena.Comment.models.Comment.userID_f\fP"
 .PP
-Definition at line 45 of file models.py.
+Definition at line 51 of file models.py.
 .SH "Property Documentation"
 .PP 
 .SS "Ecodena.Comment.models.Comment.commentText = property(getCommentText, setCommentText)\fC [static]\fP"
 .PP
-Definition at line 22 of file models.py.
+Definition at line 24 of file models.py.
 .SS "Ecodena.Comment.models.Comment.isReported = property(isReported, report)\fC [static]\fP"
 .PP
-Definition at line 41 of file models.py.
+Definition at line 47 of file models.py.
 .SS "Ecodena.Comment.models.Comment.questionID = property(getQuestionID, setQuestionID)\fC [static]\fP"
 .PP
-Definition at line 63 of file models.py.
+Definition at line 69 of file models.py.
 .SS "Ecodena.Comment.models.Comment.reportingUserID = property(getReportingUserID, setReportingUserID)\fC [static]\fP"
 .PP
-Definition at line 55 of file models.py.
+Definition at line 61 of file models.py.
 .SS "Ecodena.Comment.models.Comment.timeStamp = property(getTimeStamp, setTimeStamp)\fC [static]\fP"
 .PP
-Definition at line 30 of file models.py.
+Definition at line 32 of file models.py.
 .SS "Ecodena.Comment.models.Comment.userID = property(getUserID, setUserID)\fC [static]\fP"
 .PP
-Definition at line 47 of file models.py.
+Definition at line 53 of file models.py.
 
 .SH "Author"
 .PP 

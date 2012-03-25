@@ -299,19 +299,19 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="21">
+      <node id="17">
         <label>Ecodena.Compiler.models.CCompiler111</label>
         <link refid="d6/d1e/class_ecodena_1_1_compiler_1_1models_1_1_c_compiler111"/>
-        <childnode refid="20" relation="public-inheritance">
+        <childnode refid="16" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="22">
+      <node id="18">
         <label>Ecodena.Compiler.models.JavaCompiler111</label>
         <link refid="d6/d80/class_ecodena_1_1_compiler_1_1models_1_1_java_compiler111"/>
-        <childnode refid="20" relation="public-inheritance">
+        <childnode refid="16" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="20">
+      <node id="16">
         <label>Ecodena.Compiler.models.Compiler</label>
         <link refid="d1/d44/class_ecodena_1_1_compiler_1_1models_1_1_compiler"/>
       </node>

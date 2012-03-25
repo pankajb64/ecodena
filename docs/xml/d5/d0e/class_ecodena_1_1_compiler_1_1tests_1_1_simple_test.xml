@@ -25,24 +25,24 @@ Tests that 1 + 1 always equals 2.
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="91">
+      <node id="85">
         <label>TestCase</label>
       </node>
-      <node id="90">
+      <node id="84">
         <label>Ecodena.Compiler.tests.SimpleTest</label>
         <link refid="d5/d0e/class_ecodena_1_1_compiler_1_1tests_1_1_simple_test"/>
-        <childnode refid="91" relation="public-inheritance">
+        <childnode refid="85" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="93">
+      <node id="87">
         <label>TestCase</label>
       </node>
-      <node id="92">
+      <node id="86">
         <label>Ecodena.Compiler.tests.SimpleTest</label>
         <link refid="d5/d0e/class_ecodena_1_1_compiler_1_1tests_1_1_simple_test"/>
-        <childnode refid="93" relation="public-inheritance">
+        <childnode refid="87" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

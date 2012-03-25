@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="29" bodyfile="/home/panx/ecodena/src/Ecodena/Question/models.py" bodystart="29" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="33" bodyfile="/home/panx/ecodena/src/Ecodena/Question/models.py" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d4/d6c/class_ecodena_1_1_question_1_1models_1_1_type_1a59414f1e8b717e74171c97e897f08800" prot="public" static="yes" mutable="no">
         <type>tuple</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="30" bodyfile="/home/panx/ecodena/src/Ecodena/Question/models.py" bodystart="30" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="34" bodyfile="/home/panx/ecodena/src/Ecodena/Question/models.py" bodystart="34" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -45,14 +45,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="36" bodyfile="/home/panx/ecodena/src/Ecodena/Question/models.py" bodystart="36" bodyend="39"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="40" bodyfile="/home/panx/ecodena/src/Ecodena/Question/models.py" bodystart="40" bodyend="43"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-    </detaileddescription>
-    <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="29" bodyfile="/home/panx/ecodena/src/Ecodena/Question/models.py" bodystart="28" bodyend="40"/>
+<para><verbatim>Creates the entity Type which is a subclass of models.Model class</verbatim> </para>    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Question/models.py" line="32" bodyfile="/home/panx/ecodena/src/Ecodena/Question/models.py" bodystart="31" bodyend="44"/>
     <listofallmembers>
       <member refid="d4/d6c/class_ecodena_1_1_question_1_1models_1_1_type_1a93856158301bf1adb087684943ef9483" prot="public" virt="non-virtual"><scope>Ecodena::Question::models::Type</scope><name>__unicode__</name></member>
       <member refid="d4/d6c/class_ecodena_1_1_question_1_1models_1_1_type_1a40ce13fbc80fa5236e6a44ffa05ce2f3" prot="public" virt="non-virtual"><scope>Ecodena::Question::models::Type</scope><name>typeID_f</name></member>

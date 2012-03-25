@@ -54,7 +54,7 @@ tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_error_report_aafea830ed
 \item 
 tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a6251188760c30f622c68f126ba37c765}{memory\_\-f} = models.FloatField(\char`\"{}Memory Requirement\char`\"{})
 \item 
-tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a83fffbd11c0969a40133740c84f41bc1}{ERROR\_\-TYPE} = ((0,'Correct Answer'),(1,'Compilation Error'),(2,'Run Time Error'),(3,'Time limit Exceeded'),(4,'Memory Limit Exceeded'),(5,'Wrong Answer'))
+tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a83fffbd11c0969a40133740c84f41bc1}{ERROR\_\-TYPE} = ((0,'Correct Answer'),(1,'Compilation Error'),(2,'Run Time Error'),(3,'Time limit Exceeded'),(4,'Memory Limit Exceeded'),(5,'Wrong Answer'),(6,'Pending'))
 \item 
 tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a2206247ced5f221ac3622b203c27d98a}{errorType\_\-f} = models.CharField( max\_\-length = 40, choices=\hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a83fffbd11c0969a40133740c84f41bc1}{ERROR\_\-TYPE},verbose\_\-name=\char`\"{}Types of Errors\char`\"{})
 \item 
@@ -78,9 +78,10 @@ tuple \hyperlink{class_ecodena_1_1_attempt_1_1models_1_1_error_report_abb78bf4e7
 
 
 \subsection{Detailed Description}
+\begin{DoxyVerb}Creates an ErrorReport Entity which is a subclass of models.Model class\end{DoxyVerb}
+ 
 
-
-Definition at line 9 of file models.py.
+Definition at line 13 of file models.py.
 
 
 
@@ -96,7 +97,7 @@ Definition at line 9 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a7d15794e217da1e0d09e1f16ba804d49}
 
 
-Definition at line 57 of file models.py.
+Definition at line 62 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_ac23ed6ae46a4c923ddeaec0b57397160}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!getErrorMessage@{getErrorMessage}}
@@ -109,7 +110,7 @@ Definition at line 57 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_ac23ed6ae46a4c923ddeaec0b57397160}
 
 
-Definition at line 40 of file models.py.
+Definition at line 45 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_ac80d5ea52a38d411d1874aa9bfdce935}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!getErrorType@{getErrorType}}
@@ -122,7 +123,7 @@ Definition at line 40 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_ac80d5ea52a38d411d1874aa9bfdce935}
 
 
-Definition at line 33 of file models.py.
+Definition at line 38 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a29de49227929585ef825e530bcf4fb6c}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!getMemory@{getMemory}}
@@ -135,7 +136,7 @@ Definition at line 33 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a29de49227929585ef825e530bcf4fb6c}
 
 
-Definition at line 26 of file models.py.
+Definition at line 31 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a546db782928ceb0232af249c93a7dfc8}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!getTestCaseLevel@{getTestCaseLevel}}
@@ -148,7 +149,7 @@ Definition at line 26 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a546db782928ceb0232af249c93a7dfc8}
 
 
-Definition at line 47 of file models.py.
+Definition at line 52 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_ac40ed2cade65a88a2cf17645254e2ff1}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!getTimeRequirement@{getTimeRequirement}}
@@ -161,7 +162,7 @@ Definition at line 47 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_ac40ed2cade65a88a2cf17645254e2ff1}
 
 
-Definition at line 19 of file models.py.
+Definition at line 24 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a2080aea76dfbdaf3853ede3d8ef2931f}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!setErrorMessage@{setErrorMessage}}
@@ -175,7 +176,7 @@ Definition at line 19 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a2080aea76dfbdaf3853ede3d8ef2931f}
 
 
-Definition at line 42 of file models.py.
+Definition at line 47 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a7d0f8fbe2f7816dbcb210f52d2ad4725}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!setErrorType@{setErrorType}}
@@ -189,7 +190,7 @@ Definition at line 42 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a7d0f8fbe2f7816dbcb210f52d2ad4725}
 
 
-Definition at line 35 of file models.py.
+Definition at line 40 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a97b2d5371ac7edf1e74d849b3a2eb19e}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!setMemory@{setMemory}}
@@ -203,7 +204,7 @@ Definition at line 35 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a97b2d5371ac7edf1e74d849b3a2eb19e}
 
 
-Definition at line 28 of file models.py.
+Definition at line 33 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_af1ec9fcf090b07d29e5acce01bbd4fcc}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!setTestCaseLevel@{setTestCaseLevel}}
@@ -217,7 +218,7 @@ Definition at line 28 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_af1ec9fcf090b07d29e5acce01bbd4fcc}
 
 
-Definition at line 49 of file models.py.
+Definition at line 54 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a86aea8bb8422b2c469380dc172f53ee5}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!setTimeRequirement@{setTimeRequirement}}
@@ -231,7 +232,7 @@ Definition at line 49 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a86aea8bb8422b2c469380dc172f53ee5}
 
 
-Definition at line 21 of file models.py.
+Definition at line 26 of file models.py.
 
 
 
@@ -239,11 +240,11 @@ Definition at line 21 of file models.py.
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a83fffbd11c0969a40133740c84f41bc1}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!ERROR\_\-TYPE@{ERROR\_\-TYPE}}
 \index{ERROR\_\-TYPE@{ERROR\_\-TYPE}!Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}}
-\subsubsection[{ERROR\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Attempt.models.ErrorReport.ERROR\_\-TYPE} = ((0,'Correct Answer'),(1,'Compilation Error'),(2,'Run Time Error'),(3,'Time limit Exceeded'),(4,'Memory Limit Exceeded'),(5,'Wrong Answer'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\subsubsection[{ERROR\_\-TYPE}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf Ecodena.Attempt.models.ErrorReport.ERROR\_\-TYPE} = ((0,'Correct Answer'),(1,'Compilation Error'),(2,'Run Time Error'),(3,'Time limit Exceeded'),(4,'Memory Limit Exceeded'),(5,'Wrong Answer'),(6,'Pending'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a83fffbd11c0969a40133740c84f41bc1}
 
 
-Definition at line 13 of file models.py.
+Definition at line 18 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a5fbebb2285d654535fc28825c477af65}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!errorMessage\_\-f@{errorMessage\_\-f}}
@@ -252,7 +253,7 @@ Definition at line 13 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a5fbebb2285d654535fc28825c477af65}
 
 
-Definition at line 42 of file models.py.
+Definition at line 47 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_ac3c6ddeb8bb514c31ef17a8b2c61fbbe}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!errorMessage\_\-f@{errorMessage\_\-f}}
@@ -261,7 +262,7 @@ Definition at line 42 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_ac3c6ddeb8bb514c31ef17a8b2c61fbbe}
 
 
-Definition at line 15 of file models.py.
+Definition at line 20 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a2af69996b9b6d05f1bdfeff5d05f1fc6}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!errorReportID\_\-f@{errorReportID\_\-f}}
@@ -270,7 +271,7 @@ Definition at line 15 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a2af69996b9b6d05f1bdfeff5d05f1fc6}
 
 
-Definition at line 10 of file models.py.
+Definition at line 15 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_af26b1061aca87017c2a7297692ad08ac}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!errorType\_\-f@{errorType\_\-f}}
@@ -279,7 +280,7 @@ Definition at line 10 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_af26b1061aca87017c2a7297692ad08ac}
 
 
-Definition at line 35 of file models.py.
+Definition at line 40 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a2206247ced5f221ac3622b203c27d98a}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!errorType\_\-f@{errorType\_\-f}}
@@ -288,7 +289,7 @@ Definition at line 35 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a2206247ced5f221ac3622b203c27d98a}
 
 
-Definition at line 14 of file models.py.
+Definition at line 19 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a858275b05dc21b8b755b3b393ad38fb7}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!memory\_\-f@{memory\_\-f}}
@@ -297,7 +298,7 @@ Definition at line 14 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a858275b05dc21b8b755b3b393ad38fb7}
 
 
-Definition at line 28 of file models.py.
+Definition at line 33 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a6251188760c30f622c68f126ba37c765}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!memory\_\-f@{memory\_\-f}}
@@ -306,7 +307,7 @@ Definition at line 28 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a6251188760c30f622c68f126ba37c765}
 
 
-Definition at line 12 of file models.py.
+Definition at line 17 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_ad6bef1ac293f3dd474cc47975aa77be2}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!testCaseLevel\_\-f@{testCaseLevel\_\-f}}
@@ -315,7 +316,7 @@ Definition at line 12 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_ad6bef1ac293f3dd474cc47975aa77be2}
 
 
-Definition at line 49 of file models.py.
+Definition at line 54 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_abb78bf4e72de46a0c4d144d5e95ed80d}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!testCaseLevel\_\-f@{testCaseLevel\_\-f}}
@@ -324,7 +325,7 @@ Definition at line 49 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_abb78bf4e72de46a0c4d144d5e95ed80d}
 
 
-Definition at line 16 of file models.py.
+Definition at line 21 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_ab3b846491a8aa2fa4135ed71f0eedfd0}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!timeRequirement\_\-f@{timeRequirement\_\-f}}
@@ -333,7 +334,7 @@ Definition at line 16 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_ab3b846491a8aa2fa4135ed71f0eedfd0}
 
 
-Definition at line 21 of file models.py.
+Definition at line 26 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_aafea830ed4b75d8af62b447a58a23fdb}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!timeRequirement\_\-f@{timeRequirement\_\-f}}
@@ -342,7 +343,7 @@ Definition at line 21 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_aafea830ed4b75d8af62b447a58a23fdb}
 
 
-Definition at line 11 of file models.py.
+Definition at line 16 of file models.py.
 
 
 
@@ -354,7 +355,7 @@ Definition at line 11 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a56aeca1efa6009ebf80c53d118e4f5eb}
 
 
-Definition at line 44 of file models.py.
+Definition at line 49 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a76dd2e9f06b5ba04cf47e088bc4b47b4}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!errorType@{errorType}}
@@ -363,7 +364,7 @@ Definition at line 44 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a76dd2e9f06b5ba04cf47e088bc4b47b4}
 
 
-Definition at line 37 of file models.py.
+Definition at line 42 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_aa8a1d6fab3c2db3efdcc2fe98cb53194}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!memory@{memory}}
@@ -372,7 +373,7 @@ Definition at line 37 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_aa8a1d6fab3c2db3efdcc2fe98cb53194}
 
 
-Definition at line 30 of file models.py.
+Definition at line 35 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_ad9c444fda937b61e579bd7fd78787720}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!testCaseLevel@{testCaseLevel}}
@@ -381,7 +382,7 @@ Definition at line 30 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_ad9c444fda937b61e579bd7fd78787720}
 
 
-Definition at line 51 of file models.py.
+Definition at line 56 of file models.py.
 
 \hypertarget{class_ecodena_1_1_attempt_1_1models_1_1_error_report_a4768d336f6e6359b866809f017e279a0}{
 \index{Ecodena::Attempt::models::ErrorReport@{Ecodena::Attempt::models::ErrorReport}!timeRequirement@{timeRequirement}}
@@ -390,7 +391,7 @@ Definition at line 51 of file models.py.
 \label{df/d02/class_ecodena_1_1_attempt_1_1models_1_1_error_report_a4768d336f6e6359b866809f017e279a0}
 
 
-Definition at line 23 of file models.py.
+Definition at line 28 of file models.py.
 
 
 

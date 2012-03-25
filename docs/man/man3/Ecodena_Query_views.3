@@ -1,4 +1,4 @@
-.TH "Ecodena.Query.views" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.TH "Ecodena.Query.views" 3 "Sun Mar 25 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -20,11 +20,27 @@ Ecodena.Query.views \-
 .RI "def \fBpostQuery\fP"
 .br
 .in -1c
+.SH "Detailed Description"
+.PP 
+.PP
+.nf
+Its our Post Query app's views.py, i.e. how Post Query app will shown to user.fi
+.PP
+ 
 .SH "Function Documentation"
 .PP 
-.SS "def Ecodena.Query.views.postQuery (request)"
+.SS "def Ecodena.Query.views.postQuery (request)".PP
+.nf
+Method will provide a form to user, method wil note down the time, date and userID of the user, 
+        before all this method will check wether the user is authenticated or not,
+        if authenticated the user will be able to post query 
+        and if not authenticated then a message will pop-up user has to login first. 
+        Parameter: request --> All the information of the form is stored in request. 
+        Function will return a Post query html page..fi
 .PP
-Definition at line 15 of file views.py.
+ 
+.PP
+Definition at line 16 of file views.py.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for Ecodena from the source code.

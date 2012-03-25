@@ -25,7 +25,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../ecodena small1.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Ecodena&#160;<span id="projectnumber">1.0</span></div>
    <div id="projectbrief">The Online Judge System</div>
@@ -82,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">/home/panx/ecodena/src/Ecodena/Query/views.py</div>  </div>
 </div>
 <div class="contents">
-<a href="../../dd/d7d/_query_2views_8py.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a><a class="code" href="../../de/da8/namespace_ecodena_1_1_query_1_1views.html">00001</a> <span class="comment"># Create your views here.</span>
+<a href="../../dd/d7d/_query_2views_8py.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a><a class="code" href="../../de/da8/namespace_ecodena_1_1_query_1_1views.html">00001</a> <span class="stringliteral">&#39;&#39;&#39; Its our Post Query app&#39;s views.py, i.e. how Post Query app will shown to user&#39;&#39;&#39;</span>
 <a name="l00002"></a>00002 <span class="keyword">from</span> datetime <span class="keyword">import</span> datetime
 <a name="l00003"></a>00003 <span class="keyword">from</span> django.http <span class="keyword">import</span> HttpResponse
 <a name="l00004"></a>00004 <span class="keyword">from</span> models <span class="keyword">import</span> Query
@@ -92,41 +91,48 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00008"></a>00008 <span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render_to_response
 <a name="l00009"></a>00009 
 <a name="l00010"></a><a class="code" href="../../dd/dee/class_ecodena_1_1_query_1_1views_1_1_query_form.html">00010</a> <span class="keyword">class </span><a class="code" href="../../dd/dee/class_ecodena_1_1_query_1_1views_1_1_query_form.html">QueryForm</a>(forms.Form):
-<a name="l00011"></a><a class="code" href="../../dd/dee/class_ecodena_1_1_query_1_1views_1_1_query_form.html#a2c0801fd8cba4ce11004ea7c14823bfa">00011</a>         text = forms.CharField(widget=forms.Textarea)
-<a name="l00012"></a>00012         <span class="comment">#class Meta:</span>
-<a name="l00013"></a>00013         <span class="comment">#       model = Query</span>
-<a name="l00014"></a>00014 
-<a name="l00015"></a><a class="code" href="../../de/da8/namespace_ecodena_1_1_query_1_1views.html#a694a1ef99cb6f634b1f8df56848589cd">00015</a> <span class="keyword">def </span><a class="code" href="../../de/da8/namespace_ecodena_1_1_query_1_1views.html#a694a1ef99cb6f634b1f8df56848589cd">postQuery</a>(request):
-<a name="l00016"></a>00016         <span class="keywordflow">if</span> request.user.is_authenticated():
-<a name="l00017"></a>00017                 
-<a name="l00018"></a>00018                 f=QueryForm
-<a name="l00019"></a>00019                 dc = { <span class="stringliteral">&#39;form&#39;</span> :f} 
-<a name="l00020"></a>00020                 context = RequestContext(request, dc)
-<a name="l00021"></a>00021                 Timestamp=datetime.now()
-<a name="l00022"></a>00022                 <span class="keywordflow">if</span> request.method == <span class="stringliteral">&#39;POST&#39;</span>:
-<a name="l00023"></a>00023                         f=QueryForm(request.POST)
-<a name="l00024"></a>00024                         <span class="keywordflow">if</span> <span class="keywordflow">not</span> f.is_valid():
-<a name="l00025"></a>00025                                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;postquery.html&#39;</span>,context)
-<a name="l00026"></a>00026                         <span class="keywordflow">else</span>:
-<a name="l00027"></a>00027                                 q=Query()
-<a name="l00028"></a>00028                                 q.queryText=f[<span class="stringliteral">&#39;text&#39;</span>].data
-<a name="l00029"></a>00029                                 q.userID=User.objects.filter(username=userID)[0]
-<a name="l00030"></a>00030                                 q.queryTime=Timestamp
-<a name="l00031"></a>00031                                 q.save()
-<a name="l00032"></a>00032                                 qID=q.queryID
-<a name="l00033"></a>00033                                 dc = {<span class="stringliteral">&#39;queryID&#39;</span> :qID}
-<a name="l00034"></a>00034                                 context = RequestContext(request,dc)
-<a name="l00035"></a>00035                                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;postquery.html&#39;</span>,context)
-<a name="l00036"></a>00036                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;postquery.html&#39;</span>,context)
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038         <span class="keywordflow">else</span>:
-<a name="l00039"></a>00039                 <span class="keywordflow">return</span> HttpResponse(<span class="stringliteral">&quot;You need to log in first, only then can you access the url %s&quot;</span> %request.path)
+<a name="l00011"></a>00011         <span class="stringliteral">&#39;&#39;&#39; Its a form which user have to fill in order to post a query&#39;&#39;&#39;</span>
+<a name="l00012"></a><a class="code" href="../../dd/dee/class_ecodena_1_1_query_1_1views_1_1_query_form.html#a2c0801fd8cba4ce11004ea7c14823bfa">00012</a>         text = forms.CharField(widget=forms.Textarea)
+<a name="l00013"></a>00013         <span class="comment">#class Meta:</span>
+<a name="l00014"></a>00014         <span class="comment">#       model = Query</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a><a class="code" href="../../de/da8/namespace_ecodena_1_1_query_1_1views.html#a694a1ef99cb6f634b1f8df56848589cd">00016</a> <span class="keyword">def </span><a class="code" href="../../de/da8/namespace_ecodena_1_1_query_1_1views.html#a694a1ef99cb6f634b1f8df56848589cd">postQuery</a>(request):
+<a name="l00017"></a>00017         <span class="stringliteral">&#39;&#39;&#39;Method will provide a form to user, method wil note down the time, date and userID of the user, </span>
+<a name="l00018"></a>00018 <span class="stringliteral">                before all this method will check wether the user is authenticated or not,</span>
+<a name="l00019"></a>00019 <span class="stringliteral">                if authenticated the user will be able to post query </span>
+<a name="l00020"></a>00020 <span class="stringliteral">                and if not authenticated then a message will pop-up user has to login first. </span>
+<a name="l00021"></a>00021 <span class="stringliteral">                Parameter: request --&gt; All the information of the form is stored in request. </span>
+<a name="l00022"></a>00022 <span class="stringliteral">                Function will return a Post query html page.&#39;&#39;&#39;</span>
+<a name="l00023"></a>00023         <span class="keywordflow">if</span> request.user.is_authenticated():
+<a name="l00024"></a>00024                 
+<a name="l00025"></a>00025                 f=QueryForm
+<a name="l00026"></a>00026                 dc = { <span class="stringliteral">&#39;form&#39;</span> :f} 
+<a name="l00027"></a>00027                 context = RequestContext(request, dc)
+<a name="l00028"></a>00028                 Timestamp=datetime.now()
+<a name="l00029"></a>00029                 <span class="keywordflow">if</span> request.method == <span class="stringliteral">&#39;POST&#39;</span>:
+<a name="l00030"></a>00030                         f=QueryForm(request.POST)
+<a name="l00031"></a>00031                         <span class="keywordflow">if</span> <span class="keywordflow">not</span> f.is_valid():
+<a name="l00032"></a>00032                                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;postquery.html&#39;</span>,context)
+<a name="l00033"></a>00033                         <span class="keywordflow">else</span>:
+<a name="l00034"></a>00034                                 q=Query()
+<a name="l00035"></a>00035                                 q.queryText=f[<span class="stringliteral">&#39;text&#39;</span>].data
+<a name="l00036"></a>00036                                 q.userID=User.objects.filter(username=userID)[0]
+<a name="l00037"></a>00037                                 q.queryTime=Timestamp
+<a name="l00038"></a>00038                                 q.save()
+<a name="l00039"></a>00039                                 qID=q.queryID
+<a name="l00040"></a>00040                                 dc = {<span class="stringliteral">&#39;queryID&#39;</span> :qID}
+<a name="l00041"></a>00041                                 context = RequestContext(request,dc)
+<a name="l00042"></a>00042                                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;postquery.html&#39;</span>,context)
+<a name="l00043"></a>00043                 <span class="keywordflow">return</span> render_to_response(<span class="stringliteral">&#39;postquery.html&#39;</span>,context)
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045         <span class="keywordflow">else</span>:
+<a name="l00046"></a>00046                 <span class="keywordflow">return</span> HttpResponse(<span class="stringliteral">&quot;You need to log in first, only then can you access the url %s&quot;</span> %request.path)
 </pre></div></div>
 </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="../../dd/d7d/_query_2views_8py.html">views.py</a>      </li>
-      <li class="footer">Generated on Tue Mar 20 2012 05:32:41 for Ecodena by&#160;
+      <li class="footer">Generated on Sun Mar 25 2012 09:50:05 for Ecodena by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.4 </li>
     </ul>

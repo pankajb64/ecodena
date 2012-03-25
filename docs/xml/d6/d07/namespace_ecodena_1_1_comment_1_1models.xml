@@ -6,7 +6,7 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para><verbatim>Its a models.py of Comment app, i.e. it will create a basic model for Comment app.</verbatim> </para>    </detaileddescription>
     <location file="/home/panx/ecodena/src/Ecodena/Comment/models.py" line="1"/>
   </compounddef>
 </doxygen>

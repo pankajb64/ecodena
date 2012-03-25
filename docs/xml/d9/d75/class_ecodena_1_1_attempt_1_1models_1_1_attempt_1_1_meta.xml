@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="120" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="120" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="134" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d75/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1_1_meta_1a6c17e0ddf87e78bbb89ec50ff652dd5c" prot="public" static="yes" mutable="no">
         <type>string</type>
@@ -29,14 +29,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="121" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="121" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="135" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="135" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="120" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="119" bodyend="122"/>
+    <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="134" bodyfile="/home/panx/ecodena/src/Ecodena/Attempt/models.py" bodystart="133" bodyend="136"/>
     <listofallmembers>
       <member refid="d9/d75/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1_1_meta_1adaf86eddd52ba00b4a504002b7e5ba35" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt::Meta</scope><name>verbose_name</name></member>
       <member refid="d9/d75/class_ecodena_1_1_attempt_1_1models_1_1_attempt_1_1_meta_1a6c17e0ddf87e78bbb89ec50ff652dd5c" prot="public" virt="non-virtual"><scope>Ecodena::Attempt::models::Attempt::Meta</scope><name>verbose_name_plural</name></member>

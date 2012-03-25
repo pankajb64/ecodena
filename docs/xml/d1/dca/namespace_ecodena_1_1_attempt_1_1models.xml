@@ -7,7 +7,7 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para><verbatim>This file creates the model Attempt</verbatim> </para>    </detaileddescription>
     <location file="/home/panx/ecodena/src/Ecodena/Attempt/models.py" line="1"/>
   </compounddef>
 </doxygen>

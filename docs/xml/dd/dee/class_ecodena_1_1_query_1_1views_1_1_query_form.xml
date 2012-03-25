@@ -15,14 +15,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/panx/ecodena/src/Ecodena/Query/views.py" line="11" bodyfile="/home/panx/ecodena/src/Ecodena/Query/views.py" bodystart="11" bodyend="-1"/>
+        <location file="/home/panx/ecodena/src/Ecodena/Query/views.py" line="12" bodyfile="/home/panx/ecodena/src/Ecodena/Query/views.py" bodystart="12" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-    </detaileddescription>
-    <location file="/home/panx/ecodena/src/Ecodena/Query/views.py" line="11" bodyfile="/home/panx/ecodena/src/Ecodena/Query/views.py" bodystart="10" bodyend="15"/>
+<para><verbatim>Its a form which user have to fill in order to post a query</verbatim> </para>    </detaileddescription>
+    <location file="/home/panx/ecodena/src/Ecodena/Query/views.py" line="11" bodyfile="/home/panx/ecodena/src/Ecodena/Query/views.py" bodystart="10" bodyend="16"/>
     <listofallmembers>
       <member refid="dd/dee/class_ecodena_1_1_query_1_1views_1_1_query_form_1a2c0801fd8cba4ce11004ea7c14823bfa" prot="public" virt="non-virtual"><scope>Ecodena::Query::views::QueryForm</scope><name>text</name></member>
     </listofallmembers>

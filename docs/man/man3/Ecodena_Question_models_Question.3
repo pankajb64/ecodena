@@ -1,4 +1,4 @@
-.TH "Ecodena::Question::models::Question" 3 "Tue Mar 20 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
+.TH "Ecodena::Question::models::Question" 3 "Sun Mar 25 2012" "Version 1.0" "Ecodena" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -124,106 +124,113 @@ Ecodena::Question::models::Question \-
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 40 of file models.py.
+.PP
+.nf
+Creates the entity question 
+which is a subclass of models.Model.fi
+.PP
+ 
+.PP
+Definition at line 44 of file models.py.
 .SH "Member Function Documentation"
 .PP 
 .SS "def Ecodena.Question.models.Question.__unicode__ (self)"
 .PP
-Definition at line 91 of file models.py.
+Definition at line 99 of file models.py.
 .SS "def Ecodena.Question.models.Question.addComments (self, comment)"
 .PP
-Definition at line 72 of file models.py.
+Definition at line 78 of file models.py.
 .SS "def Ecodena.Question.models.Question.getComments (self)"
 .PP
-Definition at line 70 of file models.py.
+Definition at line 76 of file models.py.
 .SS "def Ecodena.Question.models.Question.getQuestionID (self)"
 .PP
-Definition at line 50 of file models.py.
+Definition at line 56 of file models.py.
 .SS "def Ecodena.Question.models.Question.getQuestionText (self)"
 .PP
-Definition at line 57 of file models.py.
+Definition at line 63 of file models.py.
 .SS "def Ecodena.Question.models.Question.getQuestionTitle (self)"
 .PP
-Definition at line 64 of file models.py.
+Definition at line 70 of file models.py.
 .SS "def Ecodena.Question.models.Question.getTestCasesList (self)"
 .PP
-Definition at line 79 of file models.py.
+Definition at line 86 of file models.py.
 .SS "def Ecodena.Question.models.Question.removeTestCase (self, caseID)"
 .PP
-Definition at line 83 of file models.py.
+Definition at line 90 of file models.py.
 .SS "def Ecodena.Question.models.Question.setCommentList (self, commentList)"
 .PP
-Definition at line 74 of file models.py.
+Definition at line 81 of file models.py.
 .SS "def Ecodena.Question.models.Question.setQuestionID (self, qID)"
 .PP
-Definition at line 52 of file models.py.
+Definition at line 58 of file models.py.
 .SS "def Ecodena.Question.models.Question.setQuestionText (self, qtext)"
 .PP
-Definition at line 59 of file models.py.
+Definition at line 65 of file models.py.
 .SS "def Ecodena.Question.models.Question.setQuestionTitle (self, title)"
 .PP
-Definition at line 66 of file models.py.
+Definition at line 72 of file models.py.
 .SS "def Ecodena.Question.models.Question.setTestCasesList (self, testCasesList)"
 .PP
-Definition at line 81 of file models.py.
+Definition at line 88 of file models.py.
 .SH "Member Data Documentation"
 .PP 
 .SS "list \fBEcodena.Question.models.Question.commentList_f\fP = []\fC [static]\fP"
 .PP
-Definition at line 47 of file models.py.
+Definition at line 53 of file models.py.
 .SS "\fBEcodena.Question.models.Question.commentList_f\fP"
 .PP
-Definition at line 74 of file models.py.
+Definition at line 81 of file models.py.
 .SS "tuple \fBEcodena.Question.models.Question.level_f\fP = models.ForeignKey(\fBLevel\fP, verbose_name='Question \fBLevel\fP', null=False)\fC [static]\fP"
 .PP
-Definition at line 44 of file models.py.
+Definition at line 50 of file models.py.
 .SS "tuple \fBEcodena.Question.models.Question.questionID_f\fP = models.AutoField(primary_key=True)\fC [static]\fP"
 .PP
-Definition at line 41 of file models.py.
+Definition at line 47 of file models.py.
 .SS "\fBEcodena.Question.models.Question.questionID_f\fP"
 .PP
-Definition at line 52 of file models.py.
+Definition at line 58 of file models.py.
 .SS "tuple \fBEcodena.Question.models.Question.questionText_f\fP = models.TextField('Problem Statement', null=False)\fC [static]\fP"
 .PP
-Definition at line 42 of file models.py.
+Definition at line 48 of file models.py.
 .SS "\fBEcodena.Question.models.Question.questionText_f\fP"
 .PP
-Definition at line 59 of file models.py.
+Definition at line 65 of file models.py.
 .SS "\fBEcodena.Question.models.Question.questionTitle_f\fP"
 .PP
-Definition at line 66 of file models.py.
+Definition at line 72 of file models.py.
 .SS "tuple \fBEcodena.Question.models.Question.questionTitle_f\fP = models.CharField('Problem Title', max_length = 50, null = False)\fC [static]\fP"
 .PP
-Definition at line 43 of file models.py.
+Definition at line 49 of file models.py.
 .SS "list \fBEcodena.Question.models.Question.testCasesList_f\fP = []\fC [static]\fP"
 .PP
-Definition at line 48 of file models.py.
+Definition at line 54 of file models.py.
 .SS "\fBEcodena.Question.models.Question.testCasesList_f\fP"
 .PP
-Definition at line 81 of file models.py.
+Definition at line 88 of file models.py.
 .SS "tuple \fBEcodena.Question.models.Question.timeLimit_f\fP = models.FloatField('Time Limit for \fBQuestion\fP',null=False)\fC [static]\fP"
 .PP
-Definition at line 46 of file models.py.
+Definition at line 52 of file models.py.
 .SS "tuple \fBEcodena.Question.models.Question.type_f\fP = models.ForeignKey(\fBType\fP, verbose_name='Type of \fBQuestion\fP', null=False)\fC [static]\fP"
 .PP
-Definition at line 45 of file models.py.
+Definition at line 51 of file models.py.
 .SH "Property Documentation"
 .PP 
 .SS "Ecodena.Question.models.Question.commentList = property(getComments,setCommentList)\fC [static]\fP"
 .PP
-Definition at line 76 of file models.py.
+Definition at line 83 of file models.py.
 .SS "Ecodena.Question.models.Question.questionID = property(getQuestionID,setQuestionID)\fC [static]\fP"
 .PP
-Definition at line 54 of file models.py.
+Definition at line 60 of file models.py.
 .SS "Ecodena.Question.models.Question.questionText = property(getQuestionText,setQuestionText)\fC [static]\fP"
 .PP
-Definition at line 61 of file models.py.
+Definition at line 67 of file models.py.
 .SS "Ecodena.Question.models.Question.questionTitle = property(getQuestionTitle, setQuestionTitle)\fC [static]\fP"
 .PP
-Definition at line 68 of file models.py.
+Definition at line 74 of file models.py.
 .SS "Ecodena.Question.models.Question.testCasesList = property(getTestCasesList,setTestCasesList)\fC [static]\fP"
 .PP
-Definition at line 85 of file models.py.
+Definition at line 93 of file models.py.
 
 .SH "Author"
 .PP 
