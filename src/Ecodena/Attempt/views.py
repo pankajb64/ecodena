@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from Attempt.models import Attempt
 #from User.models import User
 import Compiler
-from Compiler.Dictionary import dictionary
+from Compiler.dictionary import compilers
 from Compiler.models import Language
 from Compiler.models import CompilerVersion
 from django import forms
@@ -30,7 +30,7 @@ def listSolutions(request):
 	else:
 		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
 
-def viewSolution(request,solutionID):11
+def viewSolution(request,solutionID):
 	'''A soluiton whose Id is passed as the parameter is displayed with the AttemptID, question text, level, question type, solution provided by the user, status of the solution and the error report for the solution
 	Parameter:request-->All the information of the form is stored in request
 	solutionID-->the ID of attempt to be displayed

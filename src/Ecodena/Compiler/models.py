@@ -99,9 +99,11 @@ class Compiler():
 class CCompiler111(Compiler):
 
 	def compile(self):
+		print "Yuppy I am C Compiler with Version 1.1.1 and I just ran !"
 		pass
 
 class JavaCompiler111(Compiler):
 	def compile(self):
+		print "Yuppy I am C Compiler with Version 1.1.1 and I just ran !"
 		pass
 

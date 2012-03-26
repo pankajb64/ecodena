@@ -5,7 +5,8 @@ from django.contrib.auth.models import User
 from Attempt.models import Attempt
 from Question.models import Question
 from User.models import Profile
-from django.template import RequestContent 
+from django import forms
+from django.template import RequestContext 
 
 
 
@@ -25,7 +26,7 @@ def viewProfile(request):
 	if request.user.is_authenticated():
 		profile = User.objects.filter(UserID_f=request.user)
 		p=Profile.objects.filter(UserID_f=request.user)[0]
-		a=Attempt.objects.filter(UserID_f=request.user).orderby(timeOfSubmission):5
+		a=Attempt.objects.filter(UserID_f=request.user).orderby(timeOfSubmission)
 		countAttempt = Attempt.objects.filter(UserID_f=request.user).count()
 		countCorrect = Attempt.objects.filter(UserID_f=request.user).filter(status=True).count()
 		countIncorrect = countAttempt-countCorrect
@@ -39,14 +40,16 @@ def viewProfile(request):
 		return HttpResponse("You need to log in to view your profile %s" %request.path)
 			
 		
-#def viewsProfileByID(request,profileID)
-def editProfile(request)
+def viewProfileByID(request,profileID):
+	pass
+	
+def editProfile(request):
 	if request.user.is_authenticated():
 		f=ProfileForm()
 		context = RequestContext(request, {'form':f})
 		profile = User.objects.filter(UserID_f=request.user)
 		p=Profile.objects.filter(UserID_f=request.user)[0]
-		a=Attempt.objects.filter(UserID_f=request.user).orderby(timeOfSubmission):5
+		a=Attempt.objects.filter(UserID_f=request.user).orderby(timeOfSubmission)
 		countAttempt = Attempt.objects.filter(UserID_f=request.user).count()
 		countCorrect = Attempt.objects.filter(UserID_f=request.user).filter(status=True).count()
 		countIncorrect = countAttempt-countCorrect
@@ -58,8 +61,8 @@ def editProfile(request)
 			if not f.is_valid():
 				return render_to_response('editProfile.html', context)
 			else:
-				 = Profile()
-				dc = { ,'dt':dt}
+				#profile = Profile()
+				dc = { 'dt':dt}
 				context = RequestContext(request, dc)
 				profile.dob = f.dob
 				profile.address = f.address
