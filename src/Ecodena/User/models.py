@@ -140,8 +140,9 @@ class Profile(models.Model, object):
 	isAdmin_f = models.BooleanField("Is Administrator", default=False)
 	numberOfAttempts_f = models.IntegerField("Number of Attempts")
 	
-		def getDOB():
+	def getDOB():
 		return self.dob_f
+		
 	def setDOB(date):
 		self.dob_f = date
 		

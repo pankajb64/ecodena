@@ -134,7 +134,17 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-)
+    'django.contrib.admindocs',
+#     'Compiler.Judge',
+    'kombu.transport.django',  
+    'djcelery',  
+)  
+  
+BROKER_URL = "django://" # tell kombu to use the Django database as the message queue  
+  
+import djcelery  
+djcelery.setup_loader()      
+
 
 AUTH_PROFILE_MODULE = 'Ecodena.User.Profile'
 
