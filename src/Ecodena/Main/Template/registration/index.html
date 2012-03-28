@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<script type="text/javascript" src="jquery-1.7.1.js"></script>
+<script type="text/javascript" src="jquery-ui-1.8.17.custom.min.js"></script>
+
+<script type="text/javascript">
+function displayloginwindow()
+{
+	$("#liw").toggle();
+}
+
+$(document).ready(function(){
+  $("#liw").hide();
+  $(".main").click(function(){
+  	$("#liw").hide();
+  });
+});
+</script>
+
+<script type="text/javascript">
+<!--
+var image1=new Image()
+image1.src="slide-1.png"
+var image2=new Image()
+image2.src="slide-2.png"
+var image3=new Image()
+image3.src="slide-3.png"
+//-->
+</script>
+</head>
+
+<body>
+<div id="header" class="header-container">
+	<a href="index.html">
+    <img class="logo" src="ecodena logo.png"/>
+    </a>
+	<div id="login"><a href="login.html"> Log In
+    </a>  
+    </div>
+    	<div id="liw" class="loginwindow">
+        	<input type="text" placeholder="Username" class="usernamebox" name="Username" /><br />
+            <input type="password" placeholder="Password" class="usernamebox" name="password" /><br />
+            <input type="submit" class="submitButton" value="Submit" /> <br />
+            <div class="registertext" > Dont have a account yet? Sign Up</div>  <br />
+           	<input type="text" placeholder="Name" class="usernamebox" name="Name" /><br />
+          	<input type="text" placeholder="Username" class="usernamebox" name="Username" /><br />
+            <input type="email" placeholder="Email" class="usernamebox" name="Email" /><br />
+            <input type="password" placeholder="Password" class="usernamebox" name="password" /><br />
+            <input type="submit" class="submitButton" value="Register" /> <br />
+
+        </div>
+ 	</div>
+    <div class="slidecontainer" id="sccolor">
+    	<div class="videocontainer">
+        	<a class="tryit" href="#">
+            	<img src="slide-1.png" name="slide" alt />
+            </a>
+            		<script>
+					<!--
+					//variable that will increment through the images
+					/*function changeCSS()
+					{
+					   var currentTag = document.getElementById("sccolor");
+					   currentTag.setAttribute("slidecontainer", "slidecontainertwo");
+					   return;
+					}*/
+					var step=1
+					var color = new Array("#0b86f9","#15a112","#242827"); 
+					function slideit(){
+					//if browser does not support the image object, exit.
+					if (!document.images) return;
+					document.images.slide.src=eval("image"+step+".src");
+					$(".videocontainer").css({backgroundColor:color[step-1]});
+					if (step<2)
+					step++;
+					else
+					step=1
+					//call function "slideit()" every 2.5 seconds
+					setTimeout("slideit()",2500)
+					}
+					slideit()
+					//-->
+					</script>
+
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="contentcolumn">
+            <a class="contentImage" href="coding.html">
+                <img src="thumb1.png" alt />
+            </a>
+            <div class="columntext">
+                <div class="columntitle"> Learn to Code
+                </div>
+            </div>
+    	</div>
+        <div class="contentcolumntwo">
+            <a class="contentImage" href="#">
+                <img src="thumb1.png" alt />
+            </a>
+            <div class="columntext">
+                <div class="columntitle"> Compete
+                </div>
+            </div>
+    	</div>
+    </div>
+	<div class="main">
+	</div>
+</body>
+</html>

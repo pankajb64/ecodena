@@ -1,0 +1,542 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header-container
+{	position:relative;
+	z-index:1;
+	background: -moz-linear-gradient(top,  #fafafa,  #eaeaea);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#eaeaea');
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
+	height:40px;
+	box-shadow:0 0 20px #999999;
+	width:100%;
+	border-radius:0px;
+	margin:0 auto;
+	min-width:920px;
+}
+.slidecontainer
+{
+	width:1343px;
+	height:310px;
+	margin-top:20px;
+	padding:3px;
+}
+.slidecontainertwo
+{
+	width:1343px;
+	height:310px;
+	margin-top:20px;
+	padding:3px;
+}
+.videocontainer
+{
+	width:1343px;
+	height:309px;
+}
+.tryit
+{
+	width:920px;
+	height:350px;
+	margin-left:175px;
+}
+.content-container
+{
+	width:1300px;
+	height:300px;
+	margin-top:0px;
+	padding-left:260px;
+}
+.contentcolumn
+{
+	float:left;
+	width:212px;
+	height:297px;
+	margin-top:20px;
+}
+.contentcolumntwo
+{
+	width:212px;
+	height:297px;
+	margin-top:20px;
+	float:left;
+	margin-left:50px;
+}
+.scratchpad
+{
+	position:relative;
+	margin-left:40px;
+	margin-top:200px;
+	border:solid 2px #d0d0d0;
+	width:550px;
+	height:275px;
+	float:left;
+	z-index:101;
+	box-shadow:0 0 30px #e0e0e0;
+}
+.marginscratchpad
+{	padding-left:2px;
+	padding-top:3px;
+	height:272px;
+	width:35px;
+	float:left;
+	background-color:#e8e8e8;
+}
+textarea
+{
+	resize:none;
+	outline:none;
+}
+.text-area-scratchpad
+{	padding-left:2px;
+	padding-top:3px;
+	float:left;
+	background-color:#f1f1f1;
+	width:511px;
+	height:246px;
+}
+.footer-scratchpad
+{	padding-left:2px;
+	padding-top:2px;
+	position:relative;
+	float:right;
+	width:511px;
+	height:24px;
+	background-color:#e8e8e8;
+}
+.compilebutton
+{
+	position:relative;
+	left:380px;
+	float:left;
+	margin:0px 3px;
+	font-family: "Open Sans",sans-serif;
+	margin-top:1px;
+	background:#f8f8f8;
+	border:1px solid #b0b0b0;
+	color:#555555;
+	border-radius:3px;
+	height:19px;
+	padding:0px 8px;
+}
+.choosefilebutton
+{
+	position:relative;
+	left:380px;
+	float:left;
+	margin:0px 3px;
+	font-family: "Open Sans",sans-serif;
+	margin-top:1px;
+	background:#f8f8f8;
+	border:1px solid #b0b0b0;
+	color:#555555;
+	border-radius:3px;
+	height:19px;
+	padding:0px 8px;
+}
+.compilebutton:hover
+{
+	border-color:#777777;
+	color:#222222;
+	cursor:default;
+}
+.runbutton
+{
+	position:relative;
+	left:380px;
+	float:left;
+	margin:0px 3px;
+	font-family: "Open Sans",sans-serif;
+	margin-top:1px;
+	background:#f8f8f8;
+	border:1px solid #b0b0b0;
+	color:#555555;
+	border-radius:3px;
+	height:19px;
+	padding:0px 8px;
+}
+
+.columtext
+{
+	width:212px;
+	height:150px;
+}
+.columntitle
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:16px;
+}
+.searchbar
+{
+	font:14px  "Lucida Console", Monaco, monospace;
+	height:20px;
+	width:120px;
+	border-radius:14px;
+	background-color:#333;
+	margin-right:25px;
+	margin-top:9px;
+	float:right;
+	position:relative;
+	outline: none;
+	-webkit-transition:all 0.25s ease-in 0;
+	border:none;
+	color:#ffffff;
+	padding-left:25px
+}
+.searchbar:focus
+{
+	width:200px;
+	background-color:#F4F4F4;
+	color:#111;
+}
+.dropdown
+{
+	display:none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
+	position:relative;
+	background-color:#999;
+	width:150px;
+	top:30px;
+	left:30px;
+	margin-top:10px;
+	border-radius:4px;
+	border-top-color:#;
+	height:100px;
+	padding:5px 5px;
+}
+.searchicon
+{
+	position:relative;	
+	float:left;
+	margin-top:12px;
+	left:205px;
+}
+.searchiconhover
+{
+	position:relative;
+	float:left;
+	margin-top:12px;
+	left:205px;
+	display:none;
+}
+.dropdown ul{margin:0;list-style:none;padding:0;display:block;}
+.dropdown li{}
+.container
+{
+	width:200px;
+	float:right;
+}
+.arrow
+{
+/*	top:10px;
+	left:130px;*/
+	font-family:"Lucida Console", Monaco, monospace;
+	color:#FFF;
+	width:40px;
+	height:30px;
+	margin:10px 20px 7px 5px;
+	float:right;
+	margin-right:10px;
+	position:relative;
+	overflow:hidden;
+}
+.box
+{
+	background-color:#fff;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-moz-box-shadow:0 1px 1px rgba(0,0,0,0.15);
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.15);
+	box-shadow:0 1px 1px rgba(0,0,0,0.15);
+	padding:0px;position:relative;
+	overflow:hidden;text-align:left
+}
+.userprofilebox
+{
+	background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#efefef));
+	position:absolute;
+	background-color:#999;
+	border-color:#099;
+	box-shadow:0 1px 1px rgba(0,0,0,.0.15);
+	margin-left:0px;
+	margin-top:10px;
+	border-radius:4px;
+	height:600px;
+	width:300px;
+	padding:5px 5px;
+}
+#profileboxright
+{
+	background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#efefef));
+	position:relative;
+	background-color:#999;
+	border-color:#000;
+	box-shadow:0 1px 1px rgba(0,0,0,.0.15);
+	margin-left:330px;
+	margin-top:10px;
+	border-radius:4px;
+	height:600px;
+	width:1000px;
+	padding:5px 5px;
+}
+.profilenamefont
+{
+	font-family:"Comic Sans MS", cursive;
+	font-size:24px;
+	margin-left:50px;
+	margin-top:220px;
+}
+.login
+{
+	color:#FFF;
+	font-family:"Lucida Console", Monaco, monospace;
+	font-size:16px;
+	position:inherit;
+	width:100px;
+	margin-left:auto;
+	/*float:right;
+	margin-right:100px;*/
+	padding-top:10px;
+	cursor:pointer;
+}
+.logo
+{
+	height:30px;
+	margin-left:50px;
+	margin-top:4px;
+	padding:1px;
+	position:absolute;
+	
+}
+#LanguageSelector
+{
+	margin-left:20px;
+	margin-top:30px;
+	position:absolute;
+	float:left;
+}
+.loginwindow-container
+{
+	width:1346px;
+	height:309px;
+	border-color:#999;
+	position:inherit;
+	margin-top:50px;
+	border-radius:0px;
+	background-color:#15a112;
+	padding:10px;
+}
+.loginwindow
+{
+	margin-left:200px;
+	margin-top:80px;
+	position:relative;
+	float:left;
+}
+.testloginwindow-container
+{
+	width:500px;
+	background-color:#F4F2F2;
+	border-radius:4px;
+	border-color:#CCC;
+	margin-top:200px;
+	border-color:#333;
+	margin-left:420px;
+	height:200px;
+}
+	
+.testregisterwindow
+{
+	position:absolute;
+	margin-left:700px;
+	margin-top:80px;
+}
+.testregisterfont
+{
+	font:15px  "Lucida Console", Monaco, monospace;
+	color:#FFF;
+}
+.testusernamefont
+{
+	color:#000;
+	margin-left:16px;
+	font:15px  "Lucida Console", Monaco, monospace;
+}
+.testloginwindow
+{
+	margin-left:50px;
+	background-color:#F4F2F2;
+	border-radius:4px;
+	border-color:#CCC;
+	margin-top:200px;
+	border-color:#333;
+}
+.testusernamebox
+{
+	font:14px  "Lucida Console", Monaco, monospace;
+	height:20px;
+	width:360px;
+	box-shadow:0 0 5px #CCC;
+	border-radius:4px;
+	background-color:#FFF;
+	margin-top: 3px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left:10px;
+	outline:#999;
+}
+.registerwindow
+{
+	width:320px;
+	height:180px;
+	border-color:#999;
+	position:inherit;
+	margin-left:500px;
+	margin-top:220px;
+	border-radius:4px;
+	background-color:#D8D8D8;
+	padding:10px;
+}
+.usernamebox
+{
+	font:14px  "Lucida Console", Monaco, monospace;
+	height:20px;
+	width:180px;
+	box-shadow:0 0 5px #CCC;
+	border-radius:4px;
+	background-color:#FFF;
+	margin-top: 3px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left:10px;
+	outline:#999;
+}
+/*#search
+{width:180px;padding:17px 0px 0px 0px;margin:0px;float:left
+}*/
+
+.submitButton
+{
+	margin-left:15px;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.5);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	/*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);*/
+	color: #fffbf9;
+	border: solid 1px #0b86f9;
+	background: #c50503; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0071E1), to(#382B86)); /* For Webkit Browsers */
+	background: -moz-linear-gradient(top, #ff8a50, #c30000); /* for Firefox */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endColorstr='#c30000'); /* for IE */
+	/*cursor:pointer;
+	background:url(button.jpg);
+	width:105px;
+	height:30px;
+	font:15px  "Lucida Console", Monaco, monospace;
+	margin:15px 0 0 20px;
+	box-shadow:0 0 5px #333;
+	border-radius:4px;
+	background-color:#FFF;*/
+}
+.submitButton:hover
+{
+	background: #c50503; /* for non-css3 browsers */
+background: -webkit-gradient(linear, left top, left bottom, from(#05A), to(#000082)); /* For Webkit Browsers */
+background: -moz-linear-gradient(top, #ff8a50, #c30000); /* for Firefox */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endColorstr='#c30000'); /* for IE */
+}
+#signupbutton
+{
+	margin-left:0px;
+}
+.registerButton
+{
+	font:15px  "Lucida Console", Monaco, monospace;
+	height:30px;
+	width:200px;
+	box-shadow:0 0 5px #333;
+	border-radius:4px;
+	background-color:#FFF;
+	margin-top: 15px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0px;
+}
+
+.submitButton:hover
+{
+	background-color:#09f;
+}
+.registerButton:hover
+{
+	background-color:#09F;
+}
+.loginwindow .usernamefont
+{
+	margin-left:16px;
+	font:15px  "Lucida Console", Monaco, monospace;
+	color:#FFF;
+}
+.registertext
+{
+	font:17px "Lucida Console", Monaco, monospace;
+	color:#CCC;
+	margin:10px 0 0 20px;
+}
+.signupheading
+{
+	color:#999;
+	margin-top:2px;
+	margin-left:22px;
+	position:inherit;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 17px;
+	font-weight: bolder;
+}
+.placeholding-input
+{	height:30px;
+}
+.text-input
+{	border:1px solid #ccc;
+	-webkit-box-shadow:inset 0 1px 0 #eee,#fff 0 1px 0;
+	-moz-box-shadow:inset 0 1px 0 #eee,#fff 0 1px 0;
+	box-shadow:inset 0 1px 0 #eee,#fff 0 1px 0;
+}
+.placeholder
+{	position:absolute;
+	top:1px;
+	right:1px;
+	bottom:1px;
+	left:2px;
+	z-index:1;
+	height:20px;
+	padding:4px;
+	font-size:13px;
+	line-height:20px;
+	color:#999;
+	text-shadow:0 1px 0 rgba(255,255,255,.5);	white-space:nowrap;
+	cursor:text;
+	-webkit-transition:opacity .1s,font-size .1s;-moz-transition:opacity .1s,font-size .1s;-o-transition:opacity .1s,font-size .1s;-webkit-user-select:none;
+	-moz-user-select:none;-o-user-select:none;user-select:none;
+}
+#login:hover
+{	color:#FFF;
+}
+body
+{
+	margin:0 0 0 0;
+}
+.main
+{
+	height:100px;
+}
