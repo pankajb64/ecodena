@@ -20,3 +20,4 @@ class QuestionAdmin(admin.ModelAdmin):
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Type)
 admin.site.register(Level)
+admin.site.register(TestCase)

@@ -51,7 +51,9 @@ class Question(models.Model, object):
 	type_f = models.ForeignKey(Type, verbose_name="Type of Question", null=False)
 	timeLimit_f = models.FloatField("Time Limit for Question",null=False)
 	commentList_f = []
-	testCasesList_f = []
+	LowtestCasesList_f = []
+	MedtestCasesList_f = []
+	HightestCasesList_f = []
 	
 	def getQuestionID(self):
 		return self.questionID_f
@@ -92,6 +94,21 @@ class Question(models.Model, object):
 		del self.testCasesList_f[caseID]
 	testCasesList = property(getTestCasesList,setTestCasesList)
 
+	def getLowTestCasesList(self):
+		return self.LowtestCasesList_f
+	def setLowTestCasesList(self,testCasesList):
+		self.LowtestCasesList_f = testCasesList
+	
+	def getMedTestCasesList(self):
+		return self.MedtestCasesList_f
+	def setMedTestCasesList(self,testCasesList):
+		self.MedtestCasesList_f = testCasesList
+	
+	def getHighTestCasesList(self):
+		return self.HightestCasesList_f
+	def setHighTestCasesList(self,testCasesList):
+		self.HightestCasesList_f = testCasesList
+		
 	class Meta:
 		verbose_name = 'question'
 		verbose_name_plural = 'questions'
@@ -108,7 +125,7 @@ class TestCase(models.Model, object):
 	caseID_f = models.AutoField(primary_key=True)
 	questionID_f = models.ForeignKey(Question , verbose_name="Question ID", null=False)
 	CASE_TYPE = ((0, 'Low'), (1, 'Medium'), (2, 'High'))
-	caseType_f = models.CharField(max_length=40, choices=CASE_TYPE, verbose_name="Type of Case")
+	caseType_f = models.SmallIntegerField(choices=CASE_TYPE, verbose_name="Type of Case")
 	input_f = models.TextField("Input")	
 	output_f = models.TextField("Output")
 	
@@ -144,5 +161,5 @@ class TestCase(models.Model, object):
 		verbose_name_plural = 'test cases'
 
 	def __unicode__(self):
-		return `self.caseID` + ' ' + `self.questionID` + ' ' + self.caseType
+		return `self.caseID` + ' ' + `self.questionID` + ' ' + `self.caseType`
 		

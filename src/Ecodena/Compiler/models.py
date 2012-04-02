@@ -96,11 +96,11 @@ class Compiler():
 	def generateErrorReport(self):
 		pass
 
-class CCompiler111(Compiler):
+#class CCompiler111(Compiler):
 
-	def compile(self):
-		print "Yuppy I am C Compiler with Version 1.1.1 and I just ran !"
-		pass
+#	def compile(self):
+#		print "Yuppy I am C Compiler with Version 1.1.1 and I just ran !"
+#		pass
 
 class JavaCompiler111(Compiler):
 	def compile(self):
