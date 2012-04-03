@@ -1,6 +1,6 @@
 # Create your views here.
 from django.http import HttpResponse
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response,render
 from django.contrib.auth.models import User
 from Attempt.models import Attempt
 from Question.models import Question
@@ -35,7 +35,7 @@ def viewProfile(request):
 		dc = {'userName':request.user.username , 'dob':p.dob_f, 'gender':p.gender_f,'email':email, 'address':p.address_f,'title':a.questionID_f,'countAttempt':countAttempt,'countCorrect':countCorrect,'countIncorrect':countIncorrect}
 		if profile:
 			profile=profile[0]
-		return render_to_response('profile.html',dc)
+		return render(render,'profile.html',dc)
 	else:
 		return HttpResponse("You need to log in to view your profile %s" %request.path)
 			
@@ -69,11 +69,11 @@ def editProfile(request):
 				profile.gender = f.gender
 				profile.save()
 				
-				return render_to_response('editProfile.html', context) 
+				return render(render,'editProfile.html', context) 
 			
 			#language = Language.objects.all()
 			
-		return render_to_response('editProfile.html',context)
+		return render(render,'editProfile.html',context)
 
 		
 	

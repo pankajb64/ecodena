@@ -5,7 +5,7 @@ from models import Query
 from django.contrib.auth.models import User
 from django import forms
 from django.template import RequestContext
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response,render
 
 class QueryForm(forms.Form):
 	''' Its a form which user have to fill in order to post a query'''
@@ -29,7 +29,7 @@ def postQuery(request):
 		if request.method == 'POST':
 			f=QueryForm(request.POST)
 			if not f.is_valid():
-				return render_to_response('postquery.html',context)
+				return render(request,'postquery.html',context)
 			else:
 				q=Query()
 				q.queryText=f['text'].data
@@ -39,8 +39,8 @@ def postQuery(request):
 				qID=q.queryID
 				dc = {'queryID' :qID}
 				context = RequestContext(request,dc)
-				return render_to_response('postquery.html',context)
-		return render_to_response('postquery.html',context)
+				return render(request,'postquery.html',context)
+		return render(render,'postquery.html',context)
 
 	else:
 		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
