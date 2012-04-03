@@ -4,25 +4,29 @@ from Ecodena.Question.models import Question
 from Ecodena.Attempt.models import Attempt
 import datetime
 from django.db.models import Count
+import math
 
 # Create your models here.
 
-class Recommendation(model.Model):
+class Recommendation(models.Model):
 
-userID_f = models.ForeignKey(User, verbose_name="User ID", null=False, related_name='+' )
-#questionList_f = models.ManyToManyField(Question)
-questionList_f = models.CommaSeparatedIntegerField("The list of question Ids recommended",max_length = 20 ,null = False )
+	userID_f = models.ForeignKey(User, verbose_name="UserID", null=False, related_name='+' )
+	#questionList_f = models.ManyToManyField(Question)
+	questionList_f = models.CommaSeparatedIntegerField("The list of question Ids recommended",max_length = 20 ,null = False )
 
 def generate_recommendations(self):
-
+	
 	typesm = Attempt.objects.filter(attempt.userID.userID = self.userID_f).values('type').annotate(num_types=Count('type')).order_by('-num_types')[:3]
 
-
+	
 	t = (typesm[0].num_types + typesm[1].num_types + typesm[2].num_types)
-	int t1 = (typesm[0].num_types/t) * 50 
-	int t2 = (typesm[1].num_types/t) * 50
-	int t3 = (typesm[2].num_types/t) * 50  
-
+	 
+	t1 = round((typesm[0].num_types/t) * 50) 
+	
+	t2 = round((typesm[1].num_types/t) * 50)
+	
+	t3 = round((typesm[2].num_types/t) * 50 )
+	
 	levels_m = Attempt.objects.filter(attempt.userID.userID = self.userID).filter(attempt.question.type = typesm[0].question.type).filter(attempt.status = True ).annotate(num_levels=Count('level')).values('level').order_by('-num_levels')[:3]
 
 	l_1 = (levels_m[0].num_types + levels_m[1].num_types + levels_m[2].num_types)
@@ -32,7 +36,7 @@ def generate_recommendations(self):
 
 	l_2 = (levels_m_2[0].num_types + levels_m_2[1].num_types + levels_m_2[2].num_types)
 	l2 = ((levels_m_2[0].num_types*levels_m_2[0].question.levelID_f) + (levels_m_2[1].num_types*levels_m_2[1].question.levelID_f) + (levels_m_2[2].num_types*levels_m_2[2].question.levelID_f))/l_2
-
+	
 	levels_m_3 = Attempt.objects.filter(attempt.userID.userID = self.userID).filter(attempt.question.type = typesm[2].question.type).filter(attempt.status = True ).annotate(num_levels=Count('level')).values('level').order_by('-num_levels')[:3]
 
 	l_3 = (levels_m_3[0].num_types + levels_m_3[1].num_types + levels_m_3[2].num_types)
@@ -52,7 +56,7 @@ def generate_recommendations(self):
 
 	for i in range [(t2+1),(t2+t3)]:
 		questionList_f[i] = questions[i];  
-
+  
 
 	#(to be done by arun) object list_of_types[2] (order)
 
