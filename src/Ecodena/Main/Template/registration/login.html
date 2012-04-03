@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/styles.css" />
+<link rel="stylesheet" type="text/css" href="styles.css" />
 
-<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="jquery-1.7.1.js"></script>
+<script type="text/javascript" src="jquery-ui-1.8.17.custom.min.js"></script>
 
 <script type="text/javascript">
 </script>
@@ -14,10 +14,10 @@
 
 <body>
 <div id="header" class="header-container">
-	<a href="/">
-    <img class="logo" src="{{ STATIC_URL }}img/ecodena logo.png"/>
+	<a href="index.html">
+    <img class="logo" src="ecodena logo.png"/>
     </a>
-	<div class="login"><a href="/accounts/login">
+	<div class="login"><a href="login.html">
     </a>  
     </div>
     	<div id="liw" class="loginwindow-container">
@@ -26,56 +26,24 @@
                   <tbody>
                   <tr>
                   <td><label for="user_login"><a class="usernamefont"> Username</a></label></td>
-                  <td><input type="text" value="" name="username" id ="username" class="usernamebox"></td>
+                  <td><input type="text" value="" name="user" class="usernamebox"></td>
                   </tr>
                   <tr>
                   <td><label for="user_password"><a class="usernamefont">Password</a></label></td>
-                  <td><input value="" type="password" name="password" id="password" class="usernamebox"></td>
+                  <td><input value="" type="password" name="pass" class="usernamebox"></td>
                   </tr>
                   <tr>
 					<!--<td><input value="Sign in" type="submit" class="formStyleSubmit loginSubmit"></td>-->
                   <td><input type="submit" class="submitButton" value="Sign In" /></td>
-
                     <!--<form style="display:inline" method="link" action="register.html"><input type="submit" class="registerButton" value="Sign Up" /></form></td>-->
 					<!--  <td><a href="/change_password" class="forgotPass">(Forgot your password?)</a></td>-->
                   </tr>
                   </tbody>
              </table>   
-             </form> 
-             
-             <!--form action="" method="post">
-            <table class="testregisterwindow">
-                  <tbody>
-                  <tr>
-                  <td colspan="2">
-                  <a class="testregisterfont"> Don't have a account yet? Sign Up</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td><label for="user_login"><a class="testregisterfont"> First Name</a></label></td>
-                  <td><input type="text" value="" name="user" class="usernamebox"></td>
-                  </tr>
-                  <tr>
-                  <td><label for="user_login"><a class="testregisterfont"> Last Name</a></label></td>
-                  <td><input type="text" value="" name="user" class="usernamebox"></td>
-                  </tr>
-                  <tr>
-                  <td><label for="user_login"><a class="testregisterfont"> Email</a></label></td>
-                  <td><input type="text" value="" name="user" class="usernamebox"></td>
-                  </tr>
-                  <tr>
-                  <td><label for="user_password"><a class="testregisterfont">Password</a></label></td>
-                  <td><input value="" type="password" name="pass" class="usernamebox"></td>
-                  </tr>
-                  <tr-->
-					<!--<td><input value="Sign in" type="submit" class="formStyleSubmit loginSubmit"></td>-->
-		           <!--td><input type="submit" class="submitButton" id="signupbutton" value="Sign Up" /></td-->
-                    <!--<form style="display:inline" method="link" action="register.html"><input type="submit" class="registerButton" value="Sign Up" /></form></td>-->
-					<!--  <td><a href="/change_password" class="forgotPass">(Forgot your password?)</a></td>-->
-                  <!--/tr>
-                  </tbody>
-             </table>   
-             </form-->    
+          </form> 
+             <FORM METHOD="LINK" ACTION="register.html">
+               <input type="submit" value="Sign UP" class="signupButton" />
+         </FORM>
  		    <!-- </form>
         	<div class="signupheading"> Username </div> 
             <input type="text" placeholder="Username" class="usernamebox" name="Username" /><br />

@@ -8,7 +8,7 @@ from Compiler.dictionary import compilers
 from Compiler.models import Language
 from Compiler.models import CompilerVersion
 from django import forms
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, render
 from datetime import datetime
 from django.contrib.auth.models import User
 from django.core.context_processors import csrf
@@ -26,7 +26,7 @@ def listSolutions(request):
 	returns the solutions.html page and the list of solution ids'''
 	if request.user.is_authenticated():
 		solutions = Attempt.objects.filter(userID_f=request.user)
-		return render_to_response('solutions.html',{'solutions':solutions})
+		return render(request, 'solutions.html',{'solutions':solutions})
 	else:
 		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
 
@@ -40,9 +40,9 @@ def viewSolution(request,solutionID):
 		s = Attempt.objects.filter(attemptID_f=solutionID)
 		solution = s.filter(userID_f=request.user)
 		if not solution:
-			return render_to_response('solution.html',{'solution':solution})
+			return render(request, 'solution.html',{'solution':solution})
 		else :
-			return render_to_response('solution.html',)
+			return render(request, 'solution.html',)
 	else:
 		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
 		
@@ -62,7 +62,7 @@ def submitSolution(request,questionID,userID):
 			f=SolutionForm(request.POST)
 			if not f.is_valid():
 				
-				return render_to_response('submitsolution.html', context)
+				return render(request,'submitsolution.html', context)
 			else:
 				attempt = Attempt()
 				#errorReportID=compileSolution()
@@ -75,11 +75,11 @@ def submitSolution(request,questionID,userID):
 				attempt.timeOfSubmission = datetime.datetime.now()
 				attempt.ErrorReport = 6
 				attempt.save()
-				return render_to_response('submitsolution.html', context) 
+				return render(request, 'submitsolution.html', context) 
 			
 			#language = Language.objects.all()
 			
-		return render_to_response('submitsolution.html',context)
+		return render(request, 'submitsolution.html',context)
 	else:
 		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
 		

@@ -10,23 +10,24 @@ class CCompiler111(Compiler):
 		print "\nStarting the Ecodena Judge Now...\n\n"
 
 		#Following files are self defined based on filename
-		usercode = attempt.solution_f
-		inputdata = testcase.input_f
-		outputdata = testcase.output_f
+		usercode = self.attempt.solution_f
+		inputdata = self.testcase.input_f
+		outputdata = self.testcase.output_f
 		
 		#usercode = "a.c"
 		#inputdata = "input"
 		#outputdata= "answer"
-		useroutput = "userout"
-		compileerrorfile="error1"
-		runerrorfile="error2"
-		memoryfile = "memory"
+		path = "static/storage/output"
+		useroutput = "static/storage/output/userout"
+		compileerrorfile="static/storage/output/error1"
+		runerrorfile="static/storage/output/error2t"
+		memoryfile = "static/storage/output/memory"
 		
-		errorReport = ErrorReport()
-		errorReport.testCaseLevel_f = testcase.caseType_f
+		errorReport = self.attempt.errorReportID_f
+		errorReport.testCaseLevel_f = self.testcase.caseType_f
 		
 
-		compile_command = "gcc " + usercode + " 2> "+compileerrorfile
+		compile_command = "gcc -o " +path + "/output " + usercode + " 2> "+compileerrorfile
 		print "\nThe command we will run is: " + compile_command
 		compile_return = os.system(compile_command)
 		print "\nThe Compilation Result is: " + str(compile_return)
@@ -38,16 +39,16 @@ class CCompiler111(Compiler):
 			timeStart = 0.0
 			timeEnd = 0.0
 			print "\nThe code compiled successfully"
-			run_command = "./a.out < "+inputdata+" > "+useroutput+" 2> "+runerrorfile
+			run_command = "./" + path + "/output "+ inputdata  +" > "+useroutput+ " 2> "+runerrorfile
 			print "\nNow we will run the code: " + run_command
-			memCommand = "/usr/bin/time -f '%M' ./a.out < "+inputdata+" > "+useroutput+" 2> "+memoryfile
+			memCommand = "/usr/bin/time -f '%M' ./" + path + "/output " +inputdata+" > "+useroutput+" 2> "+memoryfile
 			os.system(memCommand)
 			temp = open(memoryfile)
-			runMem = temp.readline()
+			runMem = temp.read()
 			print runMem
 			runMem = runMem.splitlines()
 			print runMem
-			runMem = runMem[0]
+			runMem = runMem[len(runMem) - 1]
 			print runMem
 			runMem = (int)(runMem)
 			temp.close()

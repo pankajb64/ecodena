@@ -13,19 +13,20 @@ from django.contrib.auth.models import User
 class ErrorReport(models.Model, object):
 	'''Creates an ErrorReport Entity which is a subclass of models.Model class
 		Choices for Error Type - 
-		CA - Correct Answer
-		CE - Compilation Error
-		RE - Run Time Error
-		TE - Time Limit Exceeded
-		WA - Wrong Answer
-		P - Pending '''
+		0 - Correct Answer
+		1 - Compilation Error
+		2 - Run Time Error
+		3 - Time Limit Exceeded
+		4 - Memory Limit Exceeded
+		5 - Wrong Answer
+		6 - Pending '''
 	errorReportID_f = models.AutoField(primary_key=True)
 	timeRequirement_f = models.FloatField("Time Required for compiling", null=True, blank=True)
 	memory_f = models.FloatField("Memory Requirement", null=True, blank=True)
 	ERROR_TYPE = ((0,'Correct Answer'),(1,'Compilation Error'),(2,'Run Time Error'),(3,'Time limit Exceeded'),(4,'Memory Limit Exceeded'),(5,'Wrong Answer'),(6,'Pending'))
 	errorType_f = models.SmallIntegerField( max_length = 40, choices=ERROR_TYPE,verbose_name="Types of Errors") 
 	errorMessage_f = models.TextField("Error Message generated", null=True, blank=True)
-	testCaseLevel_f = models.CharField(max_length=40, choices=TestCase.CASE_TYPE, verbose_name="Test Case Level where error occured (Select High if solution is correct)",  null=True, blank=True)
+	testCaseLevel_f = models.SmallIntegerField(choices=TestCase.CASE_TYPE, verbose_name="Test Case Level where error occured (Select High if solution is correct)",  null=True, blank=True)
 
 
 	def getTimeRequirement(self):
@@ -144,6 +145,6 @@ class Attempt(models.Model, object):
 	def __unicode__(self):
 		return `self.userID` + ' ' + `self.attemptID` + ' ' + `self.questionID_f`
 	
-	'''def question(self):
-		return.questionTitle'''
+	def type(self):
+		return questionID_f.type_f
 			

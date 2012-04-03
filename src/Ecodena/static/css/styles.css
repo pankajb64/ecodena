@@ -14,9 +14,37 @@
 	margin:0 auto;
 	min-width:920px;
 }
+.question-container
+{
+	padding:10px;
+	margin-left:275px;
+	width:800px;
+	height:170px;
+	background-color:#E1E1E1;
+	border-radius:4px;
+}
+.fadeintext
+{
+	cursor:pointer;
+}
+#fadeinwindow
+{
+	display:none;
+	width:200px;
+	background-color:#000;
+	height:170px;
+}
+.question-font
+{
+	margin-left:35px;
+	margin-top:20px;
+	padding:10px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:16px;
+}
 .slidecontainer
 {
-	width:1343px;
+	width:1360px;
 	height:310px;
 	margin-top:20px;
 	padding:3px;
@@ -30,7 +58,9 @@
 }
 .videocontainer
 {
-	width:1343px;
+	margin:0 auto;
+	border-radius:0px;
+	width:1363px;
 	height:309px;
 }
 .tryit
@@ -229,6 +259,7 @@ textarea
 {
 /*	top:10px;
 	left:130px;*/
+	cursor:pointer;
 	font-family:"Lucida Console", Monaco, monospace;
 	color:#FFF;
 	width:40px;
@@ -328,7 +359,7 @@ textarea
 }
 .loginwindow
 {
-	margin-left:200px;
+	margin-left:470px;
 	margin-top:80px;
 	position:relative;
 	float:left;
@@ -348,7 +379,7 @@ textarea
 .testregisterwindow
 {
 	position:absolute;
-	margin-left:700px;
+	margin-left:500px;
 	margin-top:80px;
 }
 .testregisterfont
@@ -417,7 +448,41 @@ textarea
 
 .submitButton
 {
+	position:absolute;
 	margin-left:15px;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.5);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	/*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);*/
+	color: #fffbf9;
+	border: solid 1px #0b86f9;
+	background: #c50503; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0071E1), to(#382B86)); /* For Webkit Browsers */
+	background: -moz-linear-gradient(top, #ff8a50, #c30000); /* for Firefox */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endColorstr='#c30000'); /* for IE */
+	/*cursor:pointer;
+	background:url(button.jpg);
+	width:105px;
+	height:30px;
+	font:15px  "Lucida Console", Monaco, monospace;
+	margin:15px 0 0 20px;
+	box-shadow:0 0 5px #333;
+	border-radius:4px;
+	background-color:#FFF;*/
+}
+.signupButton
+{
+	margin-left:150px;
 	display: inline-block;
 	outline: none;
 	cursor: pointer;

@@ -3,39 +3,108 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/styles.css" />
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/styles.css" />
 
-<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery-ui-1.8.17.custom.min.js"></script>
 
 <script type="text/javascript">
 </script>
 </head>
 
 <body>
+
 <div id="header" class="header-container">
-	<a href="/">
-    <img class="logo" src="{{ STATIC_URL }}img/ecodena logo.png"/>
+	<a href="index.html">
+    <img class="logo" src="{{STATIC_URL}}img/ecodena logo.png"/>
     </a>
-	<div class="login"><a href="/accounts/login">
+		<div id="login"><a href="/login"> Log In
     </a>  
-    </div>
-    	<div id="liw" class="loginwindow-container">
-  
-             <form action="" method="post">
-				 {{ form.as_p }}
-		           <input type="submit" class="submitButton" id="signupbutton" value="Sign Up" />
-                 
-             </form>    
- 		    <!-- </form>
-        	<div class="signupheading"> Username </div> 
-            <input type="text" placeholder="Username" class="usernamebox" name="Username" /><br />
+    	</div>
+        <div id="liw" class="loginwindow-container">
+        	<form action="" method="post">
+            <table class="testregisterwindow">
+                  <tbody>
+                  <tr>
+                  <td colspan="2">
+                  <a class="testregisterfont"> Don't have a account yet? Sign Up</a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><label for="user_login"><a class="testregisterfont"> First Name</a></label></td>
+                  <td><input type="text" value="" name="user" class="usernamebox"></td>
+                  </tr>
+                  <tr>
+                  <td><label for="user_login"><a class="testregisterfont"> Last Name</a></label></td>
+                  <td><input type="text" value="" name="user" class="usernamebox"></td>
+                  </tr>
+                  <tr>
+                  <td><label for="user_login"><a class="testregisterfont"> Email</a></label></td>
+                  <td><input type="text" value="" name="user" class="usernamebox"></td>
+                  </tr>
+                  <tr>
+                  <td><label for="user_password"><a class="testregisterfont">Password</a></label></td>
+                  <td><input value="" type="password" name="pass" class="usernamebox"></td>
+                  </tr>
+                  <tr>
+					<!--<td><input value="Sign in" type="submit" class="formStyleSubmit loginSubmit"></td>-->
+		           <td><input type="submit" class="submitButton" id="signupbutton" value="Sign Up" /></td>
+                    <!--<form style="display:inline" method="link" action="register.html"><input type="submit" class="registerButton" value="Sign Up" /></form></td>-->
+					<!--  <td><a href="/change_password" class="forgotPass">(Forgot your password?)</a></td>-->
+                  </tr>
+                  </tbody>
+             </table>   
+             </form> 
+        </div>   
+    		<!--<div id="liw" class="registerwindow">
+       		 <form action="" method="post">
+            <table>
+                  <tbody>
+                  <tr>
+                  <td><label for="user_login"><a class="usernamefont"> First Name</a></label></td>
+                  <td><input type="text" value="" placeholder="First Name" name="user" class="usernamebox"></td>
+                  </tr>
+                  <td><label for="user_login"><a class="usernamefont"> Last Name</a></label></td>
+                  <td><input type="text" value="" placeholder="Last Name" name="user" class="usernamebox"></td>
+                  </tr>
+                  <td><label for="user_login"><a class="usernamefont"> Email</a></label></td>
+                  <td><input type="text" value="" placeholder="Email"name="user" class="usernamebox"></td>
+                  </tr>
+                  <tr>
+                  <td><label for="user_password"><a class="usernamefont">Password</a></label></td>
+                  <td><input value="" type="password" placeholder="Password" name="pass" class="usernamebox"></td>
+                  </tr>
+                  <tr>
+                  <td><label for="user_password"><a class="usernamefont">Confirm Password</a></label></td>
+                  <td><input value="" type="password" placeholder="Confirm Password" name="pass" class="usernamebox"></td>
+                  </tr>
+                  <tr>
+                         <td colspan="2"> <div id="fb-root"></div>
+                      <script src="http://connect.facebook.net/en_US/all.js"></script>
+                      <script>
+                         FB.init({ 
+                            appId:'344076748968640', cookie:true, 
+                            status:true, xfbml:true 
+                         });
+                      </script>
+                      <fb:login-button>Login with Facebook</fb:login-button></td>
+              		</tr>
+                  <tr>
+                   </tbody>
+             </table>
+             <!--<td><input value="Sign in" type="submit" class="formStyleSubmit loginSubmit"></td>-->
+                  <!--<td><input type="submit" class="submitButton" value="SignIn" /></td>-->
+		           <!--<td> <form style="display:inline" method="link" action="register.html"><input type="submit" class="registerButton" value="Sign Up" /></form>
+                   </td>-->
+        	<!--<div class="signupheading"> New to Ecodena? Sign Up </div><br />
+        	<input type="text" placeholder="First Name" class="usernamebox" name="First Name" />
+           	<input type="text" placeholder="Last Name" class="usernamebox" name="Last Name" /><br />
+            <input type="email" placeholder="Email" class="usernamebox" name="Email" /><br />
             <input type="password" placeholder="Password" class="usernamebox" name="password" /><br />
-            <input type="submit" class="submitButton" value="SignIn" />
-            <form style="display:inline" method="link" action="register.html"><input type="submit" class="registerButton" value="Sign Up" /></form>
--->
+            <input type="password" placeholder="Confirm Password" class="usernamebox" name="Confirm Password" /><br />
+            <input type="Button" type="button" class="registerButton" value="SignUp" />-->
         </div>
- 	</div>
+ </div>
 <div class="main">
 </div>
 </body>

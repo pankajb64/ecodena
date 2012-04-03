@@ -7,7 +7,21 @@
 
 <script type="text/javascript" src="jquery-1.7.1.js"></script>
 <script type="text/javascript" src="jquery-ui-1.8.17.custom.min.js"></script>
-
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.login1{ margin-left:1100px;
+			margin-top:0px;}
+.all{margin-left:1100px;
+		margin-top:20px;}
+.logout1{
+			margin-left:1100px;
+			margin-top:20px;}
+-->
+</style>
 </head>
 
 <body>
@@ -15,9 +29,22 @@
 	<a href="index.html">
     <img class="logo" src="ecodena logo.png"/>
     </a>
-  <div id="login"><a href="login.html"> Log In
-    </a>  
+    
+    <div id="login" class="login1"><FORM>
+<INPUT TYPE="BUTTON" VALUE="Log In" ONCLICK="window.location.href='file:///C:/Users/harsh/Desktop/Sen%20Site/login.html'">
+<input type="BUTTON" value="Logout" onclick=<!--"window.location.href='file:///C:/Users/harsh/Desktop/Sen%20Site/login.html'"-- />
+    </FORM>
     </div>
+     <div id="logout" class="logout1"><FORM>
+       <input type="BUTTON" value="ALL Questions" onclick="window.location.href='file:///C:/Users/harsh/Desktop/Sen%20Site/all%20questions.html'" />
+     </FORM>
+    </div>
+    <div id="questions" class="all"><FORM>
+    </FORM></div>
+    <!--<div id="h2" class="paddind">-->
+      <h> <div align="center" class="style1">Your Question</div></div><br /><br /><br /><br />
+        <p align="center" class="style1"><strong> What do you want from me ?</strong></p>
+    
     
   <div class="scratchpad" style="display:block;">
     	<div class="marginscratchpad">
@@ -35,11 +62,11 @@
             </textarea>
          </div>
         <div class="footer-scratchpad">
-             <div class="compilebutton" onclick="">Submit
-             </div>
+    <div class="compilebutton" onclick="">Submit
+    </div>
              <form method="post" enctype="multipart/form-data" action="">
-                Upload<input type="file" class="choosefilebutton" name="upflile"<br>
-                <input type="submit" class="compilebutton" value="Upload" />
+                <input type="file" class="choosefilebutton" name="upflile"<br>
+                <input type="submit" class="uploadbutton" value="Upload" />
              </form>
              <form id="form1" name="form1" method="post" action="">
                <select name="LanguageSelector" size="1" id="LanguageSelector">
@@ -52,7 +79,7 @@
       </form>
   </div>
          </form>
-         </div>
+</div>
         <form id="form1" name="form1" method="post" action="">
         </form>
         <p>&nbsp;</p>

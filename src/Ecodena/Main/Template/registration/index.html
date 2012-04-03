@@ -1,13 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/styles.css" />
+{% extends "base.html" %}
 
-<script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="{{STATIC_URL}}js/jquery-ui-1.8.17.custom.min.js"></script>
-
+{% block title%} Home {% endblock %}
+{% block head%}
 <script type="text/javascript">
 function displayloginwindow()
 {
@@ -32,16 +26,32 @@ var image3=new Image()
 image3.src="{{STATIC_URL}}img/slide-3.png"
 //-->
 </script>
+
+<style type="text/css">
+<!--
+
+.login1{ margin-left:1100px;
+			margin-top:0px;}
+
+-->
+</style>
+{% endblock %}
 </head>
 
 <body>
-<div id="header" class="header-container">
-	<a href="index.html">
+
+	{% block header %}
+	<a href="/">
     <img class="logo" src="{{STATIC_URL}}img/ecodena logo.png"/>
     </a>
-	<div id="login"><a href="login.html"> Log In
-    </a>  
-    </div>
+    
+	<div id="login" class="login1"><FORM>
+<INPUT TYPE="BUTTON" VALUE="Log In" ONCLICK="window.location.href='/login/'">
+</FORM>  
+	{% endblock %}
+    {% block content %}
+    </div>  
+   <!-- </div>
     	<div id="liw" class="loginwindow">
         	<input type="text" placeholder="Username" class="usernamebox" name="Username" /><br />
             <input type="password" placeholder="Password" class="usernamebox" name="password" /><br />
@@ -54,11 +64,11 @@ image3.src="{{STATIC_URL}}img/slide-3.png"
             <input type="submit" class="submitButton" value="Register" /> <br />
 
         </div>
- 	</div>
+ 	</div>-->
     <div class="slidecontainer" id="sccolor">
     	<div class="videocontainer">
-        	<a class="tryit" href="#">
-            	<img src="slide-1.png" name="slide" alt />
+        	<a class="tryit" href="/questions/">
+            	<img src="{{STATIC_URL}}img/slide-1.png" name="slide" alt />
             </a>
             		<script>
 					<!--
@@ -89,10 +99,10 @@ image3.src="{{STATIC_URL}}img/slide-3.png"
 
         </div>
     </div>
-    <div class="content-container">
+   <!-- <div class="content-container">
         <div class="contentcolumn">
             <a class="contentImage" href="coding.html">
-                <img src="{{STATIC_URL}}img/thumb1.png" alt />
+                <img src="thumb1.png" alt />
             </a>
             <div class="columntext">
                 <div class="columntitle"> Learn to Code
@@ -101,15 +111,14 @@ image3.src="{{STATIC_URL}}img/slide-3.png"
     	</div>
         <div class="contentcolumntwo">
             <a class="contentImage" href="#">
-                <img src="{{STATIC_URL}}img/thumb1.png" alt />
+                <img src="thumb1.png" alt />
             </a>
             <div class="columntext">
                 <div class="columntitle"> Compete
                 </div>
             </div>
     	</div>
-    </div>
+    </div>-->
 	<div class="main">
 	</div>
-</body>
-</html>
+{% endblock %}

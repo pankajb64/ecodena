@@ -2,7 +2,7 @@
 from django.http import HttpResponse
 from Question.models import Question
 from Comment.models import Comment
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, render
 from datetime import datetime
 from django import forms
 from django.template import RequestContext
@@ -21,7 +21,7 @@ def listQuestions(request):
 	parameter:request-->All the details associated with URL 
 	returns the question.html webpage and the list of questions'''
 	questions = Question.objects.all()
-	return render_to_response('questions.html',{'questions':questions})
+	return render(request, 'questions.html',{'questions':questions})
 
 def viewQuestionByID(request, questionID):
 	'''A question whose Id is passed as the parameter is displayed with the question title, question text, comment list
@@ -51,8 +51,8 @@ def viewQuestionByID(request, questionID):
 						
 					
 		question.commentList_f = list(Comment.objects.filter(questionID_f = question))
-		return render_to_response('question.html',RequestContext(request, {'question' : question, 'form' : form}))
+		return render(request, 'question.html',RequestContext(request, {'question' : question, 'form' : form}))
 	else:
-		return render_to_response('question.html', RequestContext(request))	
+		return render(request, 'question.html', RequestContext(request))	
 #	return HttpResponse("%s" %questions)
 
