@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %} Questions {% endblock %}
+{% block content %}
+    <div id="liw" class="loginwindow-container">
+    	<div class="question-container">
+			<ul>	
+				<li><h1>Question Rating</h1></li>
+				{% for question in questions %}
+					<li>
+						<a class="question-font" href="{{question.questionID_f }}">{{ question.questionTitle }}</a>
+						<a class="fadeintext"> 0.0</a>
+					</li>
+				{% endfor %}
+
+	</ul>
+        <!--a class="question-font">  The question goes like this.</a>
+        <a class="fadeintext"> click me</a-->
+        </div>
+        <div id="fadeinwindow">
+        </div>
+    </div>
+<div class="main">
+</div>
+{% endblock %}

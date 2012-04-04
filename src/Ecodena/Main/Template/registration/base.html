@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{%block title%} {% endblock %} | Ecodena </title>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/styles.css" />
+
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery-ui-1.8.17.custom.min.js"></script>
+
+<script type="text/javascript">
+
+</script>
+{% block head %} {% endblock %}
+</head>
+
+<body>
+<div id="header" class="header-container">
+	<a href="/"><img class="logo" src="{{STATIC_URL}}img/ecodena logo.png"/></a>
+	
+	{% if not user.is_authenticated %}
+    <div id="login" class="login1"><a href="/login">Login</a> | <a href="/register">Register</a></div>
+    {% else %}
+    <div id="login" class="login1">Welcome {{ user }} | <a href="/profile">Profile</a> | <a href="/logout">Logout</a></div>
+    {% endif %}
+    
+</div>
+
+{% block content %} {%endblock%}
+</body>
+</html>

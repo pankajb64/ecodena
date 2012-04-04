@@ -88,18 +88,21 @@ def execute(attempt,question,compiler):
 		print "Low Test Case"
 		errorReport = compiler(question,attempt,testcase)
 		if not errorReport.errorType_f == 0:
+			errorReport.errorMessage_f+="Your attempt failed on a Low Level Test Case"
 			break
 	errorReport.testCaseLevel_f=0		
 	if errorReport and errorReport.errorType_f == 0:
 		for testcase in question.MedtestCasesList_f:
 			errorReport = compiler(question,attempt,testcase)
 			if not errorReport.errorType_f == 0:
+				errorReport.errorMessage_f+="Your attempt failed on a Medium Level Test Case"
 				break
 		errorReport.testCaseLevel_f=1		
 		if errorReport and errorReport.errorType_f == 0:
 			for testcase in question.HightestCasesList_f:
 				errorReport = compiler(question,attempt,testcase)
 				if not errorReport.errorType_f == 0:
+					errorReport.errorMessage_f+="Your attempt failed on a High Level Test Case"
 					break
 			errorReport.testCaseLevel_f=2		
 	return errorReport

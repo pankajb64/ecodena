@@ -1,54 +1,40 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/styles.css" />
+{% extends "base.html" %}
 
-<script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="{{STATIC_URL}}js/jquery-ui-1.8.17.custom.min.js"></script>
+{% block title %} Register {% endblock %}
 
-<script type="text/javascript">
-</script>
-</head>
-
-<body>
-
-<div id="header" class="header-container">
-	<a href="index.html">
-    <img class="logo" src="{{STATIC_URL}}img/ecodena logo.png"/>
-    </a>
-		<div id="login"><a href="/login"> Log In
-    </a>  
-    	</div>
+{% block content %}
         <div id="liw" class="loginwindow-container">
         	<form action="" method="post">
-            <table class="testregisterwindow">
+            <table class="registerwindow">
                   <tbody>
-                  <tr>
+                  <tr >
                   <td colspan="2">
-                  <a class="testregisterfont"> Don't have a account yet? Sign Up</a>
+                  <h1> Don't have a account yet? Sign Up</h1>
                   </td>
                   </tr>
                   <tr>
-                  <td><label for="user_login"><a class="testregisterfont"> First Name</a></label></td>
-                  <td><input type="text" value="" name="user" class="usernamebox"></td>
+                  <td><label for="user_login"><span class="testregisterfont"> First Name</span></label></td>
+                  <td><input type="text" value="" name="first_name" class="usernamebox"></td>
                   </tr>
                   <tr>
-                  <td><label for="user_login"><a class="testregisterfont"> Last Name</a></label></td>
-                  <td><input type="text" value="" name="user" class="usernamebox"></td>
+                  <td><label for="user_login"><span class="testregisterfont"> Last Name</span></label></td>
+                  <td><input type="text" value="" name="last_name" class="usernamebox"></td>
                   </tr>
                   <tr>
-                  <td><label for="user_login"><a class="testregisterfont"> Email</a></label></td>
-                  <td><input type="text" value="" name="user" class="usernamebox"></td>
+                  <td><label for="user_login"><span class="testregisterfont"> Username</span></label></td>
+                  <td><input type="text" value="" name="username" class="usernamebox"></td>
                   </tr>
                   <tr>
-                  <td><label for="user_password"><a class="testregisterfont">Password</a></label></td>
-                  <td><input value="" type="password" name="pass" class="usernamebox"></td>
+                  <td><label for="user_login"><span class="testregisterfont"> Email</span></label></td>
+                  <td><input type="text" value="" name="email" class="usernamebox"></td>
+                  </tr>
+                  <tr>
+                  <td><label for="user_password"><span class="testregisterfont">Password</span></label></td>
+                  <td><input value="" type="password" name="password" class="usernamebox"></td>
                   </tr>
                   <tr>
 					<!--<td><input value="Sign in" type="submit" class="formStyleSubmit loginSubmit"></td>-->
-		           <td><input type="submit" class="submitButton" id="signupbutton" value="Sign Up" /></td>
+		           <td><input type="submit" class="submitButton" id="signupbutton" value="Register" /></td>
                     <!--<form style="display:inline" method="link" action="register.html"><input type="submit" class="registerButton" value="Sign Up" /></form></td>-->
 					<!--  <td><a href="/change_password" class="forgotPass">(Forgot your password?)</a></td>-->
                   </tr>
@@ -107,5 +93,6 @@
  </div>
 <div class="main">
 </div>
-</body>
-</html>
+
+{% endblock %}
+

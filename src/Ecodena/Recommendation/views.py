@@ -6,7 +6,9 @@ from django import forms
 from django.template import RequestContext# Create your views here.
 from Ecodena.Attempt.models import *
 from Ecodena.Question.models import *
-
+import datetime
+from django.db.models import Count
+import math
 
 def viewRecommendations(request):
 	if request.user.is_authenticated():
@@ -21,10 +23,17 @@ def generate_recommendations(request):
 	
 	recommendation = Recommendation.objects.filter(userID_f = request.user)
 	
-	
-	typesm = Attempt.objects.filter(userID_f = request.user).values('type').annotate(num_types=Count('type')).order_by('-num_types')[:3]
+	from django.db import connection, transaction
+	cursor = connection.cursor()
 
-	
+    # Data retrieval operation - no commit required
+    #cursor.execute("SELECT typeID_f, COUNT(Distinct Q.questionID_f) AS num_types FROM Attempt_attempt AS A, Question_question AS Q, Question_type AS T	WHERE A.userID_f_id == %s AND A.questionID_f_id == Q.questionID_f AND Q.typeID_f_id == T.typeID_f GROUP BY T.typeID_f" , [request.user.username])
+    #dictfetchall(cursor)
+    
+    #return row
+	#sql = "SELECT typeID_f, COUNT(Distinct Q.questionID_f) AS num_types FROM Attempt_attempt AS A, Question_question AS Q, Question_type AS T	WHERE A.userID_f_id == %s AND A.questionID_f_id == Q.questionID_f AND Q.typeID_f_id == T.typeID_f GROUP BY T.typeID_f" , [request.user.username]
+	typesm = Attempt.objects.filter(userID_f = request.user).annotate(num_types=Count('questionID_f__type_f__typeID_f')).order_by('-num_types')[:3]
+
 	t = (typesm[0].num_types + typesm[1].num_types + typesm[2].num_types)
 	 
 	t1 = round((typesm[0].num_types/t) * 50) 
@@ -75,3 +84,10 @@ def generate_recommendations(request):
 	return recommendation
 	#(to be done by arun) object list_of_types[2] (order)
 	
+def dictfetchall(cursor):
+    "Returns all rows from a cursor as a dict"
+    desc = cursor.description
+    return [
+        dict(zip([col[0] for col in desc], row))
+        for row in cursor.fetchall()
+    ]

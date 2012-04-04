@@ -1,5 +1,51 @@
 @charset "utf-8";
 /* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+header,nav,section,aside,footer{
+display:block;
+}
+
+img{
+border:none;
+}
+
+h2{ 
+font-family:Arial;
+font-size:14px;
+color:#404040;
+}
+
+h3{ 
+margin-bottom:15px;
+font-size:22px;
+color:white;
+text-shadow:1px 1px 3px #080808;
+}
+
+h4{
+font-family:A0rial;
+font-size:14px;
+font-weight:normal;
+color:606060;
+}
+
+h5{ 
+text-align:center;
+font-family:Arial;
+font-size:14px;
+color:#404040;
+}
+
+h6{ 
+text-align:center;
+font-family:Arial;
+font-size:14px;
+font-weight:normal;
+color:#606060;
+}
 
 .header-container
 {	position:relative;
@@ -27,6 +73,30 @@
 {
 	cursor:pointer;
 }
+
+ul
+{
+	list-style-type:none;
+}
+
+a:link{
+color:white;
+text-decoration:none;
+}
+a:visited{
+color:white;
+text-decoration:none;
+}
+a:hover{
+color:white;
+text-decoration:underline;
+}
+a:active{
+color:white;
+text-decoration:underline;
+}
+
+
 #fadeinwindow
 {
 	display:none;
@@ -44,24 +114,28 @@
 }
 .slidecontainer
 {
-	width:1360px;
-	height:310px;
-	margin-top:20px;
+	width:100%;
+	/*height:310px;*/
+	height:100%;
+	margin-top:50px;
 	padding:3px;
+	border-radius:0px;
 }
 .slidecontainertwo
 {
-	width:1343px;
-	height:310px;
+	/*width:1343px;
+	height:310px;*/
 	margin-top:20px;
 	padding:3px;
+	border-radius:0px;
 }
 .videocontainer
 {
-	margin:0 auto;
+	margin: 0px auto;
 	border-radius:0px;
-	width:1363px;
-	height:309px;
+	width:100%;
+	height:100%;
+	
 }
 .tryit
 {
@@ -348,22 +422,31 @@ textarea
 }
 .loginwindow-container
 {
-	width:1346px;
-	height:309px;
+	width:100%;
+	height:100%;
 	border-color:#999;
-	position:inherit;
+	position:center;
 	margin-top:50px;
 	border-radius:0px;
 	background-color:#15a112;
 	padding:10px;
+	display:block;
 }
 .loginwindow
 {
-	margin-left:470px;
-	margin-top:80px;
-	position:relative;
-	float:left;
+	/*margin-left:470px;
+	margin-top:80px;*/
+	
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:10px;
+	padding-left:auto;
+	padding-right:auto;
+	display:inline;
+	/*float:left;*/
 }
+
 .testloginwindow-container
 {
 	width:500px;
@@ -418,13 +501,14 @@ textarea
 }
 .registerwindow
 {
-	width:320px;
+	/*width:320px;
 	height:180px;
 	border-color:#999;
 	position:inherit;
 	margin-left:500px;
-	margin-top:220px;
+	margin-top:220px;*/
 	border-radius:4px;
+	margin: 0px auto;
 	background-color:#D8D8D8;
 	padding:10px;
 }
@@ -436,11 +520,13 @@ textarea
 	box-shadow:0 0 5px #CCC;
 	border-radius:4px;
 	background-color:#FFF;
-	margin-top: 3px;
+	margin-top: 1px;
 	margin-right: 0;
 	margin-bottom: 0;
 	margin-left:10px;
 	outline:#999;
+	display:block;
+
 }
 /*#search
 {width:180px;padding:17px 0px 0px 0px;margin:0px;float:left
@@ -448,10 +534,11 @@ textarea
 
 .submitButton
 {
-	position:absolute;
+	/*position:absolute;*/
+	margin-top:10px;
 	margin-left:15px;
-	display: inline-block;
-	outline: none;
+	display:block;
+	outline:none;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
@@ -483,7 +570,7 @@ textarea
 .signupButton
 {
 	margin-left:150px;
-	display: inline-block;
+	display: block;
 	outline: none;
 	cursor: pointer;
 	text-align: center;
@@ -523,6 +610,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endC
 #signupbutton
 {
 	margin-left:0px;
+	display:block;
 }
 .registerButton
 {
@@ -546,11 +634,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endC
 {
 	background-color:#09F;
 }
-.loginwindow .usernamefont
+.usernamefont
 {
 	margin-left:16px;
+	padding:-10px auto;
 	font:15px  "Lucida Console", Monaco, monospace;
-	color:#FFF;
+	color:white;
 }
 .registertext
 {
@@ -594,8 +683,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endC
 	-webkit-transition:opacity .1s,font-size .1s;-moz-transition:opacity .1s,font-size .1s;-o-transition:opacity .1s,font-size .1s;-webkit-user-select:none;
 	-moz-user-select:none;-o-user-select:none;user-select:none;
 }
-#login:hover
-{	color:#FFF;
+#login
+{	
+	font-family:Arial;
+	font-weight:bold;
+	color:white;
+	padding-top:15px;
+	padding-right:15px;
+	float:right;
 }
 body
 {
@@ -604,4 +699,11 @@ body
 .main
 {
 	height:100px;
+}
+.element
+{
+	padding-top:10px;
+	padding-left:auto;
+	padding-right:auto;
+	display:block;
 }

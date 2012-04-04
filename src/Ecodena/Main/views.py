@@ -2,6 +2,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response, render
 from django.contrib import auth
+from django import forms
 
 def home(request):
 	return render(request, 'index.html')
@@ -33,13 +34,17 @@ def logout(request):
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 
+class RegisterForm(UserCreationForm):
+	email=forms.EmailField()
+	first_name = forms.CharField() 
+	last_name = forms.CharField() 
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = RegisterForm(request.POST)
         if form.is_valid():
             new_user = form.save()
             return HttpResponseRedirect("/")
     else:
-        form = UserCreationForm()
+        form = RegisterForm()
     return render(request, "registration/register.html", { 'form': form, })    
