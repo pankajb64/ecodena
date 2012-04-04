@@ -122,6 +122,7 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
     'django.contrib.auth',
+    'django.contrib.markup',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
@@ -140,8 +141,13 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
 #     'Compiler.Judge',
     'kombu.transport.django',  
-    'djcelery',  
+    'djcelery',
+    'forum' ,
+    'registration',
+    'simplewiki', 
 )  
+
+ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
   
 BROKER_URL = "django://" # tell kombu to use the Django database as the message queue  
   
