@@ -14,11 +14,16 @@ from django.contrib.auth.models import User
 from django.core.context_processors import csrf
 from django.template import RequestContext
 from django.views.decorators.csrf import csrf_protect
+from Compiler.models import CompilerVersion
 
 class SolutionForm(forms.Form):
 	'''creates a form for pasting the solution of a question '''
 	text = forms.CharField(widget=forms.Textarea)
-	version = forms.ChoiceField()
+	cv = CompilerVersion.objects.all()
+	cvname = []
+	for c in cv:
+		cvname.append(c.versionName)
+	version = forms.ChoiceField(widget=forms.Select(),choices=cvname)
 		
 def listSolutions(request):
 	'''lists all the solutionIDs' that a particular user has submitted
@@ -47,7 +52,7 @@ def viewSolution(request,solutionID):
 		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
 		
 @csrf_protect
-def submitSolution(request,questionID,userID):
+def submitSolution(request,questionID):
 	'''Uploading of the solution submitted by the user. The necessary details are added to the database and compiler function is called to generate the error report for the concerning Attempt
 	Parameter:request-->All the information associated with the url
 	returns the submitsolution.html page making the necessary updation of the database.

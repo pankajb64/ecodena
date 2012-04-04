@@ -1,0 +1,16 @@
+<h1>
+	List of score for {{contest.contestName}}
+	</h1>
+
+<div>
+	<ul>
+		{%for uID in userID%}
+		<li>
+			<a href="{{contestPart.userID.userID}}">{{contestPart.userID.userName}}</a>
+			<p>{{contestPart.score}}</p>
+		</li>
+	</ul>
+</div>				  
+			
+			
+				
