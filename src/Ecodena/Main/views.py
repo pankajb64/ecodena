@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response, render
 from django.contrib import auth
 from django import forms
+from Ecodena.User.models import *
 
 def home(request):
 	return render(request, 'index.html')
@@ -18,7 +19,7 @@ def login(request):
 			# Correct password, and the user is marked "active"
 			auth.login(request, user)
 			# Redirect to a success page.
-			return HttpResponseRedirect()
+			return HttpResponseRedirect("/")
 		else:
 			# Show an error page
 			return HttpResponseRedirect("/login/")
@@ -43,8 +44,11 @@ def register(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
-            new_user = form.save()
-            return HttpResponseRedirect("/")
+			new_user = form.save()
+			profile = Profile()
+			profile.userID_f = new_user
+			profile.save()
+			return render(request, "registration_complete.html")
     else:
         form = RegisterForm()
     return render(request, "registration/register.html", { 'form': form, })    

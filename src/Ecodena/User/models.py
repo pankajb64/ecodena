@@ -131,14 +131,13 @@ class Profile(models.Model, object):
 		Basically it represents the profiles of users and admins of ECODENA.'''
 	profileID_f = models.AutoField(primary_key=True)
 	#name_f = models.CharField("User Display Name", max_length=40)
-	dob_f = models.DateField("User Birth Date")
-	address_f = models.TextField("User Address")
+	dob_f = models.DateField("User Birth Date", null=True, blank=True)
+	address_f = models.TextField("User Address" , null=True, blank=True)
 	GENDER_TYPE = ( (0, 'Male'), (1, 'Female'))
-	gender_f = models.SmallIntegerField(choices=GENDER_TYPE, verbose_name="Gender")
+	gender_f = models.SmallIntegerField(choices=GENDER_TYPE, verbose_name="Gender", null=True, blank=True)
 	userID_f = models.ForeignKey(User, verbose_name="User ID of user whose profile is this", null=False, unique=True)
-	isProgrammer_f = models.BooleanField("Is a Programmer", default=True)
-	isAdmin_f = models.BooleanField("Is Administrator", default=False)
-	numberOfAttempts_f = models.IntegerField("Number of Attempts")
+	isProgrammer_f = models.BooleanField("Is a Programmer", default=True, )
+	isAdmin_f = models.BooleanField("Is Administrator", default=False, )
 	
 	def getDOB(self):
 		return self.dob_f
@@ -170,11 +169,4 @@ class Profile(models.Model, object):
 		
 	def isAdmin(self):
 		return self.isAdmin_f
-		
-	def getNumberOfAttempts(self):
-		return self.numberOfAttempts_f
-	def setNumberOfAttempts(self,attempt):
-		self.numberOfAttempts_f = attempt
-		
-	numberOfAttempts = property(getNumberOfAttempts,setNumberOfAttempts)
 		

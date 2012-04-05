@@ -7,6 +7,6 @@ from django.contrib import admin
 admin.site.register(Programmer)
 
 class ProfileAdmin(admin.ModelAdmin):
-	list_display = ('profileID_f', 'dob_f', 'address_f', 'gender_f', 'userID_f', 'isProgrammer_f', 'isAdmin_f', 'numberOfAttempts_f')
+	list_display = ('profileID_f', 'dob_f', 'address_f', 'gender_f', 'userID_f', 'isProgrammer_f', 'isAdmin_f')
 	
 admin.site.register(Profile, ProfileAdmin)
