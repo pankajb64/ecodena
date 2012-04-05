@@ -48,3 +48,8 @@ def register(request):
     else:
         form = RegisterForm()
     return render(request, "registration/register.html", { 'form': form, })    
+
+def sendmail(request):
+	from django.core.mail import EmailMessage
+	email = EmailMessage('Hello', 'World', to=['pankajb64@gmail.com'])
+	email.send()

@@ -15,6 +15,7 @@ class QuestionAdmin(admin.ModelAdmin):
 	inlines1 = [TypeInline]
 	inlines2 = [LevelInline]
 	list_display = ('questionID_f', 'questionTitle', 'level_f',  'type_f', 'timeLimit_f')
+	#questionText_f.allow_tags = True
 
 
 admin.site.register(Question, QuestionAdmin)

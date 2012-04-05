@@ -106,6 +106,18 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'Ecodena.urls'
 
+'''EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'ecodenacommit@gmail.com'
+EMAIL_HOST_PASSWORD = 'senteam3'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+'''
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'ecodenacommit@gmail.com'
+EMAIL_HOST_PASSWORD = 'senteam3'
+EMAIL_PORT = 587
+
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
@@ -123,6 +135,7 @@ TEMPLATE_DIRS = (
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.markup',
+    'django.contrib.comments',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',

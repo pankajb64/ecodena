@@ -12,6 +12,11 @@ img{
 border:none;
 }
 
+h1
+{
+margin:20px auto;
+}
+
 h2{ 
 font-family:Arial;
 font-size:14px;
@@ -26,7 +31,7 @@ text-shadow:1px 1px 3px #080808;
 }
 
 h4{
-font-family:A0rial;
+font-family:Arial;
 font-size:14px;
 font-weight:normal;
 color:606060;
@@ -80,19 +85,27 @@ ul
 }
 
 a:link{
+font-family:Arial;
 color:white;
+font-weight:bold;
 text-decoration:none;
 }
 a:visited{
+font-family:Arial;
 color:white;
+font-weight:bold;
 text-decoration:none;
 }
 a:hover{
+font-family:Arial;
 color:white;
+font-weight:bold;
 text-decoration:underline;
 }
 a:active{
+font-family:Arial;
 color:white;
+font-weight:bold;
 text-decoration:underline;
 }
 
@@ -187,7 +200,7 @@ text-decoration:underline;
 }
 textarea
 {
-	resize:none;
+	padding:5px;
 	outline:none;
 }
 .text-area-scratchpad
@@ -509,8 +522,9 @@ textarea
 	margin-top:220px;*/
 	border-radius:4px;
 	margin: 0px auto;
-	background-color:#D8D8D8;
+	/*background-color:#D8D8D8;*/
 	padding:10px;
+	/*display:block;*/
 }
 .usernamebox
 {
@@ -520,10 +534,30 @@ textarea
 	box-shadow:0 0 5px #CCC;
 	border-radius:4px;
 	background-color:#FFF;
-	margin-top: 1px;
+	margin-top: 10px;
+	padding-top: 5px;
 	margin-right: 0;
+	margin-left:0;
 	margin-bottom: 0;
 	margin-left:10px;
+	outline:#999;
+	display:block;
+
+}
+.rusernamebox
+{
+	font:14px  "Lucida Console", Monaco, monospace;
+	/*height:20px;
+	width:180px;*/
+	box-shadow:0 0 5px #CCC;
+	border-radius:4px;
+	background-color:#FFF;
+	margin-top: 10px;
+	padding-top: 5px;
+	margin-right: auto;
+	margin-left:auto;
+	margin-bottom: auto;
+	/*margin-left:10px;*/
 	outline:#999;
 	display:block;
 
@@ -535,8 +569,8 @@ textarea
 .submitButton
 {
 	/*position:absolute;*/
-	margin-top:10px;
-	margin-left:15px;
+	
+	/*margin-left:15px;*/
 	display:block;
 	outline:none;
 	cursor: pointer;
@@ -609,7 +643,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endC
 }
 #signupbutton
 {
-	margin-left:0px;
 	display:block;
 }
 .registerButton
@@ -621,9 +654,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endC
 	border-radius:4px;
 	background-color:#FFF;
 	margin-top: 15px;
-	margin-right: 0;
-	margin-bottom: 0;
-	margin-left: 0px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
 }
 
 .submitButton:hover
@@ -685,12 +718,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endC
 }
 #login
 {	
-	font-family:Arial;
 	font-weight:bold;
 	color:white;
 	padding-top:15px;
 	padding-right:15px;
 	float:right;
+	display:inline;
 }
 body
 {
@@ -707,3 +740,195 @@ body
 	padding-right:auto;
 	display:block;
 }
+.relement
+{
+	width:500px;
+	padding-top:15px;
+	padding-left:auto;
+	padding-right:auto;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	/*float:right;*/
+}
+
+.relement p
+{
+text-align:right;
+}
+
+.relement label
+{
+display:block;
+margin-top: 10px;
+/*margin:10px auto;
+padding-top:10px;*/
+float:left;
+}
+.relement input
+{
+	font:20px  "Lucida Console", Monaco, monospace;
+	/*height:20px;
+	width:180px;*/
+	box-shadow:0 0 5px #CCC;
+	border-radius:4px;
+	background-color:#FFF;
+	margin-top: 3px;
+	/*padding-top: 5px;
+	margin-right: auto;
+	margin-left:auto;
+	margin-bottom: auto;
+	margin-left:10px;*/
+	outline:#999;
+	display:block;
+	float:right;
+}
+#submit
+{
+margin-top:15px;
+width:200px;
+display:block;
+}
+
+.submit input
+{
+display:block;
+/*padding-top:50px;*/
+}
+.errorlist
+{
+color:orange;
+font-weight:bold;
+width:200px;
+}
+
+.wrapper
+{
+	background-color:#15a112;
+	
+	/*margin-left:275px;*/
+	width:800px;
+	height:100%;
+	border-radius:4px;
+	
+}
+.wrapper th
+{
+font-family:Arial;
+font-size:20px;
+text-align:center;
+padding:20px;
+}
+
+.wrapper td
+{
+text-align:center;
+padding:20px;
+}
+.question{
+padding:20px auto;
+display:inline;
+}
+
+.users{
+padding:20px auto;
+display:inline;
+}
+
+.accuracy{
+padding:20px auto;
+display:inline;
+}
+
+.rating{
+padding:20px auto;
+display:inline;
+}
+
+#body
+{
+	font:20px  "Lucida Console", Monaco, monospace;
+	margin:15px ;
+	padding:15px;
+}
+
+#comments
+{
+	font:25px  "Lucida Console", Monaco, monospace;
+	margin:15px;
+	padding:15px;
+}
+
+.comment
+{
+	font-size:20px;
+	margin:15px;
+	padding:15px
+	display:block;
+	border:3px solid green;
+	background-color:#E2FFA9;
+	border-radius:4px;
+}
+
+#signupbutton
+{
+	margin:auto;
+	display:block;
+}
+
+.celement
+{
+	font:20px  "Lucida Console", Monaco, monospace;
+	width:500px;
+	padding-top:15px;
+	padding-left:auto;
+	padding-right:auto;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	/*float:right;*/
+}
+
+.celement p
+{
+text-align:right;
+}
+
+.celement label
+{
+font:20px  "Lucida Console", Monaco, monospace;
+display:inline-;
+margin-top: 10px;
+/*margin:10px auto;
+padding-top:10px;*/
+float:left;
+}
+.celement input
+{
+	font:20px  "Lucida Console", Monaco, monospace;
+	/*height:20px;
+	width:180px;*/
+	box-shadow:0 0 5px #CCC;
+	border-radius:4px;
+	background-color:#FFF;
+	margin-top: 3px;
+	/*padding-top: 5px;
+	margin-right: auto;
+	margin-left:auto;
+	margin-bottom: auto;
+	margin-left:10px;*/
+	outline:#999;
+	display:inline;
+	float:right;
+}
+
+.commentformcontainer
+{
+float:left;
+text-align:left;
+padding-left:15px;
+display:inline;
+padding-bottom:5px;
+}
+
+

@@ -1,5 +1,5 @@
 #It controls the views of Question 
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from Question.models import Question
 from Comment.models import Comment
 from django.shortcuts import render_to_response, render
@@ -9,7 +9,7 @@ from django.template import RequestContext
 
 class CommentForm(forms.Form):
 	'''Creates a form for writing a comment'''
-	text = forms.CharField(widget=forms.Textarea)
+	text = forms.CharField(widget=forms.Textarea(attrs={'rows':3, 'cols':80}), label="Enter the Text to comment", initial="")
 	
 	
 def test(request):
@@ -46,8 +46,9 @@ def viewQuestionByID(request, questionID):
 					c.userID = request.user
 					c.questionID = question
 					c.save()
+					form = CommentForm()
 				else:
-					return HttpResponse("You need to login first inorder to comment, You noob :) ")
+					return HttpResponseRedirect("/login?next=/questions/%s"%questionID)
 						
 					
 		question.commentList_f = list(Comment.objects.filter(questionID_f = question))

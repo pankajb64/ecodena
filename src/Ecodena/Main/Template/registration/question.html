@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %} {{ question.questionTitle_f }} {% endblock %}
+{% block content %}
+<div >
+	<h1 align=center>{{ question.questionTitle_f }}</h1>
+		<div id="body">
+			{{ question.questionText_f|safe}}
+			<br/><br/><hr/><br/> Time Limit: {{question.timeLimit_f}} s<br/><hr/><br/>
+		</div>
+		<div id="comments">
+
+			<b>Comments </b>
+
+				{% for comment in question.commentList  %}
+				<div class="comment"> {{comment.commentText_f}} <br/>
+				Posted by <b> {{comment.userID_f}} </b>  at {{comment.timeStamp_f}} <br/>
+					
+				</div>
+				{% endfor %}
+				</div>
+				<div class="commentformcontainer">
+				{% if form %}
+					<form action="" method="POST"> {% csrf_token %}
+						<div class="celement" ><b> Post a Comment</b></div>
+							{% for field in form %}
+								<div class="celement" >
+									{{ field.errors }}
+									{{ field.label_tag }} &nbsp; {{ field }}
+								</div>
+							{% endfor %}
+							<div  > <br style="clear:both;" /><input type="submit"  class="submitButton" id="commentbutton" value="Post Comment" /></div>
+					</form>
+				{% endif %}	
+				</div>
+</div>
+{% endblock %}
+

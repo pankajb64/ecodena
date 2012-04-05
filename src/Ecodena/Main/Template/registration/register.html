@@ -3,45 +3,66 @@
 {% block title %} Register {% endblock %}
 
 {% block content %}
-        <div id="liw" class="loginwindow-container">
-        	<form action="" method="post">
+        <div id="liw" class="loginwindow-container" align=center>
+        	<!--form action="" method="post">
             <table class="registerwindow">
-                  <tbody>
-                  <tr >
+                  <tbody >
+                  <tr class=relement>
                   <td colspan="2">
                   <h1> Don't have a account yet? Sign Up</h1>
                   </td>
-                  </tr>
-                  <tr>
+                  </tr >
+                  <tr class=relement>
+				  {{ form.first_name.errors }}
                   <td><label for="user_login"><span class="testregisterfont"> First Name</span></label></td>
-                  <td><input type="text" value="" name="first_name" class="usernamebox"></td>
-                  </tr>
-                  <tr>
+                  <td>{{ form.first_name }}</td>
+                  </tr >
+                  <tr class=relement>
+				  {{ form.last_name.errors }} 	  
                   <td><label for="user_login"><span class="testregisterfont"> Last Name</span></label></td>
-                  <td><input type="text" value="" name="last_name" class="usernamebox"></td>
+                  <td>{{ form.last_name }}</td>
                   </tr>
-                  <tr>
+                  <tr class=relement>
+				  {{ form.username.errors }}	  
                   <td><label for="user_login"><span class="testregisterfont"> Username</span></label></td>
-                  <td><input type="text" value="" name="username" class="usernamebox"></td>
+                  <td>{{ form.username }}</td>
                   </tr>
-                  <tr>
+                  <tr class=relement>
+				  {{ form.email.errors }}	  
                   <td><label for="user_login"><span class="testregisterfont"> Email</span></label></td>
-                  <td><input type="text" value="" name="email" class="usernamebox"></td>
+                  <td>{{ form.email }}</td>
                   </tr>
-                  <tr>
+                  <tr class=relement>
+				  {{ form.password1.errors }}	  
                   <td><label for="user_password"><span class="testregisterfont">Password</span></label></td>
-                  <td><input value="" type="password" name="password" class="usernamebox"></td>
+                  <td>{{ form.password1 }}</td>
                   </tr>
-                  <tr>
-					<!--<td><input value="Sign in" type="submit" class="formStyleSubmit loginSubmit"></td>-->
+                  <tr class=relement>
+				  {{ form.password2.errors }}	  
+                  <td><label for="user_password"><span class="testregisterfont">Confirm Password</span></label></td>
+                  <td>{{ form.password2 }}</td>
+                  </tr>
+                  <tr class=relement>
+					
 		           <td><input type="submit" class="submitButton" id="signupbutton" value="Register" /></td>
-                    <!--<form style="display:inline" method="link" action="register.html"><input type="submit" class="registerButton" value="Sign Up" /></form></td>-->
-					<!--  <td><a href="/change_password" class="forgotPass">(Forgot your password?)</a></td>-->
+                    
                   </tr>
                   </tbody>
              </table>   
-             </form> 
+             </form--> 
+             <form action="" method="post">
+				 <div class="relement" align=center><h1> Don't have a account yet? Sign Up</h1></div>
+				{% for field in form %}
+					<div class="relement" align=center>
+						{{ field.errors }}
+						{{ field.label_tag }} &nbsp; {{ field }}
+					</div>
+				{% endfor %}
+				<div  class="element" id="submit"><input type="submit" class="submitButton" id="signupbutton" value="Register" /></div>
+			</form>
         </div>   
+        
+
     		<!--<div id="liw" class="registerwindow">
        		 <form action="" method="post">
             <table>
