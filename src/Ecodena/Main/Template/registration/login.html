@@ -3,27 +3,28 @@
 {% block title %} Login {% endblock %}
 
 {% block content %}
-    	<div id="liw" class="loginwindow-container">
+    	<div id="liw" class="loginwindow-container loginpage">
         	<form action="" method="post">
 				<div>
 				<table class="loginwindow" >
 					  <tbody>
-					  <tr class="element">	<h1> Sign In to your Account</h1>  
+					  <tr class="element">	 
+					  <td><span class="usernamefont">Sign In to your Account!</span>  
 					  </tr>
 					  {% if form.errors %}
-						<tr class="elementt"><span class="errorlist">Your username and password didn't match. Please try again.</span></tr>
+						<tr class="elementt"><span class="errorlist">Your username and password didn't match. Please try again.<br></br></span></tr>
 						{% endif %}
 					  <tr class="element">
-					  <td><label for="user_login"><span class="usernamefont"> Username</span></label></td>
+					  <td style="padding-top:15px"><label for="user_login"><span class="usernamefont"> Username</span></label></td>
 					  <td><input type="text" value="" name="username" class="usernamebox"></td>
 					  </tr>
 					  <tr class="element">
-					  <td><label for="user_password"><span class="usernamefont">Password</span></label></td>
+					  <td style="padding-top:15px"><label for="user_password"><span class="usernamefont">Password</span></label></td>
 					  <td><input value="" type="password" name="password" class="usernamebox"></td>
 					  </tr>
 					  <tr class="element">
 						<!--<td><input value="Sign in" type="submit" class="formStyleSubmit loginSubmit"></td>-->
-					  <td><input type="submit" class="submitButton" value="Sign In" /></td>
+					  <td style="padding-left:15px"><input type="submit" class="submitButton" value="Sign In" /></td>
 						<!--<form style="display:inline" method="link" action="register.html"><input type="submit" class="registerButton" value="Sign Up" /></form></td>-->
 						<!--  <td><a href="/change_password" class="forgotPass">(Forgot your password?)</a></td>-->
 					  </tr>

@@ -459,6 +459,10 @@ textarea
 	display:inline;
 	/*float:left;*/
 }
+.loginpage
+{
+	height:270px;
+}
 
 .testloginwindow-container
 {
@@ -735,9 +739,13 @@ body
 }
 .element
 {
-	padding-top:10px;
+	font-size:72px;
+	color: #eaeaea;
+	font:Verdana, sans-serif;
+	padding-top:4px;
 	padding-left:auto;
 	padding-right:auto;
+	margin-left: 520px;
 	display:block;
 }
 .relement
@@ -797,9 +805,10 @@ display:block;
 }
 .errorlist
 {
-color:orange;
-font-weight:bold;
-width:200px;
+	margin-left: 536px;
+	font-family: Verdana,sans-serif;	
+	color: #FFF;
+	font-weight:bold;
 }
 
 .wrapper
