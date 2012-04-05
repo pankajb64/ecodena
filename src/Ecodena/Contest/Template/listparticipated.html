@@ -1,0 +1,22 @@
+<h1>
+	List of participated contest
+	</h1>
+<div>
+	<ul>
+		{%for c in contest%}	
+		<li>
+			<a href="{{c.contestID_f}}">{{contest.contestName}}</a>
+		</li>
+	</ul>
+<div>
+<h2>
+	List of completed contest
+</h2>	
+<div>
+	<ul>
+		{%for c in completedContest%}
+		<li>
+			<a href="{{c.contestID_f}}">{{c.contestName}}</a>
+		</li>
+	</ul>
+</div>							

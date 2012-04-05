@@ -1,0 +1,18 @@
+<h1>
+	Contest:{{contest.contestName}}
+	</h1>
+<h2>
+	List of Questions
+	</h2>
+<div>
+	<ul>
+	{%for question in questions%}
+<li>
+			<a href="{{question.questionID_f}}">{{ question.questionTitle }}</a>
+		</li>
+		{% endfor %}
+
+	</ul>
+</div>	
+	
+		

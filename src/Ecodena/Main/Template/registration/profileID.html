@@ -1,0 +1,11 @@
+<h1> view Profile  </h1>
+<div>
+    <p>    User : {{profile.userID_f}} </p>
+    <p> DOB : {{profile.dob}} </p>
+    <p> Gender : {{profile.gender}} </p>
+    <p> E-Mail : {{profile.userID_f.email}} </p>
+    <p> Address : {{profile.address}} </p>
+    {% for i in attempt %}
+		<p> Attempts : {{i.questionID.questionTitle}}
+	{%endfor%}
+</div>

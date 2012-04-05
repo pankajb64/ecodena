@@ -1,0 +1,16 @@
+<h1>
+	List of contests
+	</h1>
+
+<div>
+	<ul>
+		{%for c in contest%}
+		<li>
+		<a href="{{c.contestID_f}}">{{c.contestName}}</a>
+		{{c.contestToDate_f}}
+		</br>{{c.contestToTime_f}}</br>
+		{{time}}   	
+		</li>
+		{% endfor %}
+	</ul>
+	</div>	

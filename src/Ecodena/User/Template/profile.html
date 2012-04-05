@@ -1,13 +1,13 @@
 <h1> Profile </h1>
 <div>
-    <p>    User : {{user.username}} </p>
+    <p>    User : {{userName}} </p>
     <p> DOB : {{p.dob}} </p>
     {%if p.gender%}
 		<p> Gender : Female</p>
 	{% else %}
 		<p> Gender : Male</p>
 	{%endif%}	
-    <p> E-Mail : {{user.email}} </p>
+    <p> E-Mail : {{email}} </p>
     <p> Address : {{p.address}} </p>
-    <p> ProfileID : {{p.profileID_f}} </p>
+    <p> ProfileID : {{p.profileID}} </p>
 </div>
