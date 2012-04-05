@@ -1,5 +1,5 @@
 # Create your views here.
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render_to_response, render
 from django.contrib import auth
 from django import forms
@@ -57,3 +57,4 @@ def sendmail(request):
 	from django.core.mail import EmailMessage
 	email = EmailMessage('Hello', 'World', to=['pankajb64@gmail.com'])
 	email.send()
+	#raise Http404
