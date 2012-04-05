@@ -1,13 +1,45 @@
-<h1> Profile </h1>
-<div>
-    <p>    User : {{user.username}} </p>
-    <p> DOB : {{p.dob}} </p>
-    {%if p.gender%}
-		<p> Gender : Female</p>
+{% extends "base.html" %}
+{% block title %}
+	{% if targetuser %}
+	Profile - {{ targetuser }}
 	{% else %}
-		<p> Gender : Male</p>
-	{%endif%}	
-    <p> E-Mail : {{user.email}} </p>
-    <p> Address : {{p.address}} </p>
-    <p> ProfileID : {{p.profileID_f}} </p>
-</div>
+	Profile {{ user }}
+	{% endif %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+    
+	<div class="profile-pic-box">
+    <img src="{{ STATIC_URL }}img/Troll_face.png" width="224px" height="220px" />
+    </div>
+	<div class="profilebox">
+    	<span class="profile-page-username-font"> Arunangshu Bhakta</span>
+        <div class="profile-header">
+        	<div class="about-user active" onclick='changeActive(this,".profilebox .user-info")'><span> About</span>
+            </div>
+            <div class="badges" onclick='changeActive(this,".profilebox .badge-info")'> <span> Badges</span>
+            </div>
+            <div class="question" onclick='changeActive(this,".profilebox .question-info")'> <span> Questions</span>
+            </div>
+            <script>
+            	function changeActive(elem,id)
+                {
+                	$(".profile-header .active").removeClass("active");
+                    $(elem).addClass("active");
+					$(".profilebox .active-desc").removeClass("active-desc");
+					$(id).addClass("active-desc");
+                }
+            </script>
+        </div>
+        <div class="user-info active-desc">
+        <span> Username</span><br /><br />
+        <span> Email</span><br /><br />
+        <span> Name</span><br /><br />
+        </div>
+        <div class="badge-info">
+        <span> Badges Earned</span>
+        </div>
+        <img src="{{ STATIC_URL }}img/lrg_awardribbon.png" class="badge-info badgepic" />
+	</div>     
+{% endblock %}

@@ -1,5 +1,5 @@
 # Create your views here.
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response,render
 from django.contrib.auth.models import User
 from Attempt.models import Attempt
@@ -10,7 +10,7 @@ from django.template import RequestContext
 from django.core.context_processors import csrf
 from django.views.decorators.csrf import csrf_protect
 from django.forms.formsets import formset_factory
-
+from django.contrib.auth.decorators import login_required
 
 class ProfileForm(forms.Form):
 	dob = forms.DateField()
@@ -22,38 +22,45 @@ class ProfileForm(forms.Form):
 	email=forms.EmailField(required=False)
 	address  = forms.CharField(widget=forms.Textarea,required=False)
 	
-	
+@login_required(login_url="/login/")	
 def viewProfile(request):
-	if request.user.is_authenticated():
-		profile = User.objects.filter(username=request.user.username)[0]
-		p=Profile.objects.filter(userID_f=request.user)[0]
-		a=Attempt.objects.filter(userID_f=request.user).order_by('timeOfSubmission_f')
-		countAttempt = Attempt.objects.filter(userID_f=request.user).count()
-		countCorrect = Attempt.objects.filter(userID_f=request.user).filter(status_f=True).count()
-		countIncorrect = countAttempt-countCorrect
-		email=profile.email
-		
-		dc = {'user':request.user , 'p':p,'a':a,'countAttempt':countAttempt,'countCorrect':countCorrect,'countIncorrect':countIncorrect}
-		if profile:
-			return render('profile.html',dc)
+	profile=Profile.objects.filter(userID_f=request.user)[0]
+	a = Attempt.objects.filter(userID_f=request.user)
+	attempts = a.order_by('timeOfSubmission_f')
+	countAttempt = a.count()
+	countCorrect = a.filter(status_f=True).count()
+	countCompileError = a.filter(errorReportID_f__errorType_f = 1).count()
+	countRunTimeError = a.filter(errorReportID_f__errorType_f = 2).count()
+	countTimeLimitExceeded = a.filter(errorReportID_f__errorType_f = 3).count()
+	countMemoryLimitExceeded = a.filter(errorReportID_f__errorType_f = 4).count()
+	countWrongAnswer = a.filter(errorReportID_f__errorType_f = 5).count()
+	
+	#dc = { 'p':p,'attempts':a,'countAttempt':countAttempt,'countCorrect':countCorrect,'countIncorrect':countIncorrect}
+	return render(request, 'profile.html',locals())
+
+
+def viewProfileByID(request,username):
+	
+	targetuser = User.objects.filter(username=username)
+	
+	profile=Profile.objects.filter(userID_f=targetuser)
+	
+	if profile:
+		profile=profile[0]
+		a = Attempt.objects.filter(userID_f=request.user)
+		attempts = a.order_by('timeOfSubmission_f')
+		countAttempt = a.count()
+		countCorrect = a.filter(status_f=True).count()
+		countCompileError = a.filter(errorReportID_f__errorType_f = 1).count()
+		countRunTimeError = a.filter(errorReportID_f__errorType_f = 2).count()
+		countTimeLimitExceeded = a.filter(errorReportID_f__errorType_f = 3).count()
+		countMemoryLimitExceeded = a.filter(errorReportID_f__errorType_f = 4).count()
+		countWrongAnswer = a.filter(errorReportID_f__errorType_f = 5).count()
+
+		#dc = { 'p':p,'attempts':a,'countAttempt':countAttempt,'countCorrect':countCorrect,'countIncorrect':countIncorrect}
+		return render(request, 'profile.html',locals())
 	else:
-		return HttpResponse("You need to log in to view your profile %s" %request.path)
-			
-			
-def viewProfileByID(request,profileID):
-	
-	p=Profile.objects.filter(profileID_f=profileID)[0]
-	
-	
-	a=Attempt.objects.filter(userID_f=profileID).order_by('timeOfSubmission_f')
-	countAttempt = Attempt.objects.filter(userID_f=profileID).count()
-	countCorrect = Attempt.objects.filter(userID_f=profileID).filter(status_f=True).count()
-	countIncorrect = countAttempt-countCorrect
-	dc = {'profile':p, 'attempt':a,'countAttempt':countAttempt,'countCorrect':countCorrect,'countIncorrect':countIncorrect}
-	if p:
-		return render('profileID.html',dc)	
-	else:
-		return HttpResponse("Fuck U!!!%s"%request.path)
+		return HttpResponseRedirect("/profile")	
 @csrf_protect	
 def editProfile(request):
 	if request.user.is_authenticated():
@@ -86,11 +93,11 @@ def editProfile(request):
 				u.save()
 				
 				
-				return render('editProfile.html', context) 
+				return render(request, 'editProfile.html', context) 
 			
 			#language = Language.objects.all()
 			
-		return render('editProfile.html',context)
+		return render(request, 'editProfile.html',context)
 
 		
 	
