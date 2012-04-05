@@ -1,0 +1,18 @@
+<h1> Profile </h1>
+<div>
+    <p>    User : {{user.username}} </p>
+    <p> DOB : {{profile.dob}} </p>
+    {%if profile.gender%}
+		<p> Gender : Female</p>
+	{% else %}
+		<p> Gender : Male</p>
+	{%endif%}	
+    <p> E-Mail : {{user.email}} </p>
+    <p> Address : {{profile.address}} </p>
+    <p> ProfileID : {{profile.profileID_f}} </p>
+    <p> CountAttempt: {{countAttempt}} </p>
+    <p> CountCorrect: {{countCorrect}} </p>
+    <p> CountWrongAnswer: {{countWrongAnswer}} </p>
+    <p> memoryLimitExceeded: {{countMemoryLimitExceeded}} </p>
+    <p> CcountTimeLimitExceeded: {{countTimeLimitExceeded}} </p>
+</div>

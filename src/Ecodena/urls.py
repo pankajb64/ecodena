@@ -24,12 +24,12 @@ urlpatterns = patterns('',
 	url(r'^submitSolution/(?P<questionID>[0-9]+)/$', 'Ecodena.Attempt.views.submitSolution'),
 	url(r'^profile/$','Ecodena.User.views.viewProfile'),
 	url(r'^profile/edit/$','Ecodena.User.views.editProfile'),
-	url(r'^profile/(?P<username>.+)/$','Ecodena.User.views.viewProfileByID'),
+	url(r'^profile/(?P<username>.+)$','Ecodena.User.views.viewProfileByID'),
 	url(r'^solutions/$','Ecodena.Attempt.views.listSolutions'),
-	url(r'^solutions/(?P<solutionID>[0-9]+)/$','Ecodena.Attempt.views.viewSolution'),
+	url(r'^solutions/(?P<solutionID>[0-9]+)$','Ecodena.Attempt.views.viewSolution'),
 	url(r'^login/$',  login),
-    url(r'^logout/$', 'Ecodena.Main.views.logout'),
-    url(r'^register/$', 'Ecodena.Main.views.register'),
+	url(r'^logout/$', 'Ecodena.Main.views.logout'),
+	url(r'^register/$', 'Ecodena.Main.views.register'),
 	url(r'^recommendations/$','Ecodena.Recommendation.views.viewRecommendations'),
 	url(r'^forum/', include('forum.urls')),
 	#url(r'^accounts/', include('registration.backends.default.urls')),
@@ -40,4 +40,11 @@ urlpatterns = patterns('',
 	url(r'^viewContest/(?P<contestID>[0-9]+)/(?P<questionID>[0-9]+)/$','Ecodena.Contest.views.contestQuestion'),
 	url(r'^holdContest/$','Ecodena.Contest.views.holdContest'),
 	#url(r'^registerInContest/(?P<contestID>[0-9]+)$','Ecodena.Contest.views.registerInContest'),
+	url(r'^problemSetter/viewProblems/$','Ecodena.ProblemSetter.views.ViewProblemSet'),
+	url(r'^problemSetter/viewProblems/(?P<questionID>[0-9]+)$','Ecodena.ProblemSetter.views.ViewProblem'),
+	url(r'^problemSetter/UploadProblem/$','Ecodena.ProblemSetter.views.UploadProblem')
 )
+
+
+
+

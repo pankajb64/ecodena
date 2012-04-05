@@ -1,6 +1,7 @@
 # Create your views here.
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
+from django.shortcuts import render
 from django.contrib.auth.models import User
 from Attempt.models import Attempt
 from Question.models import Question
@@ -27,6 +28,7 @@ class HoldContestForm(forms.Form):
 	contestToDate = forms.DateField()
 	contestFromTime = forms.TimeField()
 	contestToTime = forms.TimeField()
+	
 
 @csrf_protect	
 def holdContest(request):
@@ -40,19 +42,19 @@ def holdContest(request):
 				return render_to_response('holdContest.html',context)
 			else:
 				contest=Contest()
-				dc = {'contestID':contestID}
 				context = RequestContext(request,dc)
-				contest.contestName_f = f.contestName
-				contest.contestpwd_f = f.contestpwd
-				contest.termsCond = f.termsCond
-				contest.contestFromDate = f.contestFromDate
-				contest.contestToDate = f.contestToDate
-				contest.contestFromTime = f.contestFromTime
-				contest.contestToTime = f.contestToTime
+			#	contest.adminID = User.objects.filter(User.username="sen3")[0]
+				contest.contestName_f = f.cleaned_data['contestName']
+				contest.contestpwd_f = f.cleaned_data['contestpwd']
+				contest.termsCond = f.cleaned_data['termsCond']
+				contest.contestFromDate = f.cleaned_data['contestFromDate']
+				contest.contestToDate = f.cleaned_data['contestToDate']
+				contest.contestFromTime = f.cleaned_data['contestFromTime']
+				contest.contestToTime = f.cleaned_data['contestToTime']
 				contest.save()
-				contestID = contest.contestID
+				#contestID = contest.contestID
 				
-				return render_to_response('holdContest.html',context)
+				return HttpResponse("Your contest is send to admin for approval%s"%request.path)
 		else:
 			return render_to_response('holdContest.html',context)
 	else:

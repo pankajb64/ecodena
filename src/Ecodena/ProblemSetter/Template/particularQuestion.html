@@ -1,0 +1,16 @@
+<h1>
+	Question:{{questionID.questionID_f}}
+	</h1>
+<div>
+	Problem Title:{{questionID.questionTitle_f}}
+	Problem Text:{{questionID.questionText_f}}
+	Problem Level:{{questionID.level_f}}
+	Problem Type:{{questionID.type_f}}
+	<ul>
+	{%for t in questionID.testCasesList_f%}	
+	<li>
+		{{t}}
+	</li>
+	{%endfor%}
+	</ul>
+</div>		

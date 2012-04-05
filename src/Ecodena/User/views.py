@@ -13,10 +13,10 @@ from django.forms.formsets import formset_factory
 from django.contrib.auth.decorators import login_required
 
 class ProfileForm(forms.Form):
-	dob = forms.DateField()
+	dob = forms.DateField(required=False)
 	GENDER_CHOICES = (
-    ('M', 'Male'),
-    ('F', 'Female'),
+    (0, 'Male'),
+    (1, 'Female'),
 	)
 	gender=forms.ChoiceField(choices=GENDER_CHOICES,required=False)
 	email=forms.EmailField(required=False)
@@ -65,7 +65,6 @@ def viewProfileByID(request,username):
 def editProfile(request):
 	if request.user.is_authenticated():
 		f=ProfileForm()
-		ProfileFormSet = formset_factory(ProfileForm)
 		p=Profile.objects.filter(userID_f=request.user)[0]
 		u = request.user
 		dc = {'form':f,'profile':p,'user':request.user}
@@ -74,32 +73,28 @@ def editProfile(request):
 		if request.method =="POST":
 			f=ProfileForm(request.POST)
 			if not f.is_valid():
-				return render_to_response('editProfile.html', context)
+				return render(request,'editProfile.html', context)
 			else:
 				#profile = Profile()
 				#profile.profileID_f = p.profileID_f
 				dc = {'form':f,'profile':p,'user':request.user}
 				context = RequestContext(request, dc)
 			#	p = f.save()
-				if f.dob:
-					p.dob_f = f.dob
-				if f.address:
-					p.address_f = f.address
-				if f.gender:	
-					p.gender_f = f.gender
-				if f.email:
-					u.email = f.email
+				if f.cleaned_data['dob']: 
+					p.dob_f = f.cleaned_data['dob']	
+				if f.cleaned_data['address']: 			
+					p.address_f = f.cleaned_data['address']	
+				if f.cleaned_data['gender']:				
+					p.gender_f = f.cleaned_data['gender']	
+				if f.cleaned_data['email']:			
+					u.email = f.cleaned_data['email']
 				p.save()
 				u.save()
 				
 				
-				return render(request, 'editProfile.html', context) 
+				return HttpResponseRedirect('/profile')
 			
 			#language = Language.objects.all()
 			
-		return render(request, 'editProfile.html',context)
-
-		
-	
-
-
+		return render(request,'editProfile.html',context)
+	return HttpResponse("Fuck Off!!%s"%request.path)

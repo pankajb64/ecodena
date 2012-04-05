@@ -12,7 +12,7 @@ class Contest(models.Model,object):
 	contestName_f=models.CharField("Name of Contest",max_length=40,null=False)
 	contestPwd_f=models.CharField("Password for Contest",max_length=20,null=False)
 	termsCond_f=models.TextField("Terms and Conditions")
-	adminID_f=models.ForeignKey(User,verbose_name="Admin ID of the admin who approved the contest",null=False,unique=False)
+	adminID_f=models.ForeignKey(User,verbose_name="Admin ID of the admin who approved the contest",null=True,unique=False)
 	contestFromDate_f = models.DateField("Date at which contest starts")
 	contestToDate_f = models.DateField("Date at which contest ends")
 	contestFromTime_f = models.TimeField("Time at which contest starts")
