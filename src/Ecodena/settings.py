@@ -27,7 +27,7 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Asia/Calcutta'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -113,10 +113,10 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 '''
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'gmail-smtp-in.l.google.com'
 EMAIL_HOST_USER = 'ecodenacommit@gmail.com'
 EMAIL_HOST_PASSWORD = 'senteam3'
-EMAIL_PORT = 587
+EMAIL_PORT = 25
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
