@@ -55,8 +55,8 @@ color:#606060;
 .header-container
 {	position:relative;
 	z-index:1;
-	background: -moz-linear-gradient(top,  #fafafa,  #eaeaea);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#eaeaea');
+	background: -moz-linear-gradient(top,  #333,  #666);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#666');
 	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
 	height:40px;
 	box-shadow:0 0 20px #999999;
@@ -589,8 +589,8 @@ textarea
 	border: solid 1px #0b86f9;
 	background: #c50503; /* for non-css3 browsers */
 	background: -webkit-gradient(linear, left top, left bottom, from(#0071E1), to(#382B86)); /* For Webkit Browsers */
-	background: -moz-linear-gradient(top, #ff8a50, #c30000); /* for Firefox */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endColorstr='#c30000'); /* for IE */
+	background: -moz-linear-gradient(top, #0071e1, #382b86); /* for Firefox */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0071e1', endColorstr='#382b86'); /* for IE */
 	/*cursor:pointer;
 	background:url(button.jpg);
 	width:105px;

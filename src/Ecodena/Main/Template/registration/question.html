@@ -23,6 +23,7 @@
 					<form action="" method="POST"> {% csrf_token %}
 						<div class="celement" ><b> Post a Comment</b></div>
 							{% for field in form %}
+								{{ form.non_field_errors }}
 								<div class="celement" >
 									{{ field.errors }}
 									{{ field.label_tag }} &nbsp; {{ field }}

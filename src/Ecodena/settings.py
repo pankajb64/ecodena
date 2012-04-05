@@ -45,7 +45,7 @@ USE_L10N = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = '/home/panx/ecodena/src/Ecodena/static'
+MEDIA_ROOT = 'static'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -73,7 +73,7 @@ STATICFILES_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     #'/home/ecodena/src/Ecodena/Main/static',
-    '/home/panx/ecodena/src/Ecodena/static',
+    'static',
 )
 
 # List of finder classes that know how to find static files in
@@ -170,6 +170,9 @@ djcelery.setup_loader()
 
 
 AUTH_PROFILE_MODULE = 'Ecodena.User.Profile'
+
+LOGIN_REDIRECT_URL = "/"
+LOGIN_URL = "/login"
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

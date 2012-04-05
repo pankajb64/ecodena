@@ -48,7 +48,7 @@ def viewQuestionByID(request, questionID):
 					c.save()
 					form = CommentForm()
 				else:
-					return HttpResponseRedirect("/login?next=/questions/%s"%questionID)
+					return HttpResponseRedirect("/login?next=%s" %questionID)
 						
 					
 		question.commentList_f = list(Comment.objects.filter(questionID_f = question))

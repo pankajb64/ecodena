@@ -15,6 +15,7 @@ from django.core.context_processors import csrf
 from django.template import RequestContext
 from django.views.decorators.csrf import csrf_protect
 from Compiler.models import CompilerVersion
+from django.contrib.auth.decorators import login_required
 
 class SolutionForm(forms.Form):
 	'''creates a form for pasting the solution of a question '''
@@ -52,41 +53,41 @@ def viewSolution(request,solutionID):
 		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
 		
 @csrf_protect
+@login_required(login_url="/login/")
 def submitSolution(request,questionID):
 	'''Uploading of the solution submitted by the user. The necessary details are added to the database and compiler function is called to generate the error report for the concerning Attempt
 	Parameter:request-->All the information associated with the url
 	returns the submitsolution.html page making the necessary updation of the database.
 	'''
-	if request.user.is_authenticated():
-		version = CompilerVersion.objects.all()
-		dt =datetime.now()
-		f=SolutionForm()
-		dc = { 'form' :f, 'version' :version}
-		context = RequestContext(request, dc)
-		if request.method =="POST":
-			f=SolutionForm(request.POST)
-			if not f.is_valid():
-				
-				return render(request,'submitsolution.html', context)
-			else:
-				attempt = Attempt()
-				#errorReportID=compileSolution()
-				dc = { 'errorReportID':errorReportID,'version':version,'dt':dt}
-				context = RequestContext(request, dc)
-				attempt.solutionText = f.text
-				attempt.compilerVersion = f.version
-				attempt.questionID = questionID
-				attempt.userID = userID
-				attempt.timeOfSubmission = datetime.datetime.now()
-				attempt.ErrorReport = 6
-				attempt.save()
-				return render(request, 'submitsolution.html', context) 
+
+	version = CompilerVersion.objects.all()
+	dt =datetime.now()
+	f=SolutionForm()
+	dc = { 'form' :f, 'version' :version}
+	context = RequestContext(request, dc)
+	if request.method =="POST":
+		f=SolutionForm(request.POST)
+		if not f.is_valid():
 			
-			#language = Language.objects.all()
-			
-		return render(request, 'submitsolution.html',context)
-	else:
-		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
+			return render(request,'submitsolution.html', context)
+		else:
+			attempt = Attempt()
+			#errorReportID=compileSolution()
+			dc = { 'errorReportID':errorReportID,'version':version,'dt':dt}
+			context = RequestContext(request, dc)
+			attempt.solutionText = f.text
+			attempt.compilerVersion = f.version
+			attempt.questionID = questionID
+			attempt.userID = userID
+			attempt.timeOfSubmission = datetime.datetime.now()
+			attempt.ErrorReport = 6
+			attempt.save()
+			return render(request, 'submitsolution.html', context) 
+		
+		#language = Language.objects.all()
+		
+	return render(request, 'submitsolution.html',context)
+
 		
 def compileSolution(version,solution,question):
 	'''compiles the solution by calling the appropriate compiler 

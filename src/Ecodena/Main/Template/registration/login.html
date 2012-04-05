@@ -10,6 +10,9 @@
 					  <tbody>
 					  <tr class="element">	<h1> Sign In to your Account</h1>  
 					  </tr>
+					  {% if form.errors %}
+						<tr class="elementt"><span class="errorlist">Your username and password didn't match. Please try again.</span></tr>
+						{% endif %}
 					  <tr class="element">
 					  <td><label for="user_login"><span class="usernamefont"> Username</span></label></td>
 					  <td><input type="text" value="" name="username" class="usernamebox"></td>
