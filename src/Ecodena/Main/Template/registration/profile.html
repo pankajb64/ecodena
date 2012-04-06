@@ -13,7 +13,7 @@
     <img src="{{ STATIC_URL }}img/Troll_face.png" width="224px" height="220px" />
     </div>
 	<div class="profilebox">
-    	<span class="profile-page-username-font"> Arunangshu Bhakta</span>
+    	<span class="profile-page-username-font"> {{user.first_name}} {{user.last_name}}</span>
         <div class="profile-header">
         	<div class="about-user active" onclick='changeActive(this,".profilebox .user-info")'><span> BasicInfo</span>
             </div>
@@ -32,46 +32,50 @@
             </script>
         </div>
         <div class="user-info active-desc">
-        <span> Username <span style="padding-left:40px">:arunb24</span></span><br /><br />
-        <span> Email</span><span style="padding-left:84px">:arunb24@gmail.com</span><br /><br />
-        <span> Name<span style="padding-left:84px">:Arunanghu Bhakta</span></span><br /><br />
+        <span> Username <span style="padding-left:40px">:{{user.username}}</span></span><br /><br />
+        <span> Email</span><span style="padding-left:84px">:{{user.email}}</span><br /><br />
+        <span> Name<span style="padding-left:84px">:{{user.first_name}} {{user.last_name}}</span></span><br /><br />
       	<table border="1px" style="float:right">
 			<tr>
 			<th>Total Attempts</th>
 			<th>Correct Attempts</th>
-			<th>Incorrect Attempts</th>
+			<th>Wrong Answers</th>
 			<th>Compile Error</th>
 			<th>Runtime Error</th>
 			<th>Time Limit Exceeded</th>
 			<th>Memory Limit Exceeded</th>
 			</tr>
 			<tr>
-			<td style="padding-left:30px">20</td>
-			<td style="padding-left:30px">10</td>
-			<td style="padding-left:30px">10</td>
-			<td style="padding-left:30px">4</td>
-			<td style="padding-left:30px">2</td>
-			<td style="padding-left:50px">2</td>
-			<td style="padding-left:55px">2</td>			
+			<td style="padding-left:30px">{{countAttempt}}</td>
+			<td style="padding-left:30px">{{countCorrect}}</td>
+			<td style="padding-left:30px">{{countWrongAnswer}}</td>
+			<td style="padding-left:30px">{{countCompileError}}</td>
+			<td style="padding-left:30px">{{countRunTimeError}}</td>
+			<td style="padding-left:50px">{{countTimeLimitExceeded}}</td>
+			<td style="padding-left:55px">{{countMemoryLimitExceeded}}</td>			
 			</tr>
 			</table>
         </div>
         <div class="badge-info">
-			<span> Name<span style="padding-left:40px">:Arunanghu Bhakta</span></span><br /><br />
-        <span> DOB<span style="padding-left:50px">:01/01/11</span></span><br /><br />
+			<span> Name<span style="padding-left:40px">:{{user.first_name}} {{user.last_name}}</span></span><br /><br />
+        <span> DOB<span style="padding-left:50px">:{{profile.dob}}</span></span><br /><br />
+        {%if profile.gender == 0%}
         <span> Gender<span style="padding-left:30px">:Male</span></span><br /><br />
-        <span> Address<span style="padding-left:25px">:H214 wHORe-Men</span></span><br /><br />        
+        {%else%}
+        <span> Gender<span style="padding-left:30px">:Female</span></span><br /><br />
+        {%endif%}
+        <span> Address<span style="padding-left:25px">:{{profile.address}}</span></span><br /><br />        
         </div>
         <div class="question-info">
         <span>Questions Attempted</span>
         	<div class="questionbox">
-			<table style="padding:5px">
-			<tr><td style="padding:2px"><a href="#" style="color:#8ec1da">Question 1 Title goes here lkjs jksjlk  kjslk jlkjs sj lkjslkj kjsj  sljk lj </a></td></tr>			
-			<tr><td><span style="color:#ae0000">Status:</span> InCorrect;<span style="color:#ae0000"> Error Report:</span>	 Runtime Error</td>			
+			<table style="padding:5px" >
+			{%for questionTit in questionTitle%}
+			<tr><td style="padding:2px"><a href="#" style="color:#8ec1da">{{questionTit}}</a></td></tr>			
+			<!--<tr><td><span style="color:#ae0000">Status:</span> <a style="color:#000">{{attempt.status_f}}</a><span style="color:#ae0000"> Error Report:</span><a style="color:#000">{{attempt.errorReportID.errorType_f}}</a></td>-->			
 			</tr>	
-			<tr><td style="padding-top:20px"><a href="#" style="color:#8ec1da">Question 2 Title goes here lkjs jksjlk  kjslk jlkjs sj lkjslkj kjsj  sljk lj </a></td></tr>			
-			<tr><td><span style="color:#ae0000">Status:</span><span"> InCorrect;</span><span style="color:#ae0000"> Error Report:</span>	 Runtime Error</td>			
-			</tr>		
+			{%endfor%}
+				
 			</table>        	
         	</div>
         </div> 
