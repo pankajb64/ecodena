@@ -98,3 +98,32 @@ def editProfile(request):
 			
 		return render(request,'editProfile.html',context)
 	return HttpResponse("Fuck Off!!%s"%request.path)
+
+def generatePointsUser(request):
+	
+	basepoints = 1500
+	points_f = basepoints
+	n = Attempt.objects.filter(userID = request.userID_f).distinct('questionID_f').filter(status = True).count()	
+	attempts_c = Attempt.objects.filter(userID = request.userID_f).distinct('questionID_f').filter(status = True)	
+	
+	for i in range[0,n]:
+		points_f = points_f + (attempt_c[i].questionID_f.questionRating_f * 10)
+		 
+	m = Attempt.objects.filter(userID = request.userID_f).filter(status = False).count()	
+	attempts_w =  Attempt.objects.filter(userID = request.userID_f).filter(status = False).
+	
+	for j in range[0,m]:
+		points_f = points_f - (10/(attempt_w[j].questionID_f.questionRating_f))
+	
+	return points_f	
+		
+def generateRank(request):
+	
+	ranking = User.objects.order_by('-points_f')
+	n = User.objects.order_by('-points_f').count()
+	
+	for i in range[0,n]:
+		if ranking[i].userID == request.userID_f:
+			rank_f = i
+	
+	return rank_f

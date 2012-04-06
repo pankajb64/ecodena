@@ -118,7 +118,9 @@ class Programmer(User, object):
 		Basically it represents the users of ECODENA. They can submit their solutions of various problems.
 		parameters: User --> its a class that helps a user to log-in to Ecodena.'''
 	level_f = models.CharField("Level of User", max_length=20, null=False)
-
+	points_f = models.FloatField("The points for the user",null = False)
+	rank_f = models.AutoField("The rank of the user",null = False)
+	
 	def getLevel():
 		return self.level_f
 	def setLevel(level):
