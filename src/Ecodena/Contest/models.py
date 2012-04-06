@@ -1,6 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 from Question.models import Question
+import time
+import datetime
+
 class ContestHolder(User):
 	pass
 
@@ -73,16 +76,24 @@ class Contest(models.Model,object):
 	def setFinishDate(self,contestToDate):
 		self.contestToDate_f = contestToDate
 	contestToDate = property(getFinishDate,setFinishDate)
-		
+
+	def isOver(self):
+		#c = contestToTime_f 
+		c1 = datetime.datetime.now().time()
+		if c > c1:
+			return False
+		else:
+			return True
+					
 	class Meta:
 		verbose_name = 'contest'
 		verbose_name_plural = 'contests'
 	def __unicode__(self):
 		return self.contestName					
 	
-class ContestQuestion(models.Model,object):
+class ContestQuestion(Question):
 	contestID_f=models.ForeignKey(Contest,verbose_name="ContestID of the contest",null=False)
-	questionID_f=models.ForeignKey(Question,verbose_name="Question ID of the questions in the contest",null=False)
+	
 	def getContestID(self):
 		return self.contestID_f
 	def setContestID(self,contestID):
@@ -90,12 +101,8 @@ class ContestQuestion(models.Model,object):
 	
 	contestID = property(getContestID,setContestID)
 	
-	def getQuestionID(self):
-		return self.questionID_f
-	def setQuestionID(self,questionID):
-		self.questionID_f=questionID
-		
-	questionID = property(getQuestionID,setQuestionID)
+	
+
 	
 	class Meta:
 		verbose_name = 'Contest question'
