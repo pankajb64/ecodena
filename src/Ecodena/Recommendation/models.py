@@ -12,4 +12,10 @@ class Recommendation(models.Model):
 
 	userID_f = models.ForeignKey(User, verbose_name="UserID", null=False, related_name='+' )
 	#questionList_f = models.ManyToManyField(Question)
-	questionList_f = models.CommaSeparatedIntegerField("The list of question Ids recommended",max_length = 20 ,null = False )
+	#questionList_f = models.CommaSeparatedIntegerField("The list of question Ids recommended",max_length = 20 ,null = False )
+	questionList_f = models.ManyToManyField(Question, through='Recommended')
+
+class Recommended(models.Model):
+
+	recommendation = models.ForeignKey(Recommendation,verbose_name="Recommendation Object")
+	question = models.ForeignKey(Question,verbose_name = "Question Object")
