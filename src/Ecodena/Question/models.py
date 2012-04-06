@@ -55,6 +55,8 @@ class Question(models.Model, object):
 	MedtestCasesList_f = []
 	HightestCasesList_f = []
 	
+	questionPoints_f = models.FloatField("The points for the question",null = False)
+	questionRating_f = models.FloatField("The rating for the question",null = False)
 	
 	
 	def getQuestionID(self):
