@@ -110,7 +110,7 @@ def generatePointsUser(request):
 		points_f = points_f + (attempt_c[i].questionID_f.questionRating_f * 10)
 		 
 	m = Attempt.objects.filter(userID = request.userID_f).filter(status = False).count()	
-	attempts_w =  Attempt.objects.filter(userID = request.userID_f).filter(status = False).
+	attempts_w =  Attempt.objects.filter(userID = request.userID_f).filter(status = False)
 	
 	for j in range[0,m]:
 		points_f = points_f - (10/(attempt_w[j].questionID_f.questionRating_f))
