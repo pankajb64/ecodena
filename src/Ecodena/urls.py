@@ -29,6 +29,8 @@ urlpatterns = patterns('',
 	url(r'^solutions/(?P<solutionID>[0-9]+)$','Ecodena.Attempt.views.viewSolution'),
 	url(r'^login/$',  login),
 	url(r'^logout/$', 'Ecodena.Main.views.logout'),
+	url(r'^accounts/change_password/$', 'django.contrib.auth.views.password_change',{'post_change_redirect' : '/accounts/change_password/done/' }),
+    url(r'^accounts/change_password/done/', 'django.contrib.auth.views.password_change_done'),
 	url(r'^register/$', 'Ecodena.Main.views.register'),
 	url(r'^recommendations/$','Ecodena.Recommendation.views.viewRecommendations'),
 	url(r'^forum/', include('forum.urls')),
@@ -44,6 +46,8 @@ urlpatterns = patterns('',
 	url(r'^problemSetter/viewProblems/(?P<questionID>[0-9]+)$','Ecodena.ProblemSetter.views.ViewProblem'),
 	url(r'^problemSetter/UploadProblem/$','Ecodena.ProblemSetter.views.UploadProblem')
 )
+
+
 
 
 

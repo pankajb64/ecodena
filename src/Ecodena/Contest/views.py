@@ -16,7 +16,8 @@ from Contest.models import ContestParticipants
 from django.contrib.auth.models import User
 from django.core.context_processors import csrf
 from django.views.decorators.csrf import csrf_protect
-
+from django.contrib.admin.widgets import AdminDateWidget
+from django.contrib.auth.decorators import login_required
 
 
 class HoldContestForm(forms.Form):
@@ -24,8 +25,8 @@ class HoldContestForm(forms.Form):
 	contestpwd = forms.CharField(widget=forms.PasswordInput)
 	contestpwd1 = forms.CharField(widget=forms.PasswordInput)	
 	termsCond = forms.CharField(widget = forms.Textarea)
-	contestFromDate = forms.DateField()
-	contestToDate = forms.DateField()
+	contestFromDate = forms.DateField(widget = AdminDateWidget)
+	contestToDate = forms.DateField(widget = AdminDateWidget)
 	contestFromTime = forms.TimeField()
 	contestToTime = forms.TimeField()
 	def clean_password(self):
@@ -40,40 +41,39 @@ class HoldContestForm(forms.Form):
 	
 
 @csrf_protect	
+@login_required(login_url="/login/")
 def holdContest(request):
-	if request.user.is_authenticated():
-		f=HoldContestForm()
-		dc = {'form':f}
-		context = RequestContext(request, dc)
-		if request.method == "POST":
-			f=HoldContestForm(request.POST)
-			if not f.is_valid():
-				dc = {'form':f}
-				context = RequestContext(request, dc)
-				#raise Http404
-				return render_to_response('holdContest.html',context)
-			else:
-				contest=Contest()
-				context = RequestContext(request,dc)
-			#	contest.adminID = User.objects.filter(User.username="sen3")[0]
-				contest.contestName_f = f.cleaned_data['contestName']
-				contest.contestpwd_f = f.cleaned_data['contestpwd']
-				contest.termsCond = f.cleaned_data['termsCond']
-				contest.contestFromDate = f.cleaned_data['contestFromDate']
-				contest.contestToDate = f.cleaned_data['contestToDate']
-				contest.contestFromTime = f.cleaned_data['contestFromTime']
-				contest.contestToTime = f.cleaned_data['contestToTime']
-				contest.isApproved = False
-				contest.save()
-				f=HoldContestForm()
-				#contestID = contest.contestID
-				
-				return HttpResponse("Your contest is send to admin for approval%s"%request.path)
-		else:
+	
+	f=HoldContestForm()
+	dc = {'form':f}
+	context = RequestContext(request, dc)
+	if request.method == "POST":
+		f=HoldContestForm(request.POST)
+		if not f.is_valid():
+			dc = {'form':f}
+			context = RequestContext(request, dc)
+			#raise Http404
 			return render_to_response('holdContest.html',context)
+		else:
+			contest=Contest()
+			context = RequestContext(request,dc)
+		#	contest.adminID = User.objects.filter(User.username="sen3")[0]
+			contest.contestName_f = f.cleaned_data['contestName']
+			contest.contestpwd_f = f.cleaned_data['contestpwd']
+			contest.termsCond = f.cleaned_data['termsCond']
+			contest.contestFromDate = f.cleaned_data['contestFromDate']
+			contest.contestToDate = f.cleaned_data['contestToDate']
+			contest.contestFromTime = f.cleaned_data['contestFromTime']
+			contest.contestToTime = f.cleaned_data['contestToTime']
+			contest.isApproved = False
+			contest.save()
+			f=HoldContestForm()
+			#contestID = contest.contestID
+			
+			return HttpResponse("Your contest is send to admin for approval%s"%request.path)
 	else:
-		return HttpResponse("You need to log in to hold contest %s"%request.path)					
-
+		return render_to_response('holdContest.html',context)
+	
 def listContests(request):
 	contest = Contest.objects.filter(contestToDate_f__gte=datetime.datetime.now().date()).filter(contestToTime_f__gte=datetime.datetime.now().time())
 	return render_to_response('listContests.html',{'contest':contest,'time':datetime.datetime.now().time(),'date':datetime.datetime.now()})
