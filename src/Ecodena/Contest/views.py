@@ -65,7 +65,7 @@ def holdContest(request):
 			contest.contestToDate = f.cleaned_data['contestToDate']
 			contest.contestFromTime = f.cleaned_data['contestFromTime']
 			contest.contestToTime = f.cleaned_data['contestToTime']
-			contest.isApproved = False
+			#contest.isApproved = False
 			contest.save()
 			f=HoldContestForm()
 			#contestID = contest.contestID

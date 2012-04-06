@@ -31,6 +31,10 @@ urlpatterns = patterns('',
 	url(r'^logout/$', 'Ecodena.Main.views.logout'),
 	url(r'^accounts/change_password/$', 'django.contrib.auth.views.password_change',{'post_change_redirect' : '/accounts/change_password/done/' }),
     url(r'^accounts/change_password/done/', 'django.contrib.auth.views.password_change_done'),
+	url(r'^accounts/password/reset/$', 'django.contrib.auth.views.password_reset',{'post_reset_redirect' : '/accounts/password/reset/done/'}),
+	url(r'^accounts/password/reset/done/$', 'django.contrib.auth.views.password_reset_done'),
+	url(r'^accounts/password/reset/(?P<uidb36>[0-9A-Za-z]+)-(?P<token>.+)/$', 'django.contrib.auth.views.password_reset_confirm',{'post_reset_redirect' : '/accounts/password/done/'}),
+    url(r'^accounts/password/done/$', 'django.contrib.auth.views.password_reset_complete'),
 	url(r'^register/$', 'Ecodena.Main.views.register'),
 	url(r'^recommendations/$','Ecodena.Recommendation.views.viewRecommendations'),
 	url(r'^forum/', include('forum.urls')),
@@ -47,6 +51,8 @@ urlpatterns = patterns('',
 	url(r'^problemSetter/UploadProblem/$','Ecodena.ProblemSetter.views.UploadProblem'),
 	#url(r'^notification/', include('notification.urls')),
 )
+
+
 
 
 
