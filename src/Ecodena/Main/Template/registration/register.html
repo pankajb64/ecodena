@@ -52,13 +52,41 @@
              </form--> 
              <form action="" method="post">
 				 <div class="relement" align=center><h1> Don't have a account yet? Sign Up</h1></div>
-				{% for field in form %}
+				<!--for loop was here -->
 					{{ form.non_field_errors }}
 					<div class="relement" align=center>
-						{{ field.errors }}
-						{{ field.label_tag }} &nbsp; {{ field }}
+						<div class="usernamefont">{{ field.errors }}
+						</div>	
+						<table>
+						<tr><td ><span class="usernamefont registerpage">{{form.username.label}}</span></td>
+						<td style="float:left">{{form.username}}</td>
+						<td>{{form.username.errors}}</td>
+						</tr>	
+						<tr><td class="usernamefont">{{form.password1.label}}</td>
+						<td style="float:left">{{form.password1}}</td>
+						</tr>	
+						<tr><td class="usernamefont">Confirm Password</td>
+						<td style="float:left">{{form.password2}}</td>
+						</tr>	
+						<tr><td class="usernamefont">{{form.email.label}}</td>
+						<td style="float:left">{{form.email}}</td>
+						</tr>				
+						<tr><td class="usernamefont">{{form.first_name.label}}</td>
+						<td style="float:left">{{form.first_name}}</td>
+						</tr>		
+						<tr><td class="usernamefont">{{form.last_name.label}}</td>
+						<td style="float:left">{{form.last_name}}</td>
+						</tr>	
+						</table>			
+						<!--<div class="usernamefont">
+						{{ field.label_tag }} &nbsp
+						</div> 
+						<div class="testfield">{{ field }}
+						</div>-->
+						
 					</div>
-				{% endfor %}
+				<!-- for loop ended here-->
+				<!-- -->
 				<div  class="element" id="submit"><input type="submit" class="submitButton" id="signupbutton" value="Register" /></div>
 			</form>
         </div>   

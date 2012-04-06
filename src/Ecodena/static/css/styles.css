@@ -678,6 +678,21 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endC
 	font:15px  "Lucida Console", Monaco, monospace;
 	color:white;
 }
+.registerpage
+{
+	margin-left: 0px;
+}
+.usernamefont input
+{
+	padding:10px auto;
+}
+.testfont
+{
+	float: left;
+	color: #eaeaea;
+	font-size: 14px;
+	display: inline;
+}
 .registertext
 {
 	font:17px "Lucida Console", Monaco, monospace;
@@ -807,8 +822,9 @@ display:block;
 {
 	margin-left: 536px;
 	font-family: Verdana,sans-serif;	
-	color: #FFF;
+	color: #000;
 	font-weight:bold;
+	display: inline;
 }
 
 .wrapper
