@@ -19,7 +19,7 @@ urlpatterns = patterns('',
 	url(r'^test/$', 'Ecodena.Main.views.sendmail'),
 
 	url(r'^questions/$', 'Ecodena.Question.views.listQuestions'),
-	url(r'^postQuery/$', 'Ecodena.Query.views.postQuery'),
+	#url(r'^postQuery/$', 'Ecodena.Query.views.postQuery'),
 	url(r'^questions/(?P<questionID>[0-9]+)/$', 'Ecodena.Question.views.viewQuestionByID'),
 	url(r'^submitSolution/(?P<questionID>[0-9]+)/$', 'Ecodena.Attempt.views.submitSolution'),
 	url(r'^profile/$','Ecodena.User.views.viewProfile'),
@@ -44,7 +44,8 @@ urlpatterns = patterns('',
 	#url(r'^registerInContest/(?P<contestID>[0-9]+)$','Ecodena.Contest.views.registerInContest'),
 	url(r'^problemSetter/viewProblems/$','Ecodena.ProblemSetter.views.ViewProblemSet'),
 	url(r'^problemSetter/viewProblems/(?P<questionID>[0-9]+)$','Ecodena.ProblemSetter.views.ViewProblem'),
-	url(r'^problemSetter/UploadProblem/$','Ecodena.ProblemSetter.views.UploadProblem')
+	url(r'^problemSetter/UploadProblem/$','Ecodena.ProblemSetter.views.UploadProblem'),
+	#url(r'^notification/', include('notification.urls')),
 )
 
 

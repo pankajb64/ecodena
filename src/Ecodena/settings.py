@@ -145,7 +145,7 @@ INSTALLED_APPS = (
     'Ecodena.Question',
     'Ecodena.Attempt',
     'Ecodena.Comment',
-    'Ecodena.Query',
+#    'Ecodena.Query',
     'Ecodena.Compiler',	
     'Ecodena.Contest',
     'Ecodena.ProblemSetter',	 	
@@ -159,7 +159,8 @@ INSTALLED_APPS = (
     'djcelery',
     'forum' ,
     'registration',
-    'simplewiki', 
+    'simplewiki',
+#    'notification', 
 )  
 
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
