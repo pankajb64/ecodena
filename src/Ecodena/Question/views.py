@@ -6,6 +6,8 @@ from django.shortcuts import render_to_response, render
 from datetime import datetime
 from django import forms
 from django.template import RequestContext
+from Ecodena.Attempt.models import *
+
 
 class CommentForm(forms.Form):
 	'''Creates a form for writing a comment'''
@@ -57,3 +59,32 @@ def viewQuestionByID(request, questionID):
 		return render(request, 'question.html', RequestContext(request))	
 #	return HttpResponse("%s" %questions)
 
+def generatePoints(request):
+	
+		questionPoints_f = level_f.levelID_f * 20
+		#assuming 5 levels... for n levels i should be 100/n
+		
+		return questionPoints_f
+
+def generateRating(request):
+		numberOfUsers = Attempt.objects.filter(questionID_f = request.questionID_f).distinct('userID_f').filter(status = True).count()
+		totalUsers = Attempt.objects.distinct('userID_f').count()
+		
+		a = 0.25
+		p1 = pow((numberOfUsers/totalUsers),a)
+		# this shows the ratio of users able to solve the question
+	
+		totalUsers_f = Attempt.objects.filter(questionID_f = request.questionID_f).distinct('userID_f').count()
+		b = 0.25
+		p2 = pow((numberOfUsers/totalUsers_f),b)
+		#this shows the accuracy of the rating
+		
+		questionPoints_f = level_f.levelID_f * 20
+		#assuming 5 levels... for n levels i should be 100/n
+		
+		c = 0.125
+		p3 = pow((questionPoints_f/100),c)
+		#this shows the difficulty of the problem
+		
+		questionRatings_f = 10 *p1*p2*p3
+		return questionRating_f
