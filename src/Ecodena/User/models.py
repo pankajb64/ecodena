@@ -140,6 +140,8 @@ class Profile(models.Model, object):
 	userID_f = models.ForeignKey(User, verbose_name="User ID of user whose profile is this", null=False, unique=True)
 	isProgrammer_f = models.BooleanField("Is a Programmer", default=True, )
 	isAdmin_f = models.BooleanField("Is Administrator", default=False, )
+	isProblemSetter = models.BooleanField("Is a Problem Setter" , default=False, )
+	
 	
 	def getDOB(self):
 		return self.dob_f

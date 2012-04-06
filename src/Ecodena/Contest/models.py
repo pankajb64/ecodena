@@ -17,6 +17,7 @@ class Contest(models.Model,object):
 	contestToDate_f = models.DateField("Date at which contest ends")
 	contestFromTime_f = models.TimeField("Time at which contest starts")
 	contestToTime_f = models.TimeField("Time at which contest ends")
+	isApproved = models.BooleanField(("Approval for a contest" , default=False, )
 	
 	def getContestID(self):
 		return self.contestID_f

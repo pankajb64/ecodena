@@ -3,7 +3,7 @@ from Contest.models import ContestQuestion
 from Contest.models import ContestParticipants
 from django.contrib import admin
 class ContestAdmin(admin.ModelAdmin):
-	list_display=('contestID_f','contestName_f','contestPwd_f','termsCond_f','adminID_f','contestToDate_f','contestFromDate_f','contestFromTime_f','contestToTime_f')
+	list_display=('contestID_f','contestName_f','contestPwd_f','termsCond_f','adminID_f','contestToDate_f','contestFromDate_f','contestFromTime_f','contestToTime_f','isApproved')
 
 class ContestQuestionAdmin(admin.ModelAdmin):
 	list_display=('contestID_f','questionID_f')
