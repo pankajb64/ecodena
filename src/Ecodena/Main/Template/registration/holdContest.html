@@ -1,7 +1,57 @@
+<!--<h1>
+	Contest Details
+	</h1>
+<form action="" method="post">{%csrf_token%}
+    {{ form.non_field_errors }}
+    <div class="fieldWrapper">
+        {{ form.contestName.errors }}
+        <label for="id_contestName">Contest Name:</label>
+        {{ form.contestName }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.contestpwd.errors }}
+        <label for="id_contestpwd">Contest Password:</label>
+        {{ form.contestpwd }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.contestpwd1.errors }}
+        <label for="id_contestpwd1">Contest Password Confirmation:</label>
+        {{ form.contestpwd1 }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.termsCond.errors }}
+        <label for="id_termsCond">Terms and Conditions</label>
+        {{ form.termsCond }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.contestFromDate.errors }}
+        <label for="id_contestFromDate">Contest Start Date</label>
+        {{ form.contestFromDate }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.contestToDate.errors }}
+        <label for="id_contestToDate">Contest End Date</label>
+        {{ form.contestToDate }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.contestFromTime.errors }}
+        <label for="id_contestFromTime">Contest Start Time</label>
+        {{ form.contestFromTime }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.contestToTime.errors }}
+        <label for="id_contestToTime">Contest End Time</label>
+        {{ form.contestToTime }}
+    </div>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+-->
+
 <h1>
 	Contest Details
 	</h1>
-<form action="" method="POST">{% csrf_token %}
+	<form action = "" method = "POST"> {% csrf_token %}
 	{{form.as_p}}
-<input type="submit" value="submit"/>
-</form>		
+	<input type="submit" value="submit">
+		
+	</form>

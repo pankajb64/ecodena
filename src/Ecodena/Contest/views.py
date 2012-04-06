@@ -1,5 +1,4 @@
-# Create your views here.
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from django.shortcuts import render_to_response
 from django.shortcuts import render
 from django.contrib.auth.models import User
@@ -22,12 +21,22 @@ from django.views.decorators.csrf import csrf_protect
 
 class HoldContestForm(forms.Form):
 	contestName = forms.CharField()
-	contestpwd = forms.CharField()
+	contestpwd = forms.CharField(widget=forms.PasswordInput)
+	contestpwd1 = forms.CharField(widget=forms.PasswordInput)	
 	termsCond = forms.CharField(widget = forms.Textarea)
 	contestFromDate = forms.DateField()
 	contestToDate = forms.DateField()
 	contestFromTime = forms.TimeField()
 	contestToTime = forms.TimeField()
+	def clean_password(self):
+		if self.data['contestpwd'] != self.data['contestpwd1']:
+			raise forms.ValidationError('Passwords are not the same')
+		return self.data['contestpwd']
+	
+	def clean(self,*args, **kwargs):
+		#self.clean_email()
+		self.clean_password()
+		return super(HoldContestForm, self).clean(*args, **kwargs)
 	
 
 @csrf_protect	
@@ -39,6 +48,9 @@ def holdContest(request):
 		if request.method == "POST":
 			f=HoldContestForm(request.POST)
 			if not f.is_valid():
+				dc = {'form':f}
+				context = RequestContext(request, dc)
+				#raise Http404
 				return render_to_response('holdContest.html',context)
 			else:
 				contest=Contest()
@@ -52,6 +64,7 @@ def holdContest(request):
 				contest.contestFromTime = f.cleaned_data['contestFromTime']
 				contest.contestToTime = f.cleaned_data['contestToTime']
 				contest.save()
+				f=HoldContestForm()
 				#contestID = contest.contestID
 				
 				return HttpResponse("Your contest is send to admin for approval%s"%request.path)
@@ -80,8 +93,6 @@ def contestCompleted(request):
 		return contest
 	else:
 		return None
-
-
 	
 	
 def participateInContestlist(request):
