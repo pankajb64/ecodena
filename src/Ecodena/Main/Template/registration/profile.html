@@ -13,7 +13,10 @@
     <img src="{{ STATIC_URL }}img/Troll_face.png" width="224px" height="220px" />
     </div>
 	<div class="profilebox">
-    	<span class="profile-page-username-font"> {{user.first_name}} {{user.last_name}}</span>
+    	<span class="profile-page-username-font"> {{user.first_name|upper}} {{user.last_name|upper}}
+		<span style="display:inline"><input type="submit"  class="submitButton editprofilebutton" id="commentbutton" value="Edit Profile" > </span>   	
+    	</span>
+    	
         <div class="profile-header">
         	<div class="about-user active" onclick='changeActive(this,".profilebox .user-info")'><span> BasicInfo</span>
             </div>

@@ -11,7 +11,7 @@ from Ecodena.Attempt.models import *
 
 class CommentForm(forms.Form):
 	'''Creates a form for writing a comment'''
-	text = forms.CharField(widget=forms.Textarea(attrs={'rows':3, 'cols':80}), label="Enter the Text to comment", initial="")
+	text = forms.CharField(widget=forms.Textarea(attrs={'rows':3, 'cols':66}), label="Enter the Text to comment", initial="")
 	
 	
 def test(request):
