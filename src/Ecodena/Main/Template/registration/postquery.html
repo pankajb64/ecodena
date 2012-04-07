@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+	{% block content %}
+	{% if form %}
+		<form action="" method="post">{% csrf_token %}
+		{{ form.as_p }}
+		<input type = "submit" value ="submit"/>
+		</form>
+	{% endif %}
+
+	{% if queryID %}
+	<h1> Thank you for posting your Query, {{ user.username }}.<br/> Your Query ID is {{queryID }} Please keep this ID with you for future reference</h1>
+	{% endif %}
+{% endblock %}

@@ -39,9 +39,9 @@ class CCompiler111(Compiler):
 			timeStart = 0.0
 			timeEnd = 0.0
 			print "\nThe code compiled successfully"
-			run_command = "./" + path + "/output "+ inputdata  +" > "+useroutput+ " 2> "+runerrorfile
+			run_command = "./" + path + "/output <"+ inputdata  +" > "+useroutput+ " 2> "+runerrorfile
 			print "\nNow we will run the code: " + run_command
-			memCommand = "/usr/bin/time -f '%M' ./" + path + "/output " +inputdata+" > "+useroutput+" 2> "+memoryfile
+			memCommand = "/usr/bin/time -f '%M' ./" + path + "/output <" +inputdata+" > "+useroutput+" 2> "+memoryfile
 			os.system(memCommand)
 			temp = open(memoryfile)
 			runMem = temp.read()
@@ -61,6 +61,10 @@ class CCompiler111(Compiler):
 			
 			print "\nRun Program Return Value = " + str(run_return)
 			if(run_return == 0):
+				print useroutput
+				print outputdata
+				print open(useroutput).read()
+				print open(outputdata).read()
 				validate_command = "diff -Bw "+useroutput+" "+outputdata+" > /dev/null"
 				timeStart = time.time()
 				validate_output = os.system(validate_command)

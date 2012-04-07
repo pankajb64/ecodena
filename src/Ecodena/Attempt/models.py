@@ -68,7 +68,7 @@ class ErrorReport(models.Model, object):
 		verbose_name_plural = 'error reports'
 
 	def __unicode__(self):
-		return `self.errorReportID_f` + ' ' + `self.errorType` + ' ' + self.errorMessage
+		return `self.errorReportID_f` + ' ' + `self.errorType` + ' ' + `self.errorMessage`
 		
 
 class Attempt(models.Model, object):

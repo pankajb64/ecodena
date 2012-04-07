@@ -28,58 +28,60 @@ def gyo():
 #lock = Lock()
 '''
 
-@periodic_task(run_every=timedelta(seconds=1))
+@periodic_task(run_every=timedelta(seconds=10))
 def compile():
-	pass
-	
-	lock.acquire()
-	print "gyo"
-	reports = ErrorReport.objects.filter(errorType_f = 6)
-	
-	if not reports:
-		print "Nothing to do"
-		return
+	#pass
+	try:
+		lock.acquire()
+		print "gyo"
+		reports = ErrorReport.objects.filter(errorType_f = 6)
 		
-	attempt = Attempt.objects.filter(errorReportID_f__in = reports)
-	
-	if not attempt:
-		print "Nothing to do"
-		return
-	print "got attempt"
+		if not reports:
+			print "Nothing to do"
+			return
+			
+		attempt = Attempt.objects.filter(errorReportID_f__in = reports)
 		
-	attempt = attempt.order_by('timeOfSubmission_f')[0]
-	
-	question = attempt.questionID_f;
-	
-	version = attempt.compilerVersion
-	
-	compiler_ver_lang =  version.language.languageName + ' ' +version.versionName
-	compiler = None
-	if compiler_ver_lang in compilers:
-		compiler = compilers[compiler_ver_lang]
-		# do your main code
-		#errorReportID = compiler(attempt.questionID, attempt)
-	else: 
-		print"Compiler not available " + compiler_ver_lang
-		return None
-	####################################################################
-	questions = TestCase.objects.filter(questionID_f=question)
-	if questions : 
-		question.LowtestCasesList_f = questions.filter(caseType_f = 0)
-		question.MedtestCasesList_f = questions.filter(caseType_f = 1)
-		question.HightestCasesList_f = questions.filter(caseType_f = 2)
+		if not attempt:
+			print "Nothing to do"
+			return
+		print "got attempt"
+			
+		attempt = attempt.order_by('timeOfSubmission_f')[0]
+		print "1"
+		question = attempt.questionID_f;
+		
+		version = attempt.compilerVersion
+		print "2"
+		compiler_ver_lang =  version.language.languageName + ' ' +version.versionName
+		compiler = None
+		if compiler_ver_lang in compilers:
+			compiler = compilers[compiler_ver_lang]
+			# do your main code
+			#errorReportID = compiler(attempt.questionID, attempt)
+		else: 
+			print"Compiler not available " + compiler_ver_lang
+			return None
+		####################################################################
+		questions = TestCase.objects.filter(questionID_f=question)
 		print "running" + `compiler`
-		errorReport = execute(attempt,question,compiler)
-		#errorReport.testCaseLevel_f=0
-		if errorReport is not None:
-			errorReport.save()
-			attempt.errorReportID_f = errorReport
-			if errorReport.errorType_f == 0:
-				attempt.status_f = True
-			attempt.save()
-		else:
-			print "Oops - Khali error report"					
-	lock.release()
+		if questions : 
+			question.LowtestCasesList_f = questions.filter(caseType_f = 0)
+			question.MedtestCasesList_f = questions.filter(caseType_f = 1)
+			question.HightestCasesList_f = questions.filter(caseType_f = 2)
+			
+			errorReport = execute(attempt,question,compiler)
+			#errorReport.testCaseLevel_f=0
+			if errorReport is not None:
+				errorReport.save()
+				attempt.errorReportID_f = errorReport
+				if errorReport.errorType_f == 0:
+					attempt.status_f = True
+				attempt.save()
+			else:
+				print "Oops - Khali error report"
+	finally:					
+		lock.release()
 
 def execute(attempt,question,compiler):
 	print "Running Execute"

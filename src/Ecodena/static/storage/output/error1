@@ -1,2 +1,0 @@
-static/storage/solution/2_Main.c: In function ‘main’:
-static/storage/solution/2_Main.c:4:2: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]

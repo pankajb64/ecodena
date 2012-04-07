@@ -17,8 +17,9 @@ from django.template import RequestContext
 from django.views.decorators.csrf import csrf_protect
 from Compiler.models import CompilerVersion
 from django.contrib.auth.decorators import login_required
+import time
 
-path = "static/solution/"
+path = "static/storage/solution/"
 
 class SolutionForm(forms.Form):
 	'''creates a form for pasting the solution of a question '''
@@ -30,16 +31,18 @@ class SolutionForm(forms.Form):
 	#title = forms.CharField(max_length=50)
 	file  = forms.FileField(required=False)
     
-	def clean_text(self):
-		super(SolutionForm, self).clean(*args, **kwargs)
+	def cleantext(self):
+		#val = super(forms.FileField, self.file).clean()
 		
-		if not ( args[0] or self.data['text']):
+		if not ( self.data['file'] or self.data['text']):
 			raise forms.ValidationError('Please enter your code in text box or upload an arrpopriate file.')
 		return self.data['text']
 		
 	def clean(self,*args, **kwargs):
 		#self.clean_email()
-		self.clean_text()
+		#self.clean_text()
+		if not ( self.cleaned_data['file'] or self.data['text']):
+			raise forms.ValidationError('Please enter your code in text box or upload an arrpopriate file.')
 		return super(SolutionForm, self).clean(*args, **kwargs)
 
 @login_required(login_url="/login/")		
@@ -90,9 +93,6 @@ def submitSolution(request,questionID):
 			attempt = Attempt()
 			#errorReportID=compileSolution()
 			dc = { 'errorReportID':attempt.errorReportID,'version':version,'dt':dt}
-			
-			
-            
 			context = RequestContext(request, dc)
 			attempt.solutionText = "Main"
 			tokens = (f.cleaned_data['version']).split(" ")
@@ -104,16 +104,20 @@ def submitSolution(request,questionID):
 			attempt.timeOfSubmission = datetime.now()
 			attempt.ErrorReport = ErrorReport(errorType_f=0)
 			attempt.save()
-			file_name = path + "Main." + attempt.compilerVersion.language.languageName.lower()	
+			file_name =  path + `attempt.attemptID_f` + "_Main." + attempt.compilerVersion.language.languageName.lower()	
 			if request.FILES:
 				handle_uploaded_file(request.FILES['file'],file_name)
-			else:
+			else :
 				destination = open(file_name, "w")
 				destination.write(f.cleaned_data["text"])
 				destination.close()	
 			attempt.solutionText = file_name
-			attempt.ErrorReport.errorType_f = 6
-			attempt.save()	
+			errorReport = ErrorReport()
+			errorReport.errorType_f = 6
+			errorReport.save()
+			attempt.errorReportID_f = errorReport
+			attempt.save()
+			#compile()	
 			return render(request, 'submitsuccess.html', context) 
 		
 		#language = Language.objects.all()
@@ -139,6 +143,3 @@ def compileSolution(version,solution,question):
 		errorReportID = compiler()
 	else: 
 		print"Compiler not available"
-	
-	
-	
