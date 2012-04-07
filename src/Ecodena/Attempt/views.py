@@ -1,7 +1,8 @@
 #It controls the views of the Attempts
 
 from django.http import HttpResponse
-from Attempt.models import Attempt
+from Attempt.models import *
+from Question.models import *
 #from User.models import User
 import Compiler
 from Compiler.dictionary import compilers
@@ -23,16 +24,18 @@ class SolutionForm(forms.Form):
 	'''creates a form for pasting the solution of a question '''
 	text = forms.CharField(widget=forms.Textarea, required=False)
 	cv = tuple(CompilerVersion.objects.all())
-	CHOICES = (('1.1.1', 'C 1.1.1'),
+	CHOICES = (('C 1.1.1', 'C 1.1.1'),
                ('b','Dummy'))
 	version = forms.ChoiceField(widget=forms.Select(), choices=CHOICES)
 	#title = forms.CharField(max_length=50)
 	file  = forms.FileField(required=False)
     
 	def clean_text(self):
-		if not (self.data['file'] or self.data['text']):
+		super(SolutionForm, self).clean(*args, **kwargs)
+		
+		if not ( args[0] or self.data['text']):
 			raise forms.ValidationError('Please enter your code in text box or upload an arrpopriate file.')
-		return self.data['contestpwd']
+		return self.data['text']
 		
 	def clean(self,*args, **kwargs):
 		#self.clean_email()
@@ -86,27 +89,30 @@ def submitSolution(request,questionID):
 		else:
 			attempt = Attempt()
 			#errorReportID=compileSolution()
-			dc = { 'errorReportID':errorReportID,'version':version,'dt':dt}
+			dc = { 'errorReportID':attempt.errorReportID,'version':version,'dt':dt}
 			
 			
             
 			context = RequestContext(request, dc)
 			attempt.solutionText = "Main"
-			attempt.compilerVersion = f.version
-			attempt.questionID = questionID
-			attempt.userID = userID
-			attempt.timeOfSubmission = datetime.datetime.now()
-			attempt.ErrorReport = 0
+			tokens = (f.cleaned_data['version']).split(" ")
+			lan = Language.objects.filter(languageName_f=tokens[0])
+			version = CompilerVersion.objects.filter(language_f=lan).filter(versionName_f=tokens[1])[0]
+			attempt.compilerVersion = version
+			attempt.questionID = Question.objects.get(questionID_f=questionID)
+			attempt.userID = request.user
+			attempt.timeOfSubmission = datetime.now()
+			attempt.ErrorReport = ErrorReport(errorType_f=0)
 			attempt.save()
 			file_name = path + "Main." + attempt.compilerVersion.language.languageName.lower()	
-			if f.cleaned_data['file']:
+			if request.FILES:
 				handle_uploaded_file(request.FILES['file'],file_name)
 			else:
 				destination = open(file_name, "w")
 				destination.write(f.cleaned_data["text"])
 				destination.close()	
 			attempt.solutionText = file_name
-			attempt.ErrorReport = 6
+			attempt.ErrorReport.errorType_f = 6
 			attempt.save()	
 			return render(request, 'submitsuccess.html', context) 
 		
@@ -115,6 +121,7 @@ def submitSolution(request,questionID):
 	return render(request, 'submitsolution.html',context)
 
 def handle_uploaded_file(f, file_name):
+	
     destination = open(file_name, 'wb+')
     for chunk in f.chunks():
         destination.write(chunk)

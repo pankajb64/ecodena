@@ -112,11 +112,11 @@ EMAIL_HOST_PASSWORD = 'senteam3'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 '''
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'gmail-smtp-in.l.google.com'
+#EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'ecodenacommit@gmail.com'
 EMAIL_HOST_PASSWORD = 'senteam3'
-EMAIL_PORT = 25
+EMAIL_PORT = 687
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -147,7 +147,7 @@ INSTALLED_APPS = (
     'Ecodena.Comment',
 #    'Ecodena.Query',
     'Ecodena.Compiler',	
-    'Ecodena.Contest',
+    #'Ecodena.Contest',
     'Ecodena.ProblemSetter',	 	
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
