@@ -1,5 +1,43 @@
+{% extends "base.html" %}
+{% block title %}
+	{% if targetuser %}
+	Profile - {{ targetuser }}
+	{% else %}
+	Profile {{ user }}
+	{% endif %}
+{% endblock %}
 
-<form action="" method="POST">{%csrf_token%}
-	{{form}}
+{% block content %}
+
+<div class="profilebox">
+    	<span class="profile-page-username-font"> {{user.first_name|upper}} {{user.last_name|upper}}   	
+    	</span>
+    	
+        <div class="profile-header">
+        	<div class="about-user active" onclick='changeActive(this,".profilebox .user-info")'><span> EditProfile</span>
+            </div>
+            <script>
+            	function changeActive(elem,id)
+                {
+                	$(".profile-header .active").removeClass("active");
+                    $(elem).addClass("active");
+					$(".profilebox .active-desc").removeClass("active-desc");
+					$(id).addClass("active-desc");
+                }
+            </script>
+            <div class="user-info active-desc">
+            <form action="" method="POST">{%csrf_token%}
+	<div>
+	<span>First Name {{form.fname}}</span><br />
+	<span>Last Name {{form.lname}}</span><br />
+	<span>DOB{{form.dob}}</span><br />
+	<span>Gender{{form.gender}}</span><br />
+	<span>Address</span><br />
+	<span>{{form.address}}</span>
+	</div>
 <input type="submit" value="submit"/>
 </form>	
+            </div>
+        </div>
+        </div>
+{% endblock %}

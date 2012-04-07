@@ -13,6 +13,8 @@ from django.forms.formsets import formset_factory
 from django.contrib.auth.decorators import login_required
 
 class ProfileForm(forms.Form):
+	fname = forms.CharField(required = False)
+	lname = forms.CharField(required = False)
 	dob = forms.DateField(required=False)
 	GENDER_CHOICES = (
     (0, 'Male'),
@@ -20,7 +22,7 @@ class ProfileForm(forms.Form):
 	)
 	gender=forms.ChoiceField(choices=GENDER_CHOICES,required=False)
 	email=forms.EmailField(required=False)
-	address  = forms.CharField(widget=forms.Textarea,required=False)
+	address  = forms.CharField(widget=forms.Textarea(attrs={'rows':2, 'cols':66}),required=False)
 	
 @login_required(login_url="/login/")	
 def viewProfile(request):
@@ -90,6 +92,10 @@ def editProfile(request):
 				dc = {'form':f,'profile':p,'user':request.user}
 				context = RequestContext(request, dc)
 			#	p = f.save()
+				if f.cleaned_data['fname']: 
+					u.first_name = f.cleaned_data['fname']	
+				if f.cleaned_data['lname']: 
+					u.last_name = f.cleaned_data['lname']	
 				if f.cleaned_data['dob']: 
 					p.dob_f = f.cleaned_data['dob']	
 				if f.cleaned_data['address']: 			
