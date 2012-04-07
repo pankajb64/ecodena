@@ -17,40 +17,52 @@ from django.views.decorators.csrf import csrf_protect
 from Compiler.models import CompilerVersion
 from django.contrib.auth.decorators import login_required
 
+path = "static/solution/"
+
 class SolutionForm(forms.Form):
 	'''creates a form for pasting the solution of a question '''
-	text = forms.CharField(widget=forms.Textarea)
-	cv = CompilerVersion.objects.all()
-	cvname = []
-	for c in cv:
-		cvname.append(c.versionName)
-	version = forms.ChoiceField(widget=forms.Select(),choices=cvname)
+	text = forms.CharField(widget=forms.Textarea, required=False)
+	cv = tuple(CompilerVersion.objects.all())
+	CHOICES = (('1.1.1', 'C 1.1.1'),
+               ('b','Dummy'))
+	version = forms.ChoiceField(widget=forms.Select(), choices=CHOICES)
+	#title = forms.CharField(max_length=50)
+	file  = forms.FileField(required=False)
+    
+	def clean_text(self):
+		if not (self.data['file'] or self.data['text']):
+			raise forms.ValidationError('Please enter your code in text box or upload an arrpopriate file.')
+		return self.data['contestpwd']
 		
+	def clean(self,*args, **kwargs):
+		#self.clean_email()
+		self.clean_text()
+		return super(SolutionForm, self).clean(*args, **kwargs)
+
+@login_required(login_url="/login/")		
 def listSolutions(request):
 	'''lists all the solutionIDs' that a particular user has submitted
 	parameter:request-->All the details associated with URL 
 	returns the solutions.html page and the list of solution ids'''
-	if request.user.is_authenticated():
-		solutions = Attempt.objects.filter(userID_f=request.user)
-		return render(request, 'solutions.html',{'solutions':solutions})
-	else:
-		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
+	solutions = Attempt.objects.filter(userID_f=request.user)
+	return render(request, 'solutions.html',{'solutions':solutions})
 
+
+@login_required(login_url="/login/")
 def viewSolution(request,solutionID):
 	'''A soluiton whose Id is passed as the parameter is displayed with the AttemptID, question text, level, question type, solution provided by the user, status of the solution and the error report for the solution
 	Parameter:request-->All the information of the form is stored in request
 	solutionID-->the ID of attempt to be displayed
 	If the user is not authenticated then this returns an Http Response stating that the user is not logged in
 	If the user is authenticated and the form filled is valid then it returns the page with the solution and other details'''
-	if request.user.is_authenticated():
-		s = Attempt.objects.filter(attemptID_f=solutionID)
-		solution = s.filter(userID_f=request.user)
-		if not solution:
-			return render(request, 'solution.html',{'solution':solution})
-		else :
-			return render(request, 'solution.html',)
-	else:
-		return HttpResponse("You need to log in first, only then can you access the url %s" %request.path)
+
+	solution = Attempt.objects.filter(attemptID_f=solutionID)
+	if solution:
+		solution = solution[0]
+		return render(request, 'solution.html',{'solution':solution})
+	else :
+		return render(request, 'solution.html',)
+
 		
 @csrf_protect
 @login_required(login_url="/login/")
@@ -66,28 +78,47 @@ def submitSolution(request,questionID):
 	dc = { 'form' :f, 'version' :version}
 	context = RequestContext(request, dc)
 	if request.method =="POST":
-		f=SolutionForm(request.POST)
+		f=SolutionForm(request.POST, request.FILES)
 		if not f.is_valid():
-			
+			dc = { 'form' :f, 'version' :version}
+			context = RequestContext(request, dc)
 			return render(request,'submitsolution.html', context)
 		else:
 			attempt = Attempt()
 			#errorReportID=compileSolution()
 			dc = { 'errorReportID':errorReportID,'version':version,'dt':dt}
+			
+			
+            
 			context = RequestContext(request, dc)
-			attempt.solutionText = f.text
+			attempt.solutionText = "Main"
 			attempt.compilerVersion = f.version
 			attempt.questionID = questionID
 			attempt.userID = userID
 			attempt.timeOfSubmission = datetime.datetime.now()
-			attempt.ErrorReport = 6
+			attempt.ErrorReport = 0
 			attempt.save()
-			return render(request, 'submitsolution.html', context) 
+			file_name = path + "Main." + attempt.compilerVersion.language.languageName.lower()	
+			if f.cleaned_data['file']:
+				handle_uploaded_file(request.FILES['file'],file_name)
+			else:
+				destination = open(file_name, "w")
+				destination.write(f.cleaned_data["text"])
+				destination.close()	
+			attempt.solutionText = file_name
+			attempt.ErrorReport = 6
+			attempt.save()	
+			return render(request, 'submitsuccess.html', context) 
 		
 		#language = Language.objects.all()
 		
 	return render(request, 'submitsolution.html',context)
 
+def handle_uploaded_file(f, file_name):
+    destination = open(file_name, 'wb+')
+    for chunk in f.chunks():
+        destination.write(chunk)
+    destination.close()
 		
 def compileSolution(version,solution,question):
 	'''compiles the solution by calling the appropriate compiler 
