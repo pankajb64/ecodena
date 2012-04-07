@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div align="center" class="style1">Your Question</div></div><br /><br /><br /><br />
+       <p align="center" class="style1"><strong> What do you want from me ?</strong></p>
+
+  <div class="scratchpad" style="display:block;">
+    	<div class="marginscratchpad">
+      </div>
+         <form action="" method="post" name="codeditor">
+         <div class="text-area-scratchpad">
+         	<textarea name="code" rows="15" cols="60" spellcheck="false" >int main()
+     printf("hello world");
+            </textarea>
+         </div>
+        <div class="footer-scratchpad">
+    <div class="compilebutton" onclick="">Submit
+    </div>
+             <form method="post" enctype="multipart/form-data" action="">
+                <input type="file" class="choosefilebutton" name="upflile"<br>
+                <input type="submit" class="uploadbutton" value="Upload" />
+             </form>
+             <form id="form1" name="form1" method="post" action="">
+               <select name="LanguageSelector" size="1" id="LanguageSelector">
+            <option>Python 2.7</option>
+            <option>Java</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>Python 3.1</option>
+          </select>
+      </form>
+  </div>
+         </form>
+</div>
+        <form id="form1" name="form1" method="post" action="">
+        </form>
+        <p>&nbsp;</p>
+        <div class="main">
+        </div>
+{% endblock %}

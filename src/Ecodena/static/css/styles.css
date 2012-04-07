@@ -127,6 +127,7 @@ text-decoration:underline;
 }
 .profilebox
 {
+	
 	margin-left:325px;
 	width:800px;
 	border:1px solid #ebebeb;
@@ -197,6 +198,16 @@ text-decoration:underline;
 	border:2px solid #eaeaea;
 	color: #fff;
 }
+.questionpage
+{
+	background-color: #fff;
+	border:2px solid #fff;
+	position: relative;
+	width:auto;
+	margin-left: 100px;
+	margin-right: 100px;
+	color:#000;
+}
 .badgepic
 {
 	width:100px;
@@ -208,6 +219,13 @@ text-decoration:underline;
 	color:#333;
 	font-size:36px;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.proflie-page-editprofile-font
+{
+	float: right;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20px;
+	color:#222;
 }
 #recommendation-box
 {
@@ -781,6 +799,28 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endC
 {
 	background-color:#09F;
 }
+.editprofilebutton
+{
+	background: #c50503; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eaeaea)); /* For Webkit Browsers */
+	background: -moz-linear-gradient(top, #fff, #eaeaea); /* for Firefox */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eaeaea'); /* for IE */
+	border: solid 1px #eaeaea;
+	color:#999;
+	margin-left: 650px;
+	float: right;
+}
+.editprofilebutton:hover
+{
+	background: #c50503; /* for non-css3 browsers */
+background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333)); /* For Webkit Browsers */
+background: -moz-linear-gradient(top, #ff8a50, #c30000); /* for Firefox */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endColorstr='#c30000'); /* for IE */
+}
+#submitsolutionbutton
+{
+	margin-left: 45px;
+}
 .usernamefont
 {
 	margin-left:16px;
@@ -996,12 +1036,13 @@ display:inline;
 
 .comment
 {
+	width: 600px;
 	font-size:20px;
 	margin:15px;
 	padding:15px
 	display:block;
-	border:3px solid green;
-	background-color:#E2FFA9;
+	border:3px solid #50c3c9;
+	background-color:#edeff4;
 	border-radius:4px;
 }
 
@@ -1059,11 +1100,21 @@ float:left;
 
 .commentformcontainer
 {
+	background-color: edeff4;
 float:left;
 text-align:left;
 padding-left:15px;
 display:inline;
 padding-bottom:5px;
+}
+.question-title
+{
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 30px;
+	color: #3b5998;
+	padding-top: 50px;
+	text-align: center;
+
 }
 
 
