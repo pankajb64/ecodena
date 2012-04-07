@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load pagination_tags %}
 {% block title %} {{ question.questionTitle_f }} {% endblock %}
 {% block content %}
 <div class="questionpage" >
@@ -9,6 +10,7 @@
 		</div>
 		<div  > <br style="clear:both;" /><input type="submit"  class="submitButton" id="submitsolutionbutton" value="Submit Solution" /></div>
 		<div id="comments">
+		{% autopaginate comment 10 %}
 
 			<b>Comments </b>
 
@@ -18,6 +20,7 @@
 					
 				</div>
 				{% endfor %}
+				{% paginate %}
 				<div class="commentformcontainer">
 				{% if form %}
 					<form action="" method="POST"> {% csrf_token %}

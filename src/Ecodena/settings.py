@@ -102,6 +102,7 @@ MIDDLEWARE_CLASSES = (
     #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'pagination.middleware.PaginationMiddleware',
 )
 
 ROOT_URLCONF = 'Ecodena.urls'
@@ -130,7 +131,13 @@ TEMPLATE_DIRS = (
 )
 
 #TEMPLATE_CONTEXT_PROCESSORS += ('django.core.context_processors.csrf')
-
+TEMPLATE_CONTEXT_PROCESSORS = (
+	"django.core.context_processors.auth",
+	"django.core.context_processors.debug",
+	"django.core.context_processors.i18n",
+	"django.core.context_processors.media",
+	"django.core.context_processors.request",
+	'django.core.context_processors.csrf')
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -160,6 +167,7 @@ INSTALLED_APPS = (
     'forum' ,
     'registration',
     'simplewiki',
+    'pagination',
 #    'notification', 
 )  
 
