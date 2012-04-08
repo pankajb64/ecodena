@@ -76,8 +76,13 @@ def holdContest(request):
 	
 def listContests(request):
 	contest = Contest.objects.filter(contestToDate_f__gte=datetime.datetime.now().date()).filter(contestToTime_f__gte=datetime.datetime.now().time())
-	previousContest = Contest.objects.filter()
-	return render_to_response('listContests.html',{'contest':contest,'time':datetime.datetime.now().time(),'date':datetime.datetime.now()})
+	s= []
+	for c in contest:
+	  if c.contestToDate_f > datetime.datetime.now():
+	    s.append(c)
+	  if c.contestToDate_f == datetime.datetime.now() and contestToTime_f > datetime.datetime.now().time():
+	    s.append(c)
+	return render_to_response('listContests.html',{'contest':s,'time':datetime.datetime.now().time(),'date':datetime.datetime.now()})
 	
 	
 	
