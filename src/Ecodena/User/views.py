@@ -26,6 +26,8 @@ class ProfileForm(forms.Form):
 	
 @login_required(login_url="/login/")	
 def viewProfile(request):
+	solutions = Attempt.objects.filter(userID_f=request.user)
+
 	profile=Profile.objects.filter(userID_f=request.user)[0]
 	a = Attempt.objects.filter(userID_f=request.user)
 	attempts = a.order_by('timeOfSubmission_f').filter(status_f=True)

@@ -163,7 +163,7 @@ text-decoration:underline;
 	height:300px;
 	margin-left:20px;
 }
-.badges,.about-user,.question
+.badges, .about-user, .question, .allattempts
 {
 	padding:10px;
 	font:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -178,13 +178,15 @@ text-decoration:underline;
 {
 	margin-left:60px;
 }
-.active,.badges:hover, .about-user:hover
+.active,.badges:hover, .about-user:hover, .allattempts:hover, .question:hover
 {
 	color:#2A2A2A;
 }
-.user-info,.badge-info,.question-info{display:none;}
-.active-desc{display:block;}
-.user-info,.badge-info, .question-info
+.user-info,.badge-info,.question-info,.allattempts-info
+{display:none;}
+.active-desc
+{display:block;}
+.user-info,.badge-info, .question-info, .allattempts-info
 {
 	font:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color:#666;
@@ -195,6 +197,12 @@ text-decoration:underline;
 	clear:both;
 	padding:8px;
 }
+.abcd
+{
+	margin-right: 200px;
+	
+	float:right;
+	}
 .questionbox
 {
 	background-color: #eaeaea;

@@ -25,6 +25,8 @@
             </div>
             <div class="question" onclick='changeActive(this,".profilebox .question-info")'> <span style="padding-left:13px;"> Questions</span>
             </div>
+            <div class="allattempts" onclick='changeActive(this,".profilebox .allattempts-info")'> <span style="padding-left:13px;"> AllAttempts</span>
+            </div>
             <script>
             	function changeActive(elem,id)
                 {
@@ -36,53 +38,72 @@
             </script>
         </div>
         <div class="user-info active-desc">
-        <span> Username <span style="padding-left:40px">:{%firstof targetuser.username user.username%}</span></span><br /><br />
-        <span> Email</span><span style="padding-left:84px">:{% firstof targetuser.email user.email%}</span><br /><br />
-        <span> Name<span style="padding-left:84px">:{%firstof targetuser.first_name user.first_name%} {%firstof targetuser.last_name user.last_name%}</span></span><br /><br />
-        <span> Rank<span style="padding-left:84px">:{%firstof targetuser.first_name user.first_name%} {%firstof targetuser.last_name user.last_name%}</span></span><br /><br />
-      	<table border="1px" style="float:right">
-			<tr>
-			<th>Total Attempts</th>
-			<th>Correct Attempts</th>
-			<th>Wrong Answers</th>
-			<th>Compile Error</th>
-			<th>Runtime Error</th>
-			<th>Time Limit Exceeded</th>
-			<th>Memory Limit Exceeded</th>
-			</tr>
-			<tr>
-			<td style="padding-left:30px">{{countAttempt}}</td>
-			<td style="padding-left:30px">{{countCorrect}}</td>
-			<td style="padding-left:30px">{{countWrongAnswer}}</td>
-			<td style="padding-left:30px">{{countCompileError}}</td>
-			<td style="padding-left:30px">{{countRunTimeError}}</td>
-			<td style="padding-left:50px">{{countTimeLimitExceeded}}</td>
-			<td style="padding-left:55px">{{countMemoryLimitExceeded}}</td>			
-			</tr>
-			</table>
+	        <span> Username <span style="padding-left:40px">:{%firstof targetuser.username user.username%}</span></span><br /><br />
+   	     <span> Email</span><span style="padding-left:84px">:{% firstof targetuser.email user.email%}</span><br /><br />
+      	  <span> Name<span style="padding-left:84px">:{%firstof targetuser.first_name user.first_name%} {%firstof targetuser.last_name user.last_name%}</span></span><br /><br />
+	        <span> Rank<span style="padding-left:84px">:{%firstof targetuser.first_name user.first_name%} {%firstof targetuser.last_name user.last_name%}</span></span><br /><br />
+	      	<table border="1px" style="float:right">
+				<tr>
+				<th>Total Attempts</th>
+				<th>Correct Attempts</th>
+				<th>Wrong Answers</th>
+				<th>Compile Error</th>
+				<th>Runtime Error</th>
+				<th>Time Limit Exceeded</th>
+				<th>Memory Limit Exceeded</th>
+				</tr>
+				<tr>
+				<td style="padding-left:30px">{{countAttempt}}</td>
+				<td style="padding-left:30px">{{countCorrect}}</td>
+				<td style="padding-left:30px">{{countWrongAnswer}}</td>
+				<td style="padding-left:30px">{{countCompileError}}</td>
+				<td style="padding-left:30px">{{countRunTimeError}}</td>
+				<td style="padding-left:50px">{{countTimeLimitExceeded}}</td>
+				<td style="padding-left:55px">{{countMemoryLimitExceeded}}</td>			
+				</tr>
+				</table>
         </div>
         <div class="badge-info">
-			<span> Name<span style="padding-left:40px">:{%firstof targetuser.first_name user.first_name%} {%firstof targetuser.last_name user.last_name%}</span></span><br /><br />
-        <span> DOB<span style="padding-left:50px">:{{profile.dob}}</span></span><br /><br />
-        {%if profile.gender == 0%}
-        <span> Gender<span style="padding-left:30px">:Male</span></span><br /><br />
-        {%else%}
-        <span> Gender<span style="padding-left:30px">:Female</span></span><br /><br />
-        {%endif%}
-        <span> Address<span style="padding-left:25px">:{{profile.address}}</span></span><br /><br />        
+				<span> Name<span style="padding-left:40px">:{%firstof targetuser.first_name user.first_name%} {%firstof targetuser.last_name user.last_name%}</span></span><br /><br />
+     	  		 <span> DOB<span style="padding-left:50px">:{{profile.dob}}</span></span><br /><br />
+   	   	  {%if profile.gender == 0%}
+    	 		  <span> Gender<span style="padding-left:30px">:Male</span></span><br /><br />
+    	 	   	{%else%}
+   	   	  <span> Gender<span style="padding-left:30px">:Female</span></span><br /><br />
+    	   		 {%endif%}
+	   	     <span> Address<span style="padding-left:25px">:{{profile.address}}</span></span><br /><br />        
         </div>
         <div class="question-info">
-        <span>Questions Attempted<a href="/questions/" id="abc" style="margin-left:240px" >Browse All Questions</a></span>
-        	<div class="questionbox">
-			<table style="padding:5px" >
-			{%for questionTit in questionTitle%}
-			<tr><td style="padding:2px"><a href="/questions/{{attempt.questionID_f.questionID_f }}" style="color:#8ec1da">{{questionTit}}</a></td></tr>			
-			<!--<tr><td><span style="color:#ae0000">Status:</span> <a style="color:#000">{{attempt.status_f}}</a><span style="color:#ae0000"> Error Report:</span><a style="color:#000">{{attempt.errorReportID.errorType_f}}</a></td>-->			
-			</tr>	
-			{%endfor%}
-				
-			</table>        	
-        	</div>
+	        <span>Questions Attempted<a href="/questions/" id="abc" style="margin-left:240px" >Browse All Questions</a></span>
+	        	<div class="questionbox">
+					<table style="padding:5px" >
+					{%for questionTit in questionTitle%}
+					<tr><td style="padding:2px"><a href="/questions/{{attempt.questionID_f.questionID_f }}" style="color:#8ec1da">{{questionTit}}</a></td></tr>			
+					<!--<tr><td><span style="color:#ae0000">Status:</span> <a style="color:#000">{{attempt.status_f}}</a><span style="color:#ae0000"> Error Report:</span><a style="color:#000">{{attempt.errorReportID.errorType_f}}</a></td>-->			
+					</tr>	
+					{%endfor%}
+					</table>       	
+	        </div>
         </div> 
+			<div class="allattempts-info abcd" style="float:right" style="color:#000">
+				<table border="1px">
+				<th>ID</th>
+				<th>Date</th>
+				<th>Problem</th>
+				<th>Result</th>
+				<th>Time</th>
+				<th>Memory</th>	
+				<tr>
+				<td>a{{solution.attemptID_f}}</td>
+				<td style="text-align:center">abc{{solution.attemptID_f}}</td>
+				</tr>
+				{%for solution in solutions%}
+				<tr>
+				
+				</tr>
+				{% endfor %}
+				</table>			
+			</div> 
+        
 	</div>     
 {% endblock %}

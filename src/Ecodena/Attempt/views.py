@@ -51,7 +51,7 @@ def listSolutions(request):
 	parameter:request-->All the details associated with URL 
 	returns the solutions.html page and the list of solution ids'''
 	solutions = Attempt.objects.filter(userID_f=request.user)
-	return render(request, 'solutions.html',{'solutions':solutions})
+	return render(request, 'profile.html',{'solutions':solutions})
 
 
 @login_required(login_url="/login/")
