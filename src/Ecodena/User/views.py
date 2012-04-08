@@ -28,7 +28,7 @@ class ProfileForm(forms.Form):
 def viewProfile(request):
 	profile=Profile.objects.filter(userID_f=request.user)[0]
 	a = Attempt.objects.filter(userID_f=request.user)
-	attempts = a.order_by('timeOfSubmission_f').filter(status_f=True)	
+	attempts = a.order_by('timeOfSubmission_f').filter(status_f=True)
 	questionTitle = []
 	for attempt in attempts:
 		questionTitle.append(attempt.questionID_f.questionTitle_f)
@@ -41,7 +41,7 @@ def viewProfile(request):
 	countTimeLimitExceeded = a.filter(errorReportID_f__errorType_f = 3).count()
 	countMemoryLimitExceeded = a.filter(errorReportID_f__errorType_f = 4).count()
 	countWrongAnswer = a.filter(errorReportID_f__errorType_f = 5).count()
-	
+	other = 1
 	#dc = { 'p':p,'attempts':a,'countAttempt':countAttempt,'countCorrect':countCorrect,'countIncorrect':countIncorrect}
 	return render(request, 'profile.html',locals())
 
@@ -54,11 +54,11 @@ def viewProfileByID(request,username):
 	
 	if profile:
 		profile=profile[0]
+		targetuser = targetuser[0]
 		a = Attempt.objects.filter(status_f=True)
 		attempts = a.order_by('timeOfSubmission_f').filter(userID_f=request.user)
 		questionTitle = []
 		for attempt in attempts:
-			if questionTitle not in attempt.questionID_f.questionTitle_f:
 				questionTitle.append(attempt.questionID_f.questionTitle_f)
 		questionTitle = list(set(questionTitle))
 		countAttempt = a.count()
@@ -68,7 +68,7 @@ def viewProfileByID(request,username):
 		countTimeLimitExceeded = a.filter(errorReportID_f__errorType_f = 3).count()
 		countMemoryLimitExceeded = a.filter(errorReportID_f__errorType_f = 4).count()
 		countWrongAnswer = a.filter(errorReportID_f__errorType_f = 5).count()
-
+		other = 0
 		#dc = { 'p':p,'attempts':a,'countAttempt':countAttempt,'countCorrect':countCorrect,'countIncorrect':countIncorrect}
 		return render(request, 'profile.html',locals())
 	else:

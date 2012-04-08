@@ -128,12 +128,16 @@ text-decoration:underline;
 .profilebox
 {
 	
-	margin-left:325px;
+	margin-left:275px;
 	width:800px;
 	border:1px solid #ebebeb;
 	height:768px;
 	position:relative;
 	float: left;
+}
+.changepasswordbox
+{
+	height:300px;
 }
 .profile-pic-box
 {
@@ -996,7 +1000,9 @@ display:block;
 	color: #000;
 	font-weight:bold;
 	display: inline;
+	font-size:10px;
 }
+
 
 .wrapper
 {
@@ -1136,6 +1142,14 @@ padding-bottom:5px;
 	padding-top: 50px;
 	text-align: center;
 
+}
+#abc
+{
+	color:#ccc;
+}
+#abc:hover
+{
+	color:#555;
 }
 
 
