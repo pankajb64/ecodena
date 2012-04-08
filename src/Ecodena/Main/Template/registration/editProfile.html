@@ -14,8 +14,10 @@
     	</span>
     	
         <div class="profile-header">
+			{% if targetuser %}
         	<div class="about-user active" onclick='changeActive(this,".profilebox .user-info")'><span> EditProfile</span>
             </div>
+            {%endif%}
             <script>
             	function changeActive(elem,id)
                 {
@@ -26,18 +28,29 @@
                 }
             </script>
             <div class="user-info active-desc">
-            <form action="" method="POST">{%csrf_token%}
-	<div>
-	<span>First Name {{form.fname}}</span><br />
-	<span>Last Name {{form.lname}}</span><br />
-	<span>DOB{{form.dob}}</span><br />
-	<span>Gender{{form.gender}}</span><br />
-	<span>Address</span><br />
-	<span>{{form.address}}</span>
-	</div>
-<input type="submit" value="submit"/>
-</form>	
+				<form action="" method="POST">{%csrf_token%}
+					<div>
+					<span>First Name <span style="padding-left:40px">{{form.fname}}</span></span><br /><br />
+					<span>Last Name <span style="padding-left:41px">{{form.lname}}</span></span><br /><br />
+					<span>DOB <span style="padding-left:96px">{{form.dob}}</span></span><br /><br />
+					<span>Gender<span style="padding-left:80px">{{form.gender}}</span></span><br /><br />
+					<span style="display:inline">Address<span style="padding-left:150px">{{form.address}}</span></span><br /><br /> 	
+					</div>
+				<input type="submit"  class="submitButton savechangesbutton" id="commentbutton" value="Save Changes" />	<br />		
+				</form>	
+				<form action="/accounts/change_password/">
+				<input type="submit"  class="submitButton savechangesbutton" id="commentbutton" value="Change Password" />
+				</form>
             </div>
-        </div>
-        </div>
+            
+            
+            <div class="badge-info">
+				<form action="." method="POST">{%csrf_token%}
+				<span> Current Password<span style="padding-left:40px"> {{form.old_password}} </span></span><br /><br />
+				<span> New Password<span style="padding-left:50px">:{{profile.dob}}</span></span><br /><br />
+				<input type="submit"  class="submitButton changepasswordsbutton" id="commentbutton" value="Change Password" />      
+				</form>
+			</div>
+		</div>
+</div>
 {% endblock %}

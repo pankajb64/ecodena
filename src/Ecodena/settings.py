@@ -102,7 +102,7 @@ MIDDLEWARE_CLASSES = (
     #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    #'pagination.middleware.PaginationMiddleware',
+    'pagination.middleware.PaginationMiddleware',
 )
 
 ROOT_URLCONF = 'Ecodena.urls'
@@ -168,7 +168,7 @@ INSTALLED_APPS = (
     'forum' ,
     'registration',
     'simplewiki',
-#    'pagination',
+    'pagination',
 #    'notification', 
 )  
 
