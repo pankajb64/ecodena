@@ -156,7 +156,8 @@ INSTALLED_APPS = (
 #    'Ecodena.Query',
     'Ecodena.Compiler',	
     #'Ecodena.Contest',
-    'Ecodena.ProblemSetter',	 	
+    'Ecodena.ProblemSetter',
+    'Ecodena.Recommendation',	 	
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:

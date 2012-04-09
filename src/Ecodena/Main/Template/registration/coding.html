@@ -160,12 +160,13 @@
     </FORM></div-->
     <!--<div id="h2" class="paddind">-->
        <!--div align="center" class="style1">Your Question</div></div--><br /><br /><br /><br />
-        <p align="center" class="style1"><strong> Submit Solution for Question " {{question.questionTitle_f }} "</strong></p>
+     <div style="margin-left:80px; margin-right:80px;">
+       <h1 align="center" class="style1"><strong> Submit Solution for Question " {{question.questionTitle_f }} "</strong></h1>
     
     <form action='' enctype="multipart/form-data" method='post'>
 		
 		{{ form.version.errors }}
-		 <br style ="clear:both;"/> Choose your compiler  : {{ form.version }}
+		 <br style ="clear:both;"/> Choose your compiler  : {{ form.version }}<br /><br />
     <fieldset>
 		{{ form.non_field_errors }}
 		<legend>Write your code here..</legend>
@@ -175,7 +176,7 @@
 		 
 		 </fieldset>
 		 
-		 
+		 <br /><br />
 		 
 		 <fieldset>
 		 {{ form.file.errors }} <legend>OR Upload a File</legend>
@@ -183,18 +184,17 @@
 		<!--textarea id="example_2" style="height: 250px; width: 100%;" name="test_2">
 		</textarea-->
 
-		<p>Custom controls:<br />
 			<!--input type='button' onclick='open_file1()' value='open text area' /-->
 			<!--<input type='button' onclick='open_file2()' value='open file 2' />-->
 			<!--input type='button' onclick='close_file1()' value='close file' /-->
             
 		    <!--input type="file" class="choosefilebutton" name="upflile" /-->
-		    </fieldset>
-				
-         <input type="submit"  value="Submit your SOlution" /><!--input type="button" value="SUBMIT" /-->
+		    
+				<br /><br />
+         <input type="submit"  value="Submit your Solution" /><!--input type="button" value="SUBMIT" /-->
         </p>     
 	
-    </form>
+    </form> <br /></fieldset>
  <!-- <div class="scratchpad" style="display:block;">
     	<div class="marginscratchpad">
         	<textarea rows="15" cols"1" readonly="readonly">1
@@ -206,10 +206,10 @@
       </div>
          <form action="" method="post" name="codeditor">
          <div class="text-area-scratchpad">
-         	<textarea name="code" rows="15" cols="60" spellcheck="false" >int main()
+         	<textarea name="code" rows="15" cols="50" spellcheck="false" >int main()
      printf("hello world");
             </textarea>
-         </div>-->
+         </div>--><br />
         <!--<div class="footer-scratchpad">-->
              <!-- < class="compilebutton" onclick="">Submit</div>-->
     
@@ -232,5 +232,6 @@
         </form>
         <p>&nbsp;</p>
         <div class="main">
+        </div>
         </div>
 {% endblock %}

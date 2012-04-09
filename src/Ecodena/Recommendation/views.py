@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from Recommendation.models import Recommendation
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response,render
 from datetime import datetime
 from django import forms
 from django.template import RequestContext# Create your views here.
@@ -15,6 +15,9 @@ from django.contrib.auth.decorators import login_required
 
 @login_required(login_url = '/login/')
 def viewRecommendations(request):
+	
+	recommendedquestions = Recommendation.objects.filter(userID_f = request.user)
+	
 	if not recommendedquestions :
 		recommendedquestions = generate_recommendations(request)
 	else:
@@ -67,8 +70,8 @@ def generate_recommendations(request):
 		attempt_m = Attempt.objects.annotate(nums =Count('questionID_f__type_f__typeID_f')).order_by('-nums')[:2]
 		questions = Question.objects.filter(type_f = attempt_m[0].questionID_f.type_f).filter(level_f__levelID_f = '1').exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user)  ) 
 		
-		recommendation[0].questionList_f[i].append(questions)
-		recommendation[0].save()
+		recommendation.questionList_f[i].append(questions)
+		recommendation.save()
 		return recommendation[0]
 		
  

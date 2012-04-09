@@ -127,13 +127,15 @@ text-decoration:underline;
 }
 .profilebox
 {
-	
+	background-color: #fff;
 	margin-left:275px;
 	width:800px;
 	border:1px solid #ebebeb;
-	height:768px;
+
 	position:relative;
 	float: left;
+	padding-bottom: 20px;
+	padding-right: 20px;
 }
 .changepasswordbox
 {
@@ -152,8 +154,8 @@ text-decoration:underline;
 {
 	margin-left:0px;
 	margin-top:8px;
-	background-color:#ebebeb;
-	width:800px;
+	background-color:#15a112;
+	width:820px;
 	height:40px;
 	float: left;
 }
@@ -167,7 +169,7 @@ text-decoration:underline;
 {
 	padding:10px;
 	font:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color:#6A6A6A;
+	color:#fff;
 	margin-left:50px;
 	cursor:pointer;
 	font-size:20px;
@@ -189,7 +191,7 @@ text-decoration:underline;
 .user-info,.badge-info, .question-info, .allattempts-info
 {
 	font:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color:#666;
+	color:#000;
 	float:left;
 	margin-left:60px;
 	font-size:24px;
@@ -197,15 +199,14 @@ text-decoration:underline;
 	clear:both;
 	padding:8px;
 }
-.abcd
+.solutionspage
 {
-	margin-right: 200px;
-	
-	float:right;
-	}
+	background-color: #15a112;
+	border-radius:6px;
+}
 .questionbox
 {
-	background-color: #eaeaea;
+	background-color: #15a112;
 	width:700px;
 	border:2px solid #eaeaea;
 	color: #fff;
@@ -228,41 +229,44 @@ text-decoration:underline;
 .profile-page-username-font
 {
 	padding-left: 10px;
-	color:#333;
+	color:#000;
 	font-size:36px;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family:"arial", "sans-serif", Times New Roman;
 }
 .proflie-page-editprofile-font
 {
 	float: right;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family:"arial", "sans-serif", Times New Roman;
 	font-size: 20px;
-	color:#222;
+	coor:#222;
+}
+.editprofilebox
+{
+	font-family: "arial", "sans-serif", Times New Roman;
+	color: #111;
 }
 #recommendation-box
 {
-	margin-left:1026px;
-	margin-top:auto;
-	position:relative;
+	margin-left:820px;
+	margin-top:200px;
+	position:absolute;
 	border-color:#0F0;
 	border:1px solid #eaeaea;
-	width:320px;
-	height:600px;
+	width:266px;
 	float:right;
 	clear:both;
+	
+
 }
 .question-box
 {
 	background-color:#ECEFF5;
-	width:320px;
-	height:80px;
 	border-radius:4px;
-	
 }
 .recommended-question
 {
 	cursor:pointer;
-	font-family:Verdana, Geneva, sans-serif
+	font-family:"arial","sans-serif",Times New Roman;
 }
 
 .slidecontainer
@@ -813,39 +817,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endC
 }
 .editprofilebutton
 {
-	background: #c50503; /* for non-css3 browsers */
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eaeaea)); /* For Webkit Browsers */
-	background: -moz-linear-gradient(top, #fff, #eaeaea); /* for Firefox */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eaeaea'); /* for IE */
+
 	border: solid 1px #eaeaea;
-	color:#999;
+
 	margin-left: 650px;
 	float: right;
 }
 .editprofilebutton:hover
-{
-	background: #c50503; /* for non-css3 browsers */
-background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333)); /* For Webkit Browsers */
-background: -moz-linear-gradient(top, #ff8a50, #c30000); /* for Firefox */
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endColorstr='#c30000'); /* for IE */
-}
-.savechangesbutton
-{
-background: #c50503; /* for non-css3 browsers */
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eaeaea)); /* For Webkit Browsers */
-	background: -moz-linear-gradient(top, #fff, #eaeaea); /* for Firefox */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eaeaea'); /* for IE */
-	border: solid 1px #eaeaea;
-	color:#999;
-margin-left:0px;
-}
-.savechangesbutton:hover
-{
-	background: #c50503; /* for non-css3 browsers */
-background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333)); /* For Webkit Browsers */
-background: -moz-linear-gradient(top, #ff8a50, #c30000); /* for Firefox */
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8a50', endColorstr='#c30000'); /* for IE */
-}
+
+
+
 .changepasswordbutton
 {
 	padding:100px;
@@ -1069,27 +1050,18 @@ display:inline;
 	padding:15px;
 }
 
-#comments a
-{
-	color:black;
-}
 .comment
 {
 	width: 600px;
 	font-size:20px;
 	margin:15px;
-	padding:15px;
+	padding:15px
 	display:block;
 	border:3px solid #50c3c9;
 	background-color:#edeff4;
 	border-radius:4px;
 }
 
-.comment-meta
-{
-	padding:10px;
-	font:15px  "Arial", Monaco, monospace;
-}
 #signupbutton
 {
 	margin:auto;
@@ -1160,11 +1132,11 @@ padding-bottom:5px;
 	text-align: center;
 
 }
-#abc
+#browse-font
 {
-	color:#ccc;
+	color:#0bf;
 }
-#abc:hover
+#browse-font:hover
 {
 	color:#555;
 }

@@ -10,15 +10,16 @@
 {% block content %}
 
 <div class="profilebox">
-    	<span class="profile-page-username-font"> {{user.first_name|upper}} {{user.last_name|upper}}   	
+		<br /> <br />
+    	<span class="profile-page-username-font"> {{user.first_name}} {{user.last_name}}  
     	</span>
-    	
+    	<br />
+    	<br />
         <div class="profile-header">
-			
-			
         	<div class="about-user active" onclick='changeActive(this,".profilebox .user-info")'><span> EditProfile</span>
             </div>
             
+           </div> 
             <script>
             	function changeActive(elem,id)
                 {
@@ -31,28 +32,18 @@
             <div class="user-info active-desc">
 				<form action="" method="POST">{%csrf_token%}
 				{{ form.non_field_errors }}
-					<div>
+					<div class="editprofilebox">
 					<span> {{form.fname.errors }}First Name <span style="padding-left:40px">{{form.fname}}</span></span><br /><br />
 					<span>{{form.lname.errors}} Last Name <span style="padding-left:41px">{{form.lname}}</span></span><br /><br />
-					<span>{{form.dob.errors}} DOB <span style="padding-left:96px">{{form.dob}}</span></span><br /><br />
-					<span>{{form.gender.errors}} Gender<span style="padding-left:80px">{{form.gender}}</span></span><br /><br />
-					<span style="display:inline">{{form.address.errors}} Address<span style="padding-left:150px">{{form.address}}</span></span><br /><br /> 	
+					<span>{{form.dob.errors}} DOB <span style="padding-left:103px">{{form.dob}}</span></span><br /><br />
+					<span>{{form.gender.errors}} Gender<span style="padding-left:85px">{{form.gender}}</span></span><br /><br />
+					<span style="display:inline">{{form.address.errors}} Address<span style="padding-left:162px">{{form.address}}</span></span><br /><br /> 	
 					</div>
-				<input type="submit"  class="submitButton savechangesbutton" id="commentbutton" value="Save Changes" />	<br />		
+				<input type="submit"  class="submitButton " id="commentbutton" value="Save Changes" />	<br />		
 				</form>	
 				<form action="/accounts/change_password/">
-				<input type="submit"  class="submitButton savechangesbutton" id="commentbutton" value="Change Password" />
+				<input type="submit"  class="submitButton " id="commentbutton" value="Change Password" />
 				</form>
             </div>
-            
-            
-            <div class="badge-info">
-				<form action="." method="POST">{%csrf_token%}
-				<span> Current Password<span style="padding-left:40px"> {{form.old_password}} </span></span><br /><br />
-				<span> New Password<span style="padding-left:50px">:{{profile.dob}}</span></span><br /><br />
-				<input type="submit"  class="submitButton changepasswordsbutton" id="commentbutton" value="Change Password" />      
-				</form>
-			</div>
-		</div>
 </div>
 {% endblock %}
