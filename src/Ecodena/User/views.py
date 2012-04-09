@@ -11,11 +11,13 @@ from django.core.context_processors import csrf
 from django.views.decorators.csrf import csrf_protect
 from django.forms.formsets import formset_factory
 from django.contrib.auth.decorators import login_required
+from django.forms.extras.widgets import SelectDateWidget
+from datetime import datetime
 
 class ProfileForm(forms.Form):
 	fname = forms.CharField(required = False)
 	lname = forms.CharField(required = False)
-	dob = forms.DateField(required=False)
+	dob = forms.DateField(required=False, widget=SelectDateWidget)
 	GENDER_CHOICES = (
     (0, 'Male'),
     (1, 'Female'),
@@ -78,9 +80,11 @@ def viewProfileByID(request,username):
 @csrf_protect	
 def editProfile(request):
 	if request.user.is_authenticated():
-		f=ProfileForm()
+		
 		p=Profile.objects.filter(userID_f=request.user)[0]
 		u = request.user
+		initialvalues = { 'fname': u.first_name , 'lname': u.last_name, 'dob': p.dob_f, 'gender': p.gender_f, 'email': u.email, 'address': p.address_f}
+		f=ProfileForm(initial=initialvalues)
 		dc = {'form':f,'profile':p,'user':request.user}
 		context = RequestContext(request,dc)
 		

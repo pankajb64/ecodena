@@ -25,8 +25,8 @@
             </div>
             <div class="question" onclick='changeActive(this,".profilebox .question-info")'> <span style="padding-left:13px;"> Questions</span>
             </div>
-            <div class="allattempts" onclick='changeActive(this,".profilebox .allattempts-info")'> <span style="padding-left:13px;"> AllAttempts</span>
-            </div>
+            <!--div class="allattempts" onclick='changeActive(this,".profilebox .allattempts-info")'> <span style="padding-left:13px;"> AllAttempts</span>
+            </div-->
             <script>
             	function changeActive(elem,id)
                 {
@@ -74,7 +74,8 @@
 	   	     <span> Address<span style="padding-left:25px">:{{profile.address}}</span></span><br /><br />        
         </div>
         <div class="question-info">
-	        <span>Questions Attempted<a href="/questions/" id="abc" style="margin-left:240px" >Browse All Questions</a></span>
+			
+	        <span>Questions Attempted<a href="/solutions/" id="abc" style="margin-left:0px" >Browse All Attempts</a><a href="/questions/" id="abc" style="margin-left:240px" >Browse All Questions</a></span>
 	        	<div class="questionbox">
 					<table style="padding:5px" >
 					{%for questionTit in questionTitle%}

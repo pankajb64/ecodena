@@ -7,7 +7,7 @@ from datetime import datetime
 from django import forms
 from django.template import RequestContext
 from Ecodena.Attempt.models import *
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+#from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 class CommentForm(forms.Form):
 	'''Creates a form for writing a comment'''
@@ -54,19 +54,7 @@ def viewQuestionByID(request, questionID):
 						
 					
 		question.commentList_f = list(Comment.objects.filter(questionID_f = question))
-		paginator=Paginator(question.commentList_f,10)
-		page = int(request.GET.get('page','1'))
-		try:
-			comments = paginator.page(page)
-		except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
-			comments = paginator.page(1)
-		except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
-			comments = paginator.page(paginator.num_pages)
-		return render(request, 'question.html',RequestContext(request, {'question' : question,'comments':comments ,'form' : form}))
-	else:
-		return render(request, 'question.html', RequestContext(request))	
+		return render(request, 'question.html',RequestContext(request, {'question' : question,'form' : form}))
 #	return HttpResponse("%s" %questions)
 
 def generatePoints(request):

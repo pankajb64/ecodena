@@ -4,6 +4,7 @@ from django.shortcuts import render_to_response, render
 from django.contrib import auth
 from django import forms
 from Ecodena.User.models import *
+from django.contrib.auth.views import login
 
 def home(request):
 	return render(request, 'index.html')
@@ -11,21 +12,10 @@ def home(request):
 
 
 def login(request):
-	if request.method == 'POST':
-		username = request.POST['username']
-		password = request.POST['password']
-		user = auth.authenticate(username=username, password=password)
-		if user is not None and user.is_active:
-			# Correct password, and the user is marked "active"
-			auth.login(request, user)
-			# Redirect to a success page.
-			return HttpResponseRedirect("/")
-		else:
-			# Show an error page
-			return HttpResponseRedirect("/login/")
+	if not request.user.is_authenticated():
+		return login(request)	
 	else:
-		# Show an error page
-		return render(request, 'registration/login.html')
+		return HttpResponseRedirect("/profile/")		
 
 def logout(request):
     auth.logout(request)
@@ -41,21 +31,25 @@ class RegisterForm(UserCreationForm):
 	last_name = forms.CharField() 
 
 def register(request):
-    if request.method == 'POST':
-        form = RegisterForm(request.POST)
-        if form.is_valid():
-			new_user = form.save()
-			new_user.email = form.cleaned_data['email']
-			new_user.first_name = form.cleaned_data['first_name']
-			new_user.last_name = form.cleaned_data['last_name']
-			new_user.save()
-			profile = Profile()
-			profile.userID_f = new_user
-			profile.save()
-			return render(request, "registration_complete.html")
-    else:
-        form = RegisterForm()
-    return render(request, "registration/register.html", { 'form': form, })    
+	if not request.user.is_authenticated():
+		
+		if request.method == 'POST':
+			form = RegisterForm(request.POST)
+			if form.is_valid():
+				new_user = form.save()
+				new_user.email = form.cleaned_data['email']
+				new_user.first_name = form.cleaned_data['first_name']
+				new_user.last_name = form.cleaned_data['last_name']
+				new_user.save()
+				profile = Profile()
+				profile.userID_f = new_user
+				profile.save()
+				return render(request, "registration_complete.html")
+		else:
+			form = RegisterForm()
+		return render(request, "registration/register.html", { 'form': form, })    
+	else:
+		return HttpResponseRedirect("/profile/")	
 
 def sendmail(request):
 	from django.core.mail import EmailMessage

@@ -30,12 +30,13 @@
             </script>
             <div class="user-info active-desc">
 				<form action="" method="POST">{%csrf_token%}
+				{{ form.non_field_errors }}
 					<div>
-					<span>First Name <span style="padding-left:40px">{{form.fname}}</span></span><br /><br />
-					<span>Last Name <span style="padding-left:41px">{{form.lname}}</span></span><br /><br />
-					<span>DOB <span style="padding-left:96px">{{form.dob}}</span></span><br /><br />
-					<span>Gender<span style="padding-left:80px">{{form.gender}}</span></span><br /><br />
-					<span style="display:inline">Address<span style="padding-left:150px">{{form.address}}</span></span><br /><br /> 	
+					<span> {{form.fname.errors }}First Name <span style="padding-left:40px">{{form.fname}}</span></span><br /><br />
+					<span>{{form.lname.errors}} Last Name <span style="padding-left:41px">{{form.lname}}</span></span><br /><br />
+					<span>{{form.dob.errors}} DOB <span style="padding-left:96px">{{form.dob}}</span></span><br /><br />
+					<span>{{form.gender.errors}} Gender<span style="padding-left:80px">{{form.gender}}</span></span><br /><br />
+					<span style="display:inline">{{form.address.errors}} Address<span style="padding-left:150px">{{form.address}}</span></span><br /><br /> 	
 					</div>
 				<input type="submit"  class="submitButton savechangesbutton" id="commentbutton" value="Save Changes" />	<br />		
 				</form>	
