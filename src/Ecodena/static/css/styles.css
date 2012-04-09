@@ -65,6 +65,24 @@ color:#606060;
 	margin:0 auto;
 	min-width:920px;
 }
+.footer-container
+{
+	position:relative;
+	z-index:1;
+	background: -moz-linear-gradient(top,  #fff,  #eaeaea);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eaeaea');
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eaeaea));
+	height:30px;
+	box-shadow:0 0 20px #999999;
+	width:100%;
+	border-radius:0px;
+	margin-top: 200px;
+
+}
+.footer-text
+{
+	margin: 0, auto;
+}
 .question-container
 {
 	padding:10px;
@@ -550,7 +568,8 @@ textarea
 }
 .login
 {
-	color:#FFF;
+	clear: both;
+	color:#fff;
 	font-family:"Lucida Console", Monaco, monospace;
 	font-size:16px;
 	position:inherit;
@@ -929,7 +948,6 @@ body
 }
 .relement
 {
-	width:500px;
 	padding-top:15px;
 	padding-left:auto;
 	padding-right:auto;
