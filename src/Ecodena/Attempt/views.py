@@ -23,7 +23,7 @@ path = "static/storage/solution/"
 
 class SolutionForm(forms.Form):
 	'''creates a form for pasting the solution of a question '''
-	text = forms.CharField(widget=forms.Textarea, required=False)
+	text = forms.CharField(widget=forms.Textarea(attrs={'rows':25, 'cols':150}), required=False)
 	cv = tuple(CompilerVersion.objects.all())
 	CHOICES = (('C 1.1.1', 'C 1.1.1'),
                ('b','Dummy'))
@@ -81,18 +81,19 @@ def submitSolution(request,questionID):
 	version = CompilerVersion.objects.all()
 	dt =datetime.now()
 	f=SolutionForm()
-	dc = { 'form' :f, 'version' :version}
+	q = Question.objects.get(questionID_f=questionID)
+	dc = { 'form' :f, 'version' :version, 'question' : q}
 	context = RequestContext(request, dc)
 	if request.method =="POST":
 		f=SolutionForm(request.POST, request.FILES)
 		if not f.is_valid():
-			dc = { 'form' :f, 'version' :version}
+			dc = { 'form' :f, 'version' :version, 'question' : q}
 			context = RequestContext(request, dc)
-			return render(request,'submitsolution.html', context)
+			return render(request,'coding.html', context)
 		else:
 			attempt = Attempt()
 			#errorReportID=compileSolution()
-			dc = { 'errorReportID':attempt.errorReportID,'version':version,'dt':dt}
+			dc = { 'errorReportID':attempt.errorReportID,'version':version,'dt':dt, 'question' : q}
 			context = RequestContext(request, dc)
 			attempt.solutionText = "Main"
 			tokens = (f.cleaned_data['version']).split(" ")
@@ -122,7 +123,7 @@ def submitSolution(request,questionID):
 		
 		#language = Language.objects.all()
 		
-	return render(request, 'submitsolution.html',context)
+	return render(request, 'coding.html',context)
 
 def handle_uploaded_file(f, file_name):
 	

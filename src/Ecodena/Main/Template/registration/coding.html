@@ -1,0 +1,236 @@
+{% extends "base.html" %}
+
+{% block head %}
+<script language="Javascript" type="text/javascript" src="{{STATIC_URL }}textarea/edit_area_full.js"></script>
+	<script language="Javascript" type="text/javascript">
+		// initialisation
+		editAreaLoader.init({
+			id: "example_1"	// id of the textarea to transform		
+			,start_highlight: true	// if start with highlight
+			,allow_resize: "both"
+			,allow_toggle: true
+			,word_wrap: true
+			,language: "en"
+			,syntax: "php"	
+		});
+		
+		editAreaLoader.init({
+			id: "id_text"	// id of the textarea to transform	
+			,start_highlight: true
+			,allow_toggle: false
+			,language: "en"
+			,syntax: "html"	
+			,toolbar: "search, go_to_line, |, undo, redo, |, select_font, |, syntax_selection, |, change_smooth_selection, highlight, reset_highlight, |, help"
+			,syntax_selection_allow: "c"
+			,is_multi_files: true
+			,EA_load_callback: "editAreaLoaded"
+			,show_line_colors: true
+		});
+		
+		editAreaLoader.init({
+			id: "example_3"	// id of the textarea to transform	
+			,start_highlight: true	
+			,font_size: "8"
+			,font_family: "verdana, monospace"
+			,allow_resize: "y"
+			,allow_toggle: false
+			,language: "fr"
+			,syntax: "css"	
+			,toolbar: "new_document, save, load, |, charmap, |, search, go_to_line, |, undo, redo, |, select_font, |, change_smooth_selection, highlight, reset_highlight, |, help"
+			,load_callback: "my_load"
+			,save_callback: "my_save"
+			,plugins: "charmap"
+			,charmap_default: "arrows"
+				
+		});
+		
+		editAreaLoader.init({
+			id: "example_4"	// id of the textarea to transform		
+			//,start_highlight: true	// if start with highlight
+			//,font_size: "10"	
+			,allow_resize: "no"
+			,allow_toggle: true
+			,language: "de"
+			,syntax: "python"
+			,load_callback: "my_load"
+			,save_callback: "my_save"
+			,display: "later"
+			,replace_tab_by_spaces: 4
+			,min_height: 350
+		});
+		
+		// callback functions
+		function my_save(id, content){
+			alert("Here is the content of the EditArea '"+ id +"' as received by the save callback function:\n"+content);
+		}
+		
+		function my_load(id){
+			editAreaLoader.setValue(id, "The content is loaded from the load_callback function into EditArea");
+		}
+		
+		function test_setSelectionRange(id){
+			editAreaLoader.setSelectionRange(id, 100, 150);
+		}
+		
+		function test_getSelectionRange(id){
+			var sel =editAreaLoader.getSelectionRange(id);
+			alert("start: "+sel["start"]+"\nend: "+sel["end"]); 
+		}
+		
+		function test_setSelectedText(id){
+			text= "[REPLACED SELECTION]"; 
+			editAreaLoader.setSelectedText(id, text);
+		}
+		
+		function test_getSelectedText(id){
+			alert(editAreaLoader.getSelectedText(id)); 
+		}
+		
+		function editAreaLoaded(id){
+			if(id=="id_text")
+			{
+				open_file1();
+				open_file2();
+			}
+		}
+		
+		function open_file1()
+		{
+			var new_file= {id: "to\\ é # € to", text: "", syntax: 'c', title: 'new file'};
+			editAreaLoader.openFile('id_text', new_file);
+		}
+		
+		<!--function open_file2()
+		<!--{
+			<!--var new_file= {id: "Filename", text: "<a href=\"toto\">\n\tbouh\n</a>\n<!-- it's a comment -->", syntax: 'html'};
+			<!--editAreaLoader.openFile('example_2', new_file-->-->);
+		<!--}-->-->-->
+		
+		function close_file1()
+		{
+			editAreaLoader.closeFile('id_text', "to\\ é # € to");
+		}
+		
+		function toogle_editable(id)
+		{
+			editAreaLoader.execCommand(id, 'set_editable', !editAreaLoader.execCommand(id, 'is_editable'));
+		}</script>
+<!--style type="text/css">
+.header-container
+{	position:relative;
+	z-index:1;
+	background: -moz-linear-gradient(top,  #fafafa,  #eaeaea);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#eaeaea');
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
+	height:40px;
+	box-shadow:0 0 20px #999999;
+	width:100%;
+	border-radius:0px;
+	margin:0 auto;
+	min-width:1000px;
+}
+.logo
+{
+	height:30px;
+	margin-left:50px;
+	margin-top:4px;
+	padding:1px;
+	position:absolute;
+	
+}
+<!--
+.style1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.login1{ margin-left:1100px;
+			margin-top:0px;}
+.all{margin-left:1100px;
+		margin-top:20px;}
+.logout1{
+			margin-left:1100px;
+			margin-top:20px;}
+
+</style-->
+{% endblock %}
+
+
+	{% block content %}
+    <!--div id="questions" class="all"><FORM>
+    </FORM></div-->
+    <!--<div id="h2" class="paddind">-->
+       <!--div align="center" class="style1">Your Question</div></div--><br /><br /><br /><br />
+        <p align="center" class="style1"><strong> Submit Solution for Question " {{question.questionTitle_f }} "</strong></p>
+    
+    <form action='' enctype="multipart/form-data" method='post'>
+		
+		{{ form.version.errors }}
+		 <br style ="clear:both;"/> Choose your compiler  : {{ form.version }}
+    <fieldset>
+		{{ form.non_field_errors }}
+		<legend>Write your code here..</legend>
+		<!--<p>Multi file mode example with syntax selection option. The highlight colors of the selected line is also shown.</p>-->
+		{{ form.text.errors }}
+		 <br style ="clear:both;"/> {{ form.text }}
+		 
+		 </fieldset>
+		 
+		 
+		 
+		 <fieldset>
+		 {{ form.file.errors }} <legend>OR Upload a File</legend>
+		 <br style ="clear:both;"/> {{ form.file }}
+		<!--textarea id="example_2" style="height: 250px; width: 100%;" name="test_2">
+		</textarea-->
+
+		<p>Custom controls:<br />
+			<!--input type='button' onclick='open_file1()' value='open text area' /-->
+			<!--<input type='button' onclick='open_file2()' value='open file 2' />-->
+			<!--input type='button' onclick='close_file1()' value='close file' /-->
+            
+		    <!--input type="file" class="choosefilebutton" name="upflile" /-->
+		    </fieldset>
+				
+         <input type="submit"  value="Submit your SOlution" /><!--input type="button" value="SUBMIT" /-->
+        </p>     
+	
+    </form>
+ <!-- <div class="scratchpad" style="display:block;">
+    	<div class="marginscratchpad">
+        	<textarea rows="15" cols"1" readonly="readonly">1
+2
+3
+4
+5
+6</textarea>
+      </div>
+         <form action="" method="post" name="codeditor">
+         <div class="text-area-scratchpad">
+         	<textarea name="code" rows="15" cols="60" spellcheck="false" >int main()
+     printf("hello world");
+            </textarea>
+         </div>-->
+        <!--<div class="footer-scratchpad">-->
+             <!-- < class="compilebutton" onclick="">Submit</div>-->
+    
+    
+             
+       
+             <!--<form id="form1" name="form1" method="post" action="">
+               <select name="LanguageSelector" size="1" id="LanguageSelector">
+            <option>Python 2.7</option>
+            <option>Java</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>Python 3.1</option>
+          </select>
+      </form>-->
+  </div>
+         </form>
+</div>
+        <form id="form1" name="form1" method="post" action="">
+        </form>
+        <p>&nbsp;</p>
+        <div class="main">
+        </div>
+{% endblock %}

@@ -54,7 +54,7 @@ def viewQuestionByID(request, questionID):
 						
 					
 		question.commentList_f = list(Comment.objects.filter(questionID_f = question))
-		return render(request, 'question.html',RequestContext(request, {'question' : question,'form' : form}))
+		return render(request, 'question.html',RequestContext(request, {'question' : question,'form' : form, 'comments' : question.commentList_f} ))
 #	return HttpResponse("%s" %questions)
 
 def generatePoints(request):
