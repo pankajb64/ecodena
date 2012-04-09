@@ -13,7 +13,7 @@
 	
 
 			<b>Comments </b>
-				{% autopaginate question.commentList 1 %}
+				{% autopaginate question.commentList 5 %}
 				{% for comment in question.commentList  %}
 				<div class="comment"> {{comment.commentText_f}} <br/>
 				<span class="comment-meta">Posted by <b> {{comment.userID_f}} </b>  at {{comment.timeStamp_f}} IST <br/></span>
