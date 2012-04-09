@@ -4,7 +4,7 @@ from django.shortcuts import render_to_response, render
 from django.contrib import auth
 from django import forms
 from Ecodena.User.models import *
-from django.contrib.auth.views import login
+from django.contrib.auth.views import login as auth_login
 
 def home(request):
 	return render(request, 'index.html')
@@ -13,7 +13,7 @@ def home(request):
 
 def login(request):
 	if not request.user.is_authenticated():
-		return login(request)	
+		return auth_login(request,)	
 	else:
 		return HttpResponseRedirect("/profile/")		
 

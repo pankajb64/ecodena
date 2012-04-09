@@ -1069,18 +1069,27 @@ display:inline;
 	padding:15px;
 }
 
+#comments a
+{
+	color:black;
+}
 .comment
 {
 	width: 600px;
 	font-size:20px;
 	margin:15px;
-	padding:15px
+	padding:15px;
 	display:block;
 	border:3px solid #50c3c9;
 	background-color:#edeff4;
 	border-radius:4px;
 }
 
+.comment-meta
+{
+	padding:10px;
+	font:15px  "Arial", Monaco, monospace;
+}
 #signupbutton
 {
 	margin:auto;
