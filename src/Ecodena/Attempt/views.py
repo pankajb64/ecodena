@@ -65,9 +65,13 @@ def viewSolution(request,solutionID):
 	solution = Attempt.objects.filter(attemptID_f=solutionID)
 	if solution:
 		solution = solution[0]
-		return render(request, 'solution.html',{'solution':solution})
+		path = solution.solutionText
+		destination = open(path, 'r')
+		code = destination.read()
+		
+		return render(request, 'solution.html',locals())
 	else :
-		return render(request, 'solution.html',)
+		return render(request, 'solution.html',locals())
 
 		
 @csrf_protect
