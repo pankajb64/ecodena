@@ -75,7 +75,7 @@
         </div>
         <div class="question-info">
 			
-	        <span>Questions Attempted<a href="/solutions/" id="abc" style="margin-left:0px" >Browse All Attempts</a><a href="/questions/" id="abc" style="margin-left:240px" >Browse All Questions</a></span>
+	        <span>Successful Attemptes</span><br /><a href="/solutions/" id="abc" style="margin-left:0px" >Browse All Attempts</a><a href="/questions/" id="abc" style="margin-left:200px" >Browse All Questions</a>
 	        	<div class="questionbox">
 					<table style="padding:5px" >
 					{%for questionTit in questionTitle%}
@@ -87,23 +87,7 @@
 	        </div>
         </div> 
 			<div class="allattempts-info abcd" style="float:right" style="color:#000">
-				<table border="1px">
-				<th>ID</th>
-				<th>Date</th>
-				<th>Problem</th>
-				<th>Result</th>
-				<th>Time</th>
-				<th>Memory</th>	
-				<tr>
-				<td>a{{solution.attemptID_f}}</td>
-				<td style="text-align:center">abc{{solution.attemptID_f}}</td>
-				</tr>
-				{%for solution in solutions%}
-				<tr>
-				
-				</tr>
-				{% endfor %}
-				</table>			
+							
 			</div> 
         
 	</div>     
