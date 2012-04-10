@@ -6,6 +6,7 @@ from Attempt.models import Attempt
 from Question.models import Question
 from User.models import Profile
 from django import forms
+from User.models import Programmer
 from django.template import RequestContext 
 from django.core.context_processors import csrf
 from django.views.decorators.csrf import csrf_protect
@@ -17,7 +18,7 @@ from datetime import datetime
 class ProfileForm(forms.Form):
 	fname = forms.CharField(required = False)
 	lname = forms.CharField(required = False)
-	dob = forms.DateField(required=False, widget=SelectDateWidget)
+	dob = forms.DateField(required=False, widget=SelectDateWidget(years=range(1970,2009)))
 	GENDER_CHOICES = (
     (0, 'Male'),
     (1, 'Female'),
@@ -29,7 +30,7 @@ class ProfileForm(forms.Form):
 @login_required(login_url="/login/")	
 def viewProfile(request):
 	solutions = Attempt.objects.filter(userID_f=request.user)
-
+	programmer = Programmer.objects.filter(username = request.user.username)
 	profile=Profile.objects.filter(userID_f=request.user)[0]
 	a = Attempt.objects.filter(userID_f=request.user)
 	attempts = a.order_by('timeOfSubmission_f').filter(status_f=True)
@@ -55,7 +56,7 @@ def viewProfileByID(request,username):
 	targetuser = User.objects.filter(username=username)
 	
 	profile=Profile.objects.filter(userID_f=targetuser)
-	
+	programmer = Programmer.objects.filter(userID_f = request.user)[0]
 	if profile:
 		profile=profile[0]
 		targetuser = targetuser[0]
@@ -119,33 +120,38 @@ def editProfile(request):
 			#language = Language.objects.all()
 			
 		return render(request,'editProfile.html',context)
-	return HttpResponse("Fuck Off!!%s"%request.path)
+	return HttpResponse("Sorry!!%s"%request.path)
 
+@login_required(login_url="/login/")
 def generatePointsUser(request):
 	
+	profile=Profile.objects.filter(userID_f=request.user)[0]
 	basepoints = 1500
-	points_f = basepoints
-	n = Attempt.objects.filter(userID = request.userID_f).distinct('questionID_f').filter(status = True).count()	
-	attempts_c = Attempt.objects.filter(userID = request.userID_f).distinct('questionID_f').filter(status = True)	
+	profile.points_f = basepoints
 	
-	for i in range[0,n]:
-		points_f = points_f + (attempt_c[i].questionID_f.questionRating_f * 10)
-		 
-	m = Attempt.objects.filter(userID = request.userID_f).filter(status = False).count()	
-	attempts_w =  Attempt.objects.filter(userID = request.userID_f).filter(status = False)
-	
-	for j in range[0,m]:
-		points_f = points_f - (10/(attempt_w[j].questionID_f.questionRating_f))
-	
-	return points_f	
 		
-def generateRank(request):
+	n = Attempt.objects.filter(userID_f = profile.userID_f).distinct('questionID_f').filter(status_f = True).count()	
+	attempts_c = Attempt.objects.filter(userID_f = profile.userID_f).distinct('questionID_f').filter(status_f = True)	
 	
-	ranking = User.objects.order_by('-points_f')
-	n = User.objects.order_by('-points_f').count()
+	for i in range(0,n):
+		profile.points_f = profile.points_f +(attempts_c[i].questionID_f.questionRating_f * 10)
+		 
+	m = Attempt.objects.filter(userID_f = profile.userID_f).filter(status_f = False).count()	
+	attempts_w =  Attempt.objects.filter(userID_f = profile.userID_f).filter(status_f = False)
 	
-	for i in range[0,n]:
-		if ranking[i].userID == request.userID_f:
-			rank_f = i
+	for j in range(0,m):
+		profile.points_f = profile.points_f - (10/(attempts_w[j].questionID_f.questionRating_f))	
+	profile.rank_f = generateRank(profile)
+	profile.save()
+	return HttpResponse(`profile.points_f` + " " + `profile.rank_f`)
 	
-	return rank_f
+def generateRank(profile):
+	
+	ranking = Profile.objects.order_by('-points_f')
+	n = Profile.objects.order_by('-points_f').count()
+	
+	for i in range(0,n):
+		if ranking[i].userID_f == profile.userID_f:
+			profile.rank_f = i + 1
+	profile.save()
+	return profile.rank_f

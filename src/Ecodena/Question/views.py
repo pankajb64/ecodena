@@ -7,7 +7,7 @@ from datetime import datetime
 from django import forms
 from django.template import RequestContext
 from Ecodena.Attempt.models import *
-#from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 class CommentForm(forms.Form):
 	'''Creates a form for writing a comment'''
@@ -54,35 +54,52 @@ def viewQuestionByID(request, questionID):
 						
 					
 		question.commentList_f = list(Comment.objects.filter(questionID_f = question))
-		return render(request, 'question.html',RequestContext(request, {'question' : question,'form' : form, 'comments' : question.commentList_f} ))
-#	return HttpResponse("%s" %questions)
+		paginator=Paginator(question.commentList_f,10)
+		page = int(request.GET.get('page','1'))
+		try:
+			comments = paginator.page(page)
+		except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+			comments = paginator.page(1)
+		except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+			comments = paginator.page(paginator.num_pages)
+		return render(request, 'question.html',RequestContext(request, {'question' : question,'comments':comments ,'form' : form}))
+	else:
+		return render(request, 'question.html', RequestContext(request))
+#	#return HttpResponse("%s" %questions)
 
-def generatePoints(request):
+def generatePoints(question):
 	
-		questionPoints_f = level_f.levelID_f * 20
+		questionPoints_f = question.level_f.levelID_f * 20
 		#assuming 5 levels... for n levels i should be 100/n
 		
 		return questionPoints_f
 
-def generateRating(request):
-		numberOfUsers = Attempt.objects.filter(questionID_f = request.questionID_f).distinct('userID_f').filter(status = True).count()
-		totalUsers = Attempt.objects.distinct('userID_f').count()
-		
-		a = 0.25
-		p1 = pow((numberOfUsers/totalUsers),a)
-		# this shows the ratio of users able to solve the question
+def generateRating(request, questionID):
+
 	
-		totalUsers_f = Attempt.objects.filter(questionID_f = request.questionID_f).distinct('userID_f').count()
-		b = 0.25
-		p2 = pow((numberOfUsers/totalUsers_f),b)
-		#this shows the accuracy of the rating
-		
-		questionPoints_f = level_f.levelID_f * 20
-		#assuming 5 levels... for n levels i should be 100/n
-		
-		c = 0.125
-		p3 = pow((questionPoints_f/100),c)
-		#this shows the difficulty of the problem
-		
-		questionRatings_f = 10 *p1*p2*p3
-		return questionRating_f
+	question = Question.objects.get(questionID_f=questionID)
+	numberOfUsers = Attempt.objects.filter(questionID_f=question).distinct('userID_f').filter(status_f = True).count()
+	totalUsers = Attempt.objects.distinct('userID_f').count()
+	
+	a = 0.25
+	p1 = pow((numberOfUsers*1.0/totalUsers),a)
+	# this shows the ratio of users able to solve the question
+
+	totalUsers_f = Attempt.objects.filter(questionID_f=question).count()
+	b = 0.25
+	p2 = pow((numberOfUsers*1.0/totalUsers_f),b)
+	#this shows the accuracy of the rating
+	
+	question.questionPoints_f = generatePoints(question)
+	
+	c = 0.125
+	p3 = pow((question.questionPoints_f/100.0),c)
+	#this shows the difficulty of the problem
+	
+	question.questionRating_f = 10 *p1*p2*p3
+	question.save()
+	return HttpResponse("Fuck you Anana " + `totalUsers_f`+ " " + `question.questionRating_f` + " " + `p1` + " " + `p2` + " " + `p3`)
+
+

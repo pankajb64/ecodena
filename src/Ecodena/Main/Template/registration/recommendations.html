@@ -1,0 +1,12 @@
+<h1> Questions Recommended to you! </h1>
+
+
+<div>
+	<ul>
+		{% for question in recommendedQuestions.questionList_f.all %}
+		<li>	
+			<a href="{{question.questionID_f }}">{{ question.questionTitle }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

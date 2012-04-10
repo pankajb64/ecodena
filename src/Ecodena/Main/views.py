@@ -12,10 +12,25 @@ def home(request):
 
 
 def login(request):
-	if not request.user.is_authenticated():
-		return auth_login(request,)	
+	if request.method == 'POST':
+		username = request.POST['username']
+		password = request.POST['password']
+		user = auth.authenticate(username=username, password=password)
+		profile = Profile.objects.filter(userID = user)
+		profile[0].points_f = generatePointsUser(profile[0])
+		profile[0].rank_f = generateRank(profile[0])
+		
+		if user is not None and user.is_active:
+			# Correct password, and the user is marked "active"
+			auth.login(request, user)
+			# Redirect to a success page.
+			return HttpResponseRedirect("/")
+		else:
+			# Show an error page
+			return HttpResponseRedirect("/login/")
 	else:
-		return HttpResponseRedirect("/profile/")		
+		# Show an error page
+		return render(request, 'registration/login.html')	
 
 def logout(request):
     auth.logout(request)

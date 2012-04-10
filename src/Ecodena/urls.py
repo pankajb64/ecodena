@@ -17,7 +17,6 @@ urlpatterns = patterns('',
 	url(r'^admin/', include(admin.site.urls)),
 
 	url(r'^test/$', 'Ecodena.Main.views.sendmail'),
-
 	url(r'^questions/$', 'Ecodena.Question.views.listQuestions'),
 	#url(r'^postQuery/$', 'Ecodena.Query.views.postQuery'),
 	url(r'^questions/(?P<questionID>[0-9]+)/$', 'Ecodena.Question.views.viewQuestionByID'),
@@ -50,6 +49,8 @@ urlpatterns = patterns('',
 	url(r'^problemSetter/viewProblems/(?P<questionID>[0-9]+)$','Ecodena.ProblemSetter.views.ViewProblem'),
 	url(r'^problemSetter/UploadProblem/$','Ecodena.ProblemSetter.views.UploadProblem'),
 	#url(r'^notification/', include('notification.urls')),
+	url(r'^ranking/$', 'Ecodena.User.views.generatePointsUser'),
+	url(r'^rating/(?P<questionID>[0-9]+)/$', 'Ecodena.Question.views.generateRating'),
 )
 
 
