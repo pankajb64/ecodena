@@ -123,11 +123,11 @@ def editProfile(request):
 		return render(request,'editProfile.html',context)
 	return HttpResponse("Sorry!!%s"%request.path)
 
-@login_required(login_url="/login/")
-def generatePointsUser(request):
+#@login_required(login_url="/login/")
+def generatePointsUser(user):
 	
-	profile=Profile.objects.filter(userID_f=request.user)[0]
-	basepoints = 1500
+	profile=Profile.objects.filter(userID_f=user)[0]
+	basepoints = 500
 	profile.points_f = basepoints
 	
 		
@@ -146,6 +146,7 @@ def generatePointsUser(request):
 	profile.save()
 	return HttpResponse(`profile.points_f` + " " + `profile.rank_f`)
 	
+	
 def generateRank(profile):
 	
 	ranking = Profile.objects.order_by('-points_f')
@@ -156,3 +157,4 @@ def generateRank(profile):
 			profile.rank_f = i + 1
 	profile.save()
 	return profile.rank_f
+

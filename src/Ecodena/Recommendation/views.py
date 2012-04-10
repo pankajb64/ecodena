@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from Recommendation.models import Recommendation
+from Recommendation.models import Recommendation,Recommended
 from django.shortcuts import render_to_response,render
 from datetime import datetime
 from django import forms
@@ -16,12 +16,9 @@ from django.contrib.auth.decorators import login_required
 @login_required(login_url = '/login/')
 def viewRecommendations(request):
 	
-	recommendedquestions = Recommendation.objects.filter(userID_f = request.user)
+	recommendedquestions = generate_recommendations(request)
 	
-	if not recommendedquestions :
-		recommendedquestions = generate_recommendations(request)
-	else:
-		recommendedquestions = recommendedquestions[0]	
+	
 	return render(request,'recommendations.html',{'recommendedQuestions':recommendedquestions})
 	
 
@@ -65,14 +62,18 @@ def generate_recommendations(request):
 		return recommendation
 		
 
-	elif t[0].num < 3:
+	elif t[0].num < 10:
 		
 		attempt_m = Attempt.objects.annotate(nums =Count('questionID_f__type_f__typeID_f')).order_by('-nums')[:2]
 		questions = Question.objects.filter(type_f = attempt_m[0].questionID_f.type_f).filter(level_f__levelID_f = '1').exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user)  ) 
 		
-		recommendation.questionList_f[i].append(questions)
-		recommendation.save()
-		return recommendation[0]
+		for question in questions:
+			
+			recommended = Recommended()
+			recommended.question = question
+			recommended.recommendation = recommendation
+			recommended.save()
+		return recommendation
 		
  
 		

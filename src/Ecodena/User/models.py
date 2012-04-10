@@ -118,8 +118,6 @@ class Programmer(User, object):
 		Basically it represents the users of ECODENA. They can submit their solutions of various problems.
 		parameters: User --> its a class that helps a user to log-in to Ecodena.'''
 	level_f = models.CharField("Level of User", max_length=20, null=False)
-	points_f = models.FloatField("The points for the user",null = False)
-	rank_f = models.IntegerField("The rank of the user",null= False)
 	
 	def getLevel():
 		return self.level_f
@@ -141,7 +139,8 @@ class Profile(models.Model, object):
 	isProgrammer_f = models.BooleanField("Is a Programmer", default=True, )
 	isAdmin_f = models.BooleanField("Is Administrator", default=False, )
 	isProblemSetter = models.BooleanField("Is a Problem Setter" , default=False, )
-	
+	points_f = models.FloatField("The points for the user",null = False)
+	rank_f = models.IntegerField("The rank of the user",null= False)
 	
 	def getDOB(self):
 		return self.dob_f

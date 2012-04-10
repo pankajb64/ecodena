@@ -5,6 +5,8 @@ from django.contrib import auth
 from django import forms
 from Ecodena.User.models import *
 from django.contrib.auth.views import login as auth_login
+from Ecodena.User.views import generatePointsUser
+from Ecodena.User.views import generateRank
 
 def home(request):
 	return render(request, 'index.html')
@@ -16,13 +18,19 @@ def login(request):
 		username = request.POST['username']
 		password = request.POST['password']
 		user = auth.authenticate(username=username, password=password)
-		profile = Profile.objects.filter(userID_f = user)
+		#profile = Profile.objects.filter(userID_f = request.user)
+		#generatePointsUser(profile)
+		
+		#profile = Profile.objects.filter(userID_f = user)
 		#profile[0].points_f = generatePointsUser(profile[0])
 		#profile[0].rank_f = generateRank(profile[0])
 		
 		if user is not None and user.is_active:
 			# Correct password, and the user is marked "active"
 			auth.login(request, user)
+			profile = Profile.objects.filter(userID_f = user)[0]
+			generatePointsUser(profile.userID_f)
+			profile.rank_f = generateRank(profile)
 			# Redirect to a success page.
 			return HttpResponseRedirect("/")
 		else:
