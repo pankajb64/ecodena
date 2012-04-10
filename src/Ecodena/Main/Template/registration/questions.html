@@ -6,27 +6,29 @@
 	<h1 align=center>ALL Questions</h1>
 	<div class="questions-box">
 		<div class="wrapper" >
-					
-					<table >
-							
-						<tr><th>Question</th><th>No.of Users who successfully attempted this</th><th>Accuracy</th><th>Rating</th></span></tr>
-						{% for question in questions %}
-						
-								
-							<tr>
-								<td><a href="{{question.questionID_f }}">{{ question.questionTitle }}</a></td>
-								<td><a > 0.0</a></td>
-								<td><a > 0.0</a></td>
-								<td><a > 0.0</a></td>
-							</tr>
-							
-						{% endfor %}
-					
-			</ul>
+			<table >					
+				<tr><th>Question</th><th>No.of Users who successfully attempted this</th><th>Accuracy</th><th>Rating</th></span></tr>
+					{% for question in questions %}			
+				<tr>
+				<td><a href="{{question.questionID.questionID_f }}">{{ question.questionID.questionTitle }}</a></td>
+				<td><a > {{question.success}}</a></td>
+				<td><a > {{question.accuracy}} </a></td>
+				<td><a > {{question.questionID.questionRating_f}}</a></td>
+				</tr>			
+				{% endfor %}
 				<!--a class="question-font">  The question goes like this.</a>
 				<a class="fadeintext"> click me</a-->
-				</div>
-		 </div>
+			</table>	
+		</div>
 	</div>
+			<div class="footer-text">
+				<a href="index.html" style="color:#000;padding-left:30px">Contact US |
+				</a>
+				<a href="/wiki/" style="color:#000;"> Wiki |
+				</a>  
+				<a href="/forum/"style="color:#000;">Forums
+				</a>
+			</div>
 </div>
+		
 {% endblock %}

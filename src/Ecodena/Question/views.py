@@ -2,6 +2,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from Question.models import Question
 from Comment.models import Comment
+from Attempt.models import Attempt
 from django.shortcuts import render_to_response, render
 from datetime import datetime
 from django import forms
@@ -17,13 +18,28 @@ class CommentForm(forms.Form):
 def test(request):
 	return HttpResponse("<h1>It works!</h1>")
 
-
+class countSuccess(object):
+	questionID = None
+	success = 0
+	accuracy = 0.0
+	
+	
 def listQuestions(request):
 	'''list all the questions with its title
 	parameter:request-->All the details associated with URL 
 	returns the question.html webpage and the list of questions'''
-	questions = Question.objects.all()
-	return render(request, 'questions.html',{'questions':questions})
+	questions = []
+	que = Question.objects.all()
+	
+	for q in que:
+		l = countSuccess()
+		l.questionID = q
+		l.success = Attempt.objects.filter(questionID_f = q).filter(status_f = True).count()
+		c = Attempt.objects.filter(questionID_f=q).count()
+		l.accuracy = round((l.success * 1.0/c)*100 , 2)
+		generateRating(q)
+		questions.append(l)
+	return render(request, 'questions.html',locals())
 
 def viewQuestionByID(request, questionID):
 	'''A question whose Id is passed as the parameter is displayed with the question title, question text, comment list
@@ -64,10 +80,10 @@ def generatePoints(question):
 		
 		return questionPoints_f
 
-def generateRating(request, questionID):
+def generateRating(question):
 
 	
-	question = Question.objects.get(questionID_f=questionID)
+	#question = Question.objects.get(questionID_f=questionID)
 	numberOfUsers = Attempt.objects.filter(questionID_f=question).distinct('userID_f').filter(status_f = True).count()
 	totalUsers = Attempt.objects.distinct('userID_f').count()
 	
@@ -86,8 +102,8 @@ def generateRating(request, questionID):
 	p3 = pow((question.questionPoints_f/100.0),c)
 	#this shows the difficulty of the problem
 	
-	question.questionRating_f = 10 *p1*p2*p3
+	question.questionRating_f = round(10 *p1*p2*p3, 1)
 	question.save()
-	return HttpResponse("Fuck you Anana " + `totalUsers_f`+ " " + `question.questionRating_f` + " " + `p1` + " " + `p2` + " " + `p3`)
+	
 
 

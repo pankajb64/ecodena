@@ -6,8 +6,8 @@
 	
 	<div class="profilebox">
     	<span class="profile-page-username-font"> {% firstof targetuser.first_name user.first_name%} {%firstof targetuser.last_name user.last_name %}
-		{% if other == 1 %}
-		<span style="display:inline"><form action="/profile/edit/"><input type="submit"  class="submitButton editprofilebutton" id="commentbutton" value="Edit Profile" > </form></span>   	
+			{% if other == 1 %}
+			<span style="display:inline"><form action="/profile/edit/"><input type="submit"  class="submitButton editprofilebutton" id="commentbutton" value="Edit Profile" > </form></span>   	
     	</span>
     	{% endif %}
         <div class="profile-header">
@@ -15,7 +15,7 @@
             </div>
             <!--div class="allattempts" onclick='changeActive(this,".profilebox .allattempts-info")'> <span style="padding-left:13px;"> AllAttempts</span>
             </div-->
-            <script>
+			<script>
             	function changeActive(elem,id)
                 {
                 	$(".profile-header .active").removeClass("active");
@@ -23,37 +23,48 @@
 					$(".profilebox .active-desc").removeClass("active-desc");
 					$(id).addClass("active-desc");
                 }
-            </script>
+			</script>
         </div>
         <div class="user-info active-desc solutionspage">
-	      <ul>
-		<table>
-		<th colspan="2" width="40px">Attempt ID</th>
-		<th colspan="4" width="250px">Date</th>
-		<th colspan="3">Problem</th>
-		<th colspan="4" width="100px">Result</th>
-		<th colspan="2" width="60px">Time</th>
-		<th colspan="2" width="80px">Mem</th>
-		<th>Lang</th>
+			<ul>
+				<table>
+					<th colspan="2" width="40px">Attempt ID</th>
+					<th colspan="4" width="250px">Date</th>
+					<th colspan="4" width="200px">Problem</th>
+					<th colspan="4" width="100px">Result</th>
+					<th colspan="2" width="200px">Time</th>
+					<th colspan="2" width="200px">Mem</th>
+					<th>Lang</th>
 
-		{%for s in solution2%}
-		<tr>
-		<td style="text-align:center" colspan="2"><a href="/solutions/{{s.attemptID_f}}" style="color:#fff" ><font size=4px>{{s.attemptID_f}}</font></td>
-		<td style="text-align:center" colspan="4"><font size=4px>{{s.timeOfSubmission_f}}</font></td>
-		<td style="text-align:center" colspan="3"><a href="/questions/{{s.questionID.questionID_f}}" style="color:#fff" ><font size=4px>{{s.questionID.questionTitle_f}}</font></a></td>
-		{%if solution.status_f%}
-		<td style="text-align:center" colspan="4"><img src="{{STATIC_URL}}img/correct_icon.png" width="25px" height="25px"/>{{solution.status_f}}</td>
-		{%else%}
-		<td style="text-align:center" colspan="4"><img src="{{STATIC_URL}}img/wrong_icon.png" width="25px" height="25px"/>{{solution.status_f}}</td>
-		{%endif%}
-		<td style="text-align:center" colspan="2"><font size=4px>{{s.errorReportID.timeRequirement}}</font></td>
-		<td style="text-align:center" colspan="2"><font size=4px>{{s.errorReportID.memory}}</font></td>
-		<td style="text-align:center"><font size=4px>{{s.compilerVersion.language_f}}</font></td>
-		</tr>
-		
-		{% endfor %}
+					{%for s in solution2%}
+					<tr>
+					<td style="text-align:center" colspan="2"><a href="/solutions/{{s.attemptID_f}}" style="color:#fff" ><font size=4px>{{s.attemptID_f}}</font></td>
+					<td style="text-align:center" colspan="4"><font size=4px>{{s.timeOfSubmission_f}}</font></td>
+					<td style="text-align:center" colspan="4"><a href="/questions/{{s.questionID.questionID_f}}" style="color:#fff" ><font size=4px>{{s.questionID.questionTitle_f}}</font></a></td>
+					{%if s.status%}
+					<td style="text-align:center" colspan="4"><img title="Correct Solution" src="{{STATIC_URL}}img/correct_icon.png" width="25px" height="25px"/></td>
+					{%else%}{%if s.errorReportID.errorType_f == 1%}
+					<td style="text-align:center" colspan="4"><img title="Compilation Error" src="{{STATIC_URL}}img/compile_error.png" width="25px" height="25px"/></td>
+					{%else%}{%if s.errorReportID.errorType_f == 2%}
+					<td style="text-align:center" colspan="4"><img title="Runtime Error" src="{{STATIC_URL}}img/runtime_error.png" width="25px" height="25px"/></td>
+					{%else%}{%if s.errorReportID.errorType_f == 3%}
+					<td style="text-align:center" colspan="4"><img title="Time Limit Exceeded" src="{{STATIC_URL}}img/time_limit_excedded.png" width="25px" height="25px"/></td>
+					{%else%}{%if s.errorReportID.errorType_f == 4%}
+					<td style="text-align:center" colspan="4"><img title="Runtime Error" src="{{STATIC_URL}}img/runtime_error.png" width="25px" height="25px"/></td>
+					{%else%}{%if s.errorReportID.errorType_f == 5%}
+					<td style="text-align:center" colspan="4"><img title="Wrong Attempt" src="{{STATIC_URL}}img/wrong_icon.png" width="25px" height="25px"/></td>
+					{%else%}{%if s.errorReportID.errorType_f == 6%}
+					<td style="text-align:center" colspan="4"><img title="Pending" src="{{STATIC_URL}}img/pending.gif" width="25px" height="25px"/></td>
+					{%else%}
+					<td style="text-align:center" colspan="4"><img title="Wrong Attempt" src="{{STATIC_URL}}img/wrong_icon.png" width="25px" height="25px"/></td>
+					{%endif%}{%endif%}{%endif%}{%endif%}{%endif%}{%endif%}{%endif%}
+					<td style="text-align:center" colspan="2"><font size=4px>{{s.errorReportID.timeRequirement}}</font></td>
+					<td style="text-align:center" colspan="2"><font size=4px>{{s.errorReportID.memory}}</font></td>
+					<td style="text-align:center"><font size=4px>{{s.compilerVersion.language_f}}</font></td>
+					</tr>
+					{% endfor %}
 				</table>
-	</ul>
+			</ul>
         </div>    
 {% endblock %}
 

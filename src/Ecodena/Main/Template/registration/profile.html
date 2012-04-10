@@ -40,7 +40,8 @@
 	        <span> Username <span style="padding-left:40px">:{%firstof targetuser.username user.username%}</span></span><br /><br />
    	     <span> Email</span><span style="padding-left:84px">:{% firstof targetuser.email user.email%}</span><br /><br />
       	  <span> Name<span style="padding-left:84px">:{%firstof targetuser.first_name user.first_name%} {%firstof targetuser.last_name user.last_name%}</span></span><br /><br />
-	        <span> Rank<span style="padding-left:90px">:{%firstof targetuser.first_name user.first_name%} {%firstof targetuser.last_name user.last_name%}</span></span><br /><br />
+	        <span> Points<span style="padding-left:90px">:{{profile.points_f}}</span></span><br /><br />
+	        <span> Rank<span style="padding-left:90px">:{{profile.rank_f}}</span></span><br /><br />
 	      	<table border="1px" style="float:right" width="100%">
 				<tr>
 				<th>Total Attempts</th>

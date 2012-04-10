@@ -8,36 +8,36 @@
 			{{ question.questionText_f|safe}}
 			<br/><br/><hr/><br/> Time Limit: {{question.timeLimit_f}} s<br/><hr/><br/>
 		</div>
-		<div  > <br style="clear:both;" /><form action="/submitSolution/{{question.questionID_f}}/"><input type="submit"  class="submitButton" id="submitsolutionbutton" value="Submit Solution" /></form></div>
-		<div id="comments">
-	
-
-			<b>Comments </b>
-				{% autopaginate comments 5 %}
-				{% for comment in comments  %}
-				<div class="comment"> {{comment.commentText_f}} <br/>
-				<span class="comment-meta">Posted by <b> {{comment.userID_f}} </b>  at {{comment.timeStamp_f}} IST <br/></span>
-					
-				</div>
-				{% endfor %}
-				{% paginate %}
-				<div class="commentformcontainer">
-				{% if form %}
-					<form action="" method="POST"> {% csrf_token %}
-						<div class="celement" ><b> Post a Comment</b></div>
-							{% for field in form %}
-								{{ form.non_field_errors }}
-								<div class="celement" >
-									{{ field.errors }}
-									{{ field.label_tag }} &nbsp; {{ field }}
-								</div>
-							{% endfor %}
-							<div  > <br style="clear:both;" /><input type="submit"  class="submitButton" id="commentbutton" value="Post Comment" /></div>
-					</form>
-				{% endif %}	
-				</div>
+		<div  > <br style="clear:both;" />
+			<form action="/submitSolution/{{question.questionID_f}}/"><input type="submit"  class="submitButton" id="submitsolutionbutton" value="Submit Solution" /></form>
 		</div>
-				
+		<div id="comments">
+			<b>Comments </b>
+			{% autopaginate comments 5 %}
+			{% for comment in comments  %}
+			<div class="comment"> {{comment.commentText_f}} <br/>
+				<span class="comment-meta">Posted by <b> {{comment.userID_f}} </b>  at {{comment.timeStamp_f}} IST <br/></span>		
+			</div>
+			{% endfor %}
+			{% paginate %}
+			<div class="commentformcontainer">
+				{% if form %}
+				<form action="" method="POST"> {% csrf_token %}
+					<div class="celement" ><b> Post a Comment</b></div>
+						{% for field in form %}
+						{{ form.non_field_errors }}
+						<div class="celement" >
+							{{ field.errors }}
+							{{ field.label_tag }} &nbsp; {{ field }}
+						</div>
+						{% endfor %}
+						<div  > <br style="clear:both;" /><input type="submit"  class="submitButton" id="commentbutton" value="Post Comment" />
+						</div>
+				</form>
+				{% endif %}	
+			</div>
+		</div>
+	</div>
 </div>
 
 {% endblock %}
