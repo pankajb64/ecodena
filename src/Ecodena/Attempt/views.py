@@ -24,10 +24,15 @@ path = "static/storage/solution/"
 class SolutionForm(forms.Form):
 	'''creates a form for pasting the solution of a question '''
 	text = forms.CharField(widget=forms.Textarea(attrs={'rows':25, 'cols':150}), required=False)
-	cv = tuple(CompilerVersion.objects.all())
+	cv = CompilerVersion.objects.all()
+	choices = []
+	for ver in cv:
+		display_name = ver.language_f.languageName_f + " ( " + ver.versionName_f + " )"
+		ver_lang = ver.language_f.languageName_f + " " + ver.versionName_f
+		choices.append((ver_lang, display_name))
 	CHOICES = (('C 1.1.1', 'C 1.1.1'),
                ('b','Dummy'))
-	version = forms.ChoiceField(widget=forms.Select(), choices=CHOICES)
+	version = forms.ChoiceField(widget=forms.Select(), choices=choices)
 	#title = forms.CharField(max_length=50)
 	file  = forms.FileField(required=False)
     
@@ -132,7 +137,7 @@ def submitSolution(request,questionID):
 			attempt.timeOfSubmission = datetime.now()
 			attempt.ErrorReport = ErrorReport(errorType_f=0)
 			attempt.save()
-			file_name =  path + `attempt.attemptID_f` + "_Main." + attempt.compilerVersion.language.languageName.lower()	
+			file_name =  path + `attempt.attemptID_f` + "_Main." + attempt.compilerVersion.language.languageExtension_f.lower()	
 			if request.FILES:
 				handle_uploaded_file(request.FILES['file'],file_name)
 			else :

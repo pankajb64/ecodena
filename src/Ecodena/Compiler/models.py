@@ -6,6 +6,7 @@ class Language(models.Model, object):
 
 	languageID_f = models.AutoField(primary_key=True)
 	languageName_f = models.CharField("Language Name", max_length=40, null=False, unique=True)
+	languageExtension_f = models.CharField("Language extension (dont include \".\" )", max_length = 10, unique=True)
 
 	def getLanguageName(self):
 		return self.languageName_f
