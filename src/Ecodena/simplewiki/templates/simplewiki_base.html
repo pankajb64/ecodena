@@ -7,6 +7,12 @@
 <link rel="stylesheet" media="print" href="{{STATIC_URL}}simplewiki/css/base_print.css" />
 <link rel="stylesheet" href="{{STATIC_URL}}simplewiki/css/autosuggest_inquisitor.css" />
 <script type="text/javascript" src="{{STATIC_URL}}simplewiki/js/bsn.AutoSuggest_c_2.0.js"></script>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/styles.css" />
+
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/scripts.js"></script>
+
 <script type="text/javascript">
 	function set_related_article_id(s) {
 		document.getElementById('wiki_related_input_id').value = s.id;
@@ -31,6 +37,17 @@
 {% endblock %}
 </head>
 <body>
+<div id="header" class="header-container" align=left style="font-size:15px;">
+	<a href="/"><img class="logo" src="{{STATIC_URL}}img/ecodena logo.png" /></a>
+	
+	{% block header %} {% endblock %}
+	{% if not user.is_authenticated %}
+    <div id="login" class="login1"><a href="/login">Login</a> | <a href="/register">Register</a></div>
+    {% else %}
+    <div id="login" class="login1">Welcome {{ user }} | <a href="/profile">Profile</a> | <a href="/logout">Logout</a></div>
+    {% endif %}
+    
+</div>	
 
 <h1>{% block wiki_page_title %}{% endblock %}</h1>
 <hr />

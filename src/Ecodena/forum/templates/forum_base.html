@@ -3,6 +3,11 @@
 <title>{% block title %}{% endblock %}</title>
 <link rel="alternate" type="application/rss+xml" title="{% trans "All Latest Posts via RSS" %}" href="{% url forum_index %}rss/" />
 <link rel="alternate" type="application/atom+xml" title="{% trans "All Latest Posts via ATOM" %}" href="{% url forum_index %}atom/" />
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/styles.css" />
+
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/scripts.js"></script>
 {% block extrahead %}{% endblock %}
 </head>
 <style type='text/css'><!--
@@ -83,6 +88,17 @@ body {
 }
 --></style>
 <body>
+<div id="header" class="header-container" align=left style="font-size:17px;">
+	<a href="/"><img class="logo" src="{{STATIC_URL}}img/ecodena logo.png" /></a>
+	
+	{% block header %} {% endblock %}
+	{% if not user.is_authenticated %}
+    <div id="login" class="login1"><a href="/login">Login</a> | <a href="/register">Register</a></div>
+    {% else %}
+    <div id="login" class="login1">Welcome {{ user }} | <a href="/profile">Profile</a> | <a href="/logout">Logout</a></div>
+    {% endif %}
+    
+</div>	
 <div id='djangoForumBody'>
 <h1>{% block pagetitle %}{% trans "Welcome to the Forums" %}{% endblock %}</h1>
 <div id='djangoForumBreadcrumbs'><a href='/'>{% trans "Home" %}</a> &raquo; <a href='{% url forum_index %}'>{% trans "Forums" %}</a>{% block breadcrumbs %}{% endblock %}</div>

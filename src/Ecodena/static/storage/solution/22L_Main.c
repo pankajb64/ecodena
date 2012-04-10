@@ -1,9 +1,7 @@
-# include<stdio.h>
+#include <stdio.h>
 
-int main (void)
+int main(void)
 {
-	int x = 0;
-	scanf("%d", &x);
-	printf("%d", x);
+	printf("123\n");
 	return 0;
-}
+}	
