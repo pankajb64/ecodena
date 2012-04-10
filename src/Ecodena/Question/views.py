@@ -54,20 +54,8 @@ def viewQuestionByID(request, questionID):
 						
 					
 		question.commentList_f = list(Comment.objects.filter(questionID_f = question))
-		paginator=Paginator(question.commentList_f,10)
-		page = int(request.GET.get('page','1'))
-		try:
-			comments = paginator.page(page)
-		except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
-			comments = paginator.page(1)
-		except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
-			comments = paginator.page(paginator.num_pages)
-		return render(request, 'question.html',RequestContext(request, {'question' : question,'comments':comments ,'form' : form}))
-	else:
-		return render(request, 'question.html', RequestContext(request))
-#	#return HttpResponse("%s" %questions)
+		return render(request, 'question.html',RequestContext(request, {'question' : question,'form' : form, 'comments' : question.commentList_f} ))
+#	return HttpResponse("%s" %questions)
 
 def generatePoints(question):
 	
