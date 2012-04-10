@@ -5,46 +5,33 @@
 {% block content %}  
 {% if solution %}
 <div class="profilebox attemptbyidpage">
-<span style="color:#0b86f9;text-decoration:underline">Attempt ID - {{solution.attemptID}}</span>
-<br />
-<br />
-<span style="color:#15a112">Question</span> - {{solution.questionID}} | <span style="color:#15a112">Level</span> - {{solution.questionID.level_f }}  |<span style="color:#15a112"> Type </span>- {{solution.questionID.type_f }}
+	<span style="color:#0b86f9;text-decoration:underline">Attempt ID - {{solution.attemptID}}</span><br /><br />
+	<span style="color:#15a112">Question</span> - {{solution.questionID}} | <span style="color:#15a112">Level</span> - {{solution.questionID.level_f }}  |<span style="color:#15a112"> Type </span>- {{solution.questionID.type_f }}<br />
+	<span style="color:#15a112">Your Solution<br /></span> <span class="pre"> {{code}}</span><br />
+	{% if solution.status%}
+	<span style="color:#15a112"> Status </span> <img alt="Correct" src="{{STATIC_URL}}img/correct_icon.png" width="20px" height="20px"/>{{solution.status}}
+	{% else %}
+	<span style="color:#15a112"> Status </span> <img alt="Wrong"src="{{STATIC_URL}}img/wrong_icon.png" width="20px" height="20px"/>{{solution.status}}
+	{% endif %}
+	<br />
+	<span style="color:#15a112"> Submitted at</span> - {{solution.timeOfSubmission }}<br /><br/>
+	<hr />
 
-<br />
-<span style="color:#15a112">Your Solution<br /></span> <span class="pre"> {{code}}</span>
-<br />
-{% if solution.status%}
-<span style="color:#15a112"> Status </span> <img alt="Correct" src="{{STATIC_URL}}img/correct_icon.png" width="20px" height="20px"/>{{solution.status}}
-{% elseif %}
-<span style="color:#15a112"> Status </span> <img alt="Wrong"src="{{STATIC_URL}}img/wrong_icon.png" width="20px" height="20px"/>{{solution.status}}
-{%elseif%}
-<span style="color:#15a112"> Status </span> <img alt="Wrong"src="{{STATIC_URL}}img/pending.gif" width="20px" height="20px"/>{{solution.status}}
-{% endif %}
-<br />
-<span style="color:#15a112"> Submitted at</span> - {{solution.timeOfSubmission }}
-<br />
-<br/>
-<hr />
+	{% if not solution.status %}<br/>
 
-
-{% if not solution.status %}
-<br/>
-
-<span style="color:#0b86f9;text-decoration:underline"> Error Report </span>
-<br />
-<br />
-<span style="color:#15a112"> Time Required</span> -  {{solution.errorReportID.timeRequirement }}
-<br/>	
-<span style="color:#15a112"> Memory Required</span> -  {{solution.errorReportID.memory}} M
-<br/>
-<span style="color:#15a112"> Error Type</span> - {{message }}
-<br/>
-<span style="color:#15a112"> Error Message</span> - {{solution.errorReportID.errorMessage }}
-<br />
-<span style="color:#15a112"> Test Case Level on which error occured </span>- {{solution.errorReportID.testCaseLevel }}</p>
-
-{% endif %}
-
-{% endif %}
+	<span style="color:#0b86f9;text-decoration:underline"> Error Report </span>
+	<br />
+	<br />
+	<span style="color:#15a112"> Time Required</span> -  {{solution.errorReportID.timeRequirement }}
+	<br/>	
+	<span style="color:#15a112"> Memory Required</span> -  {{solution.errorReportID.memory}} 
+	<br/>
+	<span style="color:#15a112"> Error Type</span> - {{message }}
+	<br/>
+	<span style="color:#15a112"> Error Message</span> - {{solution.errorReportID.errorMessage }}
+	<br />
+	<span style="color:#15a112"> Test Case Level on which error occured </span>- {{solution.errorReportID.testCaseLevel }}</p>
+	{% endif %}
+	{% endif %}
 </div>
 {%endblock%}
