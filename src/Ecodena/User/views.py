@@ -17,7 +17,7 @@ from datetime import datetime
 class ProfileForm(forms.Form):
 	fname = forms.CharField(required = False)
 	lname = forms.CharField(required = False)
-	dob = forms.DateField(required=False, widget=SelectDateWidget)
+	dob = forms.DateField(required=False, widget=SelectDateWidget(years=range(1970,2000)))
 	GENDER_CHOICES = (
     (0, 'Male'),
     (1, 'Female'),
