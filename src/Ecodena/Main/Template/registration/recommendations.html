@@ -1,11 +1,11 @@
-<h1> Questions Recommended to you! </h1>
+<h2> Questions Recommended to you! </h2>
 
 
 <div>
 	<ul>
 		{% for question in recommendedQuestions.questionList_f.all %}
 		<li>	
-			<a href="{{question.questionID_f }}">{{ question.questionTitle }}</a>
+			<a href="/questions/{{question.questionID_f }}" target = "_top">{{ question.questionTitle }}</a>
 		</li>
 		{% endfor %}
 	</ul>

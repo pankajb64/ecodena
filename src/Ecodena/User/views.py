@@ -56,29 +56,29 @@ def viewProfileByID(request,username):
 	
 	targetuser = User.objects.filter(username=username)
 	
-	profile=Profile.objects.filter(userID_f=targetuser)
-	programmer = Programmer.objects.filter(userID_f = request.user)[0]
-	if profile:
-		profile=profile[0]
-		targetuser = targetuser[0]
-		a = Attempt.objects.filter(status_f=True)
-		attempts = a.order_by('timeOfSubmission_f').filter(userID_f=request.user)
-		questionTitle = []
-		for attempt in attempts:
-				questionTitle.append(attempt.questionID_f.questionTitle_f)
-		questionTitle = list(set(questionTitle))
-		countAttempt = a.count()
-		countCorrect = a.filter(status_f=True).count()
-		countCompileError = a.filter(errorReportID_f__errorType_f = 1).count()
-		countRunTimeError = a.filter(errorReportID_f__errorType_f = 2).count()
-		countTimeLimitExceeded = a.filter(errorReportID_f__errorType_f = 3).count()
-		countMemoryLimitExceeded = a.filter(errorReportID_f__errorType_f = 4).count()
-		countWrongAnswer = a.filter(errorReportID_f__errorType_f = 5).count()
-		other = 0
-		#dc = { 'p':p,'attempts':a,'countAttempt':countAttempt,'countCorrect':countCorrect,'countIncorrect':countIncorrect}
-		return render(request, 'profile.html',locals())
-	else:
-		return HttpResponseRedirect("/profile")	
+	if targetuser:
+		targetuser=targetuser[0]
+		
+	profile=Profile.objects.filter(userID_f=targetuser)[0]
+	programmer = Programmer.objects.filter(username = request.user.username)
+	#targetuser = targetuser[0]
+	a = Attempt.objects.filter(status_f=True)
+	attempts = a.order_by('timeOfSubmission_f').filter(status_f=True)
+	questionTitle = []
+	for attempt in attempts:
+			questionTitle.append(attempt.questionID_f.questionTitle_f)
+	questionTitle = list(set(questionTitle))
+	countAttempt = a.count()
+	countCorrect = a.filter(status_f=True).count()
+	countCompileError = a.filter(errorReportID_f__errorType_f = 1).count()
+	countRunTimeError = a.filter(errorReportID_f__errorType_f = 2).count()
+	countTimeLimitExceeded = a.filter(errorReportID_f__errorType_f = 3).count()
+	countMemoryLimitExceeded = a.filter(errorReportID_f__errorType_f = 4).count()
+	countWrongAnswer = a.filter(errorReportID_f__errorType_f = 5).count()
+	other = 0
+	#dc = { 'p':p,'attempts':a,'countAttempt':countAttempt,'countCorrect':countCorrect,'countIncorrect':countIncorrect}
+	return render(request, 'profile.html',locals())
+	
 @csrf_protect	
 def editProfile(request):
 	if request.user.is_authenticated():

@@ -51,7 +51,13 @@ def listSolutions(request):
 	parameter:request-->All the details associated with URL 
 	returns the solutions.html page and the list of solution ids'''
 	solutions = Attempt.objects.filter(userID_f=request.user)
-	return render(request, 'solutions.html',{'solutions':solutions})
+	solution2 = []
+	for solution in solutions:
+		if solution.errorReportID.memory:
+			solution.errorReportID.memory = round(solution.errorReportID.memory/1024 , 3 )
+			solution.errorReportID.timeRequirement = round(solution.errorReportID.timeRequirement , 3)
+		solution2.append(solution)
+	return render(request, 'solutions.html',locals())
 
 
 @login_required(login_url="/login/")
@@ -68,6 +74,23 @@ def viewSolution(request,solutionID):
 		path = solution.solutionText
 		destination = open(path, 'r')
 		code = destination.read()
+	
+		if solution.errorReportID.errorType == 0:
+			message = 'Correct Answer'
+		if solution.errorReportID.errorType == 1:
+			message = 'Compilation Error'
+		if solution.errorReportID.errorType == 2:
+			message = 'Run Time Error'
+		if solution.errorReportID.errorType == 3:
+			message = 'Time Limit Exceeded'
+		if solution.errorReportID.errorType == 4:
+			message = 'Memory Limit Exceeded'
+		if solution.errorReportID.errorType == 5:
+			message = 'Wrong Answer'
+		if solution.errorReportID.errorType == 6:
+			message = 'Pending'
+		
+		
 		
 		return render(request, 'solution.html',locals())
 	else :
