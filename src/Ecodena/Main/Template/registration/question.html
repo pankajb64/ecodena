@@ -8,7 +8,7 @@
 			{{ question.questionText_f|safe}}
 			<br/><br/><hr/><br/> Time Limit: {{question.timeLimit_f}} s<br/><hr/><br/>
 		</div>
-		<div  > <br style="clear:both;" /><input type="submit"  class="submitButton" id="submitsolutionbutton" value="Submit Solution" /></div>
+		<div  > <br style="clear:both;" /><form action="/submitSolution/{{question.questionID_f}}/"><input type="submit"  class="submitButton" id="submitsolutionbutton" value="Submit Solution" /></form></div>
 		<div id="comments">
 	
 

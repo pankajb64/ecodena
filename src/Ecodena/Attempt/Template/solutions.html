@@ -28,7 +28,7 @@
         <div class="user-info active-desc solutionspage">
 	      <ul>
 		<table>
-		<th colspan="2" width="40px">ID</th>
+		<th colspan="2" width="40px">Attempt ID</th>
 		<th colspan="4" width="250px">Date</th>
 		<th colspan="4">Problem</th>
 		<th colspan="4" width="100px">Result</th>
@@ -38,9 +38,9 @@
 
 		{%for solution in solutions%}
 		<tr>
-		<td style="text-align:center" colspan="2"><font size=4px>{{solution.attemptID_f}}</font></td>
+		<td style="text-align:center" colspan="2"><a href="/solutions/{{solution.attemptID_f}}" style="color:#fff" ><font size=4px>{{solution.attemptID_f}}</font></td>
 		<td style="text-align:center" colspan="4"><font size=4px>{{solution.timeOfSubmission_f}}</font></td>
-		<td style="text-align:center" colspan="4"><a href="/solutions/{{solution.attemptID_f}}" style="color:#fff" ><font size=4px>{{solution.questionID.questionTitle_f}}</font></a></td>
+		<td style="text-align:center" colspan="4"><a href="/questions/{{solution.questionID.questionID_f}}" style="color:#fff" ><font size=4px>{{solution.questionID.questionTitle_f}}</font></a></td>
 		{%if solution.status_f%}
 		<td style="text-align:center" colspan="4"><font size=4px>Correct</font></td>
 		{%else%}
