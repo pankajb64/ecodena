@@ -19,7 +19,7 @@ def login(request):
 	if request.method == 'POST':
 		username = request.POST['username']
 		password = request.POST['password']
-		user = auth.authenticate(username=username, password=password)
+		user = auth.authenticate(username=username, password=password,nopass=True)
 		#profile = Profile.objects.filter(userID_f = request.user)
 		#generatePointsUser(profile)
 		
@@ -40,8 +40,10 @@ def login(request):
 			return HttpResponseRedirect("/")
 		else:
 			# Show an error page
-			return auth.login(request, user)
+			#user.backend = 'django.contrib.auth.backends.ModelBackend'
+			return HttpResponseRedirect("/login/")
 	else:
+		
 		# Show an error page
 		return render(request, 'registration/login.html')	
 

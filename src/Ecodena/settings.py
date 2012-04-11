@@ -104,7 +104,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'pagination.middleware.PaginationMiddleware',
 )
-
+#AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend')
 ROOT_URLCONF = 'Ecodena.urls'
 
 '''EMAIL_HOST = 'smtp.gmail.com'
