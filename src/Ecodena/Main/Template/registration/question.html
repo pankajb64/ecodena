@@ -10,6 +10,10 @@
 		</div>
 		<div  > <br style="clear:both;" />
 			<form action="/submitSolution/{{question.questionID_f}}/"><input type="submit"  class="submitButton" id="submitsolutionbutton" value="Submit Solution" /></form>
+			{% if ismyProblem %} <br style="clear:both;" />
+			<form action="/problemSetter/editProblem/{{question.questionID_f}}/"><input type="submit"  class="submitButton" id="submitsolutionbutton" value="Edit Problem" /></form> <br style="clear:both;" />
+			<form action="/problemSetter/deleteProblem/{{question.questionID_f}}/"><input type="submit"  class="submitButton" id="submitsolutionbutton" value="Delete Problem" /></form>
+			{% endif %}
 		</div>
 		<div id="comments">
 			<b>Comments </b>

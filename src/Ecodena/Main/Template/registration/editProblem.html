@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} Edit problem - {{questionID.questionTitle_f }} {% endblock %}
+{% block content %}
+<form action="" method ="post" >
+
+{{ form.as_p }}
+
+<input type="submit" value="Submit"/>
+</form>
+<!--h1> Low Test Cases</h1>
+{% for testcase in question.LowtestCasesList_f %}
+hh
+	<a href="/editTestCase/{{ testcase.caseID_f }}"> Modify Test Case {{ forLoop.counter }} (ID - {{ testcase.caseID_f }}</a>
+{% endfor %}
+<h1> Medium Test Cases</h1>
+{% for testcase in question.MedtestCasesList_f %}
+	<a href="/editTestCase/{{ testcase.caseID_f }}"> Modify Test Case {{ forLoop.counter }} (ID - {{ testcase.caseID_f }}</a>
+{% endfor %}
+<h1> High Test Cases</h1>
+{% for testcase in question.HightestCasesList_f %}
+	<a href="/editTestCase/{{ testcase.caseID_f }}"> Modify Test Case {{ forLoop.counter }} (ID - {{ testcase.caseID_f }}</a>
+{% endfor %}
+
+<a href="/addTestCase/" style="color:black;"> Add a new Test Case</a-->
+{% endblock %}
