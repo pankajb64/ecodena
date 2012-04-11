@@ -144,14 +144,14 @@ def execute(attempt,question,compiler):
 					break
 			errorReport.testCaseLevel_f=2
 	if errorReport.errorType_f == 1:
-		errorReport.errorMessage_f+="Your solution failed to compile successfully. More details might follow\n"
+		errorReport.errorMessage_f+="Your solution failed to compile successfully.\n"
 	if errorReport.errorType_f == 2:
-		errorReport.errorMessage_f+="Your solution generated a run time error.\n It could be a Segmentation fault or a fatal error because of which your program is aborting unexpectedly. More details might follow\n"
+		errorReport.errorMessage_f+="Your solution generated a run time error.\n It could be a Segmentation fault or a fatal error because of which your program is aborting unexpectedly.\n"
 	if errorReport.errorType_f == 3:
-		errorReport.errorMessage_f+="Your solution failed to compile within given Time Limit because your program is too slow.\nThe time limits are all attainable, so you will just need to come up with a way of making your algorithm faster. More details might follow\n"
+		errorReport.errorMessage_f+="Your solution failed to compile within given Time Limit because your program is too slow.\nThe time limits are all attainable, so you will just need to come up with a way of making your algorithm faster.\n"
 	if errorReport.errorType_f == 4:
-		errorReport.errorMessage_f+="Your solution exceeded the given memory limit. This type of error is sometimes generated if you use too much memory. Check for arrays that are too large, or other elements that could grow to a size too large to fit in memory. More details might follow\n"
+		errorReport.errorMessage_f+="Your solution exceeded the given memory limit. This type of error is sometimes generated if you use too much memory. Check for arrays that are too large, or other elements that could grow to a size too large to fit in memory.\n"
 	if errorReport.errorType_f == 5:
-		errorReport.errorMessage_f+="Your program is not printing out the correct answer. You will just have to debug your program very carefully! Make sure your program is conforming exactly to the output format required, and not printing out unnecessary information. More details might follow\n"				
+		errorReport.errorMessage_f+="Your program is not printing out the correct answer. You will just have to debug your program very carefully! Make sure your program is conforming exactly to the output format required, and not printing out unnecessary information.\n"				
 				
 	return errorReport

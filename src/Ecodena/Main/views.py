@@ -27,15 +27,18 @@ def login(request):
 		
 		if user is not None and user.is_active:
 			# Correct password, and the user is marked "active"
-			auth.login(request, user)
+			
 			profile = Profile.objects.filter(userID_f = user)[0]
 			generatePointsUser(profile.userID_f)
+			auth.login(request, user)
 			profile.rank_f = generateRank(profile)
+			profile.save()
+			
 			# Redirect to a success page.
 			return HttpResponseRedirect("/")
 		else:
 			# Show an error page
-			return HttpResponseRedirect("/login/")
+			return auth.login(request, user)
 	else:
 		# Show an error page
 		return render(request, 'registration/login.html')	

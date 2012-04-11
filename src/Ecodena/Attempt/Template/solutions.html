@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}
-{% endblock %}
+{% load pagination_tags %}
+{% block title %} My Solutions {% endblock %}
 
 {% block content %}    
 	
@@ -35,7 +35,8 @@
 					<th colspan="2" width="200px">Time</th>
 					<th colspan="2" width="200px">Mem</th>
 					<th>Lang</th>
-
+					{% autopaginate solution2 10 %}
+					
 					{%for s in solution2%}
 					<tr>
 					<td style="text-align:center" colspan="2"><a href="/solutions/{{s.attemptID_f}}" style="color:#fff" ><font size=4px>{{s.attemptID_f}}</font></td>
@@ -63,6 +64,7 @@
 					<td style="text-align:center"><font size=4px>{{s.compilerVersion.language_f}}</font></td>
 					</tr>
 					{% endfor %}
+					{% paginate %}
 				</table>
 			</ul>
         </div>    

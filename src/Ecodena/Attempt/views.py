@@ -55,7 +55,7 @@ def listSolutions(request):
 	'''lists all the solutionIDs' that a particular user has submitted
 	parameter:request-->All the details associated with URL 
 	returns the solutions.html page and the list of solution ids'''
-	solutions = Attempt.objects.filter(userID_f=request.user)
+	solutions = Attempt.objects.filter(userID_f=request.user).order_by('-timeOfSubmission_f')
 	solution2 = []
 	for solution in solutions:
 		if solution.errorReportID.memory:

@@ -1,17 +1,66 @@
 {% extends "base.html" %}
-{% block title %}
+{% block title %} Attempt for {{ solution.questionID_f.questionTitle_f }} {% endblock %}
+
+{% block head %}
+<script src="http://yandex.st/highlightjs/6.2/highlight.min.js"></script>
+<link rel="stylesheet" href="http://yandex.st/highlightjs/6.2/styles/default.min.css">
+<script>hljs.initHighlightingOnLoad();</script>
+<script language="Javascript" type="text/javascript" src="{{STATIC_URL }}textarea/edit_area_full.js"></script>
+<!--script language="Javascript" type="text/javascript">
+	editAreaLoader.init({
+			id: "html"	// id of the textarea to transform	
+			,start_highlight: true
+			,allow_toggle: false
+			,language: "en"
+			,syntax: "html"	
+			,toolbar: "search, go_to_line, |, undo, redo, |, select_font, |, syntax_selection, |, change_smooth_selection, highlight, reset_highlight, |, help"
+			,syntax_selection_allow: "c, cpp, java, python"
+			,is_multi_files: true
+			,EA_load_callback: ""
+			,show_line_colors: true
+		});
+
+</script-->
+
+<!--style type="text/css">
+	.comment {
+		color: gray;
+	}
+	
+	.keyword {
+		font-weight: bold;
+	}
+	
+	.python{
+		color: blue;
+	}
+	 .string {
+		color: blue;
+	}
+	
+	.html {
+		color: green;
+	}
+	
+	.attribute {
+		color: green;
+	}
+	.value {
+		color: green;
+	}
+</style-->
 {% endblock %}
 
 {% block content %}  
 {% if solution %}
-<div class="profilebox attemptbyidpage">
+<div class="profilebox attemptbyidpage" onload="EditArea()">
 	<span style="color:#0b86f9;text-decoration:underline">Attempt ID - {{solution.attemptID}}</span><br /><br />
 	<span style="color:#15a112">Question</span> - {{solution.questionID}} | <span style="color:#15a112">Level</span> - {{solution.questionID.level_f }}  |<span style="color:#15a112"> Type </span>- {{solution.questionID.type_f }}<br />
-	<span style="color:#15a112">Your Solution<br /></span> <span class="pre"> {{code}}</span><br />
+	<span style="color:#15a112">Your Solution<br /><br /></span> <span class="pre"><pre><code class="html" >{{code}} </code></pre></span><br />
 	{% if solution.status%}
-	<span style="color:#15a112"> Status </span> <img alt="Correct" src="{{STATIC_URL}}img/correct_icon.png" width="20px" height="20px"/>{{solution.status}}
+	<span style="color:#15a112"> Status </span> <img alt="Correct" src="{{STATIC_URL}}img/correct_icon.png" width="20px" height="20px"/>Correct
 	{% else %}
-	<span style="color:#15a112"> Status </span> <img alt="Wrong"src="{{STATIC_URL}}img/wrong_icon.png" width="20px" height="20px"/>{{solution.status}}
+	<span style="color:#15a112"> Status </span> <img alt="Wrong"src="{{STATIC_URL}}img/wrong_icon.png" width="20px" height="20px"/>Wrong
 	{% endif %}
 	<br />
 	<span style="color:#15a112"> Submitted at</span> - {{solution.timeOfSubmission }}<br /><br/>
@@ -30,7 +79,7 @@
 	<br/>
 	<span style="color:#15a112"> Error Message</span> - {{solution.errorReportID.errorMessage }}
 	<br />
-	<span style="color:#15a112"> Test Case Level on which error occured </span>- {{solution.errorReportID.testCaseLevel }}</p>
+	<span style="color:#15a112"> Test Case Level on which error occured </span>- {% if solution.errorReportID.testCaseLevel == 0 %} Low {% else %} {% if solution.errorReportID.testCaseLevel == 1 %} Medium {% else %} {% if solution.errorReportID.testCaseLevel == 3%} High {% endif %} {% endif %} {% endif %}</span>
 	{% endif %}
 	{% endif %}
 </div>

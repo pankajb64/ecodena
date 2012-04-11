@@ -36,7 +36,10 @@ def listQuestions(request):
 		l.questionID = q
 		l.success = Attempt.objects.filter(questionID_f = q).filter(status_f = True).count()
 		c = Attempt.objects.filter(questionID_f=q).count()
-		l.accuracy = round((l.success * 1.0/c)*100 , 2)
+		if not c == 0:
+			l.accuracy = round((l.success * 1.0/c)*100 , 2)
+		else:
+			l.accuracy = 0	
 		generateRating(q)
 		questions.append(l)
 	return render(request, 'questions.html',locals())
