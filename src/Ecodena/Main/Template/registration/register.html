@@ -4,54 +4,9 @@
 
 {% block content %}
         <div id="liw" class="loginwindow-container" align=center>
-        	<!--form action="" method="post">
-            <table class="registerwindow">
-                  <tbody >
-                  <tr class=relement>
-                  <td colspan="2">
-                  <h1> Don't have a account yet? Sign Up</h1>
-                  </td>
-                  </tr >
-                  <tr class=relement>
-				  {{ form.first_name.errors }}
-                  <td><label for="user_login"><span class="usernamefont"> First Name</span></label></td>
-                  <td>{{ form.first_name }}</td>
-                  </tr >
-                  <tr class=relement>
-				  {{ form.last_name.errors }} 	  
-                  <td><label for="user_login"><span class="testregisterfont"> Last Name</span></label></td>
-                  <td>{{ form.last_name }}</td>
-                  </tr>
-                  <tr class=relement>
-				  {{ form.username.errors }}	  
-                  <td><label for="user_login"><span class="testregisterfont"> Username</span></label></td>
-                  <td>{{ form.username }}</td>
-                  </tr>
-                  <tr class=relement>
-				  {{ form.email.errors }}	  
-                  <td><label for="user_login"><span class="testregisterfont"> Email</span></label></td>
-                  <td>{{ form.email }}</td>
-                  </tr>
-                  <tr class=relement>
-				  {{ form.password1.errors }}	  
-                  <td><label for="user_password"><span class="testregisterfont">Password</span></label></td>
-                  <td>{{ form.password1 }}</td>
-                  </tr>
-                  <tr class=relement>
-				  {{ form.password2.errors }}	  
-                  <td><label for="user_password"><span class="testregisterfont">Confirm Password</span></label></td>
-                  <td>{{ form.password2 }}</td>
-                  </tr>
-                  <tr class=relement>
-					
-		           <td><input type="submit" class="submitButton" id="signupbutton" value="Register" /></td>
-                    
-                  </tr>
-                  </tbody>
-             </table>   
-             </form--> 
+        	
              <form action="" method="post">
-				 <div class="relement" align=center><h1> Don't have a account yet? Sign Up</h1></div>
+				 <div class="relement" align=center><h1 style="color:#fff"> Don't have a account yet? Sign Up</h1></div>
 				<!--for loop was here -->
 					{{ form.non_field_errors }}
 					<div class="relement" align=center>
@@ -95,56 +50,7 @@
 				<div  class="element" id="submit"><input type="submit" class="submitButton" id="signupbutton" value="Register" /></div>
 			</form>
         </div>   
-        
-
-    		<!--<div id="liw" class="registerwindow">
-       		 <form action="" method="post">
-            <table>
-                  <tbody>
-                  <tr>
-                  <td><label for="user_login"><a class="usernamefont"> First Name</a></label></td>
-                  <td><input type="text" value="" placeholder="First Name" name="user" class="usernamebox"></td>
-                  </tr>
-                  <td><label for="user_login"><a class="usernamefont"> Last Name</a></label></td>
-                  <td><input type="text" value="" placeholder="Last Name" name="user" class="usernamebox"></td>
-                  </tr>
-                  <td><label for="user_login"><a class="usernamefont"> Email</a></label></td>
-                  <td><input type="text" value="" placeholder="Email"name="user" class="usernamebox"></td>
-                  </tr>
-                  <tr>
-                  <td><label for="user_password"><a class="usernamefont">Password</a></label></td>
-                  <td><input value="" type="password" placeholder="Password" name="pass" class="usernamebox"></td>
-                  </tr>
-                  <tr>
-                  <td><label for="user_password"><a class="usernamefont">Confirm Password</a></label></td>
-                  <td><input value="" type="password" placeholder="Confirm Password" name="pass" class="usernamebox"></td>
-                  </tr>
-                  <tr>
-                         <td colspan="2"> <div id="fb-root"></div>
-                      <script src="http://connect.facebook.net/en_US/all.js"></script>
-                      <script>
-                         FB.init({ 
-                            appId:'344076748968640', cookie:true, 
-                            status:true, xfbml:true 
-                         });
-                      </script>
-                      <fb:login-button>Login with Facebook</fb:login-button></td>
-              		</tr>
-                  <tr>
-                   </tbody>
-             </table>
-             <!--<td><input value="Sign in" type="submit" class="formStyleSubmit loginSubmit"></td>-->
-                  <!--<td><input type="submit" class="submitButton" value="SignIn" /></td>-->
-		           <!--<td> <form style="display:inline" method="link" action="register.html"><input type="submit" class="registerButton" value="Sign Up" /></form>
-                   </td>-->
-        	<!--<div class="signupheading"> New to Ecodena? Sign Up </div><br />
-        	<input type="text" placeholder="First Name" class="usernamebox" name="First Name" />
-           	<input type="text" placeholder="Last Name" class="usernamebox" name="Last Name" /><br />
-            <input type="email" placeholder="Email" class="usernamebox" name="Email" /><br />
-            <input type="password" placeholder="Password" class="usernamebox" name="password" /><br />
-            <input type="password" placeholder="Confirm Password" class="usernamebox" name="Confirm Password" /><br />
-            <input type="Button" type="button" class="registerButton" value="SignUp" />-->
-        </div>
+    </div>
  </div>
 <div class="main">
 </div>

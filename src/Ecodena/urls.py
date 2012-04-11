@@ -8,6 +8,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
 # Examples:
 	url(r'^$', 'Ecodena.Main.views.home', name='home'),
+	url(r'^aboutUs/$', 'Ecodena.Main.views.AboutUs'),
 	# url(r'^Ecodena/', include('Ecodena.foo.urls')),
 
 	# Uncomment the admin/doc line below to enable admin documentation:

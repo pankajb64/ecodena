@@ -5,13 +5,16 @@
 {% block content %}    
 	
 	<div class="profilebox">
+		<br/>
+		<br/>
     	<span class="profile-page-username-font"> {% firstof targetuser.first_name user.first_name%} {%firstof targetuser.last_name user.last_name %}
 			{% if other == 1 %}
 			<span style="display:inline"><form action="/profile/edit/"><input type="submit"  class="submitButton editprofilebutton" id="commentbutton" value="Edit Profile" > </form></span>   	
     	</span>
     	{% endif %}
+    	<br/>
         <div class="profile-header">
-        	<div class="about-user active" onclick='changeActive(this,".profilebox .user-info")'><span> AllAttempts</span>
+        	<div class="about-user active changepassword" onclick='changeActive(this,".profilebox .user-info")'><span> AllAttempts</span>
             </div>
             <!--div class="allattempts" onclick='changeActive(this,".profilebox .allattempts-info")'> <span style="padding-left:13px;"> AllAttempts</span>
             </div-->
@@ -67,6 +70,15 @@
 					{% paginate %}
 				</table>
 			</ul>
-        </div>    
+			<div class="footer-text" style="padding:20px">
+				<a href="/aboutUs" style="color:#fff;padding-left:270px;font-size:16px">About Us |
+				</a>
+				<a href="/wiki/" style="color:#fff;font-size:16px"> Wiki |
+				</a>  
+				<a href="/forum/"style="color:#fff;font-size:16px">Forums
+				</a>
+			</div> 
+        </div> 
+          
 {% endblock %}
 

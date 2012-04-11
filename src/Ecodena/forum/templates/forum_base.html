@@ -1,14 +1,14 @@
 {% load i18n %}<html>
 <head>
-<title>{% block title %}{% endblock %}</title>
-<link rel="alternate" type="application/rss+xml" title="{% trans "All Latest Posts via RSS" %}" href="{% url forum_index %}rss/" />
-<link rel="alternate" type="application/atom+xml" title="{% trans "All Latest Posts via ATOM" %}" href="{% url forum_index %}atom/" />
-<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/styles.css" />
+		<title>{% block title %}{% endblock %}</title>
+		<link rel="alternate" type="application/rss+xml" title="{% trans "All Latest Posts via RSS" %}" href="{% url forum_index %}rss/" />
+		<link rel="alternate" type="application/atom+xml" title="{% trans "All Latest Posts via ATOM" %}" href="{% url forum_index %}atom/" />
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/styles.css" />
 
-<script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="{{STATIC_URL}}js/jquery-ui-1.8.17.custom.min.js"></script>
-<script type="text/javascript" src="{{STATIC_URL}}js/scripts.js"></script>
-{% block extrahead %}{% endblock %}
+		<script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.7.1.js"></script>	
+		<script type="text/javascript" src="{{STATIC_URL}}js/jquery-ui-1.8.17.custom.min.js"></script>
+		<script type="text/javascript" src="{{STATIC_URL}}js/scripts.js"></script>
+		{% block extrahead %}{% endblock %}
 </head>
 <style type='text/css'><!--
 body {
@@ -88,6 +88,7 @@ body {
 }
 --></style>
 <body>
+<div style="background-color:#0b86f9">
 <div id="header" class="header-container" align=left style="font-size:17px;">
 	<a href="/"><img class="logo" src="{{STATIC_URL}}img/ecodena logo.png" /></a>
 	
@@ -99,10 +100,20 @@ body {
     {% endif %}
     
 </div>	
-<div id='djangoForumBody'>
-<h1>{% block pagetitle %}{% trans "Welcome to the Forums" %}{% endblock %}</h1>
-<div id='djangoForumBreadcrumbs'><a href='/'>{% trans "Home" %}</a> &raquo; <a href='{% url forum_index %}'>{% trans "Forums" %}</a>{% block breadcrumbs %}{% endblock %}</div>
-{% block content %}{% endblock %}
+<div class="forum-container">
+	<div id='djangoForumBody'>
+		<h1>{% block pagetitle %}{% trans "Welcome to the Forums" %}{% endblock %}</h1>
+		<div id='djangoForumBreadcrumbs'><a style="color:white" href='/'>{% trans "Home" %}</a> &raquo; <a style="color:#fff" href='{% url forum_index %}'>{% trans "Forums" %}</a>{% block breadcrumbs %}{% endblock %}></div>
+		{% block content %}{% endblock %}
+	</div>
 </div>
+</div>
+<div class="footer-text">
+			<a href="/aboutUs" style="color:#000;padding-left:20px;font-size:16px">About Us |
+			</a>
+			<a href="/wiki/" style="color:#000;font-size:16px"> Wiki
+			</a>  
+			</div>
+		</div>
 </body>
 </html>

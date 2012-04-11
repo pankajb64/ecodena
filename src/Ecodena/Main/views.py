@@ -10,7 +10,9 @@ from Ecodena.User.views import generateRank
 
 def home(request):
 	return render(request, 'index.html')
-		
+
+def AboutUs(request):
+	return render(request, 'AboutUs.html')
 
 
 def login(request):

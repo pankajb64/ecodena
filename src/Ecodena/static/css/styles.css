@@ -599,7 +599,6 @@ textarea
 }
 .loginwindow-container
 {
-	width:100%;
 	height:100%;
 	border-color:#999;
 	position:center;
@@ -1005,10 +1004,11 @@ display:block;
 {
 	margin-left: 536px;
 	font-family: Verdana,sans-serif;	
-	color: #000;
+	color: blue;
 	font-weight:bold;
 	display: inline;
-	font-size:10px;
+	font-size:14px;
+	width:20px;
 }
 
 
@@ -1188,6 +1188,14 @@ text-decoration:none;
 {
 	color:#000;
 }
+.next:link
+{
+	color:#000;
+}
+.next:hover
+{
+	color:#000;
+}
 .prev
 {
 	color:#000;
@@ -1213,4 +1221,39 @@ white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
 white-space: -pre-wrap; /* Opera 4-6 */
 white-space: -o-pre-wrap; /* Opera 7 */
 word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+.wikifont
+{
+	font-family:"arial","sans-serif","Times New Roman"
+	color:#000;
+}
+.wikifont:link
+{
+	font-family:"arial","sans-serif","Times New Roman"
+	color:#000;
+}
+.wikifont:visited
+{
+	font-family:"arial","sans-serif","Times New Roman"
+	color:#000;
+}
+.wikifont:hover
+{
+	font-family:"arial","sans-serif","Times New Roman"
+	color:#000;
+}
+.aboutUs
+{
+	margin-left:470px;
+	background-color:#ccc;
+	width:400px;
+	margin-top:10px;
+	font-family:arial,"sans-serif";
+	-moz-box-shadow:    1px 1px 2px 3px #ccc;
+	-webkit-box-shadow: 1px 1px 2px 3px #ccc;
+	box-shadow:         1px 1px 2px 3px #ccc;
+}
+.changepassword
+{
+	cursor:default;
 }
