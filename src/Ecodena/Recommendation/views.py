@@ -51,7 +51,7 @@ def generate_recommendations(request):
 	
 	if not t  :
 		
-		questions = Question.objects.filter(level_f__levelID_f = '1').exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user)  )
+		questions = Question.objects.filter(level_f__levelID_f = '1').exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user).values('questionID_f')  )
 		
 		for question in questions:
 			
@@ -65,7 +65,7 @@ def generate_recommendations(request):
 	elif t[0].num < 10:
 		
 		attempt_m = Attempt.objects.annotate(nums =Count('questionID_f__type_f__typeID_f')).order_by('-nums')[:2]
-		questions = Question.objects.filter(type_f = attempt_m[0].questionID_f.type_f).filter(level_f__levelID_f = '1').exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user)  ) 
+		questions = Question.objects.filter(type_f = attempt_m[0].questionID_f.type_f).filter(level_f__levelID_f = '1').exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user).values('questionID_f')  ) 
 		
 		for question in questions:
 			
@@ -91,38 +91,51 @@ def generate_recommendations(request):
 		levels_m = Attempt.objects.filter(userID_f = request.user).filter(questionID_f__in = Question.objects.filter(type_f = typesm[0].question.type_f)).filter(status_f = True ).distinct('questionID_f').annotate(num_levels=Count('level_f')).values('level_f').order_by('-num_levels')[:3]
 
 		
-		l_1 = (levels_m[0].num_types + levels_m[1].num_types + levels_m[2].num_types)
-		l1 = round ((levels_m[0].num_types*levels_m[0].question.levelID_f) + (levels_m[1].num_types*levels_m[1].question.levelID_f) + (levels_m[2].num_types*levels_m[2].question.levelID_f))/l_1
+		l_1 = (levels_m[0].num_levels + levels_m[1].num_levels + levels_m[2].num_levels)
+		l1 = round ((levels_m[0].num_levels*levels_m[0].question.levelID_f) + (levels_m[1].num_levels*levels_m[1].question.levelID_f) + (levels_m[2].num_levels*levels_m[2].question.levelID_f))/l_1
 
 		levels_m_2 = Attempt.objects.filter(userID_f = request.user).filter(questionID_f__in = Question.objects.filter(type_f = typesm[1].question.type_f)).filter(status_f = True ).distinct('questionID_f').annotate(num_levels=Count('level_f')).values('level_f').order_by('-num_levels')[:3]
 
-		l_2 = (levels_m_2[0].num_types + levels_m_2[1].num_types + levels_m_2[2].num_types)
-		l2 = round ((levels_m_2[0].num_types*levels_m_2[0].question.levelID_f) + (levels_m_2[1].num_types*levels_m_2[1].question.levelID_f) + (levels_m_2[2].num_types*levels_m_2[2].question.levelID_f))/l_2
+		l_2 = (levels_m_2[0].num_levels + levels_m_2[1].num_levels + levels_m_2[2].num_levels)
+		l2 = round ((levels_m_2[0].num_levels*levels_m_2[0].question.levelID_f) + (levels_m_2[1].num_levels*levels_m_2[1].question.levelID_f) + (levels_m_2[2].num_levels*levels_m_2[2].question.levelID_f))/l_2
 		
 		levels_m_3 = Attempt.objects.filter(userID_f = request.user).filter(questionID_f__in = Question.objects.filter(type_f = typesm[2].question.type_f)).filter(status_f = True ).distinct('questionID_f').annotate(num_levels=Count('level_f')).values('level_f').order_by('-num_levels')[:3]
 
-		l_3 = (levels_m_3[0].num_types + levels_m_3[1].num_types + levels_m_3[2].num_types)
-		l3 = round ((levels_m_3[0].num_types*levels_m_3[0].question.levelID_f) + (levels_m_3[1].num_types*levels_m_3[1].question.levelID_f) + (levels_m_3[2].num_types*levels_m_3[2].question.levelID_f))/l_3
+		l_3 = (levels_m_3[0].num_levels + levels_m_3[1].num_levels + levels_m_3[2].num_levels)
+		l3 = round ((levels_m_3[0].num_levels*levels_m_3[0].question.levelID_f) + (levels_m_3[1].num_levels*levels_m_3[1].question.levelID_f) + (levels_m_3[2].num_levels*levels_m_3[2].question.levelID_f))/l_3
 
-		questions = Question.objects.filter(type_f = typesm[0].question.type_f).filter(level_f = l1).exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user)  )
+		questions = Question.objects.filter(type_f = typesm[0].question.type_f).filter(level_f = l1).exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user).values('questionID_f')  )
 
-		recommendation[0].questionList_f[i].append(questions)
+		for question in questions:
+			
+			recommended = Recommended()
+			recommended.question = question
+			recommended.recommendation = recommendation
+
 		
 		
 		
 
-		questions = Question.objects.filter(type_f = typesm[1].question.type_f).filter(level_f = l2).exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user)  )
+		questions = Question.objects.filter(type_f = typesm[1].question.type_f).filter(level_f = l2).exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user).values('questionID_f')  )
 
-		recommendation[0].questionList_f[i].append(questions)
+		for question in questions:
+		
+			recommended.question = question
+			recommended.recommendation = recommendation
 		
 
-		questions = Question.objects.filter(type_f = typesm[1].question.type_f).filter(level_f = l3).exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user)  )
+		questions = Question.objects.filter(type_f = typesm[1].question.type_f).filter(level_f = l3).exclude(questionID_f__in = Attempt.objects.filter(userID_f = request.user).values('questionID_f')  )
 		
-		recommendation[0].questionList_f[i].append(questions)
+		for question in questions:
+			
+			recommended = Recommended()
+			recommended.question = question
+			recommended.recommendation = recommendation
+
 		
-		recommendation[0].save()
+		recommended.save()
 		
-		return recommendation[0]
+		return recommendation
 	
 def dictfetchall(cursor):
     "Returns all rows from a cursor as a dict"
