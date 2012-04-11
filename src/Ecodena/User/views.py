@@ -28,6 +28,8 @@ class ProfileForm(forms.Form):
 	email=forms.EmailField(required=False)
 	address  = forms.CharField(widget=forms.Textarea(attrs={'rows':2, 'cols':66}),required=False)
 	
+
+	
 @login_required(login_url="/login/")	
 def viewProfile(request):
 	solutions = Attempt.objects.filter(userID_f=request.user)
@@ -36,9 +38,8 @@ def viewProfile(request):
 	a = Attempt.objects.filter(userID_f=request.user)
 	attempts = a.order_by('timeOfSubmission_f').filter(status_f=True)
 	questionTitle = []
-	for attempt in attempts:
-		questionTitle.append(attempt.questionID_f.questionTitle_f)
-	questionTitle = list(set(questionTitle))	
+	
+		
 	#questionTitle = list(set(questionTitle
 	countAttempt = a.count()
 	countCorrect = a.filter(status_f=True).count()

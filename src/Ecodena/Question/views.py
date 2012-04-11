@@ -9,7 +9,7 @@ from django import forms
 from django.template import RequestContext
 from Ecodena.Attempt.models import *
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-
+from Ecodena.ProblemSetter.models import *
 class CommentForm(forms.Form):
 	'''Creates a form for writing a comment'''
 	text = forms.CharField(widget=forms.Textarea(attrs={'rows':3, 'cols':66}), label="Enter the Text to comment", initial="")
@@ -73,7 +73,17 @@ def viewQuestionByID(request, questionID):
 						
 					
 		question.commentList_f = list(Comment.objects.filter(questionID_f = question))
-		return render(request, 'question.html',RequestContext(request, {'question' : question,'form' : form, 'comments' : question.commentList_f} ))
+
+		if request.user.is_authenticated():
+				
+			var = HasSet.objects.filter(userID_f = request.user).filter(questionID_f = question)
+			if var:
+				ismyProblem = True
+			else:
+				ismyProblem = False
+		else:
+				ismyProblem = False		
+		return render(request, 'question.html',RequestContext(request, {'question' : question,'form' : form, 'comments' : question.commentList_f, 'ismyProblem' : ismyProblem} ))
 #	return HttpResponse("%s" %questions)
 
 def generatePoints(question):

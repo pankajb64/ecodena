@@ -2,7 +2,7 @@
 <ul>
 	{%for q in questionID%}
 	<li>
-		<a href="{{q.questionID.questionID_f}}">q.questionID.questionTitle_f</a>
+		<a href="/questions/{{q.questionID.questionID_f}}">{{q.questionID.questionTitle_f}}</a>
 	</li>
 	{%endfor%}
 </ul>		

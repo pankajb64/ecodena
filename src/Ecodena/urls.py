@@ -8,7 +8,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
 # Examples:
 	url(r'^$', 'Ecodena.Main.views.home', name='home'),
-	url(r'^aboutUs/$', 'Ecodena.Main.views.AboutUs'),
 	# url(r'^Ecodena/', include('Ecodena.foo.urls')),
 
 	# Uncomment the admin/doc line below to enable admin documentation:
@@ -48,6 +47,8 @@ urlpatterns = patterns('',
 	#url(r'^registerInContest/(?P<contestID>[0-9]+)$','Ecodena.Contest.views.registerInContest'),
 	url(r'^problemSetter/viewProblems/$','Ecodena.ProblemSetter.views.ViewProblemSet'),
 	url(r'^problemSetter/viewProblems/(?P<questionID>[0-9]+)$','Ecodena.ProblemSetter.views.ViewProblem'),
+	url(r'^problemSetter/editProblem/(?P<qID>[0-9]+)/','Ecodena.ProblemSetter.views.EditProblem'),
+	url(r'^problemSetter/deleteProblem/(?P<qID>[0-9]+)/','Ecodena.ProblemSetter.views.DeleteProblem'),
 	url(r'^problemSetter/UploadProblem/$','Ecodena.ProblemSetter.views.UploadProblem'),
 	#url(r'^notification/', include('notification.urls')),
 	url(r'^ranking/$', 'Ecodena.User.views.generatePointsUser'),
