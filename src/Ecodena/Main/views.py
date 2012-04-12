@@ -32,7 +32,7 @@ def login(request):
 			
 			profile = Profile.objects.filter(userID_f = user)[0]
 			generatePointsUser(profile.userID_f)
-			auth.login(request, user)
+			auth_login(request, user)
 			profile.rank_f = generateRank(profile)
 			profile.save()
 			
@@ -41,10 +41,11 @@ def login(request):
 		else:
 			# Show an error page
 			#user.backend = 'django.contrib.auth.backends.ModelBackend'
-			return HttpResponseRedirect("/login/")
+			return auth_login(request)
+			#return HttpResponseRedirect("/login/")
 	else:
 		
-		# Show an error page
+		# Show  login page
 		return render(request, 'registration/login.html')	
 
 def logout(request):
