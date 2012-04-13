@@ -115,7 +115,10 @@ def generateRating(question):
 	p3 = pow((question.questionPoints_f/100.0),c)
 	#this shows the difficulty of the problem
 	
-	question.questionRating_f = round(10 *p1*p2*p3, 1)
+	if totalUsers == 0:
+		question.questionRating_f = 0
+	else :	
+		question.questionRating_f = round(10 *p1*p2*p3, 1)
 	question.save()
 	
 
