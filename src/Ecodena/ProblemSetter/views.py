@@ -94,15 +94,15 @@ def EditProblem(request,qID):
 	dc = {'form':f,'questionID':questionID}
 	context = RequestContext(request,dc)
 	if request.method =="POST":
-		f=ProblemForm(request.POST)	
+		f=ProblemForm(request.POST, instance=questionID)	
 		context = RequestContext(request,dc)
 		if not f.is_valid():
 			dc={'form':f, 'questionID':questionID }
 			context = RequestContext(request,dc)
 			return render(request,'editProblem.html', context)
 		else:
-			questionID.delete()
-			questionID = f.save()
+			#questionID.delete()
+			questionID = f.save() 
 			'''if f.cleaned_data['problemTitle']: 
 					questionID.questionTitle = f.cleaned_data['problemTitle']	
 			if f.cleaned_data['problemText']: 

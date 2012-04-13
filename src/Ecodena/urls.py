@@ -53,6 +53,7 @@ urlpatterns = patterns('',
 	#url(r'^notification/', include('notification.urls')),
 	url(r'^ranking/$', 'Ecodena.User.views.generatePointsUser'),
 	url(r'^rating/(?P<questionID>[0-9]+)/$', 'Ecodena.Question.views.generateRating'),
+	url(r'^aboutUs/$','Ecodena.Main.views.AboutUs'),
 )
 
 
