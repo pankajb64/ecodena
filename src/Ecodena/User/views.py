@@ -144,6 +144,17 @@ def generatePointsUser(user):
 	for j in range(0,m):
 		profile.points_f = profile.points_f - (10/(attempts_w[j].questionID_f.questionRating_f))	
 	profile.rank_f = generateRank(profile)
+	'''if profile.points_f > 500 and profile.points_f < 1000:
+		profile.badgeType_f = 1
+	else if profile.points_f < 500:
+		profile.badgeType_f = 0	
+	else if profile.points_f > 1000 and profile.points_f < 1500:
+		profile.badgeType_f = 2
+	else if profile.points_f > 1500 and profile.points_f < 2000:
+		profile.badgeType_f = 3		
+	else:
+		profile.badgeType_f = 4
+		'''	
 	profile.save()
 	return HttpResponse(`profile.points_f` + " " + `profile.rank_f`)
 	

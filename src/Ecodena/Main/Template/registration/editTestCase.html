@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %} Edit Test Case {{caseID}}  for problem - {{questionID.questionTitle_f }} {% endblock %}
+{% block content %}
+
+<form action="" method ="post" >
+	
+	<div class="usernamefont">	{{ field.errors }} </div>	
+						{{ form.non_field_errors }}
+				<br/><br/><br/>
+				<table style="margin-left:200px;">
+
+				<tr><td ><span class="usernamefont registerpage" style="color:#000">Problem Case Type</span></td>
+				<td style="float:left">{{form.caseType}}</td>
+				<td style="width:30px">{{form.caseType.errors}}</td>
+				</tr>
+				
+				<tr><td ><span class="usernamefont registerpage" style="color:#000">Input</span></td>
+				<td style="margin-left:200px">{{form.input}}</td>
+				<td style="width:30px">{{form.input.errors}}</td>
+				</tr>
+				
+				<tr><td ><span class="usernamefont registerpage" style="color:#000">Output</span></td>
+						<td style="float:left">{{form.output}}</td>
+						<td style="width:30px">{{form.output.errors}}</td>
+						</tr>
+
+				</table>		
+
+<input class="submitButton" style="margin-left:200px" type="submit" value="Submit"/>
+</form>
+{% endblock %}

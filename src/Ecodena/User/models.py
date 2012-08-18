@@ -141,7 +141,8 @@ class Profile(models.Model, object):
 	isProblemSetter = models.BooleanField("Is a Problem Setter" , default=False, )
 	points_f = models.FloatField("The points for the user",null = False)
 	rank_f = models.IntegerField("The rank of the user",null= False)
-	
+	#BADGE_TYPE = ((0,'amatuer'),(1,'semi professional'),(2,'professional'),(3,'Godlike'))
+	#badgeType_f = models.SmallIntegerField( max_length = 40, choices=BADGE_TYPE,verbose_name="Types of badges") 
 	def getDOB(self):
 		return self.dob_f
 		

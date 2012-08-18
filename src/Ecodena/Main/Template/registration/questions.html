@@ -5,6 +5,11 @@
 <div align=center>
 	<h1 align=center>ALL Questions</h1>
 	<div class="questions-box">
+		{% if profile.isProblemSetter %} <br style="clear:both;" />
+			<form action="/problemSetter/viewProblems"><input type="submit" style="float:right;margin-right:285px;" class="submitButton" id="submitsolutionbutton" value="My Problems" /></form> <br style="clear:both;" />
+
+			{% endif %}
+			<br/><br/>
 		<div class="wrapper" >
 			<table >					
 				<tr><th>Question</th><th>No.of Users who successfully attempted this</th><th>Accuracy</th><th>Rating</th></span></tr>
@@ -22,10 +27,8 @@
 		</div>
 	</div>
 			<div class="footer-text">
-				<a href="/aboutUs" style="color:#000;padding-left:30px">About Us |
-				</a>
-				<a href="/wiki/" style="color:#000;"> Wiki |
-				</a>  
+				<a href="/aboutUs" style="color:#000;padding-left:30px">About Us</a> | 
+				<a href="/wiki/" style="color:#000;">Wiki</a> | 
 				<a href="/forum/"style="color:#000;">Forums
 				</a>
 			</div>

@@ -1,0 +1,839 @@
+<zuiprezi>
+  <version>4</version>
+  <zui-table>
+    <settings>
+      <autoplay>
+        <delay>4000</delay>
+      </autoplay>
+      <bounds x="-86180.38828125" y="-26047.73017578125" width="170330.9765625" height="106456.8603515625"/>
+    </settings>
+    <object id="3" type="image" x="-1014.9" y="27180.7" r="0" s="66.53553771972656">
+      <source w="2560" h="1600">135698436.png<url>135698436.png</url>
+      </source>
+      <sourceUrl>http://content.wallpapers-room.com/resolutions/2560x1600/w/Wallpapers-room_com___white_stones_wallpaper_by_goldfish2008_2560x1600.png</sourceUrl>
+    <resource><id>
+        135698436
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/converted/1/4/3/7210c52122c6d49ec1c6f1b2a0b147f8576e2.png</url></resource></object>
+    <object id="9_45524" type="label" x="-10984.739082189653" y="-21584.379400190115" r="-5.256560733342025" s="135.1367908920637" class="body">
+      <textfield>
+        <x>-84.65</x>
+        <y>-15.85</y>
+        <text><![CDATA[Ecodena
+]]></text>
+        <annotations>r0-8 { color: #6fcc00; }
+r0-8 { align: center; }</annotations>
+        <w>169.35</w>
+        <h>31.7</h>
+      </textfield>
+    </object>
+    <object id="30" type="button" x="-44159.9" y="23406.85" r="0" s="8.991523742675781" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="2" type="label" x="-10704.666082547974" y="-19511.529626255255" r="-5.25244759851101" s="36.83165769814163" class="head">
+      <textfield>
+        <x>-135</x>
+        <y>-15.35</y>
+        <text><![CDATA[ The online judge system]]></text>
+        <annotations>r0-24 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="0" type="button" x="3422.45" y="18576.65" r="0" s="9.827231407165527" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="1" type="label" x="1868.8" y="17021.699999999997" r="0" s="13.830988883972168" class="head">
+      <textfield>
+        <x>-102.4</x>
+        <y>-15.35</y>
+        <text><![CDATA[Problem Diagnosis
+]]></text>
+        <annotations>r0-18 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="5" type="label" x="3009.3999999999996" y="18408.35" r="0" s="9.4633150100708" class="body">
+      <textfield>
+        <x>-269.9</x>
+        <y>-122.35</y>
+        <text><![CDATA[Around 4,20,000 Indian students from IT and CS branch.
+
+SPOJ, Codechef etc. are competition oriented systems - difficult for newcomers to actually learn and solve more problems
+
+System does not provide enough help to  comprehend to the error.
+]]></text>
+        <annotations>r0-55 { bullet: true; }
+r0-55 { align: left; }
+r0-55 { blockIndent: 36; }
+r56-177 { bullet: true; }
+r56-177 { align: left; }
+r56-177 { blockIndent: 36; }
+r178-243 { bullet: true; }
+r178-243 { align: left; }
+r178-243 { blockIndent: 36; }</annotations>
+        <w>539.85</w>
+        <h>253.3</h>
+      </textfield>
+    </object>
+    <object id="6" type="button" x="3417.15" y="7514.5" r="0" s="5.90717077255249" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="7" type="label" x="2431" y="6583.149999999999" r="0" s="8.31383991241455" class="head">
+      <textfield>
+        <x>-96.5</x>
+        <y>-15.35</y>
+        <text><![CDATA[Proposed System
+]]></text>
+        <annotations>r0-16 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="8" type="label" x="3071.0999999999995" y="7412.549999999999" r="0" s="5.688421249389649" class="body">
+      <textfield>
+        <x>-252.4</x>
+        <y>-122.35</y>
+        <text><![CDATA[
+Better suggestions and error reports should be provided
+
+Wholesome ranking system
+
+Categorization of problems
+
+Intuitive  user interface 
+]]></text>
+        <annotations>r1-57 { bullet: true; }
+r1-57 { align: left; }
+r1-57 { blockIndent: 36; }
+r58-83 { bullet: true; }
+r58-83 { align: left; }
+r58-83 { blockIndent: 36; }
+r84-111 { bullet: true; }
+r84-111 { align: left; }
+r84-111 { blockIndent: 36; }
+r112-139 { bullet: true; }
+r112-139 { align: left; }
+r112-139 { blockIndent: 36; }</annotations>
+        <w>504.8</w>
+        <h>253.3</h>
+      </textfield>
+    </object>
+    <object id="9" type="button" x="-2796.35" y="-9344.55" r="0" s="6.014101982116699" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="10" type="label" x="-3774.7" y="-10293.2" r="0" s="8.464335441589355" class="head">
+      <textfield>
+        <x>-98.4</x>
+        <y>-15.35</y>
+        <text><![CDATA[Program Features
+]]></text>
+        <annotations>r0-17 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="11" type="label" x="-3104.2" y="-9372" r="0" s="5.791393280029297" class="body">
+      <textfield>
+        <x>-260.3</x>
+        <y>-135.75</y>
+        <text><![CDATA[
+Support for multiple programming languages
+
+Use of forum to enhance communication among users
+
+Use of wiki to create tutorials
+
+Recommendation of Questions to user
+
+]]></text>
+        <annotations>r1-44 { bullet: true; }
+r1-44 { align: left; }
+r1-44 { blockIndent: 36; }
+r45-95 { bullet: true; }
+r45-95 { align: left; }
+r45-95 { blockIndent: 36; }
+r96-128 { bullet: true; }
+r96-128 { align: left; }
+r96-128 { blockIndent: 36; }
+r129-165 { bullet: true; }
+r129-165 { align: left; }
+r129-165 { blockIndent: 36; }</annotations>
+        <w>520.65</w>
+        <h>281</h>
+      </textfield>
+    </object>
+    <object id="12" type="button" x="-18921.25" y="16416.4" r="0" s="5.3346967697143555" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="13" type="label" x="-18966.85" y="15543.9" r="0" s="8.20269775390625" class="head">
+      <textfield>
+        <x>-209.55</x>
+        <y>-28.75</y>
+        <text><![CDATA[Comparisons of existing systems with Ecodena
+]]></text>
+        <annotations>r0-45 { align: left; }</annotations>
+        <w>419.1</w>
+        <h>69.3</h>
+      </textfield>
+    </object>
+    <object id="14" type="label" x="-18966.85" y="16739.2" r="0" s="6.2726788520813" class="body">
+      <textfield>
+        <x>-274</x>
+        <y>-149.1</y>
+        <text><![CDATA[Classification of the problems on the basis of type.
+
+Users can access Wiki for tutorials.
+
+Ecodena provides an extensive error report.
+
+Ecodena proposes recommended questions for each user on the basis of his attempted questions. 
+
+]]></text>
+        <annotations>r0-53 { bullet: true; }
+r0-53 { align: left; }
+r0-53 { blockIndent: 36; }
+r54-91 { bullet: true; }
+r54-91 { align: left; }
+r54-91 { blockIndent: 36; }
+r92-136 { bullet: true; }
+r92-136 { align: left; }
+r92-136 { blockIndent: 36; }
+r137-232 { bullet: true; }
+r137-232 { align: left; }
+r137-232 { blockIndent: 36; }</annotations>
+        <w>548.05</w>
+        <h>253.3</h>
+      </textfield>
+    </object>
+    <object id="15" type="button" x="40206.9" y="-20686.45" r="0" s="5.7418646812438965" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="16" type="label" x="39541.049999999996" y="-21599.9" r="0" s="8.081180572509766" class="head">
+      <textfield>
+        <x>-134.35</x>
+        <y>-15.35</y>
+        <text><![CDATA[Resource Requirements 
+]]></text>
+        <annotations>r0-23 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="17" type="label" x="39974" y="-20487.9" r="0" s="5.529235363006592" class="body">
+      <textfield>
+        <x>-274</x>
+        <y>-175.85</y>
+        <text><![CDATA[Human resources and other resources such as hardware and software, which would be used to implement the project.
+The requirements are satisfied by the laptops of the team members and the workstations provided by the college.
+Open source software which is free of cost is required.
+ Amount of man hours put in by the team will be about 48.9 person months.
+
+
+
+]]></text>
+        <annotations>r0-113 { bullet: true; }
+r0-113 { align: left; }
+r0-113 { blockIndent: 36; }
+r113-225 { bullet: true; }
+r113-225 { align: left; }
+r113-225 { blockIndent: 36; }
+r225-281 { bullet: true; }
+r225-281 { align: left; }
+r225-281 { blockIndent: 36; }
+r281-355 { bullet: true; }
+r281-355 { align: left; }
+r281-355 { blockIndent: 36; }</annotations>
+        <w>548.05</w>
+        <h>364.1</h>
+      </textfield>
+    </object>
+    <object id="18" type="button" x="-11687.45" y="38506.45" r="0" s="6.47967529296875" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="19" type="label" x="-12809.55" y="37471.85" r="0" s="9.11959171295166" class="head">
+      <textfield>
+        <x>-92.45</x>
+        <y>-15.35</y>
+        <text><![CDATA[Project Schedule
+]]></text>
+        <annotations>r0-17 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="20" type="image" x="-11682.55" y="38931.5" r="0" s="0.6219164133071899">
+      <source w="1143" h="342">135689744.png<url>135689744.png</url>
+      </source>
+      <sourceUrl>http://0103.static.prezi.com.s3.amazonaws.com/converted/2/1/3/ecaeb75f74ef1184b30c8bdefdacca7c2e8cd.png</sourceUrl>
+    <resource><id>
+        135689744
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/converted/2/1/3/ecaeb75f74ef1184b30c8bdefdacca7c2e8cd.png</url></resource></object>
+    <object id="21" type="button" x="23819.55" y="-13285.2" r="0" s="6.775471210479736" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="22" type="label" x="22570.55" y="-14368.85" r="0" s="9.53589916229248" class="head">
+      <textfield>
+        <x>-82.5</x>
+        <y>-15.35</y>
+        <text><![CDATA[Project Phases
+]]></text>
+        <annotations>r0-15 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="23" type="label" x="22857.6" y="-13489.2" r="0" s="6.524566650390625" class="body">
+      <textfield>
+        <x>-164.35</x>
+        <y>-109</y>
+        <text><![CDATA[
+Establishment of standards
+
+Analysis
+
+Work distribution
+
+Final work product
+]]></text>
+        <annotations>r1-28 { bullet: true; }
+r1-28 { align: left; }
+r1-28 { blockIndent: 36; }
+r29-38 { bullet: true; }
+r29-38 { align: left; }
+r29-38 { blockIndent: 36; }
+r39-57 { bullet: true; }
+r39-57 { align: left; }
+r39-57 { blockIndent: 36; }
+r58-77 { bullet: true; }
+r58-77 { align: left; }
+r58-77 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="24" type="button" x="42090.95" y="26122.65" r="-4.8124126765216975" s="6.606466337608919" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="25" type="label" x="41182.600000000006" y="25136.800000000003" r="-4.81241306839266" s="9.29803900684362" class="head">
+      <textfield>
+        <x>-126.3</x>
+        <y>-15.35</y>
+        <text><![CDATA[Requirement Gathering
+]]></text>
+        <annotations>r0-22 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="26" type="label" x="41908.35" y="25933.800000000003" r="-4.812411902284255" s="6.361821365070445" class="body">
+      <textfield>
+        <x>-287.35</x>
+        <y>-109</y>
+        <text><![CDATA[
+Conduction of survey.
+
+Talks conducted with programming club members.
+
+Scope definition and domain analysis.
+
+Final work product : SRS 
+]]></text>
+        <annotations>r1-23 { bullet: true; }
+r1-23 { align: left; }
+r1-23 { blockIndent: 36; }
+r24-71 { bullet: true; }
+r24-71 { align: left; }
+r24-71 { blockIndent: 36; }
+r72-110 { bullet: true; }
+r72-110 { align: left; }
+r72-110 { blockIndent: 36; }
+r111-137 { bullet: true; }
+r111-137 { align: left; }
+r111-137 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="27" type="button" x="-10437.2" y="54775.15" r="0" s="6.900927543640137" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="28" type="label" x="-12135.8" y="53691.049999999996" r="0" s="9.712468147277832" class="head">
+      <textfield>
+        <x>-39.25</x>
+        <y>-15.35</y>
+        <text><![CDATA[Design
+]]></text>
+        <annotations>r0-7 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="29" type="label" x="-10906.2" y="54660.6" r="0" s="6.6453776359558105" class="body">
+      <textfield>
+        <x>-242.8</x>
+        <y>-122.35</y>
+        <text><![CDATA[
+Concurrent development model was used
+
+System architectural design 
+
+Work distribution
+
+Final work product : The design document
+
+]]></text>
+        <annotations>r1-39 { bullet: true; }
+r1-39 { align: left; }
+r1-39 { blockIndent: 36; }
+r40-69 { bullet: true; }
+r40-69 { align: left; }
+r40-69 { blockIndent: 36; }
+r70-88 { bullet: true; }
+r70-88 { align: left; }
+r70-88 { blockIndent: 36; }
+r89-130 { bullet: true; }
+r89-130 { align: left; }
+r89-130 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="31" type="label" x="-45817.45" y="21970.4" r="0" s="12.654804229736328" class="head">
+      <textfield>
+        <x>-83.75</x>
+        <y>-15.35</y>
+        <text><![CDATA[Implementation
+]]></text>
+        <annotations>r0-15 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="32" type="label" x="-44913.5" y="23247.65" r="0" s="8.658555030822754" class="body">
+      <textfield>
+        <x>-226.15</x>
+        <y>-122.35</y>
+        <text><![CDATA[
+Coding convention 
+
+Project divided into various apps
+
+Each app assigned to a group member
+
+Final work product :working system
+
+]]></text>
+        <annotations>r1-20 { bullet: true; }
+r1-20 { align: left; }
+r1-20 { blockIndent: 36; }
+r21-55 { bullet: true; }
+r21-55 { align: left; }
+r21-55 { blockIndent: 36; }
+r56-92 { bullet: true; }
+r56-92 { align: left; }
+r56-92 { blockIndent: 36; }
+r93-128 { bullet: true; }
+r93-128 { align: left; }
+r93-128 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="33" type="button" x="-8341.65" y="10073.15" r="0" s="12.0322847366333" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="34" type="label" x="-11287.15" y="8170.099999999999" r="0" s="16.934412002563477" class="head">
+      <textfield>
+        <x>-41.25</x>
+        <y>-15.35</y>
+        <text><![CDATA[Testing
+]]></text>
+        <annotations>r0-8 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="35" type="label" x="-8647.9" y="9704.15" r="0" s="11.586714744567873" class="body">
+      <textfield>
+        <x>-286.7</x>
+        <y>-109</y>
+        <text><![CDATA[
+Test cases and test plan
+
+Unit and Smoke testing
+
+System and Integration testing
+
+Final work product: Test report and Tested system
+]]></text>
+        <annotations>r1-26 { bullet: true; }
+r1-26 { align: left; }
+r1-26 { blockIndent: 36; }
+r27-50 { bullet: true; }
+r27-50 { align: left; }
+r27-50 { blockIndent: 36; }
+r51-82 { bullet: true; }
+r51-82 { align: left; }
+r51-82 { blockIndent: 36; }
+r83-133 { bullet: true; }
+r83-133 { align: left; }
+r83-133 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="36" type="button" x="61846.6" y="32630.45" r="0" s="11.472131729125977" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="37" type="label" x="60514.8" y="30804.25" r="0" s="16.146047592163082" class="head">
+      <textfield>
+        <x>-133.05</x>
+        <y>-15.35</y>
+        <text><![CDATA[Vision and Future Scope
+]]></text>
+        <annotations>r0-24 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="38" type="label" x="61422.450000000004" y="32122.850000000002" r="0" s="11.047303199768066" class="body">
+      <textfield>
+        <x>-276</x>
+        <y>-95.6</y>
+        <text><![CDATA[
+
+Focus on learning than competition
+
+Benefit for new comers
+
+Design constraints may restrict further evolution.
+]]></text>
+        <annotations>r2-37 { bullet: true; }
+r2-37 { align: left; }
+r2-37 { blockIndent: 36; }
+r38-61 { bullet: true; }
+r38-61 { align: left; }
+r38-61 { blockIndent: 36; }
+r62-113 { bullet: true; }
+r62-113 { align: left; }
+r62-113 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="39" type="button" x="63925.95" y="-10510.05" r="0" s="11.318337440490723" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>800</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="40" type="label" x="61562.94999999999" y="-12300.2" r="0" s="15.929593086242676" class="head">
+      <textfield>
+        <x>-66.45</x>
+        <y>-15.35</y>
+        <text><![CDATA[Contribution
+]]></text>
+        <annotations>r0-13 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="41" type="label" x="62905.9" y="-10725.7" r="0" s="9.641487121582031" class="body">
+      <textfield>
+        <x>-248.15</x>
+        <y>-135.75</y>
+        <text><![CDATA[
+Primary Phases and Leading Members:
+
+Documentation – Avadhesh, Mukesh
+
+Database – Arunangshu, Jay
+
+Coding – Anand, Chinmay, Pankaj
+
+UI – Unique, Harsh
+]]></text>
+        <annotations>r1-37 { bullet: true; }
+r1-37 { align: left; }
+r1-37 { blockIndent: 36; }
+r38-71 { bullet: true; }
+r38-71 { align: left; }
+r38-71 { blockIndent: 72; }
+r72-99 { bullet: true; }
+r72-99 { align: left; }
+r72-99 { blockIndent: 72; }
+r100-132 { bullet: true; }
+r100-132 { align: left; }
+r100-132 { blockIndent: 72; }
+r133-152 { bullet: true; }
+r133-152 { align: left; }
+r133-152 { blockIndent: 72; }</annotations>
+      </textfield>
+    </object>
+  </zui-table>
+  <path>
+    <o>9_45524</o>
+    <o>5</o>
+    <o>6</o>
+    <o>9</o>
+    <o>12</o>
+    <o>15</o>
+    <o>19</o>
+    <o>20</o>
+    <o>21</o>
+    <o>24</o>
+    <o>27</o>
+    <o>30</o>
+    <o>33</o>
+    <o>36</o>
+    <o>39</o>
+  </path>
+  <style type="text/css"><![CDATA[
+@font-face
+{
+	src: url('OpenSans-XB.swf');
+	fontFamily: head;
+}
+
+@font-face
+{
+	src: url('GentiumBasic.swf');
+	fontFamily: body;
+}
+
+@font-face
+{
+	src: url('GentiumBasic-I.swf');
+	fontFamily: strong;
+}
+
+ZLabel
+{
+	padding: 1.2;
+}
+
+ZLabel.head
+{
+	fontFamily: head;
+	color: #333;
+}
+
+.line5
+{
+	gradEndColor: #333;
+	color: #333;
+	gradStartColor: #333;
+}
+
+.poly5
+{
+	borderColor: #333;
+}
+
+ZLabel.strong
+{
+	fontFamily: strong;
+	color: #194a99;
+}
+
+.line1
+{
+	color: #7a8082;
+	gradEndColor: #7a8082;
+	borderThickness: 0;
+	gradStartColor: #7a8082;
+	alpha: 1;
+}
+
+.poly1
+{
+	gradEndAlpha: 0.4;
+	gradEndColor: #7a8082;
+	radius: 0;
+	thickness: 100;
+	gradStartAlpha: 0.2;
+	borderAlpha: 0.7;
+	borderThickness: 2;
+	gradStartColor: #7a8082;
+	borderColor: #7a8082;
+}
+
+ZLabel.body
+{
+	fontFamily: body;
+	color: #333;
+}
+
+Background
+{
+	gradStart: #fff;
+	gradEnd: #fff;
+}
+
+Grid
+{
+	color: #ddd;
+}
+
+ZFrame.circle
+{
+	gradEndAlpha: 1;
+	gradStartAlpha: 0.6;
+	gradEndColor: #194a99;
+	gradStartColor: #318bff;
+	thickness: 6;
+}
+
+.line4
+{
+	color: #f00;
+	gradEndColor: #f00;
+	borderThickness: 0;
+	gradStartColor: #f00;
+	alpha: 1;
+}
+
+.poly4
+{
+	gradEndAlpha: 0.6;
+	gradEndColor: #f00;
+	radius: 0;
+	thickness: 100;
+	gradStartAlpha: 0.3;
+	borderAlpha: 0.7;
+	borderThickness: 2;
+	gradStartColor: #f00;
+	borderColor: #f00;
+}
+
+ZFrame.bracket
+{
+	gradEndAlpha: 1;
+	gradEndColor: #444;
+	thickness: 8;
+	gradStartAlpha: 1;
+	borderThickness: 0;
+	gradStartColor: #444;
+	borderColor: #666;
+}
+
+.line2
+{
+	gradEndColor: #000;
+	color: #000;
+	gradStartColor: #000;
+}
+
+.poly2
+{
+	borderColor: #000;
+}
+
+ZFrame.roundrect
+{
+	gradEndColor: #000;
+	borderThickness: 0;
+	gradStartColor: #000;
+	borderColor: #666;
+}
+
+ZPoly
+{
+	gradEndAlpha: 0.4;
+	lockTintAlpha: 0.6;
+	gradEndColor: #318bff;
+	radius: 0;
+	thickness: 100;
+	gradStartAlpha: 0.2;
+	borderAlpha: 0.7;
+	borderThickness: 2;
+	gradStartColor: #318bff;
+	borderColor: #318bff;
+}
+
+ZCircle
+{
+	gradEndAlpha: 0.4;
+	lockTintAlpha: 0.6;
+	gradEndColor: #288acc;
+	radius: 0;
+	thickness: 100;
+	gradStartAlpha: 0.2;
+	borderAlpha: 0.7;
+	borderThickness: 2;
+	gradStartColor: #288acc;
+	borderColor: #288acc;
+}
+
+ZArrow
+{
+	borderColor: #fff;
+	alpha: 1;
+	borderAlpha: 0.6;
+	borderThickness: 0;
+	color: #288acc;
+	thickness: 8;
+}
+
+.line3
+{
+	gradEndColor: #318bff;
+	color: #318bff;
+	gradStartColor: #318bff;
+}
+
+.poly3
+{
+	borderColor: #318bff;
+}
+
+ZLine
+{
+	alpha: 1;
+	color: #7a8082;
+}
+
+ZCurveLine
+{
+	thickness: 0;
+	alpha: 1;
+	color: #318bff;
+}
+
+ZMarker
+{
+	thickness: 25;
+	alpha: 0.3;
+	color: #288acc;
+}
+
+ZVideo
+{
+	padding: 1.2;
+}
+
+ZLoadedImage
+{
+	lockTintAlpha: 0;
+}
+
+ZloadedImage
+{
+	LockTintAlpha: 0;
+}
+
+]]></style>
+  <hash>9ca6a43d15593458c1de7da762ba9001</hash>
+<sync><oid>-fhegszsh9sx</oid><hash>9ca6a43d15593458c1de7da762ba9001</hash></sync><config>RnhkdmZoUhPTibJVbez+SgKdgg/SnJQnlTLUAk2BGpDuLZ+DjDCMAqxrMN3CBD4OSg5QgljH5Pe5QK5/dpkMcpsGGiz23WJ2DhH4JVLvcj3QUL8brDjCpqzsyWAhLUeYKQq+hpCRaRzuBteQxvgvdVpju3z39RPqv+Kuzj4/4nymZLb7Xp3uBrVv7rfrtKBJZWDD0YrCteVvSOuv+dg8VXztYMMQEpSGlAJxhim+ztEHt7SAQ2jql8AE/2VZPjqS5oEaOH43dxQlmgcQ2GwrtSFW5MFXI3qC5Z8YtRZUYlVG/TvrQtZzCKfFwOL4taukLRq7oZUAQrwxd0KFrxcnfg==</config></zuiprezi>

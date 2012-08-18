@@ -1,8 +1,15 @@
-<h1>List of questions</h1>
+{% extends "base.html" %}
+
+{% block title %} List of Questions by {{user}} {% endblock %}
+{% block content %}
+<br/><br/>
+<form action="/problemSetter/addProblem/"><input style="float:right;margin-right:280px;" type="submit"  class="submitButton" id="submitsolutionbutton" value="Add New Problem" /></form> <br style="clear:both;" />
+<h1 class="questionList" style="color:#000" >List of questions</h1><br/>
 <ul>
 	{%for q in questionID%}
 	<li>
-		<a href="/questions/{{q.questionID.questionID_f}}">{{q.questionID.questionTitle_f}}</a>
+		<a style="text-decoration:underline;color:#0bf" class="questionList" href="/questions/{{q.questionID.questionID_f}}">{{q.questionID.questionTitle_f}}</a>
 	</li>
 	{%endfor%}
 </ul>		
+{% endblock %}

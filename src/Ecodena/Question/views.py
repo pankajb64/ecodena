@@ -2,6 +2,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from Question.models import Question
 from Comment.models import Comment
+from User.models import Profile
 from Attempt.models import Attempt
 from django.shortcuts import render_to_response, render
 from datetime import datetime
@@ -30,7 +31,7 @@ def listQuestions(request):
 	returns the question.html webpage and the list of questions'''
 	questions = []
 	que = Question.objects.all()
-	
+	profile = Profile.objects.filter(userID_f = request.user)[0]
 	for q in que:
 		l = countSuccess()
 		l.questionID = q
@@ -42,6 +43,8 @@ def listQuestions(request):
 			l.accuracy = 0	
 		generateRating(q)
 		questions.append(l)
+		
+		
 	return render(request, 'questions.html',locals())
 
 def viewQuestionByID(request, questionID):

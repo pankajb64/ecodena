@@ -47,6 +47,7 @@ urlpatterns = patterns('',
 	#url(r'^registerInContest/(?P<contestID>[0-9]+)$','Ecodena.Contest.views.registerInContest'),
 	url(r'^problemSetter/viewProblems/$','Ecodena.ProblemSetter.views.ViewProblemSet'),
 	url(r'^problemSetter/viewProblems/(?P<questionID>[0-9]+)$','Ecodena.ProblemSetter.views.ViewProblem'),
+	url(r'^problemSetter/addProblem/$','Ecodena.ProblemSetter.views.UploadProblem'),
 	url(r'^problemSetter/editProblem/(?P<qID>[0-9]+)/','Ecodena.ProblemSetter.views.EditProblem'),
 	url(r'^problemSetter/deleteProblem/(?P<qID>[0-9]+)/','Ecodena.ProblemSetter.views.DeleteProblem'),
 	url(r'^problemSetter/UploadProblem/$','Ecodena.ProblemSetter.views.UploadProblem'),
@@ -54,6 +55,8 @@ urlpatterns = patterns('',
 	url(r'^ranking/$', 'Ecodena.User.views.generatePointsUser'),
 	url(r'^rating/(?P<questionID>[0-9]+)/$', 'Ecodena.Question.views.generateRating'),
 	url(r'^aboutUs/$','Ecodena.Main.views.AboutUs'),
+	url(r'^editTestCase/(?P<caseID>[0-9]+)$','Ecodena.ProblemSetter.views.EditTestCase'),
+	url(r'^addTestCase/(?P<questionID>[0-9]+)/$','Ecodena.ProblemSetter.views.AddTestCase'),
 )
 
 

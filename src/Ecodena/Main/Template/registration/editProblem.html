@@ -2,25 +2,67 @@
 
 {% block title %} Edit problem - {{questionID.questionTitle_f }} {% endblock %}
 {% block content %}
+<div class="editProblem-container">
 <form action="" method ="post" >
 
-{{ form.as_p }}
-
+						<div class="usernamefont">	{{ field.errors }} </div>	
+						{{ form.non_field_errors }}
+						<table>
+							
+						<tr><td ><span class="usernamefont registerpage" style="color:#000">Problem Statement</span></td>
+						<td style="float:left">{{form.questionText_f}}</td>
+						<td style="width:30px">{{form.questionText_f.errors}}</td>
+						</tr>
+						
+						<tr><td class="usernamefont" style="color:#000">Problem Title</td>
+						<td style="float:left">{{form.questionTitle_f}}</td>
+						<td style="width:30px">{{form.password1.errors}}</td>
+						</tr>
+						
+						<tr><td class="usernamefont" style="color:#000">Question Level</td>
+						<td style="float:left">{{form.level_f}}</td>
+						<td style="width:30px">{{form.level_f.errors}}</td>
+						</tr>
+						
+						<tr><td class="usernamefont" style="color:#000">Type of Question</td>
+						<td style="float:left">{{form.type_f}}</td>
+						<td style="width:30px">{{form.type_f.errors}}</td>
+						</tr>
+						
+						<tr><td class="usernamefont" style="color:#000">Time Limit For Question</td>
+						<td style="float:left">{{form.timeLimit_f}}</td>
+						<td style="width:30px">{{form.timeLimit_f.errors}}</td>
+						</tr>
+						
+						<tr><td class="usernamefont" style="color:#000">The Points for the Question</td>
+						<td style="float:left">{{form.questionPoints_f}}</td>
+						<td style="width:30px">{{form.questionPoints_f.errors}}</td>
+						</tr>
+						
+						<tr><td class="usernamefont" style="color:#000">The Rating for the Question</td>
+						<td style="float:left">{{form.questionRating_f}}</td>
+						<td style="width:30px">{{form.questionRating_f.errors}}</td>
+						</tr>
+							
+						</table>
 <input type="submit" value="Submit"/>
-</form>
-<!--h1> Low Test Cases</h1>
-{% for testcase in question.LowtestCasesList_f %}
-hh
-	<a href="/editTestCase/{{ testcase.caseID_f }}"> Modify Test Case {{ forLoop.counter }} (ID - {{ testcase.caseID_f }}</a>
+</form><br/>
+<h2><u><b> Low Test Cases </b></u></h2>
+{% for testcase in questionID.LowtestCasesList_f %}
+	<br/>
+	<a class="editProblem" href="/editTestCase/{{ testcase.caseID_f }}"> Modify Test Case {{ forloop.counter }} (ID - {{ testcase.caseID_f }}) </a>
 {% endfor %}
-<h1> Medium Test Cases</h1>
-{% for testcase in question.MedtestCasesList_f %}
-	<a href="/editTestCase/{{ testcase.caseID_f }}"> Modify Test Case {{ forLoop.counter }} (ID - {{ testcase.caseID_f }}</a>
+<br/><br/><h2><u><b> Medium Test Cases </b></u></h2>
+{% for testcase in questionID.MedtestCasesList_f %}
+	<br/>
+	<a class="editProblem" href="/editTestCase/{{ testcase.caseID_f }}"> Modify Test Case {{ forloop.counter }} (ID - {{ testcase.caseID_f }})</a>
 {% endfor %}
-<h1> High Test Cases</h1>
-{% for testcase in question.HightestCasesList_f %}
-	<a href="/editTestCase/{{ testcase.caseID_f }}"> Modify Test Case {{ forLoop.counter }} (ID - {{ testcase.caseID_f }}</a>
+<br/><br/><h2><u><b> High Test Cases </b></u></h2>
+{% for testcase in questionID.HightestCasesList_f %}
+	<br/>
+	<a href="/editTestCase/{{ testcase.caseID_f }}"> Modify Test Case {{ forloop.counter }} (ID - {{ testcase.caseID_f }})</a>
 {% endfor %}
 
-<a href="/addTestCase/" style="color:black;"> Add a new Test Case</a-->
+<a href="/addTestCase/{{questionID.questionID}}/" style="color:black;"> Add a new Test Case</a>
+</div>
 {% endblock %}

@@ -55,7 +55,7 @@
 {% if solution %}
 <div class="profilebox attemptbyidpage" onload="EditArea()">
 	<span style="color:#0b86f9;text-decoration:underline">Attempt ID - {{solution.attemptID}}</span><br /><br />
-	<span style="color:#15a112">Question</span> - {{solution.questionID}} | <span style="color:#15a112">Level</span> - {{solution.questionID.level_f }}  |<span style="color:#15a112"> Type </span>- {{solution.questionID.type_f }}<br />
+	<span style="color:#15a112">Question</span> - <a style="color:#0bf" href="/../questions/{{solution.questionID.quesitonID_f}}/"> {{solution.questionID}} </a><br />
 	<span style="color:#15a112">Your Solution<br /><br /></span> <span class="pre"><pre><code class="html" >{{code}} </code></pre></span><br />
 	{% if solution.status%}
 	<span style="color:#15a112"> Status </span> <img alt="Correct" src="{{STATIC_URL}}img/correct_icon.png" width="20px" height="20px"/>Correct

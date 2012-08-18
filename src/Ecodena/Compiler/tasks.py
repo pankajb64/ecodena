@@ -27,7 +27,7 @@ def alarmHandler(signum, frame):
 	raise AlarmException
 	
 	
-@periodic_task(run_every=timedelta(seconds=1))
+@periodic_task(run_every=timedelta(seconds=3))
 def gyo():
 	pass
 	'''
@@ -50,7 +50,7 @@ def gyo():
 #lock = Lock()
 
 
-@periodic_task(run_every=timedelta(seconds=10))
+@periodic_task(run_every=timedelta(seconds=3))
 def compile():
 	#print "x"
 	#pass
@@ -58,19 +58,21 @@ def compile():
 	
 	try:
 		lock.acquire()
-		#print "gyo"
+		print "gyo"
 		reports = ErrorReport.objects.filter(errorType_f = 6)
 		
 		if not reports:
-		#	print "Nothing to do"
+			print "Nothing to do"
+			#lock.release()
 			return
 			
 		attempt = Attempt.objects.filter(errorReportID_f__in = reports)
 		
 		if not attempt:
-		#	print "Nothing to do"
+			print "Nothing to do"
+			#lock.release()
 			return
-		#print "got attempt"
+		print "got attempt"
 			
 		attempt = attempt.order_by('timeOfSubmission_f')[0]
 		#print "1"
@@ -86,6 +88,7 @@ def compile():
 			#errorReportID = compiler(attempt.questionID, attempt)
 		else: 
 		#	print"Compiler not available " + compiler_ver_lang
+			#lock.release()
 			return None
 		####################################################################
 		#print "question is " + `question.questionTitle_f`

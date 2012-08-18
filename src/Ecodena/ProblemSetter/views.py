@@ -40,8 +40,8 @@ class TestCaseForm(forms.Form):
 @login_required(login_url="/login/")	
 def ViewProblemSet(request):
 	questionID = HasSet.objects.filter(userID_f=request.user)
-		
-	return render(request,'questionList.html',{'questionID':questionID})
+	user = request.user
+	return render(request,'questionList.html',{'questionID':questionID,'user':user})
 	
 @login_required(login_url="/login/")				
 def ViewProblem(request,questionID):
@@ -88,7 +88,7 @@ def EditProblem(request,qID):
 	questionID.HightestCasesList_f = TestCase.objects.filter(questionID_f=qID).filter(caseType_f=2)
 	
 	hasSet = HasSet.objects.filter(questionID_f = qID)[0]
-	initialvalues = { 'problemTitle': questionID.questionTitle , 'problemText': questionID.questionText, 'level': questionID.level_f, 'type': questionID.type_f, 'timeLimit':questionID.timeLimit_f }
+	#initialvalues = { 'problemTitle': questionID.questionTitle , 'problemText': questionID.questionText, 'level': questionID.level_f, 'type': questionID.type_f, 'timeLimit':questionID.timeLimit_f }
 	
 	f=ProblemForm(instance=questionID)
 	dc = {'form':f,'questionID':questionID}
@@ -125,7 +125,7 @@ def EditProblem(request,qID):
 @csrf_protect	
 @login_required(login_url="/login/")	
 def AddTestCase(request,questionID):
-	
+	question = Question.objects.filter(questionID_f = questionID)[0]
 	f = TestCaseForm()
 	dc={'form':f}
 	context = RequestContext(request,dc)
@@ -139,54 +139,56 @@ def AddTestCase(request,questionID):
 		else:
 			case = TestCase()
 			case.caseType = f.cleaned_data['caseType']
+			case.questionID = question
 			case.save()
 			path = "static/storage"
-			file_path_in = path + case.caseID_f + '_in' 
-			if request.FILES['input']:
+			file_path_in = path + str(case.caseID_f) + '_in' 
+			if request.FILES:
 				handle_uploaded_file(request.FILES['file'],file_path_in)
-			file_path_out = path + case.caseID_f + '_ans'
-			if request.FILES['output']:
+			file_path_out = path + str(case.caseID_f) + '_ans'
+			if request.FILES:
 				handle_uploaded_file(request.FILES['file'],file_path_out)  
 			case.input_f = file_path_in
 			case.output_f = file_path_out
 			case.save()
-			return HttpResponseRedirect('problemSetter/viewProblems/')
+			return HttpResponseRedirect('/problemSetter/viewProblems/')
 	else:
 		return render(request,'addTestCase.html', context)
 	
 @csrf_protect	
 @login_required(login_url="/login/")	
-def EditTestCase(request,qID,caseID):
-	case = TestCase.objects.filter(caseID = caseID)
+def EditTestCase(request,caseID):
+	case = TestCase.objects.filter(caseID_f = caseID)[0]
 	initialvalues = { 'caseType': case.caseType }
 	f = TestCaseForm(initial = initialvalues)
+	dc = {'form':f,'questionID':case.questionID_f,'caseID':caseID}
+	context = RequestContext(request,dc)
 	if request.method =="POST":
 		f=TestCaseForm(request.POST)	
-		context = RequestContext(request,dc)
+		context = RequestContext(request,{'form':f,'case':case})
 		if not f.is_valid():
 			dc={'form':f}
 			context = RequestContext(request,dc)
 			return render(request,'editTestCase.html', context)
 		else:
-			dc = {'form':f,'caseID':caseID,'questionID':qID}
+			dc = {'form':f,'caseID':caseID}
 			context = RequestContext(request,dc)
-			case.questionID = qID
-			path = "static/storage"
-			
+			#case.questionID = qID
+			path = 'static/storage'			
 			if f.cleaned_data['caseType']: 
 					case.caseType = f.cleaned_data['caseType']	
 			case.save()
-			file_path_in = path + case.caseID_f + '_in' 
-			if request.FILES['input']:
+			file_path_in = path + str(case.caseID_f) + '_in' 
+			if request.FILES:
 				handle_uploaded_file(request.FILES['file'],file_path_in)
-			file_path_out = path + case.caseID_f + '_ans'
-			if request.FILES['output']:
+			file_path_out = path + str(case.caseID_f) + '_ans'
+			if request.FILES:
 				handle_uploaded_file(request.FILES['file'],file_path_out)  
 			case.input_f = file_path_in
 			case.output_f = file_path_out
 			case.save()
 			
-			return HttpResponseRedirect('problemSetter/viewProblems/')
+			return HttpResponseRedirect('/problemSetter/viewProblems/')
 	else:
 		return render(request,'editTestCase.html', context)
 		

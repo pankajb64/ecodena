@@ -5,8 +5,8 @@ from django.contrib import auth
 from django import forms
 from Ecodena.User.models import *
 from django.contrib.auth.views import login as auth_login
-from Ecodena.User.views import generatePointsUser
-from Ecodena.User.views import generateRank
+from Ecodena.User.views import *
+#from Ecodena.User.views import generateRank
 
 def home(request):
 	return render(request, 'index.html')
@@ -74,7 +74,11 @@ def register(request):
 				new_user.save()
 				profile = Profile()
 				profile.userID_f = new_user
+				profile.points_f = 0
+				profile.rank_f = 1
 				profile.save()
+				generatePointsUser(new_user)
+				
 				return render(request, "registration_complete.html")
 		else:
 			form = RegisterForm()
