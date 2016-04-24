@@ -1,3 +1,5 @@
+# Welcome to Ecodena, the Online Judge System.
+
 Install "latest" version of django in your system.
 
 For Checking whether django that you have installed is working, execute the following commands in terminal:
